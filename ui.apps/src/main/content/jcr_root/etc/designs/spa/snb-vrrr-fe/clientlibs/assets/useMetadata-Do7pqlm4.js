@@ -1,9 +1,9 @@
-import { M as U, X as W, Y as B, Z as R, r as b, _ as F, $ as _, u as z, b as X } from './index-BKDzaX2j.js';
-var V, L;
+import { L as U, X as W, Y as B, Z as R, r as b, _ as F, $ as _, u as z, b as X } from './index-Mlz5_pb0.js';
+var V, D;
 function Y() {
   return (
-    L ||
-      ((L = 1),
+    D ||
+      ((D = 1),
       (V = {
         area: !0,
         base: !0,
@@ -134,7 +134,7 @@ function q(e, t) {
   const n = e.props ? e.props.children : e.children;
   return t ? n.length > 0 : !!n;
 }
-function D(e) {
+function L(e) {
   if (!e) return [];
   const t = e.props ? e.props.children : e.children;
   return e.props && e.props.i18nIsDynamicList ? w(t) : t;
@@ -198,14 +198,14 @@ function oe(e, t, n, o, p, r) {
   const m = {};
   function f(u) {
     w(u).forEach((a) => {
-      typeof a != 'string' && (q(a) ? f(D(a)) : typeof a == 'object' && !b.isValidElement(a) && Object.assign(m, a));
+      typeof a != 'string' && (q(a) ? f(L(a)) : typeof a == 'object' && !b.isValidElement(a) && Object.assign(m, a));
     });
   }
   f(e);
   const d = ne.parse(`<0>${t}</0>`),
     k = { ...m, ...p };
   function T(u, i, a) {
-    const v = D(u),
+    const v = L(u),
       C = x(v, i.children, a);
     return (re(v) && C.length === 0) || (u.props && u.props.i18nIsDynamicList) ? v : C;
   }
@@ -274,7 +274,7 @@ function oe(e, t, n, o, p, r) {
     }, []);
   }
   const y = x([{ dummy: !0, children: e || [] }], d, w(e || []));
-  return D(y[0]);
+  return L(y[0]);
 }
 function ae(e) {
   let {

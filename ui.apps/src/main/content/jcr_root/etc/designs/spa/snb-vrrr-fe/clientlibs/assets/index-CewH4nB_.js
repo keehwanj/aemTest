@@ -2,19 +2,19 @@ import {
   u as v,
   j as e,
   r as s,
-  y as se,
+  x as se,
   E as V,
   a as ie,
-  G as ae,
+  B as ae,
   b as re,
-  q as oe,
-  s as ce,
-} from './index-BKDzaX2j.js';
-import { B as D, M as le, F as de, H as K } from './Error-fngNGqfC.js';
-import { C as L, a as U } from './CheckboxGroup-DaR3uuP8.js';
-import { M as me, A as ue, T as N, C as he, f as O } from './CodeAuthentication-DPeCjX0f.js';
-import { T as y, u as pe } from './useMetadata-D4La1ovT.js';
-import { B as F } from './BackLink-CXYULx6v.js';
+  p as oe,
+  q as ce,
+} from './index-Mlz5_pb0.js';
+import { B as D, M as le, F as de, H as K } from './Error-2S_X8vCH.js';
+import { C as L, a as U } from './CheckboxGroup-CAB8KL2z.js';
+import { M as me, A as ue, T as N, C as he, f as O } from './CodeAuthentication-kJOEI_tF.js';
+import { T as y, u as pe } from './useMetadata-Do7pqlm4.js';
+import { B as F } from './BackLink-Ao2YVq0-.js';
 function $() {
   const { t: i } = v();
   return e.jsxs('div', {
@@ -37,7 +37,7 @@ function $() {
     ],
   });
 }
-const G = ({ isOpen: i, onClose: c }) => {
+const _ = ({ isOpen: i, onClose: c }) => {
   const { t: l } = v();
   return (
     s.useEffect(() => {
@@ -154,7 +154,7 @@ function ge({
           withoutControlledLabeled: !0,
         }),
       }),
-      e.jsx(G, { isOpen: k, onClose: () => o(!1) }),
+      e.jsx(_, { isOpen: k, onClose: () => o(!1) }),
       e.jsx(L, {
         title: '',
         valueArray: ['remember-me-email'],
@@ -268,7 +268,7 @@ function fe({
           withoutControlledLabeled: !0,
         }),
       }),
-      e.jsx(G, { isOpen: o, onClose: () => E(!1) }),
+      e.jsx(_, { isOpen: o, onClose: () => E(!1) }),
       e.jsx(D, {
         label: `${t('authentication.signUpScreen.primaryButton')}`,
         variant: 'primary',
@@ -292,7 +292,7 @@ function ve() {
     [E, t] = s.useState(!0),
     [b, g] = s.useState(''),
     [m, I] = s.useState(''),
-    [T, _] = s.useState([{ value: '', checked: !1 }]),
+    [T, G] = s.useState([{ value: '', checked: !1 }]),
     [u, B] = s.useState([{ value: '', checked: !1 }]),
     [f, w] = s.useState(''),
     [j, P] = s.useState(''),
@@ -375,7 +375,7 @@ function ve() {
               redirectToSignUpPage: X,
               logIn: J,
               rememberMe: T,
-              setRememberMe: _,
+              setRememberMe: G,
               signInEmail: f,
               termsAndConditions: u,
               setTermsAndConditions: B,
