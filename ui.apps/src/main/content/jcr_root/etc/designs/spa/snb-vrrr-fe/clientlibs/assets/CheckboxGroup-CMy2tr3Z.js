@@ -1,10 +1,10 @@
-import { r as d, j as e, k as r, l as f } from './index-UMWpR3F0.js';
-import { E as p } from './Error-C3oDsN34.js';
-import { T as k } from './useMetadata-B2lZBBTQ.js';
-import { g as h } from './CodeAuthentication-3SENVdTA.js';
+import { r as d, j as e, l as n, n as f } from './index-1zwKKG9V.js';
+import { E as p } from './Error-GCxiOGMZ.js';
+import { T as k } from './useMetadata-wNctgGUD.js';
+import { g as h } from './CodeAuthentication-DFVHru3D.js';
 const C = ({
     id: o,
-    selected: n = !1,
+    selected: r = !1,
     label: a,
     hasOptIn: t = !1,
     error: s,
@@ -14,11 +14,11 @@ const C = ({
     onChange: m,
     onClick: x,
   }) => {
-    const [j, u] = d.useState(n),
+    const [j, u] = d.useState(r),
       b = s ? { 'aria-labelledby': `${a}-error` } : {};
     return e.jsxs(e.Fragment, {
       children: [
-        x && e.jsx('div', { className: r('pair', 'on-click'), onClick: x ? () => x() : () => {} }),
+        x && e.jsx('div', { className: n('pair', 'on-click'), onClick: x ? () => x() : () => {} }),
         e.jsxs('div', {
           className: t ? 'single-option' : 'pair',
           children: [
@@ -26,7 +26,7 @@ const C = ({
               type: 'checkbox',
               name: o,
               id: o,
-              defaultChecked: n,
+              defaultChecked: r,
               onMouseDown: () => u(!j),
               ...b,
               'aria-invalid': !!s,
@@ -45,11 +45,11 @@ const C = ({
           ],
         }),
         s &&
-          e.jsx('div', { className: r('gnb-form-input', 'pair', s ? 'error' : ''), children: e.jsx(p, { error: s }) }),
+          e.jsx('div', { className: n('gnb-form-input', 'pair', s ? 'error' : ''), children: e.jsx(p, { error: s }) }),
       ],
     });
   },
-  v = ({ title: o, children: n, hasOptIn: a, error: t, valueArray: s, selectedOptions: l, setSelectedOptions: c }) => {
+  v = ({ title: o, children: r, hasOptIn: a, error: t, valueArray: s, selectedOptions: l, setSelectedOptions: c }) => {
     let i = [];
     return (
       d.useEffect(() => {
@@ -62,13 +62,13 @@ const C = ({
           });
       }, [l]),
       e.jsx('div', {
-        className: r('gnb-form-input', t ? 'error' : ''),
+        className: n('gnb-form-input', t ? 'error' : ''),
         children: e.jsxs('fieldset', {
-          className: r('gnb-checkboxes', { 'fieldset-container': a }),
+          className: n('gnb-checkboxes', { 'fieldset-container': a }),
           children: [
-            e.jsx('legend', { className: r('left', { 'sr-only': a }), children: o }),
+            e.jsx('legend', { className: n('left', { 'sr-only': a }), children: o }),
             t && e.jsx(p, { error: t }),
-            n,
+            r,
           ],
         }),
       })
