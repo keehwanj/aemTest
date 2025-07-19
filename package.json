@@ -1,0 +1,33 @@
+{
+  "name": "gnb_cloud",
+  "version": "1.0.0",
+  "description": "New Brunswick cloud package",
+  "scripts": {
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.7.1",
+    "prettier-plugin-java": "^1.6.2"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "prettier --write"
+    ],
+    "*.+(css|less|scss)": [
+      "prettier --write"
+    ],
+    "*.java": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "gnb_cloud": "file:"
+  }
+}
