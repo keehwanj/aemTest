@@ -1,0 +1,16 @@
+/*
+START of /apps/wcat-taat/components/navigation/breadcrumbs/clientlibs/css/responsive-480px.css
+*/
+
+@media (max-width: 480px) {
+
+
+#breadcrumbNav{
+    font-size: 80%;    
+    margin: 0 30px 10px 5px;
+    padding: 0;
+}
+}
+/*
+END of /apps/wcat-taat/components/navigation/breadcrumbs/clientlibs/css/responsive-480px.css
+*/

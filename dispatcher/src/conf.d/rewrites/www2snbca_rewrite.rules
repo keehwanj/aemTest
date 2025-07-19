@@ -1,0 +1,91 @@
+SetEnvIf %{REQUEST_URI} ^ SNB_ENGLISH_ERROR_PAGE=/content/snb/en/error/404.html
+SetEnvIf %{REQUEST_URI} ^ SNB_FRENCH_ERROR_PAGE=/content/snb/fr/erreur/404.html
+
+# rewrite for root redirect
+RewriteRule ^/?$ /content/snb.html [PT,L]
+
+RewriteCond %{REQUEST_URI} ^/en.html
+RewriteRule ^(.*)$ %{ENV:SNB_ENGLISH_ERROR_PAGE} [PT,L]
+
+RewriteCond %{REQUEST_URI} ^/fr.html
+RewriteRule ^(.*)$ %{ENV:SNB_FRENCH_ERROR_PAGE} [PT,L]
+
+### SPA AREA ###
+
+## MVRR ##
+RewriteCond %{REQUEST_URI} ^/notifications$
+RewriteRule ^(.*)$ /content/snb/spa/mvrrr.html/ [PT,L]
+RewriteRule ^/notifications/(.*)$ /content/snb/spa/mvrrr.html/ [PT,L]
+
+## DLR - English##
+RewriteCond %{REQUEST_URI} ^/renew-drivers-licence$
+RewriteRule ^(.*)$ /content/snb/spa/dlr.html/ [PT,L]
+RewriteRule ^/renew-drivers-licence/(.*)$ /content/snb/spa/dlr.html/ [PT,L]
+
+## DLR - French##
+RewriteCond %{REQUEST_URI} ^/renouveler-permis-de-conduire$
+RewriteRule ^(.*)$ /content/snb/spa/dlr.html/ [PT,L]
+RewriteRule ^/renouveler-permis-de-conduire/(.*)$ /content/snb/spa/dlr.html/ [PT,L]
+
+## DLR - English to French ##
+RewriteCond %{REQUEST_URI} ^/renew-drivers-licence/fr$
+RewriteRule ^/renouveler-permis-de-conduire/fr(.*)$ /content/snb/spa/dlr.html/ [PT,L]
+
+## DLR - French to English ##
+RewriteCond %{REQUEST_URI} ^/renouveler-permis-de-conduire/en$
+RewriteRule ^/renew-drivers-licence/en(.*)$ /content/snb/spa/dlr.html/ [PT,L]
+
+### SPA AREA ###
+
+
+# rewrite for cross-domain issue prevention with a language handle EN
+RewriteCond %{REQUEST_URI} !^/content/snb
+RewriteCond %{REQUEST_URI} !^/content/dam/snb
+RewriteCond %{REQUEST_URI} !^/content/gnb/servlets
+RewriteCond %{REQUEST_URI} ^/content/(.*)/en/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^/content/(.*)/en.html
+RewriteRule ^(.*)$ %{ENV:SNB_ENGLISH_ERROR_PAGE} [PT,L]
+
+# rewrite for cross-domain issue prevention with a language handle FR
+RewriteCond %{REQUEST_URI} !^/content/snb
+RewriteCond %{REQUEST_URI} !^/content/dam/snb
+RewriteCond %{REQUEST_URI} !^/content/gnb/servlets
+RewriteCond %{REQUEST_URI} ^/content/(.*)/fr/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^/content/(.*)/fr.html
+RewriteRule ^(.*)$ %{ENV:SNB_FRENCH_ERROR_PAGE} [PT,L]
+
+# rewrite for cross-domain issue prevention SNB ROOT
+RewriteCond %{REQUEST_URI} !^/content/snb
+RewriteCond %{REQUEST_URI} !^/content/dam/snb
+RewriteCond %{REQUEST_URI} !^/content/gnb/servlets
+RewriteCond %{REQUEST_URI} ^/content/(.*)/(.*)$
+RewriteRule ^(.*)$ %{ENV:SNB_ENGLISH_ERROR_PAGE} [PT,L]
+
+RewriteCond %{REQUEST_URI} !^/apps
+RewriteCond %{REQUEST_URI} !^/bin
+RewriteCond %{REQUEST_URI} !^/content
+RewriteCond %{REQUEST_URI} !^/etc
+RewriteCond %{REQUEST_URI} !^/home
+RewriteCond %{REQUEST_URI} !^/libs
+RewriteCond %{REQUEST_URI} !^/saml_login
+RewriteCond %{REQUEST_URI} !^/system
+RewriteCond %{REQUEST_URI} !^/tmp
+RewriteCond %{REQUEST_URI} !^/var
+RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.xml)$
+RewriteRule ^/(.*)$ /content/snb/$1 [PT,L]
+
+#robots.txt for www2.snb.ca
+RewriteRule ^/robots\.txt$ /content/snb/robots.txt [PT,L]
+
+#RewriteCond %{REQUEST_URI} ^/robots\.txt$
+#RewriteRule ^(.*)$ /content/snb/robots.txt [PT,L]
+
+#Below 3 conditions blocks bot traffic
+RewriteCond %{HTTP_USER_AGENT} ^.*Amazonbot.* [NC]
+RewriteRule ^ - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*GPTBot.* [NC]
+RewriteRule ^ - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*AhrefsBot.* [NC]
+RewriteRule ^ - [F,L]

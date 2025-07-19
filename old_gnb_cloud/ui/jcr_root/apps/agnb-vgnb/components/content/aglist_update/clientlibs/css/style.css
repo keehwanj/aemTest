@@ -1,0 +1,76 @@
+/*
+	/apps/agnb-vgnb/components/content/aglist_update/clientlibs/css/style.css
+ */
+/**START of aglist_update.css**/
+.aglist_update ul {
+  font-size:90%;
+  list-style:none outside none;
+  margin:0;
+  padding:0;
+  padding-bottom: 6px;
+  margin-bottom:6px;   
+}
+
+.aglist_update {
+  margin-bottom: 20px;
+}
+
+.aglist_update li {
+    margin-bottom:5px;
+    padding-left: 10px;
+}
+.aglist_update>div { 
+        padding:10px;  
+}
+.aglist_update>div.bottomborder {
+    border-bottom:1px solid #d3d3d3;   
+        padding:10px;  
+}
+.aglist_update .greyarrow ul { font-size: 80%; }
+.aglist_update div.padded {
+    padding:10px 20px 10px 20px;
+}
+.aglist_update div.bluearrow li {
+    margin-bottom:5px;
+    padding-left: 10px;
+    background:transparent url(/etc/designs/agnb-vgnb/clientlib/images/arrow_blue.gif) no-repeat scroll 0 5px;
+}
+.aglist_update div.bluearrow li:hover { background-image: url(/etc/designs/agnb-vgnb/clientlib/images/arrow.gif); }
+.aglist_update div.greyarrow li {
+  background: transparent url("/etc/designs/agnb-vgnb/clientlib/images/arrow.gif") no-repeat scroll 0 5px;
+  padding-left: 10px;
+}
+.aglist_update div.greyarrow li a, .aglist_update div.morelink a  {
+    color: #555555;  
+}
+.aglist_update div.greyarrow li a:hover, .aglist_update div.morelink a:hover  {
+    color: #000000;  
+}
+.aglist_update div.unstyled li, .aglist_update div.unstyled  {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+}
+.aglist_update div.unstyled li a:link, .aglist_update div.unstyled lia:visited {
+    color:#555;
+    font-size:80%;
+    text-decoration:none;
+    padding:0px 0 5px 0px;
+}
+.aglist_update div.unstyled li a:hover{
+    color:#000;
+    text-decoration:none;
+}
+.aglist_update div.morelink {
+  font-size:68%;
+}
+.aglist_update div.morelink a {
+  background:url("/etc/designs/agnb-vgnb/clientlib/images/arrow.gif") no-repeat scroll right 3px transparent;
+  padding-right:10px;
+}
+.aglist_update > div.bottomborder div.morelink {
+  border-top: 1px solid #d3d3d3;
+  padding-top: 10px;
+}
+/**END of aglist_update.css**/            
+

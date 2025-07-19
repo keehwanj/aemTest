@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Widget"
+    fieldDescription="This name of subscription id should be unique in all subscription list."
+    fieldLabel="Subscription ID"
+    name="./subscriptionID"
+    xtype="textfield"/>

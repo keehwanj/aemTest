@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Hero"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <setting
+                jcr:primaryType="cq:Panel"
+                title="Setting">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <description
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Description"
+                        height="100"
+                        name="./description"
+                        xtype="textarea"/>
+                </items>
+            </setting>
+            <type
+                jcr:primaryType="cq:Panel"
+                title="Type">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <type
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Type"
+                        name="./type"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <wrapper-forest
+                                jcr:primaryType="nt:unstructured"
+                                text="wrapper-forest"
+                                value="wrapper-forest"/>
+                            <wrapper-ocean
+                                jcr:primaryType="nt:unstructured"
+                                text="wrapper-ocean"
+                                value="wrapper-ocean"/>
+                            <wrapper-gold
+                                jcr:primaryType="nt:unstructured"
+                                text="wrapper-gold"
+                                value="wrapper-gold"/>
+                            <wrapper-crimson
+                                jcr:primaryType="nt:unstructured"
+                                text="wrapper-crimson"
+                                value="wrapper-crimson"/>
+                            <wrapper-black
+                                jcr:primaryType="nt:unstructured"
+                                text="wrapper-black"
+                                value="wrapper-black"/>
+                        </options>
+                    </type>
+                </items>
+            </type>
+        </items>
+    </items>
+</jcr:root>

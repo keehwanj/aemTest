@@ -1,0 +1,65 @@
+/**START of tabs.css**/
+.agtab {
+  margin: 5px 0 5px 0;
+}
+div.content {
+  /**border: #48f solid 2px; #48f -> active link**/
+  border: #e4e2e2 solid 2px;
+  clear: left;
+  padding: 1em;
+}
+
+div.content.inactive {
+  display: none;
+}
+
+ol#toc {
+  height: 2em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol#toc a {
+  background: #afadad url(/etc/designs/agnb-vgnb/clientlib/images/tabs-grey.gif);
+  color: #008;
+  display: block;
+  float: left;
+  height: 2em;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+ol#toc a:hover {
+  background-color: #706e70;
+  background-position: 0 -120px;
+}
+
+ol#toc a:hover span {
+  background-position: 100% -120px;
+}
+
+ol#toc li {
+  float: left;
+  margin: 0 5px 0 0;
+}
+
+ol#toc li a.active {
+  /**background-color: #48f;**/
+  background-color: #3d3d3d;
+  background-position: 0 -60px;
+  color: #fff;
+  font-weight: bold;
+}
+
+ol#toc li a.active span {
+  background-position: 100% -60px;
+}
+
+ol#toc span {
+  background: url(/etc/designs/agnb-vgnb/clientlib/images/tabs-grey.gif) 100% 0;
+  display: block;
+  line-height: 2em;
+  padding-right: 10px;
+}
+/**END of tabs.css**/

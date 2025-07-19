@@ -1,0 +1,359 @@
+/*
+	START of /etc/designs/gnbfluid-bootstrap/clientlibs/css/style.css
+*/
+
+#CQ .x-form-check-wrap input {
+    vertical-align: -webkit-baseline-middle;
+}
+
+/*dialog input field height override*/
+.ext-strict #CQ .x-form-text {
+    height: 22px;
+}
+
+
+/*2020-4-2*/
+.text .table td {
+    border-top: 1px solid rgb(27, 63, 98);
+}
+
+
+
+@charset "utf-8";
+/* CSS Document */
+
+/* DTT CUSTOM CSS */
+/*
+
+CONTENTS
+
+1. RESET
+2. FONTS AN TYPOGRAPHY
+3. NAVBAR
+4. BUTTONS
+5. COVER
+6. VIDEO
+7. CAROUSEL CUSTOM
+8. CTA
+9. FOOTER
+10. MEDIA QUERIES
+
+*/
+
+/* RESET */
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto';
+	color: #000000;
+	/*Reset base font size*/
+	font-size: 18px;
+	overflow-x: hidden;
+}
+
+
+/* FONTS AND TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Roboto';
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+h1 {
+
+}
+.page-title{
+
+}
+
+h2 {
+
+}
+
+h3 {
+}
+
+h4{
+
+}
+
+h5 {
+
+}
+
+p {
+	line-height: 1.5rem;
+
+}
+a{
+	color: #1266AC;
+	cursor: pointer;
+}
+.text-white a{
+	text-decoration: underline;
+	color: #ffffff;
+}
+.text-white a:hover{
+	text-decoration: none;
+}
+p a:hover{
+}
+ul, ol{
+	padding-left: 1rem;
+}
+.breadcrumb{
+	font-size: 0.75rem;
+	background: none;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: left;
+}
+.alert{
+	color: #000000;
+	padding-top: 2rem;
+	background-color: #FFECB3;
+	border-left: 10px solid #FBAB18;
+}
+.alert ol li{
+	padding: 0px;
+}
+.alert a{
+	text-decoration: underline;
+}
+.alert a:hover{
+	text-decoration: none;
+}
+
+/* NAVBAR */
+.navbar{
+	-webkit-box-shadow: 0px 3px 60px 0px rgba(0,0,0,0.08);
+	-moz-box-shadow: 0px 3px 60px 0px rgba(0,0,0,0.08);
+	box-shadow: 0px 3px 60px 0px rgba(0,0,0,0.08);
+	padding: 0.25rem 1.5rem;
+}
+.navbar a{
+	color: #000000;
+}
+.navbar-brand img{
+	max-width: 115px;
+}
+
+/* COLORS */
+.red {
+	color: #770D29;
+}
+
+.orange {
+	color: #CF6023;
+}
+
+.yellow {
+	color: rgba(248, 163, 27, 1);
+}
+
+.green {
+	color: #28A745;
+}
+.blue {
+	color: #1266AC;
+}
+.purple {
+	color: #564D65;
+}
+
+/* BUTTONS */
+.btn {
+	padding-right: 1.5rem;
+	padding-left: 1.5em;
+}
+
+/* Button primary */
+.btn-primary {
+	background-color: #1266AC;
+	border: 3px solid #1266AC;
+	color: #fff;
+}
+
+.btn-primary:hover {
+	color: #fff;
+}
+
+
+/* SECTION WRAPPERS */
+.part {
+	padding: 50px 15px;
+}
+.part-breadcrumb{
+	padding: 0px 15px;
+}
+.part-header{
+	padding: 0px 15px 50px 15px;
+}
+.part-alert{
+	padding: 30px 15px;
+}
+.part-bgr-img{
+	background-image: url("/etc/designs/covid-19-bootstrap/clientlibs/images/Covid-Optimized-Image-Overlay-1920px.jpg");
+	background-attachment: fixed;
+}
+.part-bgr-grey{
+	background-color: #F8F9FA;
+}
+.part-cases{
+	padding: 70px 15px;
+}
+
+.part-title{
+	padding-bottom: 40px;
+}
+.part-border {
+	margin: 0px;
+	padding: 50px 15px;
+	background-color: #f5f5f5;
+}
+.part-footer{
+	text-align: center;
+	padding: 30px 15px;
+	background-color:#F1F3F5;
+}
+
+/* CONTAINERS */
+/* No gutter between columns in Bootstrap grid */
+.row.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 50px;
+}
+
+.row.no-gutters>[class^="col-"],
+.row.no-gutters>[class*=" col-"] {
+	padding-right: 0;
+	padding-left: 0;
+}
+/* CARDS */
+.card{
+	border: none;
+}
+.card-body{
+	padding: 30px;
+}
+
+/* Stay safe and informed cards*/
+.card-link .card .card-body p, .card-link .card .card-body h5 {
+	color: #000000;
+}
+.card-link .card .card-body .learn-more{
+	color: #1266AC;
+}
+.card-link:hover .card .card-body .learn-more{
+	text-decoration: underline;
+}
+.card-link .card:hover{
+	-webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.15);
+}
+.card-body .icon{
+	max-width: 70px;
+	max-height: 70px;
+	margin-bottom: 20px;
+}
+
+.card-cases .card-body{
+	padding-bottom: 10px;
+}
+
+/* ACCORDION */
+.accordion .card{
+	background-color: #F8F9FA
+}
+.accordion .card-header{
+	background-color: #ffffff;
+	cursor: pointer;
+	border-bottom:3px solid #F8F9FA;
+	color: #1266AC;
+}
+.accordion .card-header:hover{
+	text-decoration: underline;
+}
+.accordion .card-header:before {
+    content: "-";
+	float: left; 
+	width: 20px;
+	text-decoration: none !important;
+}
+.accordion .card-header.collapsed:before {
+    /* symbol for "collapsed" panels */
+	content: "+"; 
+	text-decoration: none;
+	text-decoration: none !important;
+}
+.accordion .card-body{
+	background-color: #ffffff;
+}
+
+/* RESOURCES */
+.resources{
+	text-align: center;
+}
+.resources img{
+	border: 5px solid #fff;
+	max-width: 200px;
+}
+
+
+/* FOOTER */
+.footer {
+
+}
+
+
+/* MEDIA QUERIES */
+
+/* EXTRA SMALL DEVICES */
+/*(portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/* SMALL DEVICES */
+/*(landscape phones, 576px and up) */
+@media (min-width: 546px) {
+}
+
+/* MEDIUM DEVICES */
+/*(Tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+
+}
+
+/* LARGE DEVICES */
+/*(Desktops, 992px and up) */
+@media (min-width: 992px) {
+	.page-title{
+	font-size: 60px;
+	}
+	.page-description{
+	max-width: 620px;
+	}
+}
+
+/* XLARGE DEVICES */
+/*(Large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XXLARGE DEVICES */
+/*(Large desktops, 1440px and up) */
+@media (min-width: 1440px) {
+}
+
+
+
+/** END of /etc/designs/gnbfluid-bootstrap/clientlibs/css/style.css **/

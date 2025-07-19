@@ -1,0 +1,18 @@
+/*
+	START of /apps/snb-fluid/components/content/carousel/clientlibs/css/responsive-480px.css
+*/
+@media (max-width: 480px) {
+
+.container-fluid .carousel-caption { 
+    padding: 10px 20px;        
+}
+
+div.carousel-caption h1 {
+    font-size: 1.5rem;
+	line-height: 2.0rem;
+}
+
+}
+/*
+	END of /apps/snb-fluid/components/content/carousel/clientlibs/css/responsive-480px.css
+*/

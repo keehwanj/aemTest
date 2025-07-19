@@ -1,0 +1,16 @@
+/*
+	START of /etc/designs/gnbfluid-bootstrap/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+
+.container {
+    max-width: 1260px;
+}
+
+.container1 {
+    max-width: 1360px;
+}    
+
+/*
+	END of /etc/designs/gnbfluid-bootstrap/clientlibs/css/responsive-1200px.css
+ */

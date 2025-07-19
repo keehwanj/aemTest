@@ -1,0 +1,87 @@
+<%@include file="/libs/wcm/global.jsp" %>
+<%@page import="java.util.Locale"%>
+<%@page import="java.util.HashMap"%>
+
+<%
+HashMap<String,String> resources = new HashMap<String,String>();
+String lang = "fr";
+Locale locale = currentPage.getLanguage(true);
+if (locale == null || locale.getLanguage().equalsIgnoreCase("en")) {
+    lang = "en";
+    resources.put("email","Email this page");
+    resources.put("print","Print this page");
+    resources.put("subscribe","Subscribe to this page");
+    resources.put("smaller","Make font smaller");
+    resources.put("normal","Make font normal");
+    resources.put("bigger","Make font bigger");
+    resources.put("share","Share");      
+    resources.put("data_ga_property","UA-17231199-1");         
+
+} else {
+    resources.put("email","Envoyer cette page par courriel");
+    resources.put("print","Imprimer cette page");
+    resources.put("subscribe","S'inscrire à cette page");
+    resources.put("smaller","Faire le jeu de caract&egrave;res plus petit");
+    resources.put("normal","Faire le jeu de caract&egrave;res normal");
+    resources.put("bigger","Faire le jeu de caract&egrave;res plus grand");
+    resources.put("share","Partager");    
+    resources.put("data_ga_property","UA-17266347-1");             
+}
+
+%>
+
+
+
+<script>
+/**START of styleswitcher.js**/
+function setActiveStyleSheet(title) {
+	document.body.className = title;
+}
+
+function getActiveStyleSheet() {
+	return document.body.className;
+}
+
+function getPreferredStyleSheet() {
+	return document.body.className;
+}
+
+function createCookie(name, value, days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+		var expires = "; expires=" + date.toGMTString();
+	} else
+		expires = "";
+	document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for ( var i = 0; i < ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0) == ' ')
+			c = c.substring(1, c.length);
+		if (c.indexOf(nameEQ) == 0)
+			return c.substring(nameEQ.length, c.length);
+	}
+	return null;
+}
+
+window.onload = function(e) {
+	var cookie = readCookie("style");
+	var title = cookie ? cookie : getPreferredStyleSheet();
+	setActiveStyleSheet(title);
+}
+
+window.onunload = function(e) {
+	var title = getActiveStyleSheet();
+	createCookie("style", title, 365);
+}
+
+var cookie = readCookie("style");
+var title = cookie ? cookie : getPreferredStyleSheet();
+setActiveStyleSheet(title);    
+/**END of styleswitcher.js**/    
+</script> 

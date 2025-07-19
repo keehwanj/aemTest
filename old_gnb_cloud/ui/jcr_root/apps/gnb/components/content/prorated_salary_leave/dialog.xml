@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Pro-Rated Salary Leave Calculator"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <title
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Titles"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title_1
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Gross Bi-Weekly Pay"
+                        fieldLabel="Gross Bi-Weekly Pay"
+                        name="./title_1"
+                        xtype="textfield"/>
+                    <title_2
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Days to Take Off"
+                        fieldLabel="Days to Take Off"
+                        name="./title_2"
+                        xtype="textfield"/>
+                    <title_3
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of Pays"
+                        fieldLabel="Number of Pays"
+                        name="./title_3"
+                        xtype="textfield"/>
+                    <title_4
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Deduction per pay"
+                        fieldLabel="Deduction per pay"
+                        name="./title_4"
+                        xtype="textfield"/>
+                </items>
+            </title>
+            <errors
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Error message"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <error_1
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please enter your gross bi-weekly pay (format 1962.00)"
+                        fieldLabel="Gross Bi-Weekly Pay"
+                        name="./error_1"
+                        xtype="textfield"/>
+                    <error_2
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please enter the numbers of days you want to take off (1-40)"
+                        fieldLabel="Days to Take Off"
+                        name="./error_2"
+                        xtype="textfield"/>
+                    <error_3
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please enter the numbers of pays to have deductions made (1-26)"
+                        fieldLabel="Number of Pays"
+                        name="./error_3"
+                        xtype="textfield"/>
+                </items>
+            </errors>
+            <button
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Buttons"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <button_1
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Calculate"
+                        fieldLabel="Calculate"
+                        name="./button_1"
+                        xtype="textfield"/>
+                    <button_2
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Reset form"
+                        fieldLabel="Reset form"
+                        name="./button_2"
+                        xtype="textfield"/>
+                </items>
+            </button>
+        </items>
+    </items>
+</jcr:root>

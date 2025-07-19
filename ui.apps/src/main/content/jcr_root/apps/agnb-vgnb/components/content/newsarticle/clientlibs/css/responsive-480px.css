@@ -1,0 +1,11 @@
+/*
+	/apps/agnb-vgnb/components/content/newsarticle/clientlibs/css/responsive-480px.css
+ */
+@media (max-width: 480px) {
+  .newsarticle h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+}

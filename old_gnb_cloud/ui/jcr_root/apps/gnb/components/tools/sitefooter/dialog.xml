@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Site Footer"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <bottom
+                jcr:primaryType="cq:Panel"
+                title="Bottom">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <copyrightText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Copyright Text"
+                        name="./copyrightText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <feedbackText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Feedback Text"
+                        name="./feedbackText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <socialmediaText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Social Media Text"
+                        name="./socialmediaText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <socialmediaPath
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Social Media Page"
+                        name="./socialmediaPath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <privacyText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Privacy Text"
+                        name="./privacyText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <privacyPath
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Privacy Page"
+                        name="./privacyPath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <disclaimerText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Disclaimer Text"
+                        name="./disclaimerText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <disclaimerPath
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Disclaimer Page"
+                        name="./disclaimerPath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                </items>
+            </bottom>
+            <feedback
+                jcr:primaryType="cq:Panel"
+                title="Feeback">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <feedbackTitleText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Feedback Title Text"
+                        name="./feedbackTitleText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <requiredFieldsText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Required Fields Text"
+                        name="./requiredFieldsText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <nameText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Name Text"
+                        name="./nameText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <emailText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Email Text"
+                        name="./emailText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <commentsText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Comments Text"
+                        name="./commentsText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <addressText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Address Text"
+                        name="./addressText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <phoneText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Phone Text"
+                        name="./phoneText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <faxText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Fax Text"
+                        name="./faxText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <requiredFieldErrorText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Required Field Error Text"
+                        name="./requiredFieldErrorText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <notSentText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Not Sent Text"
+                        name="./notSentText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <sendFeedbackText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Send Feedback Text"
+                        name="./sendFeedbackText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <emailErrorText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Email Error Text"
+                        name="./emailErrorText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <cancelText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Cancel Text"
+                        name="./cancelText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <clearText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Clear Text"
+                        name="./clearText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                </items>
+            </feedback>
+        </items>
+    </items>
+</jcr:root>

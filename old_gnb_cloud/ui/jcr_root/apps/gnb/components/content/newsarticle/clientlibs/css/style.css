@@ -1,0 +1,46 @@
+/*
+	apps/gnb/components/content/newsarticle/clientlibs/css/style.css
+ */
+/**START of newsarticle.css**/
+
+.newsarticle .articleImage {
+    height:300px;
+    position:relative;
+    float:right;
+    margin:5px;
+}
+
+.newsarticle #sidebar  img {
+    border:1px solid #D3D3D3;
+    width: 288px;
+    padding:4px;
+}
+.newsarticle #sidebar  img.icon {
+    border:0px solid #D3D3D3;
+    width: auto;
+    padding: 0px;
+    margin: 0px 5px 0px 5px;
+}
+.newsarticle #sidebar .webcast {
+ 	font-size:90%;
+  	margin: 10px 10px;
+  	padding-bottom: 10px;
+  	border-bottom: 1px solid #D3D3D3;
+}
+.newsarticle #sidebar .toolbar {
+    font-size: 95%; 
+}
+.newsarticle .articleBody {
+    margin-top:5px;
+    padding-bottom:20px;
+    /*padding-right:300px;*/
+}
+.newsarticle #sidebar .padded {
+    padding: 10px;
+}
+.newsarticle .articleBody p { 
+    margin-top: 10px; 
+}
+
+
+/**END of newsarticle.css**/

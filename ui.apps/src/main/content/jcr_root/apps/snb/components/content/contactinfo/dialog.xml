@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Text"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <contactId
+            jcr:primaryType="cq:Widget"
+            fieldLabel="GNB Contact ID"
+            name="./contactId"
+            xtype="textfield"/>
+        <contactText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Contact Text"
+            name="./contactText"
+            xtype="textfield"/>
+        <departmentText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Department Text"
+            name="./departmentText"
+            xtype="textfield"/>
+        <emailText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Email Text"
+            name="./emailText"
+            xtype="textfield"/>
+        <faxText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Fax Text"
+            name="./faxText"
+            xtype="textfield"/>
+        <getDirectionsText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Get Directions Text"
+            name="./getDirectionsText"
+            xtype="textfield"/>
+        <locationText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Location Text"
+            name="./locationText"
+            xtype="textfield"/>
+        <mailingText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Mailing Text"
+            name="./mailingText"
+            xtype="textfield"/>
+        <organisationText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Organisation Text"
+            name="./organisationText"
+            xtype="textfield"/>
+        <phoneText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Phone Text"
+            name="./phoneText"
+            xtype="textfield"/>
+    </items>
+</jcr:root>

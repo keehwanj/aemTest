@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Property Sale Display Component - Tender"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general_text
+            jcr:primaryType="cq:Widget"
+            title="General Texts"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <additionalInfo_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Additional Information or Additional Information"
+                    fieldLabel="Additional Information"
+                    name="./additionalInfo_Text"
+                    xtype="textfield"/>
+                <tenderNotice_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Notice of Tender (pdf) or Notice of Tender (pdf)"
+                    fieldLabel="Notice of Tender"
+                    name="./tenderNotice_Text"
+                    xtype="textfield"/>
+                <informationSheet_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Information Sheet (pdf) or Information Sheet (pdf)"
+                    fieldLabel="Information Sheet"
+                    name="./informationSheet_Text"
+                    xtype="textfield"/>
+                <map_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Map (pdf or link) or Map (pdf or link)"
+                    fieldLabel="Map"
+                    name="./map_Text"
+                    xtype="textfield"/>
+                <photo_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Photos (pdf) or Photos (pdf)"
+                    fieldLabel="Photos"
+                    name="./photo_Text"
+                    xtype="textfield"/>
+                <otherDoc_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Other Docs (pdf) or Other Docs (pdf)"
+                    fieldLabel="Other Docs"
+                    name="./otherDoc_Text"
+                    xtype="textfield"/>
+            </items>
+        </general_text>
+        <tender_text
+            jcr:primaryType="cq:Widget"
+            title="Tender Texts"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tenderNo_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : TENDER No: or TENDER No:"
+                    fieldLabel="Tender No"
+                    name="./tenderNo_Text"
+                    xtype="textfield"/>
+                <county_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : County or County"
+                    fieldLabel="County"
+                    name="./county_Text"
+                    xtype="textfield"/>
+                <estimateValue_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Estimate of Value or Estimate of Value"
+                    fieldLabel="Estimate of Value"
+                    name="./estimateValue_Text"
+                    xtype="textfield"/>
+                <closingDate_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Closing Date or Closing Date"
+                    fieldLabel="Closing Date"
+                    name="./closingDate_Text"
+                    xtype="textfield"/>
+            </items>
+        </tender_text>
+        <nodata
+            jcr:primaryType="cq:Widget"
+            title="No Data"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <nodata_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : No Data or No Data"
+                    fieldLabel="No Data"
+                    name="./nodata_Text"
+                    xtype="textfield"/>
+            </items>
+        </nodata>
+    </items>
+</jcr:root>

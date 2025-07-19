@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="cq:Panel"
+            title="General">
+            <items
+                jcr:primaryType="cq:WidgetCollection"
+                hideYesNo="">
+                <id
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="ID"
+                    name="./id"
+                    xtype="numberfield"/>
+                <first_name
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="First Name"
+                    name="./first_name"
+                    xtype="textfield"/>
+                <company_name
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Company Name"
+                    name="./company_name"
+                    xtype="textfield"/>
+                <licence_no
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Licence Number"
+                    name="./licence_no"
+                    xtype="textfield"/>
+                <last_name
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Last Name"
+                    name="./last_name"
+                    xtype="textfield"/>
+                <hideYesNo
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    defaultValue="No"
+                    fieldLabel="Hide This Data?"
+                    name="./hideYesNo"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <no
+                            jcr:primaryType="nt:unstructured"
+                            text="No"
+                            value="No"/>
+                        <yes
+                            jcr:primaryType="nt:unstructured"
+                            text="Yes"
+                            value="Yes"/>
+                    </options>
+                </hideYesNo>
+                <city_name
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="City Name"
+                    name="./city_name"
+                    xtype="textfield"/>
+                <region
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Central"
+                    fieldLabel="Region"
+                    name="./region"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <central
+                            jcr:primaryType="nt:unstructured"
+                            text="Central"
+                            value="Central"/>
+                        <east
+                            jcr:primaryType="nt:unstructured"
+                            text="East"
+                            value="East"/>
+                        <north
+                            jcr:primaryType="nt:unstructured"
+                            text="North"
+                            value="North"/>
+                        <south
+                            jcr:primaryType="nt:unstructured"
+                            text="South"
+                            value="South"/>
+                    </options>
+                </region>
+                <phone_no
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Phone Number"
+                    name="./phone_no"
+                    xtype="textfield"/>
+                <phone_no_2
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Phone Number 2"
+                    name="./phone_no_2"
+                    xtype="textfield"/>
+            </items>
+        </general>
+        <english
+            jcr:primaryType="cq:Panel"
+            title="English">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <non_conventional
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the type of non-conventional license."
+                    fieldLabel="Type of Non-Conventional License"
+                    name="./en_non_conventional"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </non_conventional>
+            </items>
+        </english>
+        <french
+            jcr:primaryType="cq:Panel"
+            title="French">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <non_conventional
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the type of non-conventional license."
+                    fieldLabel="Type of Non-Conventional License"
+                    name="./fr_non_conventional"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </non_conventional>
+            </items>
+        </french>
+    </items>
+</jcr:root>

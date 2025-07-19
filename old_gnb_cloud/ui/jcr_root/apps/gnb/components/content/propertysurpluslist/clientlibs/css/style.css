@@ -1,0 +1,22 @@
+/*
+	/apps/gnb/components/content/propertysurpluslist/clientlibs/css/style.css
+*/
+/**START of style.css**/
+
+.propertysurpluslist td.first {
+    border-bottom: 0px;
+}
+
+
+
+.propertysurpluslist .table > tbody > tr > td {
+
+    border-top: 0px solid #ddd;
+}
+
+.propertysurpluslist td {
+    border-bottom: 1px solid #D3D3D3;
+    padding: 5px;
+}
+
+/**END of style.css**/

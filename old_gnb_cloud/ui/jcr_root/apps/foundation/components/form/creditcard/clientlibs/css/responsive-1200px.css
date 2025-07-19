@@ -1,0 +1,19 @@
+/*
+	/apps/foundation/components/form/checkbox/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+
+.form_leftcol {
+	float: right;        
+}    
+
+
+.form_leftcollabel {
+	text-align: right;
+	float: left;        
+}    
+.form_leftcolmark{
+	float: right;
+    color: red;
+}
+}

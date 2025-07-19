@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="400"
+    stateful="false"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs jcr:primaryType="cq:TabPanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <props
+                    jcr:primaryType="cq:Panel"
+                    border="false"
+                    height=""
+                    title="Global"
+                    width="">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <hideTitle
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Do not display title on page"
+                            inputValue="false"
+                            name="./hideTitle"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <hideBreadcrumbs
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Do not display breadcrumbs on page"
+                            inputValue="false"
+                            name="./hideBreadcrumbs"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <hideLeft
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Do not display left column in phone for right template"
+                            fieldLabel="Do not display left column."
+                            inputValue="false"
+                            name="./hideLeft"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <autopagerefresh
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Check the box in case of auto page refresh"
+                            fieldLabel="Auto page refresh"
+                            inputValue="false"
+                            name="./autopagerefresh"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <nocache
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="&#x9;&#xa;Check the box in case of no cache of this webpage.(&lt;img>)"
+                            fieldLabel="No cache-image"
+                            inputValue="false"
+                            name="./nocache"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <nocache_a_pdf
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="&#x9;&#xa;Check the box in case of no cache of this webpage.(a tag with .pdf)"
+                            fieldLabel="No cache -a, .pdf"
+                            inputValue="false"
+                            name="./nocache_a_pdf"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <nocache_area_pdf
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="&#x9;&#xa;Check the box in case of no cache of this webpage.(area tag with .pdf)"
+                            fieldLabel="No cache - area, .pdf"
+                            inputValue="false"
+                            name="./nocache_area_pdf"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <metaReferrer
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Check the box to add meta tag &amp;lt;meta name=&quot;referrer&quot; content=&quot;no-referrer-when-downgrade&quot;&amp;gt; "
+                            fieldLabel="meta referrer"
+                            inputValue="false"
+                            name="./metaReferrer"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <subscription
+                            jcr:primaryType="cq:Widget"
+                            allowEmpty="true"
+                            fieldDescription="Select true if this page is on subscription routine"
+                            fieldLabel="Subscription?"
+                            name="./subscription"
+                            type="select"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <empty
+                                    jcr:primaryType="nt:unstructured"
+                                    text="&amp;nbsp;"
+                                    value=""/>
+                                <true
+                                    jcr:primaryType="nt:unstructured"
+                                    text="True"
+                                    value="true"/>
+                                <false
+                                    jcr:primaryType="nt:unstructured"
+                                    text="False"
+                                    value="false"/>
+                            </options>
+                        </subscription>
+                        <subscriptionID
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="This name of subscription id should be unique in all subscription list."
+                            fieldLabel="Subscription ID"
+                            name="./subscriptionID"
+                            xtype="textfield"/>
+                        <nosnippet
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Check the box in case of nosnippet for Google Search"
+                            fieldLabel="Nosnippet"
+                            inputValue="false"
+                            name="./nosnippet"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <nocrawl
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Check the box in case of no crawl for Google Search"
+                            fieldLabel="No crawl"
+                            inputValue="false"
+                            name="./nocrawl"
+                            type="checkbox"
+                            xtype="selection"/>
+                    </items>
+                </props>
+                <basic
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_basic.infinity.json"
+                    xtype="cqinclude"/>
+                <advanced
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_advanced.infinity.json"
+                    xtype="cqinclude"/>
+                <image
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_image.infinity.json"
+                    xtype="cqinclude"/>
+                <cloudservices
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_cloudservices.infinity.json"
+                    xtype="cqinclude"/>
+                <blueprint
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_blueprint.infinity.json"
+                    xtype="cqinclude"/>
+                <livecopy
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_livecopy.infinity.json"
+                    xtype="cqinclude"/>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

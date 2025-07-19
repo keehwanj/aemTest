@@ -1,0 +1,106 @@
+/*
+ ADOBE CONFIDENTIAL
+ __________________
+
+  Copyright 2012 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+
+	featuretile.css
+ */
+/**START of featuretile.css**/
+.featuretile .more_title_link {
+    margin-top: -26px;
+    float:right;
+    }
+
+
+.featuretile .more_title_link a {
+    background:transparent url(/etc/designs/agnb-vgnb/clientlib/images/arrow.gif) no-repeat scroll right center;
+    color:#555555;
+    float:right;
+    font-size:75%;
+    font-weight:normal;
+    margin-right:15px;
+    margin-top:5px;
+    padding:0 10px 0 0;
+    text-transform:uppercase;
+}
+
+.featuretile .padded {
+    padding: 10px;
+    padding-bottom:0px;
+    border-top:1px solid #d3d3d3;
+}
+.featuretile .bottomborder {
+    border-bottom:1px solid #d3d3d3;
+    margin-bottom: 15px;
+}
+.featuretile .imagecontainer {
+  background-color:#FFFFFF;
+  border:1px solid #D3D3D3;
+  padding:4px;
+}    
+    
+.featuretile h2 {
+  color:#0064A5;
+  font-size:95%;
+  font-weight:normal;
+  margin-bottom:0;
+  margin-top:10px;
+  padding: 0 20px;
+}
+
+.featuretile h2.feature {
+  font-size:130%;
+  font-weight:normal;
+  padding-bottom: 0;
+}
+.featuretile h2.feature span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: transparent url("/etc/designs/agnb-vgnb/clientlib/images/arrow_blue.gif") no-repeat scroll 0 0;
+    vertical-align: middle;
+}
+
+.featuretile h2.feature a {
+  padding-right: 5px;
+}
+
+.featuretile h2.normal_bold {
+    font-weight: bold;
+    }
+.featuretile h2, .featuretile p, .featuretile .featuretile_more {
+  padding: 0 20px 10px;
+}
+
+.featuretile .featuretile_more a, .sectiontitle h2 a {
+	font-size:80%;
+    background:url(/etc/designs/agnb-vgnb/clientlib/images/arrow_blue.gif) no-repeat center right;
+    padding:0px 10px 0px 0;
+}
+
+.featuretile.section h2.normal {
+  padding: 0 20px;
+}
+/**END of featuretile.css**/
+
+.imagecontainer img {
+    display: block;
+    width: 100%;
+    vertical-align: bottom;
+    -ms-interpolation-mode: bicubic;
+}
+
+.textimage .image {
+    padding-bottom: 10px;
+}

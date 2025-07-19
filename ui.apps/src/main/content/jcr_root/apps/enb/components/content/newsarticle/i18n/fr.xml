@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    cq:lastReplicated="{Date}2013-12-16T22:20:40.585-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:language="fr"
+    jcr:mixinTypes="[cq:ReplicationStatus,mix:language]"
+    jcr:primaryType="sling:Folder">
+    <cancelledText
+        cq:lastReplicated="{Date}2013-12-16T22:20:41.334-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="cancelledText"
+        sling:message="Annulé "/>
+    <eventText
+        cq:lastReplicated="{Date}2013-12-16T22:20:41.895-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="eventText"
+        sling:message="Événement"/>
+    <itineraryText
+        cq:lastReplicated="{Date}2013-12-16T22:20:42.410-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="itineraryText"
+        sling:message="Itinéraire"/>
+    <linksHeading
+        cq:lastReplicated="{Date}2013-12-16T22:20:42.909-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="linksHeading"
+        sling:message="Liens connexes"/>
+    <liveWebcastInterpretedText
+        cq:lastReplicated="{Date}2013-12-16T22:20:43.424-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="liveWebcastInterpretedText"
+        sling:message="Français"/>
+    <liveWebcastOriginalText
+        cq:lastReplicated="{Date}2013-12-16T22:20:44.063-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="liveWebcastOriginalText"
+        sling:message="Original"/>
+    <mediaContactText
+        cq:lastReplicated="{Date}2013-12-16T22:20:44.937-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="mediaContactTitle"
+        sling:message="Renseignements pour les médias"/>
+    <moreText
+        cq:lastReplicated="{Date}2013-12-16T22:20:49.227-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="moreText"
+        sling:message="autre"/>
+    <newpostText
+        cq:lastReplicated="{Date}2013-12-16T22:20:45.452-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="newpostText"
+        sling:message="Nouveauté"/>
+    <newsConferenceText
+        cq:lastReplicated="{Date}2013-12-16T22:20:45.514-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="newsConferenceText"
+        sling:message="Conférence de presse"/>
+    <officeClosureText
+        cq:lastReplicated="{Date}2013-12-16T22:20:46.232-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="officeClosureText"
+        sling:message="Fermeture de bureaux"/>
+    <postponedText
+        cq:lastReplicated="{Date}2013-12-16T22:20:47.215-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="postponedText"
+        sling:message="Reporté "/>
+    <publicHearingText
+        cq:lastReplicated="{Date}2013-12-16T22:20:47.792-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="publicHearingText"
+        sling:message="Audience publique"/>
+    <revisedText
+        cq:lastReplicated="{Date}2013-12-16T22:20:48.431-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="revisedText"
+        sling:message="Révisé"/>
+    <timechangeText
+        cq:lastReplicated="{Date}2013-12-16T22:20:48.541-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="timechangeText"
+        sling:message="Changement d’heure"/>
+    <webcastHeading
+        cq:lastReplicated="{Date}2013-12-16T22:20:49.180-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="webcastHeading"
+        sling:message="Diffusion en direct sur le Web"/>
+</jcr:root>

@@ -1,0 +1,17 @@
+/*
+	apps/gnb/components/search/multimediasearch/clientlibs/css/style.css
+*/
+
+/**START of style.css - multimediasearchinput.css**/
+
+.multimediasearch #search_column td {
+  padding: 10px 0 0 0;
+}
+
+.wide_multimedia_item .wide_multimedia_content h2 {
+  color: #1874b1;
+
+  margin: 5px 0 5px 0;
+}
+
+/**END of style.css - multimediasearchinput.css**/

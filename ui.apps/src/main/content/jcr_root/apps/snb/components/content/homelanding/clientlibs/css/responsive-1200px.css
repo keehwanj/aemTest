@@ -1,0 +1,13 @@
+/*
+	/apps/snb/components/page/home_new/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+  .landingContent {
+    padding: 0px 100px 50px 90px;
+  }
+
+  .languageButton .btn {
+    padding: 10px 30px;
+    font-size: 1.2em;
+  }
+}

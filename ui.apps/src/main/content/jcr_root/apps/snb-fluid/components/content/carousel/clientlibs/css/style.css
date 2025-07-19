@@ -1,0 +1,107 @@
+/*
+	START of /apps/snb-fluid/components/content/carousel/clientlibs/css/style.css
+*/
+.carousel-control {
+  width: 5%;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  top: 86%;
+}
+
+.carousel-control.left {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.carousel-control.right {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.carousel-indicators {
+  left: 5%;
+  width: 35%;
+  padding-left: 0;
+  bottom: 18px;
+  text-align: left;
+  margin-left: 0%;
+}
+
+.carousel-indicators .active {
+  background-color: gray;
+}
+
+.carousel-indicators li {
+  border: 1px solid gray;
+  border-radius: 00px;
+}
+.carousel-caption h3 {
+  /*font-size: 140%;*/
+  font-weight: bold;
+  margin: 0 0 5px 0px;
+}
+
+.carousel-caption p {
+  font-size: 98%;
+}
+
+.carousel-caption {
+  text-align: left;
+  top: 0%;
+  left: 4%;
+  right: 66%;
+  color: black;
+  text-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+/****/
+
+.carousel .carousel-inner {
+  margin: 5px 0px 10px 0px;
+}
+
+.container-fluid .carousel-caption {
+  box-sizing: border-box;
+  top: unset;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+  margin: 0 auto;
+  padding: 10px 85px;
+  text-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+div.carousel-caption p {
+  margin: 38px 0 0;
+  padding: 0;
+  font-size: 1.5rem;
+  line-height: 32px;
+}
+
+div.carousel-caption a.btn {
+  margin: 38px 0 0;
+}
+
+div.carousel-caption h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  line-height: 3.375rem;
+}
+
+.carousel-caption {
+  text-align: left;
+}
+/*
+	END of /apps/snb-fluid/components/content/carousel/clientlibs/css/style.css
+*/

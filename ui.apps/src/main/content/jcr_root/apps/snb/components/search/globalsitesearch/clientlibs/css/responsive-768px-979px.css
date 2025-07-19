@@ -1,0 +1,27 @@
+/*
+	/apps/gnb/components/search/globalsitesearch/clientlibs/css/responsive-768px-979px.css
+*/
+/* iPad portrait */
+@media (min-width: 768px) and (max-width: 979px) {
+  .globalsitesearch .col-xs-4,
+  .globalsitesearch .col-sm-4,
+  .col-md-4,
+  .globalsitesearch .col-lg-4 {
+    padding-right: 0px;
+  }
+
+  .globalsitesearch .col-xs-8,
+  .globalsitesearch .col-sm-8,
+  .globalsitesearch .col-md-8,
+  .globalsitesearch .col-lg-8 {
+    padding-left: 0px;
+  }
+
+  .globalsitesearch .col-xs-12,
+  .globalsitesearch .col-sm-12,
+  .globalsitesearch .col-md-12,
+  .globalsitesearch .col-lg-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

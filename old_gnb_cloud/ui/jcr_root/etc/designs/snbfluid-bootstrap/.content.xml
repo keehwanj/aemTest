@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2019-03-13T08:23:50.725-03:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2019-04-24T14:31:58.857-03:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/libs/wcm/core/templates/designpage"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="snbfluid-bootstrap"
+        jcr:uuid="eddef266-5675-4704-830e-25c67e8004f5"
+        sling:resourceType="wcm/core/components/designer"/>
+    <clientlibs/>
+    <clientlibs-all/>
+</jcr:root>

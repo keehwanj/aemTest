@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Hero"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <setting
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Setting"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Title"
+                                name="./title"/>
+                            <description
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Description"
+                                name="./description"
+                                rows="{Long}5"/>
+                        </items>
+                    </column>
+                </items>
+            </setting>
+            <type
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Type"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <type
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Type"
+                                name="./type">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <wrapper-forest
+                                        jcr:primaryType="nt:unstructured"
+                                        text="wrapper-forest"
+                                        value="wrapper-forest"/>
+                                    <wrapper-ocean
+                                        jcr:primaryType="nt:unstructured"
+                                        text="wrapper-ocean"
+                                        value="wrapper-ocean"/>
+                                    <wrapper-gold
+                                        jcr:primaryType="nt:unstructured"
+                                        text="wrapper-gold"
+                                        value="wrapper-gold"/>
+                                    <wrapper-crimson
+                                        jcr:primaryType="nt:unstructured"
+                                        text="wrapper-crimson"
+                                        value="wrapper-crimson"/>
+                                    <wrapper-black
+                                        jcr:primaryType="nt:unstructured"
+                                        text="wrapper-black"
+                                        value="wrapper-black"/>
+                                </items>
+                            </type>
+                        </items>
+                    </column>
+                </items>
+            </type>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,22 @@
+/*
+	START of /apps/nbpc-cpnb/components/navigation/departmentnav/clientlibs/css/responsive-980px-1199px.css
+*/
+/* iPad Landscape */
+@media (min-width: 980px) and (max-width: 1199px) {
+  /*START of Department Navigation*/
+  ul#departmentNav.nav.navbar-nav {
+    font-size: 130%;
+    width: 100%;
+    text-align: center;
+  }
+
+  /*END of Department Navigation*/
+
+  .departmentnav .navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+/*
+	END of /apps/nbpc-cpnb/components/navigation/departmentnav/clientlibs/css/responsive-980px-1199px.css
+*/

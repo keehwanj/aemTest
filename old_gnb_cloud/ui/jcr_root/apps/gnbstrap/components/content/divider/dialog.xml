@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Divider / HR"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <type
+                jcr:primaryType="cq:Panel"
+                title="Type">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <type
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Type"
+                        name="./type"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <thick
+                                jcr:primaryType="nt:unstructured"
+                                text="Thick"
+                                value="style=&quot;height:3px;border:none;color:#333;background-color:#333;&quot;"/>
+                            <thin
+                                jcr:primaryType="nt:unstructured"
+                                text="Thin"
+                                value=" "/>
+                        </options>
+                    </type>
+                </items>
+            </type>
+        </items>
+    </items>
+</jcr:root>

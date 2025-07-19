@@ -1,0 +1,11 @@
+/*
+	/apps/gnb/components/content/propertysurplusdisplay/clientlibs/css/style.css
+*/
+/**START of style.css**/
+
+
+.propertysurplusdisplay td {
+    border-bottom: 0px solid #D3D3D3;
+    padding: 5px;
+}
+/**END of style.css**/

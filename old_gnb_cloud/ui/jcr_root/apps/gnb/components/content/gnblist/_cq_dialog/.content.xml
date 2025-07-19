@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="List"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <general
+                jcr:primaryType="nt:unstructured"
+                jcr:title="General Options"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <listStyle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="List Style"
+                                name="./listStyle">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <greyarrow
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Grey (with arrow)"
+                                        value="greyarrow"/>
+                                    <bluearrow
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Blue (with arrow)"
+                                        value="bluearrow"/>
+                                    <footer
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Unstyled"
+                                        value="unstyled"/>
+                                </items>
+                            </listStyle>
+                            <moreText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="More Link Text"
+                                name="./moreLinkText"/>
+                            <moreLink
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="More Link"
+                                name="./moreLink"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <padded9
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./padded"
+                                text="Padded"/>
+                            <padded9-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./padded@Delete"
+                                value="{Boolean}true"/>
+                            <shaded10
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./shaded"
+                                text="Shaded"/>
+                            <shaded10-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./shaded@Delete"
+                                value="{Boolean}true"/>
+                            <border
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./border"
+                                text="Show Bottom Border"/>
+                            <border-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./border@Delete"
+                                value="{Boolean}true"/>
+                            <feeddescription
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="RSS Feed Description"
+                                name="./feeddescription"
+                                validateOnBlur="true"
+                                xtype="textarea"/>
+                            <feedname
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="RSS Feed Name"
+                                name="./feedname"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <feedEnabled
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./feedEnabled"
+                                text="Enable Feed"/>
+                            <feedenabled-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./feedEnabled@Delete"
+                                value="{Boolean}true"/>
+                            <reverseOrder
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./reverseOrder"
+                                text="Display Reverse Order"/>
+                            <reverseorder-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./reverseOrder@Delete"
+                                value="{Boolean}true"/>
+                        </items>
+                    </columns>
+                </items>
+            </general>
+            <list1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="List 1-7"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <link1
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 1"
+                                name="./link1"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link1text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 1 Text"
+                                name="./linktext1"/>
+                            <link2
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 2"
+                                name="./link2"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link2text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 2 Text"
+                                name="./linktext2"/>
+                            <link3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 3"
+                                name="./link3"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link3text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 3 Text"
+                                name="./linktext3"/>
+                            <link4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 4"
+                                name="./link4"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link4text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 4 Text"
+                                name="./linktext4"/>
+                            <link5
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 5"
+                                name="./link5"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link5text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 5 Text"
+                                name="./linktext5"/>
+                            <link6
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 6"
+                                name="./link6"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link6text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 6 Text"
+                                name="./linktext6"/>
+                            <link7
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 7"
+                                name="./link7"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link7text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 7 Text"
+                                name="./linktext7"/>
+                        </items>
+                    </columns>
+                </items>
+            </list1>
+            <list2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="List 8-14"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <link8
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 8"
+                                name="./link8"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link8text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 8 Text"
+                                name="./linktext8"/>
+                            <link9
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 9"
+                                name="./link9"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link9text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 9 Text"
+                                name="./linktext9"/>
+                            <link10
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 10"
+                                name="./link10"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link10text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 10 Text"
+                                name="./linktext10"/>
+                            <link11
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 11"
+                                name="./link11"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link11text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 11 Text"
+                                name="./linktext11"/>
+                            <link12
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 12"
+                                name="./link12"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link12text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 12 Text"
+                                name="./linktext12"/>
+                            <link13
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 13"
+                                name="./link13"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link13text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 13 Text"
+                                name="./linktext13"/>
+                            <link14
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 14"
+                                name="./link14"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link14text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 14 Text"
+                                name="./linktext14"/>
+                        </items>
+                    </columns>
+                </items>
+            </list2>
+            <list3
+                jcr:primaryType="nt:unstructured"
+                jcr:title="List 15-21"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <link15
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 15"
+                                name="./link15"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link15text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 15 Text"
+                                name="./linktext15"/>
+                            <link16
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 16"
+                                name="./link16"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link16text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 16 Text"
+                                name="./linktext16"/>
+                            <link17
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 17"
+                                name="./link17"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link17text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 17 Text"
+                                name="./linktext17"/>
+                            <link18
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 18"
+                                name="./link18"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link18text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 18 Text"
+                                name="./linktext18"/>
+                            <link19
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 19"
+                                name="./link19"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link19text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 19 Text"
+                                name="./linktext19"/>
+                            <link20
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 20"
+                                name="./link20"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link20text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 20 Text"
+                                name="./linktext20"/>
+                            <link21
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Link 21"
+                                name="./link21"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <link21text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link 21 Text"
+                                name="./linktext21"/>
+                        </items>
+                    </columns>
+                </items>
+            </list3>
+        </items>
+    </content>
+</jcr:root>

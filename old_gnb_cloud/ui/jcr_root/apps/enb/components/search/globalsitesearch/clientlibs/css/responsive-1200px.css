@@ -1,0 +1,15 @@
+/*
+	/apps/gnb/components/search/globalsitesearch/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+
+table.gsc-search-box {
+	width: 90% !important;
+}
+
+
+}
+
+
+
+

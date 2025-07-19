@@ -1,0 +1,80 @@
+/*
+	START of /apps/snb-fluid/components/content/gnblist_update/clientlibs/css/style.css
+ */
+
+.gnblist_update ul {
+  font-size:98%;
+  list-style:none outside none;
+  margin:0;
+  padding:0;
+}
+/**
+.gnblist_update {
+  margin-bottom: 20px;
+}
+**/
+.gnblist_update li {
+    margin-bottom:5px;
+    padding-left: 10px;
+}
+/**
+.gnblist_update>div { 
+        padding:10px;  
+}
+**/
+.gnblist_update>div.bottomborder {
+    border-bottom:1px solid #d3d3d3;   
+        padding:10px;  
+}
+.gnblist_update .greyarrow ul { font-size: 98%; }
+.gnblist_update div.padded {
+    padding:10px 20px 10px 20px;
+}
+.gnblist_update div.bluearrow li {
+    margin-bottom:5px;
+    padding-left: 10px;
+    background:transparent url(/etc/designs/snb-bootstrap/clientlibs/images/arrow_blue.gif) no-repeat scroll 0 5px;
+}
+.gnblist_update div.bluearrow li:hover { 
+    /*background-image: url(/etc/designs/snb-bootstrap/clientlibs/images/arrow.gif); */
+}
+.gnblist_update div.greyarrow li {
+  background: transparent url("/etc/designs/snb-bootstrap/clientlibs/images/arrow.gif") no-repeat scroll 0 5px;
+  padding-left: 10px;
+}
+.gnblist_update div.greyarrow li a, .gnblist_update div.morelink a  {
+    color: #555555;  
+}
+.gnblist_update div.greyarrow li a:hover, .gnblist_update div.morelink a:hover  {
+    color: #000000;  
+}
+.gnblist_update div.unstyled li, .gnblist_update div.unstyled  {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+}
+.gnblist_update div.unstyled li a:link, .gnblist_update div.unstyled lia:visited {
+    color:#555;
+    font-size:98%;
+    text-decoration:none;
+    padding:0px 0 5px 0px;
+}
+.gnblist_update div.unstyled li a:hover{
+    color:#000;
+    text-decoration:none;
+}
+.gnblist_update div.morelink {
+  font-size:90%;
+}
+.gnblist_update div.morelink a {
+  background:url("/etc/designs/snb-bootstrap/clientlibs/images/arrow.gif") no-repeat scroll right 3px transparent;
+  padding-right:10px;
+}
+.gnblist_update > div.bottomborder div.morelink {
+  border-top: 1px solid #d3d3d3;
+  padding-top: 10px;
+}
+
+/*
+	END of /apps/snb-fluid/components/content/gnblist_update/clientlibs/css/style.css
+*/

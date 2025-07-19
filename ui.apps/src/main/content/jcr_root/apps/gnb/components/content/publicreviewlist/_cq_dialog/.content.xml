@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Public Review List Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <list
+                jcr:primaryType="nt:unstructured"
+                jcr:title="List"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <listFrom
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Build list using"
+                                name="./listFrom"
+                                value="">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <children
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Child pages"
+                                        value="children"/>
+                                    <querybuilder
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Advanced Search"
+                                        value="querybuilder"/>
+                                    <search
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Search"
+                                        value="search"/>
+                                    <static
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Fixed list"
+                                        value="static"/>
+                                </items>
+                            </listFrom>
+                            <orderBy
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/autocomplete"
+                                fieldDescription="Enter a property like 'jcr:created'"
+                                fieldLabel="Order by"
+                                name="./orderBy">
+                                <options
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/autocomplete/list"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <created
+                                        jcr:primaryType="nt:unstructured"
+                                        value="jcr:created"/>
+                                    <modified
+                                        jcr:primaryType="nt:unstructured"
+                                        value="cq:lastModified"/>
+                                    <template
+                                        jcr:primaryType="nt:unstructured"
+                                        value="cq:template"/>
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        value="jcr:title"/>
+                                    <deadline
+                                        jcr:primaryType="nt:unstructured"
+                                        value="deadline"/>
+                                </items>
+                            </orderBy>
+                            <limit
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                fieldDescription="Maximum number of items displayed in list"
+                                fieldLabel="Limit"
+                                name="./limit"/>
+                            <pagination
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                fieldLabel="Paginate after"
+                                name="./pageMax"/>
+                            <feed
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./feedEnabled"
+                                text="Enable Feed"/>
+                            <feed-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./feedEnabled@Delete"
+                                value="{Boolean}true"/>
+                            <feeddescription
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="RSS Feed Description"
+                                name="./feeddescription"
+                                validateOnBlur="true"
+                                xtype="textarea"/>
+                            <feedname
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="RSS Feed Name"
+                                name="./feedname"
+                                validateOnBlur="true"
+                                xtype="textfield">
+                                <feedname
+                                    jcr:primaryType="nt:unstructured"
+                                    fieldLabel="RSS Feed Name"
+                                    name="./feedname"
+                                    validateOnBlur="true"
+                                    xtype="textfield"/>
+                            </feedname>
+                        </items>
+                    </columns>
+                </items>
+            </list>
+            <children
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Child pages"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <parentPage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Leave empty to use current page"
+                                fieldLabel="Parent page"
+                                name="./parentPage"/>
+                        </items>
+                    </columns>
+                </items>
+            </children>
+            <static
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Fixed list"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <pages
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                fieldDescription="Click the '+' to add a new page"
+                                fieldLabel="Pages">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                    name="./pages"/>
+                            </pages>
+                        </items>
+                    </columns>
+                </items>
+            </static>
+            <search
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Search"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <query
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Search query"
+                                name="./query"/>
+                            <searchIn
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Leave empty to use '/content'"
+                                fieldLabel="Start in"
+                                name="./searchIn"/>
+                        </items>
+                    </columns>
+                </items>
+            </search>
+            <querybuilder
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Advanced Search"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <savedquery
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Querybuilder predicate notation"
+                                name="./savedquery"/>
+                        </items>
+                    </columns>
+                </items>
+            </querybuilder>
+            <text-header
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Header Text"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Title or Titre"
+                                fieldLabel="Title"
+                                name="./title"/>
+                            <linktoDraftRegulation
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Link to Draft Regulation or Lien vers le projet de règlement"
+                                fieldLabel="Link to Draft Regulation"
+                                name="./linktodraftregulation"/>
+                            <contactforinput
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Contact for Input or Personne ressource"
+                                fieldLabel="Contact for Input"
+                                name="./contactforinput"/>
+                            <deadline
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Deadline or Date limite"
+                                fieldLabel="Deadline"
+                                name="./deadline"/>
+                        </items>
+                    </columns>
+                </items>
+            </text-header>
+            <text-link
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Link Text"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <bi_link_text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Side-by-Side (.PDF) or Bitexte (.pdf)"
+                                fieldLabel="Link Text - Bilingual"
+                                name="./bi_link_text"/>
+                            <en_link_text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : English only (.PDF) or Anglais (.pdf)"
+                                fieldLabel="Link Text - English"
+                                name="./en_link_text"/>
+                            <fr_link_text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : French only (.PDF) or Français (.pdf)"
+                                fieldLabel="Link Text - French"
+                                name="./fr_link_text"/>
+                        </items>
+                    </columns>
+                </items>
+            </text-link>
+            <text-contact
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Contact Text"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <department_text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Department or Ministère"
+                                fieldLabel="Department Text"
+                                name="./department_text"/>
+                            <email_text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Email or Courriel"
+                                fieldLabel="Email Text"
+                                name="./email_text"/>
+                            <telephone_text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Telephone or Tél."
+                                fieldLabel="Telephone Text"
+                                name="./telephone_text"/>
+                            <fax_text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Fax or Téléc."
+                                fieldLabel="Fax Text"
+                                name="./fax_text"/>
+                        </items>
+                    </columns>
+                </items>
+            </text-contact>
+        </items>
+    </content>
+</jcr:root>

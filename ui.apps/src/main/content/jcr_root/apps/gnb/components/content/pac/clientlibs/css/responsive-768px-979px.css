@@ -1,0 +1,28 @@
+/*
+	/apps/gnb/components/content/pac/clientlibs/css/responsive-768px-979px.css
+*/
+/* iPad portrait */
+@media (min-width: 768px) and (max-width: 979px) {
+  .pac div.RT {
+    text-align: center;
+    padding-top: 7px;
+  }
+
+  .pac .textRight {
+    text-align: right;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .pac .textLeft {
+    text-align: left;
+  }
+
+  .pac .textCenter {
+    text-align: center;
+  }
+  .tooltip-inner {
+    max-width: 350px;
+    width: 350px;
+  }
+}

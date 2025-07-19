@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="fr"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <contactus_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="contactusText"
+        sling:message="Contactez-nous"/>
+    <contactus_URL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="contactusURL"
+        sling:message="/content/wel-bien/fr/contacteznous"/>
+</jcr:root>

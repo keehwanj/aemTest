@@ -1,0 +1,48 @@
+/*
+	apps/gnb/components/content/departmentinfo/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+/**START of departmentinfo**/
+.departmentinfo .nav-tabs {
+	padding: 10px 0 0px 15px;
+	margin-bottom: 20px;
+}
+
+#contacts .col-sm-6{
+	padding-right: 5px;
+	padding-left: 0px;        
+
+}
+
+#contacts .col-sm-8,#contacts .col-sm-4{
+	padding-right: 0px;
+	padding-left: 0px;        
+
+}        
+
+
+/**END of departmentinfo**/
+
+/**START of mandatestab**/
+.item_services h3, .item_services_first h3 {
+    font-size: 130% !important;
+}
+/**END of mandatestab**/
+
+.departmentinfo #orgView .col-sm-2, .departmentinfo #contactView .col-sm-2{
+	padding-right: 15px; 
+	padding-left: 0px;
+}
+
+.departmentinfo #orgView .col-sm-10, .departmentinfo #contactView .col-sm-10{
+	padding-right: 0px; 
+    padding-left: 0px;
+}
+
+#search_left_nav {
+    margin: 0px 0 0 0;
+    float: left;
+}
+
+
+}

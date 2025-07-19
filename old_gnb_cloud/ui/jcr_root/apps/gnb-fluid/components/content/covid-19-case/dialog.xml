@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Covid-19 Case"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <top
+                jcr:primaryType="cq:Panel"
+                title="Top">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Cases in NB"
+                        name="./top_title"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <updated
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Updated date"
+                        name="./updated"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                </items>
+            </top>
+            <mid-num
+                jcr:primaryType="cq:Panel"
+                title="Mid Number">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <totalCases_num
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="98"
+                        fieldLabel="Total Cases"
+                        name="./totalCases_num"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <activeCases_num
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="70"
+                        fieldLabel="Active Cases"
+                        name="./activeCases_num"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <recoveredCases_num
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="28"
+                        fieldLabel="Recovered Cases"
+                        name="./recoveredCases_num"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <deaths_num
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="00"
+                        fieldLabel="Deaths"
+                        name="./deaths_num"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <hospitalizedCases_num
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="4"
+                        fieldLabel="Hospitalized Cases"
+                        name="./hospitalizedCases_num"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <icuCases_num
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="1"
+                        fieldLabel="ICU Cases"
+                        name="./icuCases_num"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <totalTests_num
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="5,348"
+                        fieldLabel="Total Tests"
+                        name="./totalTests_num"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                </items>
+            </mid-num>
+            <mid-text
+                jcr:primaryType="cq:Panel"
+                title="Mid Text">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <totalCases_text
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Total Cases"
+                        fieldLabel="Total Cases"
+                        name="./totalCases_text"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <activeCases_text
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Active Cases"
+                        fieldLabel="Active Cases"
+                        name="./activeCases_text"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <recoveredCases_text
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Recovered Cases"
+                        fieldLabel="Recovered Cases"
+                        name="./recoveredCases_text"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <deaths_text
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Deaths"
+                        fieldLabel="Deaths"
+                        name="./deaths_text"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <hospitalizedCases_text
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Hospitalized Cases"
+                        fieldLabel="Hospitalized Cases"
+                        name="./hospitalizedCases_text"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <icuCases_text
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="ICU Cases"
+                        fieldLabel="ICU Cases"
+                        name="./icuCases_text"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <totalTests_text
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Total tests"
+                        fieldLabel="Total tests"
+                        name="./totalTests_text"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                </items>
+            </mid-text>
+            <bottom
+                jcr:primaryType="cq:Panel"
+                title="Bottom">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <bottom_1
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="More information on cases and testing"
+                        fieldLabel="Bottom_1"
+                        name="./bottom_1"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <link_1
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="link-1"
+                        fieldLabel="Link 1"
+                        name="./link_1"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <bottom_2
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Potential Public Exposures"
+                        fieldLabel="Bottom_2"
+                        name="./bottom_2"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <link_2
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="link-2"
+                        fieldLabel="Link 2"
+                        name="./link_2"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <bottom_3
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="For the latest Canadian updates, visit the Public Health Agency of Canada website"
+                        fieldLabel="Bottom_3"
+                        name="./bottom_3"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <bottom_3_1
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="For the latest Canadian updates, visit the Public Health Agency of Canada website"
+                        fieldLabel="Bottom_3_1"
+                        name="./bottom_3_1"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <link_3
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="link-3"
+                        fieldLabel="Link 3"
+                        name="./link_3"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                </items>
+            </bottom>
+        </items>
+    </items>
+</jcr:root>

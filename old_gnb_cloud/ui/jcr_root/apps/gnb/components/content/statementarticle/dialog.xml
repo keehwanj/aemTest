@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="GNB Statement Article Viewer"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Article">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <renderer
+                        jcr:primaryType="cq:Widget"
+                        allowEmpty="false"
+                        fieldLabel="Renderer"
+                        name="./renderer"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <statement
+                                jcr:primaryType="nt:unstructured"
+                                text="Statement"
+                                value="statement"/>
+                            <newsArticle
+                                jcr:primaryType="nt:unstructured"
+                                text="News Article"
+                                value="newsArticle"/>
+                        </options>
+                    </renderer>
+                    <statementPath
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="default : /content/gnb/cnb_data/statement"
+                        fieldLabel="Data Path"
+                        name="./renderer_page"
+                        xtype="pathfield"/>
+                </items>
+            </tab1>
+            <resources
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Resources"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <dateformat
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Date Format"
+                        name="./dateFormat"/>
+                    <datetimeformat
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Date Time Format"
+                        name="./dateTimeFormat"/>
+                </items>
+            </resources>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,25 @@
+/**START of /apps/agnb-vgnb/components/navigation/logo/clientlibs/css/style.css**/
+#logoImg {
+  margin: 0;
+  padding: 0;
+  width: 315px;
+  height: 105px;
+}
+#logoArea {
+  float: left;
+  /*margin:20px 0 0 30px;*/
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+/**END of logo.css**/
+
+a[href]:after {
+  content: none;
+}
+/**
+#logoArea .img-responsive {
+	max-width: none;
+}
+**/
+/**END of /apps/agnb-vgnb/components/navigation/logo/clientlibs/css/style.css **/

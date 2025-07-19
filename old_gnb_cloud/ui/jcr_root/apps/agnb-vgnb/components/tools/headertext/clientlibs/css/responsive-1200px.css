@@ -1,0 +1,26 @@
+/*
+	/apps/agnb-vgnb/components/tools/headertext/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+
+
+#topText{
+    margin: 15px 0px 0px 0px; 
+    float:right;
+    font-size: 180%;
+    color: #926618;
+    font-weight: bold;
+    text-align: right;
+  	color:#663366; 
+    z-index: -1;
+}
+span.headerText{
+	padding: 0px 10px 0px 0px; 
+}
+span#lastText.headerText{
+	padding: 0px 5px 0px 0px; 
+}
+
+
+
+}

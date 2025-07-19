@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="fr"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <active
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="active"
+        sling:message="Actif"/>
+    <active-frozen
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="active-frozen"
+        sling:message="Actif – Embâcle immobile"/>
+    <active-ice_formation
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="active-ice_formation"
+        sling:message="Actif – Formation de glace"/>
+    <active-ice_jam
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="active-ice_jam"
+        sling:message="Actif – Embâcle"/>
+    <community_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="community_Text"
+        sling:message="Collectivité"/>
+    <datejam_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="datejam_Text"
+        sling:message="Date à laquelle l’embâcle s’est formé"/>
+    <description_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="description_Text"
+        sling:message="Description"/>
+    <inactive
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="inactive"
+        sling:message="Inactif"/>
+    <river_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="river_Text"
+        sling:message="Bassin du cours d’eau"/>
+    <status_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="status_Text"
+        sling:message="Statut"/>
+</jcr:root>

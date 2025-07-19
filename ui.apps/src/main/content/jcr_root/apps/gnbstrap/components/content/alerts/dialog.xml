@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Alerts"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <setting
+                jcr:primaryType="cq:Panel"
+                title="Setting">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <content
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Content"
+                        height="150"
+                        name="./content"
+                        xtype="textarea"/>
+                    <linkText
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Link Text"
+                        name="./linkText"
+                        xtype="textfield"/>
+                    <link
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Link on button"
+                        name="./link"
+                        xtype="pathfield"/>
+                </items>
+            </setting>
+            <type
+                jcr:primaryType="cq:Panel"
+                title="Alert Type">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <type
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Type"
+                        name="./type"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <alert-information
+                                jcr:primaryType="nt:unstructured"
+                                text="alert-information"
+                                value="alert-information"/>
+                            <alert-warning
+                                jcr:primaryType="nt:unstructured"
+                                text="alert-warning"
+                                value="alert-warning"/>
+                        </options>
+                    </type>
+                </items>
+            </type>
+        </items>
+    </items>
+</jcr:root>

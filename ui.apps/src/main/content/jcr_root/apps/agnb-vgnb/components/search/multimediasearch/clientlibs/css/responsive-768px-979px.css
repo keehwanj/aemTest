@@ -1,0 +1,11 @@
+/*
+	apps/gnb/components/search/multimediasearch/clientlibs/css/responsive-768px-979px.css
+*/
+/* iPad portrait */
+@media (min-width: 768px) and (max-width: 979px) {
+  .wide_multimedia_item .row .col-sm-3,
+  .wide_multimedia_item .row .col-sm-9 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

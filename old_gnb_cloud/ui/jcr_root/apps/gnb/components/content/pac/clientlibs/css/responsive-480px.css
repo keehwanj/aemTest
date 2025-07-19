@@ -1,0 +1,10 @@
+/*
+	/apps/gnb/components/content/pac/clientlibs/css/responsive-480px.css
+*/
+@media (max-width: 480px) {
+
+.tooltip-inner {
+   max-width: 300px;
+   width: 300px;
+}
+}

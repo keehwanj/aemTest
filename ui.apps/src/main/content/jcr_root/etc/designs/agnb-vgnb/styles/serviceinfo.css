@@ -1,0 +1,109 @@
+.serviceinfo {
+    padding-bottom: 10px;
+    }
+.serviceinfo .pageHeader, .serviceinfo #service_tabs,.serviceinfo #service_tabs1 {
+    margin: 0 300px 0 0 !important; 
+    padding: 0;
+}
+/*
+.serviceinfo .pageHeader, .serviceinfo #service_tabs1 {
+    margin: 0 300px 0 0 !important; 
+    padding: 0;
+}
+*/
+.serviceinfo #serviceDescription, .serviceinfo #serviceLocation, .serviceinfo #serviceFees {
+    padding: 0px !important;
+    float: left;
+    width:100%;
+    }
+serviceinfo #serviceLocation tbody {
+    width:100%; 
+    }
+
+.serviceinfo #sidebar ul {
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    display: block;
+}
+.serviceinfo  #sidebar ul.box {
+    padding:20px 20px 20px 20px;
+    font-size:90%;
+}
+.serviceinfo  #sidebar ul.box li{
+    margin-bottom:5px;
+    padding-left: 10px;
+    background:transparent url(../images/arrow_blue.gif) no-repeat scroll 0 5px;
+}
+
+img.serviceicon {
+    padding: 4px;
+    border: 1px solid #d3d3d3;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.serviceinfo .text_wrapper  h1 {
+    color:#1874B1;
+    font-size:130%;
+    font-weight:normal;
+    margin:0;
+}
+.serviceinfo  .text_wrapper {
+    margin:0 20px 10px;
+}
+.serviceinfo   .text_wrapper .subheader {
+     margin-bottom: 20px;
+    }
+
+.serviceinfo ul.formsLinks, .serviceinfo ul.actsLinks  {
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    font-size:90%;
+}
+
+
+.serviceinfo ul.formsLinks span.pdf {
+    background:transparent url(../images/icon_pdf.gif) center right no-repeat;
+    width:15px;
+    display:inline-block;
+height:10px;
+vertical-align:middle;
+
+}
+
+.serviceinfo ul.formsLinks li, .serviceinfo ul.actsLinks li {
+   background:transparent url(../images/arrow_blue.gif) no-repeat scroll 0 5px;
+    display:block;
+    padding-left:10px;
+}
+
+.serviceinfo .download_spec {
+    text-transform: uppercase;
+    font-size: 85%;
+    color: #777777;
+    padding-left: 10px;
+}
+
+.serviceinfo  .fee_message {
+    background:transparent;
+}
+
+.serviceinfo #serviceFees table {
+    font-size: 90%;
+}
+
+.serviceinfo  .item_services {
+       width:100%;
+    }
+
+
+
+
+
+
+
+

@@ -1,0 +1,199 @@
+package com.t4g.cnb.utils;
+
+import com.day.cq.search.PredicateGroup;
+import com.day.cq.search.Query;
+import com.day.cq.search.QueryBuilder;
+import com.day.cq.search.facets.Bucket;
+import com.day.cq.search.result.SearchResult;
+import java.util.List;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.TreeMap;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Hashtable;
+import org.apache.sling.api.resource.Resource;
+import javax.jcr.Session;
+import javax.jcr.Repository;
+import javax.jcr.RepositoryException;
+import javax.jcr.Node;
+import javax.jcr.NodeIterator;
+import javax.jcr.SimpleCredentials;
+import javax.naming.NamingException;
+import javax.naming.InitialContext;
+import javax.rmi.PortableRemoteObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
+public class LoadingCacheSingleton {
+
+  private static LoadingCacheSingleton instance = null;
+  protected final Logger log = LoggerFactory.getLogger(this.getClass());
+  private Map<String, String> deptMap = new HashMap<String, String>();
+  //private Map<String, Map> employeeMap = new HashMap<String, Map>();
+  //private Map<String, Map> organizationMap = new HashMap<String, Map>();
+  //private Map<String, Map> employeeMapFrench = new HashMap<String, Map>();
+  //private Map<String, Map> organizationMapFrench = new HashMap<String, Map>();
+
+  protected LoadingCacheSingleton() {
+    // Exists only to defeat instantiation.
+  }
+
+  public static LoadingCacheSingleton getInstance(QueryBuilder queryBuilder) throws RepositoryException{
+    if (instance == null) {
+		instance = new FacetSingleton();
+        instance.initDeptMap();
+        //instance.populateOrganizationMaps(queryBuilder);
+        //instance.populateEmployeeMaps(queryBuilder);
+    }
+    return instance;
+  }
+
+
+  /**
+  *
+  * Get a list of all the top level organizations.
+  * The DeptMap is made up of <DEPTID, ORGPATH>
+  **/
+  private void initDeptMap() throws RepositoryException{
+    Session session = getSession();
+    try{
+      Node root = getSession().getRootNode();
+      Node orgNodes = root.getNode("content").getNode("data").getNode("organizations");
+      for (NodeIterator nodeIter = orgNodes.getNodes(); nodeIter.hasNext();) {
+        Node orgNode = (Node) nodeIter.next();
+        if(orgNode.hasNode("orginfo")){
+          String deptNo = orgNode.getNode("orginfo").getProperty("DEPTID").getString();
+          if(!deptMap.containsKey(deptNo)){
+            deptMap.put(deptNo, orgNode.getPath());
+          }
+        }
+      }
+    } finally {
+      if(session !=null) session.logout();
+    }
+  }
+
+  private Session getSession(){
+    String lookupName = "crx";
+    Hashtable<String, String> env = new Hashtable<String, String>();
+    env.put("java.naming.provider.url", "http://jcr.day.com");
+    env.put("java.naming.factory.initial", "com.day.util.jndi.provider.MemoryInitialContextFactory");
+    Session session = null;
+    try {
+      InitialContext initial = new InitialContext(env);
+      Object obj = initial.lookup(lookupName);
+      Repository repository = (Repository) PortableRemoteObject.narrow(obj, Repository.class);
+      session = repository.login(new SimpleCredentials("admin", "admin".toCharArray()), "crx.default");
+    } catch (RepositoryException re) {
+      log.error("Exception with repository", re);
+    } catch (NamingException ne) {
+      log.error("Exception with naming", ne);
+    }
+    return session;
+  }
+
+  public void refresh()throws RepositoryException{
+    instance = null;
+    instance = getInstance();
+  }
+
+/**
+  public Map getEmployeeFacets(String deptNo, String lang){
+    return "ENG".equals(lang)?employeeMap.get(deptNo):employeeMapFrench.get(deptNo);
+  }
+
+  public Map getOrganizationFacets(String deptNo, String lang){
+    return "ENG".equals(lang)?organizationMap.get(deptNo):organizationMapFrench.get(deptNo);
+  }
+
+  public String getDepartmentPath(String deptNo){
+    return deptMap.get(deptNo);
+  }
+**/
+
+  /**
+  *
+  *find a list of all top level organizations and create a map for each
+  *
+  **
+  private void populateOrganizationMaps(QueryBuilder queryBuilder) throws RepositoryException{
+    Session session = getSession();
+    try{
+      for (String deptNo : deptMap.keySet()) {
+        if(!organizationMap.containsKey(deptNo)){
+          organizationMap.put(deptNo, createOrganizations(deptNo, "ENG", queryBuilder, session));
+        }
+        if(!organizationMapFrench.containsKey(deptNo)){
+		  organizationMapFrench.put(deptNo, createOrganizations(deptNo, "FRE", queryBuilder, session));
+        }
+      }
+    } finally {
+      if(session !=null) session.logout();
+    }
+  }
+
+  /**
+  *
+  *find a list of all top level organizations and create a map for each
+  *
+  **
+  private void populateEmployeeMaps(QueryBuilder queryBuilder) throws RepositoryException {
+    Session session = getSession();
+    try{
+      for (String deptNo : deptMap.keySet()) {
+        if(!employeeMap.containsKey(deptNo)){
+          employeeMap.put(deptNo, createEmployees(deptNo, "ENG", queryBuilder, session));
+        }
+        if(!employeeMapFrench.containsKey(deptNo)){
+		  employeeMapFrench.put(deptNo, createEmployees(deptNo, "FRE", queryBuilder, session));
+        }
+      }
+    } finally {
+      if(session !=null) session.logout();
+    }
+  }
+
+  private Map<String, Long> createOrganizations(String deptNo, String lang, QueryBuilder queryBuilder, Session session)throws RepositoryException{
+    SearchResult facetResult = null;
+    Map<String, Long> orderedBucket = new TreeMap<String, Long>();
+    Map<String, String> facetmap = new HashMap<String, String>();
+    facetmap.put("1_prop", "orginfo/DEPTID");
+    facetmap.put("1_prop.value", deptNo);
+    facetmap.put("2_prop.property", "orginfo/P_CITY" + lang);
+    facetmap.put("path", "/content/data/organizations");
+    facetmap.put("type", "cq:Page");
+
+    Query facetQuery = queryBuilder.createQuery(PredicateGroup.create(facetmap), session );
+    facetResult = facetQuery.getResult();
+    if (facetResult != null && facetResult.getFacets() != null && facetResult.getFacets().get("2_prop") != null && facetResult.getFacets().get("2_prop").getBuckets() != null) {
+      for (Bucket bucket : facetResult.getFacets().get("2_prop").getBuckets()) {
+        orderedBucket.put(bucket.getValue(), bucket.getCount());
+      }
+    }
+    return orderedBucket;
+  }
+
+
+  private Map<String, Long> createEmployees(String deptNo, String lang, QueryBuilder queryBuilder, Session session)throws RepositoryException{
+    SearchResult facetResult = null;
+    Map<String, Long> orderedBucket = new TreeMap<String, Long>();
+    Map<String, String> facetmap = new HashMap<String, String>();
+    facetmap.put("1_prop", "contactinfo/DEPTID");
+    facetmap.put("1_prop.value", deptNo);
+    facetmap.put("2_prop.property", "contactinfo/P_CITY" + lang);
+    facetmap.put("path", "/content/data/contacts");
+    facetmap.put("type", "cq:Page");
+    Query facetQuery = queryBuilder.createQuery(PredicateGroup.create(facetmap), session);
+    facetResult = facetQuery.getResult();
+    if (facetResult != null && facetResult.getFacets() != null && facetResult.getFacets().get("2_prop") != null && facetResult.getFacets().get("2_prop").getBuckets() != null) {
+      for (Bucket bucket : facetResult.getFacets().get("2_prop").getBuckets()) {
+        orderedBucket.put(bucket.getValue(), bucket.getCount());
+      }
+    }
+    return orderedBucket;
+  }
+  */
+
+}

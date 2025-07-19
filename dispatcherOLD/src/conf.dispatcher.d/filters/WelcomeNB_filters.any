@@ -1,0 +1,44 @@
+# Deny everything first and then allow specific entries
+/0001 { /type "deny" /glob "*" }
+
+# Open consoles
+#     /0011 { /type "allow" /url "/admin/*"  }  # allow servlet engine admin
+#     /0012 { /type "allow" /url "/crx/*"    }  # allow content repository
+#     /0013 { /type "allow" /url "/system/*" }  # allow OSGi console
+
+# Allow non-public content directories
+#     /0021 { /type "allow" /url "/apps/*"   }  # allow apps access
+#     /0022 { /type "allow" /url "/bin/*"    }
+/0023 { /type "allow" /url "/content/wel-bien*" }  # disable this rule to allow mapped content only
+
+/0024 { /type "allow" /url "/libs/*"   }
+/0025 { /type "deny"  /url "/libs/shindig/proxy*" } # if you enable /libs close access to proxy
+
+#     /0026 { /type "allow" /url "/home/*"   }
+#     /0027 { /type "allow" /url "/tmp/*"    }
+#     /0028 { /type "allow" /url "/var/*"    }
+/0029 { /type "allow" /url "/content/dam/wel-bien*" }
+/0030 { /type "allow" /url "/content/dam/gnb*" }
+
+# Enable extensions in non-public content directories, using a regular expression
+/0041
+{
+    /type "allow"
+    /extension '(clientlibs|css|gif|ico|js|png|swf|jpe?g|woff2?)'
+}
+
+# Enable features
+/0062 { /type "allow" /url "/libs/cq/personalization/*"  }  # enable personalization
+
+# Deny content grabbing
+/0081 { /type "deny"  /url "*.infinity.json" }
+/0082 { /type "deny"  /url "*.tidy.json"     }
+/0083 { /type "deny"  /url "*.sysview.xml"   }
+/0084 { /type "deny"  /url "*.docview.json"  }
+/0085 { /type "deny"  /url "*.docview.xml"  }
+
+/0086 { /type "deny"  /url "*.*[0-9].json" }
+#     /0087 { /type "allow" /method "GET" /url "*.1.json" }  # allow one-level json requests
+
+# Deny query (and additional selectors)
+/0090 { /type "deny"  /url "*.query*.json" }

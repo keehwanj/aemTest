@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="fr"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <date_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="date_Text"
+        sling:message="Date"/>
+    <event_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="event_Text"
+        sling:message=" Événements"/>
+    <nodata_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:20.961-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="nodata_Text"
+        sling:message="No Data"/>
+    <ongoing_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="ongoing_Text"
+        sling:message="En cours"/>
+    <region_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="region_Text"
+        sling:message="Région / Lieu"/>
+</jcr:root>

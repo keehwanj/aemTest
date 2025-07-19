@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    title="Onsite Sewage Search Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="cq:Widget"
+            title="General"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title Text"
+                    name="./title_Text"
+                    xtype="textfield"/>
+                <data_path
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="default : /content/gnb/doh-data/data"
+                    fieldLabel="Data Path"
+                    name="./data_path"
+                    xtype="pathfield"/>
+            </items>
+        </general>
+        <text-header
+            jcr:primaryType="cq:Widget"
+            title="Texts"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <company_name_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Company Name or Nom de la compagnie"
+                    fieldLabel="Company Name"
+                    name="./company_name_Text"
+                    xtype="textfield"/>
+                <operator_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Operator or Directeur"
+                    fieldLabel="Operator"
+                    name="./operator_Text"
+                    xtype="textfield"/>
+                <city_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : City or Cité"
+                    fieldLabel="City"
+                    name="./city_Text"
+                    xtype="textfield"/>
+                <region_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Region"
+                    fieldLabel="Region"
+                    name="./region_Text"
+                    xtype="textfield"/>
+                <phone_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Phone # or No de téléphone"
+                    fieldLabel="Phone #"
+                    name="./phone_Text"
+                    xtype="textfield"/>
+                <type_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Type"
+                    fieldLabel="Type of Non-Conventional License"
+                    name="./type_Text"
+                    xtype="textfield"/>
+            </items>
+        </text-header>
+        <selction_region
+            jcr:primaryType="cq:Widget"
+            title="Region"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <select_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="&quot;Select&quot; Text"
+                    name="./select_Text"
+                    xtype="textfield"/>
+                <region_value
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the value of region."
+                    fieldLabel="Region - Value"
+                    name="./region_value"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </region_value>
+                <region_text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the text of region."
+                    fieldLabel="Region - Text"
+                    name="./region_text"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </region_text>
+            </items>
+        </selction_region>
+        <selction_contour
+            jcr:primaryType="cq:Widget"
+            title="Non Conventional Type"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <nonconventional_value
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the value of Non Conventional Type."
+                    fieldLabel="Non Conventional Type - Value"
+                    name="./nonconventional_value"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </nonconventional_value>
+                <nonconventional_text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the text of Non Conventional Type."
+                    fieldLabel="Non Conventional Type - Text"
+                    name="./nonconventional_text"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </nonconventional_text>
+            </items>
+        </selction_contour>
+    </items>
+</jcr:root>

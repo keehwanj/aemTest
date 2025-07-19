@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Responsive Image"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <setting
+                jcr:primaryType="cq:Panel"
+                title="Setting">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <image_alt
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Image alt"
+                        name="./image_alt"
+                        xtype="textfield"/>
+                    <image_path
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Image path"
+                        name="./image_path"
+                        xtype="pathfield"/>
+                    <image_caption
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Image caption"
+                        height="150"
+                        name="./image_caption"
+                        xtype="textarea"/>
+                </items>
+            </setting>
+        </items>
+    </items>
+</jcr:root>

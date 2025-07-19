@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Language Switcher"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Language Switcher"
+                width="">
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="The corresponding English/French page"
+                    fieldLabel="Opposite Page"
+                    name="./oppositePage"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,24 @@
+/*
+	START of /apps/gnb-fluid/components/content/gnblist_update/clientlibs/css/responsive-768px-979px.css
+ */
+
+/* iPad portrait */
+@media (min-width: 768px) and (max-width: 979px) {
+
+.gnblist_update ul {
+  padding-bottom: 6px;
+  margin-bottom:6px;   
+}
+
+.gnblist_update {
+  margin-bottom: 10px;
+}
+
+.gnblist_update>div { 
+	padding:10px;  
+}
+
+}
+/*
+	END of /apps/gnb-fluid/components/content/gnblist_update/clientlibs/css/responsive-768px-979px.css
+*/

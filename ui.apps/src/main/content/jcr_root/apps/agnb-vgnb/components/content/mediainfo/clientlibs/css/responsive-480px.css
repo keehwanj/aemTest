@@ -1,0 +1,9 @@
+/*
+	/apps/agnb-vgnb/components/content/mediainfo/clientlibs/css/responsive-480px.css
+ */
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}

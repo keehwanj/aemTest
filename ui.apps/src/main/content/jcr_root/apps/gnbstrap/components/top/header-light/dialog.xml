@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Header"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <option
+                jcr:primaryType="cq:Panel"
+                title="Option">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <type
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription=""
+                        fieldLabel="Type"
+                        fieldSubLabel=""
+                        name="./type"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <dark
+                                jcr:primaryType="nt:unstructured"
+                                text="Dark"
+                                value="dark"/>
+                            <light
+                                jcr:primaryType="nt:unstructured"
+                                text="Light"
+                                value="light"/>
+                        </options>
+                    </type>
+                </items>
+            </option>
+            <language
+                jcr:primaryType="cq:Panel"
+                title="Language">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <link
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="The corresponding English/French page"
+                        fieldLabel="Opposite Page"
+                        name="./oppositePage"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                </items>
+            </language>
+        </items>
+    </items>
+</jcr:root>

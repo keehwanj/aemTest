@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <jcr:content
+        cq:lastModified="{Date}2020-09-21T13:17:27.617-03:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2020-09-21T13:17:36.873-03:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="nt:unstructured"/>
+    <need-help-bgr.jpg/>
+    <search-bgr.jpg/>
+    <your-gov-bgr.jpg/>
+    <BackgroundSplashSNBLogo.jpg/>
+    <BackgroundSplash.jpg/>
+</jcr:root>

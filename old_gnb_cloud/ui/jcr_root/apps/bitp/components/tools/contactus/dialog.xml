@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Contact Us Dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <resources
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Text Resources"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <contactusURL
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Contact Us URL"
+                        name="./contactusPage"
+                        xtype="pathfield"/>
+                </items>
+            </resources>
+        </items>
+    </items>
+</jcr:root>

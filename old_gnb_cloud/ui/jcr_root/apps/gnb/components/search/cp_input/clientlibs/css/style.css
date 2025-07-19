@@ -1,0 +1,18 @@
+/*
+	/apps/gnb/components/search/cp_input/clientlibs/css/style.css
+*/
+/**START of style.css**/
+
+#cp_search_input label {
+    font-weight:normal;
+    padding:7px 5px 3px 5px;
+
+}
+
+#cp_search_input IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+    margin-bottom: 10px;
+}
+/**END of style.css**/

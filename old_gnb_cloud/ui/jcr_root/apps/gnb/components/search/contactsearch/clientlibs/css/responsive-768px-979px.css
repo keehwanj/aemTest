@@ -1,0 +1,13 @@
+/*
+	/apps/gnb/components/search/contactsearch/clientlibs/css/responsive-768px-979px.css
+*/
+/* iPad portrait */
+@media (min-width: 768px) and (max-width: 979px) {
+
+.contactsearch form {
+    margin-top: 1em;
+}
+
+
+
+}

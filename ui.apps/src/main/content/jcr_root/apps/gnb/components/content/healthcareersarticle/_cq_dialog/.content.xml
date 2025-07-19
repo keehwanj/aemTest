@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Health Careers Article Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <resources
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Text Resources"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <exiting_field_work_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : An Exciting Field of Work or Un travail passionnant"
+                                fieldLabel="An Exciting Field of Work"
+                                name="./exiting_field_work_Text"/>
+                            <personal_characteristics_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Personal Characteristics / Caractéristiques personnelles et aptitudes"
+                                fieldLabel="Personal Characteristics / Skills"
+                                name="./personal_characteristics_Text"/>
+                            <education_training_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Education and Training or Éducation et formation"
+                                fieldLabel="Education and Training"
+                                name="./education_training_Text"/>
+                            <education_program_offered_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Education program offered in New Brunswick or Programmes d’études offerts au Nouveau-Brunswick"
+                                fieldLabel="Education program offered in New Brunswick"
+                                name="./education_program_offered_Text"/>
+                            <length_study_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Education program offered in New Brunswick or Durée des études ou de la formation"
+                                fieldLabel="Education program offered in New Brunswick"
+                                name="./length_study_Text"/>
+                            <licence_certification_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Licence and certification or Permis d’exercice et accréditation"
+                                fieldLabel="Licence and certification"
+                                name="./licence_certification_Text"/>
+                            <helpful_hs_courses_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Helpful High School Courses or Études secondaires pertinentes"
+                                fieldLabel="Helpful High School Courses"
+                                name="./helpful_hs_courses_Text"/>
+                            <working_conditions_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Employment and Common Working Conditions or Emploi et conditions de travail habituelles"
+                                fieldLabel="Employment and Common Working Conditions"
+                                name="./working_conditions_Text"/>
+                            <employment_prospects_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Employment Prospects or Perspectives d’emploi"
+                                fieldLabel="Employment Prospects"
+                                name="./employment_prospects_Text"/>
+                        </items>
+                    </columns>
+                </items>
+            </resources>
+        </items>
+    </content>
+</jcr:root>

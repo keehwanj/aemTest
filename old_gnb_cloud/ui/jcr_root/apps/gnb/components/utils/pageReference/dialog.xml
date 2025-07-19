@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','children','static','search','querybuilder'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i!=tabs.length-1;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="List"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <query
+            jcr:primaryType="cq:Widget"
+            title="Advanced Query"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <savedquery1
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="&#xa;path=/content/dam/gnb/Corporate&lt;br/>&#xa;nodename=*.*&lt;br/>&#xa;rangeproperty.property=@jcr:content/metadata/dam:size&lt;br/>&#xa;rangeproperty.lowerBound=1048576&lt;br/>&#xa;rangeproperty.lowerOperation=&lt;&lt;br/>&#xa;orderby=@jcr:content/metadata/dam:size&lt;br/>&#xa;orderby.sort=desc&lt;br/>&#xa;p.limit=-1&lt;br>&#xa;================&lt;br>&#xa;type=dam:Asset&lt;br>&#xa;group.p.or=true&lt;br>&#xa;group.1_group.path=/content/dam/gnb/Departments/ohr-brh&lt;br>&#xa;group.2_group.path=/content/dam/gnb/Departments/fin&lt;br>&#xa;group.3_group.path=/content/dam/gnb/Departments/tb-ct"
+                    fieldLabel="Querybuilder predicate notation"
+                    height="250"
+                    name="./savedquery1"
+                    xtype="textarea"/>
+            </items>
+        </query>
+        <header
+            jcr:primaryType="cq:Widget"
+            border="false"
+            height=""
+            title="Header title"
+            width=""
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <pagePath
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Page Path"
+                    name="./pagePath"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <pageSize
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Dam Asset Size"
+                    name="./damSize"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <noReferences
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="No of References"
+                    name="./noReferences"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+            </items>
+        </header>
+        <general
+            jcr:primaryType="cq:Widget"
+            border="false"
+            height=""
+            title="General"
+            width=""
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <querylimit1
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Limit Results To"
+                    name="./querylimit1"
+                    validateOnBlur="true"
+                    xtype="numberfield"/>
+                <show_entries
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Input Numbers of entries showing - 10, 25, 50, or 100"
+                    fieldLabel="Number of Entries"
+                    name="./show_entries"
+                    xtype="textfield"/>
+                <idName
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Unique Table id for each table"
+                    name="./idName"
+                    xtype="textfield"/>
+                <lesstwo
+                    jcr:primaryType="cq:Widget"
+                    allowEmpty="true"
+                    fieldDescription="Display less 2 referenced pags?"
+                    fieldLabel="Less 2 Referenced Pages?"
+                    name="./lesstwo"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <no
+                            jcr:primaryType="nt:unstructured"
+                            text="False"
+                            value="false"/>
+                        <yes
+                            jcr:primaryType="nt:unstructured"
+                            text="True"
+                            value="true"/>
+                    </options>
+                </lesstwo>
+                <one_header
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Boolean}false"
+                    fieldDescription="Only Path excluding Size, and Reference"
+                    fieldLabel="Path Only "
+                    name="./one_header"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </general>
+    </items>
+</jcr:root>

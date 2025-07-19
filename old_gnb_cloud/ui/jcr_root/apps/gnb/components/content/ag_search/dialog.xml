@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="AG Adaptive Research Search Engine "
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <resources
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Text Resources"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <departmentText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Associated / Responsible Department or Ministère/organisme"
+                        fieldLabel="Department Text"
+                        name="./departmentText"
+                        xtype="textfield"/>
+                    <deadlineText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Deadline for Submission or Date limite pour faire une soumission"
+                        fieldLabel="Deadline Text"
+                        name="./deadlineText"
+                        xtype="textfield"/>
+                    <termText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Term or Durée du mandat"
+                        fieldLabel="Term Text"
+                        name="./termText"
+                        xtype="textfield"/>
+                    <emailText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : E-mail address for submissions or Adresse électronique pour envoyer les soumissions"
+                        fieldLabel="Email Text"
+                        name="./emailText"
+                        xtype="textfield"/>
+                    <linkText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Links or Liens"
+                        fieldLabel="Link Text"
+                        name="./linkText"
+                        xtype="textfield"/>
+                </items>
+            </resources>
+        </items>
+    </items>
+</jcr:root>

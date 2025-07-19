@@ -1,0 +1,70 @@
+SetEnvIf %{REQUEST_URI} ^ GNB_ENGLISH_ERROR_PAGE=/content/gnb/en/error/404.html
+SetEnvIf %{REQUEST_URI} ^ GNB_FRENCH_ERROR_PAGE=/content/gnb/fr/erreurs/404.html
+
+# rewrite for root redirect
+RewriteRule ^/?$ /content/gnb/en.html [PT,L]
+
+# rewrite for news Vanity Url
+RewriteCond %{REQUEST_URI} ^/news$
+RewriteRule ^(.*)$ /content/gnb/en/news.html [PT,L]
+
+RewriteCond %{REQUEST_URI} ^/en.html
+RewriteRule ^(.*)$ %{ENV:GNB_ENGLISH_ERROR_PAGE} [PT,L]
+
+RewriteCond %{REQUEST_URI} ^/fr.html
+RewriteRule ^(.*)$ %{ENV:GNB_FRENCH_ERROR_PAGE} [PT,L]
+
+# rewrite for cross-domain issue prevention with a language handle EN
+RewriteCond %{REQUEST_URI} !^/content/gnb
+RewriteCond %{REQUEST_URI} !^/content/dam/gnb
+RewriteCond %{REQUEST_URI} !^/content/dam/csr-crs
+RewriteCond %{REQUEST_URI} !^/content/gnb/servlets
+RewriteCond %{REQUEST_URI} ^/content/(.*)/en/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^/content/(.*)/en.html
+RewriteRule ^(.*)$ %{ENV:GNB_ENGLISH_ERROR_PAGE} [PT,L]
+
+# rewrite for cross-domain issue prevention with a language handle FR
+RewriteCond %{REQUEST_URI} !^/content/gnb
+RewriteCond %{REQUEST_URI} !^/content/dam/gnb
+RewriteCond %{REQUEST_URI} !^/content/dam/csr-crs
+RewriteCond %{REQUEST_URI} !^/content/gnb/servlets
+RewriteCond %{REQUEST_URI} ^/content/(.*)/fr/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^/content/(.*)/fr.html
+RewriteRule ^(.*)$ %{ENV:GNB_FRENCH_ERROR_PAGE} [PT,L]
+
+# rewrite for cross-domain issue prevention GNB ROOT
+RewriteCond %{REQUEST_URI} !^/content/gnb
+RewriteCond %{REQUEST_URI} !^/content/dam/gnb
+RewriteCond %{REQUEST_URI} !^/content/dam/csr-crs
+RewriteCond %{REQUEST_URI} !^/content/gnb/servlets
+RewriteCond %{REQUEST_URI} ^/content/(.*)/(.*)$
+RewriteRule ^(.*)$ %{ENV:GNB_ENGLISH_ERROR_PAGE} [PT,L]
+
+RewriteCond %{REQUEST_URI} !^/apps
+RewriteCond %{REQUEST_URI} !^/bin
+RewriteCond %{REQUEST_URI} !^/content
+RewriteCond %{REQUEST_URI} !^/etc
+RewriteCond %{REQUEST_URI} !^/home
+RewriteCond %{REQUEST_URI} !^/libs
+RewriteCond %{REQUEST_URI} !^/saml_login
+RewriteCond %{REQUEST_URI} !^/system
+RewriteCond %{REQUEST_URI} !^/tmp
+RewriteCond %{REQUEST_URI} !^/var
+RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.xml)$
+RewriteRule ^/(.*)$ /content/gnb/$1 [PT,L]
+
+#robots.txt for www2.gnb.ca
+RewriteRule ^/robots\.txt$ /content/gnb/robots.txt [PT,L]
+
+#RewriteCond %{REQUEST_URI} ^/robots\.txt$
+#RewriteRule ^(.*)$ /content/gnb/robots.txt [PT,L]
+
+#Below 3 conditions blocks bot traffic
+RewriteCond %{HTTP_USER_AGENT} ^.*Amazonbot.* [NC]
+RewriteRule ^ - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*GPTBot.* [NC]
+RewriteRule ^ - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*AhrefsBot.* [NC]
+RewriteRule ^ - [F,L]

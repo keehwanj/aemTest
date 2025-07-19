@@ -1,0 +1,46 @@
+/*
+	/apps/gnbfluid/components/content/videoviewer/clientlibs/css/style.css
+ */
+/**START of style.css**/
+.videoviewer .item_multimedia {
+	margin:0 10px 0 0;
+	padding:10px 0 10px;
+}
+
+.videoviewer .item_multimedia img {
+    /*
+	background-color:white;
+    border:1px solid #D3D3D3;
+    */
+    margin-bottom:10px;
+    padding:4px;
+}
+
+.videoviewer .item_multimedia  h2 {
+	color:#1874B1;
+	font-size:100%;
+	font-weight:normal;
+	margin:0;
+}
+
+.videoviewer .item_multimedia .duration {
+	color:#777777;
+	font-size:85%;
+}
+
+.videoviewer .item_multimedia p {
+	font-size:95%;
+	margin:5px 0 0;
+	padding:0;
+}
+.videoviewer a {
+   cursor:pointer;
+}
+
+.videoviewer .embed_multimedia{
+
+    margin: 0;
+    padding:0 0 5px 0;
+}
+
+/**END of style.css**/

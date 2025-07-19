@@ -1,0 +1,9 @@
+#base=js
+response.js
+bootstrap.js
+jquery.rwdImageMaps.js
+pym.js
+datatables.js
+jquery.bootgrid.js
+jquery-steps.js
+jquery-ui.js

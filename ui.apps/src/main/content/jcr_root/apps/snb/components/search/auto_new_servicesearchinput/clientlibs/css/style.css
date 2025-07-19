@@ -1,0 +1,23 @@
+/*
+	/apps/snb/components/search/auto_new_servicesearchinput/clientlibs/css/style.css
+*/
+
+.front-service-search {
+  background: url(/etc/designs/snb-bootstrap/clientlibs/newImages/search-bgr.jpg)
+    no-repeat center/cover;
+  /*background-attachment: cover;*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 205px;
+  margin-bottom: 10px;
+}
+
+.front-service-search-text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.front-service-search-input {
+}

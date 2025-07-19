@@ -1,0 +1,35 @@
+/*
+	/apps/snb/components/page/home_new/clientlibs/css/style.css
+*/
+/**START of style.css**/
+    #landingBackground {
+        background-image: url(/etc/designs/snb-bootstrap/clientlibs/newImages/BackgroundSplash.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .landingContent {
+        border: none;
+        border-radius: 0px;
+        /*padding: 30px 100px 50px 90px;*/
+        /* margin: 125px; */
+        margin-top: 200px;
+        background-color: #fff;
+    }
+    #landingIamge {
+        background-image: url(/etc/designs/snb-bootstrap/clientlibs/newImages/BackgroundSplashSNBLogo.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 200px;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .englishButton,
+    .frenchButton {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+/**END of style.css**/ 

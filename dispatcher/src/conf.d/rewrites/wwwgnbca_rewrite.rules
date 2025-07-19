@@ -1,0 +1,2228 @@
+SetEnvIf %{REQUEST_URI} ^ GNB_ENGLISH_ERROR_PAGE=/en/error/404.html
+SetEnvIf %{REQUEST_URI} ^ GNB_FRENCH_ERROR_PAGE=/fr/erreurs/404.html
+
+# non-www to www redirect
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(dev|qa|staging)\.gnb\.ca$ [NC]
+RewriteRule ^ https://www-%1.gnb.ca%{REQUEST_URI} [L,NE,R=301]
+RewriteCond %{HTTP_HOST} ^gnb\.ca$ [NC]
+RewriteRule ^ https://www.gnb.ca%{REQUEST_URI} [L,NE,R=301]
+
+RewriteRule ^/?$ /content/GNB3/home.html [PT,L]
+
+#robots.txt for www.gnb.ca
+RewriteRule ^/robots\.txt$ /content/GNB3/robots.txt [PT,L]
+#RewriteCond %{REQUEST_URI} ^/robots\.txt$
+#RewriteRule ^(.*)$ /robots.txt [PT,L]
+
+RewriteCond %{REQUEST_URI} !^/apps
+RewriteCond %{REQUEST_URI} !^/bin
+RewriteCond %{REQUEST_URI} !^/content
+RewriteCond %{REQUEST_URI} !^/etc
+RewriteCond %{REQUEST_URI} !^/home
+RewriteCond %{REQUEST_URI} !^/libs
+RewriteCond %{REQUEST_URI} !^/saml_login
+RewriteCond %{REQUEST_URI} !^/system
+RewriteCond %{REQUEST_URI} !^/tmp
+RewriteCond %{REQUEST_URI} !^/var
+RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.xml)$
+#RewriteRule ^/(.*)$ /$1 [PT,L]
+RewriteRule ^/(.*)$  /content/GNB3/$1 [PT,L]
+
+# Rewrite rules - these 3 lines configuration is for setting keywords through acscommons
+RewriteMap map.legacy "dbm:/etc/httpd/conf/tmp-gnb-redirects.map"
+RewriteCond ${map.legacy:$1} !=""
+RewriteRule ^(.*)$ ${map.legacy:$1|/} [L,R=301]
+
+#TO TEST ON DEV
+#RewriteCond %{HTTP_HOST} ^(www-)?(dev|qa|staging)\.gnb\.ca$ [NC]
+#RewriteCond %{HTTP_HOST} !^www-(dev|qa|staging)\. [NC]
+#RewriteRule ^(.*)$ http://www-%2.gnb.ca%{REQUEST_URI} [R=301,L]
+
+# Mask the /content/GNB3/ path from URLs
+RewriteRule ^/content/GNB3/(.*)(\.html)?$ /$1 [NE,L,R=301]
+
+
+#Global redirect for www2.gnb.ca content
+RewriteCond %{REQUEST_URI} ^/content/gnb/(.*)$
+RewriteRule ^(.*)$ https://www2.gnb.ca$1 [R=301,L]
+
+#Global redirect for www2.snb.ca content
+#Commenting below lines as Alex confirmed cross-domain issue does not occur anymore - 13 Jan 2025
+#RewriteCond %{REQUEST_URI} ^/content/snb/(.*)$
+#RewriteRule ^(.*)$ https://www2.snb.ca$1 [R=301,L]
+ 
+RewriteMap lc int:tolower 
+RewriteCond %{REQUEST_URI} [A-Z] 
+RewriteCond %{REQUEST_URI} !/GNB3
+RewriteRule (.*) ${lc:$1} [R=301,L]
+
+#Keywords for splash pages
+RewriteCond %{REQUEST_URI} ^/pensions$
+RewriteRule ^ https://www.gnb.ca/bil/pensions.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/511$
+RewriteRule ^ https://www.gnb.ca/bil/511.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/mpox$
+RewriteRule ^ https://www.gnb.ca/bil/mpox.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/911$
+RewriteRule ^ https://www.gnb.ca/bil/911.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/adoption$
+RewriteRule ^ https://www.gnb.ca/bil/adoption.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/agriculture$
+RewriteRule ^ https://www.gnb.ca/bil/agriculture.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/budget$
+RewriteRule ^ https://www.gnb.ca/bil/budget.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/cannabis$
+RewriteRule ^ https://www.gnb.ca/bil/cannabis.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/chignecto$
+RewriteRule ^ https://www.gnb.ca/bil/chignecto.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/covid-19$
+RewriteRule ^ https://www.gnb.ca/bil/covid.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/education$
+RewriteRule ^ https://www.gnb.ca/bil/eecd-edpe.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/immigration$
+RewriteRule ^ https://www.gnb.ca/bil/immigration.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/mosaik$
+RewriteRule ^ https://www.gnb.ca/bil/mosaik.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/sport$
+RewriteRule ^ https://www.gnb.ca/bil/team-equipe.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/violence$
+RewriteRule ^ https://www.gnb.ca/bil/violence.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/hrc-cdp$
+RewriteRule ^ https://www.gnb.ca/bil/nb-hrc-cdp.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/neuro$
+RewriteRule ^ https://www.gnb.ca/bil/neuro.html [L,NE,NC,R=301]
+RewriteCond %{REQUEST_URI} ^/emp$
+RewriteRule ^ https://www.gnb.ca/bil/emp.html [L,NE,NC,R=301]
+
+#Below 3 elections nb keywords are temporary and can be removed after 6 months - 28 May 2024
+RewriteCond %{REQUEST_URI} ^/elections/campus/$
+RewriteRule ^ https://www3.gnb.ca/elections/campus [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/elections/facts$
+RewriteRule ^ https://www3.gnb.ca/elections/facts [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/elections/faits$
+RewriteRule ^ https://www3.gnb.ca/elections/faits [L,NE,NC,R=301]
+
+#Below 5 FTB keywords are set differently so that anything after the first word still works - 7 June 2024
+#Works Only for digital keyword
+RewriteCond %{REQUEST_URI} ^/digital$
+RewriteRule ^ https://www3.gnb.ca/digital/index.html [L,NE,NC,R=301]
+
+#Works Anything after digital/
+RewriteRule ^/digital/(.*)$ https://www3.gnb.ca/digital/index.html [L,NE,NC,R=301]
+
+RewriteRule ^/digitalstandard(.*)$ https://www3.gnb.ca/digitalstandard/index.html [L,NE,NC,R=301]
+
+RewriteRule ^/numerique(.*)$ https://www3.gnb.ca/numerique/index.html [L,NE,NC,R=301]
+
+RewriteRule ^/numérique(.*)$ https://www3.gnb.ca/numerique/index.html [L,NE,NC,R=301]
+
+RewriteRule ^/normenumerique(.*)$ https://www3.gnb.ca/normenumerique/index.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nbfirst$
+RewriteRule ^ https://www2.snb.ca/content/snb/en/services-to-government/procurement/strategy.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/poverty$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/esic.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pauvreté$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sies.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/cybersafety$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/community_safety/content/cyber_safety.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/cybersecurite$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/securite_communautaire/content/cyber_securite.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/cybersécurité$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/securite_communautaire/content/cyber_securite.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/engagenb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/public_consultations.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/impliquezvousnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/consultation_publique.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/healthprofessionals$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health/healthprofessionals.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/professionnelsdelasanté$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/professionnelsdelasante.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/professionnelsdelasante$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/professionnelsdelasante.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/women$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/women.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/femmes$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/femmes.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/immigration$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/immigration.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/éducation$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/education.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/énergie$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/childcare$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/investing-in-early-learning-and-child-care.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/gardedesenfants$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/education/elcc.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/bibliotheques$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bpnb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/bibliothèques$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bpnb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/bibliothequespubliques$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bpnb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/environment$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/elg.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/environnement$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/egl.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/publiclibraries$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/nbpl.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/libraries$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/nbpl.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/finance$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/finance.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/finances$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/finances.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/energy$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/energie$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/emo$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/emo.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/omu$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/omu.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/roads$
+RewriteRule ^ https://www.gnb.ca/en/topic/driving-transportation/roads.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/routes$
+RewriteRule ^ https://www.gnb.ca/fr/sujet/conduite-transports/routes.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/transportation$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/dti.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/911$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/911.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/indigenous$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/aboriginal_affairs.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/adoption$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/adoption.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/agriculture$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/agriculture.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/aînés$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/developpement_social/aines.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/aines$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/developpement_social/aines.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/alert$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/news/public_alerts.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/alerte$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/nouvelles/alerte.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/aquaculture$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/aquaculture.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/assurance-maladie$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/Assurancemaladie.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/autochtones$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/affaires_autochtones.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/children$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/social_development/children_and_youth.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/éae$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/finances/services/services_renderer.5028.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/eeo$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/finance/services/services_renderer.5028.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/emplois$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/finances/ressources_humaines/content/emplois.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/enfants$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/developpement_social/enfants_jeunes.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/fisheries$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/10/fisheries.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/flu$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/vaccines-and-immunization.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/grippe$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/vaccins-et-immunisation.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/habitation$
+RewriteRule ^ https://www.gnb.ca/fr/sujet/famille-foyer-collectivite/logement-biens.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/housing$
+RewriteRule ^ https://www.gnb.ca/en/topic/family-home-community/housing-property.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/heritage$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/thc/heritage.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/jobs$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/choose-gnb/what-we-offer.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/médecins$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/choisir-gnb/ce-que-nous-offrons.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/medicare$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health/Medicare.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/mentalhealth$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health/AddictionsandMentalHealth.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/onb$
+RewriteRule ^ https://www.gnb.ca/en/gov/ceremony-protocol/order-nb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/on-b$
+RewriteRule ^ https://www.gnb.ca/fr/gouv/ceremonies-protocole/ordre-nb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/patrimoine$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/tpc/patrimoine.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pêches$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/10/peches.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/physicians$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/careers_in_healthcare.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/premier$
+RewriteRule ^ https://www.gnb.ca/en/org/office-of-the-premier.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/premierministre$
+RewriteRule ^ https://www.gnb.ca/fr/org/cabinet-de-la-premiere-ministre.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/rdc$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/regional_development.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/santé$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/sdr$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/developpement_regional.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/seniors$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/social_development/seniors.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/rabies$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/10/rabies.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/rage$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/10/la_rage.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/agri-traceability-premises$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/10/services/services_renderer.201363.Enregistrer_une_installation_pour_animaux_pour_fin_de_tra%EF%BF%BDabilit%EF%BF%BD_du_b%EF%BF%BDtail_et_de_la_volaille.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/préventiondelaviolence$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/femmes/Prevention_de_la_violence_et_partenariats_communautaires.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/preventiondelaviolence$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/femmes/Prevention_de_la_violence_et_partenariats_communautaires.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/violenceprevention$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/women/Violence_Prevention_and_Community_Partnerships.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/property$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/dti/surplus.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/immobilier$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/mti/biens_a_vendre.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/violence$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/Violence.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nbpdp$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health/DrugPlans/TheNewBrunswickPrescriptionDrugProgram.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pmonb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/medicaments/Le-Plan-de-medicaments-sur-ordonnance-du-Nouveau-Brunswick.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/localgovernment$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/elg.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/gouvernementslocaux$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/egl.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/surveillancedescoursdeau$
+RewriteRule ^ https://www.gnb.ca/fr/campagne/surveillance-cours-d-eau.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/archives$
+RewriteRule ^ https://archives.gnb.ca [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/news$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/news.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nouvelles$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/nouvelles.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/fsos$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/justice/content/fsos.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/sosf$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/justice/content/sosf.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/firearms$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/community_safety/content/firearms.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/armesafeu$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/securite_communautaire/content/armes_a_feu.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/scan$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/law-enforcement-and-inspections/content/safer_communities_and_neighbourhoods.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/scv$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/application-de-la-loi-et-inspections/content/securite_des_communautes_et_des_voisinages.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/roadsafety$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/community_safety/content/promo/road_safety.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/securitesurlaroute$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/securite_communautaire/content/promo/securite_routiere.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/sécuritésurlaroute$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/securite_communautaire/content/promo/securite_routiere.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/seniorsdrugplan$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/services/services_renderer.8875.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/regimemedicamentsaines$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/services/services_renderer.8875.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/climatechange$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/climate-change.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/changementsclimatiques$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/changements-climatiques.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/fire$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/law-enforcement-and-inspections/content/fire_marshal.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/feu$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/application-de-la-loi-et-inspections/content/prevot_des_incendies.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/publicsafety$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/securitepublique$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/sécuritépublique$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/naturalresources$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/ressourcesnaturelles$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/minerals$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd/energy/content/minerals.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/minerales$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der/energie/content/minerales.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/minérales$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der/energie/content/minerales.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/publichealth$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/santépublique$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/santepublique$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/armesàfeu$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/securite_communautaire/content/armes_a_feu.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/healthytoddler$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/healthy_people/content/healthytoddler.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/trottineurensante$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/gens_en_sante/content/trottineurensante.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/thinkmoose$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/dti/promos/think_moose.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pensezorignaux$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/mti/promos/penez_orignaux.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/breastfeeding$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/healthy_people/content/bfi.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/allaitement$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/gens_en_sante/content/allaitement_maternel_initiative.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/teamnb$
+RewriteRule ^ https://www.gnb.ca/en/campaign/team-new-brunswick.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/equipenb$
+RewriteRule ^ https://www.gnb.ca/fr/campagne/equipe-Nouveau-Brunswick.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/isd$
+RewriteRule ^ https://www.gnb.ca/en/topic/laws-safety/courts-jails/probation.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/psi$
+RewriteRule ^ https://www.gnb.ca/fr/sujet/lois-securite/tribunaux-prisons/probation.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/humanresources$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/finance/human_resources.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/ressourceshumaine$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/finances/ressources_humaines.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pre-budget$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/public_consultations/budget.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/prebudgetaire$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/consultation_publique/budget.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/prébudgétaire$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/consultation_publique/budget.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/emploi$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/finances/ressources_humaines/content/emplois.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/prebudget$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/public_consultations/budget.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/publicaccounts$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/finance/comptroller/content/public_accounts.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/comptespublics$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/finances/controleur/content/comptes_publics.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/ordernb$
+RewriteRule ^ https://www.gnb.ca/en/gov/ceremony-protocol/order-nb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/ordrenb$
+RewriteRule ^ https://www.gnb.ca/fr/gouv/ceremonies-protocole/ordre-nb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/literacy$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/post-secondary_education_training_and_labour/Skills/content/AdultLearningAndEssentialSkills/Literacy.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/litteratie$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/education_postsecondaire_formation_et_travail/Competences/content/FormationDesAdultesEtAlphabetisation/Alphabetisation.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/littératie$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/education_postsecondaire_formation_et_travail/Competences/content/FormationDesAdultesEtAlphabetisation/Alphabetisation.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/disasterfinancialassistance$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/news/public_alerts/report_damages.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/aidecatastrophe$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/nouvelles/alerte/signaler_des_dommage.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nbprotectednaturalareas$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd/forestry-conservation/content/ProtectedNaturalAreas.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/algae$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/cyanobacteria.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/algues$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/cyanobacteries.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/employeebenefits$
+RewriteRule ^ https://vestcor.org/en/benefits/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/employee_benefits$
+RewriteRule ^ https://vestcor.org/en/benefits/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/avantagessociaux$
+RewriteRule ^ https://vestcor.org/fr/avantages-sociaux/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/avantages_sociaux_des_employes$
+RewriteRule ^ https://vestcor.org/fr/avantages-sociaux/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/beaches$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/health_advisories/beachadvisories.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/plages$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/avisde_sante/avis_eau_plages.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/sharetheroad$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/community_safety/content/drivers_vehicles/content/were-all-traffic.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/partageonslaroute$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/securite_communautaire/content/conducteurs_et_vehicules/content/la-circulation-cest-nous-tous.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/ose$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/justice/content/fsos.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/beos$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/justice/content/sosf.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/wildlife$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/faune$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der/peche-faune.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/homefirst$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/social_development/promos/home_first.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/dabordchezsoi$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/developpement_social/promos/d_abord_chez_soi.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/wildblueberries$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/10/agriculture/content/crops/wild_blueberries.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/bleuetssauvages$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/10/agriculture/content/cultures/bleuets_sauvages.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/opioids$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/opioids.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/opioïdes$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/opioides.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/opioides$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/opioides.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/occ$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/organismes-conseils-et-commissions.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/aprts$
+RewriteRule ^ https://www2.snb.ca/content/snb/en/services-to-government/procurement/aprts.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/eipa$
+RewriteRule ^ https://www2.snb.ca/content/snb/fr/services-au-gouvernement/marchepublics/eipa.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/approvisionnement$
+RewriteRule ^ https://www2.snb.ca/content/snb/fr/services-au-gouvernement/marchepublics.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/licence$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/community_safety/content/drivers_vehicles/content/drivers-licence-and-photo-id.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/permis$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/securite_communautaire/content/conducteurs_et_vehicules/content/permis-de-conduire-et-carte-identite.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/payequity$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/pay_equity_bureau.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/equitesalariale$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/bureau_de_lequite_salariale.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/équitésalariale$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/bureau_de_lequite_salariale.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/fsl$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/education/k12/content/anglophone_sector/fsle.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/earlynb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/improved_early_learning_and_child_care.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/enfancenb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/amelioration_de_lapprentissage_et_de_la_garde_des_jeunes_enfants.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/clearvision$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/4yr_visionbenefit.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/bonnevision$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/prestation_de_soins_dela_vue_pour_enfants_de_quatre_ans.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/screening$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health/NewBrunswickCancerNetwork/content/CancerPreventionandScreening.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/depistage$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/reseau_du_cancer_du_nouveau-brunswick/content/Prevention_et_depistage_du_cancer.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/dépistage$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/reseau_du_cancer_du_nouveau-brunswick/content/Prevention_et_depistage_du_cancer.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/dfa$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/news/public_alerts/report_damages.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/paf$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/nouvelles/alerte/signaler_des_dommage.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/retablissementdelinondation2019$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/nouvelles/alerte/SurveillanceDesCoursDEau/2019inondation_recovery.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nbaap$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/services/services_renderer.201010.Sport-_Athlete_Assistance_Grant.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/paanb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/services/services_renderer.201010.Sport-_Athlete_Assistance_Grant.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/teach$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/education/k12/content/promos/become_a_teacher.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/enseigner$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/education/m12/content/promos/devenez_enseignante_enseignant.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/ticksmart$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/cdc/content/vectorborne_andzoonotic/Tick-Borne_Diseases.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/gareauxtiques$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/maladies_transmissibles/content/vectorielle_zoonoses/Maladies-Transmises-Par-Les-Tiques.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/hars$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/healthy_environments/content/heat_related_illnesses/ResponseSystem.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/saic$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/milieux_sains/content/les_malaises_associesalachaleur/alerte_de_chaleuretsystemedintervention.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/safesleep$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/healthy_people/content/safesleep.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/daycareassistanceprogram$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/services/services_renderer.14136.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/assistanceauservicedegarderie$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/services/services_renderer.14136.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/exploringliteracies$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/education/elcc/content/exploring_literacies.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/tenders$
+RewriteRule ^ https://www2.snb.ca/content/snb/en/services-to-government/procurement/tenders.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/procurement$
+RewriteRule ^ https://www2.snb.ca/content/snb/en/services-to-government/procurement.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/soumissions$
+RewriteRule ^ https://www2.snb.ca/content/snb/fr/services-au-gouvernement/marchepublics/appeldoffres.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/gettested$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/cdc/content/Sexually_Transmitted_Blood_Borne_Infections.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/passeruntest$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/maladies_transmissibles/content/maladies_et_infections_transmises_sexuellement_et_par_le_sang.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/clb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/esic/bond.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/bec$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sies/bon.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/teachfsl$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/education/k12/content/promos/FSLTeachingPositions.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/enseignerfls$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/education/m12/content/promos/FSLTeachingPositions.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/carbonmonoxide$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/emo/carbon-monoxide-warning.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/monoxydedecarbone$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/omu/avertissement-relatif-au-monoxyde-de-carbone.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/opendata$
+RewriteRule ^ https://gnb.socrata.com/en [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/donneesouvertes$
+RewriteRule ^ https://gnb.socrata.com/fr [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/donnéesouvertes$
+RewriteRule ^ https://gnb.socrata.com/fr [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/wintersafety$
+RewriteRule ^ https://www.gnb.ca/en/topic/driving-transportation/driving-safety/winter-driving.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/securiteenhiver$
+RewriteRule ^ https://www.gnb.ca/fr/sujet/conduite-transports/conduite-surs/conduite-hiver.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/sécuritéenhiver$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/securite_en_hiver.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/santémentale$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/traitements-dependances-sante-mentale.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/santementale$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/traitements-dependances-sante-mentale.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/cars$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/post-secondary_education_training_and_labour/People/content/IndustrialRelations/collective_agreement_retrieval_system.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/sccc$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/education_postsecondaire_formation_et_travail/Personnes/content/RelationsIndustrielles/systeme_de_consultation_des_conventions_collectives.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/fishnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/go-fishing/content/FishNBDays.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pechenb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der/peche-faune/content/aller-peche/JourneesPeche.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/hrc-award$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/nbhrc/education-and-engagement/award.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/prix-cdp$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/cdpnb/education-et-engagement/prix.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/parentportal$
+RewriteRule ^ https://www.nbed.nb.ca/parentportal/en/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/portailparents$
+RewriteRule ^ https://www.nbed.nb.ca/parentportal/fr/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/floodrecovery2019$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/news/public_alerts/river_watch/2019flood_recovery.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/rétablissementlinondation2019$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/nouvelles/alerte/SurveillanceDesCoursDEau/2019inondation_recovery.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nowyouknow$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/sexual_violence.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/soisaucourant$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/violence_sexuelle.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/measles$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/cdc/content/measles.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/rougeole$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/maladies_transmissibles/content/rougeole.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/développementsocial$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/developpement_social.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/developpementsocial$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/developpement_social.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/socialdevelopment$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/social_development.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pauvrete$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sies.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/balance$
+RewriteRule ^ https://nbhealthjobs.com/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/équilibre$
+RewriteRule ^ https://xn--emploissantnb-lhb.com/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/equilibre$
+RewriteRule ^ https://xn--emploissantnb-lhb.com/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/foodsafety$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/healthy_environments/content/FoodSafetyResources.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/salubritédesaliments$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/milieux_sains/content/RenseignementSurLaSalubriteDesAliments.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/salubritedesaliments$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/milieux_sains/content/RenseignementSurLaSalubriteDesAliments.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/tourism$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/thc.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/tourisme$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/tpc.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/fosterfamily$
+RewriteRule ^ https://socialsupportsnb.ca/en/program/fostering-child-or-youth [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/familledaccueil$
+RewriteRule ^ https://soutienssociauxnb.ca/fr/program/accueillir-un-enfant-ou-un-jeune [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/vapotage$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/gens_en_sante/content/reduction_tabagisme/vapotage.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/vaping$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/healthy_people/content/LivingTobaccoFree/vaping.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/getyourbenefits$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/esic/get_your_benefits.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/obtenezvosprestations$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sies/obtenez_vos_prestations.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/seniorsbenefit$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/new-brunswick-low-income-seniors-benefit.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/credit-personnes-agees$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/prestation-pour-ersonnes-agees-faible-revenu.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/creditpersonnesagees$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/prestation-pour-ersonnes-agees-faible-revenu.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/directdeposit$
+RewriteRule ^ https://www.pxw1.snb.ca/snb7001/e/1000/CSS-FOL-SNB_DD-01_E.pdf [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/virementdirect$
+RewriteRule ^ https://www.pxw1.snb.ca/snb7001/f/1000/CSS-FOL-SNB_DD-01_f.pdf [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/bienmanger$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/gens_en_sante/content/saine_alimentation.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/healthyeating$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/healthy_people/content/healthy_eating.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/labour$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/post-secondary_education_training_and_labour/People.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/vehicleinspection$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/community_safety/content/drivers_vehicles/content/changes-to-motor-vehicle-inspections-in-new-brunswick.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/inspectionvehicule$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/securite_communautaire/content/conducteurs_et_vehicules/content/Modifications-aux-inspections-des-vehicules-moteur-au-Nouveau-Brunswick.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/inspectionvéhicule$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/securite_communautaire/content/conducteurs_et_vehicules/content/Modifications-aux-inspections-des-vehicules-moteur-au-Nouveau-Brunswick.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/postsecondaire$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/education_postsecondaire_formation_et_travail/Competences.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/royalgazette$
+RewriteRule ^ https://www.gnb.ca/en/gov/royal-gazette.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/coronavirus$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/coronavirus.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/covid-19$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/coronavirus.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/jif$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/femmes/JIF.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/iwd$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/women/IWD.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/superclinics$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/esic/get_your_benefits/super_clinic.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/supercomptoirs$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sies/obtenez_vos_prestations/super_comtoirs.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/ticketing$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/attorney-general/content/new-ticketing-process-for-motor-vehicle-act-offences.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/contraventions$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/procureur_general/content/Nouveau-processus-pour-les-contraventions-visant-les-infractions.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/tfw$
+RewriteRule ^ https://www.pxw1.snb.ca/snb9000/product.aspx?productid=A001P621001&l=e [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/tet$
+RewriteRule ^ https://www.pxw1.snb.ca/snb9000/product.aspx?productid=A001P621001&l=f [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/workingnb$
+RewriteRule ^ https://www.workingnb.ca/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/travailnb$
+RewriteRule ^ https://travailnb.ca/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/shediacbaywatershed$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/ParleeBeach/shediacbay_watershed_management_plan.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/bassinversantdelabaiedeshediac$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/PlageParlee/plandegestion_bassin_hydrographique_dela_baiedeshediac.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nbdabord$
+RewriteRule ^ https://www2.snb.ca/content/snb/fr/services-au-gouvernement/marchepublics/strategie.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/usp$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/finance/promo/unsolicited_proposals.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/propositionsns$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/finances/promo/propositions_non_sollicitees.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/acts$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/attorney-general/content/acts_regulations.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/regulations$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/attorney-general/content/acts_regulations.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/lois$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/procureur_general/content/lois_et_reglements.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/reglements$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/procureur_general/content/lois_et_reglements.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/droitainfo$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/acces-a-l-information-et-protection-de-la-vie-privee.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/naturelegacy$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd/promo/nature_legacy.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/patrimoinenaturel$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der/promo/patrimoine_naturel.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/prixvive$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/femmes/VIVE-Prix.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/viveawards$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/women/VIVE-Awards.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/jifeleves$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/femmes/JIF/IWD-eleves.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/iwdstudents$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/women/IWD/IWD-students.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/godatae$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/cdc/content/go_data.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/godataf$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/maladies_transmissibles/content/go_data.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/vibrantnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/local-governance-reform.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nbdynamique$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/reforme-de-la-gouvernance-locale.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/iwdcalendar$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/women/IWD.html/#CalendarofEvents [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/jifcalendrier$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/femmes/JIF.html#Calendrierdesevenements [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/gettestedcovid19$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/covid-19/about-covid-19/testing-tracing.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/faitesvoustestercovid19$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/covid-19/a-propos-de-covid-19/test-tracage.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/vaccincovid19$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/covid-19/vaccin-nb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/covid19vaccine$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/covid-19/nb-vaccine.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/drugplansformulary$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health/DrugPlans/NBDrugPlan/ForHealthCareProfessionals/NewBrunswickDrugPlansFormulary.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/formulaireregimesdemedicaments$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/medicaments/Le_regime_medicaments_du_N-B/PourLesProfessionnelsDeLaSante/FormulaireRegimesMedicamentsDuNouveauBrunswick.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/drugplanspolicies$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health/DrugPlans/NBDrugPlan/PolicyManual.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/politiquesregimesdemedicaments$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/medicaments/Le_regime_medicaments_du_N-B/manuel-politiques.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/francophonie$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/francophonie.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/bookavaccine$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/covid-19/nb-vaccine.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/rendezvousvaccin$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/covid-19/vaccin-nb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/supportservices$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/women/Violence_Prevention_and_Community_Partnerships/content/Support-Services-for-Victims-of-Abuse.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/services-de-soutien$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/femmes/Prevention_de_la_violence_et_partenariats_communautaires/content/Services-de-soutien-pour-les-victimes-de-violence.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/summerreadingclub$
+RewriteRule ^ https://www.src-cle.ca [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/clublectureete$
+RewriteRule ^ https://www.src-cle.ca/?lang=fr [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/abc$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/abc.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nbday$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/thc/promo/nb_day_2023.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/fêtedunb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/tpc/promo/fete_nb_2023.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/fetedunb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/tpc/promo/fete_nb_2023.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/localfoodandbev$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/10/food-and-beverages-nb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/alimentsetboissonslocaux$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/10/boissons-et-aliments-nb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pointofcaretesting$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/covid-19/about-covid-19/testing-tracing.html#7 [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/depistageaupointdeservice$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/covid-19/a-propos-de-covid-19/test-tracage.html#7 [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/oysters$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/10/new-brunswick-oyster-promotional-assets.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/huitres$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/10/materiel-promotionnel-pour-les-huitres-du-nouveau-brunswick.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/educationnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/education/m12/content/promos/devenez_enseignante_enseignant.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/2020lsdbudgets$
+RewriteRule ^ https://www2.gnb.ca/content/dam/gnb/Departments/lg-gl/pdf/MunicipalStatistics-StatistiquesMunicipales/2020.pdf [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/trc$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/truth-and-reconciliation.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/cvr$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/verite-et-reconciliation.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/dormirensecurite$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/gens_en_sante/content/dormir_en_securite.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/ccbf$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/elg/local_government/content/financial_support/content/gas_tax_fund.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/fdcc$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/egl/gouvernements_locaux/content/financiers/content/fonds_delataxsurlessence.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/skilledtrades$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/skilled-trades-nb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/metiers-specialisés$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/metiers-specialises.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/metiers-specialises$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/metiers-specialises.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/systemicracism$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/csr-crs/en.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/racismesystemique$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/csr-crs/fr.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/racismesystémique$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/csr-crs/fr.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/futuregnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/finance/promo/future-gnb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/avenirgnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/finances/promo/avenir-gnb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/propertytax$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/finance/taxes/nb_property_tax.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/impotfoncier$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/finances/impots/impot_foncer_nb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/reportingcrime$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/crime-prevention-and-reduction.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/signaleruncrime$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/prevention-et-reduction-criminalite.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/positiveresult$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/covid-19/positive_result.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/resultatpositif$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/covid-19/resultat_positif.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/springweightrestrictions$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/dti/trucking/content/spring_weight_restrictions.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/limitationsdepoidsprintemps$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/mti/camionnage/content/limitations_de_poids_printemps.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/chignecto$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/chignecto.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/chignectou$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/mti/promos/chignecto-isthmus.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/theroadahead$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/dti/promos/road-ahead.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/larouteàsuivre$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/mti/promos/route-a-suivre.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/harbourbridge$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/dti/promos/sjhb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pontharbour$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/mti/promos/sjhb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/centennialbridge$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/dti/promos/centennial-bridge.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pontcentennial$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/mti/promos/pont-centennial.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/education/reussite$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/education/m12/content/SoyezAuCoeur.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/recalculation$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/justice/content/child-support-recalculation-service.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/recalcul$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/justice/content/service-de-recalcul-des-aliments-pour-enfants.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/renting$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/renting-in-new-brunswick.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/louer$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/louer-au-nouveau-brunswick.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/greenprocurement$
+RewriteRule ^ https://www2.snb.ca/content/snb/en/services-to-government/procurement/green-procurement.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/approvisionnementécologique$
+RewriteRule ^ https://www2.snb.ca/content/snb/fr/services-au-gouvernement/marchepublics/approvisionnement-ecologique.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/dti$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/dti.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/mti$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/mti.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/csrs$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/justice/content/child-support-recalculation-service.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/srae$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/justice/content/service-de-recalcul-des-aliments-pour-enfants.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/forest$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd/forestry-conservation.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/foret$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der/foresterie-conservation.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/forêt$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der/foresterie-conservation.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/gazetteroyale$
+RewriteRule ^ https://www.gnb.ca/fr/gouv/gazette-royale.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/daaf-social-local$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/10/social-local.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/maap-médias-sociaux-locaux$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/10/medias-sociaux-locaux.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/garderie$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/investir-services-apprentissage-garde-jeunes-enfants.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/council$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/pcsdp.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/conseil$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/cpmcph.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/getinvolved$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/investing-in-early-learning-and-child-care/engagement-and-partnerships.html#3 [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/impliquezvous$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/investir-services-apprentissage-garde-jeunes-enfants/engagement-et-partenariats.html#3 [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nurses$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/careers_in_healthcare.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/infirmiers$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/carrieres_dans_lessoinsdesante.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/vetservices$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/10/agriculture/content/livestock/veterinary_services.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/vétérinaires$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/10/agriculture/content/betail/veterinaires.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/veterinaires$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/10/agriculture/content/betail/veterinaires.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/511$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/511.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/crownlands$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd/crown-lands.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/terresdelacouronne$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der/terres-de-la-couronne.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/healthplan$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/new-brunswick-health-plan.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/plansante$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/plan-de-la-sante-du-NB.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/plansanté$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/plan-de-la-sante-du-NB.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/tendressoins$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/gens_en_sante/content/tendres_soins.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/lovingcare$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/healthy_people/content/loving_care.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/healthyagingchampion$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/social_development/seniors/content/secretariat/champion.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/championsduvieillissement$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/developpement_social/aines/content/secretariat/champion.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nonurgentcare$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/accessing-healthcare.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/soinsnonurgents$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/acces-aux-soins-de-sante.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/parleebeach$
+RewriteRule ^ https://beaches.gnb.ca/en/SamplingLocation/Index [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/plageparlee$
+RewriteRule ^ https://beaches.gnb.ca/fr/Lieu%C3%89chantillonnage/Indice [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/crimeprevention$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/crime-prevention-and-reduction.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/preventionducrime$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/prevention-et-reduction-criminalite.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/préventionducrime$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/prevention-et-reduction-criminalite.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/hiringfarmvets$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/large-animal-veterinarians.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/emploisveterinairesferme$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/veterinaires-pour-gros-animaux.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/emploisvétérinairesferme$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/veterinaires-pour-gros-animaux.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/stepuptonursing$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/nursing-education-pathway.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/missionsoinsinfirmiers$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/travail-etudes-soins-infirmiers.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/innovativeimmersion$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/evolving-french-language-learning.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/immersionnovatrice$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/langue-francais-en-evolution.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/coolingtowers$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/services/services_renderer.201554.Cooling_Towers_(Water_Circulation_System).html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/toursderefroidissement$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/services/services_renderer.201554.Tours_de_Refroidissement_(Syst%C3%A8me_M%C3%A9canique_D_eau_Recircul%C3%A9e).html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/fishwildlife$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pechefaune$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der/peche-faune.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pêchefaune$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der/peche-faune.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/mosaik$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/mosaik.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/incontrol$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/cannabis-in-new-brunswick.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/encontrole$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/cannabis-au-nouveau-brunswick.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/beoa$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/justice/content/sosf.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/affordable$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/affordable.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/abordable$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/abordable.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/budget$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/budget.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/wastediversion$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/waste-reduction-diversion.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/reacheminementdesdechets$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/reduction-reacheminement-dechets.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/educationgovernance$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/education-governance-renewal.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/gouvernanceeducative$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/renouvellement-gouvernance-education.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/maplesugary$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/10/agriculture/content/maple-sector-leasing-opportunities.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/erabliere$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/10/agriculture/content/possibilites-de-location-dans-le-secteur-de-l-erable.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/érablière$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/10/agriculture/content/possibilites-de-location-dans-le-secteur-de-l-erable.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/internationalmedicine$
+RewriteRule ^ https://nbhealthjobs.ca/#section-Navigation-Services [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/medicineinternationale$
+RewriteRule ^ https://emploissanténb.ca/#section-Services-dOrientation [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/médicineinternationale$
+RewriteRule ^ https://emploissanténb.ca/#section-Services-dOrientation [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/mpox$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/mpox.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/healthypeople$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/healthy_people.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/gensensante$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/gens_en_sante.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/medecineinternationale$
+RewriteRule ^ https://emploissanténb.ca/#section-Services-dOrientation [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/médecineinternationale$
+RewriteRule ^ https://emploissanténb.ca/#section-Services-dOrientation [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/hurricane$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/hurricane-lee.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/ouragan$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/ouragan-lee.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/propertytaxsale$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/tax-sale.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/ventepournonpaiementdelimpot$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/vente-de-l-impot-foncier.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/anewlife$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/healthy_people/content/healthy_pregnancy.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/unenouvellevie$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/gens_en_sante/content/grossesse_en_sante.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/earlyyearsnavigators$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/early-years-family-navigators.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/vaccines$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/vaccines-and-immunization.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/vaccins$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/vaccins-et-immunisation.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/buildingstandardspecs$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/dti/standards.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/batimentsdevistype$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/mti/standards.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/aimtaskforce$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/aim.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/groupedetravailaim$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/groupe-de-travailAIM.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/officiallanguages$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/intergovernmental_affairs/canadian-francophonie.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/languesofficielles$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/affaires_intergouvernementales/francophonie-canadienne.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/modularreactor$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/elg/environment/content/environmental_impactassessment/comprehensive_reviews/arc-clean-technology.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/reacteurmodulaire$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/egl/environnement/content/etude_d_impact_environnemental/etudes_detaillees/arc-clean-technology.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/réacteurmodulaire$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/egl/environnement/content/etude_d_impact_environnemental/etudes_detaillees/arc-clean-technology.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pension$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/pensionsnb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pensions$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/pensionsnb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/healthprivacy$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/admin/privacy.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/santevieprivee$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/admin/declaration_de_confidentialite.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/storm$
+RewriteRule ^ https://www.gnb.ca/en/topic/laws-safety/emergency-preparedness-alerts/storm-watch.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/tempete$
+RewriteRule ^ https://www.gnb.ca/fr/sujet/lois-securite/gestion-urgences/surveillance-tempetes.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/tempête$
+RewriteRule ^ https://www.gnb.ca/fr/sujet/lois-securite/gestion-urgences/surveillance-tempetes.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/accessprivacy$
+RewriteRule ^ https://www.gnb.ca/en/gov/information-access-privacy.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/accesalavieprivee$
+RewriteRule ^ https://www.gnb.ca/fr/gouv/acces-information-et-vie-privee.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/servicespedagogiques$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/education/m12/content/secteur_francophone/services_pedagogiques.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/careerexploration$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/women/Economic_Security/content/Trades_and_Tech.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/explorationdecarrière$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/femmes/Securite_economique/content/Metiers_et_technologies.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/explorationdecarriere$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/femmes/Securite_economique/content/Metiers_et_technologies.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/leb-cte$
+RewriteRule ^ https://www3.gnb.ca/LEB-CTE/index.htm [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/gambling$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health/Gambling/gambling.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/jeudehasard$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/Le_jeu_compulsif/Jeu_de_hasard.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/protectedconservedareas$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd/forestry-conservation/content/protected-areas.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/airesprotégéesconservées$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der/foresterie-conservation/content/zones-protegees.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/airesprotegeesconservees$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der/foresterie-conservation/content/zones-protegees.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nbworkersbenefit$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/new-brunswick-workers-benefit.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/prestationtravailleursnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/prestation-pour-les-travailleurs-du-nouveau-brunswick.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/sustainablecap$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/10/agriculture/content/agriculture_programs.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pcadurable$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/10/agriculture/content/programmes.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/alcoholrisks$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/health-risks-of-alcohol.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/risquesalcool$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/risques-alcool.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/drugplan$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health/DrugPlans/NBDrugPlan.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/regimemedicaments$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/medicaments/Le_regime_medicaments_du_N-B.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/affordability$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/affordable.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/abordabilite$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/abordable.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/dementia$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/dementia.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/démence$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/demence.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/demence$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/demence.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/cleanenergy$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/clean-energy.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/energiepropre$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/energie-propre.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/brei-nb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/brei-nb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/skilledtradesnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/skilled-trades-nb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/métiersspécialisésnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/metiers-specialises.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/metiersspecialisesnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/metiers-specialises.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/skilledtrades$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/skilled-trades-nb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/métiersspécialisés$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/metiers-specialises.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/metiersspecialises$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/metiers-specialises.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/health$
+RewriteRule ^ http://www2.gnb.ca/content/gnb/en/departments/health.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/accespatientnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/acces-aux-soins-de-sante/etre-jumele.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/accèspatientnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/acces-aux-soins-de-sante/etre-jumele.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/acts$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/attorney-general/content/acts_regulations.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/adoption$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/adoption.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/agriculture$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/agriculture.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/aines$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/developpement_social/aines.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/aînés$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/developpement_social/aines.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/alert$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/nouvelles/alerte.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/alerte$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/nouvelles/alerte.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/apprenticeship$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/skilled-trades-nb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/apprentissage$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/metiers-specialises.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/aquaculture$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/aquaculture.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/archives$
+RewriteRule ^ https://archives.gnb.ca/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/assurance-maladie$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/Assurancemaladie.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/autochtones$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/affaires_autochtones.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/avantages_sociaux_des_employes$
+RewriteRule ^ https://vestcor.org/fr/avantages-sociaux/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/childcare$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/investing-in-early-learning-and-child-care.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/children$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/social_development/children_and_youth.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/cns$
+RewriteRule ^ https://www3.gnb.ca/CNS/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/conseil$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/cpmcph.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/council$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/pcsdp.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/developpementsocial$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/developpement_social.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/développementsocial$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/developpement_social.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/drugplan$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health/DrugPlans/NBDrugPlan.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/economic_security$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/women/Economic_Security.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/education$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/eecd-edpe.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/eeo$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/finance/services/services_renderer.5028.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/elections$
+RewriteRule ^ https://www.electionsnb.ca/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/elections/images$
+RewriteRule ^ https://www.electionsnb.ca/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/emploi$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/finances/ressources_humaines/content/emplois.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/emplois$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/finances/ressources_humaines/content/emplois.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/employee_benefits$
+RewriteRule ^ https://vestcor.org/en/benefits/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/enfants$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/developpement_social/enfants_jeunes.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/epft$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/education_postsecondaire_formation_et_travail.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/famille$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/developpement_social/particuliers_familles.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/femmes$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/femmes.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/feu$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/application-de-la-loi-et-inspections/content/prevot_des_incendies.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/fire$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/law-enforcement-and-inspections/content/fire_marshal.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/firewatch$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/news/public_alerts/forest_fire_watch.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/fisheries$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/10/fisheries.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/flu$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/vaccines-and-immunization.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/gardedesenfants$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/education/elcc.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/grippe$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/vaccins-et-immunisation.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/gsar$
+RewriteRule ^ https://www3.gnb.ca/GSAR/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/health$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/heritage$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/thc/heritage.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/humanresources$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/finance/human_resources.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/indicedesfeux$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/nouvelles/alerte/indice_des_feux.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/investorrelations$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/finance/investor_relations.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/labour$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/post-secondary_education_training_and_labour/People.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/leb-cte$
+RewriteRule ^ https://www3.gnb.ca/LEB-CTE/index.htm [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/lepreau$
+RewriteRule ^ https://www3.gnb.ca/Lepreau/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/lois$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/procureur_general/content/lois_et_reglements.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/medecins$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/carrieres_dans_lessoinsdesante.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/medicare$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health/Medicare.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/mentalhealth$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health/AddictionsandMentalHealth.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/minerales$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der/energie/content/minerales.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/mineraux$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd/energy/content/minerals.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/minéraux$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd/energy/content/minerals.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/naturalresources$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nbon$
+RewriteRule ^ https://nbon-rpanb.gnb.ca/welcome?language=En [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/patientconnectnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/accessing-healthcare/be-matched.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/patrimoine$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/tpc/patrimoine.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pauvrete$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sies.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pauvreté$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sies.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/peches$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/10/peches.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pêches$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/10/peches.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pensions$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/pensionsnb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/petl$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/post-secondary_education_training_and_labour.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/physicians$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/careers_in_healthcare.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/postsecondaire$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/education_postsecondaire_formation_et_travail/Competences.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/postsecondary$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/post-secondary_education_training_and_labour/Skills.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/poverty$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/esic.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/procurement$
+RewriteRule ^ https://www2.snb.ca/content/snb/en/services-to-government/procurement.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/publichealth$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/publicsafety$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/rdc$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/regional_development.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/regimemedicaments$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/medicaments/Le_regime_medicaments_du_N-B.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/reglementationintelligente$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/conseil_executif/promo/reglementation_intelligente.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/réglementationintelligente$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/conseil_executif/promo/reglementation_intelligente.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/relationsinvestisseurs$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/finances/investisseurs.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/ressourcesnaturelles$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/der.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/rpanb$
+RewriteRule ^ https://nbon-rpanb.gnb.ca/welcome?Language=Fr [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/sante$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/santé$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/santementale$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/traitements-dependances-sante-mentale.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/santémentale$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/traitements-dependances-sante-mentale.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/santepublique$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/santépublique$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/sdr$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/developpement_regional.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/securite_economique$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/femmes/Securite_economique.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/securitepublique$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/sécuritépublique$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/seniors$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/social_development/seniors.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/smartregs$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/executive_council/promo/smart_regulations.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/smartregulations$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/executive_council/promo/smart_regulations.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/socialdevelopment$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/social_development.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/soumissions$
+RewriteRule ^ https://www2.snb.ca/content/snb/fr/services-au-gouvernement/marchepublics/appeldoffres.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/tenders$
+RewriteRule ^ https://www2.snb.ca/content/snb/en/services-to-government/procurement/tenders.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/tourism$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/thc.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/tourisme$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/tpc.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/transports$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/mti.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/travail$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/education_postsecondaire_formation_et_travail/Personnes.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/women$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/women.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/0012$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/executive_council.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/0051$
+RewriteRule ^ https://www3.gnb.ca/0051/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/0055$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health/Suicide_Prevention.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/0113$
+RewriteRule ^ https://www3.gnb.ca/0113/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/0212$
+RewriteRule ^ https://www3.gnb.ca/0212/travel-e.asp [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/0217$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/accessing-healthcare/be-matched.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/0384$
+RewriteRule ^ https://www3.gnb.ca/0384/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/0396$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/careers_in_healthcare.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/0900$
+RewriteRule ^ https://www3.gnb.ca/0900/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/cpse-ceps$
+RewriteRule ^ https://www3.gnb.ca/cpse-ceps/ [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/ftb-fct$
+RewriteRule ^ https://www3.gnb.ca/ftb-fct/?lang=en [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/0000$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/eecd-edpe.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/voicesnb$
+RewriteRule ^ https://www2.gnb.ca/content/vnbw-vfnb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/0158$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/fin.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/00163/learning/index-e.asp$
+RewriteRule ^ https://www3.gnb.ca/0034/learning/index-e.asp [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/00163/learning/index-f.asp$
+RewriteRule ^ https://www3.gnb.ca/0034/learning/index-f.asp [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/00163/learning/facilitator/form-e.asp$
+RewriteRule ^ https://www3.gnb.ca/0034/learning/facilitator/form-e.asp [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/00163/learning/facilitator/form-f.asp$
+RewriteRule ^ https://www3.gnb.ca/0034/learning/facilitator/form-f.asp [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/0354$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/ParleeBeach.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/minerals$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd/energy/content/minerals.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/0078/minerals$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/erd/energy/content/minerals.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/pension$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/pensionsnb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/2221$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/dti/surplus.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/911$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/911.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/startyourfarm$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/farming-new-entrants.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/demarrezvotreferme$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/agriculture-nouveaux-venus.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/démarrezvotreferme$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/agriculture-nouveaux-venus.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/efia$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/biling/efia.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/water$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/elg/environment/content/water.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/eau$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/egl/environnement/content/eau.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/farmbiogas$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/services/services_renderer.201589.Anaerobic_Digestor_-_Feasibility_Studies_Funding_Program.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/biogazagricole$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/services/services_renderer.201589.Programme_de_financement_-_des_%C3%A9tudes_de_faisabilit%C3%A9_des_digesteurs_ana%C3%A9robies.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nbdrugplans$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health/DrugPlans/content/drugplans.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/regimesmedicamentnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/medicaments/content/regimes_de_medicaments.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/becomeateacher$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/become-a-teacher.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/devenirenseignant$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/devenir-enseignant.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nblead$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/nb-lead.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/electrical$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/public-safety/law-enforcement-and-inspections/content/technical_inspection_services.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/electrique$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/application-de-la-loi-et-inspections/content/services_dinspection_technique.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/électrique$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/securite-publique/application-de-la-loi-et-inspections/content/services_dinspection_technique.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/choosegnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/choose-gnb.html [L,NE,NC,R=301]
+ 
+RewriteCond %{REQUEST_URI} ^/choisirgnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/choisir-gnb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nbeducationjobs$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/education-sector-jobs.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/emploiseneducationnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/education-emploi.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/sexualhealth$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/sexual-health-and-well-being.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/santesexuelle$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/sante-sexuelle-et-bien-etre.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/choisirlegnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/choisir-gnb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/teachercertification$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/office-teacher-certification.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/certificationdesmaitres$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/bureau-de-certification-des-maitres.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/premièreministre$
+RewriteRule ^ https://www.gnb.ca/fr/org/cabinet-de-la-premiere-ministre.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/premiereministre$
+RewriteRule ^ https://www.gnb.ca/fr/org/cabinet-de-la-premiere-ministre.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/talentpool$
+RewriteRule ^ https://gnb1.hiringplatform.ca/188595-gnb-talent-pool/821146-registration/en [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/bassindetalents$
+RewriteRule ^ https://gnb1.hiringplatform.ca/188595-gnb-talent-pool/821146-registration/fr_CA [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/thronespeech$
+RewriteRule ^ https://www.gnb.ca/en/gov/speech-throne.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/discoursdutrone$
+RewriteRule ^ https://www.gnb.ca/fr/gouv/discours-trone.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/discoursdutrône$
+RewriteRule ^ https://www.gnb.ca/fr/gouv/discours-trone.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/biosimilars$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/health/DrugPlans/NBDrugPlan/biosimilars.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/biosimilaires$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/sante/medicaments/Le_regime_medicaments_du_N-B/biosimilaires.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/impaireddriving$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/impaired-driving.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/facultésaffaiblies$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/facultes-affaiblies.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/facultesaffaiblies$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/facultes-affaiblies.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/rcmp$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/rcmp.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/grc$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/grc.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/electricityrebate$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/electricity-rebate.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/remiseÉlectricité$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/remise-electricite.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/remiseelectricite$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/remise-electricite.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/screeningtools$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/health-tools.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/outilsdepistage$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/outils-sante.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/outilsdépistage$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/outils-sante.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/beekeeping$
+RewriteRule ^ https://agri.gnb.ca/beekeeper?_gl=1*uus4i*_ga*MTczNTY5MDU0Mi4xNzMyMDI1MTAw*_ga_F531P4D0XX*MTczMzI1MzQxOC4xNS4xLjE3MzMyNTQ4MjIuMC4wLjA [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/apiculture$
+RewriteRule ^ https://agri.gnb.ca/beekeeper/fr/Acceuil?_gl=1*uus4i*_ga*MTczNTY5MDU0Mi4xNzMyMDI1MTAw*_ga_F531P4D0XX*MTczMzI1MzQxOC4xNS4xLjE3MzMyNTQ4MjIuMC4wLjA [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/accountability$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/government-priorities.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/responsabilité$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/priorites-gouvernement.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/responsabilite$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/priorites-gouvernement.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/strengtheningeducationtogether$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/evolving-french-language-learning.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/renforcernotreéducation$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/langue-francais-en-evolution.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/renforcernotreeducation$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/langue-francais-en-evolution.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/feedingyourbaby$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/healthy_people/content/bfi/feeding_your_baby.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nourrirvotrebebe$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/gens_en_sante/content/allaitement_maternel_initiative/nourrir_votre_bebe.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nourrirvotrebébé$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/gens_en_sante/content/allaitement_maternel_initiative/nourrir_votre_bebe.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/washyourhands$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/departments/ocmoh/healthy_people/content/hand_washing.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/lavezvosmains$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/ministeres/bmhc/gens_en_sante/content/laver_les_mains.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/tariffs$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/tariffs.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/tarifs$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/tarifs.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/firesmartnb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/firesmart.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/intellifeunb$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/intelli-feu.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/intellifeun-b$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/intelli-feu.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/purposebuiltrentalhousing$
+RewriteRule ^ https://www.gnb.ca/en/topic/family-home-community/housing-property/hst-rebate-rental-housing.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/immeubleshabitationconstruitslocation$
+RewriteRule ^ https://www.gnb.ca/fr/sujet/famille-foyer-collectivite/logement-biens/remboursement-tvh-logements-admissibles.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/housingandproperty$
+RewriteRule ^ https://www.gnb.ca/en/topic/family-home-community/housing-property.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/logementetbiens$
+RewriteRule ^ https://www.gnb.ca/fr/sujet/famille-foyer-collectivite/logement-biens.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nbmade$
+RewriteRule ^ https://www.gnb.ca/en/campaign/nb-made.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/produitsdunb$
+RewriteRule ^ https://www.gnb.ca/fr/campagne/produits-nb.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/letsclearthingsup$
+RewriteRule ^ https://www.gnb.ca/en/campaign/clear-things.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/mettonsleschosesauclair$
+RewriteRule ^ https://www.gnb.ca/fr/campagne/choses-clair.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/condolences$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/condolences.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/condoléances$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/condoleances.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/condoleances$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/condoleances.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/becomeanece$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/en/corporate/promo/investing-in-early-learning-and-child-care/educator-recruitment-training-retainment.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/devenirepe$
+RewriteRule ^ https://www2.gnb.ca/content/gnb/fr/corporate/promo/investir-services-apprentissage-garde-jeunes-enfants/recrutement-formation-retention-personnel-educatif.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/riverwatch$
+RewriteRule ^ https://www.gnb.ca/en/campaign/river-watch.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/surveillancedufleuve$
+RewriteRule ^ https://www.gnb.ca/fr/campagne/surveillance-cours-d-eau.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/literacyawards$
+RewriteRule ^ https://www.gnb.ca/en/topic/education-training/leadership-literacy-nominations.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/prixalphabétisation$
+RewriteRule ^ https://www.gnb.ca/fr/sujet/education-formation/leadership-alphabetisation-appel-candidateurs.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/prixalphabetisation$
+RewriteRule ^ https://www.gnb.ca/fr/sujet/education-formation/leadership-alphabetisation-appel-candidateurs.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/nbpowerreview$
+RewriteRule ^ https://www.gnb.ca/en/gov/engagement-consultation/nb-power-review.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/examenenergienb$
+RewriteRule ^ https://www.gnb.ca/fr/gouv/mobilisation-consultation/mobilisation-consultation.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/examenénergienb$
+RewriteRule ^ https://www.gnb.ca/fr/gouv/mobilisation-consultation/mobilisation-consultation.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/accessibility$
+RewriteRule ^ https://www.gnb.ca/en/campaign/accessibility.html [L,NE,NC,R=301]
+
+RewriteCond %{REQUEST_URI} ^/accessibilité$
+RewriteRule ^ https://www.gnb.ca/fr/campagne/accessibilite.html [L,NE,NC,R=301]
+
+#RewriteCond %{REQUEST_URI} ^/accessibilite$
+#RewriteRule ^ https://www.gnb.ca/fr/campagne/accessibilite.html [L,NE,NC,R=301]

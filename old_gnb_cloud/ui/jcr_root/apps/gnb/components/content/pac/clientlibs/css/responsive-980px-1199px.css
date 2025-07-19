@@ -1,0 +1,30 @@
+/*
+	/apps/gnb/components/content/pac/clientlibs/css/responsive-980px-1199px.css
+*/
+/* iPad Landscape */
+@media (min-width: 980px) and (max-width: 1199px) {
+
+.pac div.RT {
+    text-align: center;
+	padding-top: 7px;        
+}
+
+.pac .textRight{
+	text-align: right;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.pac .textLeft{
+	text-align: left;
+}
+
+.pac .textCenter{
+	text-align: center;
+}
+.tooltip-inner {
+   max-width: 350px;
+   width: 350px;
+}
+
+}

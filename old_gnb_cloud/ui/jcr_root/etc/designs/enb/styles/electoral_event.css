@@ -1,0 +1,30 @@
+.electoral_event {
+    margin:0px;
+    padding:0px;
+    font-size: 100%;
+  	margin-bottom:20px;
+}
+
+.electoral_event div.border {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.electoral_event>div {
+    padding:0px 0 0px 0;  
+}
+
+.electoral_event div.padded {
+    padding:10px 20px 10px 20px;
+}
+
+.electoral_event p.bluearrow{
+
+	margin-bottom: 5px;
+	padding-left: 10px;
+	background: transparent url(../images/arrow_blue.gif) no-repeat scroll 0 5px;
+}
+
+.electoral_event p.bluearrow:hover {
+	background-image: url(../images/arrow.gif);
+}

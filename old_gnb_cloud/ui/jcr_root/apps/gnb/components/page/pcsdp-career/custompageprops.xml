@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:TabPanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <english
+            jcr:primaryType="cq:Panel"
+            title="English">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <position_en
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldLabel="Position"
+                    name="./position_en"
+                    xtype="textfield"/>
+                <organization_en
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Organization"
+                    name="./organization_en"
+                    xtype="textfield"/>
+                <location_en
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Location"
+                    name="./location_en"
+                    xtype="textfield"/>
+                <date_en
+                    jcr:primaryType="cq:Widget"
+                    defaultValue=" "
+                    fieldLabel="Closing Date"
+                    name="./date_en"
+                    xtype="textfield"/>
+                <website
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Website"
+                    name="./website_en"
+                    xtype="pathfield"/>
+            </items>
+        </english>
+        <french
+            jcr:primaryType="cq:Panel"
+            title="French">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <position_fr
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldLabel="Position"
+                    name="./position_fr"
+                    xtype="textfield"/>
+                <organization_fr
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Organization"
+                    name="./organization_fr"
+                    xtype="textfield"/>
+                <location_fr
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Location"
+                    name="./location_fr"
+                    xtype="textfield"/>
+                <date_fr
+                    jcr:primaryType="cq:Widget"
+                    defaultValue=" "
+                    fieldLabel="Closing Date"
+                    name="./date_fr"
+                    xtype="textfield"/>
+                <website
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Website"
+                    name="./website_fr"
+                    xtype="pathfield"/>
+            </items>
+        </french>
+    </items>
+</jcr:root>

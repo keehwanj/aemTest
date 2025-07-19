@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Video Viewer"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <VideoViewer
+                jcr:primaryType="cq:Panel"
+                title="Video Viewer">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <embed
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Embed video in page"
+                        inputValue="true"
+                        name="./embed"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <prop1
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="YouTube Id"
+                        name="./youtubeId"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <prop2
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Video Path"
+                        name="./videoPath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <prop3
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Video Title"
+                        name="./videoTitle"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <prop4
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Video Duration"
+                        name="./videoDuration"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <prop5
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Video Description"
+                        name="./videoDescription"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <prop6
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Thumbnail"
+                        name="./thumbnailPath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <prop7
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Height"
+                        name="./height"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <prop8
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Width"
+                        name="./width"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <prop9
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Watch Video Text"
+                        name="./watchVideoText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                </items>
+            </VideoViewer>
+        </items>
+    </items>
+</jcr:root>

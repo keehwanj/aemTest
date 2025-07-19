@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+@import "./styles/smoothness/jquery-ui-1.7.2.custom.css";
+@import "./styles/smoothness/customtabs.css";
+
+
+@import "./styles/base.css";
+@import "./styles/columns.css";
+@import "./styles/content.css";
+@import "./styles/home.css";
+@import "./styles/navigation.css";
+@import "./styles/domtab.css";
+@import "./styles/layout.css";
+@import "./styles/fullcalendar.css";
+
+
+/* this form css from GNB form.css*/
+@import "./styles/form.css";
+
+/* keyword/global search*/
+@import "./styles/search.css";
+
+/* footertools */
+@import "./styles/footertools.css";
+
+/* breadcrumb */
+@import "./styles/breadcrumbs.css";
+
+/* promo component */
+@import "./styles/gnbpromo.css";
+
+/* gnblist component */
+@import "./styles/gnblist.css";
+
+/* gnb textimage component */
+@import "./styles/textimage.css";
+
+/* gnb section title component */
+@import "./styles/sectiontitle.css";
+
+/* gnb videoviewer component */
+@import "./styles/videoviewer.css";
+
+
+div.par {
+    clear: both;
+}
+
+div.clearfloat {
+    clear: both;
+    height: 0;
+    line-height: 0; *
+    display: none;
+}
+
+
+div.section { /*margin-bottom: 13px;*/
+    /* Property added to avoid IE hasLayout issue on paragraphs
+       see #20817 - IE6: div around Drag Components image not big enough
+    */
+    zoom: 1;
+}
+
+#headerContent {
+    margin: 0 auto;
+    _margin: 0;
+    position: relative;
+    width: 959px;
+}

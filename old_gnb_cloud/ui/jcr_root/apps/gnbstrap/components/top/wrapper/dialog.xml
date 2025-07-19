@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Wrapper"
+    xtype="dialog">
+    <items
+        jcr:primaryType="nt:unstructured"
+        title="List"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Widget"
+                title="General"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <color
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Color"
+                        name="./color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <wrapper-forest
+                                jcr:primaryType="nt:unstructured"
+                                text="wrapper-forest"
+                                value="wrapper-forest"/>
+                            <wrapper-crimson
+                                jcr:primaryType="nt:unstructured"
+                                text="wrapper-crimson"
+                                value="wrapper-crimson"/>
+                            <wrapper-ocean
+                                jcr:primaryType="nt:unstructured"
+                                text="wrapper-ocean"
+                                value="wrapper-ocean"/>
+                            <wrapper-gold
+                                jcr:primaryType="nt:unstructured"
+                                text="wrapper-gold"
+                                value="wrapper-gold"/>
+                            <wrapper-black
+                                jcr:primaryType="nt:unstructured"
+                                text="wrapper-black"
+                                value="wrapper-black"/>
+                        </options>
+                    </color>
+                    <header
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Header"
+                        name="./header"
+                        xtype="textfield"/>
+                </items>
+            </general>
+            <links_text
+                jcr:primaryType="cq:Widget"
+                title="Text"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links_text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new text."
+                        fieldLabel="Link Texts"
+                        name="./links_text"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </links_text>
+                </items>
+            </links_text>
+            <links
+                jcr:primaryType="cq:Widget"
+                title="Links"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new link."
+                        fieldLabel="Links"
+                        name="./links"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="pathfield"/>
+                    </links>
+                </items>
+            </links>
+            <links_text_2
+                jcr:primaryType="cq:Widget"
+                title="Text-2"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links_text_2
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new text."
+                        fieldLabel="Link Texts"
+                        name="./links_text_2"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </links_text_2>
+                </items>
+            </links_text_2>
+            <links_2
+                jcr:primaryType="cq:Widget"
+                title="Links-2"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links_2
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new link."
+                        fieldLabel="Links"
+                        name="./links_2"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="pathfield"/>
+                    </links_2>
+                </items>
+            </links_2>
+        </items>
+    </items>
+</jcr:root>

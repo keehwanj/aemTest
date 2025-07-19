@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    cq:lastReplicated="{Date}2013-12-16T22:33:05.744-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:language="en"
+    jcr:mixinTypes="[cq:ReplicationStatus,mix:language]"
+    jcr:primaryType="sling:Folder">
+    <cp_searchButtonText
+        cq:lastReplicated="{Date}2013-12-16T22:33:06.353-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="cp_searchButtonText"
+        sling:message="Search"/>
+    <cp_searchHeadingText
+        cq:lastReplicated="{Date}2013-12-16T22:33:06.711-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="cp_searchHeadingText"
+        sling:message="Search Community Profile"/>
+    <cp_searchtWarning
+        cq:lastReplicated="{Date}2013-12-16T22:33:07.538-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="cp_searchWarning"
+        sling:message="One selection is required"/>
+    <cp_select
+        cq:lastReplicated="{Date}2013-12-16T22:33:07.850-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="cp_select"
+        sling:message="Select"/>
+</jcr:root>

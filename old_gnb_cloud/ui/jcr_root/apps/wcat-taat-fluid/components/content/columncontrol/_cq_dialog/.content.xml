@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Column Control"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <colctrl
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Column control"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <coltype
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="select the type of column control to generate. Note: once columns are generated they cannot be re-generated."
+                                fieldLabel="Column type"
+                                name="./coltype">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <col-8-4
+                                        jcr:primaryType="nt:unstructured"
+                                        text="8-4 Column"
+                                        value="8-4-col"/>
+                                    <col-4-8
+                                        jcr:primaryType="nt:unstructured"
+                                        text="4-8 Column"
+                                        value="4-8-col"/>
+                                    <col-4-4-4
+                                        jcr:primaryType="nt:unstructured"
+                                        text="4-4-4 Column"
+                                        value="4-4-4-col"/>
+                                    <col-6-6
+                                        jcr:primaryType="nt:unstructured"
+                                        text="6-6 Column"
+                                        value="6-6-col"/>
+                                    <col-5-7
+                                        jcr:primaryType="nt:unstructured"
+                                        text="5-7 Column"
+                                        value="5-7-col"/>
+                                    <col-7-5
+                                        jcr:primaryType="nt:unstructured"
+                                        text="7-5 Column"
+                                        value="7-5-col"/>
+                                    <col-3-3-3-3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="3-3-3-3 Column"
+                                        value="3-3-3-3-col"/>
+                                    <col-3-9
+                                        jcr:primaryType="nt:unstructured"
+                                        text="3-9 Column"
+                                        value="3-9-col"/>
+                                    <col-9-3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="9-3 Column"
+                                        value="9-3-col"/>
+                                    <col-3-3-6
+                                        jcr:primaryType="nt:unstructured"
+                                        text="3-3-6 Column"
+                                        value="3-3-6-col"/>
+                                    <col-6-3-3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="6-3-3 Column"
+                                        value="6-3-3-col"/>
+                                    <col-3-6-3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="3-6-3 Column"
+                                        value="3-6-3-col"/>
+                                </items>
+                            </coltype>
+                            <color
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Border Color"
+                                name="./color"
+                                value="demo-border-blue">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <black
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Black"
+                                        value="demo-border-black"/>
+                                    <blue
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Blue"
+                                        value="demo-border-blue"/>
+                                    <gray
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Gray"
+                                        value="demo-border-gray"/>
+                                    <green
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Green"
+                                        value="demo-border-green"/>
+                                    <red
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Red"
+                                        value="demo-border-red"/>
+                                    <white
+                                        jcr:primaryType="nt:unstructured"
+                                        text="White"
+                                        value="demo-border-white"/>
+                                </items>
+                            </color>
+                        </items>
+                    </columns>
+                </items>
+            </colctrl>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,21 @@
+/*
+	apps/gnb/components/content/newsarticle/clientlibs/css/responsive-768px-979px.css
+ */
+/* iPad portrait */
+@media (min-width: 768px) and (max-width: 979px) {
+
+.newsarticle h2 {
+	margin-top:5px;
+	margin-bottom:5px;
+    font-size: 1.7em;
+    font-weight: bold;        
+}
+
+.newsarticle div.col-sm-8{
+    padding-left: 0px !important;
+}
+
+.newsarticle div.col-sm-4{
+    padding-right: 0px !important;
+}   
+}

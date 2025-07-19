@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    width="600"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <metadata
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Metadata"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <asswebpage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Associated Web Page"
+                        name="./assWebPage"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="{Boolean}true"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="{Boolean}false"/>
+                        </options>
+                    </asswebpage>
+                    <wireindx
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Display Newswire Index"
+                        name="./wireIndex"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="{Boolean}true"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="{Boolean}true"/>
+                        </options>
+                    </wireindx>
+                    <place
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Place"
+                        name="./place"
+                        xtype="textfield"/>
+                    <audioname_e
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Audio Lang or Speaker Display - English"
+                        name="./audioName_e"
+                        xtype="textfield"/>
+                    <audiofilename_e
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Audio - English"
+                        name="./audioFileName_e"
+                        xtype="pathfield"/>
+                    <audioname_f
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Audio Lang or Speaker Display - French"
+                        name="./audioName_f"
+                        xtype="textfield"/>
+                    <audiofilename_f
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Audio - French"
+                        name="./audioFileName_f"
+                        xtype="pathfield"/>
+                    <audioname_o
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Audio Lang or Speaker Display - Original"
+                        name="./audioName_o"
+                        xtype="textfield"/>
+                    <audiofilename_o
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Audio - Original"
+                        name="./audioFileName_o"
+                        xtype="pathfield"/>
+                    <eventdate
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Event Date"
+                        format="Y-m-d"
+                        name="./eventDate"
+                        xtype="datefield"/>
+                    <content_F
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Event Description - French"
+                        name="./content_F"
+                        xtype="textfield"/>
+                    <content_E
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Event Description - English"
+                        name="./content_E"
+                        xtype="textfield"/>
+                    <title_F
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Title - French"
+                        name="./title_F"
+                        xtype="textfield"/>
+                    <title_E
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Title - English"
+                        name="./title_E"
+                        xtype="textfield"/>
+                    <link_F
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Link - French"
+                        name="./link_F"
+                        xtype="textfield"/>
+                    <link_E
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Link - English"
+                        name="./link_E"
+                        xtype="textfield"/>
+                    <videoname_e
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Video Lang or Speaker Display - English"
+                        name="./videoName_e"
+                        xtype="textfield"/>
+                    <videofilename_e
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Video - English"
+                        name="./videoFileName_e"
+                        xtype="pathfield"/>
+                    <videoname_f
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Video Lang or Speaker Display - French"
+                        name="./videoName_f"
+                        xtype="textfield"/>
+                    <videofilename_f
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Video - French"
+                        name="./videoFileName_f"
+                        xtype="pathfield"/>
+                    <videoname_o
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Video Lang or Speaker Display - Original"
+                        name="./videoName_o"
+                        xtype="textfield"/>
+                    <videofilename_o
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Video - Original"
+                        name="./videoFileName_o"
+                        xtype="pathfield"/>
+                    <presentationname_e
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Presentation Lang or Speaker Display - English"
+                        name="./presentationName_e"
+                        xtype="textfield"/>
+                    <presentationfilename_e
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Presentation - English"
+                        name="./presentationFileName_e"
+                        xtype="pathfield"/>
+                    <presentationname_f
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Presentation Lang or Speaker Display - French"
+                        name="./presentationName_f"
+                        xtype="textfield"/>
+                    <presentationfilename_f
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Presentation - French"
+                        name="./presentationFileName_f"
+                        xtype="pathfield"/>
+                    <mp3name_o
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Mp3 Lang or Speaker Display - Original"
+                        name="./mp3Name_o"
+                        xtype="textfield"/>
+                    <mp3filename_o
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Mp3 - Original"
+                        name="./mp3FileName_o"
+                        xtype="pathfield"/>
+                    <mp3name_f
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Mp3 Lang or Speaker Display - French"
+                        name="./mp3Name_f"
+                        xtype="textfield"/>
+                    <mp3filename_f
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Mp3 - French"
+                        name="./mp3FileName_f"
+                        xtype="pathfield"/>
+                    <mp3name_e
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Mp3 Lang or Speaker Display - English"
+                        name="./mp3Name_e"
+                        xtype="textfield"/>
+                    <mp3filename_e
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Mp3 - English"
+                        name="./mp3FileName_e"
+                        xtype="pathfield"/>
+                </items>
+            </metadata>
+            <image
+                jcr:primaryType="cq:Widget"
+                autoUploadDelay="1"
+                ddGroups="[media]"
+                fileReferenceParameter="./imageReference"
+                name="./photo_56"
+                sizeLimit="100"
+                title="Photo 1"
+                uploadUrl="/tmp/upload_test/*"
+                xtype="smartimage"/>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="400"
+    stateful="false"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs jcr:primaryType="cq:TabPanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <basic
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_basic.infinity.json"
+                    xtype="cqinclude"/>
+                <advanced
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_advanced.infinity.json"
+                    xtype="cqinclude"/>
+                <image
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_image.infinity.json"
+                    xtype="cqinclude"/>
+                <cloudservices
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_cloudservices.infinity.json"
+                    xtype="cqinclude"/>
+                <blueprint
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_blueprint.infinity.json"
+                    xtype="cqinclude"/>
+                <livecopy
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_livecopy.infinity.json"
+                    xtype="cqinclude"/>
+                <tab2
+                    jcr:primaryType="cq:Panel"
+                    title="English">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <department
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Metadata"
+                            name="./enDepartment"
+                            namespaces="[active-gnb-eng,active-keywords_eng]"
+                            xtype="tags"/>
+                        <title
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title"
+                            name="./enTitle"
+                            xtype="textfield"/>
+                        <description
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Description"
+                            name="./enDescription"
+                            xtype="textarea"/>
+                        <articleBody
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Article Body"
+                            height="500"
+                            name="./enArticleBody"
+                            xtype="richtext">
+                            <rtePlugins jcr:primaryType="nt:unstructured">
+                                <misctools
+                                    jcr:primaryType="nt:unstructured"
+                                    features="[sourceedit,specialchars]"/>
+                                <edit
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <subsuperscript
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <table
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <undo
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <findreplace
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                            </rtePlugins>
+                            <htmlRules jcr:primaryType="nt:unstructured">
+                                <links
+                                    jcr:primaryType="nt:unstructured"
+                                    protocols="[http://,https://,mailto:]"/>
+                            </htmlRules>
+                        </articleBody>
+                        <mediacontacts
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Media Contacts"
+                            height="100"
+                            name="./enMedia"
+                            xtype="richtext">
+                            <rtePlugins jcr:primaryType="nt:unstructured">
+                                <misctools
+                                    jcr:primaryType="nt:unstructured"
+                                    features="[sourceedit,specialchars]"/>
+                                <edit
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <subsuperscript
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <table
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <undo
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <findreplace
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                            </rtePlugins>
+                            <htmlRules jcr:primaryType="nt:unstructured">
+                                <links
+                                    jcr:primaryType="nt:unstructured"
+                                    protocols="[http://,https://,mailto:]"/>
+                            </htmlRules>
+                        </mediacontacts>
+                        <documentnumber
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="(Media Advisory)"
+                            fieldLabel="Document Number"
+                            name="./enDocNumber"
+                            xtype="textfield"/>
+                        <location
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="(Media Advisory)"
+                            fieldLabel="Location"
+                            name="./enLocation"
+                            xtype="textfield"/>
+                    </items>
+                </tab2>
+                <tab3
+                    jcr:primaryType="cq:Panel"
+                    title="French">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <department
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Metadata"
+                            name="./frDepartment"
+                            namespaces="[active-gnb-fra,active-keywords_fra]"
+                            popupHeight="300"
+                            popupWidth="500"
+                            xtype="tags"/>
+                        <title
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title"
+                            name="./frTitle"
+                            xtype="textfield"/>
+                        <description
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Description"
+                            name="./frDescription"
+                            xtype="textarea"/>
+                        <articleBody
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Article Body"
+                            height="500"
+                            name="./frArticleBody"
+                            xtype="richtext">
+                            <rtePlugins jcr:primaryType="nt:unstructured">
+                                <misctools
+                                    jcr:primaryType="nt:unstructured"
+                                    features="[sourceedit,specialchars]"/>
+                                <edit
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <subsuperscript
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <table
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <undo
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <findreplace
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                            </rtePlugins>
+                            <htmlRules jcr:primaryType="nt:unstructured">
+                                <links
+                                    jcr:primaryType="nt:unstructured"
+                                    protocols="[http://,https://,mailto:]"/>
+                            </htmlRules>
+                        </articleBody>
+                        <mediacontacts
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Media Contacts"
+                            height="100"
+                            name="./frMedia"
+                            xtype="richtext">
+                            <rtePlugins jcr:primaryType="nt:unstructured">
+                                <misctools
+                                    jcr:primaryType="nt:unstructured"
+                                    features="[sourceedit,specialchars]"/>
+                                <edit
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <subsuperscript
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <table
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <undo
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                                <findreplace
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                            </rtePlugins>
+                            <htmlRules jcr:primaryType="nt:unstructured">
+                                <links
+                                    jcr:primaryType="nt:unstructured"
+                                    protocols="[http://,https://,mailto:]"/>
+                            </htmlRules>
+                        </mediacontacts>
+                        <documentnumber
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="(Media Advisory)"
+                            fieldLabel="Document Number"
+                            name="./frDocNumber"
+                            xtype="textfield"/>
+                        <location
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="(Media Advisory)"
+                            fieldLabel="Location"
+                            name="./frLocation"
+                            xtype="textfield"/>
+                    </items>
+                </tab3>
+                <tab1
+                    jcr:primaryType="cq:Panel"
+                    title="General">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <mediaRef
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Media Asset"
+                            name="./mediaAssetRef"
+                            title=""
+                            xtype="pathfield"/>
+                        <featurednews
+                            jcr:primaryType="cq:Widget"
+                            allowEmpty="false"
+                            fieldDescription="GNB Featured News Release"
+                            fieldLabel="Featured News"
+                            name="./gnbpage"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <no
+                                    jcr:primaryType="nt:unstructured"
+                                    text="False"
+                                    value="false"/>
+                                <yes
+                                    jcr:primaryType="nt:unstructured"
+                                    text="True"
+                                    value="true"/>
+                            </options>
+                        </featurednews>
+                        <showWebcast
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="(Media Advisory)"
+                            fieldLabel="Show Webcast"
+                            inputValue="true"
+                            name="./showWebcast"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <status
+                            jcr:primaryType="cq:Widget"
+                            allowEmpty="true"
+                            fieldDescription="(Media Advisory)"
+                            fieldLabel="Status"
+                            name="./status"
+                            type="select"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <empty
+                                    jcr:primaryType="nt:unstructured"
+                                    text="&amp;nbsp;"
+                                    value=""/>
+                                <cancelled
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Cancelled"
+                                    value="cancelled"/>
+                                <newpost
+                                    jcr:primaryType="nt:unstructured"
+                                    text="New Post"
+                                    value="newpost"/>
+                                <postponed
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Postponed"
+                                    value="postponed"/>
+                                <revised
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Revised"
+                                    value="revised"/>
+                                <timechange
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Time Change"
+                                    value="timechange"/>
+                            </options>
+                        </status>
+                        <type
+                            jcr:primaryType="cq:Widget"
+                            allowEmpty="true"
+                            fieldDescription="(Media Advisory)"
+                            fieldLabel="Type"
+                            name="./type"
+                            type="select"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <empty
+                                    jcr:primaryType="nt:unstructured"
+                                    text="&amp;nbsp;"
+                                    value=""/>
+                                <event
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Event"
+                                    value="event"/>
+                                <itinerary
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Itinerary"
+                                    value="itinerary"/>
+                                <newsconference
+                                    jcr:primaryType="nt:unstructured"
+                                    text="News Conference"
+                                    value="newsConference"/>
+                                <publichearing
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Public Hearing"
+                                    value="publicHearing"/>
+                                <officeclosure
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Office Closure"
+                                    value="officeClosure"/>
+                                <mediascrums
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Media Scrums"
+                                    value="mediaScrums"/>
+                                <photoop
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Photo Op"
+                                    value="photoOp"/>
+                            </options>
+                        </type>
+                        <showFromDate
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Show From Date"
+                            inputValue="true"
+                            name="./showFromDate"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <fromDate
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="(Media Advisory)"
+                            fieldLabel="From Date"
+                            name="./fromDate"
+                            xtype="datetime"/>
+                        <showToDate
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Show To Date"
+                            inputValue="true"
+                            name="./showToDate"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <toDate
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="(Media Advisory)"
+                            fieldLabel="To Date"
+                            name="./toDate"
+                            xtype="datetime"/>
+                        <topnews
+                            jcr:primaryType="cq:Widget"
+                            allowEmpty="false"
+                            fieldDescription="GNB Top News Release"
+                            fieldLabel="Top News"
+                            name="./topnews"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <no
+                                    jcr:primaryType="nt:unstructured"
+                                    text="False"
+                                    value="false"/>
+                                <yes
+                                    jcr:primaryType="nt:unstructured"
+                                    text="True"
+                                    value="true"/>
+                            </options>
+                        </topnews>
+                        <specialevent
+                            jcr:primaryType="cq:Widget"
+                            allowEmpty="false"
+                            fieldDescription="GNB Special Event"
+                            fieldLabel="Special Event"
+                            name="./specialevent"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <no
+                                    jcr:primaryType="nt:unstructured"
+                                    text="False"
+                                    value="false"/>
+                                <yes
+                                    jcr:primaryType="nt:unstructured"
+                                    text="True"
+                                    value="true"/>
+                            </options>
+                        </specialevent>
+                    </items>
+                </tab1>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

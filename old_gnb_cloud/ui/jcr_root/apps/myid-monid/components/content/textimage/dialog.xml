@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel"
+    activeTab="0"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <richFlag
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./textIsRich"
+                    value="true"
+                    xtype="hidden"/>
+                <text
+                    jcr:primaryType="cq:Widget"
+                    hideLabel="{Boolean}true"
+                    name="./text"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://,mailto:]"/>
+                    </htmlRules>
+                </text>
+                <cssText
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Text CSS"
+                    name="./cssText"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <border
+                            jcr:primaryType="nt:unstructured"
+                            text="Border"
+                            value="text_border"/>
+                        <border-grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Grey with Border"
+                            value="text_grey_border"/>
+                        <grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Grey"
+                            value="text_grey"/>
+                    </options>
+                </cssText>
+                <titleLink
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Title Link"
+                    name="./titleLink"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Title"
+                    name="./title"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <alt
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Alt Text"
+                    name="./alt_text"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <morelink
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="More Link"
+                    name="./moreLink"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <morelinktext
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="More Link Text"
+                    name="./moreLinkText"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <cssMore
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="More CSS"
+                    name="./cssMore"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Grey"
+                            value="more_grey"/>
+                        <blue
+                            jcr:primaryType="nt:unstructured"
+                            text="Blue"
+                            value="more_blue"/>
+                    </options>
+                </cssMore>
+            </items>
+        </tab1>
+        <tab2
+            jcr:primaryType="cq:Widget"
+            cropParameter="./image/imageCrop"
+            ddGroups="[media]"
+            fileNameParameter="./image/fileName"
+            fileReferenceParameter="./image/fileReference"
+            mapParameter="./image/imageMap"
+            name="./image/file"
+            requestSuffix="/image.img.png"
+            rotateParameter="./image/imageRotate"
+            sizeLimit="100"
+            title="Image"
+            uploadUrl="/tmp/upload_test/*"
+            xtype="smartimage"/>
+        <tab3
+            jcr:primaryType="cq:Widget"
+            title="Advanced"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <cssClass
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Style"
+                    name="./cq:cssClass"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <border
+                            jcr:primaryType="nt:unstructured"
+                            text="Border"
+                            value="imagecontainer"/>
+                        <noborder
+                            jcr:primaryType="nt:unstructured"
+                            text="No Border"
+                            value=""/>
+                    </options>
+                </cssClass>
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./image/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+                <size
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Size"
+                    heightParameter="./image/height"
+                    widthParameter="./image/width"
+                    xtype="sizefield"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    name="./image/jcr:description"
+                    xtype="textarea"/>
+                <linkURL
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Drop files or pages from the Content Finder"
+                    fieldLabel="Link to"
+                    name="./image/linkURL"
+                    xtype="pathfield"/>
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./image/jcr:title"
+                    xtype="textfield"/>
+                <position
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Image Position"
+                    name="./imagePosition"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <o1
+                            jcr:primaryType="nt:unstructured"
+                            text="Default"
+                            value="none"/>
+                        <o2
+                            jcr:primaryType="nt:unstructured"
+                            text="Right"
+                            value="right"/>
+                        <o3
+                            jcr:primaryType="nt:unstructured"
+                            text="Left"
+                            value="left"/>
+                    </options>
+                </position>
+                <thumbnail
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Thumbnail style?"
+                    name="./thumbnail"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <o1
+                            jcr:primaryType="nt:unstructured"
+                            text="Yes"
+                            value="yes"/>
+                        <o2
+                            jcr:primaryType="nt:unstructured"
+                            text="No"
+                            value="no"/>
+                    </options>
+                </thumbnail>
+            </items>
+        </tab3>
+    </items>
+</jcr:root>

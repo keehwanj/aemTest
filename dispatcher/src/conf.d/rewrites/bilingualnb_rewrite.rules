@@ -1,0 +1,38 @@
+SetEnvIf %{REQUEST_URI} ^ BILINGUALNB_ENGLISH_ERROR_PAGE=/content/gnb/en/corporate/promo/bilingualnb/error/404.html
+SetEnvIf %{REQUEST_URI} ^ BILINGUALNB_FRENCH_ERROR_PAGE=/content/gnb/fr/corporate/promo/nbbilingue/erreurs/404.html
+
+# non-www to www redirect
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://www.%1%{REQUEST_URI} [L,NE,R=301]
+
+# bilingualnb redirect
+RewriteCond %{HTTP_HOST} (www.)?bilingualnb.ca$
+RewriteRule ^/?$ /content/gnb/en/corporate/promo/bilingualnb.html [PT,L]
+
+# nbbilingue redirect
+RewriteCond %{HTTP_HOST} (www.)?nbbilingue.ca$
+RewriteRule ^/?$ /content/gnb/fr/corporate/promo/nbbilingue.html [PT,L]
+
+# rewrite for cross-domain issue prevention with language handle FR
+RewriteCond %{REQUEST_URI} !^/content/gnb/en/corporate/promo/bilingualnb
+RewriteCond %{REQUEST_URI} !^/content/gnb/fr/corporate/promo/nbbilingue
+RewriteCond %{REQUEST_URI} !^/content/dam
+RewriteCond %{REQUEST_URI} ^/content/(.*)/fr.html
+RewriteRule ^(.*)$ %{ENV:BILINGUALNB_FRENCH_ERROR_PAGE} [PT,L]
+
+# rewrite for cross-domain issue prevention with language handle EN and for clientlibrarymanager call allowance
+RewriteCond %{REQUEST_URI} !^/content/gnb/en/corporate/promo/bilingualnb
+RewriteCond %{REQUEST_URI} !^/content/gnb/fr/corporate/promo/nbbilingue
+RewriteCond %{REQUEST_URI} !^/content/dam
+RewriteCond %{REQUEST_URI} !^/apps
+RewriteCond %{REQUEST_URI} !^/bin
+RewriteCond %{REQUEST_URI} !^/etc
+RewriteCond %{REQUEST_URI} !^/home
+RewriteCond %{REQUEST_URI} !^/libs
+RewriteCond %{REQUEST_URI} !^/saml_login
+RewriteCond %{REQUEST_URI} !^/system
+RewriteCond %{REQUEST_URI} !^/tmp
+RewriteCond %{REQUEST_URI} !^/var
+RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.xml)$
+RewriteRule ^(.*)$ %{ENV:BILINGUALNB_ENGLISH_ERROR_PAGE} [PT,L]

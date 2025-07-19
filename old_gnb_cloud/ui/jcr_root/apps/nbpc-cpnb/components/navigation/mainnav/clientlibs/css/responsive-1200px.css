@@ -1,0 +1,45 @@
+/*
+	/apps/nbpc-cpnb/components/navigation/mainnav/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+ #header {
+   width: 950px;
+ }
+
+
+
+/*
+#main_content_wrapper{
+    width:960px;
+    background:url(/etc/designs/agnb-vgnb/clientlib/images/main_content_bkgr.gif) 0 0 repeat-y;
+    margin:0;
+    padding:10px;
+}
+*/
+
+/**START of remove space of row**/
+div#main_content_wrapper div.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+div#main_content_wrapper footer.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+/**END of remove space of row**/
+
+
+
+/*START of mainnav*/
+ul#mainnav.nav.navbar-nav{
+	font-size: 120%;
+}
+
+}
+/* 
+	END of /apps/nbpc-cpnb/components/navigation/mainnav/clientlibs/css/responsive-1200px.css
+*/

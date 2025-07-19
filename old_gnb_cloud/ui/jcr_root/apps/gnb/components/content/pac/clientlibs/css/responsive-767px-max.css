@@ -1,0 +1,12 @@
+/*
+	/apps/gnb/components/content/pac/clientlibs/css/responsive-767px-max.css
+*/
+/* phone landscape */
+@media (max-width: 767px) {
+
+.tooltip-inner {
+   max-width: 300px;
+   width: 300px;
+}
+
+}

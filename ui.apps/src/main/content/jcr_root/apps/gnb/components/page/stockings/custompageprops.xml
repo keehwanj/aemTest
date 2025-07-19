@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="cq:Panel"
+            title="Common">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <ontime
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="This will be set to the current date/time when the page is published if it is not set"
+                    fieldLabel="Publish Date"
+                    name="./onTime"
+                    xtype="datetime"/>
+                <year
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="2018"
+                    fieldLabel="Year / Année"
+                    name="./year"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <_x0032_026
+                            jcr:primaryType="nt:unstructured"
+                            text="2026"
+                            value="2026"/>
+                        <_x0032_025
+                            jcr:primaryType="nt:unstructured"
+                            text="2025"
+                            value="2025"/>
+                        <_x0032_024
+                            jcr:primaryType="nt:unstructured"
+                            text="2024"
+                            value="2024"/>
+                        <_x0032_023
+                            jcr:primaryType="nt:unstructured"
+                            text="2023"
+                            value="2023"/>
+                        <_x0032_022
+                            jcr:primaryType="nt:unstructured"
+                            text="2022"
+                            value="2022"/>
+                        <_x0032_021
+                            jcr:primaryType="nt:unstructured"
+                            text="2021"
+                            value="2021"/>
+                        <_x0032_020
+                            jcr:primaryType="nt:unstructured"
+                            text="2020"
+                            value="2020"/>
+                        <_x0032_019
+                            jcr:primaryType="nt:unstructured"
+                            text="2019"
+                            value="2019"/>
+                        <_x0032_018
+                            jcr:primaryType="nt:unstructured"
+                            text="2018"
+                            value="2018"/>
+                        <_x0032_017
+                            jcr:primaryType="nt:unstructured"
+                            text="2017"
+                            value="2017"/>
+                        <_x0032_016
+                            jcr:primaryType="nt:unstructured"
+                            text="2016"
+                            value="2016"/>
+                        <_x0032_015
+                            jcr:primaryType="nt:unstructured"
+                            text="2015"
+                            value="2015"/>
+                        <_x0032_014
+                            jcr:primaryType="nt:unstructured"
+                            text="2014"
+                            value="2014"/>
+                    </options>
+                </year>
+                <county
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="County / Comté"
+                    name="./county"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <Albert
+                            jcr:primaryType="nt:unstructured"
+                            text="Albert"
+                            value="Albert"/>
+                        <Carleton
+                            jcr:primaryType="nt:unstructured"
+                            text="Carleton"
+                            value="Carleton"/>
+                        <Charlotte
+                            jcr:primaryType="nt:unstructured"
+                            text="Charlotte"
+                            value="Charlotte"/>
+                        <Gloucester
+                            jcr:primaryType="nt:unstructured"
+                            text="Gloucester"
+                            value="Gloucester"/>
+                        <Kent
+                            jcr:primaryType="nt:unstructured"
+                            text="Kent"
+                            value="Kent"/>
+                        <Kings
+                            jcr:primaryType="nt:unstructured"
+                            text="Kings"
+                            value="Kings"/>
+                        <Madawaska
+                            jcr:primaryType="nt:unstructured"
+                            text="Madawaska"
+                            value="Madawaska"/>
+                        <Northumberland
+                            jcr:primaryType="nt:unstructured"
+                            text="Northumberland"
+                            value="Northumberland"/>
+                        <Queens
+                            jcr:primaryType="nt:unstructured"
+                            text="Queens"
+                            value="Queens"/>
+                        <Restigouche
+                            jcr:primaryType="nt:unstructured"
+                            text="Restigouche"
+                            value="Restigouche"/>
+                        <Saint_x0020_John
+                            jcr:primaryType="nt:unstructured"
+                            text="Saint John"
+                            value="Saint John"/>
+                        <Sunbury
+                            jcr:primaryType="nt:unstructured"
+                            text="Sunbury"
+                            value="Sunbury"/>
+                        <Victoria
+                            jcr:primaryType="nt:unstructured"
+                            text="Victoria"
+                            value="Victoria"/>
+                        <Westmorland
+                            jcr:primaryType="nt:unstructured"
+                            text="Westmorland"
+                            value="Westmorland"/>
+                        <York
+                            jcr:primaryType="nt:unstructured"
+                            text="York"
+                            value="York"/>
+                        <empty
+                            jcr:primaryType="nt:unstructured"
+                            text=" Empty"
+                            value=" "/>
+                    </options>
+                </county>
+                <numberStocked
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Number Stocked / Quantité"
+                    name="./numberStocked"
+                    xtype="textfield"/>
+                <winterfishing
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Check- Yes, Uncheck-No"
+                    fieldLabel="Open to Winter Fishing"
+                    inputValue="Yes"
+                    name="./winterfishing"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </general>
+        <english
+            jcr:primaryType="cq:Panel"
+            title="English">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <season
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Season / Saison"
+                    name="./enSeason"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <spring
+                            jcr:primaryType="nt:unstructured"
+                            text="Spring"
+                            value="Spring"/>
+                        <summer
+                            jcr:primaryType="nt:unstructured"
+                            text="Summer"
+                            value="Summer"/>
+                        <fall
+                            jcr:primaryType="nt:unstructured"
+                            text="Fall"
+                            value="Fall"/>
+                        <winter
+                            jcr:primaryType="nt:unstructured"
+                            text="Winter"
+                            value="Winter"/>
+                        <empty
+                            jcr:primaryType="nt:unstructured"
+                            text=" Empty"
+                            value=" "/>
+                    </options>
+                </season>
+                <waterName
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Water Name / Lac/Cours d'eau"
+                    name="./enWaterName"
+                    xtype="textfield"/>
+                <waterNameLink
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Water Name Link"
+                    name="./enWaterNameLink"
+                    xtype="textarea"/>
+                <lifeStage
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Life Stage / Étape du cycle de vie"
+                    name="./enLifeStage"
+                    xtype="textfield"/>
+                <clip
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Clip / Nageoires coupées"
+                    name="./enClip"
+                    xtype="textfield"/>
+            </items>
+        </english>
+        <french
+            jcr:primaryType="cq:Panel"
+            title="French">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <season
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Season / Saison"
+                    name="./frSeason"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <spring
+                            jcr:primaryType="nt:unstructured"
+                            text="Printemps"
+                            value="Printemps"/>
+                        <summer
+                            jcr:primaryType="nt:unstructured"
+                            text="&#xa;Été"
+                            value="&#xa;Été"/>
+                        <fall
+                            jcr:primaryType="nt:unstructured"
+                            text="Automne"
+                            value="Automne"/>
+                        <winter
+                            jcr:primaryType="nt:unstructured"
+                            text="Hiver"
+                            value="Hiver"/>
+                        <empty
+                            jcr:primaryType="nt:unstructured"
+                            text=" Empty"
+                            value=" "/>
+                    </options>
+                </season>
+                <waterName
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Water Name / Lac/Cours d'eau"
+                    name="./frWaterName"
+                    xtype="textfield"/>
+                <waterNameLink
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Water Name Link"
+                    name="./frWaterNameLink"
+                    xtype="textarea"/>
+                <lifeStage
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Life Stage / Étape du cycle de vie"
+                    name="./frLifeStage"
+                    xtype="textfield"/>
+                <clip
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Clip / Nageoires coupées"
+                    name="./frClip"
+                    xtype="textfield"/>
+            </items>
+        </french>
+    </items>
+</jcr:root>

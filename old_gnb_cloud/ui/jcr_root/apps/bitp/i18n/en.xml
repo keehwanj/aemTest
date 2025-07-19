@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="en"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <contact_us
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="contact_us"
+        sling:message="Contact Us"/>
+    <lang
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="lang"
+        sling:message="Français"/>
+    <search
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="search"
+        sling:message="Search"/>
+</jcr:root>

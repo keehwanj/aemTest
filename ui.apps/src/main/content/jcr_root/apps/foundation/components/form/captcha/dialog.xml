@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Captcha Component"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Title"
+            name="./jcr:title"
+            xtype="textfield"/>
+        <description
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Description"
+            name="./jcr:description"
+            xtype="textfield"/>
+        <required
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Required"
+            inputValue="true"
+            name="./required"
+            type="checkbox"
+            xtype="selection"/>
+        <requiredMessage
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Required Message"
+            name="./requiredMessage"
+            rows="{Long}4"
+            xtype="textarea"/>
+        <constraintMessage
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Invalid Captcha Message"
+            name="./constraintMessage"
+            rows="{Long}4"
+            xtype="textarea"/>
+        <buttonTitle
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Button Title"
+            name="./buttonTitle"
+            xtype="textfield"/>
+    </items>
+</jcr:root>

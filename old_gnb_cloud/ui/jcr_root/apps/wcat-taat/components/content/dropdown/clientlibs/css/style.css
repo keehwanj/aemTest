@@ -1,0 +1,14 @@
+/*
+	/apps/wcat-taat/components/content/dropdown/clientlibs/css/style.css
+*/
+/**START of style.css**/
+
+
+#main_content_wrapper div.dropdown .form-horizontal{
+    margin-top: 10px;
+}
+
+.dropdown .form-horizontal .control-label {
+     text-align: left;
+}
+/**END of style.css**/

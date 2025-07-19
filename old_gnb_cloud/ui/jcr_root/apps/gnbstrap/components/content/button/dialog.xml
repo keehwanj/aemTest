@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Button"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <setting
+                jcr:primaryType="cq:Panel"
+                title="Setting">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Button text"
+                        name="./text"
+                        xtype="textfield"/>
+                    <link
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Button link"
+                        name="./link"
+                        xtype="pathfield"/>
+                </items>
+            </setting>
+            <size
+                jcr:primaryType="cq:Panel"
+                title="Size">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <size
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Type"
+                        name="./size"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <btn-lg
+                                jcr:primaryType="nt:unstructured"
+                                text="Large"
+                                value="btn-lg"/>
+                            <btn-md
+                                jcr:primaryType="nt:unstructured"
+                                text="Medium"
+                                value="btn-md"/>
+                            <btn-sm
+                                jcr:primaryType="nt:unstructured"
+                                text="Small"
+                                value="btn-sm"/>
+                        </options>
+                    </size>
+                </items>
+            </size>
+            <color
+                jcr:primaryType="cq:Panel"
+                title="Color">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <color
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Type"
+                        name="./color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <btn-primary
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-primary"
+                                value="btn-primary"/>
+                            <btn-secondary
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-secondary"
+                                value="btn-secondary"/>
+                            <btn-success
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-success"
+                                value="btn-success"/>
+                            <btn-danger
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-danger"
+                                value="btn-danger"/>
+                            <btn-warning
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-warning"
+                                value="btn-warning"/>
+                            <btn-info
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-info"
+                                value="btn-info"/>
+                            <btn-light
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-light"
+                                value="btn-light"/>
+                            <btn-dark
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-dark"
+                                value="btn-dark"/>
+                            <btn-link
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-link"
+                                value="btn-link"/>
+                            <btn-outline-primary
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-outline-primary"
+                                value="btn-outline-primary"/>
+                            <btn-outline-secondary
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-outline-secondary"
+                                value="btn-outline-secondary"/>
+                            <btn-outline-success
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-outline-success"
+                                value="btn-outline-success"/>
+                            <btn-outline-danger
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-outline-danger"
+                                value="btn-outline-danger"/>
+                            <btn-outline-warning
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-outline-warning"
+                                value="btn-outline-warning"/>
+                            <btn-outline-info
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-outline-info"
+                                value="btn-outline-info"/>
+                            <btn-outline-light
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-outline-light"
+                                value="btn-outline-light"/>
+                            <btn-outline-dark
+                                jcr:primaryType="nt:unstructured"
+                                text="btn-outline-dark"
+                                value="btn-outline-dark"/>
+                        </options>
+                    </color>
+                </items>
+            </color>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Feature Tile"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Title">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <style
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Style"
+                        name="./style"
+                        type="select"
+                        validateOnBlur="true"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <alerts
+                                jcr:primaryType="nt:unstructured"
+                                text="Feature"
+                                value="feature"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                text="Normal"
+                                value="normal"/>
+                            <normal
+                                jcr:primaryType="nt:unstructured"
+                                text="Normal Bold"
+                                value="normal_bold"/>
+                        </options>
+                    </style>
+                    <destination
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Destination"
+                        name="./destination"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Title"
+                        name="./sectionTitle"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <alt
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Alt Text"
+                        name="./alt_text"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <teaser
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Teaser"
+                        name="./sectionTitleTeaser"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <morelink
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="More Link"
+                        name="./moreLink"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <morelinktext
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="More Link Text"
+                        name="./moreLinkText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <padded
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Padded"
+                        name="./padded"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <shaded
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Shaded"
+                        name="./shaded"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <border
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Show Bottom Border"
+                        name="./border"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <description
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Show Description"
+                        name="./description"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Widget"
+                cropParameter="./image/imageCrop"
+                ddGroups="[media]"
+                fileNameParameter="./image/fileName"
+                fileReferenceParameter="./image/fileReference"
+                mapParameter="./image/imageMap"
+                name="./image/file"
+                requestSuffix="/image.img.png"
+                rotateParameter="./image/imageRotate"
+                sizeLimit="100"
+                title="Image"
+                uploadUrl="/tmp/upload_test/*"
+                xtype="smartimage"/>
+            <tab3
+                jcr:primaryType="cq:Widget"
+                title="Advanced Image Properties"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <titleq
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Title"
+                        name="./image/jcr:title"
+                        xtype="textfield"/>
+                    <descriptionq
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Description"
+                        name="./image/jcr:description"
+                        xtype="textarea"/>
+                    <cssClassq
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}true"
+                        fieldLabel="Style"
+                        name="./cq:cssClass"
+                        newStylePath="textimage/image_styles"
+                        optionsProvider="CQ.utils.WCM.getStyleOptions"
+                        stylePath="image_styles"
+                        type="select"
+                        xtype="selection"/>
+                    <linkURLq
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Drop files or pages from the Content Finder"
+                        fieldLabel="Link to"
+                        name="./image/linkURL"
+                        xtype="pathfield"/>
+                    <resTypeq
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="{Boolean}true"
+                        name="./image/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                    <sizeq
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Size"
+                        heightParameter="./image/height"
+                        widthParameter="./image/width"
+                        xtype="sizefield"/>
+                </items>
+            </tab3>
+        </items>
+    </items>
+</jcr:root>

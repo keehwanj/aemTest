@@ -1,0 +1,14 @@
+/*
+	START of /apps/myid-monid/components/content/gnbpromo_update/clientlibs/css/responsive-980px-1199px.css
+*/
+/* iPad Landscape */
+@media (min-width: 980px) and (max-width: 1199px) {
+
+.carousel-caption h3{
+	font-size: 140%;
+}
+
+}
+/*
+	END of /apps/myid-monid/components/content/gnbpromo_update/clientlibs/css/responsive-980px-1199px.css
+*/

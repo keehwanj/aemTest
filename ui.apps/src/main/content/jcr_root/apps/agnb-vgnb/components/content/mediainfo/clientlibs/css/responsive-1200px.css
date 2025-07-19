@@ -1,0 +1,12 @@
+/*
+	/apps/agnb-vgnb/components/content/mediainfo/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+  #metadata div.col-sm-8 {
+    padding-left: 0px !important;
+  }
+
+  .related_header {
+    margin: 0px 0 15px !important;
+  }
+}

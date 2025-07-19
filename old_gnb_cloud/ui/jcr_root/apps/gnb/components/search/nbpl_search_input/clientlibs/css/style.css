@@ -1,0 +1,17 @@
+/*
+	apps/gnb/components/search/nbpl_search_input/clientlibs/css/style.css
+*/
+
+
+/**START of style.css - nbpl_search_input.css**/
+
+.nbpl_search_box {
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    /* float: left; */
+    margin: 0 0 20px 0;
+    /*width: 278px;*/
+}
+
+/**END of style.css - nbpl_search_input.css**/

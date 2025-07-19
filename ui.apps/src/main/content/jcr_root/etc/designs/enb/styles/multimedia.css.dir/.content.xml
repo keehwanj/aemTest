@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:file">
+    <jcr:content
+        cq:lastReplicated="{Date}2014-03-10T11:00:22.833-03:00"
+        cq:lastReplicatedBy="keehwanj"
+        cq:lastReplicationAction="Activate"
+        jcr:lastModifiedBy="Dweigum"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="nt:resource"/>
+</jcr:root>

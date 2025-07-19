@@ -1,0 +1,9 @@
+/*
+	/apps/gnb/components/content/icejamslist/clientlibs/css/style.css
+ */
+/**START of style.css**/
+.icejamlist .table > tbody > tr > th {
+  vertical-align: middle;
+  font-weight: bold;
+}
+/**END of style.css**/

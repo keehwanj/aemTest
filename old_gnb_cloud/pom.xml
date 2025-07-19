@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.t4g.cnb</groupId>
+  <artifactId>cnb_hfx_parent</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+
+  <name>T4G CNB Project</name>
+  <description>T4G CNB Project parts</description>
+  <inceptionYear>2009</inceptionYear>
+
+  <scm>
+    <connection>scm:svn:https://gnbcqauth2va/svn/cnb_hfx/trunk</connection>
+    <developerConnection>scm:svn:https://gnbcqauth2va/svn/cnb_hfx/trunk</developerConnection>
+    <url>https://gnbcqauth2va/svn/cnb_hfx/trunk</url>
+  </scm>
+
+  <modules>
+    <module>parent</module>
+    <module>core</module> 
+    <module>ui</module> 
+  </modules>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+        <version>2.4.3</version>
+        <configuration>
+          <aggregate>true</aggregate>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+
+<!--  distributionmanagement section added by connie - apr 29 - to see if I can get rid 
+   of error in the mvn deploy command
+
+-->
+
+<distributionmanagement>
+        <repository>
+          <id>t4g-archiva-repository-snapshots</id>
+          <name>T4G.com Snapshots Repository</name>
+          <url>http://gnbcqauth2va:8080/archiva/repository/snapshots</url>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+        <repository>
+          <id>t4g-archiva-repository-internal</id>
+          <name>T4G.com Central Repository</name>
+          <url>http://gnbcqauth2va:8080/archiva/repository/internal</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
+</distributionmanagement>

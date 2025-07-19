@@ -1,0 +1,19 @@
+/*
+	START of /apps/agnb-vgnb/components/navigation/breadcrumbs/clientlibs/css/responsive-1200px.css
+ */
+
+@media (min-width: 1200px) {
+
+
+#breadcrumbNav{
+    font-size: 80%;    
+    margin: 0 30px 10px 15px;
+    padding: 0;
+}
+
+
+}
+
+/*
+	END of /apps/agnb-vgnb/components/navigation/breadcrumbs/clientlibs/css/responsive-1200px.css
+ */

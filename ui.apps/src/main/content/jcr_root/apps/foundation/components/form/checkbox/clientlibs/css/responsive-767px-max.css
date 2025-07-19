@@ -1,0 +1,12 @@
+/*
+	/apps/foundation/components/form/checkbox/clientlibs/css/responsive-767px-max.css
+ */
+/* phone landscape */
+@media (max-width: 767px) {
+  .form_leftcollabel {
+    float: left;
+  }
+  .form_leftcolmark {
+    color: red;
+  }
+}

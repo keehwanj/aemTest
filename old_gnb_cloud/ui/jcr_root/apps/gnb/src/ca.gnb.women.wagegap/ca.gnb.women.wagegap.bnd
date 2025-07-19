@@ -1,0 +1,9 @@
+# Export-Package: *
+# Import-Package: *
+Private-Package: ca.gnb.women.wagegap
+# Include-Resource: 
+Bundle-Name: Women's Issue Wage Gap
+Bundle-Description: Women's Issue Wage Gap
+Bundle-SymbolicName: ca.gnb.women.wagegap
+Bundle-Version: 1.0.0-SNAPSHOT
+Bundle-Activator: ca.gnb.women.wagegap.Activator

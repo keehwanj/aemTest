@@ -1,0 +1,40 @@
+/*
+	START of apps/enb/components/navigation/departmentnav/clientlibs/css/responsive-767px-max.css
+*/
+/* phone landscape */
+
+@media (max-width: 767px) {
+  #mainContent .pageHeader {
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    /*color: #000000;*/
+    color: #ffffff;
+  }
+
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+    background-color: transparent;
+  }
+
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #c6c7c9;
+  }
+
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+
+/*
+	END of apps/enb/components/navigation/departmentnav/clientlibs/css/responsive-767px-max.css
+*/

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Art Bank Image Dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <header
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Header text"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <artist_key
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Input Artist text"
+                        fieldLabel="Artist text"
+                        name="./artist_key"
+                        xtype="textfield"/>
+                    <title_key
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Input Title of Work text"
+                        fieldLabel="Title of Work text"
+                        name="./title_key"
+                        xtype="textfield"/>
+                    <category_key
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Input Category text"
+                        fieldLabel="Category text"
+                        name="./category_key"
+                        xtype="textfield"/>
+                    <yearCreated_key
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Input Year Created text"
+                        fieldLabel="Year Created text"
+                        name="./yearCreated_key"
+                        xtype="textfield"/>
+                    <yearPurchased_key
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Input Year Purchased text"
+                        fieldLabel="Year Purchased text"
+                        name="./yearPurchased_key"
+                        xtype="textfield"/>
+                </items>
+            </header>
+            <resources
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Resources"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <database
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Input Data Sources - AEMArtbankDev / AEMArtbankPro"
+                        fieldLabel="Data Source"
+                        name="./database"
+                        xtype="textfield"/>
+                    <show_entries
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Input Numbers of entries showing - 10, 25, 50, or 100"
+                        fieldLabel="Number of Entries"
+                        name="./show_entries"
+                        xtype="textfield"/>
+                    <null_key
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Input Null setting in Year Created, Year Purchased (n.d.)"
+                        fieldLabel="Setting null"
+                        name="./null_key"
+                        xtype="textfield"/>
+                </items>
+            </resources>
+            <modal
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Modal text"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <artist_m_key
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Input Modal Artist text"
+                        fieldLabel="Artist text"
+                        name="./artist_m_key"
+                        xtype="textfield"/>
+                    <title_m_key
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Input Modal Title of Work text"
+                        fieldLabel="Title of Work text"
+                        name="./title_m_key"
+                        xtype="textfield"/>
+                    <category_m_key
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Input Modal Category text"
+                        fieldLabel="Category text"
+                        name="./category_m_key"
+                        xtype="textfield"/>
+                    <yearCreated_m_key
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Input Modal Year Created text"
+                        fieldLabel="Year Created text"
+                        name="./yearCreated_m_key"
+                        xtype="textfield"/>
+                    <yearPurchased_m_key
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Input Modal Year Purchased text"
+                        fieldLabel="Year Purchased text"
+                        name="./yearPurchased_m_key"
+                        xtype="textfield"/>
+                </items>
+            </modal>
+        </items>
+    </items>
+</jcr:root>

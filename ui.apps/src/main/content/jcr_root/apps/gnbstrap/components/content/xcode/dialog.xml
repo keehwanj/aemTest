@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    title="xCode"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <text
+            jcr:primaryType="cq:Widget"
+            height="500"
+            hideLabel="{Boolean}true"
+            name="./text"
+            xtype="textarea">
+            <rtePlugins jcr:primaryType="nt:unstructured">
+                <misctools
+                    jcr:primaryType="nt:unstructured"
+                    features="[sourceedit,specialchars]"/>
+                <edit
+                    jcr:primaryType="nt:unstructured"
+                    features="*"/>
+                <subsuperscript
+                    jcr:primaryType="nt:unstructured"
+                    features="*"/>
+                <table
+                    jcr:primaryType="nt:unstructured"
+                    features="*"/>
+                <undo
+                    jcr:primaryType="nt:unstructured"
+                    features="*"/>
+                <findreplace
+                    jcr:primaryType="nt:unstructured"
+                    features="*"/>
+            </rtePlugins>
+            <htmlRules jcr:primaryType="nt:unstructured">
+                <links
+                    jcr:primaryType="nt:unstructured"
+                    protocols="[http://,https://,mailto:]"/>
+            </htmlRules>
+        </text>
+        <isRichTextFlag
+            jcr:primaryType="cq:Widget"
+            ignoreData="{Boolean}true"
+            name="./textIsRich"
+            value="true"
+            xtype="hidden"/>
+    </items>
+</jcr:root>

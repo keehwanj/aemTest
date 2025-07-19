@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="SNB facilitator form"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <header
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Header"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <q1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Name of Company"
+                        name="./q1"/>
+                    <q2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Address"
+                        name="./q2"/>
+                    <q3
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Contact person(s) &amp; their coordinates"
+                        name="./q3"/>
+                    <q4
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Website address"
+                        name="./q4"/>
+                    <q5
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Contract costs"
+                        name="./q5"/>
+                    <q6
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Travel expenses"
+                        name="./q6"/>
+                    <q7
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brief description of courses offered"
+                        name="./q7"/>
+                    <q8
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Area(s) of specialty"
+                        name="./q8"/>
+                    <q9
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Online training"
+                        name="./q9"/>
+                    <q10
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Bilingual Capacity"
+                        name="./q10"/>
+                    <q11
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Years in business"
+                        name="./q11"/>
+                    <q12
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Experience teaching the public sector"
+                        name="./q12"/>
+                    <q13
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="References to contact re teaching in the public service"
+                        name="./q13"/>
+                </items>
+            </header>
+            <holder
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Placeholder"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <q1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Name of Company"
+                        name="./q1_h"/>
+                    <q2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Address "
+                        name="./q2_h"/>
+                    <q3
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Contact person(s) &amp; their coordinates "
+                        name="./q3_h"/>
+                    <q4
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Website address"
+                        name="./q4_h"/>
+                    <q5
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Contract costs"
+                        name="./q5_h"/>
+                    <q6
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Travel expenses"
+                        name="./q6_h"/>
+                    <q7
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brief description of courses offered"
+                        name="./q7_h"/>
+                    <q8
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Area(s) of specialty"
+                        name="./q8_h"/>
+                    <q9
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Online training"
+                        name="./q9_h"/>
+                    <q10
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Bilingual Capacity"
+                        name="./q10_h"/>
+                    <q11
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Years in business"
+                        name="./q11_h"/>
+                    <q12
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Experience teaching the public sector"
+                        name="./q12_h"/>
+                    <q13
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="References to contact re teaching in the public service"
+                        name="./q13_h"/>
+                </items>
+            </holder>
+            <button
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Button"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <submit
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Submit"
+                        name="./submit"/>
+                    <clear
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Clear"
+                        name="./clear"/>
+                </items>
+            </button>
+            <email
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Email"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <email
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Recipient email"
+                        name="./email_address"/>
+                </items>
+            </email>
+        </items>
+    </items>
+</jcr:root>

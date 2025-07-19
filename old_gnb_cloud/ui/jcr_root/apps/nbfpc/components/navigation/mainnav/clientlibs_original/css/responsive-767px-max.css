@@ -1,0 +1,17 @@
+/*
+	START of /apps/nbpc-cpnb/components/navigation/mainnav/clientlibs/css/responsive-767px-max.css
+*/
+/* phone landscape */
+
+@media (max-width: 767px) {
+	.navbar-nav > li {
+    	float: left;
+    	width: 25%;
+    	text-align: center;
+	}
+}
+
+
+/*
+	END of /apps/nbpc-cpnb/components/navigation/mainnav/clientlibs/css/responsive-767px-max.css
+*/

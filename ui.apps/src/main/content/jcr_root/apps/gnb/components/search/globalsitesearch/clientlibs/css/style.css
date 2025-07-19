@@ -1,0 +1,92 @@
+/*
+	/apps/gnb/components/search/globalsitesearch/clientlibs/css/style.css
+*/
+
+/**START of style.css **/
+/**for autocomplete css(2018-8-28)**/
+.gsc-completion-container td {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-bottom: 0 solid #d3d3d3;
+    font-size: 100%;
+    position: relative;
+    padding: 0 1em 0 .5em;
+}
+
+tr.gsc-completion-selected {
+    border: 1px solid #003eff;
+    background: #007fff;
+    color: #fff;
+}
+
+.gsq_a b, .gsq_a strong {
+    font-weight: normal;
+}
+/**for autocomplete css(2018-8-28)**/
+
+
+.globalsitesearch .gsc-tabsArea > div {
+	overflow: visible !important;
+}
+
+.globalsitesearch .gsc-tabHeader.gsc-tabhActive {
+    border-top: 2px solid #ff9900 !important;
+}
+
+.globalsitesearch .gsc-tabHeader.gsc-tabhInactive {
+    background: #EFE9E9 !important;
+}
+
+.globalsitesearch .gsc-tabHeader {
+     min-width: 100px !important;
+
+}
+
+.globalsitesearch .cse .gsc-control-cse, .globalsitesearch .gsc-control-cse {
+    padding: 0em;
+ }
+
+.globalsitesearch .gsc-above-wrapper-area {
+    border-bottom: 0px solid #E9E9E9 !important;
+    padding: 0px 0 0px 0 !important;
+}
+
+.globalsitesearch table {
+
+    margin-bottom: 0px;
+	border-color: white;
+
+}
+
+.gsc-table-result td {
+    border-bottom: 0px solid #D3D3D3;
+
+}
+
+.globalsitesearch .col-sm-12 {
+    margin-bottom: 15px;
+
+}
+
+.gsc-table-result, .gsc-thumbnail-inside, .gsc-url-top {
+    padding-left: 0px !important;
+
+}    
+
+.globalsitesearch  a {
+    color: #0064a5 !important;
+}            
+
+
+.gsc-control-wrapper-cse td {
+    vertical-align: top;
+    text-align:left;
+    border-bottom:0px;
+    font-size:100%;
+    padding:0px;
+}
+
+.gsc-control-wrapper-cse table {
+    margin-bottom:0px;
+}
+
+/**END of style.css **/

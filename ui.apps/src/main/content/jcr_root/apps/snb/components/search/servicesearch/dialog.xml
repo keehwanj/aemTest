@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Search"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <nextText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Last Modified label"
+            name="./lastModifiedText"
+            xtype="textfield"/>
+        <noResultsText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="No results text"
+            name="./noResultsText"
+            rows="{Long}4"
+            xtype="textarea"/>
+        <previousText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Previous label"
+            name="./previousText"
+            xtype="textfield"/>
+        <relatedSearchesText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Related searches text"
+            name="./relatedSearchesText"
+            xtype="textfield"/>
+        <resultPagesText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Result pages label"
+            name="./resultPagesText"
+            xtype="textfield"/>
+        <searchTrendsText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Search trends text"
+            name="./searchTrendsText"
+            xtype="textfield"/>
+        <similarPagesText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Similar pages text"
+            name="./similarPagesText"
+            xtype="textfield"/>
+        <spellcheckText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Spellcheck Text"
+            name="./spellcheckText"
+            xtype="textfield"/>
+        <statisticsText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Statistics text"
+            name="./statisticsText"
+            xtype="textfield"/>
+        <removeFilterText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Remove Filter label"
+            name="./removeFilterText"
+            xtype="textfield"/>
+        <refineResultsText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Refine Results label"
+            name="./refineResultsText"
+            xtype="textfield"/>
+        <languagesText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Languages label"
+            name="./languagesText"
+            xtype="textfield"/>
+        <lastModifiedText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Next label"
+            name="./nextText"
+            xtype="textfield"/>
+        <searchTitle
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Search Title label"
+            name="./searchTitle"
+            xtype="textfield"/>
+        <serviceSearchButtonText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Search button text"
+            name="./serviceSearchButtonText"
+            xtype="textfield"/>
+        <searchTag
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Search Tag"
+            name="./tagid"
+            namespaces="[gnb-eng,keywords_eng,gnb-fra,keywords_fra]"
+            xtype="tags"/>
+        <displayTag
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Display Tag"
+            name="./displayTagid"
+            namespaces="[gnb-eng,keywords_eng,gnb-fra,keywords_fra]"
+            xtype="tags"/>
+        <hideCriteria
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Hide Criteria"
+            inputValue="false"
+            name="./hideCriteria"
+            type="checkbox"
+            xtype="selection"/>
+        <hideFacets
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Hide Facets"
+            inputValue="false"
+            name="./hideFacets"
+            type="checkbox"
+            xtype="selection"/>
+    </items>
+</jcr:root>

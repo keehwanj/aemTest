@@ -1,0 +1,72 @@
+#logoImg {
+    margin:0;
+    padding:0;
+    width: 325px;
+    height: 105px;
+    }
+#logo_area{
+    float:left;
+    margin:20px 0 0 30px;
+    width:150px;
+    height:70px;
+    cursor:pointer;
+  	text-indent: -9999px;    
+}
+    
+/**********************************************
+textimage.css
+***********************************************/
+.textimage { margin-bottom: 20px; }
+
+.text_grey_border, .text_grey, .text_border {
+    padding: 10px 20px;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.text_grey { border: 0; }
+
+.text_border { background-color: transparent; }
+
+.text_grey_border p, .text_grey p, .text_border p {
+    margin: 0 0 5px;
+}
+
+.textimage .imagecontainer {
+    background-color: #fff;
+    border:1px solid #D3D3D3;
+    padding:4px;
+}
+
+.textimage .imagecontainer img { width: auto; }
+
+.title {
+    margin-bottom: 10px;
+    font-size: 95%;
+}
+
+.more_grey, .more_blue {
+    margin-top: 5px;
+    font-size: 68%;
+}
+
+.more_blue { font-size: 80%; }
+
+.more_grey a, .more_blue a {
+    background: transparent url("../images/arrow.gif") no-repeat scroll right center;
+    color: #555;
+    padding-right: 10px;
+}
+
+.more_blue a {
+    background-image: url("../images/arrow_blue.gif");
+    color: #0064a5;
+}
+.textimage ul, .textimage ol {
+    padding-left: 65px;
+    list-style-position: outside;
+}
+
+.textimage ol { 
+    padding-left: 70px; 
+}

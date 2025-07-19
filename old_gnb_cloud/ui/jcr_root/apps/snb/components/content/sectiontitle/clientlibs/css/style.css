@@ -1,0 +1,146 @@
+/*
+	apps/snb/components/content/sectiontitle/clientlibs/css/style.css
+ */
+#footer #bottom_nav li.header{
+    color:black;
+    font-size:80%;
+    font-weight:bold;
+    margin:0;
+}
+.sectiontitle .alerts {
+    background:url(/etc/designs/gnb-bootstrap/clientlibs/images/header_alerts_centre.gif) top left repeat-x;
+    height:29px;
+    margin:0px;
+    padding:0;
+}
+.sectiontitle .alerts .leftcurve {
+    background:url(/etc/designs/gnb-bootstrap/clientlibs/images/header_alerts_left.gif) top left no-repeat;
+    height:29px;
+    margin:0px;
+    padding: 0px 5px;
+}
+.sectiontitle .alerts .rightcurve {
+    background:url(/etc/designs/gnb-bootstrap/clientlibs/images/header_alerts_right.gif) top right no-repeat;
+    height:29px;
+    margin:0px;
+    padding:0;
+    float:right;
+}
+.sectiontitle .alerts h3{
+    background:url(/etc/designs/gnb-bootstrap/clientlibs/images/icon_alerts.gif) center left no-repeat;
+    padding-left:30px;
+}
+.sectiontitle .links {
+    background:url(/etc/designs/gnb-bootstrap/clientlibs/images/header_links_centre.gif) top left repeat-x;
+    height:29px;
+    margin:0px;
+    padding:0;
+}
+.sectiontitle .links .leftcurve {
+    background:url(/etc/designs/gnb-bootstrap/clientlibs/images/header_links_left.gif) top left no-repeat;
+    height:29px;
+    margin:0px;
+    padding: 0px 5px;
+}
+.sectiontitle .links .rightcurve {
+    background:url(/etc/designs/gnb-bootstrap/clientlibs/images/header_links_right.gif) top right no-repeat;
+    height:29px;
+    margin:0px;
+    padding:0;
+    float:right;
+}
+.sectiontitle .normal {
+    background:url(/etc/designs/gnb-bootstrap/clientlibs/images/header_normal_centre.gif) top left repeat-x;
+    height:29px;
+    margin:0px;
+    padding:0;
+}
+.sectiontitle .normal .leftcurve {
+    background:url(/etc/designs/gnb-bootstrap/clientlibs/images/header_normal_left.gif) top left no-repeat;
+    height:29px;
+    margin:0px;
+    padding: 0px 5px;
+}
+.sectiontitle .normal .rightcurve {
+    background:url(/etc/designs/gnb-bootstrap/clientlibs/images/header_normal_right.gif) top right no-repeat;
+    height:29px;
+    margin:0px;
+    padding:0;
+    float:right;
+}
+
+
+.alerts .leftcurve h3.title, .links .leftcurve h3.title, .normal .leftcurve h3.title   {
+    color:black;
+    font-size:110%;
+    font-weight:normal;
+    /**line-height:180%;**/
+    line-height:200%;
+    margin:0 0 0 10px;
+}
+
+.sectiontitle .alerts a.rsslink:link, .sectiontitle .links a.rsslink:link, .sectiontitle .normal a.rsslink:link,
+ .sectiontitle .alerts a.rsslink:visited, .sectiontitle .links a.rsslink:visited, .sectiontitle .normal a.rsslink:visited {
+  padding: 5px 3px 0 0;
+  float: right;
+}
+
+.sectiontitle .alerts a.rsslink:link, .sectiontitle .links  a.rsslink:link, .sectiontitle .normal  a.rsslink:link,
+.sectiontitle .alerts  a.rsslink img, .sectiontitle .links  a.rsslink img, .sectiontitle .normal  a.rsslink img {
+    border:0px solid white;
+    }   
+.sectiontitle .more_title_link {
+    margin-top: -29px;
+    float:right;
+    }
+
+
+.sectiontitle .more_title_link a {
+    background:transparent url(/etc/designs/gnb-bootstrap/clientlibs/images/arrow.gif) no-repeat scroll right center;
+    color:#555555;
+    float:right;
+    font-size:75%;
+    font-weight:normal;
+    margin-right:15px;
+    margin-top:7px;
+    padding:0 10px 0 0;
+    text-transform:uppercase;
+}
+
+.sectiontitle .padded {
+    padding: 10px;
+    padding-bottom:0px;
+    border-top:1px solid #d3d3d3;
+}
+.sectiontitle .bottomborder {
+    border-bottom:1px solid #d3d3d3;
+}
+.sectiontitle .imagecontainer {
+    background-color:#ffffff;
+    border:1px solid #d3d3d3;
+    padding: 3px;
+}
+.sectiontitle h2 {
+    color:#0064a5;
+    margin-top: 10px;
+    margin-bottom:0px;
+    }
+.sectiontitle .standard h2 {
+    font-size:18px;
+    color:#004D42;
+    font-weight:normal !important;
+    margin:0 !important;
+    padding:0 !important;
+    }   
+    
+.sectiontitle h2, .sectiontitle p, .sectiontitle .featuretile_more {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.sectiontitle .featuretile_more a, .sectiontitle h2 a {
+    background:url(/etc/designs/gnb-bootstrap/clientlibs/images/arrow_blue.gif) no-repeat center right;
+    padding:0px 10px 0px 0;
+}
+

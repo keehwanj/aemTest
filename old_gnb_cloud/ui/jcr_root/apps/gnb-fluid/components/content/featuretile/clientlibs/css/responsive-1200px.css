@@ -1,0 +1,14 @@
+/*
+	START /apps/gnb-fluid/components/content/featuretile/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+
+.featuretile h2.feature {
+  font-size:105%;
+}
+
+
+}
+/*
+	END /apps/gnb-fluid/components/content/featuretile/clientlibs/css/responsive-1200px.css
+*/

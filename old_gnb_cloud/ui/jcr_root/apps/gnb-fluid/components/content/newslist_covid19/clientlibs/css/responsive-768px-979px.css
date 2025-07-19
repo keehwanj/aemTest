@@ -1,0 +1,12 @@
+/*
+/apps/gnb-fluid/components/content/newslist_covid19/clientlibs/css/responsive-768px-979px.css
+ */
+/* iPad portrait */
+@media (min-width: 768px) and (max-width: 979px) {
+
+.newslist_covid19 div.morelink {
+  margin-left: 0px;
+}    
+
+
+}

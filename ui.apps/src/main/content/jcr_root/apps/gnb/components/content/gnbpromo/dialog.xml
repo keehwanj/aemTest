@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="nt:unstructured"
+        title="List"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Widget"
+                border="false"
+                height=""
+                title="General"
+                width=""
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <hideTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Hide Title"
+                        inputValue="false"
+                        name="./hideTitle"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <hideDescription
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Hide Decsription"
+                        inputValue="false"
+                        name="./hideDescription"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <hideReadMore
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Hide arrow"
+                        inputValue="false"
+                        name="./hideReadMore"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <hideNumber
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Hide Number"
+                        inputValue="false"
+                        name="./hideNumber"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </general>
+            <prop1
+                jcr:primaryType="cq:Widget"
+                border="false"
+                height=""
+                title="Promo Item 1"
+                width=""
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <promoDestination1
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="The promo values of this page will be used unless overridden here"
+                        fieldLabel="Promo Destination"
+                        name="./promoDestination1"
+                        xtype="pathfield"/>
+                    <promoImage1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Promo Image"
+                        name="./promoImage1"
+                        xtype="pathfield"/>
+                    <prop13
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Promo Title"
+                        name="./promoTitle1"
+                        xtype="textfield"/>
+                    <prop14
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Promo Description"
+                        name="./promoDescription1"
+                        xtype="textfield"/>
+                </items>
+            </prop1>
+            <prop2
+                jcr:primaryType="cq:Widget"
+                title="Promo Item 2"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <promoDestination1
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="The promo values of this page will be used unless overridden here"
+                        fieldLabel="Promo Destination"
+                        name="./promoDestination2"
+                        xtype="pathfield"/>
+                    <promoImage1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Promo Image"
+                        name="./promoImage2"
+                        xtype="pathfield"/>
+                    <prop8
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Promo Title"
+                        name="./promoTitle2"
+                        xtype="textfield"/>
+                    <prop9
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Promo Description"
+                        name="./promoDescription2"
+                        xtype="textfield"/>
+                </items>
+            </prop2>
+            <prop3
+                jcr:primaryType="cq:Widget"
+                title="Promo Item 3"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <promoDestination1
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="The promo values of this page will be used unless overridden here"
+                        fieldLabel="Promo Destination"
+                        name="./promoDestination3"
+                        xtype="pathfield"/>
+                    <promoImage1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Promo Image"
+                        name="./promoImage3"
+                        xtype="pathfield"/>
+                    <promoTitle1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Promo Title"
+                        name="./promoTitle3"
+                        xtype="textfield"/>
+                    <prop10
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Promo Description"
+                        name="./promoDescription3"
+                        xtype="textfield"/>
+                </items>
+            </prop3>
+            <prop4
+                jcr:primaryType="cq:Widget"
+                title="Promo Item 4"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <promoDestination1
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="The promo values of this page will be used unless overridden here"
+                        fieldLabel="Promo Destination"
+                        name="./promoDestination4"
+                        xtype="pathfield"/>
+                    <promoImage1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Promo Image"
+                        name="./promoImage4"
+                        xtype="pathfield"/>
+                    <promoTitle1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Promo Title"
+                        name="./promoTitle4"
+                        xtype="textfield"/>
+                    <prop11
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Promo Description"
+                        name="./promoDescription4"
+                        xtype="textfield"/>
+                </items>
+            </prop4>
+            <prop5
+                jcr:primaryType="cq:Widget"
+                title="Promo Item 5"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <promoDestination1
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="The promo values of this page will be used unless overridden here"
+                        fieldLabel="Promo Destination"
+                        name="./promoDestination5"
+                        xtype="pathfield"/>
+                    <promoImage1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Promo Image"
+                        name="./promoImage5"
+                        xtype="pathfield"/>
+                    <promoTitle1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Promo Title"
+                        name="./promoTitle5"
+                        xtype="textfield"/>
+                    <prop12
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Promo Description"
+                        name="./promoDescription5"
+                        xtype="textfield"/>
+                </items>
+            </prop5>
+        </items>
+    </items>
+</jcr:root>

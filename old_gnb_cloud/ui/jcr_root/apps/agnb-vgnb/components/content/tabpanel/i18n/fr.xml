@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="fr"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <predefined
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="predefined"
+        sling:message="Le Pre-Defined Tabs"/>
+    <tabcolor
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="tabcolor"
+        sling:message="Le Tab Color"/>
+    <tabs
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="tabtitles"
+        sling:message="La Tab Titles"/>
+</jcr:root>

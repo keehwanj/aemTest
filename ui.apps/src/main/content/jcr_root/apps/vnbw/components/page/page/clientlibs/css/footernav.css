@@ -1,0 +1,34 @@
+/**START of footernav.css**/
+.footernav {
+  height: 160px;
+}
+.footerNavSection {
+  margin: 0 0 0 0px;
+  padding: 0 0px 0 40px;
+  width: 180px;
+  float: left;
+  height: 170px;
+}
+
+.footerNavSection .sectiontitle {
+  color: black;
+  font-size: 80%;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#footerNav li {
+  line-height: 1;
+  margin: 0 0 5px;
+}
+
+#footerNav a,
+#footerNav a:visited {
+  font-size: 90%;
+  color: #555;
+}
+
+#footerNav a:hover {
+  color: #000;
+}
+/**END of footernav.css**/

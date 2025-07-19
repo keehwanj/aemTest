@@ -1,0 +1,122 @@
+/**START of departmentNav.css**/
+ul#departmentNav {
+  background: url(/etc/designs/agnb-vgnb/clientlib/images/nav_dep_bkgr2.gif)
+    no-repeat top left;
+  height: 40px;
+  width: 940px;
+  margin: 0 0 0 10px !important;
+  padding: 0 !important;
+  position: relative;
+  font-size: 100%;
+  list-style-type: none;
+  border-bottom: 1px solid #959595;
+  z-index: 999;
+}
+
+ul#departmentNav li {
+  float: left;
+  position: relative;
+  margin: 0;
+  padding-right: 7px;
+  background: url(/etc/designs/agnb-vgnb/clientlib/images/divider.gif) right top
+    no-repeat;
+}
+
+ul#departmentNav li.last {
+  background: none !important;
+}
+
+ul#departmentNav li a {
+  display: block;
+  padding: 0 11px;
+  margin-left: 5px;
+  text-decoration: none;
+  line-height: 41px;
+  color: #555555;
+  float: left;
+  width: auto;
+}
+
+ul#departmentNav li.parent a {
+  background: transparent
+    url(/etc/designs/agnb-vgnb/clientlib/images/arrow_dep.gif) no-repeat right
+    center;
+  padding-right: 30px !important;
+}
+
+ul#departmentNav a:hover,
+ul#departmentNav li.active a,
+ul#departmentNav li.parent a:hover,
+ul#departmentNav li.parent.active a,
+ul#departmentNav li.active a:link {
+  background: transparent
+    url(/etc/designs/agnb-vgnb/clientlib/images/main_nav_span.gif) repeat-x;
+  color: #fff;
+}
+
+* html ul#departmentNav a {
+  /*IE 6 trick to ensure clickable region*/
+  height: 1%;
+}
+
+ul#departmentNav ul {
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  font-size: 100%;
+}
+
+ul#departmentNav ul li {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  display: block;
+  float: none;
+  background: transparent;
+}
+
+ul#departmentNav li:hover ul,
+ul#departmentNav li.over ul {
+  display: block;
+  border: 1px solid #a7a7a7;
+  border-top: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 3;
+  width: 200px;
+  left: 5px;
+  top: 40px;
+}
+
+ul#departmentNav ul li a,
+ul#departmentNav ul li.parent a,
+ul#departmentNav li.parent.active ul li a,
+ul#departmentNav li.active ul li a,
+ul#departmentNav li.parent ul li a,
+ul#departmentNav li.active ul li a:link,
+ul#departmentNav li.active ul li a:link {
+  padding: 5px 0px 5px 20px;
+  background: transparent
+    url(/etc/designs/agnb-vgnb/clientlib/images/arrow_dep_flyout.gif) no-repeat
+    scroll center left;
+  font-size: 80%;
+  z-index: 3;
+  display: block;
+  float: none;
+  line-height: 1;
+  color: #000;
+  margin-left: 0;
+}
+
+ul#departmentNav ul li a:hover,
+ul#departmentNav li.parent.active ul li a:hover,
+ul#departmentNav li.active ul li a:hover,
+ul#departmentNav li.parent ul li a:hover {
+  background: #ededed
+    url(/etc/designs/agnb-vgnb/clientlib/images/arrow_dep_flyout.gif) no-repeat
+    scroll center left;
+  color: #555;
+}
+/**END of departmentNav.css**/

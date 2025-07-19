@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Subscription List"
+    xtype="dialog">
+    <items
+        jcr:primaryType="nt:unstructured"
+        title="List"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Widget"
+                title="General Options"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <headerTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Panel Header Title"
+                        name="./headerTitle"
+                        xtype="textfield"/>
+                    <subscribeText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Panel Subscription text"
+                        name="./subscribeText"
+                        xtype="textfield"/>
+                    <panelColor
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="panel-primary"
+                        fieldDescription="Setting panel color"
+                        fieldLabel="Panel Color"
+                        name="./panelColor"
+                        type="combobox"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <primary
+                                jcr:primaryType="nt:unstructured"
+                                value="panel-primary"/>
+                            <success
+                                jcr:primaryType="nt:unstructured"
+                                value="panel-success"/>
+                            <info
+                                jcr:primaryType="nt:unstructured"
+                                value="panel-info"/>
+                            <warning
+                                jcr:primaryType="nt:unstructured"
+                                value="panel-warning"/>
+                            <danger
+                                jcr:primaryType="nt:unstructured"
+                                value="panel-danger"/>
+                        </options>
+                    </panelColor>
+                    <reverseOrder
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="false"
+                        fieldLabel="Display Reverse Order"
+                        name="./reverseOrder"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <modalID
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Modal ID (This should be unique in this webpage)"
+                        name="./modalID"
+                        xtype="textfield"/>
+                    <hideList
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="false"
+                        fieldLabel="Hide list of subscription"
+                        name="./hideList"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </general>
+            <links
+                jcr:primaryType="cq:Widget"
+                title="Links"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new link."
+                        fieldLabel="Links"
+                        name="./links"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="pathfield"/>
+                    </links>
+                </items>
+            </links>
+            <links_text
+                jcr:primaryType="cq:Widget"
+                title="Text"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links_text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new text."
+                        fieldLabel="Link Texts"
+                        name="./links_text"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </links_text>
+                </items>
+            </links_text>
+            <modal
+                jcr:primaryType="cq:Widget"
+                title="Modal"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <modalHeaderText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Modal dialog header title"
+                        name="./modalHeaderText"
+                        xtype="textfield"/>
+                    <emailText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Email text"
+                        name="./emailText"
+                        xtype="textfield"/>
+                    <typeText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Type text"
+                        name="./typeText"
+                        xtype="textfield"/>
+                    <subscriptionText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Subscription text"
+                        name="./subscriptionText"
+                        xtype="textfield"/>
+                    <typesubscribeText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Type Subscribe text"
+                        name="./typeSubscribeText"
+                        xtype="textfield"/>
+                    <typeunsubscribeText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Type Unsubscribe text"
+                        name="./typeUnSubscribeText"
+                        xtype="textfield"/>
+                    <submitText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Submit button text"
+                        name="./submitText"
+                        xtype="textfield"/>
+                    <closeText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Close button text"
+                        name="./closeText"
+                        xtype="textfield"/>
+                    <emailPlaceholderText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Email Placeholder text"
+                        name="./emailPlaceholderText"
+                        xtype="textfield"/>
+                    <formID
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Modal form id"
+                        name="./formID"
+                        xtype="textfield"/>
+                </items>
+            </modal>
+            <Infomation
+                jcr:primaryType="cq:Widget"
+                title="Information"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <info
+                        jcr:primaryType="cq:Widget"
+                        disabled="{Boolean}true"
+                        fieldDescription="If you have added a subscription item and it does not appear, please check the following:&lt;br/>&lt;br/>&#xa;&#xa;Page&lt;br/>&#xa;•&#x9;Subscription ID is not null&lt;br/>&#xa;•&#x9;Subscription = true&lt;br/>&#xa;•&#x9;At least one tag is picked&lt;br/>&#xa;•&#x9;GNB Title is not null&lt;br/>&#xa;&lt;br/>&lt;br/>&#xa;DAM Asset&lt;br/>&#xa;•&#x9;Subscription ID is not null&lt;br/>&#xa;•&#x9;Subscription = true&lt;br/>&#xa;•&#x9;At least one tag is picked&lt;br/>&#xa;•&#x9;Title – EN is not null&lt;br/>&#xa;•&#x9;Title – FR is not null"
+                        fieldLabel="Information"/>
+                </items>
+            </Infomation>
+        </items>
+    </items>
+</jcr:root>

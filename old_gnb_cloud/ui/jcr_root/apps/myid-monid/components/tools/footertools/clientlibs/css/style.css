@@ -1,0 +1,16 @@
+/*START of /apps/myid-monid/components/tools/footertools/clientlibs/css/style.css*/
+#footerToolbar {
+  background:url("/etc/designs/gnb-bootstrap/clientlibs/images/header_footer.gif") no-repeat scroll 0 0 transparent;
+  margin:0 0 5px 20px;
+  padding:0;
+/*  width:900px;*/
+}
+
+#footer { 
+    /*width:960px;*/
+    /*background:url(/etc/designs/gnb-bootstrap/clientlibs/images/main_content_bkgr.gif) 0 0 repeat-y;*/
+    margin:0;
+    padding:10px 0 0 0px;
+} 
+
+/*END of /apps/myid-monid/components/tools/footertools/clientlibs/css/style.css*/

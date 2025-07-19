@@ -1,0 +1,591 @@
+/*START of /etc/designs/wcatfluid-bootstrap/clientlibs/css/style.css*/
+/*
+CUSTOM CSS 
+LOAD AFTER BOOTSTRAP CSS
+
+Last updated Oct 5, 2021
+
+CONTENTS
+1. GLOBAL AND RESETS
+2. TYPOGRAPHY
+3. NAV 
+4. HEADER
+5. BUTTONS
+6. MAIN
+7. WRAPPERS
+8. FEATURES
+9. CARDS
+10. ALERTS
+11.FEEDABCK
+12. FOOTER
+13. SCROLL INDICATOR
+
+*/
+
+/*AEM*/
+#CQ .x-form-check-wrap input {
+    vertical-align: -webkit-baseline-middle !important;
+}
+
+/*dialog input field height override*/
+.ext-strict #CQ .x-form-text {
+    height: 22px !important;
+}
+/*AEM*/
+
+/* GLOBAL */
+
+/* Google web fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+/* FIX for Container-Fluid */
+
+.navbar {
+    padding: .5rem 1rem !important;
+    margin: 0 !important;
+    -webkit-box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.08)
+}
+.navbar .btn {
+    padding: .375rem .75rem !important
+}
+.row {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+ <!-- Lazy Auto Container for Column Control-->
+
+.columncontrol {
+	max-width: 1140px;
+	margin: auto;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Public Sans", sans-serif;
+    color: #000000;
+    height: 100%;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+/* Links */
+a {
+    color: #004a98;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #1565C0;
+}
+
+p a,
+ul li a {
+    font-weight: 600;
+}
+
+p a:hover,
+ul li a:hover {
+    text-decoration: none;
+}
+
+ul li,
+ol li {
+    padding: 0.175rem 0rem;
+}
+
+a.external-link::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f35d";
+    font-size: 1rem;
+    margin-left: 0.3rem;
+}
+
+hr {
+    border: 0px;
+    height: 0px;
+    border-bottom: 3px solid #E2E6EA;
+}
+
+
+/* TYPOGRAPHY */
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+.h1 a,
+.h2 a,
+.h3 a,
+.h4 a,
+.h5 a,
+.h6 a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    text-decoration: none;
+}
+
+.h1 a:hover,
+.h2 a:hover,
+.h3 a:hover,
+.h4 a:hover,
+.h5 a:hover,
+.h6 a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    text-decoration: underline;
+}
+
+
+h2,
+.h2 {
+    font-size: 1.666rem;
+    line-height: 1.999rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.333rem;
+    line-height: 1.666rem;
+}
+
+h4,
+.h4 {
+    font-size: 1rem;
+    line-height: 1.333rem;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6,
+.brand-title {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.display-1 {
+    font-size: calc(1.625rem + 4.5vw);
+}
+
+@media (min-width: 768px) {
+    .display-1 {
+        font-size: 5.333em;
+    }
+}
+
+/* Content */
+/* Adjustments to typography styling for detination content to improve readablity */
+.content ul {
+    padding-inline-start: 40px;
+}
+
+/* NAV */
+.navbar {
+    /* override template styling */
+    width: 100%;
+    z-index: 3;
+    height: 60px;
+    padding: 0em 1.25em 0em 0.75em;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 16%);
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        height: 70px;
+        padding: 0em 1.5em 0em 1.25em;
+    }
+}
+
+.navbar-brand img {
+    height: 30px;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand img {
+        height: 40px;
+    }
+}
+
+.navbar .link {
+    /* override template styling */
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #000000;
+}
+
+@media (min-width: 768px) {
+    .navbar .link {
+        height: 70px;
+        line-height: 70px;
+    }
+}
+
+/* Breadcrumbs */
+/*Breadcrumbs on green*/
+.wrapper-green ol.breadcrumb {
+    min-height: 70px;
+    margin: 0;
+    padding: .75rem 0rem;
+    background: none;
+    font-size: 14px;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 768px) {
+    .wrapper-green ol.breadcrumb {
+        font-size: 16px;
+    }
+}
+
+.wrapper-green ol.breadcrumb li,
+.wrapper-green ol.breadcrumb li a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.wrapper-green ol.breadcrumb li a {
+    text-decoration: underline;
+}
+
+.wrapper-green ol.breadcrumb li a:hover {
+    text-decoration: none;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/*HEADER*/
+
+.hero-theme {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/moving-day-hero.jpg");
+    background-position: center center;
+    background-size: cover;
+    min-height: 550px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    color: #ffffff;
+}
+
+.hero-green {
+    background-color: #006055;
+    min-height: 245px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+    color: #ffffff;
+}
+
+
+/* BUTTONS */
+.btn {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #004a98;
+    border-color: #004a98;
+}
+
+.btn-primary:hover {
+    background-color: #1565C0;
+    border-color: #1565C0;
+}
+
+.btn-outline-primary {
+    border-color: #004a98;
+    color: #004a98;
+}
+
+.btn-outline-primary:hover {
+    background-color: #1565C0;
+    border-color: #1565C0;
+}
+
+.btn-secondary {
+    background-color: #006055;
+    border-color: #006055
+}
+
+.btn-secondary:hover {
+    background-color: #129648;
+    border-color: #129648;
+}
+
+/* MAIN */
+
+   /* WRAPPERS */
+
+.wrapper-forest {
+    background-color: #006055;
+}
+.wrapper-gold {
+    background-color: #d6a329;
+}
+.wrapper-crimson {
+    background-color: #79242f;
+}
+.wrapper-ocean {
+    background-color: #004a98;
+}
+.wrapper-black {
+    background-color: #000000;
+}
+.wrapper-grey {
+    background-color: #f5f5f5;
+}
+
+
+/* Most requested component */
+.wrapper-green .most-requested .wrapper-crimson .wrapper-black .wrapper-ocean {
+    color: #ffffff;
+}
+
+.wrapper-green .most-requested .wrapper-crimson .wrapper-black .wrapper-ocean a {
+    color: #ffffff;
+}
+
+/* FEATURES */
+/* Most requested */
+.most-requested ul {
+    margin: 0;
+    list-style-type: none;
+    padding-inline-start: 24px;
+}
+
+.most-requested li {
+    margin: 0;
+}
+
+.most-requested ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f138";
+    margin: 0 8px 0 -24px;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+/*on this page */
+
+.on-this-page ul {
+    margin: 0;
+    list-style-type: none;
+    padding-inline-start: 24px;
+}
+
+.on-this-page li {
+    margin: 0;
+}
+
+.on-this-page ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f138";
+    margin: 0 8px 0 -24px;
+    font-weight: 600;
+    color: #006055;
+    font-size: .8rem;
+}
+
+/*Related content */
+.related-content hr {
+    margin-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+    .related-content hr {
+        display: none;
+    }
+
+}
+
+.related-content ul {
+    margin: 0;
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.related-content li {
+    margin: 0;
+}
+
+/* CARDS */
+.card {
+    border: none;
+}
+
+.card-grey {
+    background-color: #f5f5f5;
+}
+
+
+@media (min-width: 992px) {
+    .timeline .card-body {
+        min-height: 340px;
+    }
+}
+
+/* ALERTS */
+.alert {
+    padding: 1.5rem;
+    color: #000000;
+    border-width: 1px 1px 1px 8px;
+}
+
+.alert-primary,
+.alert-information {
+    background-color: rgba(0, 74, 152, 0.08);
+    border-color: rgba(0, 74, 152, 0.12);
+    border-left-color: rgba(0, 74, 152, 1);
+}
+
+.alert-information h3::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f05a";
+    margin-right: 0.5rem;
+}
+
+.alert-warning {
+    background-color: rgba(214, 163, 41, 0.12);
+    border-color: rgba(214, 163, 41, 0.16);
+    border-left-color: rgba(214, 163, 41, 1);
+}
+
+.alert-warning h3::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f06a";
+    margin-right: 0.5rem;
+}
+
+/* Blockquote */
+.blockquote {
+    padding: 1.5rem;
+    font-size: 1rem;
+    font-style: italic;
+    border-left: 8px solid #E2E6EA;
+    border-radius: .25rem;
+}
+
+
+/* FEEDBACK */
+
+
+/* FOOTER */
+.footer {
+    background-color: #000000;
+    padding: 1.5rem 1rem;
+}
+
+
+.footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer a {
+    color: #ffffff;
+}
+
+
+
+.gnbfooter {
+    background-color: #000000;
+    padding: 1.5rem 1rem;
+}
+
+.gnbfooter p {
+    margin: 0;
+    padding: 0;
+}
+
+.gnbfooter a {
+    color: #ffffff;
+}
+
+
+/* SCROLL */
+/* Add a scroll indicator when the header fills the screen */
+/* Landing page only scroll indicator for cover image based on screen height and width */
+
+
+.scroll-indicator {
+    display: none;
+}
+
+@media (min-width: 992px) and (max-height: 800px) {
+    .scroll-indicator {
+        display: block;
+        text-align: center;
+        height: 60px;
+        margin-top: -60px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .scroll-indicator-icon {
+        animation: scroll 1s infinite alternate;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes scroll {
+
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+
+/* END of /etc/designs/wcatfluid-bootstrap/clientlibs/css/style.css*/

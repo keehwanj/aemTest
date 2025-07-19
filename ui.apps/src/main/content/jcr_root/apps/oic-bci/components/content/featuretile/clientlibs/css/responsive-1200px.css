@@ -1,0 +1,11 @@
+/*
+	/apps/oic-bci/components/content/featuretile/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+
+.featuretile h2.feature {
+  font-size:130%;
+}
+
+
+}

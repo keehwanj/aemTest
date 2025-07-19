@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    cq:lastReplicated="{Date}2013-12-16T22:23:31.321-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:language="en"
+    jcr:mixinTypes="[cq:ReplicationStatus,mix:language]"
+    jcr:primaryType="sling:Folder">
+    <bi_LinkText
+        cq:lastReplicated="{Date}2013-12-16T22:23:31.883-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="bi_LinkText"
+        sling:message="Side-by-Side (.PDF) "/>
+    <contactforinputText
+        cq:lastReplicated="{Date}2013-12-16T22:23:32.039-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="contactforinputText"
+        sling:message="Contact For Input"/>
+    <deadlineText
+        cq:lastReplicated="{Date}2013-12-16T22:23:32.585-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="deadlineText"
+        sling:message="Deadline"/>
+    <departmentText
+        cq:lastReplicated="{Date}2013-12-16T22:23:32.741-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="departmentText"
+        sling:message="Department"/>
+    <emailText
+        cq:lastReplicated="{Date}2013-12-16T22:23:33.349-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="emailText"
+        sling:message="Email"/>
+    <en_LinkText
+        cq:lastReplicated="{Date}2013-12-16T22:23:33.880-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="en_LinkText"
+        sling:message="English only (.PDF) "/>
+    <faxText
+        cq:lastReplicated="{Date}2013-12-16T22:23:34.550-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="faxText"
+        sling:message="Fax"/>
+    <fr_LinkText
+        cq:lastReplicated="{Date}2013-12-16T22:23:34.644-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="fr_LinkText"
+        sling:message="French only (.PDF) "/>
+    <linktoDraftRegulationText
+        cq:lastReplicated="{Date}2013-12-16T22:23:35.299-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="linktoDraftRegulationText"
+        sling:message="Link to Draft Regulation"/>
+    <telephoneText
+        cq:lastReplicated="{Date}2013-12-16T22:23:35.830-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="telephoneText"
+        sling:message="Telephone"/>
+    <titleText
+        cq:lastReplicated="{Date}2013-12-16T22:23:36.734-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="titleText"
+        sling:message="Title"/>
+</jcr:root>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Card-featured"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <setting
+                jcr:primaryType="cq:Panel"
+                title="Setting">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <content
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Content"
+                        height="150"
+                        name="./content"
+                        xtype="textarea"/>
+                    <link
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Link"
+                        name="./link"
+                        xtype="pathfield"/>
+                    <image
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Image"
+                        name="./image"
+                        xtype="pathfield"/>
+                </items>
+            </setting>
+        </items>
+    </items>
+</jcr:root>

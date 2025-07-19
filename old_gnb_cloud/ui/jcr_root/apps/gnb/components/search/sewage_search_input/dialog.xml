@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','children','static','search','querybuilder'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i!=tabs.length-1;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="Community Profile Search Dialog"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="cq:Widget"
+            title="General"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title Text"
+                    name="./title_Text"
+                    xtype="textfield"/>
+                <searchWarning_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Warning Text"
+                    name="./searchWarning_Text"
+                    xtype="textfield"/>
+                <searchResultsPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path to the Onsite Sewage search results page"
+                    fieldLabel="Search Results Path"
+                    name="./searchResultsPath"
+                    xtype="pathfield"/>
+                <between_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="&quot;Between&quot; Text"
+                    name="./between_Text"
+                    xtype="textfield"/>
+            </items>
+        </general>
+        <selction_region
+            jcr:primaryType="cq:Widget"
+            title="Region"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <select_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="&quot;Select&quot; Text"
+                    name="./select_Text"
+                    xtype="textfield"/>
+                <region_value
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the value of region."
+                    fieldLabel="Region - Value"
+                    name="./region_value"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </region_value>
+                <region_text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the text of region."
+                    fieldLabel="Region - Text"
+                    name="./region_text"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </region_text>
+            </items>
+        </selction_region>
+        <selction_contour
+            jcr:primaryType="cq:Widget"
+            title="Non Conventional Type"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <nonconventional_value
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the value of Non Conventional Type."
+                    fieldLabel="Non Conventional Type - Value"
+                    name="./nonconventional_value"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </nonconventional_value>
+                <nonconventional_text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the text of Non Conventional Type."
+                    fieldLabel="Non Conventional Type - Text"
+                    name="./nonconventional_text"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </nonconventional_text>
+            </items>
+        </selction_contour>
+    </items>
+</jcr:root>

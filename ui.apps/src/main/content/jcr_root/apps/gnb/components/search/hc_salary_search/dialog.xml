@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    title="Health Careers Search Component - Salary"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <text
+            jcr:primaryType="cq:Widget"
+            title="Header Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <header_career_title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Career Title or Title de la prefession"
+                    name="./header_career_title"
+                    xtype="textfield"/>
+                <header_salary
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Salary or Salaire"
+                    name="./header_salary"
+                    xtype="textfield"/>
+                <header_study_length
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Length of Study or Durée des etudes"
+                    name="./header_study_length"
+                    xtype="textfield"/>
+                <year
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : year or ans"
+                    name="./year"
+                    xtype="textfield"/>
+            </items>
+        </text>
+        <renderer
+            jcr:primaryType="cq:Widget"
+            title="Renderers"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <_x0031_-ps_renderer
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="P&amp;S Render Page"
+                    name="./ps_renderer"
+                    xtype="pathfield"/>
+                <_x0032_-nr_renderer
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="N&amp;R Render Page"
+                    name="./nr_renderer"
+                    xtype="pathfield"/>
+                <_x0033_-lmi_renderer
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="L&amp;M&amp;I Render Page"
+                    name="./lmi_renderer"
+                    xtype="pathfield"/>
+                <_x0034_-ah_renderer
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="A&amp;H Render Page"
+                    name="./ah_renderer"
+                    xtype="pathfield"/>
+            </items>
+        </renderer>
+        <data_x0020_path
+            jcr:primaryType="cq:Widget"
+            title="Data Path"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <data_path
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : /content/gnb/doh-data/heath-careers"
+                    fieldLabel="Data Path"
+                    name="./data_path"
+                    xtype="pathfield"/>
+            </items>
+        </data_x0020_path>
+    </items>
+</jcr:root>

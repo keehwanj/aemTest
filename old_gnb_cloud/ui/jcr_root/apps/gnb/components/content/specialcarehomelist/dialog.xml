@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','children','static','search','querybuilder'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i!=tabs.length-1;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="ABC List Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <basic
+            jcr:primaryType="cq:Widget"
+            title="Basic"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <renderer_page
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : /content/gnb/en/news/abc_renderer or /content/gnb/fr/nouvelles/abc_renderer"
+                    fieldLabel="Render Page"
+                    name="./renderer_page"
+                    xtype="pathfield"/>
+                <location
+                    jcr:primaryType="cq:Widget"
+                    allowEmpty="true"
+                    defaultValue="FREDERICTON"
+                    fieldDescription="(Select one of Locations)"
+                    fieldLabel="Location Selection"
+                    name="./location"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <acadian_peninsula
+                            jcr:primaryType="nt:unstructured"
+                            text="ACADIAN PENINSULA"
+                            value="ACADIAN PENINSULA"/>
+                        <chaleur
+                            jcr:primaryType="nt:unstructured"
+                            text="CHALEUR"
+                            value="CHALEUR"/>
+                        <edmonston
+                            jcr:primaryType="nt:unstructured"
+                            text="EDMUNDSTON"
+                            value="EDMUNDSTON"/>
+                        <fredericton
+                            jcr:primaryType="nt:unstructured"
+                            text="FREDERICTON"
+                            value="FREDERICTON"/>
+                        <miramichi
+                            jcr:primaryType="nt:unstructured"
+                            text="MIRAMICHI"
+                            value="MIRAMICHI"/>
+                        <moncton
+                            jcr:primaryType="nt:unstructured"
+                            text="MONCTON"
+                            value="MONCTON"/>
+                        <restigouche
+                            jcr:primaryType="nt:unstructured"
+                            text="RESTIGOUCHE"
+                            value="RESTIGOUCHE"/>
+                        <saint_john
+                            jcr:primaryType="nt:unstructured"
+                            text="SAINT JOHN"
+                            value="SAINT JOHN"/>
+                        <all
+                            jcr:primaryType="nt:unstructured"
+                            text="&amp;nbsp;"
+                            value=""/>
+                    </options>
+                </location>
+            </items>
+        </basic>
+        <text-header
+            jcr:primaryType="cq:Widget"
+            title="Header Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <header_facility
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Facility or Installation "
+                    fieldLabel="Facility"
+                    name="./header_facility"
+                    xtype="textfield"/>
+                <header_location
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Location or Endroit "
+                    fieldLabel="Location"
+                    name="./header_location"
+                    xtype="textfield"/>
+                <header_language
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Language or Langue"
+                    fieldLabel="Language"
+                    name="./header_language"
+                    xtype="textfield"/>
+                <header_max
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Maximum Approved Units or Nombre maximal d’unités autorisées"
+                    fieldLabel="Maximum Approved Units"
+                    name="./header_max"
+                    xtype="textfield"/>
+            </items>
+        </text-header>
+    </items>
+</jcr:root>

@@ -1,0 +1,146 @@
+/* HTML Defaults and Generics Classes */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr
+    {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: white url(../images/interface/body-bg.gif) 0 0 repeat-x;
+    min-width: 997px;
+}
+
+body {
+    background: white url(../images/interface/body-bg.gif) 0 0 repeat-x;
+    color: #000;
+    font: 68.75%/ 1.366 Arial, sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 13px;
+}
+
+h4 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 13px;
+}
+
+table {
+    
+}
+
+caption {
+    font-size: 1em;
+    text-align: left;
+}
+
+th {
+    font-size: 1em;
+    text-align: left;
+}
+
+th th {
+    font-size: 1em;
+}
+
+td {
+    font-size: 1em;
+    vertical-align: top;
+}
+
+td td {
+    font-size: 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+ol {
+    margin: 0 0 0 19px; *
+    margin-left: 22px;
+}
+
+li {
+    position: relative;
+    font-size: 1em;
+}
+
+li li {
+    font-size: 1em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #DDD8D3; *
+    color: #DDD8D3;
+    margin-bottom: 0;
+}
+
+a,a:link {
+    color: #357dc2;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #357dc2;
+    text-decoration: none;
+}
+
+a:hover,a:active {
+    text-decoration: underline;
+}
+
+img {
+    border: none;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+input,select,textarea {
+    font: 1em Arial, sans-serif;
+}
+
+select {
+    margin-left: 1px
+}
+
+;
+input {
+    margin: 0;
+}
+
+button,input.button {
+    background: #4789B7;
+    color: white;
+    font-weight: bold;
+}
+
+/** Above style overwrites CQ5's sidekick text to white */
+.x-btn-text {
+    color: black;
+}
+
+.more_link a{
+    background:url(../images/arrow.gif) no-repeat center right;
+    color:#555;
+    text-transform:uppercase;
+    font-size:85%;
+    padding-right:10px;
+}

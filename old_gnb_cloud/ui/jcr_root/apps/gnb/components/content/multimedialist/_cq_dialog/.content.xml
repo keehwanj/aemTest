@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="List"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <generaltab
+                jcr:primaryType="nt:unstructured"
+                jcr:title="General"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <showtabs
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./showtabs"
+                                text="ShowTab Bar"/>
+                            <showtabs-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./showtabs@Delete"
+                                value="{Boolean}true"/>
+                            <morelink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Read More Link"
+                                name="./morelink"/>
+                            <moretext
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Read More Text"
+                                name="./moretext"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <feedname
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="RSS Feed Name"
+                                name="./feedname"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <feeddescription
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="RSS Feed Description"
+                                name="./feeddescription"
+                                validateOnBlur="true"
+                                xtype="textarea"/>
+                            <feedEnabled
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./feedEnabled"
+                                text="Enable Feed"/>
+                            <feedenabled-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./feedEnabled@Delete"
+                                value="{Boolean}true"/>
+                        </items>
+                    </columns>
+                </items>
+            </generaltab>
+            <tab1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Tab 1"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <tabname
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Tab Name"
+                                name="./tabname1"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <savedquery
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Querybuilder predicate notation"
+                                name="./savedquery1"/>
+                            <querylimit
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Limit Results To"
+                                name="./querylimit1"
+                                validateOnBlur="true"
+                                xtype="numberfield"/>
+                            <descriptionlimit
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Limit Description To"
+                                name="./descriptionlimit1"
+                                validateOnBlur="true"
+                                xtype="numberfield"/>
+                            <readmore
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Read More Text"
+                                name="./readmore1"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <alternatedisplay
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./alternatedisplay1"
+                                text="Wide Display"/>
+                            <alternatedisplay-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./alternatedisplay1@Delete"
+                                value="{Boolean}true"/>
+                        </items>
+                    </columns>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Tab 2"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <tabname
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Tab Name"
+                                name="./tabname2"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <savedquery
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Querybuilder predicate notation"
+                                name="./savedquery2"/>
+                            <querylimit
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Limit Results To"
+                                name="./querylimit2"
+                                validateOnBlur="true"
+                                xtype="numberfield"/>
+                            <descriptionlimit
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Limit Description To"
+                                name="./descriptionlimit2"
+                                validateOnBlur="true"
+                                xtype="numberfield"/>
+                            <readmore
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Read More Text"
+                                name="./readmore2"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <alternatedisplay
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./alternatedisplay2"
+                                text="Wide Display"/>
+                            <alternatedisplay-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./alternatedisplay2@Delete"
+                                value="{Boolean}true"/>
+                        </items>
+                    </columns>
+                </items>
+            </tab2>
+            <tab3
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Tab 3"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <tabname3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Tab Name"
+                                name="./tabname3"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <savedquery3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Querybuilder predicate notation"
+                                name="./savedquery3"/>
+                            <querylimit3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Limit Results To"
+                                name="./querylimit3"
+                                validateOnBlur="true"
+                                xtype="numberfield"/>
+                            <descriptionlimit3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Limit Description To"
+                                name="./descriptionlimit3"
+                                validateOnBlur="true"
+                                xtype="numberfield"/>
+                            <readmore3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Read More Text"
+                                name="./readmore3"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <alternatedisplay3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./alternatedisplay3"
+                                text="Wide Display"/>
+                            <alternatedisplay3-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./alternatedisplay3@Delete"
+                                value="{Boolean}true"/>
+                        </items>
+                    </columns>
+                </items>
+            </tab3>
+            <tab4
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Tab 4"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <tabname4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Tab Name"
+                                name="./tabname4"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <savedquery4
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Querybuilder predicate notation"
+                                name="./savedquery4"/>
+                            <querylimit4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Limit Results To"
+                                name="./querylimit4"
+                                validateOnBlur="true"
+                                xtype="numberfield"/>
+                            <descriptionlimit4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Limit Description To"
+                                name="./descriptionlimit4"
+                                validateOnBlur="true"
+                                xtype="numberfield"/>
+                            <readmore4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Read More Text"
+                                name="./readmore4"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <alternatedisplay4
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./alternatedisplay4"
+                                text="Wide Display"/>
+                            <alternatedisplay4-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./alternatedisplay4@Delete"
+                                value="{Boolean}true"/>
+                        </items>
+                    </columns>
+                </items>
+            </tab4>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,70 @@
+/*
+	/apps/agnb-vgnb/components/content/newslist_update/clientlibs/css/style.css
+ */
+/**START of style.css**/
+.newslist_update ul {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 100%;
+}
+
+.newslist_update {
+  margin-bottom: 20px;
+}
+
+.newslist_update div.border {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d3d3d3;
+}
+.newslist_update li {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.newslist_update > div {
+  padding: 10px o 10px 0;
+}
+.newslist_update h3 {
+  margin: 0px !important;
+}
+/**START of NEW**/
+.newslist_update .h3 {
+  margin: 0px !important;
+  font-size: 15px;
+}
+/**END of NEW**/
+
+.newslist_update div.padded {
+  padding: 10px 20px 10px 20px;
+}
+.newslist_update div.morelink a {
+  color: #555555;
+}
+.newslist_update div.morelink a:hover {
+  color: #000000;
+}
+
+.newslist_update div.morelink {
+  font-size: 68%;
+}
+
+.newslist_update div.morelink a {
+  background: transparent url('/etc/designs/agnb-bootstrap/clientlibs/images/arrow.gif') no-repeat scroll right center;
+  padding-right: 10px;
+}
+
+/*START of text component space*/
+.text ul,
+ol {
+  margin-top: 10px !important;
+  /*END of text component space*/
+}
+
+.newslist_update .pager {
+  margin-top: 20px;
+}
+/**START of style.css**/

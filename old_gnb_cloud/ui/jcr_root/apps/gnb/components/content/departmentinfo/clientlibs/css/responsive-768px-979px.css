@@ -1,0 +1,35 @@
+/*
+	apps/gnb/components/content/contactinfo/clientlibs/css/responsive-768px-979px.css
+*/
+/* iPad portrait */
+@media (min-width: 768px) and (max-width: 979px) {
+
+/**START of departmentinf**/
+	.departmentinfo .nav-tabs {
+    	padding: 10px 0 0px 15px;
+    	margin-bottom: 20px;
+	}
+/**END of departmentinf**/
+
+/**START of mandatestab**/
+.item_services h3, .item_services_first h3 {
+    font-size: 130% !important;
+}
+/**END of mandatestab**/
+
+.departmentinfo #orgView .col-sm-2, .departmentinfo #contactView .col-sm-2{
+	padding-right: 15px; 
+	padding-left: 0px;
+}
+
+.departmentinfo #orgView .col-sm-10, .departmentinfo #contactView .col-sm-10{
+	padding-right: 0px; 
+    padding-left: 0px;
+}
+
+#search_left_nav {
+    margin: 0px 0 0 0;
+    float: left;
+}
+
+}

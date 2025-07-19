@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Organization Cache"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <resources
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Text Resources"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <departmentText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Department Text"
+                        name="./departmentText"
+                        xtype="textfield"/>
+                    <deadlineText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Deadline Text"
+                        name="./deadlineText"
+                        xtype="textfield"/>
+                    <termText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Term Text"
+                        name="./termText"
+                        xtype="textfield"/>
+                    <emailText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Email Text"
+                        name="./emailText"
+                        xtype="textfield"/>
+                    <linkText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Link Text"
+                        name="./linkText"
+                        xtype="textfield"/>
+                </items>
+            </resources>
+        </items>
+    </items>
+</jcr:root>

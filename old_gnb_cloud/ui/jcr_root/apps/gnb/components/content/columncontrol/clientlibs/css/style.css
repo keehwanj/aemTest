@@ -1,0 +1,25 @@
+/*
+	/apps/gnb/components/content/columncontrol/clientlibs/css/style.css
+*/
+/**START of style.css**/
+.columncontrol>.highlight {
+    padding: 9px 14px 0px 14px;
+    margin-bottom: 14px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 4px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.columncontrol>.highlight>.demo-border-white{
+	border-right: 1px solid #f7f7f9;
+}
+
+.columncontrol>.highlight .gnblist_update{
+	margin-bottom: 0px !important;
+}        
+
+h4.title_columncontrol{
+    font-weight:600;
+}
+/**END of style.css**/

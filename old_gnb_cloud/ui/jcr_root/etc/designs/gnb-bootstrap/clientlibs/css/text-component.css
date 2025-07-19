@@ -1,0 +1,20 @@
+/**
+START of 
+/etc/designs/gnb-bootstrap/clientlibs/css/text-component.css
+**/
+.text_small{
+	font: 80% sans-serif, Arial, Helvetica;
+}
+
+.text_default{
+	font: 100% sans-serif, Arial, Helvetica;
+}
+
+.text_big{
+	font: 150% sans-serif, Arial, Helvetica;
+}
+
+/*
+END of 
+/etc/designs/gnb-bootstrap/clientlibs/css/text-component.css
+*/

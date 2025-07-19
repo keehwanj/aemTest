@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Terms Condition Intro"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <resources
+                jcr:primaryType="cq:Panel"
+                title="Resouces">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <linkURL
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Target webpage.where court dockets webpage exists."
+                        fieldLabel="Link to"
+                        name="./linkURL"
+                        xtype="pathfield"/>
+                    <content
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="&quot;Check here to indicate that you have read and agree to these terms and conditions&quot;"
+                        fieldLabel="Content"
+                        name="./content"
+                        xtype="textfield"/>
+                    <button_text
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Text for Button like &quot;Enter&quot;"
+                        fieldLabel="Button Text"
+                        name="./button_text"
+                        xtype="textfield"/>
+                </items>
+            </resources>
+        </items>
+    </items>
+</jcr:root>

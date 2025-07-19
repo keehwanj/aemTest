@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <clientlibs/>
+    <clientlibs-all/>
+    <jcr:content
+        cq:lastModified="{Date}2018-03-12T10:39:47.102-03:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2016-02-05T12:05:35.735-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus,mix:versionable]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="agnb-bootstrap"
+        jcr:uuid="9017a650-2db9-40c1-b22d-833b9ac803c7"/>
+</jcr:root>

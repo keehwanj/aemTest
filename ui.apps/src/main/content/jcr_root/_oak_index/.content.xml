@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:slingevent="http://sling.apache.org/jcr/event/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cm="http://www.adobe.com/aemfd/cm/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:social="http://www.adobe.com/social/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="nt:unstructured">
+    <propertyIndex
+            jcr:primaryType="oak:QueryIndexDefinition"
+            async="async"
+            compatVersion="{Long}2"
+            evaluatePathRestrictions="{Boolean}true"
+            reindex="{Boolean}false"
+            reindexCount="{Long}3"
+            type="lucene">
+        <facets jcr:primaryType="nt:unstructured"/>
+        <indexRules jcr:primaryType="nt:unstructured">
+            <nt:unstructured_
+                    jcr:primaryType="nt:unstructured"
+                    indexNodeName="{Boolean}true">
+                <properties jcr:primaryType="nt:unstructured">
+                    <newDate
+                            jcr:primaryType="nt:unstructured"
+                            name="dam:newDate"
+                            ordered="{Boolean}true"
+                            propertyIndex="{Boolean}true"/>
+                    <dept
+                            jcr:primaryType="nt:unstructured"
+                            name="dam:dept"
+                            propertyIndex="{Boolean}true"/>
+                    <topmultimedia
+                            jcr:primaryType="nt:unstructured"
+                            name="dam:topmultimedia"
+                            propertyIndex="{Boolean}true"/>
+                    <format
+                            jcr:primaryType="nt:unstructured"
+                            name="dc:format"
+                            propertyIndex="{Boolean}true"/>
+                </properties>
+            </nt:unstructured_>
+            <cq:Page_ jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <gnbpage
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/gnbpage"
+                            propertyIndex="{Boolean}true"/>
+                    <template
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/cq:template"
+                            propertyIndex="{Boolean}true"/>
+                    <onTime
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/onTime"
+                            ordered="{Boolean}true"
+                            propertyIndex="{Boolean}true"/>
+                    <specialevent
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/specialevent"
+                            propertyIndex="{Boolean}true"/>
+                </properties>
+            </cq:Page_>
+            <cq:Tag_ jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:title"
+                            propertyIndex="{Boolean}true"/>
+                    <title_6
+                            jcr:primaryType="nt:unstructured"
+                            name="function*lower*@jcr:title"
+                            propertyIndex="{Boolean}true"/>
+                    <titleen_ca
+                            jcr:primaryType="nt:unstructured"
+                            name="function*lower*@jcr:title.en_ca"
+                            propertyIndex="{Boolean}true"/>
+                    <titleen_ca_2
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:title.en_ca"
+                            propertyIndex="{Boolean}true"/>
+                    <titleen_4
+                            jcr:primaryType="nt:unstructured"
+                            name="function*lower*@jcr:title.en"
+                            propertyIndex="{Boolean}true"/>
+                    <movedTo
+                            jcr:primaryType="nt:unstructured"
+                            name="cq:movedTo"
+                            propertyIndex="{Boolean}true"/>
+                    <titleen
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:title.en"
+                            propertyIndex="{Boolean}true"/>
+                </properties>
+            </cq:Tag_>
+        </indexRules>
+    </propertyIndex>
+    <contact_search
+            jcr:primaryType="oak:QueryIndexDefinition"
+            async="async"
+            compatVersion="{Long}2"
+            evaluatePathRestrictions="{Boolean}true"
+            includedPaths="[/content/gnb,/content/data,/content/enb,/content/agnb-vgnb,/content/snb,/content/cour,/content/nbpc-cpnb,/content/iemg-gigu,/content/nbfpc-cpfnb,/content/vnbw-vfnb]"
+            includePropertyTypes="[String]"
+            name="cq:Page"
+            reindex="{Boolean}false"
+            reindexCount="{Long}26"
+            type="lucene">
+        <aggregates jcr:primaryType="nt:unstructured">
+            <cq:Page jcr:primaryType="nt:unstructured">
+                <include0
+                        jcr:primaryType="nt:unstructured"
+                        path="jcr:content"
+                        relativeNode="{Boolean}true"/>
+                <include1
+                        jcr:primaryType="nt:unstructured"
+                        path="orginfo"
+                        relativeNode="{Boolean}true"/>
+                <include2
+                        jcr:primaryType="nt:unstructured"
+                        path="serviceinfo"
+                        relativeNode="{Boolean}true"/>
+                <include3
+                        jcr:primaryType="nt:unstructured"
+                        path="serviceinfo/*"
+                        relativeNode="{Boolean}true"/>
+                <include4
+                        jcr:primaryType="nt:unstructured"
+                        path="serviceinfo/*/*"
+                        relativeNode="{Boolean}true"/>
+                <include5
+                        jcr:primaryType="nt:unstructured"
+                        path="contactinfo"
+                        relativeNode="{Boolean}true"/>
+            </cq:Page>
+            <nt:file jcr:primaryType="nt:unstructured">
+                <include0
+                        jcr:primaryType="nt:unstructured"
+                        path="jcr:content"
+                        relativeNode="{Boolean}false"/>
+                <include1
+                        jcr:primaryType="nt:unstructured"
+                        path="orginfo"
+                        relativeNode="{Boolean}false"/>
+                <include2
+                        jcr:primaryType="nt:unstructured"
+                        path="serviceinfo"
+                        relativeNode="{Boolean}false"/>
+                <include3
+                        jcr:primaryType="nt:unstructured"
+                        path="contactinfo"
+                        relativeNode="{Boolean}false"/>
+            </nt:file>
+            <cq:PageContent jcr:primaryType="nt:unstructured">
+                <include0
+                        jcr:primaryType="nt:unstructured"
+                        path="*"
+                        relativeNode="{Boolean}false"/>
+                <include1
+                        jcr:primaryType="nt:unstructured"
+                        path="*/*"
+                        relativeNode="{Boolean}false"/>
+                <include2
+                        jcr:primaryType="nt:unstructured"
+                        path="*/*/*"
+                        relativeNode="{Boolean}false"/>
+                <include3
+                        jcr:primaryType="nt:unstructured"
+                        path="*/*/*/*"
+                        relativeNode="{Boolean}false"/>
+            </cq:PageContent>
+        </aggregates>
+        <facets jcr:primaryType="nt:unstructured"/>
+        <indexRules jcr:primaryType="nt:unstructured">
+            <cq:Page jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <cqLastModified
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/cq:lastModified"
+                            nodeScopeIndex="{Boolean}true"
+                            ordered="{Boolean}true"
+                            propertyIndex="{Boolean}true"
+                            type="Date"/>
+                    <jcrTitle
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/jcr:title"
+                            nodeScopeIndex="{Boolean}true"
+                            ordered="{Boolean}false"
+                            propertyIndex="{Boolean}true"
+                            type="String"
+                            useInSpellcheck="{Boolean}true"
+                            useInSuggest="{Boolean}true"/>
+                    <pageTitle
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/pageTitle"
+                            nodeScopeIndex="{Boolean}true"
+                            ordered="{Boolean}false"
+                            propertyIndex="{Boolean}true"
+                            type="String"
+                            useInSpellcheck="{Boolean}true"
+                            useInSuggest="{Boolean}true"/>
+                    <navTitle
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/navTitle"
+                            nodeScopeIndex="{Boolean}true"
+                            ordered="{Boolean}false"
+                            propertyIndex="{Boolean}true"
+                            type="String"
+                            useInSpellcheck="{Boolean}true"
+                            useInSuggest="{Boolean}true"/>
+                    <nodeName
+                            jcr:primaryType="nt:unstructured"
+                            name=":nodeName"
+                            nodeScopeIndex="{Boolean}true"
+                            ordered="{Boolean}false"
+                            propertyIndex="{Boolean}true"
+                            type="String"
+                            useInSpellcheck="{Boolean}true"
+                            useInSuggest="{Boolean}true"/>
+                    <cqLastRolledoutBy
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/cq:lastRolledoutBy"
+                            nodeScopeIndex="{Boolean}true"
+                            ordered="{Boolean}false"
+                            propertyIndex="{Boolean}true"
+                            type="String"/>
+                </properties>
+            </cq:Page>
+        </indexRules>
+    </contact_search>
+    <newsList
+            jcr:primaryType="oak:QueryIndexDefinition"
+            async="async"
+            compatVersion="{Long}2"
+            evaluatePathRestrictions="{Boolean}true"
+            includedPaths="[/content/gnb]"
+            reindex="{Boolean}false"
+            reindexCount="{Long}4"
+            type="lucene">
+        <facets jcr:primaryType="nt:unstructured"/>
+        <indexRules jcr:primaryType="nt:unstructured">
+            <cq:Page jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <onTime
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/onTime"
+                            ordered="{Boolean}true"
+                            propertyIndex="{Boolean}true"/>
+                    <template
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/cq:template"
+                            propertyIndex="{Boolean}true"/>
+                    <specialevent
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/specialevent"
+                            propertyIndex="{Boolean}true"/>
+                </properties>
+            </cq:Page>
+        </indexRules>
+    </newsList>
+    <orgIndex
+            jcr:primaryType="oak:QueryIndexDefinition"
+            async="async"
+            compatVersion="{Long}2"
+            evaluatePathRestrictions="{Boolean}true"
+            includedPaths="[/content/data]"
+            reindex="{Boolean}false"
+            reindexCount="{Long}4"
+            type="lucene">
+        <facets jcr:primaryType="nt:unstructured"/>
+        <indexRules jcr:primaryType="nt:unstructured">
+            <nt:base jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <GROUPS
+                            jcr:primaryType="nt:unstructured"
+                            name="orginfo/GROUPS"
+                            propertyIndex="{Boolean}true"/>
+                    <DEPTNAMEENGORGNAMEENG
+                            jcr:primaryType="nt:unstructured"
+                            name="{Name}DEPTNAMEENG,@ORGNAMEENG"
+                            ordered="{Boolean}true"/>
+                </properties>
+            </nt:base>
+        </indexRules>
+    </orgIndex>
+    <subscriptionDamList
+            jcr:primaryType="oak:QueryIndexDefinition"
+            async="async"
+            compatVersion="{Long}2"
+            evaluatePathRestrictions="{Boolean}true"
+            includedPaths="[/content/dam,/content/data]"
+            reindex="{Boolean}false"
+            reindexCount="{Long}6"
+            type="lucene">
+        <facets jcr:primaryType="nt:unstructured"/>
+        <indexRules jcr:primaryType="nt:unstructured">
+            <nt:base
+                    jcr:primaryType="nt:unstructured"
+                    indexNodeName="{Boolean}true">
+                <properties jcr:primaryType="nt:unstructured">
+                    <newDate
+                            jcr:primaryType="nt:unstructured"
+                            name="dam:newDate"
+                            ordered="{Boolean}true"/>
+                    <subscription
+                            jcr:primaryType="nt:unstructured"
+                            name="subscription"
+                            propertyIndex="{Boolean}true"/>
+                    <size
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/metadata/dam:size"
+                            ordered="{Boolean}true"
+                            propertyIndex="{Boolean}true"/>
+                </properties>
+            </nt:base>
+        </indexRules>
+    </subscriptionDamList>
+    <subscriptionPageList
+            jcr:primaryType="oak:QueryIndexDefinition"
+            async="async"
+            compatVersion="{Long}2"
+            evaluatePathRestrictions="{Boolean}true"
+            includedPaths="[/content]"
+            reindex="{Boolean}false"
+            reindexCount="{Long}2"
+            seed="{Long}-1544411947432653687"
+            type="lucene">
+        <facets jcr:primaryType="nt:unstructured"/>
+        <indexRules jcr:primaryType="nt:unstructured">
+            <cq:Page jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <subscription
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/subscription"
+                            propertyIndex="{Boolean}true"/>
+                    <lastModified
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/cq:lastModified"
+                            ordered="{Boolean}true"/>
+                </properties>
+            </cq:Page>
+        </indexRules>
+    </subscriptionPageList>
+    <multimediaList
+            jcr:primaryType="oak:QueryIndexDefinition"
+            async="async"
+            compatVersion="{Long}2"
+            evaluatePathRestrictions="{Boolean}false"
+            includedPaths="[/content/dam/gnb/multimedia]"
+            reindex="{Boolean}false"
+            reindexCount="{Long}19"
+            seed="{Long}-6988358816059275541"
+            type="lucene">
+        <facets jcr:primaryType="nt:unstructured"/>
+        <indexRules jcr:primaryType="nt:unstructured">
+            <nt:unstructured
+                    jcr:primaryType="nt:unstructured"
+                    indexNodeName="{Boolean}true">
+                <properties jcr:primaryType="nt:unstructured">
+                    <newDate
+                            jcr:primaryType="nt:unstructured"
+                            name="dam:newDate"
+                            ordered="{Boolean}true"/>
+                    <topmultimedia
+                            jcr:primaryType="nt:unstructured"
+                            name="dam:topmultimedia"
+                            propertyIndex="{Boolean}true"/>
+                    <format
+                            jcr:primaryType="nt:unstructured"
+                            name="dc:format"
+                            propertyIndex="{Boolean}true"/>
+                    <dept
+                            jcr:primaryType="nt:unstructured"
+                            name="dam:dept"
+                            propertyIndex="{Boolean}true"/>
+                </properties>
+            </nt:unstructured>
+        </indexRules>
+    </multimediaList>
+</jcr:root>

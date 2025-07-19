@@ -1,0 +1,18 @@
+/*
+	/apps/foundation/components/form/captcha/clientlibs/css/style.css
+ */
+
+div.form_captchatimer {
+    float: left;
+    border: 1px solid #CCCCCC;
+}
+
+div.form_captchatimer_bar {
+    float: left;
+    background-color:#CCCCCC;
+    height: 8px;
+}
+
+.form_error { 
+    color:red;
+}

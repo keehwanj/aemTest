@@ -1,0 +1,13 @@
+/*
+/apps/courts/components/content/newslist_update/clientlibs/css/responsive-767px-max.css
+ */
+/* phone landscape */
+@media (max-width: 767px) {
+
+.wide_multimedia_item .row 
+ {
+    margin-right: 15px;
+    margin-left: 15px;        
+}
+
+}

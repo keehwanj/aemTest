@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Hero Image"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <setting
+                jcr:primaryType="cq:Panel"
+                title="Setting">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <description
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Description"
+                        height="100"
+                        name="./description"
+                        xtype="textarea"/>
+                </items>
+            </setting>
+            <type
+                jcr:primaryType="cq:Panel"
+                title="Type">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <type
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Selecting background -> no image"
+                        fieldLabel="Type"
+                        name="./type"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <background
+                                jcr:primaryType="nt:unstructured"
+                                text="background"
+                                value="background"/>
+                            <background-image
+                                jcr:primaryType="nt:unstructured"
+                                text="background-image"
+                                value="background-image"/>
+                        </options>
+                    </type>
+                </items>
+            </type>
+            <image
+                jcr:primaryType="cq:Panel"
+                title="Image">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <image
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Image"
+                        name="./fileReference"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                </items>
+            </image>
+        </items>
+    </items>
+</jcr:root>

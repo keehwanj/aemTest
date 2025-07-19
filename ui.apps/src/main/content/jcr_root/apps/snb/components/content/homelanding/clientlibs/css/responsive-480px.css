@@ -1,0 +1,14 @@
+/*
+	/apps/snb/components/page/home_new/clientlibs/css/responsive-480px.css
+*/
+@media (max-width: 480px) {
+  .englishButton,
+  .frenchButton {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #landingIamge {
+    height: 150px;
+  }
+}

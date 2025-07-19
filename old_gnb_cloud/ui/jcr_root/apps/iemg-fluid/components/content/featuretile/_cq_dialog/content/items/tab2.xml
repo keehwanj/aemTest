@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Widget"
+    cropParameter="./image/imageCrop"
+    ddGroups="[media]"
+    fileNameParameter="./image/fileName"
+    fileReferenceParameter="./image/fileReference"
+    mapParameter="./image/imageMap"
+    name="./image/file"
+    requestSuffix="/image.img.png"
+    rotateParameter="./image/imageRotate"
+    sizeLimit="100"
+    title="Image"
+    uploadUrl="/tmp/upload_test/*"
+    xtype="smartimage"/>

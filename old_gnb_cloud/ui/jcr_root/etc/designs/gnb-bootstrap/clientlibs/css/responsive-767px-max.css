@@ -1,0 +1,26 @@
+/**
+START
+*etc/designs/gnb-bootstrap/clientlibs/css/responsive-767px-max.css
+**/
+@media (max-width: 767px) {
+
+
+#globalnav ul {
+    height: 30px !important;
+}
+
+
+/*START of page title font*/
+.pageHeader h1 {
+  color:black;
+  font-size:140%;
+  font-weight:normal;
+  margin:0;
+}
+/*END of page title font*/
+
+
+}
+/**
+END of /etc/designs/gnb-bootstrap/clientlibs/css/responsive-767px-max.css
+**/

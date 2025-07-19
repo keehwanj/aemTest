@@ -1,0 +1,8 @@
+/*
+	/apps/snb/components/content/yourgovernment/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+  .row div.content {
+    height: 85px;
+  }
+}

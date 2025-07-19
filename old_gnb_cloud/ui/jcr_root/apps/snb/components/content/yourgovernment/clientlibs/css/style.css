@@ -1,0 +1,37 @@
+/*
+	/apps/snb/components/content/yourgovernment/clientlibs/css/style.css
+ */
+/**START of style.css**/
+/* YOUR GOV PART */
+
+.your-gov-container {
+	background-image: url("/etc/designs/snb-bootstrap/clientlibs/newImages/your-gov-bgr.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.your-gov-content {
+	border: none;
+	border-radius: 0px;
+	padding: 30px 40px 30px 30px;
+	margin: 25px;
+	background-color: #fff;
+
+}
+
+.your-gov-content p {
+	display: block;
+	padding-bottom: 10px;
+}
+
+.your-gov-content a {
+	font-weight: bold;
+}
+
+
+
+/**END of style.css**/        
+
+

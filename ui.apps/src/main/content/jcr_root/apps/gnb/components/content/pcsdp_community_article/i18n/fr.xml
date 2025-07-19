@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="fr"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <address_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="address_Text"
+        sling:message=" Adddresse"/>
+    <date_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="date_Text"
+        sling:message="Date"/>
+    <date_time_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="date_time_Text"
+        sling:message=" Date / Heure"/>
+    <deadline_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="deadline_Text"
+        sling:message="Date limite d'inscription"/>
+    <description_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="description_Text"
+        sling:message=" Détails"/>
+    <email_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="address_Text"
+        sling:message="Courriel"/>
+    <event_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="event_Text"
+        sling:message=" Événements"/>
+    <fax_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="fax_Text"
+        sling:message="Télécopieur"/>
+    <fee_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="fee_Text"
+        sling:message="Frais d'admission"/>
+    <ongoing_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="ongoing_Text"
+        sling:message="En cours"/>
+    <organization_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="organization_Text"
+        sling:message="Organisation / Personne-ressource"/>
+    <pageTitle_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="pageTitle_Text"
+        sling:message="Calendrier d'événements communautaires - "/>
+    <region_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="region_Text"
+        sling:message="Région / Lieu"/>
+    <telephone_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="telephone_Text"
+        sling:message=" Téléphone"/>
+    <website_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="website_Text"
+        sling:message="Site Web"/>
+</jcr:root>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Panel"
+            title="General">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <fromDate
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="(Traffic Advisory)"
+                    fieldLabel="From Date"
+                    name="./fromDate"
+                    xtype="datetime"/>
+                <toDate
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="(Traffic Advisory)"
+                    fieldLabel="To Date"
+                    name="./toDate"
+                    xtype="datetime"/>
+                <region
+                    jcr:primaryType="cq:Widget"
+                    allowEmpty="false"
+                    fieldDescription="(Select Region)"
+                    fieldLabel="Region"
+                    name="./region"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <district1
+                            jcr:primaryType="nt:unstructured"
+                            text="District 1"
+                            value="District 1"/>
+                        <district2
+                            jcr:primaryType="nt:unstructured"
+                            text="District 2"
+                            value="District 2"/>
+                        <district3
+                            jcr:primaryType="nt:unstructured"
+                            text="District 3"
+                            value="District 3"/>
+                        <district4
+                            jcr:primaryType="nt:unstructured"
+                            text="District 4"
+                            value="District 4"/>
+                        <district5
+                            jcr:primaryType="nt:unstructured"
+                            text="District 5"
+                            value="District 5"/>
+                        <district6
+                            jcr:primaryType="nt:unstructured"
+                            text="District 6"
+                            value="District 6"/>
+                    </options>
+                </region>
+                <reason
+                    jcr:primaryType="cq:Widget"
+                    allowEmpty="false"
+                    fieldDescription="(Select Reason)"
+                    fieldLabel="Reason"
+                    name="./reason"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <bridgeDestroyedByFire
+                            jcr:primaryType="nt:unstructured"
+                            text="Bridge Destroyed by Fire"
+                            value="bridgeDestroyedByFire"/>
+                        <bridgeRepair
+                            jcr:primaryType="nt:unstructured"
+                            text="Bridge Repair"
+                            value="bridgeRepair"/>
+                        <bridgeReplacement
+                            jcr:primaryType="nt:unstructured"
+                            text="Bridge Replacement"
+                            value="bridgeReplacement"/>
+                        <construction
+                            jcr:primaryType="nt:unstructured"
+                            text="Construction"
+                            value="construction"/>
+                        <emergencyClosure
+                            jcr:primaryType="nt:unstructured"
+                            text="Emergency Closure"
+                            value="emergencyClosure"/>
+                        <extremeLowTides
+                            jcr:primaryType="nt:unstructured"
+                            text="Extreme Low Tides"
+                            value="extremeLowTides"/>
+                        <flooding
+                            jcr:primaryType="nt:unstructured"
+                            text="Flooding"
+                            value="flooding"/>
+                        <iceConditionsInChannel
+                            jcr:primaryType="nt:unstructured"
+                            text="Ice Conditions in Channel"
+                            value="iceConditionsInChannel"/>
+                        <maintenance
+                            jcr:primaryType="nt:unstructured"
+                            text="Maintenance"
+                            value="maintenance"/>
+                        <mechanicalProblem
+                            jcr:primaryType="nt:unstructured"
+                            text="Mechanical Problem"
+                            value="mechanicalProblem"/>
+                        <motorVehicleAccident
+                            jcr:primaryType="nt:unstructured"
+                            text="Motor Vehicle Accident"
+                            value="motorVehicleAccident"/>
+                        <other
+                            jcr:primaryType="nt:unstructured"
+                            text="Other"
+                            value="other"/>
+                        <roadBreakup
+                            jcr:primaryType="nt:unstructured"
+                            text="Road Breakup"
+                            value="roadBreakup"/>
+                        <safety
+                            jcr:primaryType="nt:unstructured"
+                            text="Safety"
+                            value="safety"/>
+                        <soilAndSlopeStability
+                            jcr:primaryType="nt:unstructured"
+                            text="Soil and Slope Stability"
+                            value="soilAndSlopeStability"/>
+                        <washout
+                            jcr:primaryType="nt:unstructured"
+                            text="Washout"
+                            value="washout"/>
+                        <waterOverRoad
+                            jcr:primaryType="nt:unstructured"
+                            text="Water over Road"
+                            value="waterOverRoad"/>
+                        <weatherConditions
+                            jcr:primaryType="nt:unstructured"
+                            text="Weather Conditions"
+                            value="weatherConditions"/>
+                        <weightLimitReduced
+                            jcr:primaryType="nt:unstructured"
+                            text="Weight Limit Reduced"
+                            value="weightLimitReduced"/>
+                    </options>
+                </reason>
+                <closedToEmergencyVehicles
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Closed to Emergency Vehicles"
+                    inputValue="true"
+                    name="./closedToEmergencyVehicles"
+                    type="checkbox"
+                    xtype="selection"/>
+                <displayToPublic
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Display to Public"
+                    inputValue="true"
+                    name="./displayToPublic"
+                    type="checkbox"
+                    xtype="selection"/>
+                <emergencyClosure
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Emergency Closure"
+                    inputValue="true"
+                    name="./emergencyClosure"
+                    type="checkbox"
+                    xtype="selection"/>
+                <detourSignsInPlace
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Detour Signs in Place"
+                    inputValue="true"
+                    name="./detourSignsInPlace"
+                    type="checkbox"
+                    xtype="selection"/>
+                <reducedToOneLane
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Reduced to One Lane"
+                    inputValue="true"
+                    name="./reducedToOneLane"
+                    type="checkbox"
+                    xtype="selection"/>
+                <expectDelays
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Expect Delays"
+                    inputValue="true"
+                    name="./expectDelays"
+                    type="checkbox"
+                    xtype="selection"/>
+                <replacementFerryInService
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Replacement Ferry in Service"
+                    inputValue="true"
+                    name="./replacementFerryInService"
+                    type="checkbox"
+                    xtype="selection"/>
+                <fullClosure
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Full Closure"
+                    inputValue="true"
+                    name="./fullClosure"
+                    type="checkbox"
+                    xtype="selection"/>
+                <closedToTrucks
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Closed To Trucks"
+                    inputValue="true"
+                    name="./closedToTrucks"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </tab1>
+        <tab2
+            jcr:primaryType="cq:Panel"
+            title="English">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Detail"
+                    name="./enDescription"
+                    xtype="textarea"/>
+                <location
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="(Traffic Advisory)"
+                    fieldLabel="Location"
+                    name="./enLocation"
+                    xtype="textfield"/>
+                <route
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="(type in the route in English)"
+                    fieldLabel="Route"
+                    name="./enRoute"
+                    xtype="textfield"/>
+                <reportContent
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Traffic Report Content"
+                    name="./enReportContent"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </reportContent>
+            </items>
+        </tab2>
+        <tab3
+            jcr:primaryType="cq:Panel"
+            title="French">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Detail"
+                    name="./frDescription"
+                    xtype="textarea"/>
+                <location
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="(Traffic Advisory)"
+                    fieldLabel="Location"
+                    name="./frLocation"
+                    xtype="textfield"/>
+                <route
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="(type in the route in French that corresponds to the English translation)"
+                    fieldLabel="Route"
+                    name="./frRoute"
+                    xtype="textfield"/>
+                <reportContent
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Traffic Report Content"
+                    name="./frReportContent"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </reportContent>
+            </items>
+        </tab3>
+    </items>
+</jcr:root>

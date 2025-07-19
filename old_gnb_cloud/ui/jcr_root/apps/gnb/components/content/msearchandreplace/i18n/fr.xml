@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="fr"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <appointment_date
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="appointment_date"
+        sling:message="Date de nomination : "/>
+    <appointment_type
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="appointment_type"
+        sling:message="Type de nomination : "/>
+    <deadline
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="deadline"
+        sling:message="Date limite pour faire une soumission : "/>
+    <department
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="department"
+        sling:message="Soumettre une expression d’intérêt :"/>
+    <email
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="email1"
+        sling:message="Adresse électronique pour envoyer les soumissions : "/>
+    <filled_positions
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="filled_position"
+        sling:message="Postes pourvus"/>
+    <link
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="link1"
+        sling:message="Liens : "/>
+    <name_x0028_s_x0029_
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="name_s"
+        sling:message="Nom : "/>
+    <term
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="term"
+        sling:message="Durée du mandat : "/>
+    <vacancy_for_appointment
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="vacancy_for_appointment"
+        sling:message="Postes Vacants"/>
+</jcr:root>

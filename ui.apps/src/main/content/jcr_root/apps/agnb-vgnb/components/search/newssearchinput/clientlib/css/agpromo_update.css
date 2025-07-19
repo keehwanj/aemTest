@@ -1,0 +1,59 @@
+/**START of agpromo_update.css**/
+@charset "ISO-8859-1";
+
+#pageLinks {
+  bottom: 40px;
+  left: 20px;
+  min-height: 20px;
+  position: relative;
+  z-index: 20;
+}
+#pageLinks a {
+  margin: 0 2px;
+  padding: 0 3px;
+  font-weight: bold;
+  font-size: 75%;
+  color: #fff;
+  background: transparent url(/etc/designs/agnb-vgnb/clientlib/images/slideshow_btn.gif) no-repeat scroll 0 0;
+}
+
+#pageLinks a.activeSlide {
+  background-image: url(/etc/designs/agnb-vgnb/clientlib/images/slideshow_btn_active.gif);
+}
+
+#agpromo_update {
+  margin: 0 0 20px;
+  padding: 0;
+  width: 575px;
+  height: 272px;
+  z-index: 10;
+}
+
+#agpromo_update li {
+  padding: 20px 0 0 20px;
+  width: 575px;
+  height: 272px;
+  background: transparent no-repeat scroll 0 0;
+  list-style-type: none;
+  display: none;
+}
+#agpromo_update h1 {
+  color: #1874b1;
+  font-size: 160%;
+  line-height: 108%; /*changed from 1 to 108%*/
+  width: 150px;
+}
+
+#agpromo_update p {
+  width: 170px;
+  font-size: 110%;
+}
+/**fix for border in newssearchinput/feedback/small box in bottom**/
+.ui-helper-clearfix {
+  border: 0px solid #aaaaaa !important;
+}
+.ui-datepicker-calendar {
+  border: 1px solid #aaaaaa !important;
+}
+
+/**END of agpromo_update.css**/

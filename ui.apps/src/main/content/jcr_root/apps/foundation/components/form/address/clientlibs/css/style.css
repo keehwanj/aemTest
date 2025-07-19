@@ -1,0 +1,16 @@
+/*
+	/apps/foundation/components/form/address/clientlibs/css/style.css
+ */
+
+.changethisone span {
+  background-color: #fff;
+}
+
+.changethisone input {
+  border-right-style: none;
+}
+
+i.mysize {
+  color: red;
+  font-size: 7px;
+}

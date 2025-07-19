@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="In Page Nav"
+    xtype="dialog">
+    <items
+        jcr:primaryType="nt:unstructured"
+        title="List"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <links_text
+                jcr:primaryType="cq:Widget"
+                title="Text"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links_text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new text."
+                        fieldLabel="Link Texts"
+                        name="./links_text"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </links_text>
+                </items>
+            </links_text>
+            <links
+                jcr:primaryType="cq:Widget"
+                title="Links"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new link."
+                        fieldLabel="Links"
+                        name="./links"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="pathfield"/>
+                    </links>
+                </items>
+            </links>
+        </items>
+    </items>
+</jcr:root>

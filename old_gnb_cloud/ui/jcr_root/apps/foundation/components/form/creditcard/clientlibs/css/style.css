@@ -1,0 +1,27 @@
+/*
+	/apps/foundation/components/form/checkbox/clientlibs/css/style.css
+ */
+
+
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding-top: 33px;
+  padding-right: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input, .left-addon select   { padding-left:  30px; }
+.right-addon input, .right-addon select { padding-right: 30px; }
+
+

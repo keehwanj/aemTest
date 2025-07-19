@@ -1,0 +1,9 @@
+/*
+	/apps/gnb/components/content/medialist_list/clientlibs/css/style.css
+ */
+/**START of style.css**/
+.medialist_list .table > tbody > tr > th {
+  vertical-align: middle;
+  font-weight: bold;
+}
+/**END of style.css**/

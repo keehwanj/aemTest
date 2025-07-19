@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="ServiceSearch (Design)"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <multimediaSearchResultsPath
+            jcr:primaryType="cq:Widget"
+            fieldDescription="The path to the multimedia search results page"
+            fieldLabel="Search Results Path"
+            hideTrigger="true"
+            name="./multimediaSearchResultsPath"
+            regex="/^\\/.*/"
+            regexText="Path must start with a '/'"
+            xtype="pathfield"/>
+        <multimediaTagValuesPath
+            jcr:primaryType="cq:Widget"
+            fieldDescription="The Tag Values of the DropDown"
+            fieldLabel="Tag Values Path"
+            hideTrigger="true"
+            name="./mmTagValuesPath"
+            regex="/^\\/.*/"
+            regexText="Path must start with a '/'"
+            xtype="pathcompletion"/>
+    </items>
+</jcr:root>

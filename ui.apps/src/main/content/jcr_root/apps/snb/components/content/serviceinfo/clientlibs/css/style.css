@@ -1,0 +1,128 @@
+/*
+	/apps/snb/components/content/serviceinfo/clientlibs/css/style.css
+*/
+/**START of style.css**/
+
+.serviceinfo #sidebar ul {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+}
+
+.serviceinfo ul.formsLinks,
+.serviceinfo ul.actsLinks {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  font-size: 100%;
+}
+
+.serviceinfo ul.formsLinks li,
+.serviceinfo ul.actsLinks li {
+  background: transparent
+    url(/etc/designs/gnb-bootstrap/clientlibs/images/arrow_blue.gif) no-repeat
+    scroll 0 5px;
+  display: block;
+  padding-left: 10px;
+}
+
+img.serviceicon {
+  padding: 4px;
+  border: 1px solid #d3d3d3;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.serviceinfo .text_wrapper h1 {
+  color: #1874b1;
+  font-size: 140%;
+  font-weight: normal;
+  margin: 0;
+}
+
+.serviceinfo #sidebar ul {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+}
+
+.serviceinfo ul.formsLinks,
+.serviceinfo ul.actsLinks {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  font-size: 105%;
+}
+
+.serviceinfo #sidebar ul.box {
+  padding: 20px 20px 20px 20px;
+  font-size: 105%;
+}
+
+.serviceinfo #sidebar ul.box li {
+  margin-bottom: 5px;
+  padding-left: 10px;
+  background: transparent
+    url(/etc/designs/gnb-bootstrap/clientlibs/images/arrow_blue.gif) no-repeat
+    scroll 0 5px;
+}
+
+.serviceinfo ul.formsLinks span.pdf {
+  background: transparent
+    url(/etc/designs/gnb-bootstrap/clientlibs/images/icon_pdf.gif) center right
+    no-repeat;
+  width: 15px;
+  display: inline-block;
+  height: 10px;
+  vertical-align: middle;
+}
+
+.item_services p {
+  font-size: 90%;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.item_services h2,
+.item_services_first h2,
+.item_services h3,
+.item_services_first h3 {
+  color: #004d42 !important;
+  font-size: 120%;
+  margin: 0px !important;
+  padding: 0 !important;
+  font-weight: normal !important;
+}
+.tab-content {
+  margin-top: 15px;
+}
+
+.serviceinfo th {
+  /*background: transparent url(/etc/designs/gnb-bootstrap/clientlibs/images/header_table.gif) repeat-x scroll 0 0;*/
+  height: 46px;
+  padding: 0 0 0 10px;
+  color: #004d42;
+  font-size: 100%;
+  font-weight: normal;
+  text-align: left;
+}
+
+.serviceinfo .text_wrapper .subheader {
+  margin-bottom: 20px;
+}
+
+.serviceinfo .spacer {
+  margin-bottom: 40px; /* define margin as you see fit */
+}
+
+.serviceinfo #serviceFees.item_services {
+  background-image: none;
+}
+
+/**END of style.css**/

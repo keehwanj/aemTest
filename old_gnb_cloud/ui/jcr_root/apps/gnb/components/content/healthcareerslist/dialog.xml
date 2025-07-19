@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','children','static','search','querybuilder'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i!=tabs.length-1;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="Health Careers List Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <list
+            jcr:primaryType="cq:Widget"
+            title="List"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    defaultValue=""
+                    fieldLabel="Build list using"
+                    name="./listFrom"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(rec,path){this.findParentByType('tabpanel').manageTabs(this.getValue(),true);}"
+                        selectionchanged="function(box,value){box.findParentByType('tabpanel').manageTabs(value);}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <children
+                            jcr:primaryType="nt:unstructured"
+                            text="Child pages"
+                            value="children"/>
+                        <querybuilder
+                            jcr:primaryType="nt:unstructured"
+                            text="Advanced Search"
+                            value="querybuilder"/>
+                        <search
+                            jcr:primaryType="nt:unstructured"
+                            text="Search"
+                            value="search"/>
+                        <static
+                            jcr:primaryType="nt:unstructured"
+                            text="Fixed list"
+                            value="static"/>
+                    </options>
+                </listFrom>
+                <orderBy
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter a property like 'jcr:created'"
+                    fieldLabel="Order by"
+                    name="./orderBy"
+                    type="combobox"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <created
+                            jcr:primaryType="nt:unstructured"
+                            value="jcr:created"/>
+                        <deadline
+                            jcr:primaryType="nt:unstructured"
+                            value="deadline"/>
+                        <modified
+                            jcr:primaryType="nt:unstructured"
+                            value="cq:lastModified"/>
+                        <template
+                            jcr:primaryType="nt:unstructured"
+                            value="cq:template"/>
+                        <title
+                            jcr:primaryType="nt:unstructured"
+                            value="jcr:title"/>
+                    </options>
+                </orderBy>
+            </items>
+        </list>
+        <children
+            jcr:primaryType="cq:Widget"
+            title="Child pages"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <parentPage
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave empty to use current page"
+                    fieldLabel="Parent page"
+                    name="./parentPage"
+                    xtype="pathfield"/>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(1); }"/>
+        </children>
+        <static
+            jcr:primaryType="cq:Widget"
+            title="Fixed list"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <pages
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new page"
+                    fieldLabel="Pages"
+                    name="./pages"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="500"
+                        xtype="pathfield"/>
+                </pages>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(2); }"/>
+        </static>
+        <search
+            jcr:primaryType="cq:Widget"
+            title="Search"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <query
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Search query"
+                    name="./query"
+                    xtype="textfield"/>
+                <searchIn
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave empty to use '/content'"
+                    fieldLabel="Start in"
+                    name="./searchIn"
+                    xtype="pathfield"/>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(3); }"/>
+        </search>
+        <querybuilder
+            jcr:primaryType="cq:Widget"
+            title="Advanced Search"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <savedquery
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Querybuilder predicate notation"
+                    height="{Long}200"
+                    name="./savedquery"
+                    xtype="textarea"/>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(4); }"/>
+        </querybuilder>
+        <renderer_x0020_page
+            jcr:primaryType="cq:Widget"
+            title="Renderer Page"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <renderer_page
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : /content/gnb/fr/corporate/abc/perspectives_actuelles/abc_renderer OR /content/gnb/fr/corporate/abc/perspectives_actuelles/abc_renderer"
+                    fieldLabel="Render Page"
+                    name="./renderer_page"
+                    xtype="pathfield"/>
+            </items>
+        </renderer_x0020_page>
+        <text
+            jcr:primaryType="cq:Widget"
+            title="Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <header_career_title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Career Title or Title de la prefession"
+                    name="./header_career_title"
+                    xtype="textfield"/>
+                <header_study_length
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Length of Study or Durée des etudes"
+                    name="./header_study_length"
+                    xtype="textfield"/>
+                <header_salary
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Salary or Salaire"
+                    name="./header_salary"
+                    xtype="textfield"/>
+                <year
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : year or ans"
+                    name="./year"
+                    xtype="textfield"/>
+            </items>
+        </text>
+    </items>
+</jcr:root>

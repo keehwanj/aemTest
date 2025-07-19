@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="cq:Panel"
+            title="General">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <type
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Cities / Cité"
+                    fieldLabel="Type of Community"
+                    name="./type"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <cities
+                            jcr:primaryType="nt:unstructured"
+                            text="Cities / Cité"
+                            value="cities"/>
+                        <towns
+                            jcr:primaryType="nt:unstructured"
+                            text="Towns / Ville"
+                            value="towns"/>
+                        <villages
+                            jcr:primaryType="nt:unstructured"
+                            text="Villages / Village"
+                            value="villages"/>
+                        <rural_communities
+                            jcr:primaryType="nt:unstructured"
+                            text="Rural Communites / Communautés Rurale"
+                            value="rural_communites"/>
+                        <regional_municipality
+                            jcr:primaryType="nt:unstructured"
+                            text="Regional Municipality / Municipalité régionale"
+                            value="regional_municipality"/>
+                    </options>
+                </type>
+                <mayor
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Mayor"
+                    name="./mayor"
+                    xtype="textfield"/>
+                <councillors
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add councillors."
+                    fieldLabel="Councillors"
+                    name="./councillors"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        xtype="textfield"/>
+                </councillors>
+                <working_language
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="English"
+                    fieldLabel="Working Language"
+                    name="./working_language"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <english
+                            jcr:primaryType="nt:unstructured"
+                            text="English"
+                            value="english"/>
+                        <french
+                            jcr:primaryType="nt:unstructured"
+                            text="French"
+                            value="french"/>
+                        <both
+                            jcr:primaryType="nt:unstructured"
+                            text="French / English"
+                            value="both"/>
+                    </options>
+                </working_language>
+                <telephone
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="506 453-1000"
+                    fieldLabel="Telephone"
+                    name="./telephone"
+                    xtype="textfield"/>
+                <fax
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="506 453-1000"
+                    fieldLabel="Fax"
+                    name="./fax"
+                    xtype="textfield"/>
+                <email
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Email"
+                    name="./email"
+                    xtype="textfield"/>
+                <image
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Community Image"
+                    name="./community_image"
+                    xtype="pathfield"/>
+                <county
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="County"
+                    name="./county"
+                    xtype="textfield"/>
+            </items>
+        </general>
+        <english
+            jcr:primaryType="cq:Panel"
+            title="English">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <en_community_name
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Community Name"
+                    name="./en_community_name"
+                    xtype="textfield"/>
+                <en_homepage
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="http://www.fredericton.ca"
+                    fieldLabel="Homepage"
+                    name="./en_homepage"
+                    xtype="textfield"/>
+                <en_address
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Address"
+                    name="./en_address"
+                    xtype="textfield"/>
+                <en_address1
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Address1"
+                    name="./en_address1"
+                    xtype="textfield"/>
+                <en_address2
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Address2"
+                    name="./en_address2"
+                    xtype="textfield"/>
+                <en_city
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="City"
+                    name="./en_city"
+                    xtype="textfield"/>
+                <en_postal_code
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Postal Code"
+                    name="./en_postal_code"
+                    xtype="textfield"/>
+                <en_description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    height="190"
+                    name="./en_description"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                        <htmlRules jcr:primaryType="nt:unstructured">
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                protocols="[http://,https://]"/>
+                        </htmlRules>
+                    </htmlRules>
+                </en_description>
+            </items>
+        </english>
+        <french
+            jcr:primaryType="cq:Panel"
+            title="French">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <fr_community_name
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Community Name"
+                    name="./fr_community_name"
+                    xtype="textfield"/>
+                <fr_homepage
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="http://www.fredericton.ca"
+                    fieldLabel="Homepage"
+                    name="./fr_homepage"
+                    xtype="textfield"/>
+                <fr_address
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Address"
+                    name="./fr_address"
+                    xtype="textfield"/>
+                <fr_address1
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Address1"
+                    name="./fr_address1"
+                    xtype="textfield"/>
+                <fr_address2
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Address2"
+                    name="./fr_address2"
+                    xtype="textfield"/>
+                <fr_city
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="City"
+                    name="./fr_city"
+                    xtype="textfield"/>
+                <fr_postal_code
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Postal Code"
+                    name="./fr_postal_code"
+                    xtype="textfield"/>
+                <fr_description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    height="190"
+                    name="./fr_description"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                        <htmlRules jcr:primaryType="nt:unstructured">
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                protocols="[http://,https://]"/>
+                        </htmlRules>
+                    </htmlRules>
+                </fr_description>
+            </items>
+        </french>
+    </items>
+</jcr:root>

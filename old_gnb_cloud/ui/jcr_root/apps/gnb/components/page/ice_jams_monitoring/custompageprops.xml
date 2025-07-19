@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="cq:Panel"
+            title="General">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <status
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Status"
+                    name="./status"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <active
+                            jcr:primaryType="nt:unstructured"
+                            text="Active"
+                            value="active"/>
+                        <active-ice-formation
+                            jcr:primaryType="nt:unstructured"
+                            text="Active-Ice-Formation"
+                            value="active-ice-formation"/>
+                        <active-ice-jam
+                            jcr:primaryType="nt:unstructured"
+                            text="Active-Ice-Jam"
+                            value="active-ice-jam"/>
+                        <active-frozen
+                            jcr:primaryType="nt:unstructured"
+                            text="Active-Frozen"
+                            value="active-frozen"/>
+                        <inactive
+                            jcr:primaryType="nt:unstructured"
+                            text="Inactive"
+                            value="inactive"/>
+                    </options>
+                </status>
+                <date
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldLabel="Date Jam Formed"
+                    name="./date"
+                    xtype="datetime"/>
+            </items>
+        </general>
+        <english
+            jcr:primaryType="cq:Panel"
+            title="English">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <community_en
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldLabel="Community"
+                    name="./community_en"
+                    xtype="textfield"/>
+                <river_basin_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="River Basin"
+                    name="./river_basin_en"
+                    xtype="textfield"/>
+                <description_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    height="150"
+                    name="./description_en"
+                    xtype="textarea">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </description_en>
+            </items>
+        </english>
+        <french
+            jcr:primaryType="cq:Panel"
+            title="French">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <community_fr
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldLabel="Community"
+                    name="./community_fr"
+                    xtype="textfield"/>
+                <river_basin_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="River Basin"
+                    name="./river_basin_fr"
+                    xtype="textfield"/>
+                <description_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    height="150"
+                    name="./description_fr"
+                    xtype="textarea">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </description_fr>
+            </items>
+        </french>
+    </items>
+</jcr:root>

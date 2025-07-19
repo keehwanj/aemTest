@@ -1,0 +1,8 @@
+/*
+	/apps/enb/components/page/home/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+  .home_bottom_left {
+    text-align: right;
+  }
+}

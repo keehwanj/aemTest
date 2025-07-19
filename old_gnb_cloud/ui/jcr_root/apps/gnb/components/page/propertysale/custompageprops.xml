@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general_tender
+            jcr:primaryType="cq:Panel"
+            title="General-Tender">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <rank
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="1"
+                    fieldLabel="Rank"
+                    name="./rank"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <_x0031_
+                            jcr:primaryType="nt:unstructured"
+                            text="1"
+                            value="1"/>
+                        <_x0032_
+                            jcr:primaryType="nt:unstructured"
+                            text="2"
+                            value="2"/>
+                    </options>
+                </rank>
+                <kind
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="tender"
+                    fieldLabel="Kind"
+                    name="./kind"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <tender
+                            jcr:primaryType="nt:unstructured"
+                            text="tender"
+                            value="tender"/>
+                        <surplus
+                            jcr:primaryType="nt:unstructured"
+                            text="surplus"
+                            value="surplus"/>
+                        <tempo
+                            jcr:primaryType="nt:unstructured"
+                            text="tempo"
+                            value="tempo"/>
+                    </options>
+                </kind>
+                <tender_no
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Tender No"
+                    name="./tender_no"
+                    xtype="textfield"/>
+                <closing_date
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Closing Date"
+                    name="./closing_date"
+                    xtype="datetime"/>
+                <county
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Albert"
+                    fieldLabel="County"
+                    name="./county"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <albert
+                            jcr:primaryType="nt:unstructured"
+                            text="Albert"
+                            value="Albert"/>
+                        <carleton
+                            jcr:primaryType="nt:unstructured"
+                            text="Carleton"
+                            value="Carleton"/>
+                        <charlotte
+                            jcr:primaryType="nt:unstructured"
+                            text="Charlotte"
+                            value="Charlotte"/>
+                        <gloucester
+                            jcr:primaryType="nt:unstructured"
+                            text="Gloucester"
+                            value="Gloucester"/>
+                        <kent
+                            jcr:primaryType="nt:unstructured"
+                            text="Kent"
+                            value="Kent"/>
+                        <kings
+                            jcr:primaryType="nt:unstructured"
+                            text="Kings"
+                            value="Kings"/>
+                        <madawaska
+                            jcr:primaryType="nt:unstructured"
+                            text="Madawaska"
+                            value="Madawaska"/>
+                        <northumberland
+                            jcr:primaryType="nt:unstructured"
+                            text="Northumberland"
+                            value="Northumberland"/>
+                        <queens
+                            jcr:primaryType="nt:unstructured"
+                            text="Queens"
+                            value="Queens"/>
+                        <restigouche
+                            jcr:primaryType="nt:unstructured"
+                            text="Restigouche"
+                            value="Restigouche"/>
+                        <saint_john
+                            jcr:primaryType="nt:unstructured"
+                            text="Saint John"
+                            value="Saint John"/>
+                        <sunbury
+                            jcr:primaryType="nt:unstructured"
+                            text="Sunbury"
+                            value="Sunbury"/>
+                        <victoria
+                            jcr:primaryType="nt:unstructured"
+                            text="Victoria"
+                            value="Victoria"/>
+                        <westmorland
+                            jcr:primaryType="nt:unstructured"
+                            text="Westmorland"
+                            value="Westmorland"/>
+                        <york
+                            jcr:primaryType="nt:unstructured"
+                            text="York"
+                            value="York"/>
+                    </options>
+                </county>
+                <estimate_value
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="If estimate value is 0, then this value is not displayed except page component."
+                    fieldLabel="Estimate Value"
+                    name="./estimate_value"
+                    xtype="numberfield"/>
+                <notice_tender
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Notice of Tender(pdf)"
+                    name="./notice_tender"
+                    rootPath="/content/dam/gnb/Departments/trans/surplus"
+                    xtype="pathfield"/>
+                <maps
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new doc."
+                    fieldLabel="Map (Link or pdf)"
+                    name="./maps"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        rootPath="/content/dam/gnb/Departments/trans/surplus"
+                        xtype="pathfield"/>
+                </maps>
+                <photo
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Photo(pdf)"
+                    name="./photo"
+                    rootPath="/content/dam/gnb/Departments/trans/surplus"
+                    xtype="pathfield"/>
+                <other_docs
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new doc."
+                    fieldLabel="Other Docs(pdf)"
+                    name="./other_docs"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        rootPath="/content/dam/gnb/Departments/trans/surplus"
+                        xtype="pathfield"/>
+                </other_docs>
+                <rotate_photo
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Rotating Photo(jpg)"
+                    name="./rotate_photo"
+                    rootPath="/content/dam/gnb/Departments/trans/surplus"
+                    xtype="pathfield"/>
+            </items>
+        </general_tender>
+        <english_tender
+            jcr:primaryType="cq:Panel"
+            title="English-Tender">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title - English"
+                    name="./title_en"
+                    xtype="textfield"/>
+                <address_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Address"
+                    name="./address_en"
+                    xtype="textfield"/>
+                <info_sheet_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Information Sheet (pdf)"
+                    name="./info_sheet_en"
+                    rootPath="/content/dam/gnb/Departments/trans/surplus"
+                    xtype="pathfield"/>
+                <extra_info_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Extra Information"
+                    name="./extra_info_en"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                </extra_info_en>
+            </items>
+        </english_tender>
+        <french_tender
+            jcr:primaryType="cq:Panel"
+            title="French-Tender">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title - French"
+                    name="./title_fr"
+                    xtype="textfield"/>
+                <address_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Address"
+                    name="./address_fr"
+                    xtype="textfield"/>
+                <info_sheet_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Information Sheet (pdf)"
+                    name="./info_sheet_fr"
+                    rootPath="/content/dam/gnb/Departments/trans/surplus"
+                    xtype="pathfield"/>
+                <extra_info_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Extra Information"
+                    name="./extra_info_fr"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                </extra_info_fr>
+            </items>
+        </french_tender>
+        <general_surplus
+            jcr:primaryType="cq:Panel"
+            title="General-Surplus">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <file_no
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="File No"
+                    name="./file_no"
+                    xtype="textfield"/>
+                <pid
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="PID"
+                    name="./pid"
+                    xtype="textfield"/>
+                <pan
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="PAN"
+                    name="./pan"
+                    xtype="textfield"/>
+            </items>
+        </general_surplus>
+        <english_surplus
+            jcr:primaryType="cq:Panel"
+            title="English-Surplus">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <area_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Area"
+                    name="./area_en"
+                    xtype="textfield"/>
+                <buildingsize_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Building Size"
+                    name="./buildingsize_en"
+                    xtype="textfield"/>
+                <description_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    name="./description_en"
+                    xtype="textfield"/>
+                <zone_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Zone-English"
+                    name="./zone_en"
+                    xtype="textfield"/>
+                <info_sheet_s_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Surplus Information Sheet (pdf)"
+                    name="./info_sheet_s_en"
+                    rootPath="/content/dam/gnb/Departments/trans/surplus"
+                    xtype="pathfield"/>
+                <regi_info_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Registration Info"
+                    name="./regi_info_en"
+                    xtype="textfield"/>
+                <extra_info1_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Extra Information"
+                    name="./extra_info1_en"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                </extra_info1_en>
+            </items>
+        </english_surplus>
+        <french_surplus
+            jcr:primaryType="cq:Panel"
+            title="French-Surplus">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <area_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Area"
+                    name="./area_fr"
+                    xtype="textfield"/>
+                <buildingsize_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Building Size"
+                    name="./buildingsize_fr"
+                    xtype="textfield"/>
+                <description_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    name="./description_fr"
+                    xtype="textfield"/>
+                <zone_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Zone-French"
+                    name="./zone_fr"
+                    xtype="textfield"/>
+                <info_sheet_s_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Surplus Information Sheet (pdf)"
+                    name="./info_sheet_s_fr"
+                    rootPath="/content/dam/gnb/Departments/trans/surplus"
+                    xtype="pathfield"/>
+                <regi_info_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Registration Info"
+                    name="./regi_info_fr"
+                    xtype="textfield"/>
+                <extra_info1_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Extra Information"
+                    name="./extra_info1_fr"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                </extra_info1_fr>
+            </items>
+        </french_surplus>
+    </items>
+</jcr:root>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<%@page import="com.t4g.cnb.utils.ListItem"%>
+<%@ page session="false"%>
+<%@page import="java.util.Iterator"%>
+<%@page import="com.day.cq.wcm.api.Page"%>
+<%@page import="com.day.cq.wcm.api.WCMMode"%>
+<%@page import="javax.jcr.Node"%>
+<%@page import="com.day.cq.search.result.SearchResult"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="com.day.cq.search.QueryBuilder"%>
+<%@page import="javax.jcr.Session"%>
+<%@page import="com.t4g.cnb.utils.Utils"%>
+<%@page import="com.day.cq.search.Query"%>
+<%@page import="java.util.Date"%>
+<%@page import="com.day.cq.wcm.foundation.List"%>
+<%@page import="java.util.Locale"%>
+<%@include file="/libs/wcm/global.jsp"%>
+
+<%
+
+    try {
+      String path = properties.get("parentPage", "");
+      if (path.equals("")) {
+        currentNode.setProperty("parentPage", currentPage.getPath());
+        currentNode.save();
+      }
+    } catch (Exception e) {
+		log.error("parentPage inheritence seting issue", e);
+	}
+
+  	try {
+    %>
+	<cq:include script="init.jsp" />
+	<%
+    WCMMode.DISABLED.toRequest(request);
+    Locale locale = currentPage.getLanguage(true);
+    if (locale == null || locale.getLanguage().equalsIgnoreCase("en")) {
+      locale = new Locale("en");
+    }
+    final SimpleDateFormat outDateFormat = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss '-0400'");
+
+    String host = "http://" + request.getServerName();
+    String url = currentPage.getPath();
+    String link = host + url + ".html";
+    String title = (String) properties.get("feedname", null) != null ? (String) properties.get("feedname", null) : currentNode.getName();
+    title=xssAPI.encodeForHTML(title);
+    String subTitle = (String) properties.get("feeddescription", null) != null ? (String) properties.get("feeddescription", null) : (String) properties.get("jcr:description", null);
+    subTitle=xssAPI.encodeForHTML(subTitle);
+
+    out.write("<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n");
+    out.write("<rss version=\"2.0\">\n");
+    out.write("<channel>\n");
+    out.write(String.format("<title>%s</title>\n",title));
+    out.write(String.format("<link>%s</link>\n",link));
+    out.write(String.format("<description>%s</description>\n",subTitle));
+
+    List list = (List) request.getAttribute("list");
+    Date lastUpdated = currentPage.getLastModified().getTime();
+    if (!list.isEmpty()) {
+      Iterator<Page> items = list.getPages();
+      while (items.hasNext()) {
+        Page item = items.next();
+        ListItem listItem = new ListItem(item.getPath(), currentPage, resource);
+        if (lastUpdated != null && listItem.getDate() != null && lastUpdated.before(listItem.getDate())) {
+          lastUpdated = listItem.getDate();
+        }
+        out.write("<item>\n");
+        out.write(String.format("<title>%s</title>\n",xssAPI.encodeForHTML(listItem.getTitle())));
+        out.write(String.format("<link>%s%s</link>\n", host,listItem.getURL()));
+        out.write(String.format("<description>%s</description>\n",xssAPI.encodeForHTML(listItem.getDescription())));
+        if (listItem.getDate() != null) {
+          out.write(String.format("<pubDate>%s</pubDate>\n",outDateFormat.format(listItem.getDate())));
+        }
+        if (Utils.isNotEmpty(listItem.getImageURL())) {
+           String str = listItem.getImageURL();//Keehwan added
+            if (!str.endsWith("/jcr:content/thumb/file/jcr:content")){//Keehwan added
+                out.write(String.format("<enclosure url=\"%s%s\" length=\"0\" type=\"image/png\" />\n",host, listItem.getImageURL()));       
+            }//Keehwan added
+        }//Keehwan added
+        out.write("</item>\n");
+      }
+    }
+    if(lastUpdated!=null){
+      out.write(String.format("<pubDate>%s</pubDate>\n",outDateFormat.format(lastUpdated)));
+    }
+    out.write("</channel>");
+    out.write("</rss>");
+  } catch (Exception e) {
+    	log.error("error rendering feed for list", e);
+  }
+%>

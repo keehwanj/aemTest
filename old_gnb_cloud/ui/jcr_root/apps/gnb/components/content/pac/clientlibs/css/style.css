@@ -1,0 +1,29 @@
+/*
+	/apps/gnb/components/content/pac/clientlibs/css/style.css
+*/
+
+.pac .form-group {
+    margin-bottom: 5px;
+}
+
+.pac label {
+    font-weight: normal;
+    font-size: 95%;   
+}
+
+.pac .cursor_pointer {
+    cursor: pointer;
+}
+
+.pac .bold{
+	font-weight: 700;
+}
+
+.pac .normal{
+	font-size: 95%;
+}
+
+.red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
+.red-tooltip + .tooltip > .tooltip-arrow { border-bottom-color:#f00; }
+
+/** END of style.css **/

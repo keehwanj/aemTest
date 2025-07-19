@@ -1,0 +1,51 @@
+/*
+	/apps/gnb/components/search/globalsitesearch/clientlibs/css/style.css
+*/
+
+/**START of style.css **/
+/*****/
+
+.gsc-control-wrapper-cse td {
+	vertical-align: top;
+    /*
+    text-align:left;
+    */
+    border-bottom:0px;
+    font-size:100%;
+    padding:0px;
+}
+
+.gsc-control-wrapper-cse table {
+    margin-bottom:0px;
+}    
+
+/*****/
+
+.gsq_a, .gssb_a td {
+	font-size: 13px;
+    border-bottom:0px solid #FFFFFF !important;
+}
+
+/*
+table.gsc-search-box {
+	width: 90% !important;
+}
+*/
+
+.gsc-refinementsArea {
+	clear: both;
+	margin-bottom: 0px   !important;
+	padding-left: 8px;
+	border-bottom: 0px solid #FFFFFF  !important;
+	padding-bottom: 0px   !important;
+}
+
+input.gsc-input {
+	height: 30px   !important;
+}
+
+input.gsc-search-button {
+	height: 30px   !important;
+}
+
+/**END of style.css **/

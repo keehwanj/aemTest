@@ -1,0 +1,11 @@
+/*
+	/apps/gnb/components/content/healthcareerslist/clientlibs/css/style.css
+ */
+/**START of style.css**/
+
+.healthcareerslist .table > tbody > tr > th {
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+/**END of style.css**/

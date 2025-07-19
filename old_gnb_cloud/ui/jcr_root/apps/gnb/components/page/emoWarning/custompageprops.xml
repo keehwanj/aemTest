@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="cq:Panel"
+            title="General">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <warning
+                    jcr:primaryType="cq:Widget"
+                    allowEmpty="false"
+                    fieldLabel="Emergency?"
+                    name="./warning"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <no
+                            jcr:primaryType="nt:unstructured"
+                            text="False"
+                            value="false"/>
+                        <yes
+                            jcr:primaryType="nt:unstructured"
+                            text="True"
+                            value="true"/>
+                    </options>
+                </warning>
+            </items>
+        </general>
+        <emergency
+            jcr:primaryType="cq:Panel"
+            title="Emergency">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <en_title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title - English"
+                    name="./en_title"
+                    xtype="textfield"/>
+                <fr_title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title - French"
+                    name="./fr_title"
+                    xtype="textfield"/>
+                <en_description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Context - English"
+                    height="90"
+                    name="./en_description"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                        <htmlRules jcr:primaryType="nt:unstructured">
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                protocols="[http://,https://]"/>
+                        </htmlRules>
+                    </htmlRules>
+                </en_description>
+                <fr_description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Context - French"
+                    height="90"
+                    name="./fr_description"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                        <htmlRules jcr:primaryType="nt:unstructured">
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                protocols="[http://,https://]"/>
+                        </htmlRules>
+                    </htmlRules>
+                </fr_description>
+                <en_body
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Body - English"
+                    height="250"
+                    name="./en_body"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                        <htmlRules jcr:primaryType="nt:unstructured">
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                protocols="[http://,https://]"/>
+                        </htmlRules>
+                    </htmlRules>
+                </en_body>
+                <fr_body
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Body - French"
+                    height="250"
+                    name="./fr_body"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                </fr_body>
+            </items>
+        </emergency>
+        <no_emergency
+            jcr:primaryType="cq:Panel"
+            title="No Emergency">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <en_title_normal
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title - English"
+                    name="./en_title_normal"
+                    xtype="textfield"/>
+                <fr_title_normal
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title - French"
+                    name="./fr_title_normal"
+                    xtype="textfield"/>
+                <en_description_normal
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Context - English"
+                    height="90"
+                    name="./en_description_normal"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                        <htmlRules jcr:primaryType="nt:unstructured">
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                protocols="[http://,https://]"/>
+                        </htmlRules>
+                    </htmlRules>
+                </en_description_normal>
+                <fr_description_normal
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Context - French"
+                    height="90"
+                    name="./fr_description_normal"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                        <htmlRules jcr:primaryType="nt:unstructured">
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                protocols="[http://,https://]"/>
+                        </htmlRules>
+                    </htmlRules>
+                </fr_description_normal>
+            </items>
+        </no_emergency>
+    </items>
+</jcr:root>

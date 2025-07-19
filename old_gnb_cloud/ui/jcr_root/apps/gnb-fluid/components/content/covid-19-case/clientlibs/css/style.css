@@ -1,0 +1,198 @@
+/*
+	START /apps/gnb-fluid/components/content/covid19_case/clientlibs/css/style.css
+ */
+/*
+.covid-19 {
+  	color: #ffffff;
+    background-image: url("/etc/designs/gnbfluid-bootstrap/clientlibs/images/Covid-Image-Overlay-1920px_2.png");
+  	background-repeat: repeat;
+}
+
+.covid-19-case {
+	margin: 15px 0px 15px;
+}
+*/
+/*
+	END /apps/gnb-fluid/components/content/covid19_case/clientlibs/css/style.css
+*/
+
+a {
+	color: #1266AC;
+	cursor: pointer;
+}
+
+.text-white a {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+.text-white a:hover {
+	text-decoration: none;
+}
+
+p a:hover {}
+
+ul,
+ol {
+	padding-left: 1rem;
+}
+
+
+
+.alert {
+	color: #000000;
+	padding-top: 2rem;
+	background-color: #FFECB3;
+	border-left: 10px solid #FBAB18;
+}
+
+.alert ol li {
+	padding: 0px;
+}
+
+.alert a {
+	text-decoration: underline;
+}
+
+.alert a:hover {
+	text-decoration: none;
+}
+
+/*2020-4-21*/
+.alert-blue {
+      color: #000000;
+      padding-top: 2rem;
+      background-color: #F1F3F5;
+      border-left: 10px solid #1266AC;
+}
+/*2020-4-21*/
+* NAVBAR */
+
+.navbar {
+	-webkit-box-shadow: 0px 3px 60px 0px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 0px 3px 60px 0px rgba(0, 0, 0, 0.08);
+	box-shadow: 0px 3px 60px 0px rgba(0, 0, 0, 0.08);
+	padding: 0.25rem 1.5rem;
+}
+
+.navbar a {
+	color: #000000;
+}
+
+.navbar-brand img {
+	max-width: 115px;
+}
+
+
+/* BUTTONS */
+.btn {
+	padding-right: 1.5rem;
+	padding-left: 1.5em;
+}
+
+/* Button primary */
+.btn-primary {
+	background-color: #1266AC;
+	border: 3px solid #1266AC;
+	color: #fff;
+}
+
+.btn-primary:hover {
+	color: #fff;
+}
+
+
+
+/* SECTION WRAPPERS */
+.part {
+	padding: 50px 15px;
+}
+
+.part-breadcrumb {
+	padding: 0px 15px;
+}
+
+.part-header {
+	padding: 0px 15px 50px 15px;
+}
+
+.part-alert {
+	padding: 30px 15px;
+}
+
+.part-bgr-img {
+	background-image: url("/etc/designs/gnbfluid-bootstrap/clientlibs/images/Covid-Optimized-Image-Overlay-1920px.jpg");
+	background-attachment: fixed;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.part-bgr-grey {
+	background-color: #F8F9FA;
+}
+
+.part-cases {
+	padding: 70px 15px;
+}
+
+.part-title {
+	padding-bottom: 40px;
+}
+
+.part-border {
+	margin: 0px;
+	padding: 50px 15px;
+	background-color: #f5f5f5;
+}
+
+.part-footer {
+	text-align: center;
+	padding: 30px 15px;
+	background-color: #F1F3F5;
+}
+
+
+
+
+
+/* CARDS */
+.card {
+	border: none;
+}
+
+.card-body {
+	padding: 30px;
+}
+
+
+
+
+/* Stay safe and informed cards*/
+.card-link .card .card-body p,
+.card-link .card .card-body h5 {
+	color: #000000;
+}
+
+.card-link .card .card-body .learn-more {
+	color: #1266AC;
+}
+
+.card-link:hover .card .card-body .learn-more {
+	text-decoration: underline;
+}
+
+.card-link .card:hover {
+	-webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card-body .icon {
+	max-width: 70px;
+	max-height: 70px;
+	margin-bottom: 20px;
+}
+
+.card-cases .card-body {
+	padding-bottom: 10px;
+}

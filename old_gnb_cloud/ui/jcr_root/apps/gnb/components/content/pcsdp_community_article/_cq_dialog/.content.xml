@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Community Event Calendar Renderer Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <text1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Text 1"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <pageTitle_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Community Events Calendar - or Calendrier d'événements communautaires -"
+                                fieldLabel="Page Title Text"
+                                name="./pageTitle_Text"/>
+                            <event_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Event or  Événement"
+                                fieldLabel="Event Text"
+                                name="./event_Text"/>
+                            <region_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Region or Région / Lieu"
+                                fieldLabel="Region Text"
+                                name="./region_Text"/>
+                            <address_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Address or  Adddresse"
+                                fieldLabel="AddressText"
+                                name="./address_Text"/>
+                            <organization_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Organization / Contact or  Organisation /  Personne-ressource"
+                                fieldLabel="Organization Text"
+                                name="./organization_Text"/>
+                        </items>
+                    </columns>
+                </items>
+            </text1>
+            <text2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Text 2"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <telephone_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Telephone or Téléphone"
+                                fieldLabel="Telephone Text"
+                                name="./telephone_Text"/>
+                            <fee_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Fee or  Frais d'admission"
+                                fieldLabel="Fee Text"
+                                name="./fee_Text"/>
+                            <email_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Email or Courriel"
+                                fieldLabel="Email Text"
+                                name="./email_Text"/>
+                            <website_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Website or Site Web"
+                                fieldLabel="Website Text"
+                                name="./website_Text"/>
+                        </items>
+                    </columns>
+                </items>
+            </text2>
+            <text3
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Text 3"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <date_time_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Date / Time or Date / Heure"
+                                fieldLabel="Date Time Text"
+                                name="./date_time_Text"/>
+                            <deadline_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Registration Deadline or  Date limite d'inscription"
+                                fieldLabel="deadline_Text"
+                                name="./deadline_Text"/>
+                            <fax_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Fax or  Télécopieur"
+                                fieldLabel="Fax Text"
+                                name="./fax_Text"/>
+                            <description_Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default : Description or  Détails"
+                                fieldLabel="Description Text"
+                                name="./description_Text"/>
+                        </items>
+                    </columns>
+                </items>
+            </text3>
+        </items>
+    </content>
+</jcr:root>

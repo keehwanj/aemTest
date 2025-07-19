@@ -1,0 +1,76 @@
+/*******************************************************************************
+enblist_update
+by Keehwan Jee
+2012-11-15
+********************************************************************************/
+.enblist_update ul {
+  font-size:90%;
+  list-style:none outside none;
+  margin:0;
+  padding:0;
+  padding-bottom: 6px;
+  margin-bottom:6px;   
+}
+
+.enblist_update {
+  margin-bottom: 20px;
+}
+
+.enblist_update li {
+    margin-bottom:5px;
+    padding-left: 10px;
+}
+.enblist_update>div { 
+        padding:10px;  
+}
+.enblist_update>div.bottomborder {
+    border-bottom:1px solid #d3d3d3;   
+        padding:10px;  
+}
+.enblist_update .greyarrow ul { font-size: 80%; }
+.enblist_update div.padded {
+    padding:10px 20px 10px 20px;
+}
+.enblist_update div.bluearrow li {
+    margin-bottom:5px;
+    padding-left: 10px;
+    background:transparent url(../images/arrow_blue.gif) no-repeat scroll 0 5px;
+}
+.enblist_update div.bluearrow li:hover { background-image: url(../images/arrow.gif); }
+.enblist_update div.greyarrow li {
+  background: transparent url("../images/arrow.gif") no-repeat scroll 0 5px;
+  padding-left: 10px;
+}
+.enblist_update div.greyarrow li a, .enblist_update div.morelink a  {
+    color: #555555;  
+}
+.enblist_update div.greyarrow li a:hover, .enblist_update div.morelink a:hover  {
+    color: #000000;  
+}
+.enblist_update div.unstyled li, .enblist_update div.unstyled  {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+}
+.enblist_update div.unstyled li a:link, .enblist_update div.unstyled lia:visited {
+    color:#555;
+    font-size:80%;
+    text-decoration:none;
+    padding:0px 0 5px 0px;
+}
+.enblist_update div.unstyled li a:hover{
+    color:#000;
+    text-decoration:none;
+}
+.enblist_update div.morelink {
+  font-size:68%;
+}
+.enblist_update div.morelink a {
+  background:url("../images/arrow.gif") no-repeat scroll right 3px transparent;
+  padding-right:10px;
+}
+.enblist_update > div.bottomborder div.morelink {
+  border-top: 1px solid #d3d3d3;
+  padding-top: 10px;
+}
+            

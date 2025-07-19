@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Day Care Assistance - DAP (Education) - collapse"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <first
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="First"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <t_1_1_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Annual Household Gross Income"
+                        fieldLabel="Annual Household Gross Income"
+                        name="./t_1_1_dap"
+                        xtype="textfield"/>
+                    <t_1_tootip_1_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Annual Family Net Income"
+                        fieldLabel="Tooltip"
+                        name="./t_1_tootip_1_dap"
+                        xtype="textarea"/>
+                    <t_1_2_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Gross Income"
+                        fieldLabel="Placeholder text"
+                        name="./t_1_2_dap"
+                        xtype="textfield"/>
+                </items>
+            </first>
+            <second
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Second"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <t_2_1_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of children needing full time child care (more than 4 hours) aged less than 24 months"
+                        fieldLabel="Number of children needing full time &lt;24 months"
+                        name="./t_2_1_dap"
+                        xtype="textfield"/>
+                    <t_2_tootip_1_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of children needing full time child care (more than 4 hours) aged less than 24 months"
+                        fieldLabel="Tooltip"
+                        name="./t_2_tootip_1_dap"
+                        xtype="textarea"/>
+                    <t_2_2_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of day(s) per week"
+                        fieldLabel="Number of day(s) per week"
+                        name="./t_2_2_dap"
+                        xtype="textfield"/>
+                    <t_2_tootip_2_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of day(s) per week"
+                        fieldLabel="Tooltip"
+                        name="./t_2_tootip_2_dap"
+                        xtype="textarea"/>
+                    <t_2_3_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of children needing part time child care (less than 4 hours) aged less than 24 months"
+                        fieldLabel="Number of children needing part time &lt;24 months"
+                        name="./t_2_3_dap"
+                        xtype="textfield"/>
+                    <t_2_tootip_3_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of children needing part time child care (less than 4 hours) aged less than 24 months"
+                        fieldLabel="Tooltip"
+                        name="./t_2_tootip_3_dap"
+                        xtype="textarea"/>
+                </items>
+            </second>
+            <third
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Third"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <t_3_1_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of children needing full time child care (more than 4 hours) between 2 -12 years old"
+                        fieldLabel="Number of children needing full time between 2-12 years old"
+                        name="./t_3_1_dap"
+                        xtype="textfield"/>
+                    <t_3_tootip_1_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of children needing full time child care (more than 4 hours) between 2 -12 years old"
+                        fieldLabel="Tooltip"
+                        name="./t_3_tootip_1_dap"
+                        xtype="textarea"/>
+                    <t_3_2_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of day(s) per week"
+                        fieldLabel="Number of day(s) per week"
+                        name="./t_3_2_dap"
+                        xtype="textfield"/>
+                    <t_3_tootip_2_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of day(s) per week"
+                        fieldLabel="Tooltip"
+                        name="./t_3_tootip_2_dap"
+                        xtype="textarea"/>
+                    <t_3_3_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of children part time child care (less than 4 hours) between 2 -12 years old"
+                        fieldLabel="Number of children needing part time (&lt;4 hours) between 2-12 years old"
+                        name="./t_3_3_dap"
+                        xtype="textfield"/>
+                    <t_3_tootip_3_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of children part time child care (less than 4 hours) between 2 -12 years old"
+                        fieldLabel="Tooltip"
+                        name="./t_3_tootip_3_dap"
+                        xtype="textarea"/>
+                </items>
+            </third>
+            <fourth
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Fourth"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <t_4_1_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Estimate per day *"
+                        fieldLabel="Estimate per day *"
+                        name="./t_4_1_dap"
+                        xtype="textfield"/>
+                    <t_4_tootip_1_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Est. per day $"
+                        fieldLabel="Tooltip"
+                        name="./t_4_tootip_1_dap"
+                        xtype="textarea"/>
+                    <t_4_2_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Estimate per month"
+                        fieldLabel="Estimate per month"
+                        name="./t_4_2_dap"
+                        xtype="textfield"/>
+                    <t_4_tootip_2_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Est. per month $"
+                        fieldLabel="Tooltip"
+                        name="./t_4_tootip_2_dap"
+                        xtype="textarea"/>
+                    <t_4_3_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Estimate per year"
+                        fieldLabel="Estimate per year"
+                        name="./t_4_3_dap"
+                        xtype="textfield"/>
+                    <t_4_tootip_3_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Est. per year $"
+                        fieldLabel="Tooltip"
+                        name="./t_4_tootip_3_dap"
+                        xtype="textarea"/>
+                </items>
+            </fourth>
+            <reset
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Button"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <t_5_1_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Reset"
+                        fieldLabel="Reset"
+                        name="./t_5_1_dap"
+                        xtype="textfield"/>
+                </items>
+            </reset>
+            <title
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Title"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title_1_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Income"
+                        fieldLabel="Income"
+                        name="./title_1_dap"
+                        xtype="textfield"/>
+                    <title_1_tootip_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Income"
+                        fieldLabel="Tooltip"
+                        name="./title_1_tootip_dap"
+                        xtype="textarea"/>
+                    <title_2_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Childcare Needs - Infants(0-24months)"
+                        fieldLabel="Childcare Needs - Infants(0-24months)"
+                        name="./title_2_dap"
+                        xtype="textfield"/>
+                    <title_2_tootip_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Childcare Needs - Infants(0-24months)"
+                        fieldLabel="Tooltip"
+                        name="./title_2_tootip_dap"
+                        xtype="textarea"/>
+                    <title_3_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Childcare Needs - Pre-school and After School Children(2-12years old)"
+                        fieldLabel="Childcare Needs - Pre-school and After School Children(2-12years old)"
+                        name="./title_3_dap"
+                        xtype="textfield"/>
+                    <title_3_tootip_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Childcare Needs - Pre-school and After School Children(2-12years old)"
+                        fieldLabel="Tooltip"
+                        name="./title_3_tootip_dap"
+                        xtype="textarea"/>
+                    <disclaimer_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="*Disclaimer"
+                        fieldLabel="*Displaimer"
+                        name="./disclaimer_dap"
+                        xtype="textarea"/>
+                </items>
+            </title>
+            <collapse
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Collapse"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <collapsible_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Collapsible?"
+                        inputValue="false"
+                        name="./collapsible_dap"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <collapsible_title_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Daycare Assistance Program Estimator"
+                        fieldLabel="Collapsible Title"
+                        name="./collapsible_title_dap"
+                        xtype="textfield"/>
+                    <collapsible_id_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="default  :  dap_collapse"
+                        fieldLabel="Collapsible ID"
+                        name="./collapsible_id_dap"
+                        xtype="textfield"/>
+                    <collapsible_button_dap
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="btn-default  btn-primary  btn-success  btn-info  btn-warning  btn-danger  btn-link btn-block btn-lg btn-md btn-sm btn-xs"
+                        fieldLabel="Collapsible Button"
+                        name="./collapsible_button_dap"
+                        xtype="textfield"/>
+                </items>
+            </collapse>
+        </items>
+    </items>
+</jcr:root>

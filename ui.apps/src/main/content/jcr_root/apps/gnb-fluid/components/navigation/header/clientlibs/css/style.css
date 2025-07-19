@@ -1,0 +1,21 @@
+/*
+	START of /apps/gnb-fluid/components/navigation/header/clientlibs/css/style.css
+*/
+
+header .navbar {
+  padding: 0rem 0rem;
+}
+header .navbar-brand {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+header .logo {
+  width: 30%;
+}
+
+header .bg-light {
+  background-color: #ffffff !important;
+}
+/*
+	END of /apps/gnb-fluid/components/navigation/header/clientlibs/css/style.css
+*/

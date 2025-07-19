@@ -1,0 +1,16 @@
+# Entries will be compared against the "Host" request header
+# and an optional request URL prefix.
+#
+# Examples:
+#
+#   www.company.com
+#   intranet.*
+#   myhost:8888/mysite
+"${NBPC_CPNB_DOMAIN}"
+"${NBPC_CPNB_ALT_DOMAIN}"
+"${NBPC_CPNB_ALT_DOMAIN_1}"
+"${NBPC_CPNB_ALT_DOMAIN_2}"
+"${NBPC_CPNB_ALT_DOMAIN_3}"
+"${NBPC_CPNB_ALT_DOMAIN_4}"
+"${NBPC_CPNB_ALT_DOMAIN_5}"
+"${NBPC_CPNB_ALT_DOMAIN_6}"

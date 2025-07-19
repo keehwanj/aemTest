@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Health Career Search Input (Design)(Salary)"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <hcSearchResultsPath
+            jcr:primaryType="cq:Widget"
+            fieldDescription="The path to the news search results page"
+            fieldLabel="Search Results Path"
+            hideTrigger="true"
+            name="./hcSearchResultsPath"
+            regex="/^\\/.*/"
+            regexText="Path must start with a '/'"
+            xtype="pathfield"/>
+    </items>
+</jcr:root>

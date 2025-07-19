@@ -1,0 +1,165 @@
+/**START of newslist.css**/
+.newslist ul {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 100%;
+}
+
+.newslist {
+  margin-bottom: 20px;
+}
+
+.newslist div.border {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d3d3d3;
+}
+.newslist li {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.newslist > div {
+  padding: 10px o 10px 0;
+}
+.newslist h3 {
+  margin: 0px !important;
+}
+.newslist div.padded {
+  padding: 10px 20px 10px 20px;
+}
+.newslist div.morelink a {
+  color: #555555;
+}
+.newslist div.morelink a:hover {
+  color: #000000;
+}
+
+.newslist div.morelink {
+  font-size: 68%;
+}
+
+.newslist div.morelink a {
+  background: transparent
+    url("/etc/designs/agnb-vgnb/clientlib/images/arrow.gif") no-repeat scroll
+    right center;
+  padding-right: 10px;
+}
+
+.newssearch .wide_news_item {
+  margin-right: 0px;
+}
+
+.newssearch .news_item p {
+}
+
+.newssearch .news_item img {
+  height: 67px;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  margin-bottom: 10px;
+  padding: 4px;
+}
+
+.newssearch .news_item h2,
+.newssearch .wide_news_item h2 {
+  color: #1874b1;
+  font-size: 95%;
+  font-weight: normal;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.newssearch .wide_news_item img {
+  width: 180px;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  margin-bottom: 10px;
+  padding: 4px;
+  float: left;
+}
+
+.newssearch .wide_news_item .wide_news_content {
+  margin-left: 200px;
+  font-size: 110%;
+}
+
+.newssearch .wide_news_item .wide_news_content p {
+  font-size: 95%;
+}
+
+.newssearch .wide_news_item .wide_news_content_full {
+  font-size: 110%;
+}
+
+.newssearch .wide_news_item .wide_news_content_full p {
+  font-size: 95%;
+}
+
+/**
+newslist_update.css
+start
+**/
+.newslist_update ul {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 100%;
+}
+
+.newslist_update {
+  margin-bottom: 20px;
+}
+
+.newslist_update div.border {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d3d3d3;
+}
+.newslist_update li {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.newslist_update > div {
+  padding: 10px o 10px 0;
+}
+.newslist_update h3 {
+  margin: 0px !important;
+}
+/**START of NEW**/
+.newslist_update .h3 {
+  margin: 0px !important;
+}
+/**END of NEW**/
+
+.newslist_update div.padded {
+  padding: 10px 20px 10px 20px;
+}
+.newslist_update div.morelink a {
+  color: #555555;
+}
+.newslist_update div.morelink a:hover {
+  color: #000000;
+}
+
+.newslist_update div.morelink {
+  font-size: 68%;
+}
+
+.newslist_update div.morelink a {
+  background: transparent
+    url("/etc/designs/agnb-vgnb/clientlib/images/arrow.gif") no-repeat scroll
+    right center;
+  padding-right: 10px;
+}
+/**
+newslist_update.css
+end
+**
+/**END of newslist.css**/

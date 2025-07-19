@@ -1,0 +1,36 @@
+/*
+	apps/snb/components/content/contactinfo/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+  .contactinfo .row .col-sm-4 {
+    padding-right: 0px;
+  }
+
+  .contactinfo .row .col-sm-8 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .contactinfo .row .col-md-4 {
+    padding-right: 0px;
+  }
+
+  .contactinfo .row .col-md-8 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .contactinfo .row .col-lg-4 {
+    padding-right: 0px;
+  }
+
+  .contactinfo .row .col-lg-8 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .contactinfo .item_services .row .col-sm-6 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

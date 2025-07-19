@@ -1,0 +1,13 @@
+/*
+	START of apps/enb/components/navigation/departmentnav/clientlibs/css/responsive-480px.css
+*/
+@media (max-width: 480px) {
+  .departmentnav .navbar-form {
+    margin-top: 0px;
+    border-top: 0px solid transparent;
+  }
+}
+
+/*
+	END of apps/enb/components/navigation/departmentnav/clientlibs/css/responsive-480px.css
+*/

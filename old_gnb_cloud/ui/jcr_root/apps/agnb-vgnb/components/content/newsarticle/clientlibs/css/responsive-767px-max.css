@@ -1,0 +1,13 @@
+/*
+	/apps/agnb-vgnb/components/content/newsarticle/clientlibs/css/responsive-767px-max.css
+ */
+/* phone landscape */
+@media (max-width: 767px) {
+.newsarticle h2 {
+	margin-top:5px;
+	margin-bottom:5px;
+    font-size: 1.5em;
+    font-weight: bold;        
+}
+
+}

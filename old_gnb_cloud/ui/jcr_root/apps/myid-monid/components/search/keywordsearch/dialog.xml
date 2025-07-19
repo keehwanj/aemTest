@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Site Footer"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Settings">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <prop1
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Search Hint"
+                        name="./searchHint"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <prop2
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Search Label"
+                        name="./searchLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <prop3
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Search"
+                        name="./search"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <prop4
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Search Page"
+                        name="./searchPath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

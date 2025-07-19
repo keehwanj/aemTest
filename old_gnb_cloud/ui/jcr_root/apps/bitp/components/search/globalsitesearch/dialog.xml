@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="nt:unstructured"
+        xtype="tabpanel">
+        <items
+            jcr:primaryType="nt:unstructured"
+            title="Search"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <searchButtonText
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Search button text"
+                    name="./searchButtonText"
+                    xtype="textfield"/>
+                <searchTitle
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Search Title label"
+                    name="./searchTitle"
+                    xtype="textfield"/>
+                <statisticsText
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Statistics text"
+                    name="./statisticsText"
+                    xtype="textfield"/>
+            </items>
+        </items>
+    </items>
+</jcr:root>

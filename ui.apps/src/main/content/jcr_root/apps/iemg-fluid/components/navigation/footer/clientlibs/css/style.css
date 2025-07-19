@@ -1,0 +1,17 @@
+/*
+	START of /apps/iemg-fluid/components/navigation/footer/clientlibs/css/style.css
+*/
+footer .navbar-brand {
+  font-size: 0.85rem;
+}
+
+footer .navbar-nav {
+  text-align: end;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+/*
+	END of /apps/iemg-fluid/components/navigation/footer/clientlibs/css/style.css
+*/

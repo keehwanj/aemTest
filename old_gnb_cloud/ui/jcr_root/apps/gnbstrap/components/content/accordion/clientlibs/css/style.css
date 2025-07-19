@@ -1,0 +1,54 @@
+/*
+	START /apps/gnbstrap/components/content/accordion/clientlibs/css/style.css
+*/
+.accordion .accordion{
+    margin-bottom: 10px;
+}
+
+
+.accordion>.card .card-header {
+    margin-bottom: 0px;
+}
+
+
+.card-body {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+/**2020-4-9**/
+.accordion .card-header:hover{
+	text-decoration: underline;
+}
+
+.accordion .card-header{
+	cursor: pointer;
+}
+
+.accordion .card-header:before {
+    content: "-";
+	float: left; 
+	width: 20px;
+	text-decoration: none !important;
+}
+.accordion .card-header.collapsed:before {
+
+	content: "+"; 
+	text-decoration: none;
+	text-decoration: none !important;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+
+/**
+	END of /apps/gnbstrap/components/content/accordion/clientlibs/css/style.css
+**/

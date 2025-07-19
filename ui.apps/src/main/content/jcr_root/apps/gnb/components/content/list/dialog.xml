@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','children','static','search','querybuilder'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="List"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <children
+            jcr:primaryType="cq:Widget"
+            title="Child pages"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <parentPage
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave empty to use current page"
+                    fieldLabel="Parent page"
+                    name="./parentPage"
+                    xtype="pathfield"/>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(1); }"/>
+        </children>
+        <list
+            jcr:primaryType="cq:Widget"
+            title="List"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <displayAs
+                    jcr:primaryType="cq:Widget"
+                    defaultValue=""
+                    fieldLabel="Display as"
+                    name="./displayAs"
+                    options="$PATH.displayoptions.json"
+                    type="select"
+                    xtype="selection"/>
+                <feed
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Boolean}false"
+                    fieldLabel="Enable Feed"
+                    name="./feedEnabled"
+                    type="checkbox"
+                    xtype="selection"/>
+                <limit
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Maximum number of items displayed in list"
+                    fieldLabel="Limit"
+                    name="./limit"
+                    xtype="numberfield"/>
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    defaultValue=""
+                    fieldLabel="Build list using"
+                    name="./listFrom"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(rec,path){this.findParentByType('tabpanel').manageTabs(this.getValue(),true);}"
+                        selectionchanged="function(box,value){box.findParentByType('tabpanel').manageTabs(value);}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <children
+                            jcr:primaryType="nt:unstructured"
+                            text="Child pages"
+                            value="children"/>
+                        <querybuilder
+                            jcr:primaryType="nt:unstructured"
+                            text="Advanced Search"
+                            value="querybuilder"/>
+                        <search
+                            jcr:primaryType="nt:unstructured"
+                            text="Search"
+                            value="search"/>
+                        <static
+                            jcr:primaryType="nt:unstructured"
+                            text="Fixed list"
+                            value="static"/>
+                    </options>
+                </listFrom>
+                <orderBy
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter a property like 'jcr:created'"
+                    fieldLabel="Order by"
+                    name="./orderBy"
+                    type="combobox"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <created
+                            jcr:primaryType="nt:unstructured"
+                            value="jcr:created"/>
+                        <modified
+                            jcr:primaryType="nt:unstructured"
+                            value="cq:lastModified"/>
+                        <template
+                            jcr:primaryType="nt:unstructured"
+                            value="cq:template"/>
+                        <title
+                            jcr:primaryType="nt:unstructured"
+                            value="jcr:title"/>
+                    </options>
+                </orderBy>
+                <pagination
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Paginate after"
+                    name="./pageMax"
+                    xtype="numberfield"/>
+            </items>
+        </list>
+        <querybuilder
+            jcr:primaryType="cq:Widget"
+            title="Advanced Search"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <savedquery
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Querybuilder predicate notation"
+                    name="./savedquery"
+                    xtype="textarea"/>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(4); }"/>
+        </querybuilder>
+        <search
+            jcr:primaryType="cq:Widget"
+            title="Search"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <query
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Search query"
+                    name="./query"
+                    xtype="textfield"/>
+                <searchIn
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave empty to use '/content'"
+                    fieldLabel="Start in"
+                    name="./searchIn"
+                    xtype="pathfield"/>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(3); }"/>
+        </search>
+        <static
+            jcr:primaryType="cq:Widget"
+            title="Fixed list"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <pages
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new page"
+                    fieldLabel="Pages"
+                    name="./pages"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="155"
+                        xtype="pathfield"/>
+                </pages>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(2); }"/>
+        </static>
+    </items>
+</jcr:root>

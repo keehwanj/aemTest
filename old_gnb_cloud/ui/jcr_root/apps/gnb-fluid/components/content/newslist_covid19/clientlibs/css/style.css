@@ -1,0 +1,60 @@
+/**START of newslist_covid19.css**/
+.newslist_covid19 ul {
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    font-size: 113%;
+}
+
+.newslist_covid19 {
+  margin-bottom:20px;
+}
+
+.newslist_covid19 div.border {
+    padding-bottom: 10px;
+    /*border-bottom: 1px solid #d3d3d3;*/
+}
+.newslist_covid19 li {
+    margin-bottom:10px;
+    /*padding-bottom: 10px;*/
+    /*border-bottom:1px solid #d3d3d3;*/
+}
+
+.newslist_covid19>div {
+    padding:0px 0 10px 0;  
+}
+
+/**START of NEW**/
+
+/**END of NEW**/
+/**
+.newslist_covid19 div.padded {
+    padding:10px 20px 10px 20px;
+}
+**/
+/**
+.newslist_covid19 div.morelink a  {
+    color: #555555;  
+}
+.newslist_covid19 div.morelink a:hover  {
+    color: #000000;  
+}
+**/
+
+.newslist_covid19 div.morelink {
+  font-size:113%;
+}
+/**
+.newslist_covid19 div.morelink a {
+  background: transparent url("/etc/designs/gnb-bootstrap/clientlibs/images/arrow.gif") no-repeat scroll right center;
+  padding-right:10px;
+}
+**/
+.newslist_covid19 .pager {
+  margin-top:20px;
+}
+
+
+/**END of newslist_covid19.css**/

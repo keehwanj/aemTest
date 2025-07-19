@@ -1,0 +1,50 @@
+SetEnvIf %{REQUEST_URI} ^ COUR_ENGLISH_ERROR_PAGE=/content/cour/en/error/404.html
+SetEnvIf %{REQUEST_URI} ^ COUR_FRENCH_ERROR_PAGE=/content/cour/fr/erreur/404.html
+
+# non-www to www redirect
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://www.%1%{REQUEST_URI} [L,NE,R=301]
+
+# rewrite for root redirect
+RewriteRule ^/?$ /content/cour.html [PT,L]
+
+RewriteCond %{REQUEST_URI} ^/en.html
+RewriteRule ^(.*)$ %{ENV:COUR_ENGLISH_ERROR_PAGE} [PT,L]
+
+RewriteCond %{REQUEST_URI} ^/fr.html
+RewriteRule ^(.*)$ %{ENV:COUR_FRENCH_ERROR_PAGE} [PT,L]
+
+# rewrite for cross-domain issue prevention with a language handle EN
+RewriteCond %{REQUEST_URI} !^/content/cour
+RewriteCond %{REQUEST_URI} !^/content/dam/courts
+RewriteCond %{REQUEST_URI} ^/content/(.*)/en/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^/content/(.*)/en.html
+RewriteRule ^(.*)$  %{ENV:COUR_ENGLISH_ERROR_PAGE} [PT,L]
+
+# rewrite for cross-domain issue prevention with a language handle FR
+RewriteCond %{REQUEST_URI} !^/content/cour
+RewriteCond %{REQUEST_URI} !^/content/dam/courts
+RewriteCond %{REQUEST_URI} ^/content/(.*)/fr/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^/content/(.*)/fr.html
+RewriteRule ^(.*)$  %{ENV:COUR_FRENCH_ERROR_PAGE} [PT,L]
+
+# rewrite for cross-domain issue prevention COUR ROOT
+RewriteCond %{REQUEST_URI} !^/content/cour
+RewriteCond %{REQUEST_URI} !^/content/dam/courts
+RewriteCond %{REQUEST_URI} ^/content/(.*)/(.*)$
+RewriteRule ^(.*)$  %{ENV:COUR_ENGLISH_ERROR_PAGE} [PT,L]
+
+RewriteCond %{REQUEST_URI} !^/apps
+RewriteCond %{REQUEST_URI} !^/bin
+RewriteCond %{REQUEST_URI} !^/content
+RewriteCond %{REQUEST_URI} !^/etc
+RewriteCond %{REQUEST_URI} !^/home
+RewriteCond %{REQUEST_URI} !^/libs
+RewriteCond %{REQUEST_URI} !^/saml_login
+RewriteCond %{REQUEST_URI} !^/system
+RewriteCond %{REQUEST_URI} !^/tmp
+RewriteCond %{REQUEST_URI} !^/var
+RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.xml)$
+RewriteRule ^/(.*)$ /content/cour/$1 [PT,L]
+

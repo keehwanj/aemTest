@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Panel"
+            title="General">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <deadline
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Please select December 31, 2030 in case of other then date type - Open or Ouvert."
+                    fieldLabel="Deadline"
+                    name="./deadline"
+                    xtype="datetime"/>
+                <email
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Email"
+                    name="./email"
+                    xtype="textfield"/>
+                <type
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Board"
+                    fieldLabel="Type"
+                    name="./type"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <advisoryBoard
+                            jcr:primaryType="nt:unstructured"
+                            text="Advisory Board"
+                            value="advisoryBoard"/>
+                        <advisoryCommittee
+                            jcr:primaryType="nt:unstructured"
+                            text="Advisory Committee"
+                            value="advisoryCommittee"/>
+                        <agency
+                            jcr:primaryType="nt:unstructured"
+                            text="Agency"
+                            value="agency"/>
+                        <board
+                            jcr:primaryType="nt:unstructured"
+                            text="Board"
+                            value="board"/>
+                        <commission
+                            jcr:primaryType="nt:unstructured"
+                            text="Commission"
+                            value="commission"/>
+                        <corporation
+                            jcr:primaryType="nt:unstructured"
+                            text="Corporation"
+                            value="corporation"/>
+                        <council
+                            jcr:primaryType="nt:unstructured"
+                            text="Council"
+                            value="council"/>
+                        <foundation
+                            jcr:primaryType="nt:unstructured"
+                            text="Foundation"
+                            value="foundation"/>
+                        <n_a
+                            jcr:primaryType="nt:unstructured"
+                            text="N/A"
+                            value="n/a"/>
+                        <tribunal
+                            jcr:primaryType="nt:unstructured"
+                            text="Tribunal"
+                            value="tribunal"/>
+                    </options>
+                </type>
+            </items>
+        </tab1>
+        <tab2
+            jcr:primaryType="cq:Panel"
+            title="English">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <en_department
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Associated Department(s)"
+                    name="./en_department"
+                    namespaces="[active-gnb-eng,active-keywords_eng]"
+                    xtype="tags"/>
+                <en_job_title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Organization"
+                    name="./en_job_title"
+                    xtype="textfield"/>
+                <en_job_rank
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Job Title"
+                    name="./en_job_rank"
+                    xtype="textfield"/>
+                <en_appointment_type
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Appointment Type"
+                    name="./en_appointment_type"
+                    xtype="textfield"/>
+                <en_body
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Article Body"
+                    height="600"
+                    name="./en_body"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </en_body>
+                <en_link_text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new text."
+                    fieldLabel="Link Texts"
+                    name="./en_link_text"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        xtype="textfield"/>
+                </en_link_text>
+                <en_link
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new link."
+                    fieldLabel="Links"
+                    name="./en_link"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        xtype="pathfield"/>
+                </en_link>
+                <en_term
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Term"
+                    name="./en_term"
+                    xtype="textarea"/>
+            </items>
+        </tab2>
+        <tab3
+            jcr:primaryType="cq:Panel"
+            title="French">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <fr_department
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Associated Department(s)"
+                    name="./fr_department"
+                    namespaces="[active-gnb-fra,active-keywords_fra]"
+                    xtype="tags"/>
+                <fr_job_title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Organization"
+                    name="./fr_job_title"
+                    xtype="textfield"/>
+                <fr_job_rank
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Job Title"
+                    name="./fr_job_rank"
+                    xtype="textfield"/>
+                <fr_appointment_type
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Appointment Type"
+                    name="./fr_appointment_type"
+                    xtype="textfield"/>
+                <fr_body
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Article Body"
+                    height="600"
+                    name="./fr_body"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </fr_body>
+                <fr_link_text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new text."
+                    fieldLabel="Link Texts"
+                    name="./fr_link_text"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        xtype="textfield"/>
+                </fr_link_text>
+                <fr_link
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new link."
+                    fieldLabel="Links"
+                    name="./fr_link"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        xtype="pathfield"/>
+                </fr_link>
+                <fr_term
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Term"
+                    name="./fr_term"
+                    xtype="textarea"/>
+            </items>
+        </tab3>
+        <tab4
+            jcr:primaryType="cq:Panel"
+            title="Position Filled">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <yes_no
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="no"
+                    fieldLabel="Position Filled ?"
+                    name="./yes_no"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <no
+                            jcr:primaryType="nt:unstructured"
+                            text="No"
+                            value="no"/>
+                        <yes
+                            jcr:primaryType="nt:unstructured"
+                            text="Yes"
+                            value="yes"/>
+                    </options>
+                </yes_no>
+                <appointment_date
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Appointment Date"
+                    name="./appointment_date"
+                    xtype="datetime"/>
+                <en_person_info
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Appointed Person Info - English"
+                    name="./en_person_info"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </en_person_info>
+                <fr_person_info
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Appointed Person Info - French"
+                    name="./fr_person_info"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </fr_person_info>
+            </items>
+        </tab4>
+    </items>
+</jcr:root>

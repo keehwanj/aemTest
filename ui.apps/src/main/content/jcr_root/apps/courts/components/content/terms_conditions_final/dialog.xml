@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Terms Condition Intro"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <resources
+                jcr:primaryType="cq:Panel"
+                title="Resouces">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <sourceURL
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Source webpage without &quot;.html&quot; where &quot;Terms and Conditions&quot; webpage exists"
+                        fieldLabel="Link from"
+                        name="./sourceURL"
+                        xtype="pathfield"/>
+                    <oppositeURL
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Opposite language webpage without &quot;.html&quot; where &quot;Terms and Conditions&quot; webpage exists"
+                        fieldLabel="Opposite URL"
+                        name="./oppositeURL"
+                        xtype="pathfield"/>
+                </items>
+            </resources>
+        </items>
+    </items>
+</jcr:root>

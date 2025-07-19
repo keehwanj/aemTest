@@ -1,0 +1,17 @@
+/*
+	START of /apps/wcat-taat-fluid/components/navigation/breadcrumbs/clientlibs/css/responsive-767px-max.css
+*/
+/* phone landscape */
+@media (max-width: 767px) {
+
+
+#breadcrumbNav{
+    font-size: 80%;    
+    margin: 0 30px 10px 5px;
+    padding: 0;
+}
+
+}
+/*
+	END of /apps/wcat-taat-fluid/components/navigation/breadcrumbs/clientlibs/css/responsive-767px-max.css
+*/

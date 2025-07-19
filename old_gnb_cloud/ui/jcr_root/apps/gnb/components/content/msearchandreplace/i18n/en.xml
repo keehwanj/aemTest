@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="en"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <appointment_date
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="appointment_date"
+        sling:message="Appointment Date : "/>
+    <appointment_type
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="appointment_type"
+        sling:message="Type of Appointment : "/>
+    <deadline
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="deadline"
+        sling:message="Deadline for Submission : "/>
+    <department
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="department"
+        sling:message="Associated / Responsible Department : "/>
+    <email
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="email1"
+        sling:message="E-mail address for submissions : "/>
+    <filled_positions
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="filled_position"
+        sling:message="Filled Positions"/>
+    <link
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="link1"
+        sling:message="Link(s) : "/>
+    <name_x0028_s_x0029_
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="name_s"
+        sling:message="Name(s) : "/>
+    <term
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="term"
+        sling:message="Term : "/>
+    <vacancy_for_appointment
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="vacancy_for_appointment"
+        sling:message="Vacancy for appointment"/>
+</jcr:root>

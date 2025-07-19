@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="DAW Event Calendar Renderer Dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <text1
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Text 1"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <pageTitle_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="DAW Event Calendar - or Calendrier d'événements communautaires -"
+                        fieldLabel="Page Title Text"
+                        name="./pageTitle_Text"
+                        xtype="textfield"/>
+                    <event_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Event or  Événement"
+                        fieldLabel="Event Text"
+                        name="./event_Text"
+                        xtype="textfield"/>
+                    <region_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Region or Région / Lieu"
+                        fieldLabel="Region Text"
+                        name="./region_Text"
+                        xtype="textfield"/>
+                    <organization_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Organization / Contact or  Organisation /  Personne-ressource"
+                        fieldLabel="Organization Text"
+                        name="./organization_Text"
+                        xtype="textfield"/>
+                </items>
+            </text1>
+            <text2
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Text 2"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <telephone_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Telephone or Téléphone"
+                        fieldLabel="Telephone Text"
+                        name="./telephone_Text"
+                        xtype="textfield"/>
+                    <website_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Website or Site Web"
+                        fieldLabel="Website Text"
+                        name="./website_Text"
+                        xtype="textfield"/>
+                    <date_time_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Date / Time or Date / Heure"
+                        fieldLabel="Date Time Text"
+                        name="./date_time_Text"
+                        xtype="textfield"/>
+                    <description_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Description or  Détails"
+                        fieldLabel="Description Text"
+                        name="./description_Text"
+                        xtype="textfield"/>
+                </items>
+            </text2>
+        </items>
+    </items>
+</jcr:root>

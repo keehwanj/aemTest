@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Feature Tile"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <header_text
+                jcr:primaryType="cq:Widget"
+                title="Text"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <header_text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new text."
+                        fieldLabel="Link Texts"
+                        name="./header_text"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </header_text>
+                </items>
+            </header_text>
+        </items>
+    </items>
+</jcr:root>

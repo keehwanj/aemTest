@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Custom Page Properties"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <page
+                jcr:primaryType="cq:Panel"
+                title="Page">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <description
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Will appear in the metadata tag for the description of the page."
+                        fieldLabel="Description"
+                        name="./jcr:description"
+                        xtype="textarea"/>
+                    <hidePageTitleByline
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Hide Page Title Byline"
+                        inputValue="true"
+                        name="./hidePageTitleByline"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <keywords
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Will appear in the metadata tag for the keywords of the page."
+                        fieldLabel="Keywords"
+                        name="./keywords"
+                        xtype="textarea"/>
+                    <fontColor
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}true"
+                        defaultValue="yellow"
+                        fieldLabel="Image Header Color"
+                        name="./fontColor"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Blue"
+                                value="blue"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="green"/>
+                            <home
+                                jcr:primaryType="nt:unstructured"
+                                text="Home"
+                                value="home"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="red"/>
+                            <tan
+                                jcr:primaryType="nt:unstructured"
+                                text="Tan"
+                                value="tan"/>
+                            <yellow
+                                jcr:primaryType="nt:unstructured"
+                                text="Yellow"
+                                value="yellow"/>
+                        </options>
+                    </fontColor>
+                    <hideTop
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Hide Top Part"
+                        inputValue="false"
+                        name="./hideTop"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <hideBreadcrumbs
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Hide hideBreadcrumbs"
+                        inputValue="false"
+                        name="./hideBreadcrumbs"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <hideFooter
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Hide Footer"
+                        inputValue="false"
+                        name="./hideFooter"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </page>
+            <redirect
+                jcr:primaryType="cq:Panel"
+                title="Redirect">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <redirect
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Redirect"
+                        name="./redirectTarget1"
+                        xtype="pathfield"/>
+                    <openNewWindow
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Open New Window"
+                        inputValue="false"
+                        name="./openNewWindow"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </redirect>
+        </items>
+    </items>
+</jcr:root>

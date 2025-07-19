@@ -1,0 +1,11 @@
+/*
+	/apps/gnb/components/content/dap/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+  /**START of departmentinfo**/
+
+  .dap div.RT {
+    text-align: center;
+    padding-top: 7px;
+  }
+}

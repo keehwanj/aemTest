@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:crx="http://www.day.com/crx/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:primaryType="rep:ACL">
+    <allow
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="CN=CQ5Admins,OU=IIS Security Groups,OU=GNB Corporate Services,DC=gnb,DC=ca"
+        rep:privileges="{Name}[jcr:modifyProperties,jcr:versionManagement,jcr:lockManagement]"/>
+    <allow0
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="CN=CQ5Admins,OU=IIS Security Groups,OU=GNB Corporate Services,DC=gnb,DC=ca"
+        rep:privileges="{Name}[jcr:removeNode,jcr:nodeTypeManagement,jcr:addChildNodes,jcr:removeChildNodes]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:glob="*/jcr:content*"/>
+    </allow0>
+    <allow1
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="CN=CQ5NBPLEditor,OU=IIS Security Groups,OU=GNB Corporate Services,DC=gnb,DC=ca"
+        rep:privileges="{Name}[jcr:modifyProperties,jcr:versionManagement,jcr:lockManagement]"/>
+    <allow2
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="CN=CQ5NBPLEditor,OU=IIS Security Groups,OU=GNB Corporate Services,DC=gnb,DC=ca"
+        rep:privileges="{Name}[jcr:removeNode,jcr:nodeTypeManagement,jcr:addChildNodes,jcr:removeChildNodes]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:glob="*/jcr:content*"/>
+    </allow2>
+    <allow3
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="CN=cqdoteditors,OU=IIS Security Groups,OU=GNB Corporate Services,DC=gnb,DC=ca"
+        rep:privileges="{Name}[jcr:modifyProperties,jcr:versionManagement,jcr:lockManagement]"/>
+    <allow4
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="CN=cqdoteditors,OU=IIS Security Groups,OU=GNB Corporate Services,DC=gnb,DC=ca"
+        rep:privileges="{Name}[jcr:removeNode,jcr:nodeTypeManagement,jcr:addChildNodes,jcr:removeChildNodes]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:glob="*/jcr:content*"/>
+    </allow4>
+    <allow5
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="CN=CQCTHLEditors,OU=IIS Security Groups,OU=GNB Corporate Services,DC=gnb,DC=ca"
+        rep:privileges="{Name}[crx:replicate,jcr:versionManagement,jcr:modifyProperties,jcr:lockManagement]"/>
+    <allow6
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="CN=CQCTHLEditors,OU=IIS Security Groups,OU=GNB Corporate Services,DC=gnb,DC=ca"
+        rep:privileges="{Name}[jcr:removeNode,jcr:nodeTypeManagement,jcr:addChildNodes,jcr:removeChildNodes]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:glob="*/jcr:content*"/>
+    </allow6>
+    <allow7
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="CN=CQ5-Dept-Education,OU=Information Systems,OU=ED,DC=gnb,DC=ca"
+        rep:privileges="{Name}[crx:replicate,jcr:versionManagement,jcr:modifyProperties,jcr:lockManagement]"/>
+    <allow8
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="CN=CQ5-Dept-Education,OU=Information Systems,OU=ED,DC=gnb,DC=ca"
+        rep:privileges="{Name}[jcr:removeNode,jcr:nodeTypeManagement,jcr:addChildNodes,jcr:removeChildNodes]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:glob="*/jcr:content*"/>
+    </allow8>
+    <allow9
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="CN=cqbnbeditors,OU=IIS Security Groups,OU=GNB Corporate Services,DC=gnb,DC=ca"
+        rep:privileges="{Name}[crx:replicate,jcr:versionManagement,jcr:modifyProperties,jcr:lockManagement]"/>
+    <allow10
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="CN=cqbnbeditors,OU=IIS Security Groups,OU=GNB Corporate Services,DC=gnb,DC=ca"
+        rep:privileges="{Name}[jcr:removeNode,jcr:removeChildNodes,jcr:nodeTypeManagement,jcr:addChildNodes]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:glob="*/jcr:content*"/>
+    </allow10>
+</jcr:root>

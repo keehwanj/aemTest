@@ -1,0 +1,102 @@
+/*
+apps/gnb/components/tools/pagetools/clientlibs/css/style.css
+*/
+
+.footertools .addthis_toolbox.addthis_default_style a {
+  font-size: 80%;
+  color: #555555;
+  height: 29px;
+  float: left;
+  margin-top: 8px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.pagetools .addthis_toolbox.addthis_default_style a {
+  color: #555555;
+  float: left;
+  font-size: 70%;
+  margin: 8px 2px 0;
+}
+
+.addthis_button_email span {
+  /*
+  background: url(/etc/designs/gnb-bootstrap/clientlibs/images/icon_envelope.gif) no-repeat;
+*/
+}
+
+.addthis_button_print span {
+  /*
+  background: url(/etc/designs/gnb-bootstrap/clientlibs/images/icon_print.gif) no-repeat;
+*/
+}
+
+#footertoolsRss span {
+  background: url(/etc/designs/gnb-bootstrap/clientlibs/images/icon_rss.gif) no-repeat;
+}
+
+#pagetoolsRss span {
+  background: url(/etc/designs/gnb-bootstrap/clientlibs/images/icon_rss.gif) no-repeat;
+}
+
+#styleswitcher span.smaller {
+  background: transparent url(/etc/designs/gnb-bootstrap/clientlibs/images/font_smaller.gif) repeat scroll center bottom;
+  float: left;
+  height: 21px;
+  padding: 0;
+  width: 12px;
+  text-indent: -9999px;
+}
+
+#styleswitcher span.normal {
+  background: transparent url(/etc/designs/gnb-bootstrap/clientlibs/images/font_normal_selected.gif) repeat scroll
+    center bottom;
+  float: left;
+  height: 21px;
+  padding: 0;
+  width: 16px;
+  text-indent: -9999px;
+}
+
+#styleswitcher span.bigger {
+  padding: 0;
+  background: transparent url(/etc/designs/gnb-bootstrap/clientlibs/images/font_bigger.gif) repeat scroll center bottom;
+  float: left;
+  height: 21px;
+  width: 14px;
+  text-indent: -9999px;
+}
+
+body.smaller #styleswitcher span.smaller {
+  background: transparent url(/etc/designs/gnb-bootstrap/clientlibs/images/font_smaller_selected.gif) repeat scroll
+    center bottom;
+  float: left;
+  height: 21px;
+  padding: 0;
+  width: 12px;
+}
+
+body.smaller #styleswitcher span.normal {
+  background: transparent url(/etc/designs/gnb-bootstrap/clientlibs/images/font_normal.gif) repeat scroll center bottom;
+  float: left;
+  height: 21px;
+  padding: 0;
+  width: 16px;
+}
+
+body.bigger #styleswitcher span.bigger {
+  padding: 0;
+  background: transparent url(/etc/designs/gnb-bootstrap/clientlibs/images/font_bigger_selected.gif) repeat scroll
+    center bottom;
+  float: left;
+  height: 21px;
+  width: 14px;
+}
+
+body.bigger #styleswitcher span.normal {
+  background: transparent url(/etc/designs/gnb-bootstrap/clientlibs/images/font_normal.gif) repeat scroll center bottom;
+  float: left;
+  height: 21px;
+  padding: 0;
+  width: 16px;
+}

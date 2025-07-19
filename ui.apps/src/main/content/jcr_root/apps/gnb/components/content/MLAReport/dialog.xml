@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="MLA Report"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <contactId
+            jcr:primaryType="cq:Widget"
+            fieldLabel="GNB Contact ID"
+            name="./contactId"
+            xtype="textfield"/>
+        <contactText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Contact Text"
+            name="./contactText"
+            xtype="textfield"/>
+        <departmentText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Department Text"
+            name="./departmentText"
+            xtype="textfield"/>
+    </items>
+</jcr:root>

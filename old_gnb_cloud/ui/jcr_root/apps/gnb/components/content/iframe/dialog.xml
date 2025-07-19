@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="GNB iframe component"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <resources
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Resources"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <attr_id
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="This attribute id should be unique in a webpage"
+                        fieldLabel="Attribute ID"
+                        name="./attr_id"
+                        xtype="textfield"/>
+                    <iframe_address
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="example -  http://www.gnb.ca/index.htm"
+                        fieldLabel="IFRAME address"
+                        name="./iframe_address"
+                        xtype="textfield"/>
+                </items>
+            </resources>
+        </items>
+    </items>
+</jcr:root>

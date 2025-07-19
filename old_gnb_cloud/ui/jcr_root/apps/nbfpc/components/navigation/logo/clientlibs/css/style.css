@@ -1,0 +1,20 @@
+/**START of /apps/nbpc-cpnb/components/navigation/logo/clientlibs/css/style.css**/
+#logoImg {
+    margin:0;
+    padding:0;
+    width: 315px;
+    height: 105px;
+    }
+#logo_area{
+    float:left;
+    margin:20px 0 0 30px;
+    width:150px;
+    height:70px;
+    cursor:pointer;
+}
+/**END of logo.css**/
+
+a[href]:after {
+	content:none;                    
+}
+/**END of /apps/nbpc-cpnb/components/navigation/logo/clientlibs/css/style.css**/

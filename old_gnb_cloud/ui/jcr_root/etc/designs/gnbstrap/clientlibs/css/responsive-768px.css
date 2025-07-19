@@ -1,0 +1,38 @@
+/*
+	START /etc/designs/wcatfluid-bootstrap/clientlibs/css/responsive-767px-max.css
+*/
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+
+	.display-1 {
+        font-size: 5.333em;
+    }
+
+    .navbar {
+        height: 70px;
+        padding: 0em 1.5em 0em 1.25em;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .navbar .link {
+        height: 70px;
+        line-height: 70px;
+    }
+
+    .wrapper-green ol.breadcrumb {
+        font-size: 16px;
+    }
+
+}
+
+/*
+	END /etc/designs/wcatfluid-bootstrap/clientlibs/css/responsive-767px-max.css
+*/

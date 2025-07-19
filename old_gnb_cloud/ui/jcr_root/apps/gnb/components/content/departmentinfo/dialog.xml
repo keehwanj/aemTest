@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Department Info"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <orgId
+            jcr:primaryType="cq:Widget"
+            fieldLabel="GNB Org ID"
+            name="./orgId"
+            xtype="textfield"/>
+        <contactsText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Contacts Text"
+            name="./contactText"
+            xtype="textfield"/>
+        <structureText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Structure Text"
+            name="./structureText"
+            xtype="textfield"/>
+        <mandatesText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="mMandates Text"
+            name="./mandatesText"
+            xtype="textfield"/>
+        <officesText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Offices Text"
+            name="./officesText"
+            xtype="textfield"/>
+        <servicesText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Services Text"
+            name="./servicesText"
+            xtype="textfield"/>
+        <mandateText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Mandate Text"
+            name="./mandateText"
+            xtype="textfield"/>
+        <mandateTitle
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Mandate Title"
+            name="./mandateTitle"
+            xtype="textfield"/>
+        <mandateSubtitle
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Mandate Subtitle"
+            name="./mandateSubtitle"
+            xtype="textfield"/>
+        <clickToExpandText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Click To Expand Text"
+            name="./clickToExpandText"
+            xtype="textfield"/>
+        <clickToCollapseText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Click To Collapse Text"
+            name="./clickToCollapseText"
+            xtype="textfield"/>
+        <locationText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Location Text"
+            name="./locationText"
+            xtype="textfield"/>
+        <getDirectionsText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Get Directions Text"
+            name="./getDirectionsText"
+            xtype="textfield"/>
+        <generalInformationText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="General Information Text"
+            name="./generalInformationText"
+            xtype="textfield"/>
+        <tollfreeText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Tollfree Text"
+            name="./tollfreeText"
+            xtype="textfield"/>
+        <receptionText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Reception Text"
+            name="./receptionText"
+            xtype="textfield"/>
+        <faxText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Fax Text"
+            name="./faxText"
+            xtype="textfield"/>
+        <otherText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Other Text"
+            name="./otherText"
+            xtype="textfield"/>
+        <emailText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Email Text"
+            name="./emailText"
+            xtype="textfield"/>
+        <mediaContactText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Media Contact Text"
+            name="./mediaContactText"
+            xtype="textfield"/>
+        <mailingText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Mailing Text"
+            name="./mailingText"
+            xtype="textfield"/>
+        <toggleViewText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Toggle View Text"
+            name="./toggleViewText"
+            xtype="textfield"/>
+        <toggleOfficeViewText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Toggle Office View Text"
+            name="./toggleOfficeViewText"
+            xtype="textfield"/>
+        <contactList
+            jcr:primaryType="cq:Widget"
+            fieldDescription="/content/gnb/en/contacts/communicationsContact&#xa;OR &#xa;/content/gnb/fr/contacts/communicationsContact"
+            fieldLabel="Communications Contacts Page"
+            name="./contactList"
+            xtype="pathfield"/>
+    </items>
+</jcr:root>

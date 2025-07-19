@@ -1,0 +1,10 @@
+/*
+	/apps/snb/components/search/auto_new_servicesearchinput/clientlibs/css/responsive-767px-max.css
+ */
+/* phone landscape */
+@media (max-width: 767px) {
+  div.front-service-search {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}

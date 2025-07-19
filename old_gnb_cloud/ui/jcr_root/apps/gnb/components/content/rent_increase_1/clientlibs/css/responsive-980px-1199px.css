@@ -1,0 +1,26 @@
+/*
+	/apps/gnb/components/content/pac/clientlibs/css/responsive-980px-1199px.css
+*/
+/* iPad Landscape */
+@media (min-width: 980px) and (max-width: 1199px) {
+
+.pac_collapse div.RT {
+    text-align: center;
+	padding-top: 7px;        
+}
+
+.pac_collapse .textRight{
+	text-align: right;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.pac_collapse .textLeft{
+	text-align: left;
+}
+
+.pac_collapse .textCenter{
+	text-align: center;
+}
+
+}

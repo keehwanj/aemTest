@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    cq:lastReplicated="{Date}2013-12-16T22:22:41.387-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:language="fr"
+    jcr:mixinTypes="[cq:ReplicationStatus,mix:language]"
+    jcr:primaryType="sling:Folder">
+    <constituencyOffice
+        cq:lastReplicated="{Date}2013-12-16T22:22:42.136-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="constituencyOffice"
+        sling:message="Bureau de circonscription"/>
+    <email
+        cq:lastReplicated="{Date}2013-12-16T22:22:42.916-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="email"
+        sling:message="Courriel : "/>
+    <govOrParl
+        cq:lastReplicated="{Date}2013-12-16T22:22:43.010-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="govOrPal"
+        sling:message="Parlementaire"/>
+    <mailingAddress
+        cq:lastReplicated="{Date}2013-12-16T22:22:43.696-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="mailingAddress"
+        sling:message="Adresse postale"/>
+    <publishedAddress
+        cq:lastReplicated="{Date}2013-12-16T22:22:43.821-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="publishedAddress"
+        sling:message="Adresse de voirie"/>
+    <reception
+        cq:lastReplicated="{Date}2013-12-16T22:22:44.772-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="reception"
+        sling:message="Accueil :"/>
+</jcr:root>

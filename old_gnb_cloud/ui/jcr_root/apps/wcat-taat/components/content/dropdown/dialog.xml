@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="nt:unstructured"
+        title="List"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Widget"
+                border="false"
+                height=""
+                title="General"
+                width=""
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <optionText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="select Text"
+                        name="./optionText"
+                        xtype="textfield"/>
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        defaultValue="Title"
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <gtm_value
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Google Tag Manager value"
+                        name="./gtm_value"
+                        xtype="textfield"/>
+                </items>
+            </general>
+            <url
+                jcr:primaryType="cq:Widget"
+                title="URL"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <url
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new URL."
+                        fieldLabel="URL"
+                        name="./url"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="pathfield"/>
+                    </url>
+                </items>
+            </url>
+            <urlTitle
+                jcr:primaryType="cq:Widget"
+                title="URL Title"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <urlTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new text."
+                        fieldLabel="Link Texts"
+                        name="./urlTitle"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </urlTitle>
+                </items>
+            </urlTitle>
+            <open
+                jcr:primaryType="cq:Widget"
+                title="Target"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <open
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' and type one of the following:  _self, _blank, _parent or  _top in the blank field."
+                        fieldLabel="Target"
+                        name="./open"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </open>
+                </items>
+            </open>
+        </items>
+    </items>
+</jcr:root>

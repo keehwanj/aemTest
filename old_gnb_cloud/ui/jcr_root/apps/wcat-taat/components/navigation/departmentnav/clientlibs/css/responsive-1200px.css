@@ -1,0 +1,53 @@
+/*
+	START of /apps/wcat-taat/components/navigation/departmentnav/clientlibs/css/responsive-1200px.css
+*/
+@media (min-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+ #header {
+   width: 950px;
+ }
+
+/**START of remove space of row**/
+div#main_content_wrapper div.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+div#main_content_wrapper footer.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+/**END of remove space of row**/
+
+
+
+/*START of Department Navigation*/
+ul#departmentNav.nav.navbar-nav{
+	font-size: 120%;
+}
+/*END of Department Navigation*/
+
+
+.departmentnav .navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/*START of Department navigation*/
+ul#departmentNav.nav.navbar-nav{
+	font-size: 120%;
+}
+/*END of Department navigation*/
+
+.departmentnav .navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+}
+/*
+	END of /apps/wcat-taat/components/navigation/departmentnav/clientlibs/css/responsive-1200px.css
+*/

@@ -1,0 +1,85 @@
+/*
+ ADOBE CONFIDENTIAL
+ __________________
+
+  Copyright 2012 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+
+	mediainfo.css
+ */
+/**START of mediainfo.css**/
+#md_dept, #md_content { 
+    float:left;
+    /*font: 100% Arial, Helvetica, sans-serif;   */
+
+}
+
+#main_content_wrapper h3 {
+    color: black;
+    font-size: 105%;
+    font-weight: normal;
+    margin: 0 0 0 5px;
+}
+
+#metadata .metadata_right .related_box .related_header {
+    height: 29px;
+    background-image: url("/etc/designs/vnbw-bootstrap/clientlibs/images/header_multimedia.gif");
+    margin: 20px 0 15px;
+    padding: 0;
+}
+
+#metadata .metadata_right .related_box .related_header h3 {
+    margin-left: 10px;
+    line-height: 29px;
+}
+
+#md_video, #md_audio, #md_newsRelease, #md_presentation {
+  font-size:90%;
+  margin: 10px 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+#metadata .metadata_right .related_box {
+    background-color: #F5F5F5;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+#md_mPhoto{
+    font-size:90%;
+    margin: 5px 0px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D3D3D3;
+    width:100%;
+}
+
+#md_newDate, #md_dept {
+    margin: 0 0 10px 0;
+    float: left;
+    font-size: 90%;
+    color: #636363;
+}
+#md_link {
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    float: left;
+    font-size: 115%;
+}
+
+#md_content {
+    float:left;
+    font-size:90%;
+    color: #000000;
+    }
+/**END of mediainfo.css**/

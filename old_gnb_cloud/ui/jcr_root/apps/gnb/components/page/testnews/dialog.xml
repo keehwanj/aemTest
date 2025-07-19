@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="800"
+    title="GNb Configuration"
+    width="750"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Panel"
+                title="General Resources">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <liveWebcastOriginal
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Live Webcast Orginal"
+                        name="./liveWebcastOriginal"
+                        title=""
+                        xtype="textfield"/>
+                    <serviceDataPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Service Data Parent"
+                        name="./serviceDataPage"
+                        title=""
+                        xtype="pathfield"/>
+                    <departmentTagData
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Department Tag Data"
+                        name="./departmentTagData"
+                        title=""
+                        xtype="textfield"/>
+                    <contactDataPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Contact Data Parent"
+                        name="./contactDataPage"
+                        title=""
+                        xtype="pathfield"/>
+                    <organisationDataPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Organisation Data Parent"
+                        name="./organisationDataPage"
+                        title=""
+                        xtype="pathfield"/>
+                    <mmDataPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Multimedia Data Parent"
+                        name="./mmDataPage"
+                        title=""
+                        xtype="pathfield"/>
+                    <newsArticleDataPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="News Article Data Parent"
+                        name="./newsArticleDataPage"
+                        title=""
+                        xtype="pathfield"/>
+                    <publicAlertDataPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Public Alert Data Parent"
+                        name="./publicAlertDataPage"
+                        title=""
+                        xtype="pathfield"/>
+                    <mediaAdvisoryDataPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Media Advisory Data Parent"
+                        name="./mediaAdvisoryDataPage"
+                        title=""
+                        xtype="pathfield"/>
+                </items>
+            </general>
+            <english
+                jcr:primaryType="cq:Panel"
+                title="English Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <departmentsPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Departments Page"
+                        name="./departmentsPage_en"
+                        title=""
+                        xtype="pathfield"/>
+                    <liveWebcastInterpreted
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Live Webcast Interpreted"
+                        name="./liveWebcastInterpreted_en"
+                        title=""
+                        xtype="textfield"/>
+                    <genericRendererBasePage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Generic Renderer Base Page"
+                        name="./genericRendererBasePage_en"
+                        title=""
+                        xtype="pathfield"/>
+                    <serviceRendererPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Service Renderer Page"
+                        name="./serviceRendererPage_en"
+                        title=""
+                        xtype="textfield"/>
+                    <contactRendererPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Contact Renderer Page"
+                        name="./contactRendererPage_en"
+                        title=""
+                        xtype="textfield"/>
+                    <organisationRendererPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Organisation Renderer Page"
+                        name="./organisationRendererPage_en"
+                        title=""
+                        xtype="textfield"/>
+                    <mmRendererPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Multimedia Renderer Page"
+                        name="./mmRendererPage_en"
+                        title=""
+                        xtype="textfield"/>
+                    <newsArticleRendererPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="News Article Renderer Page"
+                        name="./newsArticleRendererPage_en"
+                        title=""
+                        xtype="textfield"/>
+                    <publicAlertRendererPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Public Alert Renderer Page"
+                        name="./publicAlertRendererPage_en"
+                        title=""
+                        xtype="textfield"/>
+                    <mediaAdvisoryRendererPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Media Advisory Renderer Page"
+                        name="./mediaAdvisoryRendererPage_en"
+                        title=""
+                        xtype="textfield"/>
+                    <organizationTagData_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Organization Tag Data"
+                        name="./organizationTagData_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_1_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="New Brunswick Liquor Corporation"
+                        name="./org_1_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_137_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Agriculture, Aquaculture and Fisheries"
+                        name="./org_137_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_139_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Environment and Local Government"
+                        name="./org_139_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_140_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Social Development"
+                        name="./org_140_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_141_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Health"
+                        name="./org_141_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_143_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Tourism, Heritage and Culture"
+                        name="./org_143_en"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <org_144_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Justice and Public Safety "
+                        name="./org_144_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_145_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Post-Secondary Education, Training and Labour"
+                        name="./org_145_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_147_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Finance"
+                        name="./org_147_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_149_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Transportation and Infrastructure"
+                        name="./org_149_en"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <org_151_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Education and Early Childhood Development"
+                        name="./org_151_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_152_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Council of Atlantic Premiers' Secretariat"
+                        name="./org_152_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_153_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Executive Council Office"
+                        name="./org_153_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_158_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Energy and Utilities Board"
+                        name="./org_158_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_159_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="New Brunswick Investment Management Corporation"
+                        name="./org_159_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_160_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="New Brunswick Police Commission"
+                        name="./org_160_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_161_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="NB Power"
+                        name="./org_161_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_162_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="NB Research and Productivity Council"
+                        name="./org_162_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_163_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Auditor General of New Brunswick"
+                        name="./org_163_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_164_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Elections New Brunswick"
+                        name="./org_164_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_166_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Lieutenant-Governor"
+                        name="./org_166_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_167_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Ombudsman"
+                        name="./org_167_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_168_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Premier"
+                        name="./org_168_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_170_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Premier's Council on the Status of Disabled Persons"
+                        name="./org_170_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_172_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Regional Development Corporation"
+                        name="./org_172_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_173_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Service New Brunswick"
+                        name="./org_173_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_174_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="WorkSafeNB"
+                        name="./org_174_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_176_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Labour and Employment Board"
+                        name="./org_176_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_604_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Energy and Resource Development"
+                        name="./org_604_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_3859_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Organizations, Associations (Non Governmental)"
+                        name="./org_3859_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_4004_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Federal Government"
+                        name="./org_4004_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_4450_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Francophonie"
+                        name="./org_4450_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_6123_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="New Brunswick Human Rights Commission"
+                        name="./org_6123_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_9263_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Commissioner of Official Languages for NB"
+                        name="./org_9263_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_11923_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Financial and Consumer Services Commission"
+                        name="./org_11923_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_13863_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Consumer Advocate for Insurance"
+                        name="./org_13863_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_19383_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Right to Information and Protection of Personal Information Task Force"
+                        name="./org_19383_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_95650_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Economic Development and Small Business"
+                        name="./org_95650_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201112_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Collège communautaire du Nouveau-Brunswick"
+                        name="./org_201112_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201113_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="New Brunswick Community College"
+                        name="./org_201113_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201145_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Access to Information and Privacy Commissioner"
+                        name="./org_201145_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201148_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Economic and Social Inclusion Corporation"
+                        name="./org_201148_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201262_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Child and Youth Advocate "
+                        name="./org_201262_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201264_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Opportunities NB"
+                        name="./org_201264_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201370_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Maritime Provinces Higher Education Commission"
+                        name="./org_201370_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201479_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Rural Affairs"
+                        name="./org_201479_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201505_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Treasury Board"
+                        name="./org_201505_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201556_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="New Brunswick Legal Aid Services Commission"
+                        name="./org_201556_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201794_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Attorney General"
+                        name="./org_201794_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201925_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="New Brunswick Women's Council"
+                        name="./org_201925_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201936_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Legislative Assembly"
+                        name="./org_201936_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_202098_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Workers’ Compensation Appeals Tribunal"
+                        name="./org_202098_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_202233_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Aboriginal Affairs Secretariat"
+                        name="./org_202233_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_202447_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Education and New Economy Fund"
+                        name="./org_202447_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_202449_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Innovation"
+                        name="./org_202449_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_202453_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Military Affairs"
+                        name="./org_202453_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_202455_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Literacy"
+                        name="./org_202455_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_202525_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Vestcor Pension Services Corporation"
+                        name="./org_202525_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_snb_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="SNB for HOME"
+                        name="./org_snb_en"
+                        title=""
+                        xtype="textfield"/>
+                    <org_myid_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="MyID for HOME"
+                        name="./org_myid_en"
+                        title=""
+                        xtype="textfield"/>
+                    <wel_bien_en
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Wel Bien(immigration)"
+                        name="./wel_bien_en"
+                        title=""
+                        xtype="textfield"/>
+                </items>
+            </english>
+            <french
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="French Configuration"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <departmentsPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Departments Page"
+                        name="./departmentsPage_fr"
+                        title=""
+                        xtype="pathfield"/>
+                    <liveWebcastInterpreted
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Live Webcast Interpreted"
+                        name="./liveWebcastInterpreted_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <genericRendererBasePage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Generic Renderer Base Page"
+                        name="./genericRendererBasePage_fr"
+                        title=""
+                        xtype="pathfield"/>
+                    <serviceRendererPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Service Renderer Page"
+                        name="./serviceRendererPage_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <contactRendererPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Contact Renderer Page"
+                        name="./contactRendererPage_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <organisationRendererPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Organisation Renderer Page"
+                        name="./organisationRendererPage_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <mmRendererPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Multimedia Renderer Page"
+                        name="./mmRendererPage_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <newsArticleRendererPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="News Article Renderer Page"
+                        name="./newsArticleRendererPage_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <publicAlertRendererPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Public Alert Renderer Page"
+                        name="./publicAlertRendererPage_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <mediaAdvisoryRendererPage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Media Advisory Renderer Page"
+                        name="./mediaAdvisoryRendererPage_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <organizationTagData_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Données d'Etiquette de organization"
+                        name="./organizationTagData_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_1_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="New Brunswick Liquor Corporation"
+                        name="./org_1_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_137_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Agriculture, Aquaculture and Fisheries"
+                        name="./org_137_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_139_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Environment and Local Government "
+                        name="./org_139_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_140_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Social Development Page"
+                        name="./org_140_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_141_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Health"
+                        name="./org_141_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_143_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Tourism, Heritage and Culture"
+                        name="./org_143_fr"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <org_144_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Justice and Public Safety "
+                        name="./org_144_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_145_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Post-Secondary Education, Training and Labour"
+                        name="./org_145_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_147_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Finance"
+                        name="./org_147_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_149_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Transportation and Infrastructure"
+                        name="./org_149_fr"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <org_151_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Education and Early Childhood Development"
+                        name="./org_151_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_152_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Council of Atlantic Premiers' Secretariat"
+                        name="./org_152_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_153_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Executive Council Office"
+                        name="./org_153_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_158_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Energy and Utilities Board"
+                        name="./org_158_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_159_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="New Brunswick Investment Management Corporation"
+                        name="./org_159_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_160_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="New Brunswick Police Commission"
+                        name="./org_160_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_161_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="NB Power"
+                        name="./org_161_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_162_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="NB Research and Productivity Council"
+                        name="./org_162_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_163_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Auditor General of New Brunswick"
+                        name="./org_163_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_164_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Elections New Brunswick"
+                        name="./org_164_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_166_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Lieutenant-Governor"
+                        name="./org_166_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_167_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Ombudsman"
+                        name="./org_167_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_168_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Premier"
+                        name="./org_168_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_170_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Premier's Council on the Status of Disabled Persons"
+                        name="./org_170_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_172_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Regional Development Corporation"
+                        name="./org_172_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_173_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Service New Brunswick"
+                        name="./org_173_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_174_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="WorkSafeNB"
+                        name="./org_174_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_176_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Labour and Employment Board"
+                        name="./org_176_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_604_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Energy and Resource Development"
+                        name="./org_604_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_3859_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Organizations, Associations (Non Governmental)"
+                        name="./org_3859_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_4004_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Federal Government"
+                        name="./org_4004_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_4450_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Francophonie"
+                        name="./org_4450_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_6123_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="New Brunswick Human Rights Commission"
+                        name="./org_6123_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_9263_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Commissioner of Official Languages for NB"
+                        name="./org_9263_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_11923_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Financial and Consumer Services Commission"
+                        name="./org_11923_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_13863_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Consumer Advocate for Insurance"
+                        name="./org_13863_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_19383_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Right to Information and Protection of Personal Information Task Force"
+                        name="./org_19383_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_95650_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Economic Development and Small Business"
+                        name="./org_95650_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201112_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Collège communautaire du Nouveau-Brunswick"
+                        name="./org_201112_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201113_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="New Brunswick Community College"
+                        name="./org_201113_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201145_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Access to Information and Privacy Commissioner"
+                        name="./org_201145_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201148_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Economic and Social Inclusion Corporation"
+                        name="./org_201148_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201262_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Child and Youth Advocate "
+                        name="./org_201262_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201264_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Opportunities NB"
+                        name="./org_201264_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201370_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Maritime Provinces Higher Education Commission"
+                        name="./org_201370_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201479_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Rural Affairs"
+                        name="./org_201479_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201505_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Treasury Board"
+                        name="./org_201505_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201556_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="New Brunswick Legal Aid Services Commission"
+                        name="./org_201556_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201794_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Office of the Attorney General"
+                        name="./org_201794_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_201936_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Legislative Assembly"
+                        name="./org_201936_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_202098_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Workers’ Compensation Appeals Tribunal"
+                        name="./org_202098_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_202233_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Aboriginal Affairs Secretariat"
+                        name="./org_202233_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_202447_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Education and New Economy Fund"
+                        name="./org_202447_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_202449_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Innovation"
+                        name="./org_202449_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_202453_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Military Affairs"
+                        name="./org_202453_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_202455_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Literacy"
+                        name="./org_202455_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_202525_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Vestcor Pension Services Corporation"
+                        name="./org_202525_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_snb_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="SNB for HOME"
+                        name="./org_snb_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <org_myid_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="MyID for HOME"
+                        name="./org_myid_fr"
+                        title=""
+                        xtype="textfield"/>
+                    <wel_bien_fr
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Wel Bien(immigration)"
+                        name="./wel_bien_fr"
+                        title=""
+                        xtype="textfield"/>
+                </items>
+            </french>
+        </items>
+    </items>
+</jcr:root>

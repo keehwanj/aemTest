@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Widget"
+    cropParameter="./thumb/imageCrop"
+    ddGroups="[media]"
+    fileNameParameter="./thumb/fileName"
+    fileReferenceParameter="./thumb/fileReference"
+    mapParameter="./thumb/imageMap"
+    name="./thumb/file"
+    requestSuffix="/thumb.img.png"
+    rotateParameter="./thumb/imageRotate"
+    sizeLimit="100"
+    title="Thumbnail"
+    uploadUrl="/tmp/upload_test/*"
+    xtype="smartimage"/>

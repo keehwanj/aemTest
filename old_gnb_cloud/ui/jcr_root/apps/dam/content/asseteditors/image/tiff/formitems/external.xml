@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Widget"
+    fieldLabel="External"
+    name="./dam:external"
+    xtype="selection">
+    <options jcr:primaryType="cq:WidgetCollection">
+        <no
+            jcr:primaryType="nt:unstructured"
+            text="False"
+            value="false"/>
+        <yes
+            jcr:primaryType="nt:unstructured"
+            text="True"
+            value="true"/>
+    </options>
+</jcr:root>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Site Footer"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Settings">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <searchbutton_g
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Search Button"
+                        name="./searchbutton_g"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <searchheader_g
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Search Header"
+                        name="./searchheader_g"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <inputkeyword_g
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Input Keyword"
+                        name="./inputkeyword_g"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <path_g
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Search Renderer Path"
+                        name="./path_g"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <hidetitle_g
+                        jcr:primaryType="cq:Widget"
+                        allowEmpty="false"
+                        fieldLabel="Hide Title?"
+                        name="./hidetitle_g"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="True"
+                                value="true"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="False"
+                                value="false"/>
+                        </options>
+                    </hidetitle_g>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,31 @@
+/**
+*START
+*/etc/designs/oic-bootstrap/clientlibs/css/responsive-480px.css
+**/
+@media (max-width: 480px) {
+
+    /* IE10 Metro Snap View */
+@-ms-viewport { width: device-width; }
+	body {
+		min-width: 320px;
+	}
+
+#globalnav ul {
+    height: 30px !important;
+}
+
+
+/*START of page title font*/
+.pageHeader h1 {
+  color:black;
+  font-size:130%;
+  font-weight:normal;
+  margin:0;
+}
+/*END of page title font*/
+
+}
+
+/**
+END of /etc/designs/oic-bootstrap/clientlibs/css/responsive-480px.css
+**/

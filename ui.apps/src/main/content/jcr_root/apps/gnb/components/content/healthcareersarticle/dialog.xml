@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Health Careers Article Dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <resources
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Text Resources"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <exiting_field_work_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : An Exciting Field of Work or Un travail passionnant"
+                        fieldLabel="An Exciting Field of Work"
+                        name="./exiting_field_work_Text"
+                        xtype="textfield"/>
+                    <personal_characteristics_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Personal Characteristics / Caractéristiques personnelles et aptitudes"
+                        fieldLabel="Personal Characteristics / Skills"
+                        name="./personal_characteristics_Text"
+                        xtype="textfield"/>
+                    <education_training_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Education and Training or Éducation et formation"
+                        fieldLabel="Education and Training"
+                        name="./education_training_Text"
+                        xtype="textfield"/>
+                    <education_program_offered_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Education program offered in New Brunswick or Programmes d’études offerts au Nouveau-Brunswick"
+                        fieldLabel="Education program offered in New Brunswick"
+                        name="./education_program_offered_Text"
+                        xtype="textfield"/>
+                    <length_study_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Education program offered in New Brunswick or Durée des études ou de la formation"
+                        fieldLabel="Education program offered in New Brunswick"
+                        name="./length_study_Text"
+                        xtype="textfield"/>
+                    <licence_certification_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Licence and certification or Permis d’exercice et accréditation"
+                        fieldLabel="Licence and certification"
+                        name="./licence_certification_Text"
+                        xtype="textfield"/>
+                    <helpful_hs_courses_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Helpful High School Courses or Études secondaires pertinentes"
+                        fieldLabel="Helpful High School Courses"
+                        name="./helpful_hs_courses_Text"
+                        xtype="textfield"/>
+                    <working_conditions_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Employment and Common Working Conditions or Emploi et conditions de travail habituelles"
+                        fieldLabel="Employment and Common Working Conditions"
+                        name="./working_conditions_Text"
+                        xtype="textfield"/>
+                    <employment_prospects_Text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default : Employment Prospects or Perspectives d’emploi"
+                        fieldLabel="Employment Prospects"
+                        name="./employment_prospects_Text"
+                        xtype="textfield"/>
+                </items>
+            </resources>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="List"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="cq:Widget"
+            title="General Options"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listStyle
+                    jcr:primaryType="cq:Widget"
+                    allowEmpty="true"
+                    fieldLabel="List Style"
+                    name="./listStyle"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <greyarrow
+                            jcr:primaryType="nt:unstructured"
+                            text="Grey (with arrow)"
+                            value="greyarrow"/>
+                        <bluearrow
+                            jcr:primaryType="nt:unstructured"
+                            text="Blue (with arrow)"
+                            value="bluearrow"/>
+                        <footer
+                            jcr:primaryType="nt:unstructured"
+                            text="Unstyled"
+                            value="unstyled"/>
+                    </options>
+                </listStyle>
+                <moreText
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="More Link Text"
+                    name="./moreLinkText"
+                    xtype="textfield"/>
+                <moreLink
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="More Link"
+                    name="./moreLink"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <padded9
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Boolean}false"
+                    fieldLabel="Padded"
+                    name="./padded"
+                    type="checkbox"
+                    xtype="selection"/>
+                <shaded10
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Boolean}false"
+                    fieldLabel="Shaded"
+                    name="./shaded"
+                    type="checkbox"
+                    xtype="selection"/>
+                <border
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Boolean}false"
+                    fieldLabel="Show Bottom Border"
+                    name="./border"
+                    type="checkbox"
+                    xtype="selection"/>
+                <feeddescription
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="RSS Feed Description"
+                    name="./feeddescription"
+                    validateOnBlur="true"
+                    xtype="textarea"/>
+                <feedname
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="RSS Feed Name"
+                    name="./feedname"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <feedEnabled
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Boolean}false"
+                    fieldLabel="Enable Feed"
+                    name="./feedEnabled"
+                    type="checkbox"
+                    xtype="selection"/>
+                <reverseOrder
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Boolean}false"
+                    fieldLabel="Display Reverse Order"
+                    name="./reverseOrder"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </general>
+        <list1
+            jcr:primaryType="cq:Widget"
+            title="List 1-7"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <link1
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 1"
+                    name="./link1"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link1text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 1 Text"
+                    name="./linktext1"
+                    xtype="textfield"/>
+                <link2
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 2"
+                    name="./link2"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link2text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 2 Text"
+                    name="./linktext2"
+                    xtype="textfield"/>
+                <link3
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 3"
+                    name="./link3"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link3text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 3 Text"
+                    name="./linktext3"
+                    xtype="textfield"/>
+                <link4
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 4"
+                    name="./link4"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link4text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 4 Text"
+                    name="./linktext4"
+                    xtype="textfield"/>
+                <link5
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 5"
+                    name="./link5"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link5text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 5 Text"
+                    name="./linktext5"
+                    xtype="textfield"/>
+                <link6
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 6"
+                    name="./link6"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link6text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 6 Text"
+                    name="./linktext6"
+                    xtype="textfield"/>
+                <link7
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 7"
+                    name="./link7"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link7text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 7 Text"
+                    name="./linktext7"
+                    xtype="textfield"/>
+            </items>
+        </list1>
+        <list2
+            jcr:primaryType="cq:Widget"
+            title="List 8-14"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <link8
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 8"
+                    name="./link8"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link8text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 8 Text"
+                    name="./linktext8"
+                    xtype="textfield"/>
+                <link9
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 9"
+                    name="./link9"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link9text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 9 Text"
+                    name="./linktext9"
+                    xtype="textfield"/>
+                <link10
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 10"
+                    name="./link10"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link10text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 10 Text"
+                    name="./linktext10"
+                    xtype="textfield"/>
+                <link11
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 11"
+                    name="./link11"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link11text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 11 Text"
+                    name="./linktext11"
+                    xtype="textfield"/>
+                <link12
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 12"
+                    name="./link12"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link12text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 12 Text"
+                    name="./linktext12"
+                    xtype="textfield"/>
+                <link13
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 13"
+                    name="./link13"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link13text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 13 Text"
+                    name="./linktext13"
+                    xtype="textfield"/>
+                <link14
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 14"
+                    name="./link14"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link14text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 14 Text"
+                    name="./linktext14"
+                    xtype="textfield"/>
+            </items>
+        </list2>
+        <list3
+            jcr:primaryType="cq:Widget"
+            title="List 15-21"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <link15
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 15"
+                    name="./link15"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link15text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 15 Text"
+                    name="./linktext15"
+                    xtype="textfield"/>
+                <link16
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 16"
+                    name="./link16"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link16text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 16 Text"
+                    name="./linktext16"
+                    xtype="textfield"/>
+                <link17
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 17"
+                    name="./link17"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link17text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 17 Text"
+                    name="./linktext17"
+                    xtype="textfield"/>
+                <link18
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 18"
+                    name="./link18"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link18text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 18 Text"
+                    name="./linktext18"
+                    xtype="textfield"/>
+                <link19
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 19"
+                    name="./link19"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link19text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 19 Text"
+                    name="./linktext19"
+                    xtype="textfield"/>
+                <link20
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 20"
+                    name="./link20"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link20text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 20 Text"
+                    name="./linktext20"
+                    xtype="textfield"/>
+                <link21
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Link 21"
+                    name="./link21"
+                    validateOnBlur="true"
+                    xtype="pathfield"/>
+                <link21text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link 21 Text"
+                    name="./linktext21"
+                    xtype="textfield"/>
+            </items>
+        </list3>
+    </items>
+</jcr:root>

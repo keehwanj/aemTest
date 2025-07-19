@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="en"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <header_address
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="header_address"
+        sling:message="Mailing Address"/>
+    <header_contact
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="header_contact"
+        sling:message="Contact"/>
+    <header_facility
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="header_facility"
+        sling:message="Facility"/>
+    <header_language
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="header_language"
+        sling:message="Language"/>
+    <header_maximum
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="header_maximum"
+        sling:message="Approved Spaces"/>
+    <header_phone
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="header_phone"
+        sling:message="Phone"/>
+    <header_region
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="header_region"
+        sling:message="Region"/>
+</jcr:root>

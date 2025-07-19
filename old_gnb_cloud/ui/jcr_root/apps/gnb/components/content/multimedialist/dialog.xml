@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','children','static','search','querybuilder'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i!=tabs.length-1;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="List"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <generaltab
+            jcr:primaryType="cq:Widget"
+            title="General"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <showtabs
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Boolean}false"
+                    fieldLabel="ShowTab Bar"
+                    name="./showtabs"
+                    type="checkbox"
+                    xtype="selection"/>
+                <morelink
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Read More Link"
+                    name="./morelink"
+                    xtype="pathfield"/>
+                <moretext
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Read More Text"
+                    name="./moretext"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <feedname
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="RSS Feed Name"
+                    name="./feedname"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <feeddescription
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="RSS Feed Description"
+                    name="./feeddescription"
+                    validateOnBlur="true"
+                    xtype="textarea"/>
+                <feedEnabled
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Boolean}false"
+                    fieldLabel="Enable Feed"
+                    name="./feedEnabled"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </generaltab>
+        <tab1
+            jcr:primaryType="cq:Widget"
+            title="Tab 1"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tabname
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Tab Name"
+                    name="./tabname1"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <savedquery
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Querybuilder predicate notation"
+                    height="250"
+                    name="./savedquery1"
+                    xtype="textarea"/>
+                <querylimit
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Limit Results To"
+                    name="./querylimit1"
+                    validateOnBlur="true"
+                    xtype="numberfield"/>
+                <descriptionlimit
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Limit Description To"
+                    name="./descriptionlimit1"
+                    validateOnBlur="true"
+                    xtype="numberfield"/>
+                <readmore
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Read More Text"
+                    name="./readmore1"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <alternatedisplay
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Boolean}false"
+                    fieldLabel="Wide Display"
+                    name="./alternatedisplay1"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </tab1>
+        <tab2
+            jcr:primaryType="cq:Widget"
+            title="Tab 2"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tabname
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Tab Name"
+                    name="./tabname2"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <savedquery
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Querybuilder predicate notation"
+                    height="250"
+                    name="./savedquery2"
+                    xtype="textarea"/>
+                <querylimit
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Limit Results To"
+                    name="./querylimit2"
+                    validateOnBlur="true"
+                    xtype="numberfield"/>
+                <descriptionlimit
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Limit Description To"
+                    name="./descriptionlimit2"
+                    validateOnBlur="true"
+                    xtype="numberfield"/>
+                <readmore
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Read More Text"
+                    name="./readmore2"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <alternatedisplay
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Boolean}false"
+                    fieldLabel="Wide Display"
+                    name="./alternatedisplay2"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </tab2>
+        <tab3
+            jcr:primaryType="cq:Widget"
+            title="Tab 3"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tabname3
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Tab Name"
+                    name="./tabname3"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <savedquery3
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Querybuilder predicate notation"
+                    height="250"
+                    name="./savedquery3"
+                    xtype="textarea"/>
+                <querylimit3
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Limit Results To"
+                    name="./querylimit3"
+                    validateOnBlur="true"
+                    xtype="numberfield"/>
+                <descriptionlimit3
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Limit Description To"
+                    name="./descriptionlimit3"
+                    validateOnBlur="true"
+                    xtype="numberfield"/>
+                <readmore3
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Read More Text"
+                    name="./readmore3"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <alternatedisplay3
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Boolean}false"
+                    fieldLabel="Wide Display"
+                    name="./alternatedisplay3"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </tab3>
+        <tab4
+            jcr:primaryType="cq:Widget"
+            title="Tab 4"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tabname4
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Tab Name"
+                    name="./tabname4"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <savedquery4
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Querybuilder predicate notation"
+                    height="250"
+                    name="./savedquery4"
+                    xtype="textarea"/>
+                <querylimit4
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Limit Results To"
+                    name="./querylimit4"
+                    validateOnBlur="true"
+                    xtype="numberfield"/>
+                <descriptionlimit4
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Limit Description To"
+                    name="./descriptionlimit4"
+                    validateOnBlur="true"
+                    xtype="numberfield"/>
+                <readmore4
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Read More Text"
+                    name="./readmore4"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <alternatedisplay4
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Boolean}false"
+                    fieldLabel="Wide Display"
+                    name="./alternatedisplay4"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </tab4>
+    </items>
+</jcr:root>

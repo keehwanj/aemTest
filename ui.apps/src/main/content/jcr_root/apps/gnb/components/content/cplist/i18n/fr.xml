@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    cq:lastReplicated="{Date}2013-12-16T22:24:21.302-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:language="fr"
+    jcr:mixinTypes="[cq:ReplicationStatus,mix:language]"
+    jcr:primaryType="sling:Folder">
+    <cities_Text
+        cq:lastReplicated="{Date}2013-12-16T22:24:22.675-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="cities_Text"
+        sling:message="Cité"/>
+    <contact_Text
+        cq:lastReplicated="{Date}2013-12-16T22:24:24.110-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="contact_Text"
+        sling:message="Contact"/>
+    <councillors_Text
+        cq:lastReplicated="{Date}2013-12-16T22:24:25.498-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="councilors_Text"
+        sling:message="Conseillers / Conseillères"/>
+    <fax_Text
+        cq:lastReplicated="{Date}2013-12-16T22:24:26.902-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="fax_Text"
+        sling:message="Téléc. : "/>
+    <mayor_Text
+        cq:lastReplicated="{Date}2013-12-16T22:24:27.823-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="mayor_Text"
+        sling:message="Maire"/>
+    <nb_Text
+        cq:lastReplicated="{Date}2013-12-16T22:24:27.994-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="nb_Text"
+        sling:message="(N.-B.) "/>
+    <telephone_Text
+        cq:lastReplicated="{Date}2013-12-16T22:24:28.712-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="telephone_Text"
+        sling:message="Tél : "/>
+</jcr:root>

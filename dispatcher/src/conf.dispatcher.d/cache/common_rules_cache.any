@@ -1,0 +1,32 @@
+# Put entries of items you do or don't want to cache in apaches doc root
+# the globbing pattern to be compared against the url
+# example: *             -> everything
+#        : /foo/bar.*    -> only the /foo/bar documents
+#        : /foo/bar/*    -> all pages below /foo/bar
+#        : /foo/bar[./]* -> all pages below and /foo/bar itself
+#        : *.html        -> all .html files
+# Prevents dept_renderer dynamic content to cache
+/0009 {
+   /glob "*/dept_renderer.*.html"
+   /type "deny"
+}
+# Prevents sling dynamic include components with nocache selector to cache
+/0010 {
+    /glob "*.nocache.html*"
+    /type "deny"
+}
+
+/0011 {
+    /glob "*.rss1.html*"
+    /type "deny"
+}
+
+/0012 {
+    /glob "*.rss2.html*"
+    /type "deny"
+}
+
+/0013 {
+    /glob "*.rss3.html*"
+    /type "deny"
+}

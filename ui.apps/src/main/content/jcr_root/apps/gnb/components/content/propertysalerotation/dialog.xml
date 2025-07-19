@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','children','static','search','querybuilder'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="Property Sale Rotation"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <list
+            jcr:primaryType="cq:Widget"
+            title="List"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    defaultValue=""
+                    fieldLabel="Build list using"
+                    name="./listFrom"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(rec,path){this.findParentByType('tabpanel').manageTabs(this.getValue(),true);}"
+                        selectionchanged="function(box,value){box.findParentByType('tabpanel').manageTabs(value);}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <children
+                            jcr:primaryType="nt:unstructured"
+                            text="Child pages"
+                            value="children"/>
+                        <querybuilder
+                            jcr:primaryType="nt:unstructured"
+                            text="Advanced Search"
+                            value="querybuilder"/>
+                        <search
+                            jcr:primaryType="nt:unstructured"
+                            text="Search"
+                            value="search"/>
+                        <static
+                            jcr:primaryType="nt:unstructured"
+                            text="Fixed list"
+                            value="static"/>
+                    </options>
+                </listFrom>
+                <limit
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Maximum number of items displayed in list"
+                    fieldLabel="Limit"
+                    name="./limit"
+                    xtype="numberfield"/>
+                <orderBy
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter a property like 'jcr:created'"
+                    fieldLabel="Order by"
+                    name="./orderBy"
+                    type="combobox"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <created
+                            jcr:primaryType="nt:unstructured"
+                            value="jcr:created"/>
+                        <modified
+                            jcr:primaryType="nt:unstructured"
+                            value="cq:lastModified"/>
+                        <title
+                            jcr:primaryType="nt:unstructured"
+                            value="jcr:title"/>
+                    </options>
+                </orderBy>
+            </items>
+        </list>
+        <children
+            jcr:primaryType="cq:Widget"
+            title="Child pages"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <parentPage
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave empty to use current page"
+                    fieldLabel="Parent page"
+                    name="./parentPage"
+                    xtype="pathfield"/>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(1); }"/>
+        </children>
+        <static
+            jcr:primaryType="cq:Widget"
+            title="Fixed list"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <pages
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new page"
+                    fieldLabel="Pages"
+                    name="./pages"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="500"
+                        xtype="pathfield"/>
+                </pages>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(2); }"/>
+        </static>
+        <search
+            jcr:primaryType="cq:Widget"
+            title="Search"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <query
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Search query"
+                    name="./query"
+                    xtype="textfield"/>
+                <searchIn
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave empty to use '/content'"
+                    fieldLabel="Start in"
+                    name="./searchIn"
+                    xtype="pathfield"/>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(3); }"/>
+        </search>
+        <querybuilder
+            jcr:primaryType="cq:Widget"
+            title="Advanced Search"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <savedquery
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Querybuilder predicate notation"
+                    height="{Long}200"
+                    name="./savedquery"
+                    xtype="textarea"/>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(4); }"/>
+        </querybuilder>
+        <renderer_nodata
+            jcr:primaryType="cq:Widget"
+            title="Renderer &amp; No Data"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <nodata_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : No Data or No Data"
+                    fieldLabel="No Data"
+                    name="./nodata_Text"
+                    xtype="textfield"/>
+                <renderer_surplus
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : /content/gnb/en/departments/dti OR /content/gnb/fr/ministeres/mti"
+                    fieldLabel="Renderer - Surplus"
+                    name="./renderer_surplus"
+                    xtype="pathfield"/>
+                <renderer_tender
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : /content/gnb/en/departments/dti OR /content/gnb/fr/ministeres/mti"
+                    fieldLabel="Renderer - Tender"
+                    name="./renderer_tender"
+                    xtype="pathfield"/>
+            </items>
+        </renderer_nodata>
+        <surplus_text
+            jcr:primaryType="cq:Widget"
+            title="Surplus Texts"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <file_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : File or File"
+                    fieldLabel="File"
+                    name="./file_Text"
+                    xtype="textfield"/>
+                <pan_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : PAN: or PAN:"
+                    fieldLabel="PAN"
+                    name="./pan_Text"
+                    xtype="textfield"/>
+                <location_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Location: or Location:"
+                    fieldLabel="Location"
+                    name="./location_Text"
+                    xtype="textfield"/>
+                <description_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Description: or Description:"
+                    fieldLabel="Description"
+                    name="./description_Text"
+                    xtype="textfield"/>
+                <pid_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : PID: or PID:"
+                    fieldLabel="PID"
+                    name="./pid_Text"
+                    xtype="textfield"/>
+                <area_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Area: or Area:"
+                    fieldLabel="Area"
+                    name="./area_Text"
+                    xtype="textfield"/>
+                <buildingSize_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Building Size: or Building Size:"
+                    fieldLabel="Building Size"
+                    name="./buildingSize_Text"
+                    xtype="textfield"/>
+                <zoning_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Zoning: or Zoning:"
+                    fieldLabel="Zoning"
+                    name="./zoning_Text"
+                    xtype="textfield"/>
+                <registrationInfo_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Registration Information: or Registration Information:"
+                    fieldLabel="Registration Info"
+                    name="./registrationInfo_Text"
+                    xtype="textfield"/>
+            </items>
+        </surplus_text>
+        <tender_text
+            jcr:primaryType="cq:Widget"
+            title="Tender Texts"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tenderNo_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : TENDER No: or TENDER No:"
+                    fieldLabel="Tender No"
+                    name="./tenderNo_Text"
+                    xtype="textfield"/>
+                <county_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : County or County"
+                    fieldLabel="County"
+                    name="./county_Text"
+                    xtype="textfield"/>
+                <closingDate_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Closing Date or Closing Date"
+                    fieldLabel="Closing Date"
+                    name="./closingDate_Text"
+                    xtype="textfield"/>
+            </items>
+        </tender_text>
+        <general_text
+            jcr:primaryType="cq:Widget"
+            title="General Texts"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <estimateValue_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Estimate of Value or Estimate of Value"
+                    fieldLabel="Estimate of Value"
+                    name="./estimateValue_Text"
+                    xtype="textfield"/>
+                <additionalInfo_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Additional Information or Additional Information"
+                    fieldLabel="Additional Information"
+                    name="./additionalInfo_Text"
+                    xtype="textfield"/>
+                <tenderNotice_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Notice of Tender (pdf) or Notice of Tender (pdf)"
+                    fieldLabel="Notice of Tender"
+                    name="./tenderNotice_Text"
+                    xtype="textfield"/>
+                <informationSheet_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Information Sheet (pdf) or Information Sheet (pdf)"
+                    fieldLabel="Information Sheet"
+                    name="./informationSheet_Text"
+                    xtype="textfield"/>
+                <map_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Map (pdf or link) or Map (pdf or link)"
+                    fieldLabel="Map"
+                    name="./map_Text"
+                    xtype="textfield"/>
+                <photo_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Photos (pdf) or Photos (pdf)"
+                    fieldLabel="Photos"
+                    name="./photo_Text"
+                    xtype="textfield"/>
+                <otherDoc_Text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Other Docs (pdf) or Other Docs (pdf)"
+                    fieldLabel="Other Docs"
+                    name="./otherDoc_Text"
+                    xtype="textfield"/>
+            </items>
+        </general_text>
+    </items>
+</jcr:root>

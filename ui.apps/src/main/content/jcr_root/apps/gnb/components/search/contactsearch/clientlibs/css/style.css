@@ -1,0 +1,17 @@
+/*
+	/apps/gnb/components/search/contactsearch/clientlibs/css/style.css
+*/
+
+
+/**START of style.css - contactsearch**/
+
+#contact_search_box {
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #CCCCCC;
+    /*border-top: 1px solid #CCCCCC;*/
+    /*float: left;*/
+    margin: 0 0 20px 0;
+    padding: 0 0 10px 0;
+ }         
+
+/**END of style.css - contactsearch**/

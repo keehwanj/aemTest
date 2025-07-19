@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <clientlibs/>
+    <clientlibs-all/>
+    <jcr:content
+        cq:lastModified="{Date}2022-01-06T13:38:21.217-04:00"
+        cq:lastModifiedBy="paulette"
+        cq:lastReplicated="{Date}2016-02-05T12:05:35.735-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus,mix:versionable]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="enb-bootstrap"
+        jcr:uuid="9017a650-2db9-40c1-b22d-833b9ac803c7">
+        <leftcontent jcr:primaryType="nt:unstructured">
+            <mainContent_par
+                jcr:lastModified="{Date}2022-01-06T13:38:21.217-04:00"
+                jcr:lastModifiedBy="paulette"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,/apps/agnb-vgnb/components/content/accordion,/apps/agnb-vgnb/components/content/featuretile,/apps/agnb-vgnb/components/content/aglist,/apps/agnb-vgnb/components/content/aglist_update,/apps/agnb-vgnb/components/content/mediainfo,/apps/agnb-vgnb/components/content/multimedialist,/apps/agnb-vgnb/components/content/multimedialist_update,/apps/agnb-vgnb/components/content/newsarticle,/apps/agnb-vgnb/components/content/newslist_update,/apps/agnb-vgnb/components/content/agpromo_update,/apps/agnb-vgnb/components/content/sectiontitle,/apps/agnb-vgnb/components/content/sectiontitle_update,/apps/agnb-vgnb/components/content/agtab,/apps/agnb-vgnb/components/content/tabpanel,/apps/agnb-vgnb/components/content/agtab_old,/apps/agnb-vgnb/components/content/textimage,/apps/agnb-vgnb/components/content/videoviewer,/apps/agnb-vgnb/components/content/tab,/apps/agnb-vgnb/components/content/tab/panel,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl,/apps/gnb/components/content/textimage]">
+                <section jcr:primaryType="nt:unstructured"/>
+                <colctrl
+                    jcr:lastModified="{Date}2017-03-22T13:20:59.637-03:00"
+                    jcr:lastModifiedBy="keehwanj"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys/colctrl"
+                    layouts="2;cq-colctrl-lt0&#x9;2 Columns (50%, 50%) &#xa;2;cq-colctrl-lt1&#x9;2 Columns (50%, 50%) no line &#xa;2;cq-colctrl-lt2&#x9;2 Columns (40%, 60%) &#xa;2;cq-colctrl-lt3&#x9;2 Columns (40%, 60%) no line &#xa;2;cq-colctrl-lt4&#x9;2 Columns (60%, 40%) &#xa;2;cq-colctrl-lt5&#x9;2 Columns (60%, 40%) no line &#xa;3;cq-colctrl-lt6&#x9;3 Columns (33%, 33%, 33%) &#xa;3;cq-colctrl-lt7&#x9;3 Columns (33%, 33%, 33%) no line &#xa;3;cq-colctrl-lt8&#x9;3 Columns (50%, 25%, 25%) &#xa;3;cq-colctrl-lt9&#x9;3 Columns (50%, 25%, 25%) no line &#xa;3;cq-colctrl-lt10&#x9;3 Columns (25%, 25%, 50%) &#xa;3;cq-colctrl-lt11&#x9;3 Columns (25%, 25%, 50%) no line&#xa;2;cq-colctrl-lt12&#x9;2 Columns (67%, 33%) no line-left template &#xa;3;cq-colctrl-lt13&#x9;3 Columns (15%, 70%, 15%) no line-landing&#xa;2;cq-colctrl-lt14&#x9;2 Columns (33%, 66%) &#xa;2;cq-colctrl-lt15&#x9;2 Columns (33%, 66%) no line &#xa;2;cq-colctrl-lt16&#x9;2 Columns (66%, 33%) &#xa;2;cq-colctrl-lt17&#x9;2 Columns (66%, 33%) no line &#xa;3;cq-colctrl-lt18&#x9;3 Columns (40%, 35%, 25%) no line-highway camera"/>
+                <col_end14901996596370
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys/colctrl"
+                    controlType="end"/>
+                <tab jcr:primaryType="nt:unstructured">
+                    <tab-content jcr:primaryType="nt:unstructured">
+                        <tabpanel jcr:primaryType="nt:unstructured">
+                            <tab_fgfgfgfgf
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="foundation/components/parsys"
+                                components="[/apps/agnb-vgnb/components/content/featuretile,/apps/agnb-vgnb/components/content/aglist,/apps/agnb-vgnb/components/content/aglist_update,/apps/agnb-vgnb/components/content/multimedialist_update,/apps/agnb-vgnb/components/content/newslist_update,/apps/agnb-vgnb/components/content/agpromo_update,/apps/agnb-vgnb/components/content/sectiontitle_update,/apps/agnb-vgnb/components/content/agtab,/apps/agnb-vgnb/components/content/tabpanel,/apps/agnb-vgnb/components/content/textimage,/apps/agnb-vgnb/components/content/videoviewer,/apps/agnb-vgnb/components/content/tab,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl]">
+                                <section jcr:primaryType="nt:unstructured"/>
+                            </tab_fgfgfgfgf>
+                            <tab_Report
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="foundation/components/parsys"
+                                components="[/apps/agnb-vgnb/components/content/featuretile,/apps/agnb-vgnb/components/content/aglist,/apps/agnb-vgnb/components/content/aglist_update,/apps/agnb-vgnb/components/content/multimedialist_update,/apps/agnb-vgnb/components/content/newslist_update,/apps/agnb-vgnb/components/content/agpromo_update,/apps/agnb-vgnb/components/content/sectiontitle_update,/apps/agnb-vgnb/components/content/agtab,/apps/agnb-vgnb/components/content/tabpanel,/apps/agnb-vgnb/components/content/textimage,/apps/agnb-vgnb/components/content/videoviewer,/apps/agnb-vgnb/components/content/tab,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl]">
+                                <section jcr:primaryType="nt:unstructured"/>
+                            </tab_Report>
+                            <tab_Reports
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="foundation/components/parsys"
+                                components="[/apps/agnb-vgnb/components/content/featuretile,/apps/agnb-vgnb/components/content/aglist,/apps/agnb-vgnb/components/content/aglist_update,/apps/agnb-vgnb/components/content/multimedialist_update,/apps/agnb-vgnb/components/content/newslist_update,/apps/agnb-vgnb/components/content/agpromo_update,/apps/agnb-vgnb/components/content/sectiontitle_update,/apps/agnb-vgnb/components/content/agtab,/apps/agnb-vgnb/components/content/tabpanel,/apps/agnb-vgnb/components/content/textimage,/apps/agnb-vgnb/components/content/videoviewer,/apps/agnb-vgnb/components/content/tab,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl]">
+                                <section jcr:primaryType="nt:unstructured"/>
+                                <tabpanel jcr:primaryType="nt:unstructured">
+                                    <tab_Chapters
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="foundation/components/parsys"
+                                        components="[/apps/agnb-vgnb/components/content/featuretile,/apps/agnb-vgnb/components/content/aglist,/apps/agnb-vgnb/components/content/aglist_update,/apps/agnb-vgnb/components/content/multimedialist_update,/apps/agnb-vgnb/components/content/newslist_update,/apps/agnb-vgnb/components/content/agpromo_update,/apps/agnb-vgnb/components/content/sectiontitle_update,/apps/agnb-vgnb/components/content/agtab,/apps/agnb-vgnb/components/content/tabpanel,/apps/agnb-vgnb/components/content/textimage,/apps/agnb-vgnb/components/content/videoviewer,/apps/agnb-vgnb/components/content/tab,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl]">
+                                        <section jcr:primaryType="nt:unstructured"/>
+                                    </tab_Chapters>
+                                </tabpanel>
+                            </tab_Reports>
+                            <tab_Chapters
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="foundation/components/parsys"
+                                components="[/apps/agnb-vgnb/components/content/featuretile,/apps/agnb-vgnb/components/content/aglist,/apps/agnb-vgnb/components/content/aglist_update,/apps/agnb-vgnb/components/content/multimedialist_update,/apps/agnb-vgnb/components/content/newslist_update,/apps/agnb-vgnb/components/content/agpromo_update,/apps/agnb-vgnb/components/content/sectiontitle_update,/apps/agnb-vgnb/components/content/agtab,/apps/agnb-vgnb/components/content/tabpanel,/apps/agnb-vgnb/components/content/textimage,/apps/agnb-vgnb/components/content/videoviewer,/apps/agnb-vgnb/components/content/tab,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl]">
+                                <section jcr:primaryType="nt:unstructured"/>
+                            </tab_Chapters>
+                            <tab_One-page_Chapter_Summaries
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="foundation/components/parsys"
+                                components="[/apps/agnb-vgnb/components/content/featuretile,/apps/agnb-vgnb/components/content/aglist,/apps/agnb-vgnb/components/content/aglist_update,/apps/agnb-vgnb/components/content/multimedialist_update,/apps/agnb-vgnb/components/content/newslist_update,/apps/agnb-vgnb/components/content/agpromo_update,/apps/agnb-vgnb/components/content/sectiontitle_update,/apps/agnb-vgnb/components/content/agtab,/apps/agnb-vgnb/components/content/tabpanel,/apps/agnb-vgnb/components/content/textimage,/apps/agnb-vgnb/components/content/videoviewer,/apps/agnb-vgnb/components/content/tab,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl]">
+                                <section jcr:primaryType="nt:unstructured"/>
+                            </tab_One-page_Chapter_Summaries>
+                            <tab_Media
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="foundation/components/parsys"
+                                components="[/apps/agnb-vgnb/components/content/featuretile,/apps/agnb-vgnb/components/content/aglist,/apps/agnb-vgnb/components/content/aglist_update,/apps/agnb-vgnb/components/content/multimedialist_update,/apps/agnb-vgnb/components/content/newslist_update,/apps/agnb-vgnb/components/content/agpromo_update,/apps/agnb-vgnb/components/content/sectiontitle_update,/apps/agnb-vgnb/components/content/agtab,/apps/agnb-vgnb/components/content/tabpanel,/apps/agnb-vgnb/components/content/textimage,/apps/agnb-vgnb/components/content/videoviewer,/apps/agnb-vgnb/components/content/tab,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl]">
+                                <section jcr:primaryType="nt:unstructured"/>
+                            </tab_Media>
+                        </tabpanel>
+                    </tab-content>
+                </tab>
+                <tabpanel jcr:primaryType="nt:unstructured">
+                    <tab_Reports
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/agnb-vgnb/components/content/featuretile,/apps/agnb-vgnb/components/content/aglist,/apps/agnb-vgnb/components/content/aglist_update,/apps/agnb-vgnb/components/content/multimedialist_update,/apps/agnb-vgnb/components/content/newslist_update,/apps/agnb-vgnb/components/content/agpromo_update,/apps/agnb-vgnb/components/content/sectiontitle_update,/apps/agnb-vgnb/components/content/agtab,/apps/agnb-vgnb/components/content/tabpanel,/apps/agnb-vgnb/components/content/textimage,/apps/agnb-vgnb/components/content/videoviewer,/apps/agnb-vgnb/components/content/tab,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Reports>
+                    <tab_fgfgfgf
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/foundation/components/text,/apps/agnb-vgnb/components/content/featuretile,/apps/agnb-vgnb/components/content/aglist,/apps/agnb-vgnb/components/content/aglist_update,/apps/agnb-vgnb/components/content/multimedialist_update,/apps/agnb-vgnb/components/content/newslist_update,/apps/agnb-vgnb/components/content/agpromo_update,/apps/agnb-vgnb/components/content/sectiontitle_update,/apps/agnb-vgnb/components/content/agtab,/apps/agnb-vgnb/components/content/tabpanel,/apps/agnb-vgnb/components/content/textimage,/apps/agnb-vgnb/components/content/videoviewer,/apps/agnb-vgnb/components/content/tab,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_fgfgfgf>
+                    <tab_fgfgfgfg
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/foundation/components/text,/apps/agnb-vgnb/components/content/featuretile,/apps/agnb-vgnb/components/content/aglist,/apps/agnb-vgnb/components/content/aglist_update,/apps/agnb-vgnb/components/content/multimedialist_update,/apps/agnb-vgnb/components/content/newslist_update,/apps/agnb-vgnb/components/content/agpromo_update,/apps/agnb-vgnb/components/content/sectiontitle_update,/apps/agnb-vgnb/components/content/agtab,/apps/agnb-vgnb/components/content/tabpanel,/apps/agnb-vgnb/components/content/textimage,/apps/agnb-vgnb/components/content/videoviewer,/apps/agnb-vgnb/components/content/tab,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_fgfgfgfg>
+                    <tab_fgfgfgfgf
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/foundation/components/text,/apps/agnb-vgnb/components/content/featuretile,/apps/agnb-vgnb/components/content/aglist,/apps/agnb-vgnb/components/content/aglist_update,/apps/agnb-vgnb/components/content/multimedialist_update,/apps/agnb-vgnb/components/content/newslist_update,/apps/agnb-vgnb/components/content/agpromo_update,/apps/agnb-vgnb/components/content/sectiontitle_update,/apps/agnb-vgnb/components/content/agtab,/apps/agnb-vgnb/components/content/tabpanel,/apps/agnb-vgnb/components/content/textimage,/apps/agnb-vgnb/components/content/videoviewer,/apps/agnb-vgnb/components/content/tab,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_fgfgfgfgf>
+                    <tab_fgdfgfg
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/foundation/components/text,/apps/agnb-vgnb/components/content/featuretile,/apps/agnb-vgnb/components/content/aglist,/apps/agnb-vgnb/components/content/aglist_update,/apps/agnb-vgnb/components/content/multimedialist_update,/apps/agnb-vgnb/components/content/newslist_update,/apps/agnb-vgnb/components/content/agpromo_update,/apps/agnb-vgnb/components/content/sectiontitle_update,/apps/agnb-vgnb/components/content/agtab,/apps/agnb-vgnb/components/content/tabpanel,/apps/agnb-vgnb/components/content/textimage,/apps/agnb-vgnb/components/content/videoviewer,/apps/agnb-vgnb/components/content/tab,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_fgdfgfg>
+                </tabpanel>
+            </mainContent_par>
+            <secondaryNav_ipar
+                jcr:lastModified="{Date}2017-06-13T11:14:31.700-03:00"
+                jcr:lastModifiedBy="paulette"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys"
+                components="[/apps/agnb-vgnb/components/content/featuretile,/apps/agnb-vgnb/components/content/aglist_update,/apps/agnb-vgnb/components/content/multimedialist_update,/apps/agnb-vgnb/components/content/newslist_update,/apps/agnb-vgnb/components/content/agpromo_update,/apps/agnb-vgnb/components/content/sectiontitle_update,/apps/agnb-vgnb/components/content/textimage,/apps/agnb-vgnb/components/content/videoviewer]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </secondaryNav_ipar>
+            <secondaryContent_par
+                jcr:lastModified="{Date}2018-06-11T15:05:22.473-03:00"
+                jcr:lastModifiedBy="paulette"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:AG-Content">
+                <section jcr:primaryType="nt:unstructured"/>
+            </secondaryContent_par>
+        </leftcontent>
+        <stacked jcr:primaryType="nt:unstructured">
+            <mainContent_par
+                jcr:lastModified="{Date}2021-11-18T10:13:55.214-04:00"
+                jcr:lastModifiedBy="paulette"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/apps/foundation/components/text,group:AG-Content,group:AG-Navigation,group:AG-Search,group:AG-Tools]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </mainContent_par>
+        </stacked>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,11 @@
+/*
+/apps/courts/components/navigation/tertiarynav/clientlibs/css/responsive-480px.css
+ */
+@media (max-width: 480px) {
+
+#tertiaryNav {
+    margin: 0 5px 15px 5px;
+}
+
+
+}

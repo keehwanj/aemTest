@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="en"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <bridgeDestroyedByFireText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="bridgeDestroyedByFireText"
+        sling:message="Bridge Destroyed by Fire"/>
+    <bridgeRepairText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="bridgeRepairText"
+        sling:message="Bridge Repair"/>
+    <bridgeReplacementText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="bridgeReplacementText"
+        sling:message="Bridge Replacement"/>
+    <constructionText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="constructionText"
+        sling:message="Construction"/>
+    <emergencyClosureText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="emergencyClosureText"
+        sling:message="Emergency Closure"/>
+    <extremeLowTidesText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="extremeLowTidesText"
+        sling:message="Extreme Low Tides"/>
+    <floodingText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="floodingText"
+        sling:message="Flooding"/>
+    <iceConditionsInChannelText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="iceConditionsInChannelText"
+        sling:message="Ice Conditions in Channel"/>
+    <maintenanceText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="maintenanceText"
+        sling:message="Maintenance"/>
+    <mechanicalProblemText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="mechanicalProblemText"
+        sling:message="Mechanical Problem"/>
+    <motorVehicleAccidentText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="motorVehicleAccidentText"
+        sling:message="Motor Vehicle Accident"/>
+    <otherText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="otherText"
+        sling:message="Other"/>
+    <roadBreakupText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="roadBreakupText"
+        sling:message="Road Breakup"/>
+    <safetyText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="safetyText"
+        sling:message="Safety"/>
+    <soilAndSlopeStabilityText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="soilAndSlopeStabilityText"
+        sling:message="Soil and Slope Stability"/>
+    <washoutText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="washoutText"
+        sling:message="Washout"/>
+    <waterOverRoadText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="waterOverRoadText"
+        sling:message="Water Over Road"/>
+    <weatherConditionsText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="weatherConditionsText"
+        sling:message="Weather Conditions"/>
+    <weightLimitReduced
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="weightLimitReducedText"
+        sling:message="Weight Limit Reduced"/>
+</jcr:root>

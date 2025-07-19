@@ -1,0 +1,19 @@
+/*
+	/apps/wcat-taat/components/tools/deptName/clientlibs/css/responsive-980px-1199px.css
+*/
+/* iPad Landscape */
+@media (min-width: 980px) and (max-width: 1199px) {
+
+#topText{
+    margin: 0px 0px 0px 0px; 
+    float:left;
+    font-size: 180%;
+    color: #000000;
+    font-weight: normal;
+    text-align: left;
+    position:relative;
+    /*top:-30px;*/
+    top: 0px;
+}
+
+}

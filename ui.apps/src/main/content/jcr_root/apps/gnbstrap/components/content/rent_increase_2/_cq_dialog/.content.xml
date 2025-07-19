@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Parent Assistance Calculator - PAC (Education) - collapse"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <general
+                jcr:primaryType="nt:unstructured"
+                jcr:title="General"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <current_rent
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Description for current rent"
+                                fieldLabel="Current rent"
+                                name="./current_rent"/>
+                            <clear_button
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Description for clear buttion"
+                                fieldLabel="Clear button"
+                                name="./clear_button"/>
+                            <rent_increase_by
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Description of Your rent will increase by"
+                                fieldLabel="Rent increase by"
+                                name="./rent_increase_by"/>
+                            <new_rent_not_exceed
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Description of New rent cannot exceed"
+                                fieldLabel="New rent cannot exceed"
+                                name="./new_rent_not_exceed"/>
+                        </items>
+                    </columns>
+                </items>
+            </general>
+            <location
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Location"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <t_location_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Text of &quot;Location of Childcare Facility&quot;"
+                                fieldLabel="Location of Childcare Facility"
+                                name="./t_location_1_pac"/>
+                            <t_location_tootip_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Tooltip text of &quot;Location of Childcare Facility&quot;"
+                                fieldLabel="Tooltip"
+                                name="./t_location_tootip_1_pac"/>
+                            <t_location_item_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Text of &quot;Please select&quot; in item"
+                                fieldLabel="Please select"
+                                name="./t_location_item_1_pac"/>
+                            <t_location_item_2_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Text of &quot;Large urban&quot; in item"
+                                fieldLabel="Large urban"
+                                name="./t_location_item_2_pac"/>
+                            <t_location_item_3_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Text of &quot;Small urban and rural&quot; in item"
+                                fieldLabel="Small urban and rural"
+                                name="./t_location_item_3_pac"/>
+                        </items>
+                    </columns>
+                </items>
+            </location>
+            <second
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Second"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <t_2_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="# Infants full-time"
+                                fieldLabel="# Infants full-time"
+                                name="./t_2_1_pac"/>
+                            <t_2_tootip_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="# Infants full-time"
+                                fieldLabel="Tooltip"
+                                name="./t_2_tootip_1_pac"/>
+                            <t_2_2_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Fees for Infant full-time"
+                                fieldLabel="Fees for Infant full-time"
+                                name="./t_2_2_pac"/>
+                            <t_2_tootip_2_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Fees for Infant full-time"
+                                fieldLabel="Tooltip"
+                                name="./t_2_tootip_2_pac"/>
+                            <t_2_3_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Number of day(s) per week"
+                                fieldLabel="Number of day(s) per week"
+                                name="./t_2_3_pac"/>
+                            <t_2_tootip_3_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Number of day(s) per week"
+                                fieldLabel="Tooltip"
+                                name="./t_2_tootip_3_pac"/>
+                        </items>
+                    </columns>
+                </items>
+            </second>
+            <third
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Third"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <t_3_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="# Preschool full-time"
+                                fieldLabel="# Preschool full-time"
+                                name="./t_3_1_pac"/>
+                            <t_3_tootip_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="# Preschool full-time"
+                                fieldLabel="Tooltip"
+                                name="./t_3_tootip_1_pac"/>
+                            <t_3_2_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Fees of Preschool full-time"
+                                fieldLabel="Fees of Preschool  full-time"
+                                name="./t_3_2_pac"/>
+                            <t_3_tootip_2_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Fees of Preschool  full-time"
+                                fieldLabel="Tooltip"
+                                name="./t_3_tootip_2_pac"/>
+                            <t_3_3_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Number of day(s) per week"
+                                fieldLabel="Number of day(s) per week"
+                                name="./t_3_3_pac"/>
+                            <t_3_tootip_3_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Number of day(s) per week"
+                                fieldLabel="Tooltip"
+                                name="./t_3_tootip_3_pac"/>
+                        </items>
+                    </columns>
+                </items>
+            </third>
+            <fourth
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Fourth"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <t_4_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="# Infants part-time"
+                                fieldLabel="# Infants part-time"
+                                name="./t_4_1_pac"/>
+                            <t_4_tootip_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="# Infants part-time"
+                                fieldLabel="Tooltip"
+                                name="./t_4_tootip_1_pac"/>
+                            <t_4_2_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Fees of Infants part-time"
+                                fieldLabel="Fees of Infants part-time"
+                                name="./t_4_2_pac"/>
+                            <t_4_tootip_2_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Fees of Infants part-time"
+                                fieldLabel="Tooltip"
+                                name="./t_4_tootip_2_pac"/>
+                            <t_4_3_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Number of day(s) per week"
+                                fieldLabel="Number of day(s) per week"
+                                name="./t_4_3_pac"/>
+                            <t_4_tootip_3_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Number of day(s) per week"
+                                fieldLabel="Tooltip"
+                                name="./t_4_tootip_3_pac"/>
+                        </items>
+                    </columns>
+                </items>
+            </fourth>
+            <fifth
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Fifth"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <t_5_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="# Preschool part-time"
+                                fieldLabel="# Preschool part-time"
+                                name="./t_5_1_pac"/>
+                            <t_5_tootip_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Household Income"
+                                fieldLabel="Tooltip"
+                                name="./t_5_tootip_1_pac"/>
+                            <t_5_2_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Fees of Preschool part-time"
+                                fieldLabel="Fees of Preschool part-time"
+                                name="./t_5_2_pac"/>
+                            <t_5_tootip_2_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Household Income"
+                                fieldLabel="Tooltip"
+                                name="./t_5_tootip_2_pac"/>
+                            <t_5_3_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Number of day(s) per week"
+                                fieldLabel="Number of day(s) per week"
+                                name="./t_5_3_pac"/>
+                            <t_5_tootip_3_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Household Income"
+                                fieldLabel="Tooltip"
+                                name="./t_5_tootip_3_pac"/>
+                        </items>
+                    </columns>
+                </items>
+            </fifth>
+            <reset
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Button"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <t_6_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Reset"
+                                fieldLabel="Reset"
+                                name="./t_6_1_pac"/>
+                        </items>
+                    </columns>
+                </items>
+            </reset>
+            <result_first
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Result First"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <r_1_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Current childcare fees"
+                                fieldLabel="Current childcare fees"
+                                name="./r_1_1_pac"/>
+                            <r_1_tootip_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Current childcare fees"
+                                fieldLabel="Tooltip"
+                                name="./r_1_tootip_1_pac"/>
+                            <r_1_2_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Per Day"
+                                fieldLabel="Per Day"
+                                name="./r_1_2_pac"/>
+                            <r_1_3_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Per Month"
+                                fieldLabel="Per Month"
+                                name="./r_1_3_pac"/>
+                        </items>
+                    </columns>
+                </items>
+            </result_first>
+            <result_second
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Result Second"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <r_2_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Designated Centre Subsidy Contribution"
+                                fieldLabel="Designated Centre Subsidy Contribution"
+                                name="./r_2_1_pac"/>
+                            <r_2_tootip_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Designated Centre Subsidy Contribution"
+                                fieldLabel="Tooltip"
+                                name="./r_2_tootip_1_pac"/>
+                            <r_2_2_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="- Designated Centre Subsidy"
+                                fieldLabel="- Designated Centre Subsidy"
+                                name="./r_2_2_pac"/>
+                            <r_2_tootip_2_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="- Designated Centre Subsidy"
+                                fieldLabel="Tooltip"
+                                name="./r_2_tootip_2_pac"/>
+                            <r_2_3_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="- Income Cap"
+                                fieldLabel="- Income Cap"
+                                name="./r_2_3_pac"/>
+                            <r_2_tootip_3_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="- Income Cap"
+                                fieldLabel="Tooltip"
+                                name="./r_2_tootip_3_pac"/>
+                            <r_2_4_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Per Day"
+                                fieldLabel="Per Day"
+                                name="./r_2_4_pac"/>
+                            <r_2_5_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Per Month"
+                                fieldLabel="Per Month"
+                                name="./r_2_5_pac"/>
+                        </items>
+                    </columns>
+                </items>
+            </result_second>
+            <result_third
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Result Third"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <r_3_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Total Designated Centre Subsidy Contribution(s)"
+                                fieldLabel="Total Designated Centre Subsidy Contribution(s)"
+                                name="./r_3_1_pac"/>
+                            <r_3_tootip_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Total Designated Centre Subsidy Contribution(s)"
+                                fieldLabel="Tooltip"
+                                name="./r_3_tootip_1_pac"/>
+                            <r_3_2_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Per Day"
+                                fieldLabel="Per Day"
+                                name="./r_3_2_pac"/>
+                        </items>
+                    </columns>
+                </items>
+            </result_third>
+            <result_fourth
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Result Fourth"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <r_4_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Projected Childcare fee (family pays)"
+                                fieldLabel="Projected childcare fee"
+                                name="./r_4_1_pac"/>
+                            <r_4_tootip_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Projected childcare fee"
+                                fieldLabel="Tooltip"
+                                name="./r_4_tootip_1_pac"/>
+                            <r_4_2_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Per Day"
+                                fieldLabel="Per Day"
+                                name="./r_4_2_pac"/>
+                        </items>
+                    </columns>
+                </items>
+            </result_fourth>
+            <title
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Title"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title_1_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Income"
+                                fieldLabel="Income"
+                                name="./title_1_pac"/>
+                            <title_1_tootip_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Income"
+                                fieldLabel="Tooltip"
+                                name="./title_1_tootip_pac"/>
+                            <title_2_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Childcare Needs - Full Time"
+                                fieldLabel="Childcare Needs - Full Time"
+                                name="./title_2_pac"/>
+                            <title_2_tootip_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Childcare Needs - Full Time"
+                                fieldLabel="Tooltip"
+                                name="./title_2_tootip_pac"/>
+                            <title_3_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Childcare Needs - Part-Time"
+                                fieldLabel="Childcare Needs - Part-Time"
+                                name="./title_3_pac"/>
+                            <title_3_tootip_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Childcare Needs - Part-Time"
+                                fieldLabel="Tooltip"
+                                name="./title_3_tootip_pac"/>
+                            <title_4_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Your Estimated Annual Daycare Expenses"
+                                fieldLabel="Your Estimated Annual Daycare Expenses"
+                                name="./title_4_pac"/>
+                            <title_4_tootip_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Your Estimated Annual Daycare Expenses"
+                                fieldLabel="Tooltip"
+                                name="./title_4_tootip_pac"/>
+                            <disclaimer_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="*Disclaimer"
+                                fieldLabel="*Displaimer"
+                                name="./disclaimer_pac"/>
+                        </items>
+                    </columns>
+                </items>
+            </title>
+            <collapse
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Collapse"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <collapsible_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./collapsible_pac"
+                                text="Collapsible?"
+                                value="false"/>
+                            <collapsible_pac-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./collapsible_pac@Delete"
+                                value="{Boolean}true"/>
+                            <collapsible_title_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Parent Assistance Calculator"
+                                fieldLabel="Collapsible Title"
+                                name="./collapsible_title_pac"/>
+                            <collapsible_id_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="default  :  pac_collapse"
+                                fieldLabel="Collapsible ID"
+                                name="./collapsible_id_pac"/>
+                            <collapsible_button_pac
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="btn-default  btn-primary  btn-success  btn-info  btn-warning  btn-danger  btn-link btn-block btn-lg btn-md btn-sm btn-xs"
+                                fieldLabel="Collapsible Button"
+                                name="./collapsible_button_pac"/>
+                        </items>
+                    </columns>
+                </items>
+            </collapse>
+        </items>
+    </content>
+</jcr:root>

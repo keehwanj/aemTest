@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    title="Onsite Sewage Search Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="cq:Widget"
+            title="General"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <destination
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Destination - form action tag"
+                    name="./destination"
+                    xtype="textfield"/>
+                <title_text
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Title text"
+                    name="./title_text"
+                    xtype="textfield"/>
+                <libraryCard_text
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Library Card text"
+                    name="./libraryCard_text"
+                    xtype="textfield"/>
+                <id_placehold
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="ID placehold text"
+                    name="./id_placehold"
+                    xtype="textfield"/>
+                <pin_text
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="PIN text"
+                    name="./pin_text"
+                    xtype="textfield"/>
+                <password_placehold
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Password placehold text"
+                    name="./password_placehold"
+                    xtype="textfield"/>
+                <login_text
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Login text"
+                    name="./login_text"
+                    xtype="textfield"/>
+                <bottom_text
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Extra text (bottom line)"
+                    name="./bottom_text"
+                    xtype="textfield"/>
+            </items>
+        </general>
+        <error
+            jcr:primaryType="cq:Widget"
+            title="Error message"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <id_error
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The library card is required and cannot be empty."
+                    fieldLabel="Search Input Text"
+                    name="./id_error"
+                    xtype="textfield"/>
+                <password_error
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Password is required and cannot be empty."
+                    fieldLabel="Search Input Text"
+                    name="./password_error"
+                    xtype="textfield"/>
+            </items>
+        </error>
+    </items>
+</jcr:root>

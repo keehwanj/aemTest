@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    cq:lastReplicated="{Date}2013-12-16T22:20:49.929-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:language="en"
+    jcr:mixinTypes="[cq:ReplicationStatus,mix:language]"
+    jcr:primaryType="sling:Folder">
+    <q1
+        cq:lastReplicated="{Date}2013-12-16T22:20:56.028-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="q1"
+        sling:message="Name of Company"/>
+    <q10
+        cq:lastReplicated="{Date}2013-12-16T22:20:56.028-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="q10"
+        sling:message="Bilingual Capacity"/>
+    <q11
+        cq:lastReplicated="{Date}2013-12-16T22:20:56.028-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="q11"
+        sling:message="Years in business"/>
+    <q12
+        cq:lastReplicated="{Date}2013-12-16T22:20:56.028-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="q11"
+        sling:message="Years in business"/>
+    <q13
+        cq:lastReplicated="{Date}2013-12-16T22:20:56.028-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="header13"
+        sling:message="References to contact re teaching in the public service(contact name, organization, phone # etc.)"/>
+    <q2
+        cq:lastReplicated="{Date}2013-12-16T22:20:56.028-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="q2"
+        sling:message="Address"/>
+    <q3
+        cq:lastReplicated="{Date}2013-12-16T22:20:56.028-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="q3"
+        sling:message="Contact person(s) &amp; their coordinates(phone, fax &amp; e-mail)"/>
+    <q4
+        cq:lastReplicated="{Date}2013-12-16T22:20:56.028-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="q4"
+        sling:message="Website address"/>
+    <q5
+        cq:lastReplicated="{Date}2013-12-16T22:20:56.028-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="q5"
+        sling:message="Contract costs(1 day, ½ day)"/>
+    <q6
+        cq:lastReplicated="{Date}2013-12-16T22:20:56.028-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="q6"
+        sling:message="Travel expenses"/>
+    <q7
+        cq:lastReplicated="{Date}2013-12-16T22:20:56.028-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="q7"
+        sling:message="Brief description of courses offered"/>
+    <q8
+        cq:lastReplicated="{Date}2013-12-16T22:20:56.028-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="q8"
+        sling:message="Area(s) of specialty"/>
+    <q9
+        cq:lastReplicated="{Date}2013-12-16T22:20:56.028-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="q9"
+        sling:message="Online training(if any)"/>
+</jcr:root>

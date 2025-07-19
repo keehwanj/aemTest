@@ -1,0 +1,14 @@
+  var dateFormat = 'dd/mm/yy';
+  var changeYear ='true';
+  var changeMonth = 'true';       
+  var yearRange = '2000:2100';
+  var maxDate ='+0';
+  var showOn = 'both';
+  var buttonImageOnly = true;
+  var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  var dayNamesMin = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  var monthNamesShort = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+  var prevText = 'Prev month';
+  var nextText = 'Next month';
+  var closeText = 'Close';

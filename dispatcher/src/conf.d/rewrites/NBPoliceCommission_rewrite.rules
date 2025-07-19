@@ -1,0 +1,57 @@
+SetEnvIf %{REQUEST_URI} ^ NBPC_CPNB_ENGLISH_ERROR_PAGE=/content/nbpc-cpnb/en/error/404.html
+SetEnvIf %{REQUEST_URI} ^ NBPC_CPNB_FRENCH_ERROR_PAGE=/content/nbpc-cpnb/fr/erreur/404.html
+
+# non-www to www redirect
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://www.%1%{REQUEST_URI} [L,NE,R=301]
+
+# nbpolicecommission redirect
+RewriteCond %{HTTP_HOST} (www.)?nbpolicecommission.ca$
+RewriteRule ^/?$ /content/nbpc-cpnb/en.html [PT,L]
+
+# commissiondepolicenb redirect
+RewriteCond %{HTTP_HOST} (www.)?commissiondepolicenb.ca$
+RewriteRule ^/?$ /content/nbpc-cpnb/fr.html [PT,L]
+
+RewriteCond %{REQUEST_URI} ^/en.html
+RewriteRule ^(.*)$ %{ENV:NBPC_CPNB_ENGLISH_ERROR_PAGE} [PT,L]
+
+RewriteCond %{REQUEST_URI} ^/fr.html
+RewriteRule ^(.*)$ %{ENV:NBPC_CPNB_FRENCH_ERROR_PAGE} [PT,L]
+
+# rewrite for cross-domain issue prevention with a language handle EN
+RewriteCond %{REQUEST_URI} !^/content/nbpc-cpnb
+RewriteCond %{REQUEST_URI} !^/content/dam/nbpc-cpnb
+RewriteCond %{REQUEST_URI} !^/content/gnb/servlets
+RewriteCond %{REQUEST_URI} ^/content/(.*)/en/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^/content/(.*)/en.html
+RewriteRule ^(.*)$ %{ENV:NBPC_CPNB_ENGLISH_ERROR_PAGE} [PT,L]
+
+# rewrite for cross-domain issue prevention with a language handle FR
+RewriteCond %{REQUEST_URI} !^/content/nbpc-cpnb
+RewriteCond %{REQUEST_URI} !^/content/dam/nbpc-cpnb
+RewriteCond %{REQUEST_URI} !^/content/gnb/servlets
+RewriteCond %{REQUEST_URI} ^/content/(.*)/fr/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^/content/(.*)/fr.html
+RewriteRule ^(.*)$ %{ENV:NBPC_CPNB_FRENCH_ERROR_PAGE} [PT,L]
+
+# rewrite for cross-domain issue prevention  NBPC_CPNB ROOT
+RewriteCond %{REQUEST_URI} !^/content/nbpc-cpnb
+RewriteCond %{REQUEST_URI} !^/content/dam/nbpc-cpnb
+RewriteCond %{REQUEST_URI} !^/content/gnb/servlets
+RewriteCond %{REQUEST_URI} ^/content/(.*)/(.*)$
+RewriteRule ^(.*)$ %{ENV:NBPC_CPNB_ENGLISH_ERROR_PAGE} [PT,L]
+
+RewriteCond %{REQUEST_URI} !^/apps
+RewriteCond %{REQUEST_URI} !^/bin
+RewriteCond %{REQUEST_URI} !^/content
+RewriteCond %{REQUEST_URI} !^/etc
+RewriteCond %{REQUEST_URI} !^/home
+RewriteCond %{REQUEST_URI} !^/libs
+RewriteCond %{REQUEST_URI} !^/saml_login
+RewriteCond %{REQUEST_URI} !^/system
+RewriteCond %{REQUEST_URI} !^/tmp
+RewriteCond %{REQUEST_URI} !^/var
+RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.xml)$
+RewriteRule ^/(.*)$ /content/nbpc-cpnb/$1 [PT,L]

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:Z="urn:schemas-microsoft-com:"
+    jcr:lastModified="{Date}2020-04-09T12:32:04.369-03:00"
+    jcr:mimeType="application/octet-stream"
+    jcr:primaryType="sling:Folder"
+    Z:Win32CreationTime="Thu, 09 Apr 2020 15:32:12 GMT"
+    Z:Win32FileAttributes="00000010"
+    Z:Win32LastAccessTime="Thu, 09 Apr 2020 15:32:12 GMT"
+    Z:Win32LastModifiedTime="Wed, 08 Apr 2020 21:15:58 GMT"/>

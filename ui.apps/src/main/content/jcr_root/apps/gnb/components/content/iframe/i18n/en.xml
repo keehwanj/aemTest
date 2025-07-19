@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    cq:lastReplicated="{Date}2013-12-16T22:23:16.361-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:language="en"
+    jcr:mixinTypes="[cq:ReplicationStatus,mix:language]"
+    jcr:primaryType="sling:Folder">
+    <appointment_date
+        cq:lastReplicated="{Date}2013-12-16T22:23:17.017-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="appointment_date"
+        sling:message="Appointment Date : "/>
+    <appointment_type
+        cq:lastReplicated="{Date}2013-12-16T22:23:17.937-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="appointment_type"
+        sling:message="Type of Appointment : "/>
+    <deadline
+        cq:lastReplicated="{Date}2013-12-16T22:23:18.499-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="deadline"
+        sling:message="Deadline for Submission : "/>
+    <department
+        cq:lastReplicated="{Date}2013-12-16T22:23:18.623-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="department"
+        sling:message="Associated / Responsible Department : "/>
+    <email
+        cq:lastReplicated="{Date}2013-12-16T22:23:19.216-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="email1"
+        sling:message="E-mail address for submissions : "/>
+    <filled_positions
+        cq:lastReplicated="{Date}2013-12-16T22:23:19.372-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="filled_position"
+        sling:message="Filled Positions"/>
+    <link
+        cq:lastReplicated="{Date}2013-12-16T22:23:20.105-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="link1"
+        sling:message="Link(s) : "/>
+    <name_x0028_s_x0029_
+        cq:lastReplicated="{Date}2013-12-16T22:23:21.135-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="name_s"
+        sling:message="Name(s) : "/>
+    <term
+        cq:lastReplicated="{Date}2013-12-16T22:23:21.400-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="term"
+        sling:message="Term : "/>
+    <vacancy_for_appointment
+        cq:lastReplicated="{Date}2013-12-16T22:23:22.008-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="vacancy_for_appointment"
+        sling:message="Vacancy for appointment"/>
+</jcr:root>

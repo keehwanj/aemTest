@@ -1,0 +1,56 @@
+trigger:
+  branches:
+    include:
+      - azure-ams-sync
+      - dev
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+- group: aem-ams    
+- name: AMS_BRANCH
+  value: $(Build.SourceBranchName)  # Dynamically uses the branch being built
+
+steps:
+- checkout: self
+  persistCredentials: true
+  fetchDepth: 0
+
+- task: Bash@3
+  name: PushToAMS
+  env:
+    AMS_USERNAME: $(AMS_GIT_USERNAME)
+    AMS_PASSWORD: $(AMS_GIT_PASSWORD)
+    AMS_REPO_URL: $(AMS_GIT_URL)
+  inputs:
+    targetType: 'inline'
+    script: |
+      git config --global user.name "azure-ams-pipeline-sync"
+      git config --global user.email "pipeline@gnb.ca"
+
+      echo "Setting up AMS Git remote..."
+      AUTHED_URL="https://${AMS_USERNAME}:${AMS_PASSWORD}@${AMS_REPO_URL#https://}"
+      git remote add ams "$AUTHED_URL"
+
+      echo "Verifying local Git state..."
+      git remote -v
+      git branch -a
+      git status
+      git log -1 --oneline
+
+      echo "Fetching AMS branch: $AMS_BRANCH"
+      git fetch ams $AMS_BRANCH || echo "AMS branch does not exist yet."
+
+      LOCAL_HEAD=$(git rev-parse HEAD)
+      AMS_HEAD=$(git ls-remote ams refs/heads/$AMS_BRANCH | cut -f1)
+
+      echo "Local HEAD: $LOCAL_HEAD"
+      echo "AMS HEAD:   $AMS_HEAD"
+
+      if [ "$LOCAL_HEAD" != "$AMS_HEAD" ]; then
+        echo "Commits differ — forcing push to AMS branch: $AMS_BRANCH"
+        git push --force ams HEAD:$AMS_BRANCH
+      else
+        echo "AMS is already up to date — no push needed."
+      fi

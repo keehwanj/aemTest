@@ -1,0 +1,1021 @@
+/**
+	START /etc/designs/agnb-bootstrap/clientlibs/css/style.css
+**/
+body {
+    font: 100% Arial, Helvetica, sans-serif;
+    background: url(/etc/designs/agnb-bootstrap/clientlibs/images/bkgr_span.gif) top left repeat-x;
+    margin: 0;
+    padding: 0;
+    /*text-align: center;*/
+    color: #000000;
+}
+
+#header {
+   /** background: url(/etc/designs/agnb-bootstrap/clientlibs/images/header_bkgr.gif) transparent 0 0;**/
+    /*width: 950px;*/
+   /* height: 105px;*/
+    padding: 0px;
+    font: 90% Arial, Helvetica, sans-serif;
+    color: #555;
+    /*padding: 0px 10px 0 0;*/
+    text-align: left;
+}
+
+.text_wrapper {
+    margin: 0 20px 10px;
+}
+
+
+#main_content_wrapper .navbar-default {
+    background-image: linear-gradient(to bottom, #E8E6E6 0%, #f8f8f8 100%);
+
+}
+
+
+/**START of layout.css**/
+
+
+.pageHeader, #breadcrumbNav, .deptPageHeader {
+    margin: 0 30px 0 20px;
+    padding: 0;
+}
+
+.text .pageHeader{
+    margin: 0 5px 0 5px;
+}
+
+#mainContent .pageHeader {
+    margin: 0px !important;
+    margin-bottom: 15px !important;    
+}
+
+
+h2.department {
+    color: #004d42;
+    font-size: 210%;
+    font-weight: normal;
+    padding: 0px 0px 15px 0px;
+    margin: 0;
+}
+
+header div.col-md-4{
+	padding-right: 0px;
+
+}
+
+header div.col-md-8{
+	padding-left: 0px;
+
+}
+
+#pageToolbar {
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+/**END of layout.css**/
+
+/**START of search.css**/
+#keyword_search_box {
+
+}
+
+#keyword_search_form label {
+    display: none;
+}
+
+#keyword_search_form .searchText {
+    border: 1px solid #CCCCCC;
+    height: 26px;
+    width: 177px;
+    margin: 5px 0 0 10px;
+    padding: 3px 0 3px 5px;
+    background: transparent url(/etc/designs/agnb-bootstrap/clientlibs/images/search_input_bkgr.gif) repeat
+        scroll 0 0;
+}
+
+#keyword_search_form  .searchButton {
+    left: 160px;
+    position: relative;
+    top: -25px;
+    margin: 5px 0 0 10px;
+}
+/**END of search.css**/
+
+div.text p {
+    margin: 10px 0 0;
+}
+
+/*START of p tag font*/
+p {
+    margin: 5px 0 0 0;
+    /* padding: 0; */
+    font-size: 95%;
+}
+/*END of p tag font*/
+
+
+/**START of globalnav.css**/
+#globalnav #deptCatButtons, #globalnav ul {
+    height: 41px;
+    margin:0px;
+    padding:0px;
+}
+
+#globalnav #deptCatButtons {
+  color:#000000;
+  float:right;
+  margin:0;
+  padding:0;
+  width: 115px;
+}
+
+#globalnav ul {
+    padding-top: 8px;  
+    list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+}
+
+#globalnav a:link, #globalnav a:visited {
+  color: #555;
+  font-size: 112.5%;
+  line-height: 19px;
+}
+
+#globalnav a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+#globalnav ul li{
+    float:right;
+    padding:0px 10px 0 0;
+    margin:0;
+}
+.btn_dep { 
+    /*font-size:90%;*/
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/btn_dep_bkgr.gif) right -36px;
+    margin:5px 0px 0 0px;
+    padding:7px 0 0 8px;
+    display: block;
+    height:31px;
+    width:106px;
+    float:left;
+    cursor:pointer;
+}
+
+.btn_cat { 
+    /*font-size:90%;*/
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/btn_cat_bkgr.gif) right -36px;
+    margin:5px 0px 0 5px;
+    padding:7px 0 0 8px;
+    display: block;
+    height:31px;
+    width:92px;
+    float:right;
+    cursor:pointer;
+}
+.btn_dep.active,
+.btn_cat.active {
+    background-position: right 0px;
+    color:white;
+}
+#panel_dep, #panel_cat {
+    /*
+    width:960px;
+    */
+    width:250px;
+    display:none;
+    margin:0 0 -38px 0;
+    padding:0;
+    position:relative;
+    top:-10px;
+	left: 115px; 
+}
+
+#panel_dep #bkgr_top, #panel_cat #bkgr_top{
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/panel_dep_bkgr_top.gif) 0 0;
+    height:30px;
+}
+
+#panel_dep #bkgr_span, #panel_cat #bkgr_span{
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/panel_dep_bkgr_span.gif) 0 0 repeat-y;
+    /**
+    width:960px;
+    **/
+    width:250px;
+    height:auto;
+    padding:0px;
+    margin:0;
+}
+
+#panel_dep #bkgr_footer, #panel_cat #bkgr_footer{
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/panel_dep_bkgr_footer.gif) 0 0;
+    height:28px;
+
+}
+
+#panel_dep #bkgr_span ul, #panel_cat #bkgr_span ul{
+    list-style:none;
+    margin:0 0 0 0px;
+    padding:0 20px 0 20px;
+    height:auto;
+    width:180px;
+    float:left;
+    font-size: 100%;
+}
+
+#panel_dep #bkgr_span ul.first_list, #panel_cat #bkgr_span ul.first_list{
+    list-style:none;
+    /*
+    margin:0 0 0 20px;
+    */
+    margin:0 0 0 0px;
+    padding:0 20px 0 20px;
+    height:auto;
+    width:180px;
+    float:left;
+
+}
+
+
+#panel_dep #bkgr_span ul h2, #panel_cat #bkgr_span ul h2,
+#panel_dep #bkgr_span ul h2 a:link, #panel_cat #bkgr_span ul h2 a:link,
+#panel_dep #bkgr_span ul h2 a:visited, #panel_cat #bkgr_span ul h2 a:visited{
+    color:#555;
+    font-size:100%;
+    font-weight:bold;   
+    background:transparent;
+    padding:0px;
+}
+
+#panel_dep #bkgr_span li, #panel_cat #bkgr_span li{
+    margin:0;
+    padding:0;
+}
+
+#panel_dep #bkgr_span a:link, #panel_dep #bkgr_span a:visited, #panel_cat #bkgr_span a:link, #panel_cat #bkgr_span a:visited{
+    color:#555;
+    /*font-size:80%;*/
+    text-decoration:none;
+    padding:0px 0 5px 10px;
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/arrow.gif) 0px 5px no-repeat;
+
+    display:block;
+    height:1%;
+
+}
+#panel_dep #bkgr_span a:hover, #panel_cat #bkgr_span a:hover { text-decoration: underline; }
+
+/**start of new addition of globalnav.css**/
+#panel_dep #bkgr_top1, #panel_cat #bkgr_top1 {
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/panel_dep_bkgr_top.gif) 0 0;
+    height:30px;
+}
+
+#panel_dep #bkgr_span1, #panel_cat #bkgr_span1 {
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/panel_dep_bkgr_span.gif) 0 0 repeat-y;
+    /**
+    width:960px;
+    **/
+    width:250px;
+    height:auto;
+    padding:0px;
+    margin:0;
+}
+
+#panel_dep #bkgr_footer1, #panel_cat #bkgr_footer1 {
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/panel_dep_bkgr_footer.gif) 0 0;
+    height:28px;
+
+}
+
+#panel_dep #bkgr_span1 ul, #panel_cat #bkgr_span1 ul{
+    list-style:none;
+    margin:0 0 0 0px;
+    padding:0 20px 0 20px;
+    height:auto;
+    width:180px;
+    float:left;
+    font-size: 100%;
+}
+
+#panel_dep #bkgr_span1 ul.first_list, #panel_cat #bkgr_span1 ul.first_list{
+    list-style:none;
+    /*
+    margin:0 0 0 20px;
+    */
+    margin:0 0 0 0px;
+    padding:0 20px 0 20px;
+    height:auto;
+    width:180px;
+    float:left;
+
+}
+
+
+#panel_dep #bkgr_span1 ul h2, #panel_cat #bkgr_span1 ul h2, 
+#panel_dep #bkgr_span1 ul h2 a:link, #panel_cat #bkgr_span1 ul h2 a:link,
+#panel_dep #bkgr_span1 ul h2 a:visited, #panel_cat #bkgr_span1 ul h2 a:visited{
+    color:#555;
+    font-size:100%;
+    font-weight:bold;   
+    background:transparent;
+    padding:0px;
+}
+
+#panel_dep #bkgr_span1 li, #panel_cat #bkgr_span1 li{
+    margin:0;
+    padding:0;
+}
+
+#panel_dep #bkgr_span1 a:link, #panel_dep #bkgr_span1 a:visited, #panel_cat #bkgr_span1 a:link, #panel_cat #bkgr_span1 a:visited{
+    color:#555;
+    /*font-size:80%;*/
+    text-decoration:none;
+    padding:0px 0 5px 10px;
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/arrow.gif) 0px 5px no-repeat;
+
+    display:block;
+    height:1%;
+
+}
+#panel_dep #bkgr_span1 a:hover, #panel_cat #bkgr_span1 a:hover { text-decoration: underline; }
+/**end of new addition of globalnav.css**/
+/**END of globalnav.css**/
+
+
+/*START of global.css*/
+
+.printHeader
+{
+    display: none !important;
+}
+a img {
+    border:0px;
+    -ms-interpolation-mode:bicubic;
+    }
+img[usemap] {
+    border:0px;
+    -ms-interpolation-mode:bicubic;    
+    }
+body.smaller {
+    font: 130% Arial, Helvetica, sans-serif;
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/bkgr_span.gif) top left repeat-x;
+    margin: 0;
+    padding: 0;
+    /*text-align: center; */
+    color: #000000;    
+}
+
+body.bigger {
+    font: 160% Arial, Helvetica, sans-serif;
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/bkgr_span.gif) top left repeat-x;
+    margin: 0;
+    padding: 0;
+    /**text-align: center; **/
+    color: #000000;
+}
+
+a{
+    color:#663366;
+    text-decoration:none;
+}
+/**
+a:hover{
+    color:#000;
+    text-decoration:none;
+}
+**/
+/**START of for accessibility**/
+a:focus, a:hover {
+	outline:1px;
+	/*background-color:#ff0 !important;*/
+	text-decoration:underline !important;
+}
+/**END of for accessibility**/
+
+
+#full_width {
+    float:left;
+    margin:-25px 0 0px 0;
+    width:100%;
+}
+
+
+li {
+    font-size: 95%;
+}
+
+div#mainnav{
+    font-size:100%;  
+}
+
+.left_border{
+    border-left:1px solid #CCC; 
+}
+
+.right_border{
+    border-right:1px solid #CCC;    
+}
+.right{
+    float:right;
+}
+
+.left{
+    float:left;
+}
+.clearfloat, .clearfloats { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+    clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+.inv{
+    visibility:hidden;
+}
+.hidden {
+    display:none;
+    }
+
+.box{
+    border-bottom:1px solid #d3d3d3;
+    padding:10px 0 10px 0;
+    margin-bottom: 10px;
+}
+
+.shaded{
+    background-color:#f5f5f5;
+}
+
+.more_link_box {
+    border:0px solid white;
+    margin-bottom: 10px;
+    padding:0;
+}
+.box h2 {
+    color:#1874b1;
+    font-size:120%;
+    margin:0;
+    padding:0;
+}
+/*
+div.text p { margin: 10px 0 0; }
+*/
+.imagecontainer .box {
+    padding: 10px 20px 10px 20px;
+}
+.imagecontainer .border {
+    border:1px solid #D3D3D3;
+    padding:4px;    
+}
+.imagecontainer img {
+  display:block;
+  width:100%;
+  vertical-align: bottom;
+  -ms-interpolation-mode:bicubic;
+}
+
+.more_link_blue a{
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/arrow_blue.gif) no-repeat center right;
+    padding:0px 10px 0px 0;
+}
+.more_link_blue a:hover { background-image: url(/etc/designs/agnb-bootstrap/clientlibs/images/arrow.gif); }
+.more_link a{
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/arrow.gif) no-repeat center right;
+    color:#555;
+    text-transform:uppercase;
+    font-size:85%;
+    padding-right:10px;
+}
+
+.post_date {
+  color:#777777;
+  font-size:90%;
+}
+
+.grey {
+    color: #555555;
+}
+table {
+    border-collapse:collapse;
+    margin-bottom:20px;
+    text-align:left;
+/**Request by Colin
+    width:100%;
+**/    
+}
+th {
+   /* height:46px;*/
+    padding:0 0 0 10px;
+    color:#004D42;
+    font-size:90%;
+    font-weight:normal;
+       text-align:left;
+}
+
+td {
+    vertical-align: top;
+    text-align:left;
+    border-bottom:1px solid #D3D3D3;
+    font-size:90%;
+    padding:10px;
+}
+
+
+/* Browser specific (not valid) styles to make preformatted text wrap */
+pre {
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+/**
+.pageHeader h3, .item_services h4, .item_services_first h4  {
+    font-size:100%;
+    margin:0px !important;
+    padding:0 !important;
+    font-weight: normal !important;
+
+    }
+    .pageHeader h3 {
+    margin-bottom: 15px !important;
+    }
+    .pageHeader h3 div, .item_services h4 div, .item_services_first h4 div {
+     display: inline;
+    }
+.renderer_container {
+    margin: 0 300px 0 0 !important; 
+    padding: 0;
+}
+.item_services, .item_services_first {
+    background:transparent url(/etc/designs/agnb-bootstrap/clientlibs/images/bkgr_span_services.gif) repeat-x scroll center bottom;
+    color:black;
+    margin:0 0 20px;
+    padding-bottom:10px;
+    float:left;
+    width:600px;
+}
+.item_services_first {
+    padding-top:-15px;
+    }
+.item_services .column, .item_services_first .column  {
+    float:left;
+    margin:0;
+    padding-right:20px;
+    width:280px;
+    word-wrap:break-word;
+}
+.item_services h2, .item_services_first h2, .item_services h3, .item_services_first h3  {
+    color:#004D42 !important;
+    font-size:120%;
+    margin:0px !important;
+    padding:0 !important;
+    font-weight: normal !important;
+}
+ .item_services h3, .item_services_first h3 {
+    font-size:110% !important;
+
+ }
+
+h2.column_title {
+    margin-bottom:0px;
+}
+
+.item_services p {
+    font-size:90%;
+    padding:0;
+    margin-bottom: 10px;
+}
+**/
+/*END of global.css*/
+
+/*START of column*/
+/* column control layouts */
+div.parsys_column {
+    height: 100%;
+    width: 100%;
+    float: left;
+    border: 0;
+    vertical-align:top;
+    padding: 0;
+    margin: 5px 0 5px 0;
+}
+
+div.parsys_column .section {
+    overflow:hidden;
+    width: 100%;
+}
+
+div.cq-colctrl-cols {width: 100%; float: left; }
+
+div.cq-colctrl-default { width: 100%;}
+
+div.cq-colctrl-lt0-c0 { width: 48%; padding-right: 1%; border-right:1px solid #d3d3d3;}
+div.cq-colctrl-lt0-c1 { width: 49%; padding-left: 1%;}
+
+div.cq-colctrl-lt1-c0 { width: 49%; padding-right: 1%;}
+div.cq-colctrl-lt1-c1 { width: 49%; padding-left: 1%;}
+
+div.cq-colctrl-lt2-c0 { width: 37%; padding-right: 2%; border-right:1px solid #d3d3d3;}
+div.cq-colctrl-lt2-c1 { width: 58%; padding-left: 2%;}
+
+div.cq-colctrl-lt3-c0 { width: 38%; padding-right: 2%;}
+div.cq-colctrl-lt3-c1 { width: 58%; padding-left: 2%;}
+
+div.cq-colctrl-lt4-c0 { width: 58%; padding-right: 2%; border-right:1px solid #d3d3d3;}
+div.cq-colctrl-lt4-c1 { width: 37%; padding-left: 2%;}
+
+div.cq-colctrl-lt5-c0 { width: 58%; padding-right: 2%;}
+div.cq-colctrl-lt5-c1 { width: 38%; padding-left: 2%;}
+
+div.cq-colctrl-lt6-c0 { width: 32%;  padding-right: 1%; border-right:1px solid #d3d3d3;}
+div.cq-colctrl-lt6-c1 { width: 31%;  padding-right: 1%;padding-left: 1%; border-right:1px solid #d3d3d3;}
+div.cq-colctrl-lt6-c2 { width: 32%; padding-left: 1%;}
+
+div.cq-colctrl-lt7-c0 { width: 32%;  padding-right: 1%;}
+div.cq-colctrl-lt7-c1 { width: 32%;  padding-right: 1%;padding-left: 1%; }
+div.cq-colctrl-lt7-c2 { width: 32%; padding-left: 1%;}
+
+div.cq-colctrl-lt8-c0 { width: 47%;  padding-right: 1%; border-right:1px solid #d3d3d3;}
+div.cq-colctrl-lt8-c1 { width: 24%;  padding-right: 1%;padding-left: 1%; border-right:1px solid #d3d3d3;}
+div.cq-colctrl-lt8-c2 { width: 24%; padding-left: 1%;}
+
+div.cq-colctrl-lt9-c0 { width: 50%;  padding-right: 1%;}
+div.cq-colctrl-lt9-c1 { width: 24%;  padding-right: 1%;}
+div.cq-colctrl-lt9-c2 { width: 24%;}
+
+div.cq-colctrl-lt10-c0 { width: 24%;  padding-right: 1%; border-right:1px solid #d3d3d3;}
+div.cq-colctrl-lt10-c1 { width: 24%;  padding-right: 1%;padding-left: 1%; border-right:1px solid #d3d3d3;}
+div.cq-colctrl-lt10-c2 { width: 47%; padding-left: 1%;}
+
+div.cq-colctrl-lt11-c0 { width: 24%;  padding-right: 1%;}
+div.cq-colctrl-lt11-c1 { width: 24%;  padding-right: 1%;}
+div.cq-colctrl-lt11-c2 { width: 50%;}
+
+/*for displaying something like "left template" in stack template*/
+div.cq-colctrl-lt12-c0 { width: 66%; padding-right: 1%;}
+div.cq-colctrl-lt12-c1 { width: 31%; padding-left: 2%;}
+
+/*for displaying 3 columns; narrow width in left/right and wide in middle for department landing pages*/
+div.cq-colctrl-lt13-c0 { width: 15%;  padding-right: 1%;}
+div.cq-colctrl-lt13-c1 { width: 66%;  padding-right: 1%;padding-left: 1%; }
+div.cq-colctrl-lt13-c2 { width: 15%; padding-left: 1%;}
+
+/*2Columns(33%, 66%)*/
+div.cq-colctrl-lt14-c0 { width: 31%; padding-right: 1%; border-right:1px solid #d3d3d3;}
+div.cq-colctrl-lt14-c1 { width: 65%; padding-left: 1%;}
+
+/*2Columns(33%, 66%) no line*/
+div.cq-colctrl-lt15-c0 { width: 32%; padding-right: 1%;}
+div.cq-colctrl-lt15-c1 { width: 65%; padding-left: 1%;}
+
+/*2Columns(66%, 33%)*/
+div.cq-colctrl-lt16-c0 { width: 65%; padding-right: 1%; border-right:1px solid #d3d3d3;}
+div.cq-colctrl-lt16-c1 { width: 31%; padding-left: 1%;}
+
+/*2Columns(66%, 33%) no line*/
+div.cq-colctrl-lt17-c0 { width: 65%; padding-right: 1%;}
+div.cq-colctrl-lt17-c1 { width: 32%; padding-left: 1%;}
+
+/*3Columns(40%, 35%, 25%) no line - highway camera*/
+div.cq-colctrl-lt18-c0 { width: 39%;  padding-right: 1%;}
+div.cq-colctrl-lt18-c1 { width: 34%;  padding-right: 1%;}
+div.cq-colctrl-lt18-c2 { width: 25%; }
+
+/*END of column*/
+
+
+/*START of pageFooter.jsp*/
+.footernav {
+    height:160px;   
+}
+.footerNavSection {
+    margin:0 0 0 0px;
+    padding:0 0px 0 20px;
+    width:220px;
+    float:left;
+    height:170px;
+}
+
+
+.footerNavSection .sectiontitle {
+  color:black;
+  font-size:90%;
+  font-weight:bold;
+  margin-bottom:5px;
+}
+
+#footerNav li {
+  /*line-height:1;*/
+  margin:0 0 5px;
+}
+
+#footerNav a, #footerNav a:visited {
+
+    color: #555;
+}
+
+#footerNav a:hover { color: #000; }
+/*END of pageFooter.jsp*/
+
+
+
+/**START of form input field(expand height/label font)**/
+.ext-strict #CQ .x-form-text{
+    height: 22px;
+}
+
+.ext-strict #CQ label {
+    font-weight: normal;
+}
+
+.ext-strict #CQ .cq-editrollover-highlight-top, .ext-strict #CQ .cq-editrollover-highlight-right, .ext-strict #CQ .cq-editrollover-highlight-bottom, .ext-strict #CQ .cq-editrollover-highlight-left {
+ 	padding: 0px;
+}
+
+#CQ .x-form-text, #CQ textarea.x-form-field {
+    /*height: 21px !important;*/
+}
+
+/**END of author's dialog(expand height/label font)**/
+
+/**START of table header vertical align**/
+.text .table > tbody > tr > th {
+    vertical-align: middle;
+}
+/**END of table header vertical align**/
+
+/**START of table margin-bottom for Latest Public Service Jobs**/
+.top_five .table {
+    margin-bottom: 0px;
+}
+/**END of table margin-bottom for Latest Public Service Jobs**/
+
+iframe {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+    }
+
+
+
+/*START of line break for long text like long webaddress(commented it out-2016-3-16)*/
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+
+ /*word-break: break-all;*/
+
+}
+/*END of line break for long text like long webaddress*/
+/*START of case of youtube video embed to text component*/
+.text .videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.text .videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*END of case of youtube video embed to text component*/
+/**
+END
+/etc/designs/agnb-bootstrap/clientlibs/css/style.css
+**/
+
+
+/**START of form input field(expand height/label font)**/
+.ext-strict #CQ .x-form-text{
+    height: 21px;
+}
+
+.ext-strict #CQ label {
+    font-weight: normal;
+}
+
+.ext-strict #CQ .cq-editrollover-highlight-top, .ext-strict #CQ .cq-editrollover-highlight-right, .ext-strict #CQ .cq-editrollover-highlight-bottom, .ext-strict #CQ .cq-editrollover-highlight-left {
+ 	padding: 0px;
+}
+
+#CQ .x-form-text, #CQ textarea.x-form-field {
+    /*height: 21px !important;*/
+}
+
+#CQ .cq-sidekick .x-window-header {
+	height: 40px;
+}
+
+#CQ .cq-sidekick .x-window-bbar .x-toolbar {
+    height: 24px;
+}
+
+/**END of author's dialog(expand height/label font)**/
+
+
+/*START of bootstrapValidator*/
+/**
+ * FormValidation (http://formvalidation.io)
+ * The best jQuery plugin to validate form fields. Support Bootstrap, Foundation, Pure, SemanticUI, UIKit and custom frameworks
+ *
+ * @author      http://twitter.com/nghuuphuoc
+ * @copyright   (c) 2013 - 2015 Nguyen Huu Phuoc
+ * @license     http://formvalidation.io/license/
+ */
+
+.fv-has-feedback {
+    position: relative;
+}
+.fv-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+}
+.fv-has-feedback .fv-control-feedback {
+    /*right: 15px;*/
+}
+.fv-help-block {
+    display: block;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ For Bootstrap form ~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.fv-form-bootstrap .help-block {
+    margin-bottom: 0;
+}
+.fv-form-bootstrap .tooltip-inner {
+    text-align: left;
+}
+/* Bootstrap stacked form without label */
+.fv-form-bootstrap .fv-icon-no-label {
+	top: 0;
+}
+.fv-form-bootstrap .fv-bootstrap-icon-input-group {
+	z-index: 100;
+}
+/* Bootstrap inline form */
+.form-inline.fv-form-bootstrap .form-group {
+    vertical-align: top;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ For Foundation form ~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.fv-form-foundation .fv-control-feedback {
+    top: 21px;      /* The height of Foundation label */
+    right: 15px;    /* The padding-right of .columns */
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
+}
+.fv-form-foundation .collapse .fv-control-feedback {
+    top: 0;
+    right: 0;
+}
+/* Foundation horizontal form */
+.fv-form-horizontal.fv-form-foundation .fv-control-feedback {
+    top: 0;
+}
+/* Foundation stacked form without label */
+.fv-form-foundation .fv-icon-no-label {
+	top: 0;
+}
+.fv-form-foundation .error .fv-control-feedback {
+    color: #f04124;
+}
+/**
+ * Foundation reset the bottom marin to 0 when the row has '.error' class
+ * I need to adjust it when using tooltip to show the error
+ */
+.fv-form-foundation .error.fv-has-tooltip input, .error.fv-has-tooltip textarea, .error.fv-has-tooltip select {
+    margin-bottom: 1rem;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ For Pure form ~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~ */
+
+.fv-form-pure .fv-control-feedback {
+    top: 22px;      /* Height of Pure label */
+    width: 36px;    /* Height of Pure input */
+    height: 36px;
+    line-height: 36px;
+}
+.pure-form-stacked.fv-form-pure .fv-control-feedback {
+    top: 4px;
+}
+.pure-form-aligned .pure-control-group .fv-help-block {
+    margin-top: 5px;
+    margin-left: 180px;
+}
+.pure-form-aligned.fv-form-pure .fv-control-feedback,    /* Pure horizontal form */
+.fv-form-pure .fv-icon-no-label {           /* Pure stacked form without label */
+	top: 0;
+}
+.fv-form-pure .fv-has-error label,
+.fv-form-pure .fv-has-error .fv-help-block,
+.fv-form-pure .fv-has-error .fv-control-feedback {
+    color: #CA3C3C;     /* Same as .button-error */
+}
+.fv-form-pure .fv-has-success label,
+.fv-form-pure .fv-has-success .fv-control-feedback {
+    /*color: #1CB841;*/     /* Same as .button-success */
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ For Semantic form ~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.fv-form-semantic .fv-control-feedback.icon {
+    right: 7px;
+}
+.fv-form-semantic .error .icon {
+    color: #d95c5c;
+}
+/* Semantic horizontal form */
+.fv-form-horizontal.fv-form-semantic .row {
+    padding-bottom: 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ For UIKit form ~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~ */
+
+.fv-form-uikit .fv-control-feedback {
+    top: 25px;      /* Height of UIKit label */
+    width: 30px;    /* Height of UIKit input */
+    height: 30px;
+    line-height: 30px;
+}
+.fv-form-uikit .uk-text-danger {
+    display: block;
+}
+/* UIKit horizontal form */
+.uk-form-horizontal.fv-form-uikit .fv-control-feedback {
+    /*line-height: normal;*/
+    top: 0;
+}
+.fv-form-uikit .fv-has-error label,
+.fv-form-uikit .fv-has-error .uk-form-label,
+.fv-form-uikit .fv-has-error .fv-control-feedback {
+    color: #D85030;     /* Same as .uk-form-danger */
+}
+.fv-form-uikit .fv-has-success label,
+.fv-form-uikit .fv-has-success .uk-form-label,
+.fv-form-uikit .fv-has-success .fv-control-feedback {
+    /*color: #659F13;*/     /* Same as .uk-form-success */
+}
+/* UIKit stacked form without label */
+.fv-form-uikit .fv-icon-no-label {
+	top: 0;
+}
+
+/*END of bootstrapValidator*/
+
+#CQ .cq-sidekick .x-window-header {
+     height: 40px;
+}
+
+/*START of form new*/
+form .form_row .form_rightcol {
+    clear: none;
+}
+/*END of form new*/
+
+/*START of several indents*/
+li  p {
+    font-size: 100%;
+}
+
+li  li {
+    font-size: 100%;
+}
+
+.text ul ul, .text ol ol, .text ol ul, .text ul ol{
+    margin-top: 0px !important;
+}
+/*END of several indents*/

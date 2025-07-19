@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','children','static','search','querybuilder'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="LG Community Profile Article Viewer"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <text-header
+            jcr:primaryType="cq:Widget"
+            title="Texts"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <address
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Address or Cité"
+                    fieldLabel="Address"
+                    name="./address_Text"
+                    xtype="textfield"/>
+                <header_cities
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Cities or Cité"
+                    fieldLabel="Cities"
+                    name="./header_cities"
+                    xtype="textfield"/>
+                <header_contact
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Contact"
+                    fieldLabel="Contact"
+                    name="./header_contact"
+                    xtype="textfield"/>
+                <header_mayor
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Mayor or Maire"
+                    fieldLabel="Mayor"
+                    name="./header_mayor"
+                    xtype="textfield"/>
+                <header_councillors
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Councillors or Conseillers / Conseillères"
+                    fieldLabel="Councillors"
+                    name="./header_councillors"
+                    xtype="textfield"/>
+                <telephone
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Tel:  / Tél : "
+                    fieldLabel="Telephone"
+                    name="./telephone_Text"
+                    xtype="textfield"/>
+                <fax
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Fax: / Téléc. : "
+                    fieldLabel="Fax"
+                    name="./fax_Text"
+                    xtype="textfield"/>
+                <email
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Email: / Email :  "
+                    fieldLabel="Email"
+                    name="./email_Text"
+                    xtype="textfield"/>
+                <nb
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : NB / (N.-B.)"
+                    fieldLabel="NB text"
+                    name="./nb_Text"
+                    xtype="textfield"/>
+                <working_language
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Working Language / Langue"
+                    fieldLabel="Working Language"
+                    name="./language_Text"
+                    xtype="textfield"/>
+                <county
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : County or Comté"
+                    fieldLabel="County"
+                    name="./county_Text"
+                    xtype="textfield"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Description or La description"
+                    fieldLabel="Description"
+                    name="./description_Text"
+                    xtype="textfield"/>
+            </items>
+        </text-header>
+        <renderer_x0020_page
+            jcr:primaryType="cq:Widget"
+            title="Default Image"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <default_image
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Default Image"
+                    name="./default_image"
+                    xtype="pathfield"/>
+            </items>
+        </renderer_x0020_page>
+    </items>
+</jcr:root>

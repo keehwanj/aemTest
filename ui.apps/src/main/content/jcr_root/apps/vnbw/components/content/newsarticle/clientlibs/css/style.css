@@ -1,0 +1,60 @@
+/*
+ ADOBE CONFIDENTIAL
+ __________________
+
+  Copyright 2012 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+
+	newsarticle.css
+ */
+/**START of newsarticle.css**/
+
+.newsarticle .articleImage {
+  height: 300px;
+  position: relative;
+  float: right;
+  margin: 5px;
+}
+
+.newsarticle #sidebar img {
+  border: 1px solid #d3d3d3;
+  width: 288px;
+  padding: 4px;
+}
+.newsarticle #sidebar img.icon {
+  border: 0px solid #d3d3d3;
+  width: auto;
+  padding: 0px;
+  margin: 0px 5px 0px 5px;
+}
+.newsarticle #sidebar .webcast {
+  font-size: 90%;
+  margin: 10px 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d3d3d3;
+}
+.newsarticle #sidebar .toolbar {
+  font-size: 95%;
+}
+.newsarticle .articleBody {
+  margin-top: 5px;
+  padding-bottom: 20px;
+  /*padding-right:300px;*/
+}
+.newsarticle #sidebar .padded {
+  padding: 10px;
+}
+.newsarticle .articleBody p {
+  margin-top: 10px;
+}
+
+/**END of newsarticle.css**/

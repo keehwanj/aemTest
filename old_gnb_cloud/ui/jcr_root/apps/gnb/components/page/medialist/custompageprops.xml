@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general_1
+            jcr:primaryType="cq:Panel"
+            title="General 1">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <type
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Type"
+                    name="./type"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <Cablevision
+                            jcr:primaryType="nt:unstructured"
+                            text="Cablevision"
+                            value="Cablevision"/>
+                        <Bimonthlies
+                            jcr:primaryType="nt:unstructured"
+                            text="Bimonthlies"
+                            value="Bimonthlies"/>
+                        <Dailies
+                            jcr:primaryType="nt:unstructured"
+                            text="Dailies"
+                            value="Dailies"/>
+                        <Monthlies
+                            jcr:primaryType="nt:unstructured"
+                            text="Monthlies"
+                            value="Monthlies"/>
+                        <Electronic_x0020_Publications
+                            jcr:primaryType="nt:unstructured"
+                            text="Electronic Publications"
+                            value="Electronic Publications"/>
+                        <Biweeklies
+                            jcr:primaryType="nt:unstructured"
+                            text="Biweeklies"
+                            value="Biweeklies"/>
+                        <Media_x0020_Online
+                            jcr:primaryType="nt:unstructured"
+                            text="Media Online"
+                            value="Media Online"/>
+                        <News_x0020_Services
+                            jcr:primaryType="nt:unstructured"
+                            text="News Services"
+                            value="News Services"/>
+                        <Newspapers
+                            jcr:primaryType="nt:unstructured"
+                            text="Newspapers"
+                            value="Newspapers"/>
+                        <Newspapers_x0020_-_x0020_Outside_x0020_Province
+                            jcr:primaryType="nt:unstructured"
+                            text="Newspapers - Outside Province"
+                            value="Newspapers - Outside Province"/>
+                        <Radio_x0020_Stations
+                            jcr:primaryType="nt:unstructured"
+                            text="Radio Stations"
+                            value="Radio Stations"/>
+                        <Radio_x0020_Stations_x0020_-_x0020_Outside_x0020_Province
+                            jcr:primaryType="nt:unstructured"
+                            text="Radio Stations - Outside Province"
+                            value="Radio Stations - Outside Province"/>
+                        <Television_x0020_Stations
+                            jcr:primaryType="nt:unstructured"
+                            text="Television Stations"
+                            value="Television Stations"/>
+                        <Television_x0020_Stations_x0020_-_x0020_Outside_x0020_Province
+                            jcr:primaryType="nt:unstructured"
+                            text="Television Stations - Outside Province"
+                            value="Television Stations - Outside Province"/>
+                        <University_x0020_Media
+                            jcr:primaryType="nt:unstructured"
+                            text="University Media"
+                            value="University Media"/>
+                        <Weeklies
+                            jcr:primaryType="nt:unstructured"
+                            text="Weeklies"
+                            value="Weeklies"/>
+                    </options>
+                </type>
+                <language_use
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    defaultValue="English"
+                    fieldLabel="Language"
+                    name="./language_use"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <French
+                            jcr:primaryType="nt:unstructured"
+                            text="French"
+                            value="French"/>
+                        <English
+                            jcr:primaryType="nt:unstructured"
+                            text="English"
+                            value="English"/>
+                        <Bilingual
+                            jcr:primaryType="nt:unstructured"
+                            text="Bilingual"
+                            value="Bilingual"/>
+                    </options>
+                </language_use>
+                <street
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Street"
+                    name="./street"
+                    xtype="textfield"/>
+                <po_box
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="P.O. Box"
+                    name="./po_box"
+                    xtype="textfield"/>
+                <postal_code
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Postal Code"
+                    name="./postal_code"
+                    xtype="textfield"/>
+                <province
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    defaultValue="New Brunswick"
+                    fieldLabel="Province"
+                    name="./province"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <maine
+                            jcr:primaryType="nt:unstructured"
+                            text="Maine"
+                            value="Maine"/>
+                        <new_x0020_brunswick
+                            jcr:primaryType="nt:unstructured"
+                            text="New Brunswick"
+                            value="New Brunswick"/>
+                        <newfoundland
+                            jcr:primaryType="nt:unstructured"
+                            text="Newfoundland"
+                            value="Newfoundland"/>
+                        <nova_x0020_scotia
+                            jcr:primaryType="nt:unstructured"
+                            text="Nova Scotia"
+                            value="Nova Scotia"/>
+                        <quebec
+                            jcr:primaryType="nt:unstructured"
+                            text="Quebec"
+                            value="Quebec"/>
+                        <ontario
+                            jcr:primaryType="nt:unstructured"
+                            text="Ontario"
+                            value="Ontario"/>
+                    </options>
+                </province>
+            </items>
+        </general_1>
+        <general_2
+            jcr:primaryType="cq:Panel"
+            title="General_2">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <contact
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the contact"
+                    fieldLabel="Contact"
+                    name="./contact"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </contact>
+                <email
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the email address"
+                    fieldLabel="Email"
+                    name="./email"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </email>
+                <phone
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the phone number"
+                    fieldLabel="Phone number"
+                    name="./phone"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </phone>
+                <fax
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the fax number"
+                    fieldLabel="Fax number"
+                    name="./fax"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </fax>
+                <url
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the url"
+                    fieldLabel="URL"
+                    name="./url"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </url>
+                <cell
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add the url"
+                    fieldLabel="Cell"
+                    name="./cell"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="355"
+                        xtype="textfield"/>
+                </cell>
+            </items>
+        </general_2>
+        <english
+            jcr:primaryType="cq:Panel"
+            title="English">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <en_title
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Title"
+                    name="./en_title"
+                    xtype="textfield"/>
+                <en_city
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="City Name"
+                    name="./en_city"
+                    xtype="textfield"/>
+            </items>
+        </english>
+        <french
+            jcr:primaryType="cq:Panel"
+            title="French">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <fr_title
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Title"
+                    name="./fr_title"
+                    xtype="textfield"/>
+                <fr_city
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="City Name"
+                    name="./fr_city"
+                    xtype="textfield"/>
+            </items>
+        </french>
+    </items>
+</jcr:root>

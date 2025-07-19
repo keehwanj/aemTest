@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="gnb list_update"
+    xtype="dialog">
+    <items
+        jcr:primaryType="nt:unstructured"
+        title="List"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Widget"
+                title="General Options"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <listStyle
+                        jcr:primaryType="cq:Widget"
+                        allowEmpty="true"
+                        fieldLabel="List Style"
+                        name="./listStyle"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <greyarrow
+                                jcr:primaryType="nt:unstructured"
+                                text="Grey (with arrow)"
+                                value="greyarrow"/>
+                            <bluearrow
+                                jcr:primaryType="nt:unstructured"
+                                text="Blue (with arrow)"
+                                value="bluearrow"/>
+                            <footer
+                                jcr:primaryType="nt:unstructured"
+                                text="Unstyled"
+                                value="unstyled"/>
+                        </options>
+                    </listStyle>
+                    <moreText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="More Link Text"
+                        name="./moreLinkText"
+                        xtype="textfield"/>
+                    <moreLink
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="More Link"
+                        name="./moreLink"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <padded9
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="false"
+                        fieldLabel="Padded"
+                        name="./padded"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <shaded10
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="false"
+                        fieldLabel="Shaded"
+                        name="./shaded"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <border
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="false"
+                        fieldLabel="Show Bottom Border"
+                        name="./border"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <feeddescription
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="RSS Feed Description"
+                        name="./feeddescription"
+                        validateOnBlur="true"
+                        xtype="textarea"/>
+                    <feedname
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="RSS Feed Name"
+                        name="./feedname"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <feedEnabled
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="false"
+                        fieldLabel="Enable Feed"
+                        name="./feedEnabled"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <reverseOrder
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="false"
+                        fieldLabel="Display Reverse Order"
+                        name="./reverseOrder"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </general>
+            <links_text
+                jcr:primaryType="cq:Widget"
+                title="Text"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links_text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new text."
+                        fieldLabel="Link Texts"
+                        name="./links_text"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </links_text>
+                </items>
+            </links_text>
+            <links
+                jcr:primaryType="cq:Widget"
+                title="Links"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new link."
+                        fieldLabel="Links"
+                        name="./links"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="pathfield"/>
+                    </links>
+                </items>
+            </links>
+        </items>
+    </items>
+</jcr:root>

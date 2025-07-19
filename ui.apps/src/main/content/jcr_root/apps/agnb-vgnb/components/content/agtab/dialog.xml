@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','children','static','search','querybuilder'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="Tab Panel"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab_title
+            jcr:primaryType="cq:Widget"
+            title="Tab Title"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tab_title
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldDescription="Click the '+' to add a new tab"
+                    fieldLabel="Tab Title"
+                    name="./tab_title"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        xtype="textfield"/>
+                </tab_title>
+            </items>
+        </tab_title>
+        <parameters
+            jcr:primaryType="cq:Widget"
+            title="Parameters"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <parameters
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldDescription="Click the '+' to add a new tab"
+                    fieldLabel="Parameters"
+                    name="./parameters"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        xtype="textfield"/>
+                </parameters>
+            </items>
+        </parameters>
+        <general
+            jcr:primaryType="cq:Widget"
+            title="General"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <parameter_name
+                    jcr:primaryType="nt:unstructured"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Parameter Name"
+                    name="./parameter_name"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+            </items>
+        </general>
+    </items>
+</jcr:root>

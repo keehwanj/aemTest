@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Multimedia"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <video
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Video"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <video1
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video 1"
+                                name="./video1"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <videotitle1
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video Title 1"
+                                name="./videotitle1"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videodescription1
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video Description 1"
+                                name="./videodescription1"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videoimage1
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video Thumbnail 1"
+                                name="./videoimage1"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <video2
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video 2"
+                                name="./video2"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <videotitle2
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video Title 2"
+                                name="./videotitle2"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videodescription2
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video Description 2"
+                                name="./videodescription2"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videoimage2
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video Thumbnail 2"
+                                name="./videoimage2"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <video3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video 3"
+                                name="./video3"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <videotitle3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video Title 3"
+                                name="./videotitle3"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videodescription3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video Description 3"
+                                name="./videodescription3"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videoimage3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video Thumbnail 3"
+                                name="./videoimage3"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <video4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video 4"
+                                name="./video4"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <videotitle4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video Title 4"
+                                name="./videotitle4"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videodescription4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video Description 4"
+                                name="./videodescription4"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videoimage4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video Thumbnail 4"
+                                name="./videoimage4"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                        </items>
+                    </columns>
+                </items>
+            </video>
+            <audio
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Audio"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <video1
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio 1"
+                                name="./audio1"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <video2
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio 2"
+                                name="./audio2"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <video3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio 3"
+                                name="./audio3"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <video4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio 4"
+                                name="./audio4"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <videodescription1
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio Description 1"
+                                name="./audiodescription1"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videodescription2
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio Description 2"
+                                name="./audiodescription2"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videodescription3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio Description 3"
+                                name="./audiodescription3"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videodescription4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio Description 4"
+                                name="./audiodescription4"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videoimage1
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio Thumbnail 1"
+                                name="./audioimage1"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <videoimage2
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio Thumbnail 2"
+                                name="./audioimage2"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <videoimage3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio Thumbnail 3"
+                                name="./audioimage3"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <videoimage4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio Thumbnail 4"
+                                name="./audioimage4"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <videotitle1
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio Title 1"
+                                name="./audiotitle1"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videotitle2
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio Title 2"
+                                name="./audiotitle2"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videotitle3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio Title 3"
+                                name="./audiotitle3"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videotitle4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Audio Title 4"
+                                name="./audiotitle4"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                        </items>
+                    </columns>
+                </items>
+            </audio>
+            <photo
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Photo"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <video1
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo 1"
+                                name="./photo1"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <video2
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo 2"
+                                name="./photo2"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <video3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo 3"
+                                name="./photo3"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <video4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo 4"
+                                name="./photo4"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <videodescription1
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo Description 1"
+                                name="./photodescription1"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videodescription2
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo Description 2"
+                                name="./photodescription2"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videodescription3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo Description 3"
+                                name="./photodescription3"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videodescription4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo Description 4"
+                                name="./photodescription4"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videoimage1
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo Thumbnail 1"
+                                name="./photoimage1"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <videoimage2
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo Thumbnail 2"
+                                name="./photoimage2"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <videoimage3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo Thumbnail 3"
+                                name="./photoimage3"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <videoimage4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo Thumbnail 4"
+                                name="./photoimage4"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <videotitle1
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo Title 1"
+                                name="./phototitle1"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videotitle2
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo Title 2"
+                                name="./phototitle2"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videotitle3
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo Title 3"
+                                name="./phototitle3"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videotitle4
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Photo Title 4"
+                                name="./phototitle4"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                        </items>
+                    </columns>
+                </items>
+            </photo>
+        </items>
+    </content>
+</jcr:root>

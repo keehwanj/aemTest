@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    cq:lastReplicated="{Date}2013-12-16T22:22:38.782-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:language="en"
+    jcr:mixinTypes="[cq:ReplicationStatus,mix:language]"
+    jcr:primaryType="sling:Folder">
+    <DEPPDF
+        cq:lastReplicated="{Date}2013-12-16T22:22:38.954-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DEPPDF"
+        sling:message="Note: A &lt;a href=&quot;http://app.infoaa.7700.gnb.ca/gnb/PDF/deputy_ministers.pdf&quot;>&lt;font size=&quot;-1&quot;>PDF &lt;/font>&lt;/a> version is also available."/>
+    <email
+        cq:lastReplicated="{Date}2013-12-16T22:22:39.547-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="email"
+        sling:message="Email:"/>
+    <mailingAddress
+        cq:lastReplicated="{Date}2013-12-16T22:22:39.671-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="mailingAddress"
+        sling:message="Mailing Address"/>
+    <physicalAddress
+        cq:lastReplicated="{Date}2013-12-16T22:22:40.280-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="physicalAddress"
+        sling:message="Physical Address"/>
+</jcr:root>

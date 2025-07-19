@@ -1,0 +1,92 @@
+/*
+	START /apps/iemg-fluid/components/content/textimage/clientlibs/css/style.css
+ */
+.textimage {
+  margin-bottom: 10px;
+}
+
+.text_grey_border,
+.text_grey,
+.text_border {
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.text_grey {
+  border: 0;
+}
+
+.text_border {
+  background-color: transparent;
+}
+
+.text_grey_border p,
+.text_grey p,
+.text_border p {
+  margin: 0 0 5px;
+}
+
+.textimage .imagecontainer {
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  padding: 4px;
+}
+
+.textimage .imagecontainer img {
+  /*    width: auto; */
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 95%;
+}
+
+.more_grey,
+.more_blue {
+  margin-top: 5px;
+  font-size: 95%;
+}
+
+.more_blue {
+  font-size: 90%;
+}
+
+.more_grey a,
+.more_blue a {
+  background: transparent
+    url("/etc/designs/iemgfluid-bootstrap/clientlibs/images/arrow.gif")
+    no-repeat scroll right center;
+  color: #555;
+  padding-right: 10px;
+}
+
+.more_blue a {
+  background-image: url("/etc/designs/iemgfluid-bootstrap/clientlibs/images/arrow_blue.gif");
+  color: #0064a5;
+}
+.textimage ul,
+.textimage ol {
+  padding-left: 65px;
+  list-style-position: outside;
+}
+
+.textimage ol {
+  padding-left: 70px;
+}
+
+div.textimage div.image {
+  float: initial;
+}
+
+.textimage .image {
+  padding-bottom: initial;
+}
+
+.textimage .img-responsive {
+  width: 100%;
+  /* width: auto; */
+}
+/*
+	END /apps/iemg-fluid/components/content/textimage/clientlibs/css/style.css
+ */

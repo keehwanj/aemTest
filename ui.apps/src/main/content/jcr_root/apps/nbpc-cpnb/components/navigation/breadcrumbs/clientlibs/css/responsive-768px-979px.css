@@ -1,0 +1,14 @@
+/*
+	START of /apps/nbpc-cpnb/components/navigation/breadcrumbs/clientlibs/css/responsive-768px-979px.css
+*/
+/* iPad portrait */
+@media (min-width: 768px) and (max-width: 979px) {
+  #breadcrumbNav {
+    font-size: 80%;
+    margin: 0 30px 10px 15px;
+    padding: 0;
+  }
+}
+/*
+	END of /apps/nbpc-cpnb/components/navigation/breadcrumbs/clientlibs/css/responsive-768px-979px.css
+*/

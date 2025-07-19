@@ -1,0 +1,18 @@
+/*
+/apps/oic-bci/components/content/oicpromo_update/clientlibs/css/responsive-767px-max.css
+*/
+/* phone landscape */
+@media (max-width: 767px) {
+
+
+.carousel-indicators {
+    bottom: 15px;
+}
+
+.carousel-caption h3{
+	font-size: 130%;
+}
+
+
+}
+

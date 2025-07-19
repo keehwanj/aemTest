@@ -1,0 +1,29 @@
+/*
+	/apps/snb/components/search/globalsitesearchinput/clientlibs/css/style.css
+*/
+
+#service_box form .globalSearchInput_title{
+    margin-bottom: 5px;
+}
+
+.gsc-completion-container td{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
+	border-bottom: 0px solid #d3d3d3;
+    font-size: 100%;
+    position: relative;
+    padding: 0px 1em 0px .5em; 
+}
+
+.gsq_a b, .gsq_a strong {
+    font-weight: normal;
+} 
+
+tr.gsc-completion-selected{
+    border: 1px solid #003eff;
+    background: #007fff;
+    color: #ffffff;    
+}
+
+#keyword_search_form .searchText {
+	font-size: 12px;
+}   

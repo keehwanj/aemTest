@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Department Info"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <columns
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <orgId
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="GNB Org ID"
+                        name="./orgId"/>
+                    <contactsText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Contacts Text"
+                        name="./contactText"/>
+                    <structureText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Structure Text"
+                        name="./structureText"/>
+                    <mandatesText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="mMandates Text"
+                        name="./mandatesText"/>
+                    <officesText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Offices Text"
+                        name="./officesText"/>
+                    <servicesText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Services Text"
+                        name="./servicesText"/>
+                    <mandateText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Mandate Text"
+                        name="./mandateText"/>
+                    <mandateTitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Mandate Title"
+                        name="./mandateTitle"/>
+                    <mandateSubtitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Mandate Subtitle"
+                        name="./mandateSubtitle"/>
+                    <clickToExpandText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Click To Expand Text"
+                        name="./clickToExpandText"/>
+                    <clickToCollapseText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Click To Collapse Text"
+                        name="./clickToCollapseText"/>
+                    <locationText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Location Text"
+                        name="./locationText"/>
+                    <getDirectionsText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Get Directions Text"
+                        name="./getDirectionsText"/>
+                    <generalInformationText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="General Information Text"
+                        name="./generalInformationText"/>
+                    <tollfreeText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Tollfree Text"
+                        name="./tollfreeText"/>
+                    <receptionText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Reception Text"
+                        name="./receptionText"/>
+                    <faxText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Fax Text"
+                        name="./faxText"/>
+                    <otherText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Other Text"
+                        name="./otherText"/>
+                    <emailText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Email Text"
+                        name="./emailText"/>
+                    <mediaContactText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Media Contact Text"
+                        name="./mediaContactText"/>
+                    <mailingText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Mailing Text"
+                        name="./mailingText"/>
+                    <toggleViewText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Toggle View Text"
+                        name="./toggleViewText"/>
+                    <toggleOfficeViewText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Toggle Office View Text"
+                        name="./toggleOfficeViewText"/>
+                    <contactList
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        fieldDescription="/content/gnb/en/contacts/communicationsContact&#xa;OR &#xa;/content/gnb/fr/contacts/communicationsContact"
+                        fieldLabel="Communications Contacts Page"
+                        name="./contactList"/>
+                </items>
+            </columns>
+        </items>
+    </content>
+</jcr:root>

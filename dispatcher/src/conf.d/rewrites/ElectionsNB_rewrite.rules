@@ -1,0 +1,84 @@
+SetEnvIf %{REQUEST_URI} ^ ENB_ENGLISH_ERROR_PAGE=/content/enb/en/error/404.html
+SetEnvIf %{REQUEST_URI} ^ ENB_FRENCH_ERROR_PAGE=/content/enb/fr/erreur/404.html
+
+# non-www to www redirect
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://www.%1%{REQUEST_URI} [L,NE,R=301]
+
+# rewrite for root redirect
+RewriteRule ^/?$ /content/enb.html [PT,L]
+
+# rewrite vanity URL for /service
+RewriteCond %{REQUEST_URI} ^/service$
+RewriteRule ^ https://electionsnb.proofhub.com/link/form?token=0fd38aa1f5cc1b3ea2ee6a4611e38f5c479b1ccd [L,NE,R=301]
+
+RewriteCond %{REQUEST_URI} ^/campus$
+RewriteRule ^ https://www3.gnb.ca/elections/campus [L,NE,R=301]
+
+RewriteCond %{REQUEST_URI} ^/ced$
+RewriteRule ^ https://www3.gnb.ca/elections/ced [L,NE,R=301]
+
+RewriteCond %{REQUEST_URI} ^/cinema$
+RewriteRule ^ https://www3.gnb.ca/elections/cinema [L,NE,R=301]
+
+RewriteCond %{REQUEST_URI} ^/facts$
+RewriteRule ^ https://www3.gnb.ca/elections/facts [L,NE,R=301]
+
+RewriteCond %{REQUEST_URI} ^/faits$
+RewriteRule ^ https://www3.gnb.ca/elections/faits [L,NE,R=301]
+
+RewriteCond %{REQUEST_URI} ^/municipal$
+RewriteRule ^ https://www3.gnb.ca/elections/municipal [L,NE,R=301]
+
+RewriteCond %{REQUEST_URI} ^/rha$
+RewriteRule ^ https://www3.gnb.ca/elections/rha [L,NE,R=301]
+
+RewriteCond %{REQUEST_URI} ^/rrs$
+RewriteRule ^ https://www3.gnb.ca/elections/rrs [L,NE,R=301]
+
+RewriteCond %{REQUEST_URI} ^/dec$
+RewriteRule ^ https://www3.gnb.ca/elections/dec [L,NE,R=301]
+
+RewriteCond %{REQUEST_URI} ^/en.html
+RewriteRule ^(.*)$ %{ENV:ENB_ENGLISH_ERROR_PAGE} [PT,L]
+
+RewriteCond %{REQUEST_URI} ^/fr.html
+RewriteRule ^(.*)$ %{ENV:ENB_FRENCH_ERROR_PAGE} [PT,L]
+
+# rewrite for cross-domain issue prevention with a language handle EN
+RewriteCond %{REQUEST_URI} !^/content/enb
+RewriteCond %{REQUEST_URI} !^/content/dam/enb
+RewriteCond %{REQUEST_URI} !^/content/dam/gnb/multimedia
+RewriteCond %{REQUEST_URI} ^/content/(.*)/en/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^/content/(.*)/en.html
+RewriteRule ^(.*)$ %{ENV:ENB_ENGLISH_ERROR_PAGE} [PT,L]
+
+# rewrite for cross-domain issue prevention with a language handle FR
+RewriteCond %{REQUEST_URI} !^/content/enb
+RewriteCond %{REQUEST_URI} !^/content/dam/enb
+RewriteCond %{REQUEST_URI} !^/content/dam/gnb/multimedia
+RewriteCond %{REQUEST_URI} ^/content/(.*)/fr/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^/content/(.*)/fr.html
+RewriteRule ^(.*)$ %{ENV:ENB_FRENCH_ERROR_PAGE} [PT,L]
+
+# rewrite for cross-domain issue prevention ENB ROOT
+RewriteCond %{REQUEST_URI} !^/content/enb
+RewriteCond %{REQUEST_URI} !^/content/dam/enb
+RewriteCond %{REQUEST_URI} !^/content/dam/gnb/multimedia
+RewriteCond %{REQUEST_URI} ^/content/(.*)/(.*)$
+RewriteRule ^(.*)$ %{ENV:ENB_ENGLISH_ERROR_PAGE} [PT,L]
+
+RewriteCond %{REQUEST_URI} !^/apps
+RewriteCond %{REQUEST_URI} !^/bin
+RewriteCond %{REQUEST_URI} !^/content
+RewriteCond %{REQUEST_URI} !^/etc
+RewriteCond %{REQUEST_URI} !^/home
+RewriteCond %{REQUEST_URI} !^/libs
+RewriteCond %{REQUEST_URI} !^/saml_login
+RewriteCond %{REQUEST_URI} !^/system
+RewriteCond %{REQUEST_URI} !^/tmp
+RewriteCond %{REQUEST_URI} !^/var
+RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.xml)$
+RewriteRule ^/(.*)$ /content/enb/$1 [PT,L]
+

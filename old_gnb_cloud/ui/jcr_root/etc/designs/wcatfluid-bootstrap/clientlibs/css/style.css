@@ -1,0 +1,18 @@
+/*
+	START of /etc/designs/wcatfluid-bootstrap/clientlibs/css/style.css
+*/
+
+#CQ .x-form-check-wrap input {
+    vertical-align: -webkit-baseline-middle;
+}
+
+/*dialog input field height override*/
+.ext-strict #CQ .x-form-text {
+    height: 22px;
+}
+
+body {
+    /*font-size: 0.9rem;*/
+
+}
+/** END of /etc/designs/wcatfluid-bootstrap/clientlibs/css/style.css

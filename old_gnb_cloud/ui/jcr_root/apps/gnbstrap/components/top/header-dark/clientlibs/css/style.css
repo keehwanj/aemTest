@@ -1,0 +1,51 @@
+/*
+	START of /apps/wcat-taat-fluid/components/navigation/header/clientlibs/css/style.css
+*/
+.gnb-nav {
+    width: 100%;
+    z-index: 3;
+    height: 60px;
+    padding: 0em 1.25em 0em 0.75em;
+}
+
+.gnb-nav .link {
+    /* override template styling */
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #000000;
+}
+
+@media (min-width: 768px) {
+    .gnb-nav .link {
+        height: 70px;
+        line-height: 70px;
+    }
+}
+
+.gnb-nav img {
+    height: 30px;
+    margin: 5px;
+}
+
+@media (min-width: 768px) {
+    .gnb-nav img {
+        height: 40px;
+        margin: 5px;
+    }
+}
+.gnb-nav .top-nav {
+      float: right;
+        height: 40px;
+        margin: 5px;
+ }
+
+.gnb-nav-dark {
+       background-color: black;
+ }
+
+</style>
+/*
+	END of /apps/wcat-taat-fluid/components/navigation/header/clientlibs/css/style.css
+*/

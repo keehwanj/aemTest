@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Section Title"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Title">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <style
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Style"
+                        name="./style"
+                        type="select"
+                        validateOnBlur="true"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <alerts
+                                jcr:primaryType="nt:unstructured"
+                                text="Alerts"
+                                value="alerts"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                text="Emphasis"
+                                value="links"/>
+                            <normal
+                                jcr:primaryType="nt:unstructured"
+                                text="Normal"
+                                value="normal"/>
+                            <pageHeader
+                                jcr:primaryType="nt:unstructured"
+                                text="Page Header Style"
+                                value="pageheader"/>
+                            <standard
+                                jcr:primaryType="nt:unstructured"
+                                text="Standard Header"
+                                value="standard"/>
+                            <unstyled
+                                jcr:primaryType="nt:unstructured"
+                                text="No Style"
+                                value="unstyled"/>
+                        </options>
+                    </style>
+                    <titletextf
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Title"
+                        name="./sectionTitle"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <titlelinkf
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Title Link"
+                        name="./titleLink"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <morelinktext
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="More Link Text"
+                        name="./moreLinkText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <morelink
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="More Link"
+                        name="./moreLink"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <rssfeed
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="RSS Enabled"
+                        name="./rssfeed"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

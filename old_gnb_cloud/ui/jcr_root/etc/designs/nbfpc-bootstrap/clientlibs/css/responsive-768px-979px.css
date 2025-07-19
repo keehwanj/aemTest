@@ -1,0 +1,67 @@
+/**
+START
+** /etc/designs/nbfpc-bootstrap/clientlibs/css/responsive-768px-979px.css
+**/
+/* iPad portrait */
+@media (min-width: 768px) and (max-width: 979px) {
+
+    .footer-content {
+         margin-top: 20px;
+         padding-left: 30px;
+     }
+
+    .footer-content li {
+        padding-right: 0px;
+    }
+
+/**START of remove space of row**/
+div#main_content_wrapper div.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+div#main_content_wrapper footer.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+/**END of remove space of row**/
+
+th {
+    /**background:transparent url(/etc/designs/nbfpc-bootstrap/clientlibs/images/header_table.gif) repeat-x scroll 0 0;**/
+}
+
+/**START of department/services**/
+#topRightNav{
+    background:url(/etc/designs/nbfpc-bootstrap/clientlibs/images/top_right_nav.gif) 0 0 no-repeat;
+    width:203px;
+    height:41px;
+    float:right;
+}
+
+#topCentreNav{
+    /**
+    background:url(/etc/designs/nbfpc-bootstrap/clientlibs/images/top_center_nav.gif) no-repeat top right;
+	width: 430px;
+    height:41px;
+    float:right;    
+    **/
+}  
+/**END of department/services**/
+
+
+/*START of page title font*/
+.pageHeader h1 {
+  color:black;
+  font-size:170%;
+  font-weight:normal;
+  margin:0;
+}
+/*END of page title font*/
+
+#globalnav a:link, #globalnav a:visited {
+	font-size: 112.5%;
+}
+}
+/**
+END of /etc/designs/nbfpc-bootstrap/clientlibs/css/responsive-768px-979px.css
+**/

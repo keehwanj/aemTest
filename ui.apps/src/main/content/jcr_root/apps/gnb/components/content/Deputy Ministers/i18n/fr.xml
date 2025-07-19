@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    cq:lastReplicated="{Date}2013-12-16T22:22:34.680-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:language="fr"
+    jcr:mixinTypes="[cq:ReplicationStatus,mix:language]"
+    jcr:primaryType="sling:Folder">
+    <DEPPDF
+        cq:lastReplicated="{Date}2013-12-16T22:22:35.475-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DEPPDF"
+        sling:message="Nota: Aussi disponible en format &lt;a href=&quot;http://app.infoaa.7700.gnb.ca/gnb/PDF/sous_ministres.pdf&quot;>&lt;font size=&quot;-1&quot;>PDF&lt;/font>.&lt;/a>"/>
+    <email
+        cq:lastReplicated="{Date}2013-12-16T22:22:36.193-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="email"
+        sling:message="Courriel : "/>
+    <mailingAddress
+        cq:lastReplicated="{Date}2013-12-16T22:22:36.863-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="mailingAddress"
+        sling:message="Adresse postale"/>
+    <physicalAddress
+        cq:lastReplicated="{Date}2013-12-16T22:22:38.033-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="physicalAddress"
+        sling:message="Adresse de voirie"/>
+</jcr:root>

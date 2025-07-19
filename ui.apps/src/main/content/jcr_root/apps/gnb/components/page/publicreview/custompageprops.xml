@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Panel"
+            title="General">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <deadline
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Deadline"
+                    fieldLabel="Deadline"
+                    name="./deadline"
+                    xtype="datetime"/>
+                <email
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Email"
+                    name="./email"
+                    xtype="textfield"/>
+                <telephone
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Telephone"
+                    name="./telephone"
+                    xtype="textfield"/>
+                <fax
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Fax"
+                    name="./fax"
+                    xtype="textfield"/>
+                <bi_draftregulation
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Draft Regulation (PDF)"
+                    name="./bi_draftregulation"
+                    xtype="pathfield"/>
+            </items>
+        </tab1>
+        <tab2
+            jcr:primaryType="cq:Panel"
+            title="English">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <en_department
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Department"
+                    name="./en_department"
+                    namespaces="[active-gnb-eng,active-keywords_eng]"
+                    xtype="tags"/>
+                <en_title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./en_title"
+                    xtype="textarea"/>
+                <en_draftregulation
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Draft Regulation (PDF)"
+                    name="./en_draftregulation"
+                    xtype="pathfield"/>
+                <en_note
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Note"
+                    name="./en_note"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                        <htmlRules jcr:primaryType="nt:unstructured">
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                protocols="[http://,https://]"/>
+                        </htmlRules>
+                        <Copy_x0020_of_x0020_htmlRules jcr:primaryType="nt:unstructured">
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                protocols="[http://,https://]"/>
+                            <htmlRules jcr:primaryType="nt:unstructured">
+                                <links
+                                    jcr:primaryType="nt:unstructured"
+                                    protocols="[http://,https://]"/>
+                            </htmlRules>
+                        </Copy_x0020_of_x0020_htmlRules>
+                    </htmlRules>
+                    <en_note
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Note"
+                        name="./en_note"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="[sourceedit,specialchars]"/>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <findreplace
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                        <htmlRules jcr:primaryType="nt:unstructured">
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                protocols="[http://,https://]"/>
+                        </htmlRules>
+                    </en_note>
+                </en_note>
+            </items>
+        </tab2>
+        <tab3
+            jcr:primaryType="cq:Panel"
+            title="French">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <fr_department
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Department"
+                    name="./fr_department"
+                    namespaces="[active-gnb-fra,active-keywords_fra]"
+                    xtype="tags"/>
+                <fr_title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./fr_title"
+                    xtype="textarea"/>
+                <fr_draftregulation
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Draft Regulation (PDF)"
+                    name="./fr_draftregulation"
+                    xtype="pathfield"/>
+                <fr_note
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Note"
+                    name="./fr_note"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                </fr_note>
+            </items>
+        </tab3>
+    </items>
+</jcr:root>

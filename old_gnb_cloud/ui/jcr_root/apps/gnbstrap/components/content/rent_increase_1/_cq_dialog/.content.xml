@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Parent Assistance Calculator - PAC (Education) - collapse"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <general
+                jcr:primaryType="nt:unstructured"
+                jcr:title="First"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <rent_amount
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Description for Rent amount prior to my rent increase"
+                                fieldLabel="Rent amount prior to my rent increase"
+                                name="./rent_amount"/>
+                            <rent_increased_date
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Description for My rent increased on (yyyy/mm/dd):"
+                                fieldLabel="My rent increased on (yyyy/mm/dd):"
+                                name="./rent_increased_date"/>
+                            <new_rent_amount
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Description of New rent amount:"
+                                fieldLabel="New rent amount:"
+                                name="./new_rent_amount"/>
+                            <confirm_note
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="I confirm that I have paid my rent in full and owe no arrears."
+                                fieldLabel="Confirmation note"
+                                name="./confirm_note"/>
+                            <clear_button
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Description of Clear button"
+                                fieldLabel="My rent increased on (yyyy/mm/dd):"
+                                name="Clear button"/>
+                        </items>
+                    </columns>
+                </items>
+            </general>
+            <result
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Location"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <max_rent
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Text of &quot;Location of Childcare Facility&quot;"
+                                fieldLabel="Location of Childcare Facility"
+                                name="./t_location_1_pac"/>
+                            <overpaid
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Description for &quot;Your overpaid&quot;"
+                                fieldLabel="Your overpaid"
+                                name="./overpaid"/>
+                            <months
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Description of &quot;Months&quot;"
+                                fieldLabel="Months"
+                                name="./months"/>
+                            <credit_owed
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Description of &quot;Credit owed&quot;"
+                                fieldLabel="Credit owed"
+                                name="./credit_owed"/>
+                            <payment_schedule
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Description of &quot;Your payment schedule will be :&quot;"
+                                fieldLabel="Payment schedulet"
+                                name="./payment_schedule"/>
+                        </items>
+                    </columns>
+                </items>
+            </result>
+        </items>
+    </content>
+</jcr:root>

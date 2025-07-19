@@ -1,0 +1,13 @@
+/*
+	/apps/snb/components/content/columncontrol/clientlibs/css/responsive-767px-max.css
+ */
+/* phone landscape */
+@media (max-width: 767px) {
+  .columncontrol > .highlight > .col-sm-4 {
+    padding-left: 0px;
+  }
+
+  .columncontrol .col-sm-4 {
+    padding-left: 10px;
+  }
+}

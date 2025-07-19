@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <headerText
+                jcr:primaryType="cq:Panel"
+                border="false"
+                title="HeaderText">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <dateFromText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default: Date (from) or Date (de)"
+                        fieldLabel="Date from Text"
+                        name="./dateFromText"
+                        xtype="textfield"/>
+                    <dateToText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default: Date (to) or Date (à)"
+                        fieldLabel="Date to Text"
+                        name="./dateToText"
+                        xtype="textfield"/>
+                    <detailsText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default: Details or Détails"
+                        fieldLabel="Details Text"
+                        name="./detailsText"
+                        xtype="textfield"/>
+                    <regionText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default: Region or Région"
+                        fieldLabel="Region Text"
+                        name="./regionText"
+                        xtype="textfield"/>
+                    <routeText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default: Route"
+                        fieldLabel="Route Text"
+                        name="./routeText"
+                        xtype="textfield"/>
+                    <locationText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default: Location or Localité"
+                        fieldLabel="Location Text"
+                        name="./locationText"
+                        xtype="textfield"/>
+                    <reasonHeaderText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Default: Reason or Raison"
+                        fieldLabel="Reason Text"
+                        name="./reasonHeaderText"
+                        xtype="textfield"/>
+                </items>
+            </headerText>
+        </items>
+    </items>
+</jcr:root>

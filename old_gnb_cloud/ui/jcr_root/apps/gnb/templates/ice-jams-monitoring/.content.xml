@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template"
+    jcr:title="Ice Jams Monitoring"
+    allowedPaths="/content/gnb/dps-data(/.*)?"
+    ranking="{Long}14">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="gnb/components/page/ice_jams_monitoring"/>
+</jcr:root>

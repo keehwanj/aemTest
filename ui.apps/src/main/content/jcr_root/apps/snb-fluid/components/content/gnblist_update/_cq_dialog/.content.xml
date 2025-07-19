@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <general
+                jcr:primaryType="nt:unstructured"
+                jcr:title="General Options"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <listStyle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="List Style"
+                                name="./listStyle">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <greyarrow
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Grey (with arrow)"
+                                        value="greyarrow"/>
+                                    <bluearrow
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Blue (with arrow)"
+                                        value="bluearrow"/>
+                                    <footer
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Unstyled"
+                                        value="unstyled"/>
+                                </items>
+                            </listStyle>
+                            <moreText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="More Link Text"
+                                name="./moreLinkText"/>
+                            <moreLink
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="More Link"
+                                name="./moreLink"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <padded9
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./padded"
+                                text="Padded"/>
+                            <padded9-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./padded@Delete"
+                                value="{Boolean}true"/>
+                            <shaded10
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./shaded"
+                                text="Shaded"/>
+                            <shaded10-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./shaded@Delete"
+                                value="{Boolean}true"/>
+                            <border
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./border"
+                                text="Show Bottom Border"/>
+                            <border-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./border@Delete"
+                                value="{Boolean}true"/>
+                            <feeddescription
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="RSS Feed Description"
+                                name="./feeddescription"
+                                validateOnBlur="true"
+                                xtype="textarea"/>
+                            <feedname
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="RSS Feed Name"
+                                name="./feedname"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <feedEnabled
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./feedEnabled"
+                                text="Enable Feed"/>
+                            <feedenabled-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./feedEnabled@Delete"
+                                value="{Boolean}true"/>
+                            <reverseOrder
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./reverseOrder"
+                                text="Display Reverse Order"/>
+                            <reverseorder-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./reverseOrder@Delete"
+                                value="{Boolean}true"/>
+                        </items>
+                    </columns>
+                </items>
+            </general>
+            <links_text
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Text"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <links_text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                fieldDescription="Click the '+' to add a new text."
+                                fieldLabel="Link Texts">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    name="./links_text"/>
+                            </links_text>
+                        </items>
+                    </columns>
+                </items>
+            </links_text>
+            <links
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Links"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                fieldDescription="Click the '+' to add a new link."
+                                fieldLabel="Links">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                    name="./links"/>
+                            </links>
+                        </items>
+                    </columns>
+                </items>
+            </links>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="fr"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <bridgeDestroyedByFireText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="bridgeDestroyedByFireText"
+        sling:message="Pont détruit par le feu"/>
+    <bridgeRepairText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="bridgeRepairText"
+        sling:message="Réparation de pont"/>
+    <bridgeReplacementText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="bridgeReplacementText"
+        sling:message="Remplacement de pont"/>
+    <constructionText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="constructionText"
+        sling:message="Construction"/>
+    <emergencyClosureText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="emergencyClosureText"
+        sling:message="Fermeture d'urgence"/>
+    <extremeLowTidesText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="extremeLowTidesText"
+        sling:message="Marées très basses "/>
+    <floodingText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="floodingText"
+        sling:message="Inondation"/>
+    <iceConditionsInChannelText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="iceConditionsInChannelText"
+        sling:message="Conditions des glaces dans le chenal"/>
+    <maintenanceText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="maintenanceText"
+        sling:message="Entretien"/>
+    <mechanicalProblemText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="mechanicalProblemText"
+        sling:message="Problème mécanique"/>
+    <motorVehicleAccidentText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="motorVehicleAccidentText"
+        sling:message="Accident de Véhicule à moteur"/>
+    <otherText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="otherText"
+        sling:message="Autre"/>
+    <roadBreakupText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="roadBreakupText"
+        sling:message="Bris de la route"/>
+    <safetyText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="timechangeText"
+        sling:message="Changement d’heure"/>
+    <soilAndSlopeStabilityText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="soilAndSlopeStabilityText"
+        sling:message="Sol et stabilité inclinée"/>
+    <washoutText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="washoutText"
+        sling:message="Emportement par les eaux "/>
+    <waterOverRoadText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="waterOverRoadText"
+        sling:message="L'eau sur la route"/>
+    <weatherConditionsText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="weatherConditionsText"
+        sling:message="Conditions météorologiques"/>
+    <weightLimitReduced
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="weightLimitReducedText"
+        sling:message="Limite de poids réduite"/>
+</jcr:root>

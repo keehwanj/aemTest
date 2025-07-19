@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <static.js/>
+    <jcr:content
+        cq:lastModified="{Date}2015-11-02T09:28:19.014-04:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2013-12-16T22:40:49.223-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/libs/wcm/designer/templates/designpage"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="GNB"
+        jcr:uuid="5fe02eb4-790d-4b10-b418-4a7af8577d9c"
+        sling:resourceType="wcm/core/components/designer"/>
+    <images/>
+    <js/>
+    <styles/>
+    <static.css/>
+    <rep:policy/>
+</jcr:root>

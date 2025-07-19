@@ -1,0 +1,16 @@
+/*
+	START of /apps/myid-monid/components/content/gnbpromo_update/clientlibs/css/responsive-480px.css
+*/
+@media (max-width: 480px) {
+.carousel-indicators {
+    bottom: 5px;
+}
+
+.carousel-caption h3{
+	font-size: 120%;
+}
+
+}
+/*
+	END of /apps/myid-monid/components/content/gnbpromo_update/clientlibs/css/responsive-480px.css
+*/

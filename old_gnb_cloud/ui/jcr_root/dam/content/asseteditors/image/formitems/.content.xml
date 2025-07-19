@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:WidgetCollection">
+    <title_E/>
+    <title_F/>
+    <content_E/>
+    <content_F/>
+    <tags/>
+    <department/>
+    <place/>
+    <newDate/>
+    <copyright/>
+    <terms/>
+    <contributor/>
+    <audioFileName_o/>
+    <audioFileName_e/>
+    <audioFileName_f/>
+    <videoFileName_o/>
+    <videoFileName_e/>
+    <videoFileName_f/>
+    <presentationFileName_o/>
+    <presentationFileName_e/>
+    <presentationFileName_f/>
+    <mp3FileName_o/>
+    <photo_2_download/>
+    <photo_3_download/>
+    <gallery_1_title_en/>
+    <gallery_1_title_fr/>
+    <gallery_1/>
+    <gallery_2_title_en/>
+    <gallery_2_title_fr/>
+    <gallery_2/>
+    <gallery_3_title_en/>
+    <gallery_3_title_fr/>
+    <gallery_3/>
+    <news/>
+    <iconic/>
+    <external/>
+    <downloadCount/>
+    <topmultimedia/>
+    <subscription/>
+    <subscriptionID/>
+</jcr:root>

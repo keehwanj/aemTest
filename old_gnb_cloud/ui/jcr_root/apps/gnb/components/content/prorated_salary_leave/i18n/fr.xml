@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    cq:lastReplicated="{Date}2013-12-16T22:27:16.078-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:language="fr"
+    jcr:mixinTypes="[cq:ReplicationStatus,mix:language]"
+    jcr:primaryType="sling:Folder">
+    <button_1_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="button_1_Text"
+        sling:message="Calculer"/>
+    <button_2_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="button_2_Text"
+        sling:message="Retenue par paie"/>
+    <error_1_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="error_1_Text"
+        sling:message="Veuillez entrer votre paie à la quinzaine brute (format 1962,00)"/>
+    <error_2_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="error_2_Text"
+        sling:message="Veuillez entrer le nombre de paies pour lesquelles vous désirez que les retenues soient faites (1 – 26)"/>
+    <error_3_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="error_3_Text"
+        sling:message="Veuillez entrer le nombre de jours que vous voulez prendre en congé (1 – 40)"/>
+    <title_1_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:22.692-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="title_1_Text"
+        sling:message="Paie à la quinzaine"/>
+    <title_2_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="title_2_Text"
+        sling:message="Jours de congé"/>
+    <title_3_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="title_3_Text"
+        sling:message="Nombre de paies"/>
+    <title_4_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="title_4_Text"
+        sling:message="Retenue par paie"/>
+</jcr:root>

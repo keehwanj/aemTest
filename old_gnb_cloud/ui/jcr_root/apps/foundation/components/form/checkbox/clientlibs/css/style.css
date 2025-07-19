@@ -1,0 +1,32 @@
+/*
+	/apps/foundation/components/form/checkbox/clientlibs/css/style.css
+ */
+
+.form_row.form-group.checkbox_bottom_remove, .form_row.form-group.bottom_remove {
+    margin-bottom: 4px;
+}
+
+ .checkbox .item_content, .radio .item_content {
+    font-size: 95%;
+}
+
+.checkbox.section {
+	margin-bottom: 10px;            
+}
+
+.form-horizontal .radio, .form-horizontal .checkbox {
+    min-height: 20px;
+}
+.form_row_description {
+    font-size: 95%;
+}
+
+.form_rightcol.col-sm-8.item_content {
+    padding-left: 35px;
+}
+
+#departmentNav .dropdown-menu {
+    font-size: 83%;
+}
+
+

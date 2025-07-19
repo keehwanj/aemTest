@@ -1,0 +1,21 @@
+/*
+	START of /apps/snb-fluid/components/content/carousel/clientlibs/css/responsive-767px-max.css
+*/
+/* phone landscape */
+@media (max-width: 767px) {
+
+.container-fluid .carousel-caption { 
+    padding: 10px 20px;        
+}
+
+div.carousel-caption h1 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+
+
+}
+/*
+	END of /apps/snb-fluid/components/content/carousel/clientlibs/css/responsive-767px-max.css
+*/

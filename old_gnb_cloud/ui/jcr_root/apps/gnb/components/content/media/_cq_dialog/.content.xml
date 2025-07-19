@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <metadata
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Metadata"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <asswebpage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Associated Web Page"
+                                name="./assWebPage">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <yes
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="{Boolean}true"/>
+                                    <no
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="{Boolean}false"/>
+                                </items>
+                            </asswebpage>
+                            <wireindx
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Display Newswire Index"
+                                name="./wireIndex">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <yes
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="{Boolean}true"/>
+                                    <no
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="{Boolean}true"/>
+                                </items>
+                            </wireindx>
+                            <place
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Place"
+                                name="./place"/>
+                            <audioname_e
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Audio Lang or Speaker Display - English"
+                                name="./audioName_e"/>
+                            <audiofilename_e
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Audio - English"
+                                name="./audioFileName_e"/>
+                            <audioname_f
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Audio Lang or Speaker Display - French"
+                                name="./audioName_f"/>
+                            <audiofilename_f
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Audio - French"
+                                name="./audioFileName_f"/>
+                            <audioname_o
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Audio Lang or Speaker Display - Original"
+                                name="./audioName_o"/>
+                            <audiofilename_o
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Audio - Original"
+                                name="./audioFileName_o"/>
+                            <content_F
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Event Description - French"
+                                name="./content_F"/>
+                            <content_E
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Event Description - English"
+                                name="./content_E"/>
+                            <title_F
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Title - French"
+                                name="./title_F"/>
+                            <title_E
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Title - English"
+                                name="./title_E"/>
+                            <link_F
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link - French"
+                                name="./link_F"/>
+                            <link_E
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link - English"
+                                name="./link_E"/>
+                            <videoname_e
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Video Lang or Speaker Display - English"
+                                name="./videoName_e"/>
+                            <videofilename_e
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Video - English"
+                                name="./videoFileName_e"/>
+                            <videoname_f
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Video Lang or Speaker Display - French"
+                                name="./videoName_f"/>
+                            <videofilename_f
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Video - French"
+                                name="./videoFileName_f"/>
+                            <videoname_o
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Video Lang or Speaker Display - Original"
+                                name="./videoName_o"/>
+                            <videofilename_o
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Video - Original"
+                                name="./videoFileName_o"/>
+                            <presentationname_e
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Presentation Lang or Speaker Display - English"
+                                name="./presentationName_e"/>
+                            <presentationfilename_e
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Presentation - English"
+                                name="./presentationFileName_e"/>
+                            <presentationname_f
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Presentation Lang or Speaker Display - French"
+                                name="./presentationName_f"/>
+                            <presentationfilename_f
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Presentation - French"
+                                name="./presentationFileName_f"/>
+                            <mp3name_o
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Mp3 Lang or Speaker Display - Original"
+                                name="./mp3Name_o"/>
+                            <mp3filename_o
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Mp3 - Original"
+                                name="./mp3FileName_o"/>
+                            <mp3name_f
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Mp3 Lang or Speaker Display - French"
+                                name="./mp3Name_f"/>
+                            <mp3filename_f
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Mp3 - French"
+                                name="./mp3FileName_f"/>
+                            <mp3name_e
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Mp3 Lang or Speaker Display - English"
+                                name="./mp3Name_e"/>
+                            <mp3filename_e
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Mp3 - English"
+                                name="./mp3FileName_e"/>
+                            <eventdate/>
+                        </items>
+                    </columns>
+                </items>
+            </metadata>
+            <image/>
+        </items>
+    </content>
+</jcr:root>

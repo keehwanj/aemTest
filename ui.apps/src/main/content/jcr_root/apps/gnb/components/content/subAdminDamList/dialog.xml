@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','children','static','search','querybuilder'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="List"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <query
+            jcr:primaryType="cq:Widget"
+            title="Query"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <savedquery1
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Querybuilder predicate notation"
+                    height="250"
+                    name="./savedquery1"
+                    xtype="textarea"/>
+            </items>
+        </query>
+        <header
+            jcr:primaryType="cq:Widget"
+            border="false"
+            height=""
+            title="Header title"
+            width=""
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <subscriptionID
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Subscription ID"
+                    name="./subscriptionID_h"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <subscription
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Subscription"
+                    name="./subscription_h"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Title"
+                    name="./title_h"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <webPath
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Web Path"
+                    name="./webPath_h"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <tags
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Tags"
+                    name="./tags_h"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+            </items>
+        </header>
+        <general
+            jcr:primaryType="cq:Widget"
+            border="false"
+            height=""
+            title="General"
+            width=""
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <querylimit1
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Limit Results To"
+                    name="./querylimit1"
+                    validateOnBlur="true"
+                    xtype="numberfield"/>
+                <show_entries
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Input Numbers of entries showing - 10, 25, 50, or 100"
+                    fieldLabel="Number of Entries"
+                    name="./show_entries"
+                    xtype="textfield"/>
+                <idName
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Unique id for table"
+                    name="./idName"
+                    xtype="textfield"/>
+            </items>
+        </general>
+    </items>
+</jcr:root>

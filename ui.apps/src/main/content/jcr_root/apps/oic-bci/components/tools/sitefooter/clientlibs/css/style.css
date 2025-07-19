@@ -1,0 +1,115 @@
+/*
+	/apps/oic-bci/components/tools/sitefooter/clientlibs/css/style.css
+*/
+
+
+#siteFooterNav ul {
+  float:left;
+  list-style:none outside none;
+  margin:0;
+  padding:0;
+  font-size: 100%;
+}
+
+#siteFooterNav li{
+    margin:0;
+    padding:0;
+    display:inline;
+}
+
+#siteFooterNav a, #siteFooterNav a:link, #siteFooterNav a:visited{
+    color:#555;
+    text-decoration:none;
+    padding:0px 0 0px 20px;
+}
+
+#siteFooterNav a:hover{
+    color:#000;
+    text-decoration:none;
+}
+#feedbackForm { display:none; }
+#feedbackForm, .ui-widget button { font-size: 75%; }
+#feedbackForm label { 
+    width:120px; 
+    float:left; 
+    text-align:left; 
+}
+#feedbackForm label, #feedbackForm input, #feedbackForm textarea { 
+    padding: .4em; 
+    display:block; 
+    margin-bottom:12px;  
+    font-weight: normal;
+}
+#feedbackForm input.text { 
+    width:200px; 
+    margin-left:120px;
+}
+#feedbackForm textarea { 
+    width:200px; 
+    margin-left:120px;
+}
+#feedbackForm fieldset { 
+    padding:0; border:0; 
+    margin-top:25px; 
+}
+#feedbackForm h1 { 
+    font-size: 1.0em; 
+    margin: .6em 0; 
+}
+
+.ui-button { outline: 0; margin:0; padding: .4em 1em .5em; text-decoration:none;  !important; cursor:pointer; position: relative; text-align: center; }
+.ui-dialog .ui-state-highlight, .ui-dialog .ui-state-error { padding: .3em;  
+}
+
+#leftContent .ui-dialog .ui-dialog-buttonpane button {
+    font-size: small;
+}
+
+#footer #footerDisclaimer{
+    font-size:80%;
+    color:#777;
+	border-bottom: 5px solid #bf8420;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(191, 132, 32);    
+}
+
+#footer #footerDisclaimer .row{
+    border-top: 1px solid #d3d3d3;
+	padding: 10px 0 30px 0;
+    margin: 20px 0 0 0;    
+
+}
+
+
+/**
+ * BootstrapValidator (http://bootstrapvalidator.com)
+ * The best jQuery plugin to validate form fields. Designed to use with Bootstrap 3
+ *
+ * @author      http://twitter.com/nghuuphuoc
+ * @copyright   (c) 2013 - 2014 Nguyen Huu Phuoc
+ * @license     Commercial: http://bootstrapvalidator.com/license/
+ *              Non-commercial: http://creativecommons.org/licenses/by-nc-nd/3.0/
+ */
+
+.bv-form .help-block {
+    margin-bottom: 0;
+}
+.bv-form .tooltip-inner {
+    text-align: left;
+}
+.nav-tabs li.bv-tab-success > a {
+    color: #3c763d;
+}
+.nav-tabs li.bv-tab-error > a {
+    color: #a94442;
+}
+
+.bv-form .bv-icon-no-label {
+	top: 0;
+}
+
+.bv-form .bv-icon-input-group {
+	top: 0;
+	z-index: 100;
+}

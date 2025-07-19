@@ -1,0 +1,19 @@
+/*
+	/apps/gnb/components/search/hc_salary_search_input/clientlibs/css/style.css
+*/
+
+/**START of style.css**/
+.hc_salary_search_input .input-group {
+	margin-bottom:10px;
+}
+
+.hc_salary_search_input .btn-default {
+	margin-bottom:10px;
+}
+
+#main_content_wrapper .hc_salary_search_input .image_box {
+
+    margin-bottom: 20px;
+}
+
+/**END of style.css**/

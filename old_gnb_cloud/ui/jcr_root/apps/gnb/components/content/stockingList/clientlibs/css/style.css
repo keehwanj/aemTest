@@ -1,0 +1,11 @@
+/*
+	/apps/gnb/components/content/emoWarningList/clientlibs/css/style.css
+*/
+/**START of style.css**/
+
+.emoWarningList .alert-warning{
+    background-image: linear-gradient(to bottom, #FDC84E 0%, #FDC84E 100%);
+    color:#312a2a;
+
+}
+/**END of style.css**/

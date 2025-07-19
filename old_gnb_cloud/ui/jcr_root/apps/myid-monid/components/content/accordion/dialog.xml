@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="nt:unstructured"
+        title="List"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Widget"
+                border="false"
+                height=""
+                title="General"
+                width=""
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <numbers
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        defaultValue="3"
+                        fieldLabel="Number of sections"
+                        name="./numItems"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Use short word like &quot;ac1&quot;. Can not use two or more same names in same webpage."
+                        fieldLabel="Name of Accordion"
+                        name="./name"
+                        xtype="textfield"/>
+                    <first
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Boolean}true"
+                        fieldLabel="First item(content) show up?"
+                        name="./first"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </general>
+            <titles
+                jcr:primaryType="cq:Widget"
+                title="Section titles"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <descriptions
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new description. Defaults to 'Section #&amp;lt;num>'"
+                        fieldLabel="Section titles"
+                        name="./sectionTitles"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </descriptions>
+                </items>
+            </titles>
+        </items>
+    </items>
+</jcr:root>

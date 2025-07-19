@@ -1,0 +1,16 @@
+/*
+	START of apps/enb/components/content/enbpromo_update/clientlibs/css/responsive-767px-max.css
+*/
+/* phone landscape */
+@media (max-width: 767px) {
+  .carousel-indicators {
+    bottom: 15px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 130%;
+  }
+}
+/*
+	END of apps/enb/components/content/enbpromo_update/clientlibs/css/responsive-767px-max.css
+*/

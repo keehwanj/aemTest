@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    cq:lastReplicated="{Date}2013-12-16T22:29:27.222-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:language="en"
+    jcr:mixinTypes="[cq:ReplicationStatus,mix:language]"
+    jcr:primaryType="sling:Folder">
+    <multimediaDateErrorMsg
+        cq:lastReplicated="{Date}2013-12-16T22:29:27.815-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="multimediaDateErrorMsg"
+        sling:message="Dates must be in the format: "/>
+    <multimediaKeyword
+        cq:lastReplicated="{Date}2013-12-16T22:29:28.002-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="multimediakeyword"
+        sling:message="Keyword"/>
+    <multimediaSearchAllDepartmentsText
+        cq:lastReplicated="{Date}2013-12-16T22:29:28.564-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="multimediaSearchAllDepartmentsText"
+        sling:message="All Departments"/>
+    <multimediaSearchHeadingText
+        cq:lastReplicated="{Date}2013-12-16T22:29:28.736-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="multimediaSearchHeadingText"
+        sling:message="Search Multimedia"/>
+    <multimediaSearchTitle
+        cq:lastReplicated="{Date}2013-12-16T22:29:29.516-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="multimediaSearchTitle"
+        sling:message="Search New Brunswick Multimedia"/>
+    <multimediaSearchWarning
+        cq:lastReplicated="{Date}2013-12-16T22:29:30.607-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="multimediaSearchWarning"
+        sling:message="At least one selection is required"/>
+</jcr:root>

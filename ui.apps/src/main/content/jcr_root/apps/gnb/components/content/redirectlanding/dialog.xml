@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Redirect Landing Dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <english
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="English"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <redirect_E
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="ex) http://www.welcomenb.ca/content/wel-bien/en.html"
+                        fieldLabel="English target URL"
+                        name="./redirect_E"
+                        xtype="textfield"/>
+                    <condition_E
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="ex) www.welcomenb.ca"
+                        fieldLabel="English Condition"
+                        name="./condition_E"
+                        xtype="textfield"/>
+                </items>
+            </english>
+            <french
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="French"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <redirect_F
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="ex) http://www.bienvenuenb.ca/content/wel-bien/fr.html"
+                        fieldLabel="French target  URL"
+                        name="./redirect_F"
+                        xtype="textfield"/>
+                    <condition_F
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="ex) www.bienvenuenb.ca"
+                        fieldLabel="French Condition"
+                        name="./condition_F"
+                        xtype="textfield"/>
+                </items>
+            </french>
+        </items>
+    </items>
+</jcr:root>

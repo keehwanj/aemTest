@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Text"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <servicesId
+            jcr:primaryType="cq:Widget"
+            fieldLabel="GNB Services ID"
+            name="./servicesId"
+            xtype="textfield"/>
+        <adobeLink
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Adobe Link"
+            name="./adobeLink"
+            xtype="textfield"/>
+        <descriptionHeading
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Description Heading"
+            name="./descriptionHeading"
+            xtype="textfield"/>
+        <descriptionText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Description Text"
+            name="./descriptionText"
+            xtype="textfield"/>
+        <eligibilityHeading
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Eligibility Heading"
+            name="./eligibilityHeading"
+            xtype="textfield"/>
+        <feesDescription
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Fees Description"
+            name="./feesDescription"
+            xtype="textfield"/>
+        <feesHeading
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Fees Heading"
+            name="./feesHeading"
+            xtype="textfield"/>
+        <feesMessage
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Fees Message"
+            name="./feesMessage"
+            xtype="textfield"/>
+        <feesRate
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Fees Rate"
+            name="./feesRate"
+            xtype="textfield"/>
+        <feesText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Fees Text"
+            name="./feesText"
+            xtype="textfield"/>
+        <formsHeading
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Forms Heading"
+            name="./formsHeading"
+            xtype="textfield"/>
+        <formsText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Forms Text"
+            name="./formsText"
+            xtype="textfield"/>
+        <linksHeading
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Links Heading"
+            name="./linksHeading"
+            xtype="textfield"/>
+        <locationHeading
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Location Heading"
+            name="./locationHeading"
+            xtype="textfield"/>
+        <locationText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Location Text"
+            name="./locationText"
+            xtype="textfield"/>
+        <overviewHeading
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Overview Heading"
+            name="./overviewHeading"
+            xtype="textfield"/>
+        <saveTimeLink
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Save Time Link"
+            name="./saveTimeLink"
+            xtype="textfield"/>
+        <saveTimeText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Save Time Text"
+            name="./saveTimeText"
+            xtype="textfield"/>
+        <visitOnlineText
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Visit Online Text"
+            name="./visitOnlineText"
+            xtype="textfield"/>
+    </items>
+</jcr:root>

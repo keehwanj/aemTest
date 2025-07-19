@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    title="Onsite Sewage Search Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="cq:Widget"
+            title="General"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <destination
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Destination"
+                    name="./destination"
+                    xtype="pathfield"/>
+                <parameter
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Parameter"
+                    name="./parameter"
+                    xtype="textfield"/>
+            </items>
+        </general>
+        <box
+            jcr:primaryType="cq:Widget"
+            title="Box"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <inputText
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Search Input Text"
+                    name="./inputText"
+                    xtype="textfield"/>
+            </items>
+        </box>
+    </items>
+</jcr:root>

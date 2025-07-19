@@ -1,0 +1,44 @@
+/*
+/apps/courts/components/navigation/breadcrumbs/clientlibs/css/style.css
+/*
+#breadcrumbNav {
+    font-size: 80%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+*/
+#breadcrumbNav div {
+    display:inline;
+    }
+
+#breadcrumbNav a{
+background: transparent url(/etc/designs/courts-bootstrap/clientlibs/images/arrow_breadcrum.gif) no-repeat center left;
+text-decoration: none;
+padding-left: 8px; /*adjust bullet image padding*/
+margin-right:10px;
+color:#555;
+
+}
+
+#breadcrumbNav a.active{
+    color:#000;
+}
+
+#breadcrumbNav a:visited{
+color:#555;
+}
+
+#breadcrumbNav a:hover{
+text-decoration:none;
+color:#000;
+}
+
+.breadcrumb {
+ 	background-color: #FFFFFF;
+
+}
+
+
+.navbar {
+    margin-bottom: 10px;
+ }

@@ -1,0 +1,18 @@
+/*
+	apps/gnb/components/content/gnblist_update/clientlibs/css/responsive-767px-max.css
+ */
+/* phone landscape */
+@media (max-width: 767px) {
+  .gnblist_update ul {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .gnblist_update {
+    margin-bottom: 0px;
+  }
+
+  .gnblist_update > div {
+    padding: 10px 10px 0px 10px;
+  }
+}

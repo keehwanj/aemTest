@@ -1,0 +1,76 @@
+/*
+	START of /apps/nbpc-cpnb/components/content/promo_update/clientlibs/css/style.css
+*/
+/**START of style.css**/
+.carousel-control {
+    width: 5%;
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+    top: 50%;
+ }
+
+.carousel-control.left {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.carousel-control.right {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+.carousel-indicators {
+    left: 5%;
+	width: 35%;
+    padding-left: 0;
+    bottom: 18px;
+    text-align: left;
+    margin-left: 0%;
+
+}
+
+
+
+.carousel-indicators .active { 
+    background-color: gray;
+}
+
+.carousel-indicators li {
+    border: 1px solid gray;
+    border-radius: 00px;
+}
+.carousel-caption h3{
+	/*font-size: 140%;*/
+	font-weight: bold;
+	margin: 0 0 5px 0px;
+}
+
+.carousel-caption p{
+	font-size: 105%;
+
+}
+
+.carousel-caption {
+    text-align: left;
+    top: 0%;
+	left: 4%;
+    right: 66%;
+	color:black;
+	text-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+#vnbwCarousel {
+    margin: 0 0 20px;
+ }
+
+.promo_update .img-responsive, 
+.promo_update .thumbnail > img, 
+.promo_update .thumbnail a > img, 
+.promo_update .carousel-inner > .item > img, 
+.promo_update .carousel-inner > .item > a > img {
+	width:736px;
+}
+/**END of style.css**/   
+/*
+	END of /apps/nbpc-cpnb/components/content/promo_update/clientlibs/css/style.css
+*/

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="nt:unstructured"
+        title="List"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <titles
+                jcr:primaryType="cq:Widget"
+                title="Titles"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <titles
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new title."
+                        fieldLabel="Title Texts"
+                        name="./titles"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </titles>
+                </items>
+            </titles>
+            <links
+                jcr:primaryType="cq:Widget"
+                title="Links"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new link."
+                        fieldLabel="Links"
+                        name="./links"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="pathfield"/>
+                    </links>
+                </items>
+            </links>
+            <descriptions
+                jcr:primaryType="cq:Widget"
+                title="Descriptions"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <descriptions
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new description."
+                        fieldLabel="Description"
+                        name="./descriptions"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="pathfield"/>
+                    </descriptions>
+                </items>
+            </descriptions>
+            <general
+                jcr:primaryType="cq:Widget"
+                title="General"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <generalTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="General Title"
+                        name="./generalTitle"
+                        xtype="textfield"/>
+                    <backgroundImage
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Background image"
+                        name="./backgroundImage"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                </items>
+            </general>
+        </items>
+    </items>
+</jcr:root>

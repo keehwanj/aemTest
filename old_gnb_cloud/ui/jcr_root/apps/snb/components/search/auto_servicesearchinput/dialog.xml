@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Service Search Input"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Service Search Input">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <path
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Path"
+                        name="./searchResultsPath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <searchbutton
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Search Button Text"
+                        name="./searchbutton"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <searchheader
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Search Header"
+                        name="./searchheader"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <inputkeyword
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Input Keyword text"
+                        name="./inputkeyword"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <hidetitle_a
+                        jcr:primaryType="cq:Widget"
+                        allowEmpty="false"
+                        fieldLabel="Hide Title?"
+                        name="./hidetitle_a"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="True"
+                                value="true"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="False"
+                                value="false"/>
+                        </options>
+                    </hidetitle_a>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

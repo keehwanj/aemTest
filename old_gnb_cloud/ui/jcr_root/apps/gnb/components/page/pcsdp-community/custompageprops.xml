@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="cq:Panel"
+            title="General">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <ongoing
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="no"
+                    fieldLabel="Ongoing"
+                    name="./ongoing"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <no
+                            jcr:primaryType="nt:unstructured"
+                            text="No"
+                            value="no"/>
+                        <yes
+                            jcr:primaryType="nt:unstructured"
+                            text="Yes"
+                            value="yes"/>
+                    </options>
+                </ongoing>
+                <from_date
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldDescription="Enter 01/01/90 in case of ongoing"
+                    fieldLabel="Date (from)"
+                    name="./from_date"
+                    xtype="datetime"/>
+                <to_date
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldDescription="Enter 12/31/99 in case of ongoing"
+                    fieldLabel="Date (to)"
+                    name="./to_date"
+                    xtype="datetime"/>
+                <region
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Region"
+                    name="./region"
+                    xtype="textfield"/>
+                <phone
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Telephone"
+                    name="./phone"
+                    xtype="textfield"/>
+                <fax
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Fax"
+                    name="./fax"
+                    xtype="textfield"/>
+                <email
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter just email address"
+                    fieldLabel="E-mail"
+                    name="./email"
+                    xtype="textfield"/>
+            </items>
+        </general>
+        <english
+            jcr:primaryType="cq:Panel"
+            title="English">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <event_en
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldLabel="Event"
+                    name="./event_en"
+                    xtype="textfield"/>
+                <address_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Address"
+                    name="./address_en"
+                    xtype="textfield"/>
+                <contact_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Organization / Contact"
+                    name="./contact_en"
+                    xtype="textfield"/>
+                <website_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Website"
+                    name="./website_en"
+                    xtype="textfield"/>
+                <other_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Other (ie:Facebook / Twitter)"
+                    name="./other_en"
+                    xtype="textfield"/>
+                <date_time_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Date / Time"
+                    name="./date_time_en"
+                    xtype="textfield"/>
+                <deadline_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Registration Deadline"
+                    name="./deadline_en"
+                    xtype="textfield"/>
+                <fee_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Fee"
+                    name="./fee_en"
+                    xtype="textfield"/>
+                <description_en
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    height="200"
+                    name="./description_en"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </description_en>
+            </items>
+        </english>
+        <french
+            jcr:primaryType="cq:Panel"
+            title="French">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <event_fr
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldLabel="Event"
+                    name="./event_fr"
+                    xtype="textfield"/>
+                <address_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Address"
+                    name="./address_fr"
+                    xtype="textfield"/>
+                <contact_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Organization / Contact"
+                    name="./contact_fr"
+                    xtype="textfield"/>
+                <website_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Website"
+                    name="./website_fr"
+                    xtype="textfield"/>
+                <other_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Other (ie:Facebook / Twitter)"
+                    name="./other_fr"
+                    xtype="textfield"/>
+                <date_time_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Date / Time"
+                    name="./date_time_fr"
+                    xtype="textfield"/>
+                <deadline_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Registration Deadline"
+                    name="./deadline_fr"
+                    xtype="textfield"/>
+                <fee_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Fee"
+                    name="./fee_fr"
+                    xtype="textfield"/>
+                <description_fr
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    height="200"
+                    name="./description_fr"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </description_fr>
+            </items>
+        </french>
+    </items>
+</jcr:root>

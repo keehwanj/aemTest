@@ -1,0 +1,19 @@
+/*
+	/apps/agnb-vgnb/components/content/newsarticle/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+  .newsarticle h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.7em;
+    font-weight: bold;
+  }
+
+  .newsarticle div.col-sm-8 {
+    padding-left: 0px !important;
+  }
+
+  .newsarticle div.col-sm-4 {
+    padding-right: 0px !important;
+  }
+}

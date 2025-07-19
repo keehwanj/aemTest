@@ -1,0 +1,21 @@
+/0000
+{
+    /glob "*"
+    /type "deny"
+}
+/0001
+{
+    # Consider all HTML files stale after an activation.
+    /glob "*.html"
+    /type "allow"
+}
+/0002
+{
+    /glob "/etc/segmentation.segment.js"
+    /type "allow"
+}
+/0003
+{
+    /glob "*/analytics.sitecatalyst.js"
+    /type "allow"
+}

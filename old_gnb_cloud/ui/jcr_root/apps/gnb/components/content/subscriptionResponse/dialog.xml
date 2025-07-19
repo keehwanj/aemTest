@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Subscription Response"
+    xtype="dialog">
+    <items
+        jcr:primaryType="nt:unstructured"
+        title="List"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <text
+                jcr:primaryType="cq:Widget"
+                title="Text"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <emailText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="ID Text"
+                        name="./emailText"
+                        xtype="textfield"/>
+                    <typeText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Type Text"
+                        name="./typeText"
+                        xtype="textfield"/>
+                    <pageText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Page Text"
+                        name="./pageText"
+                        xtype="textfield"/>
+                </items>
+            </text>
+            <text_e
+                jcr:primaryType="cq:Widget"
+                title="Text within Email"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <emailText_e
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="ID Text"
+                        name="./emailText_e"
+                        xtype="textfield"/>
+                    <typeText_e
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Type Text"
+                        name="./typeText_e"
+                        xtype="textfield"/>
+                    <pageText_e
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Page Text"
+                        name="./pageText_e"
+                        xtype="textfield"/>
+                </items>
+            </text_e>
+            <button
+                jcr:primaryType="cq:Widget"
+                title="Button"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <buttonColor
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="panel-primary"
+                        fieldDescription="Setting button color"
+                        fieldLabel="Button Color"
+                        name="./buttonColor"
+                        type="combobox"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <primary
+                                jcr:primaryType="nt:unstructured"
+                                value="btn-primary"/>
+                            <success
+                                jcr:primaryType="nt:unstructured"
+                                value="btn-success"/>
+                            <info
+                                jcr:primaryType="nt:unstructured"
+                                value="btn-info"/>
+                            <warning
+                                jcr:primaryType="nt:unstructured"
+                                value="btn-warning"/>
+                            <danger
+                                jcr:primaryType="nt:unstructured"
+                                value="btn-danger"/>
+                        </options>
+                    </buttonColor>
+                    <buttonText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Button text"
+                        name="./buttonText"
+                        xtype="textfield"/>
+                </items>
+            </button>
+            <message
+                jcr:primaryType="cq:Widget"
+                title="Message"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <successText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Success Text"
+                        name="./successText"
+                        xtype="textfield"/>
+                    <failText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Fail Text"
+                        name="./failText"
+                        xtype="textarea"/>
+                    <resultText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Result Text(use this field only)"
+                        name="./resultText"
+                        xtype="textarea"/>
+                    <resultText2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Result Text2(use this field only)"
+                        name="./resultText2"
+                        xtype="textarea"/>
+                </items>
+            </message>
+        </items>
+    </items>
+</jcr:root>

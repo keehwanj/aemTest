@@ -1,0 +1,10 @@
+/*
+	apps/gnb/components/search/multimediasearch/clientlibs/css/responsive-480px.css
+*/
+@media (max-width: 480px) {
+  .wide_multimedia_item .row .col-sm-3,
+  .wide_multimedia_item .row .col-sm-9 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

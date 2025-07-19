@@ -1,0 +1,63 @@
+/*
+ ADOBE CONFIDENTIAL
+ __________________
+
+  Copyright 2012 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+ */
+/*
+#breadcrumbNav {
+    font-size: 80%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+*/
+#breadcrumbNav div {
+    display:inline;
+    }
+
+#breadcrumbNav a{
+background: transparent url(/etc/designs/vnbw-bootstrap/clientlibs/images/arrow_breadcrum.gif) no-repeat center left;
+text-decoration: none;
+padding-left: 8px; /*adjust bullet image padding*/
+margin-right:10px;
+color:#555;
+
+}
+
+#breadcrumbNav a.active{
+    color:#000;
+}
+
+#breadcrumbNav a:visited{
+color:#555;
+}
+
+#breadcrumbNav a:hover{
+text-decoration:none;
+color:#000;
+}
+
+.breadcrumb {
+ 	background-color: #FFFFFF;
+
+}
+
+#breadcrumbNav{
+    font-size: 80%;    
+    margin: 0 30px 10px 15px;
+    padding: 0;
+}
+
+.navbar {
+    margin-bottom: 10px;
+ }

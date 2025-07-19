@@ -1,0 +1,9 @@
+Export-Package: *
+Import-Package: *
+Private-Package: *
+# Include-Resource: 
+Bundle-Name: GNB External
+Bundle-Description: GNB External
+Bundle-SymbolicName: ca.gnb.kee
+Bundle-Version: 1.0.0-SNAPSHOT
+Bundle-Activator: ca.gnb.kee.Activator

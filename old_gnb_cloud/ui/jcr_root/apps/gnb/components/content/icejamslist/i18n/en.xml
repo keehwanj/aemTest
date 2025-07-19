@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="en"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <active
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="active"
+        sling:message="Active"/>
+    <active-frozen
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="active-frozen"
+        sling:message="Active-Frozen"/>
+    <active-ice_formation
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="active-ice_formation"
+        sling:message="Active-Ice Formation"/>
+    <active-ice_jam
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="active-ice_jam"
+        sling:message="Active-Ice Jam"/>
+    <community_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="community_Text"
+        sling:message="Community"/>
+    <datejam_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="datejam_Text"
+        sling:message="Date Jam Formed"/>
+    <description_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="description_Text"
+        sling:message="Description"/>
+    <inactive
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="inactive"
+        sling:message="Inactive"/>
+    <river_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="river_Text"
+        sling:message="River basin"/>
+    <status_Text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="status_Text"
+        sling:message="Status"/>
+</jcr:root>

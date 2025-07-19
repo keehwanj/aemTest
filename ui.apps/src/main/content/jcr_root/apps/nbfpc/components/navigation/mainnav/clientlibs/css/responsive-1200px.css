@@ -1,0 +1,29 @@
+/*
+	/apps/nbpc-cpnb/components/navigation/mainnav/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+  /**START of remove space of row**/
+  div#main_content_wrapper div.row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  div#main_content_wrapper footer.row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  /**END of remove space of row**/
+
+  /*START of mainnav*/
+  ul#mainnav.nav.navbar-nav {
+    font-size: 130%;
+    width: 100%;
+  }
+  ul#mainnav.nav.navbar-nav > li {
+    width: 25%;
+    text-align: center;
+  }
+}
+/* 
+	END of /apps/nbpc-cpnb/components/navigation/mainnav/clientlibs/css/responsive-1200px.css
+*/

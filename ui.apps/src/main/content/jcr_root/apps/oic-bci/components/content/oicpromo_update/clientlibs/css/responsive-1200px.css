@@ -1,0 +1,11 @@
+/*
+/apps/oic-bci/components/content/oicpromo_update/clientlibs/css/responsive-1200px.css
+*/
+@media (min-width: 1200px) {
+
+.carousel-caption h3{
+	font-size: 140%;
+}
+
+
+}

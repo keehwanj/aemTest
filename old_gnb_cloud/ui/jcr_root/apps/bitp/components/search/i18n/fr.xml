@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="fr"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <languagesText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="languagesText"
+        sling:message="Langues"/>
+    <lastModifiedText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="lastModifiedText"
+        sling:message="Dernière mise à jour"/>
+    <legendText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="legendText"
+        sling:message="Résultats par page"/>
+    <nextText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="nextText"
+        sling:message="Suivant"/>
+    <noResultsText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="noResultsText"
+        sling:message="Votre recherche ne correspond à aucun document."/>
+    <previousText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="previousText"
+        sling:message="Dernier"/>
+    <refineResultsText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="refineResultsText"
+        sling:message="Affiner les résultats"/>
+    <relatedSearchesText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="relatedSearchesText"
+        sling:message="Related searches:"/>
+    <removeFilterText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="removeFilterText"
+        sling:message="Retirez le filtre"/>
+    <resultPagesText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="resultPagesText"
+        sling:message="Page:"/>
+    <searchButtonText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="searchButtonText"
+        sling:message="Recherche"/>
+    <searchDateFormatText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="searchDateFormatText"
+        sling:message="JJ/MM/AA"/>
+    <searchFromText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="searchFromText"
+        sling:message="De"/>
+    <searchToText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="searchToText"
+        sling:message="Â"/>
+    <searchTrendsText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="searchTrendsText"
+        sling:message="Tendances de recherche"/>
+    <similarPagesText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="similarPagesText"
+        sling:message="Pages similaires"/>
+    <spellcheckText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="spellcheckText"
+        sling:message="Did you mean:"/>
+    <statisticsText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="statisticsText"
+        sling:message="Résultats {0} - {1} de {2}"/>
+    <tagsText
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="tagsText"
+        sling:message="Tags"/>
+</jcr:root>

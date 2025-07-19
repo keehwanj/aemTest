@@ -1,0 +1,27 @@
+/*
+	/apps/snb/components/page/home_new/clientlibs/css/responsive-767px-max.css
+*/
+/* phone landscape */
+@media (max-width: 767px) {
+  #landing .landingIamge {
+    height: 100px;
+  }
+
+  .landingContent {
+    padding: 0px 30px 50px 30px;
+  }
+
+  .englishButton,
+  .frenchButton {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #landing .landingIamge {
+    margin-bottom: 30px;
+  }
+  .languageButton .btn {
+    font-size: 1em;
+    padding: 10px 5px;
+  }
+}

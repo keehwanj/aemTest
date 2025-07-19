@@ -1,0 +1,17 @@
+/*
+	apps/gnb/components/content/departmentinfo/clientlibs/css/responsive-767px-max.css
+*/
+/* phone landscape */
+@media (max-width: 767px) {
+
+/**START of mandatestab**/
+.item_services h3, .item_services_first h3 {
+    font-size: 130% !important;
+}
+/**END of mandatestab**/
+
+#search_left_nav {
+    margin: 0px 0 0 0;
+    float: inherit;
+}
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Header"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <logo
+                jcr:primaryType="cq:Panel"
+                title="Logo">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <link
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Link"
+                        name="./link"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <linkText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Link (Alt) Text"
+                        name="./linkText"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <logo
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Logo"
+                        name="./logo"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                </items>
+            </logo>
+            <language
+                jcr:primaryType="cq:Panel"
+                title="Language">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <link
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="&#x9;&#xa;The corresponding English/French page"
+                        fieldLabel="Opposite Page"
+                        name="./oppositePage"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                </items>
+            </language>
+            <headerLinkText
+                jcr:primaryType="cq:Widget"
+                title="Titles"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <headerLinkText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new text."
+                        fieldLabel="Link Texts"
+                        name="./headerLinkText"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </headerLinkText>
+                </items>
+            </headerLinkText>
+            <headerLinks
+                jcr:primaryType="cq:Widget"
+                title="Links"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <headerLinks
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new link."
+                        fieldLabel="Links"
+                        name="./headerLinks"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="pathfield"/>
+                    </headerLinks>
+                </items>
+            </headerLinks>
+            <hideBreadcrumbs
+                jcr:primaryType="cq:Panel"
+                title="Hide">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <hide
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Do not display breadcrumbs on page"
+                        inputValue="false"
+                        name="./hideBreadcrumbs"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <header
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Do not display header on page"
+                        inputValue="false"
+                        name="./hideHeader"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </hideBreadcrumbs>
+        </items>
+    </items>
+</jcr:root>

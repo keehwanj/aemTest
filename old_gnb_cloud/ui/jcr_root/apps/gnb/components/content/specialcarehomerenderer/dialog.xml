@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','children','static','search','querybuilder'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i!=tabs.length-1;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="ABC List Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <header-1
+            jcr:primaryType="cq:Widget"
+            title="Header-1"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <header_facility
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Facility or Installation "
+                    fieldLabel="Facility"
+                    name="./header_facility"
+                    xtype="textfield"/>
+                <header_region
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Region or Région"
+                    fieldLabel="Region"
+                    name="./header_region"
+                    xtype="textfield"/>
+                <header_address
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Mailing Address or Adresse postale"
+                    fieldLabel="Mailing Address"
+                    name="./header_address"
+                    xtype="textfield"/>
+                <header_contact
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Contact or Personne-ressource"
+                    fieldLabel="Contact"
+                    name="./header_contact"
+                    xtype="textfield"/>
+            </items>
+        </header-1>
+        <header-2
+            jcr:primaryType="cq:Widget"
+            title="Header-2"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <header_phone
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Phone or Téléphone"
+                    fieldLabel="Phone"
+                    name="./header_phone"
+                    xtype="textfield"/>
+                <header_language
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Language or Langue"
+                    fieldLabel="Language"
+                    name="./header_language"
+                    xtype="textfield"/>
+                <header_max
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Default : Maximum Approved Units or Nombre maximal d’unités autorisées"
+                    fieldLabel="Maximum Approved Units"
+                    name="./header_max"
+                    xtype="textfield"/>
+            </items>
+        </header-2>
+    </items>
+</jcr:root>

@@ -1,0 +1,21 @@
+/**START of headertext.css**/
+
+#topText {
+  margin: 20px 0px 0px 0px;
+  width: 435px;
+  float: left;
+  font-size: 160%;
+  color: #926618;
+  font-weight: bold;
+  text-align: right;
+  color: #663366;
+  /**color:#996699;**/
+}
+span.headerText {
+  padding: 0px 10px 0px 0px;
+}
+span#lastText.headerText {
+  padding: 0px 5px 0px 0px;
+}
+
+/**END of headertext.css**/

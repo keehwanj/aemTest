@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="SNBFLUID Video Viewer"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <VideoViewer
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Video Viewer"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <youtubeId
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="YouTube Id"
+                                name="./youtubeId"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videoPath
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="mp4, ogg, or webm"
+                                fieldLabel="Video Path"
+                                name="./videoPath"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <videoTitle
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video Title"
+                                name="./videoTitle"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videoDuration
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video Duration"
+                                name="./videoDuration"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <videoDescription
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Video Description"
+                                name="./videoDescription"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <thumbnailPath
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="proper size-  597(w), 337(h)"
+                                fieldLabel="Thumbnail"
+                                name="./thumbnailPath"
+                                validateOnBlur="true"
+                                xtype="pathfield"/>
+                            <height
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Height"
+                                name="./height"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <width
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Width"
+                                name="./width"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <watchVideoText
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Watch Video Text"
+                                name="./watchVideoText"
+                                validateOnBlur="true"
+                                xtype="textfield"/>
+                            <embed
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./embed"
+                                text="Embed video in page"
+                                value="true"/>
+                            <embed-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./embed@Delete"
+                                value="{Boolean}true"/>
+                            <hideYoutubeTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                fieldDescription="Hide Youtube Title on Video when embeded"
+                                name="./hideYoutubeTitle"
+                                text="Hide Youtube Title"
+                                value="false"/>
+                            <hideyoutubetitle-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./hideYoutubeTitle@Delete"
+                                value="{Boolean}true"/>
+                        </items>
+                    </columns>
+                </items>
+            </VideoViewer>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,4 @@
+#base=js
+jquery.rwdImageMaps.js
+pym.js
+datatables.js

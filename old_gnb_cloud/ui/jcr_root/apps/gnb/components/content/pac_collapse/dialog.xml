@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Parent Assistance Calculator - PAC (Education) - collapse"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <first
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="First"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <t_1_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Household Income"
+                        fieldLabel="Household Income"
+                        name="./t_1_1_pac"
+                        xtype="textfield"/>
+                    <t_1_tootip_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Household Income"
+                        fieldLabel="Tooltip for Income"
+                        name="./t_1_tootip_1_pac"
+                        xtype="textarea"/>
+                    <t_1_2_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Net Income"
+                        fieldLabel="Placeholder text"
+                        name="./t_1_2_pac"
+                        xtype="textfield"/>
+                    <t_location_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text of &quot;Location of Childcare Facility&quot;"
+                        fieldLabel="Location of Childcare Facility"
+                        name="./t_location_1_pac"
+                        xtype="textfield"/>
+                    <t_location_tootip_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Tooltip text of &quot;Location of Childcare Facility&quot;"
+                        fieldLabel="Tooltip for Location"
+                        name="./t_location_tootip_1_pac"
+                        xtype="textarea"/>
+                    <t_location_item_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text of &quot;Please select&quot; in item"
+                        fieldLabel="Please select"
+                        name="./t_location_item_1_pac"
+                        xtype="textfield"/>
+                </items>
+            </first>
+            <second
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Second"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <t_2_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="# Infants full-time"
+                        fieldLabel="# Infants full-time"
+                        name="./t_2_1_pac"
+                        xtype="textfield"/>
+                    <t_2_tootip_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="# Infants full-time"
+                        fieldLabel="Tooltip"
+                        name="./t_2_tootip_1_pac"
+                        xtype="textarea"/>
+                    <t_2_3_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of day(s) per week"
+                        fieldLabel="Number of day(s) per week"
+                        name="./t_2_3_pac"
+                        xtype="textfield"/>
+                    <t_2_tootip_3_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of day(s) per week"
+                        fieldLabel="Tooltip"
+                        name="./t_2_tootip_3_pac"
+                        xtype="textarea"/>
+                </items>
+            </second>
+            <third
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Third"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <t_3_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="# Preschool full-time"
+                        fieldLabel="# Preschool full-time"
+                        name="./t_3_1_pac"
+                        xtype="textfield"/>
+                    <t_3_tootip_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="# Preschool full-time"
+                        fieldLabel="Tooltip"
+                        name="./t_3_tootip_1_pac"
+                        xtype="textarea"/>
+                    <t_3_3_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of day(s) per week"
+                        fieldLabel="Number of day(s) per week"
+                        name="./t_3_3_pac"
+                        xtype="textfield"/>
+                    <t_3_tootip_3_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of day(s) per week"
+                        fieldLabel="Tooltip"
+                        name="./t_3_tootip_3_pac"
+                        xtype="textarea"/>
+                </items>
+            </third>
+            <fourth
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Fourth"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <t_4_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="# Infants part-time"
+                        fieldLabel="# Infants part-time"
+                        name="./t_4_1_pac"
+                        xtype="textfield"/>
+                    <t_4_tootip_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="# Infants part-time"
+                        fieldLabel="Tooltip"
+                        name="./t_4_tootip_1_pac"
+                        xtype="textarea"/>
+                    <t_4_3_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of day(s) per week"
+                        fieldLabel="Number of day(s) per week"
+                        name="./t_4_3_pac"
+                        xtype="textfield"/>
+                    <t_4_tootip_3_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of day(s) per week"
+                        fieldLabel="Tooltip"
+                        name="./t_4_tootip_3_pac"
+                        xtype="textarea"/>
+                </items>
+            </fourth>
+            <fifth
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Fifth"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <t_5_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="# Preschool part-time"
+                        fieldLabel="# Preschool part-time"
+                        name="./t_5_1_pac"
+                        xtype="textfield"/>
+                    <t_5_tootip_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Household Income"
+                        fieldLabel="Tooltip"
+                        name="./t_5_tootip_1_pac"
+                        xtype="textarea"/>
+                    <t_5_3_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Number of day(s) per week"
+                        fieldLabel="Number of day(s) per week"
+                        name="./t_5_3_pac"
+                        xtype="textfield"/>
+                    <t_5_tootip_3_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Household Income"
+                        fieldLabel="Tooltip"
+                        name="./t_5_tootip_3_pac"
+                        xtype="textarea"/>
+                </items>
+            </fifth>
+            <reset
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Button"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <t_6_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Reset"
+                        fieldLabel="Reset"
+                        name="./t_6_1_pac"
+                        xtype="textfield"/>
+                </items>
+            </reset>
+            <result_first
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Result First"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <r_1_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Current childcare fees"
+                        fieldLabel="Current childcare fees"
+                        name="./r_1_1_pac"
+                        xtype="textfield"/>
+                    <r_1_tootip_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Current childcare fees"
+                        fieldLabel="Tooltip"
+                        name="./r_1_tootip_1_pac"
+                        xtype="textarea"/>
+                    <r_1_2_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Per Day"
+                        fieldLabel="Per Day"
+                        name="./r_1_2_pac"
+                        xtype="textfield"/>
+                    <r_1_3_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Per Month"
+                        fieldLabel="Per Month"
+                        name="./r_1_3_pac"
+                        xtype="textfield"/>
+                </items>
+            </result_first>
+            <result_second
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Result Second"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <r_2_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Designated Centre Subsidy Contribution"
+                        fieldLabel="Designated Centre Subsidy Contribution"
+                        name="./r_2_1_pac"
+                        xtype="textfield"/>
+                    <r_2_tootip_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Designated Centre Subsidy Contribution"
+                        fieldLabel="Tooltip"
+                        name="./r_2_tootip_1_pac"
+                        xtype="textarea"/>
+                    <r_2_2_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="- Designated Centre Subsidy"
+                        fieldLabel="- Designated Centre Subsidy"
+                        name="./r_2_2_pac"
+                        xtype="textfield"/>
+                    <r_2_tootip_2_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="- Designated Centre Subsidy"
+                        fieldLabel="Tooltip"
+                        name="./r_2_tootip_2_pac"
+                        xtype="textarea"/>
+                    <r_2_3_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="- Income Cap"
+                        fieldLabel="- Income Cap"
+                        name="./r_2_3_pac"
+                        xtype="textfield"/>
+                    <r_2_tootip_3_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="- Income Cap"
+                        fieldLabel="Tooltip"
+                        name="./r_2_tootip_3_pac"
+                        xtype="textarea"/>
+                    <r_2_4_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Per Day"
+                        fieldLabel="Per Day"
+                        name="./r_2_4_pac"
+                        xtype="textfield"/>
+                    <r_2_5_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Per Month"
+                        fieldLabel="Per Month"
+                        name="./r_2_5_pac"
+                        xtype="textfield"/>
+                </items>
+            </result_second>
+            <result_third
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Result Third"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <r_3_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Total Designated Centre Subsidy Contribution(s)"
+                        fieldLabel="Total Designated Centre Subsidy Contribution(s)"
+                        name="./r_3_1_pac"
+                        xtype="textfield"/>
+                    <r_3_tootip_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Total Designated Centre Subsidy Contribution(s)"
+                        fieldLabel="Tooltip"
+                        name="./r_3_tootip_1_pac"
+                        xtype="textarea"/>
+                    <r_3_2_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Per Day"
+                        fieldLabel="Per Day"
+                        name="./r_3_2_pac"
+                        xtype="textfield"/>
+                </items>
+            </result_third>
+            <result_fourth
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Result Fourth"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <r_4_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Projected Childcare fee (family pays)"
+                        fieldLabel="Projected childcare fee"
+                        name="./r_4_1_pac"
+                        xtype="textfield"/>
+                    <r_4_tootip_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Projected childcare fee"
+                        fieldLabel="Tooltip"
+                        name="./r_4_tootip_1_pac"
+                        xtype="textarea"/>
+                    <r_4_2_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Per Day"
+                        fieldLabel="Per Day"
+                        name="./r_4_2_pac"
+                        xtype="textfield"/>
+                </items>
+            </result_fourth>
+            <title
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Title"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title_1_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Income"
+                        fieldLabel="Income"
+                        name="./title_1_pac"
+                        xtype="textfield"/>
+                    <title_1_tootip_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Income"
+                        fieldLabel="Tooltip"
+                        name="./title_1_tootip_pac"
+                        xtype="textarea"/>
+                    <title_5_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Location"
+                        fieldLabel="Location"
+                        name="./title_5_pac"
+                        xtype="textfield"/>
+                    <title_5_tootip_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Location"
+                        fieldLabel="Tooltip"
+                        name="./title_5_tootip_pac"
+                        xtype="textarea"/>
+                    <title_2_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Childcare Needs - Full Time"
+                        fieldLabel="Childcare Needs - Full Time"
+                        name="./title_2_pac"
+                        xtype="textfield"/>
+                    <title_2_tootip_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Childcare Needs - Full Time"
+                        fieldLabel="Tooltip"
+                        name="./title_2_tootip_pac"
+                        xtype="textarea"/>
+                    <title_3_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Childcare Needs - Part-Time"
+                        fieldLabel="Childcare Needs - Part-Time"
+                        name="./title_3_pac"
+                        xtype="textfield"/>
+                    <title_3_tootip_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Childcare Needs - Part-Time"
+                        fieldLabel="Tooltip"
+                        name="./title_3_tootip_pac"
+                        xtype="textarea"/>
+                    <title_4_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Your Estimated Annual Daycare Expenses"
+                        fieldLabel="Your Estimated Annual Daycare Expenses"
+                        name="./title_4_pac"
+                        xtype="textfield"/>
+                    <title_4_tootip_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Your Estimated Annual Daycare Expenses"
+                        fieldLabel="Tooltip"
+                        name="./title_4_tootip_pac"
+                        xtype="textarea"/>
+                    <disclaimer_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="*Disclaimer"
+                        fieldLabel="*Displaimer"
+                        name="./disclaimer_pac"
+                        xtype="textarea"/>
+                </items>
+            </title>
+            <collapse
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Collapse"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <collapsible_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Collapsible?"
+                        inputValue="false"
+                        name="./collapsible_pac"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <collapsible_title_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Parent Assistance Calculator"
+                        fieldLabel="Collapsible Title"
+                        name="./collapsible_title_pac"
+                        xtype="textfield"/>
+                    <collapsible_id_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="default  :  pac_collapse"
+                        fieldLabel="Collapsible ID"
+                        name="./collapsible_id_pac"
+                        xtype="textfield"/>
+                    <collapsible_button_pac
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="btn-default  btn-primary  btn-success  btn-info  btn-warning  btn-danger  btn-link btn-block btn-lg btn-md btn-sm btn-xs"
+                        fieldLabel="Collapsible Button"
+                        name="./collapsible_button_pac"
+                        xtype="textfield"/>
+                </items>
+            </collapse>
+        </items>
+    </items>
+</jcr:root>

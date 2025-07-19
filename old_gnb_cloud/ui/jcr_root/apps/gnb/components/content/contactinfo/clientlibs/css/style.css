@@ -1,0 +1,73 @@
+/*
+	apps/gnb/components/content/contactinfo/clientlibs/css/style.css
+*/
+/**START of style.css - contactinfo**/
+h2.column_title {
+    margin-bottom:0px;
+}
+
+.item_services h2, .item_services_first h2, .item_services h3, .item_services_first h3  {
+    color:#004D42 !important;
+    font-size:125%;
+    margin:0px !important;
+    padding:0 !important;
+    font-weight: normal !important;
+}
+
+.pageHeader h3 div, .item_services h4 div, .item_services_first h4 div {
+	display: inline;
+}
+
+.pageHeader h3, .item_services h4, .item_services_first h4  {
+	font-size:100%;
+	margin:0px !important;
+	padding:0 !important;
+	font-weight: normal !important;
+}
+
+.item_services, .item_services_first {
+	background:transparent url(/etc/designs/gnb-bootstrap/clientlibs/images/bkgr_span_services.gif) repeat-x scroll center bottom;
+    color:black;
+    margin:0 0 20px;
+    padding-bottom:10px;
+}
+
+.contactinfo .pageHeader {
+    margin: 0 30px 0 0px;
+
+}
+
+#map_wrapper .directions_container {
+    border: 1px solid #D3D3D3;
+    left: 150px;
+    padding: 0 5px 1px;
+    position: absolute;
+    top: 234px;
+    width: 150px;
+    padding-right: 10px;
+    background: #F5F5F5 url(/etc/designs/gnb-bootstrap/clientlibs/images/icon_pdf.gif) center right no-repeat;
+}                    
+
+.directions_container p {
+    margin: 0 0 0;
+}
+
+#map_wrapper .map_holder {
+    background-color:#FFFFFF;
+    border:1px solid #D3D3D3;
+    margin-bottom:-10px;
+    padding:4px;
+}   
+
+
+.location_post {
+    display:block;
+    margin-left:30px;
+}
+.location_post p.handicap {
+   padding-left:40px;
+    background:url(/etc/designs/gnb-bootstrap/clientlibs/images/icon_handicap.gif) top left no-repeat;
+
+}
+
+/**END of style.css - contactinfo**/

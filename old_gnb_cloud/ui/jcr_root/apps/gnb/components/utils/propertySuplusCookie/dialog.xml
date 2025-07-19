@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Property Surplus Modal dialog using Cookie"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <setting
+                jcr:primaryType="cq:Panel"
+                border="false"
+                title="Setting">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <cookieName
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Cookie Name : username"
+                        fieldLabel="Cookie Name"
+                        name="./cookieName"
+                        xtype="textfield"/>
+                    <cookieDuration
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Cookie Duration : 1 -> 1 hour (use ONLY number)"
+                        fieldLabel="Cookie Duration"
+                        name="./cookieDuration"
+                        xtype="textfield"/>
+                    <buttonOK
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="OK"
+                        fieldLabel="Button - OK"
+                        name="./buttonOK"
+                        xtype="textfield"/>
+                    <buttonCancel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Cancel"
+                        fieldLabel="Button - Cancel"
+                        name="./buttonCancel"
+                        xtype="textfield"/>
+                    <cancelLink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Link for Cancel button"
+                        name="./cancelLink"
+                        title="Link for Cancel button"
+                        xtype="pathfield"/>
+                </items>
+            </setting>
+            <content
+                jcr:primaryType="cq:Panel"
+                border="false"
+                title="Content">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <modalTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Modal Title"
+                        fieldLabel="Modal Title"
+                        name="./modalTitle"
+                        xtype="textfield"/>
+                    <modalContent
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Modal Content"
+                        height="500"
+                        name="./modalContent"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="[sourceedit,specialchars]"/>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <findreplace
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                        <htmlRules jcr:primaryType="nt:unstructured">
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                protocols="[http://,https://,mailto:]"/>
+                        </htmlRules>
+                    </modalContent>
+                </items>
+            </content>
+        </items>
+    </items>
+</jcr:root>

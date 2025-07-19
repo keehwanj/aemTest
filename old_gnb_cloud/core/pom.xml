@@ -1,0 +1,385 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/mavenv4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.t4g.cnb</groupId>
+    <artifactId>cnb_hfx</artifactId>
+    <version>1.0.0</version>
+    <relativePath>../parent</relativePath>
+  </parent>
+  <artifactId>core</artifactId>
+  <packaging>bundle</packaging>
+  <name>T4G CNB Project CORE</name>
+  <version>${core.vsn}</version>
+  <description>T4G CNB Project Java Classes</description>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+    <file.encoding>utf-8</file.encoding>
+  </properties>
+  <scm>
+    <connection>scm:svn:http://buildhfx2.t4g.com:8443/svn/cnb_hfx/trunk/core</connection>
+    <developerConnection>scm:svn:buildhfx2.t4g.com:8443/svn/cnb_hfx/trunk/core</developerConnection>
+    <url>http://buildhfx2.t4g.com:8443/svn/cnb_hfx/trunk/core</url>
+  </scm>
+  <build>
+    <plugins>
+      <!-- Require Java 5 or higher for building -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <version>1.0-alpha-3</version>
+        <executions>
+          <execution>
+            <id>enforce-java</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireMavenVersion>
+                  <message>Project must be built with Maven 2.0.7 or higher </message>
+                  <version>2.0.7</version>
+                </requireMavenVersion>
+                <requireJavaVersion>
+                  <message>Project must be compiled with Java 5 or higher</message>
+                  <version>1.5.0</version>
+                </requireJavaVersion>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <!-- Instruct the maven compiler to compile sources 1.5 syntax -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+      <!-- Use the felix plugin to create the OSGi Bundle artifact -->
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <version>1.4.3</version>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Export-Package>com.t4g.cnb.enums.*,com.t4g.cnb.bean.*,com.t4g.cnb.utils.*,com.t4g.cnb.search.eval.*,com.t4g.cnb.tag.*,com.t4g.cnb.cq.*,com.t4g.cnb.replication.*,com.t4g.cnb.schedule.*,net.sf.ehcache.*</Export-Package>
+            <Import-Package>*;resolution:=optional</Import-Package>
+            <Include-Resource>{maven-resources}</Include-Resource>
+            <Bundle-Activator>com.t4g.cnb.schedule.LoadingScheduler</Bundle-Activator>
+            <Bundle-ClassPath>.,META-INF/lib/ehcache-core-2.3.2.jar</Bundle-ClassPath>
+            <Sling-Bundle-Resources>/var/classes</Sling-Bundle-Resources>
+            <Sling-Initial-Content>SLINGINF/sling/servlets/;overwrite:=true;uninstall:=true;path:=/apps/sling/servlets,SLING-INF/public/;overwrite:=true;uninstall:=true;path:=/apps/public</Sling-Initial-Content>
+          </instructions>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-scr-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>generate-scr-scrdescriptor</id>
+            <goals>
+              <goal>scr</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-scm-plugin</artifactId>
+        <version>1.0</version>
+        <configuration>
+          <goals>install</goals>
+        </configuration>
+      </plugin>
+    </plugins>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-webdav</artifactId>
+        <version>1.0-beta-2</version>
+      </extension>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-ssh</artifactId>
+        <version>1.0-beta-2</version>
+      </extension>
+    </extensions>
+  </build>
+  <!-- ========================================================== -->
+  <!-- D E P E N D E N C I E S -->
+  <!-- ========================================================== -->
+  <!-- The list of dependencies below should be checked, but serve as a rough list based
+  on typical usage. The versions are expected to change -->
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.felix</groupId>
+      <artifactId>org.osgi.compendium</artifactId>
+    </dependency>
+    <!-- CQ -->
+    <dependency>
+      <groupId>com.day.cq.workflow</groupId>
+      <artifactId>cq-workflow-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.day.cq.wcm</groupId>
+      <artifactId>cq-wcm-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.day.cq.wcm</groupId>
+      <artifactId>cq-wcm-components</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.day.cq.wcm</groupId>
+      <artifactId>cq-wcm-taglib</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.day.cq</groupId>
+      <artifactId>cq-security</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.day.cq</groupId>
+      <artifactId>cq-search</artifactId>
+      <version>5.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.day.commons</groupId>
+      <artifactId>day.commons.datasource.poolservice</artifactId>
+      <version>1.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>net.sf.ehcache</groupId>
+      <artifactId>ehcache-core</artifactId>
+      <version>2.3.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.day.cq</groupId>
+      <artifactId>cq-tagging</artifactId>
+      <version>5.3.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.day.cq.wcm</groupId>
+      <artifactId>cq-wcm-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.day.cq</groupId>
+      <artifactId>cq-widgets</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.day.commons</groupId>
+      <artifactId>day-commons-text</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.day.commons</groupId>
+      <artifactId>day-commons-io</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.day.commons</groupId>
+      <artifactId>day-commons-misc</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.day.commons</groupId>
+      <artifactId>day-commons-gfx</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <version>2.3</version>
+    </dependency>
+    <!-- sling -->
+    <dependency>
+      <groupId>org.apache.sling</groupId>
+      <artifactId>org.apache.sling.commons.json</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.sling</groupId>
+      <artifactId>org.apache.sling.jcr.api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.sling</groupId>
+      <artifactId>org.apache.sling.api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.sling</groupId>
+      <artifactId>org.apache.sling.event</artifactId>
+      <version>2.0.6</version>
+    </dependency>
+    <!-- jackrabbit -->
+<!--
+    <dependency>
+      <groupId>org.apache.jackrabbit</groupId>
+      <artifactId>jackrabbit-jcr-commons</artifactId>
+    </dependency>
+-->	
+<dependency>
+	<groupId>org.apache.jackrabbit</groupId>
+	<artifactId>jackrabbit-jcr-commons</artifactId>
+	<version>2.2.0</version>
+	<!--<version>1.5.5</version>-->
+</dependency>
+
+<dependency>
+	<groupId>org.apache.jackrabbit</groupId>
+	<artifactId>jackrabbit-standalone</artifactId>
+	<version>1.6.5</version>
+</dependency>
+            
+    <!-- commons -->
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+	<!--	<version>1.7</version>-->
+    </dependency>
+
+    <dependency>
+      <groupId>commons-pool</groupId>
+      <artifactId>commons-pool</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>commons-collections</groupId>
+      <artifactId>commons-collections</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>commons-httpclient</groupId>
+      <artifactId>commons-httpclient</artifactId>
+	  	<!--<version>3.1</version>-->
+    </dependency>
+    <dependency>
+      <groupId>commons-beanutils</groupId>
+      <artifactId>commons-beanutils</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jsp-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+    </dependency>
+
+<!-- start of New one from discussion board -->	
+<dependency>
+	<groupId>org.osgi</groupId>
+	<artifactId>org.osgi.core</artifactId>
+	<version>4.3.0</version>
+</dependency>
+<dependency>
+	<groupId>org.apache.felix</groupId>
+	<artifactId>org.apache.felix.scr.annotations</artifactId>
+	<version>1.9.6</version>
+</dependency>
+<dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-api</artifactId>
+	<version>1.6.1</version>
+</dependency>
+<dependency>
+	<groupId>junit</groupId>
+	<artifactId>junit</artifactId>
+	<version>4.11</version>
+</dependency>
+<dependency>
+	<groupId>org.apache.felix</groupId>
+	<artifactId>org.osgi.core</artifactId>
+	<version>1.4.0</version>
+</dependency>
+<dependency>
+	<groupId>org.apache.sling</groupId>
+	<artifactId>org.apache.sling.commons.osgi</artifactId>
+	<version>2.2.0</version>
+</dependency>
+    <dependency>
+<groupId>org.apache.jackrabbit</groupId>
+	<artifactId>jackrabbit-core</artifactId>
+	<version>2.4.3</version>
+</dependency>
+<dependency>
+	<groupId>org.apache.jackrabbit</groupId>
+	<artifactId>jackrabbit-api</artifactId>
+	<version>2.4.1</version>
+</dependency>
+
+<dependency>
+	<groupId>org.apache.sling</groupId>
+	<artifactId>org.apache.sling.jcr.api</artifactId>
+	<version>2.0.4</version>
+</dependency>
+<dependency>
+	<groupId>javax.jcr</groupId>
+	<artifactId>jcr</artifactId>
+	<version>2.0</version>
+</dependency>
+<!-- end of of New one from discussion board -->	
+
+<!-- start of of new -->	
+<dependency>
+	<groupId>org.apache.jackrabbit</groupId>
+	<artifactId>jackrabbit-spi-commons</artifactId>
+	<version>2.2.8</version>
+</dependency>
+ 
+<dependency>
+	<groupId>org.apache.jackrabbit</groupId>
+	<artifactId>jackrabbit-jcr2dav</artifactId>
+	<version>2.5.1</version>
+</dependency>  
+
+<dependency>
+	<groupId>org.apache.jackrabbit</groupId>
+	<artifactId>jackrabbit-spi</artifactId>
+	<version>2.2.8</version>
+</dependency>  
+
+<dependency>
+	<groupId>org.apache.jackrabbit</groupId>
+	<artifactId>jackrabbit-jcr2spi</artifactId>
+	<version>2.2.8</version>
+</dependency>
+
+<dependency>
+	<groupId>org.apache.jackrabbit</groupId>
+	<artifactId>jackrabbit-spi2jcr</artifactId>
+	<version>2.5.1</version>
+</dependency>
+
+<dependency>
+	<groupId>org.apache.jackrabbit</groupId>
+	<artifactId>jackrabbit-spi2dav</artifactId>
+	<version>2.5.1</version>
+</dependency>  
+
+<dependency>
+	<groupId>org.apache.jackrabbit</groupId>
+	<artifactId>jackrabbit-webdav</artifactId>
+	<version>2.2.8</version>
+</dependency>
+
+<dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-nop</artifactId>
+	<version>1.7.1</version>
+</dependency>
+<dependency>
+	<groupId>commons-logging</groupId>
+	<artifactId>commons-logging</artifactId>
+	<version>1.1.1</version>
+</dependency>
+            
+<!-- end of of new -->
+
+
+
+  </dependencies>
+</project>

@@ -1,0 +1,141 @@
+/*
+	/apps/agnb-vgnb/components/content/sectiontitle_update/clientlibs/css/style.css
+ */
+/*START of style.css*/
+
+.sectiontitle_update .alerts_1 img {
+    position: absolute;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+.sectiontitle_update .alerts_1 {
+    margin:0px;
+    padding:0;
+}
+
+.sectiontitle_update .alert_icon{
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/icon_alerts.gif) center left no-repeat;
+
+}
+
+.sectiontitle_update .alerts_1 h3{
+    padding-left:30px;
+}
+
+
+
+
+.sectiontitle_update .alerts_1  h3.title, .sectiontitle_update .links_1  h3.title, .sectiontitle_update .normal_1  h3.title   {
+    color:black;
+    font-size:110%;
+    font-weight:normal;
+    margin:0 0 0 0px;
+}
+
+.sectiontitle_update .links_1 a.rsslink:link, .sectiontitle_update .normal_1 a.rsslink:link,
+.sectiontitle_update .links_1 a.rsslink:visited, .sectiontitle_update .normal_1 a.rsslink:visited {
+  padding: 3px 7px 0 0;
+  float: right;
+}
+
+.sectiontitle_update .alerts_1 a.rsslink:link, .sectiontitle_update .alerts_1 a.rsslink:visited {
+  padding: 3px 30px 0 0;
+  float: right;
+}
+
+.sectiontitle_update .alerts_1 a.rsslink:link, .sectiontitle_update .links_1  a.rsslink:link, .sectiontitle_update .normal_1  a.rsslink:link,
+.sectiontitle_update .alerts_1  a.rsslink img, .sectiontitle_update .links_1  a.rsslink img, .sectiontitle_update .normal_1  a.rsslink img {
+    border:0px solid white;
+    }   
+                    
+.sectiontitle_update .more_title_link {
+    margin-top: -29px;
+    float:right;
+    }
+
+
+.sectiontitle_update .more_title_link a {
+    background:transparent url(/etc/designs/agnb-bootstrap/clientlibs/images/arrow.gif) no-repeat scroll right center;
+    color:#555555;
+    float:right;
+    font-size:75%;
+    font-weight:normal;
+    margin-right:15px;
+    margin-top:7px;
+    padding:0 10px 0 0;
+    text-transform:uppercase;
+}
+
+.sectiontitle_update .padded {
+    padding: 10px;
+    padding-bottom:0px;
+    border-top:1px solid #d3d3d3;
+}
+.sectiontitle_update .bottomborder {
+    border-bottom:1px solid #d3d3d3;
+}
+.sectiontitle_update .imagecontainer {
+    background-color:#ffffff;
+    border:1px solid #d3d3d3;
+    padding: 3px;
+}
+.sectiontitle_update h2 {
+    color:#0064a5;
+    margin-top: 10px;
+    margin-bottom:0px;
+    }
+.sectiontitle_update .standard h2 {
+    font-size:18px;
+    color:#004D42;
+    font-weight:normal !important;
+    margin:0 !important;
+    padding:0 !important;
+    }   
+    
+.sectiontitle_update h2, .sectiontitle_update p, .sectiontitle_update .featuretile_more {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.sectiontitle_update .featuretile_more a, .sectiontitle_update h2 a {
+    background:url(/etc/designs/agnb-bootstrap/clientlibs/images/arrow_blue.gif) no-repeat center right;
+    padding:0px 10px 0px 0;
+}
+
+
+
+/*from Colin*/
+.sectiontitle_update .links {
+/*blue*/
+  -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px;
+
+  border-bottom: solid 1px #959595;
+
+  /*background: linear-gradient(to bottom, #cfe2ee 0%,#cfe2ee 50%,#000000 50%,#c2d5e1 50%,#c2d5e1 100%);*/
+  /*background: linear-gradient(to bottom, #f5e8c7 0%,#f5e8c7 50%,#f1dfb1 50%,#f1dfb1 50%,#f1dfb1 100%);*/
+  background: linear-gradient(to bottom, #dfd4e9 0%,#dfd4e9 50%,#d3c4e1 50%,#d3c4e1 50%,#d3c4e1 100%);  
+
+  /* GNB */
+  margin:0 0 0 0;
+  padding: 5px 5px 5px 15px;;
+  font-size:95%;
+  font-weight:normal;
+  color: black;
+
+  /* test */
+
+}
+
+/*other GNB colors */
+.sectiontitle_update .normal {
+  /*GREY*/
+  background: linear-gradient(to bottom, #e3e3e3 0%,#e3e3e3 50%,#e3e3e3 50%,#d6d6d6 50%,#d6d6d6 100%);
+}
+.sectiontitle_update .alerts {
+  /*ORANGE*/
+  background: linear-gradient(to bottom, #FDC84E 0%,#FDC84E 50%,#000000 50%,#F0BB41 50%,#F0BB41 100%);
+}
+/*END of style.css*/

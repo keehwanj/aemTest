@@ -1,0 +1,12 @@
+/*
+	/apps/gnb/components/page/home/clientlibs/css/responsive-480px.css
+*/
+@media (max-width: 480px) {
+  .home_bottom_left {
+    text-align: center;
+  }
+
+  .home_bottom_right {
+    text-align: center;
+  }
+}

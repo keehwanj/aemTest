@@ -1,0 +1,12 @@
+/*
+	/apps/myid-monid/components/navigation/tertiarynav/clientlibs/css/responsive-768px-979px.css
+ */
+/* iPad portrait */
+@media (min-width: 768px) and (max-width: 979px) {
+
+#tertiaryNav{
+   margin:20px 0 0 -10px;
+
+}
+
+}

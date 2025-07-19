@@ -1,0 +1,14 @@
+/*
+/apps/gnb-fluid/components/content/newslist_covid19/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+
+.newslist_covid19 div.padded {
+    padding:5px 20px 10px 20px;
+}
+
+.newslist_covid19 div.morelink {
+  margin-left: 0px;
+}    
+
+}

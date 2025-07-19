@@ -1,0 +1,129 @@
+/*
+	apps/gnb/components/content/departmentinfo/clientlibs/css/style.css
+*/
+/**START of style.css - contactinfo**/
+/**START of departmentinf**/
+.reset {
+    white-space: pre-wrap; /* css-3 */    
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */    
+    white-space: -o-pre-wrap; /* Opera 7 */    
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+/**END of departmentinf**/
+
+/*START of loading indicator*/
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+/*END of loading indicator*/
+
+
+/**START of structurestab**/
+.departmentinfo .listExpander, .departmentinfo #viewToggle {
+    font-size: 95%;
+    cursor: pointer;
+}
+
+.departmentinfo #listView h2 {
+    font-size: 110%;
+    font-weight: bold;
+    display: inline;
+}
+
+.departmentinfo #listView h1 {
+    color: #004D42;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.departmentinfo #listView h3 {
+    font-size: 110%;
+    font-weight: bold;
+    display: inline;
+}
+
+.departmentinfo #listView h4 {
+    font-size: 110%;
+    font-weight: normal;
+    display: inline;
+}
+
+.departmentinfo #listView h5 {
+    font-size: 110%;
+    font-weight: normal;
+    display: inline;
+}
+
+.departmentinfo #listView h6 {
+    font-size: 110%;
+    font-weight:normal;
+    display: inline;
+}
+
+.departmentinfo table, .departmentinfo .search_result_box_footer {
+    margin: 0;
+    width: 100%;
+}
+
+
+.departmentinfo #chartView .title{
+    font-size: 1.6em;
+}
+
+.departmentinfo #chartView .name, .departmentinfo #chartView .phone{
+    font-size: 1.2em;
+}
+
+.chartExpander{
+    font-size: 1.2em;
+}
+
+/**removing extra line in table  (https://github.com/google/google-visualization-issues/issues/1967)**/
+table.google-visualization-orgchart-table {
+	border-collapse: separate !important;
+}
+
+/**END of structurestab**/
+
+/**START of officestab**/
+.departmentinfo #contactView {
+    display:none;
+}
+
+#offices #officeviewToggle {
+    font-size: 95%;
+    cursor: pointer;
+}
+
+
+#search_left_nav h1.left_nav, #search_services_left_nav h1.left_nav {
+    font-size: 110%;
+    color: #000;
+    font-weight: bold;
+}
+#search_left_nav ul, #search_services_left_nav ul {
+    padding: 0 0 0 0px;
+    list-style: none;
+    margin: 0px 0px 0px 7px;
+}
+
+#search_left_nav li a:link, #search_services_left_nav li a:link, #search_left_nav li a:visited, #search_services_left_nav li a:visited {
+    padding-bottom: 5px;
+    display: block;
+    height: 1%;
+}
+/**END of officestab**/
+
+/**END of style.css - contactinfo**/

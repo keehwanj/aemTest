@@ -1,0 +1,112 @@
+# rewrite for root redirect
+RewriteRule ^/?$ /content/${CONTENT_FOLDER_NAME}/us/en.html [PT,L]
+
+RewriteCond %{REQUEST_URI} !^/apps
+RewriteCond %{REQUEST_URI} !^/bin
+RewriteCond %{REQUEST_URI} !^/content
+RewriteCond %{REQUEST_URI} !^/etc
+RewriteCond %{REQUEST_URI} !^/home
+RewriteCond %{REQUEST_URI} !^/libs
+RewriteCond %{REQUEST_URI} !^/saml_login
+RewriteCond %{REQUEST_URI} !^/system
+RewriteCond %{REQUEST_URI} !^/tmp
+RewriteCond %{REQUEST_URI} !^/var
+RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg)$
+RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
+
+# Legacy rewriter rules
+
+# RemoveTrailingSlash
+RewriteCond %{REQUEST_URI} ^(.+)/$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+) $1
+
+# ENB /facts (not enabled)
+# nbwomenscouncil /covidlibrary (not enabled)
+
+# AGNB Homepage
+RewriteCond %{HTTP_HOST} (www.)?agnb-vgnb.ca$
+RewriteRule ^(.+) /content/agnb-vgnb.html [L]
+
+# ENB Homepage
+RewriteCond %{HTTP_HOST} (www.)?electionsnb.ca$
+RewriteRule ^(.+) /content/enb.html
+
+# myid Homepage - EN (not enabled)
+# myid Homepage - FR (not enabled)
+
+# NBWCAT Homepage
+RewriteCond %{HTTP_HOST} (www.)?nbwcat-taatnb.ca$
+RewriteRule ^(.+) /content/wcat-taat.html [L]
+
+# consieldesfemmes / conseilsdesfemmesnb / nbwomenscouncil / voisfemmesnb-voiceswomennb
+RewriteCond %{HTTP_HOST} (www.)?conseildesfemmesnb.ca$  [OR]
+RewriteCond %{HTTP_HOST} (www.)?conseilsdesfemmesnb.ca$ [OR]
+RewriteCond %{HTTP_HOST} (www.)?nbwomenscouncil.ca$     [OR]
+RewriteCond %{HTTP_HOST} (www.)?voixfemmesnb-voiceswomennb.ca$
+RewriteRule ^(.+) /content/vnbw-vfnb.html [L]
+
+# welcomenb / bienvenuenb
+RewriteCond %{HTTP_HOST} (www.)?welcomenb.ca$   [OR]
+RewriteCond %{HTTP_HOST} (www.)?bienvenuenb.ca$
+RewriteRule ^(.+) /content/wel-bien/index.html [L]
+
+# GNB Homepage
+RewriteCond %{HTTP_HOST} www2.gnb.ca$
+RewriteRule ^(.+) /content/gnb/en.html [L]
+
+# SNB Homepage
+RewriteCond %{HTTP_HOST} www2.snb.ca$
+RewriteRule ^(.+) /content/snb.html [L]
+
+# Courts Homepage
+RewriteCond %{HTTP_HOST} (www.)?courtsnb-coursnb.ca$
+RewriteRule ^(.+) /content/cour.html [L]
+
+# PoliceCommission / CommissionDePolice
+RewriteCond %{HTTP_HOST} (www.)?nbpolicecommission.ca$ [OR]
+RewriteCond %{HTTP_HOST} (www.)?commissiondepolicenb.ca$
+RewriteRule ^(.+) /content/nbpc-cpnb.html [L]
+
+# LivingInNB
+RewriteCond %{HTTP_HOST} (www.)?livinginnb.ca$
+RewriteRule ^(.+) https://www.welcomenb.ca/content/wel-bien/en/recruitment_events.html [R,L]
+
+# VivreAuNB
+RewriteCond %{HTTP_HOST} (www.)?vivreaunb.ca$
+RewriteRule ^(.+) https://www.bienvenuenb.ca/content/wel-bien/fr/evenements_recrutement.html [R,L]
+
+# monevaluationfoncierenb
+RewriteCond %{HTTP_HOST} (www.)?monevaluationfoncierenb.ca$
+RewriteRule ^(.+) https://www2.snb.ca/content/snb/fr/sites/evaluation-fonciere.html [R,L]
+
+# mynbpropertyassessment
+RewriteCond %{HTTP_HOST} (www.)?mynbpropertyassessment.ca$
+RewriteRule ^(.+) https://www2.snb.ca/content/snb/en/sites/property-assessment.html [R,L]
+
+# bilingualnb redirect
+RewriteCond %{HTTP_HOST} (www.)?bilingualnb.ca$
+RewriteRule ^(.+) /content/gnb/en/corporate/promo/bilingualnb.html [R,L]
+
+# nbbilingue redirect
+RewriteCond %{HTTP_HOST} (www.)?nbbilingue.ca$
+RewriteRule ^(.+) /content/gnb/fr/corporate/promo/nbbilingue.html [R,L]
+
+# nbfpc-cpfnb
+RewriteCond %{HTTP_HOST} (www.)?nbfpc-cpfnb.ca$
+RewriteRule ^(.+) /content/nbfpc-cpfnb.html [R]
+
+# iemg-gigu-index-f
+RewriteCond %{HTTP_HOST} (.+)iemg-gigu-web.org
+RewriteCond %{REQUEST_URI} (.+)index-f.asp
+RewriteRule ^(.+) http://www.iemg-gigu-web.org/content/iemg-gigu/fr.html [R,L]
+
+# iemg-gigu-index-e
+RewriteCond %{HTTP_HOST} (.+)iemg-gigu-web.org
+RewriteCond %{REQUEST_URI} (.+)index-e.asp
+RewriteRule ^(.+) http://www.iemg-gigu-web.org/content/iemg-gigu/en.html [R,L]
+
+# iemg-gigu redirect
+RewriteCond %{HTTP_HOST} (www.)?iemg-gigu-web.org?
+RewriteRule ^(.+) /content/iemg-gigu.html [R]

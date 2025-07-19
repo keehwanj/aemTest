@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    cq:lastReplicated="{Date}2013-12-16T22:23:45.813-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:language="en"
+    jcr:mixinTypes="[cq:ReplicationStatus,mix:language]"
+    jcr:primaryType="sling:Folder">
+    <education_program_offered
+        cq:lastReplicated="{Date}2013-12-16T22:23:45.969-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="education_program_offered"
+        sling:message="Education program offered in New Brunswick"/>
+    <education_training
+        cq:lastReplicated="{Date}2013-12-16T22:23:46.593-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="education_training"
+        sling:message="Education and Training"/>
+    <employment_prospects
+        cq:lastReplicated="{Date}2013-12-16T22:23:46.796-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="employment_prospects"
+        sling:message="Employment Prospects"/>
+    <exiting_field_work
+        cq:lastReplicated="{Date}2013-12-16T22:23:47.467-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="exiting_field_work"
+        sling:message="An Exciting Field of Work"/>
+    <hc_years
+        cq:lastReplicated="{Date}2013-12-16T22:23:47.654-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="hc_years"
+        sling:message="years"/>
+    <helpful_hs_courses
+        cq:lastReplicated="{Date}2013-12-16T22:23:48.231-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="helpful_hs_courses"
+        sling:message="Helpful High School Courses"/>
+    <length_study
+        cq:lastReplicated="{Date}2013-12-16T22:23:48.356-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="length_study"
+        sling:message="Length of Study / Training"/>
+    <licence_certification
+        cq:lastReplicated="{Date}2013-12-16T22:23:49.042-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="licence_certification"
+        sling:message="Licence and certification"/>
+    <personal_characteristics
+        cq:lastReplicated="{Date}2013-12-16T22:23:49.682-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="personal_characteristics"
+        sling:message="Personal Characteristics / Skills"/>
+    <very_good
+        cq:lastReplicated="{Date}2013-12-16T22:23:49.791-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="very_good"
+        sling:message="VERY GOOD"/>
+    <working_conditions
+        cq:lastReplicated="{Date}2013-12-16T22:23:50.353-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="working_conditions"
+        sling:message="Employment and Common Working Conditions"/>
+</jcr:root>

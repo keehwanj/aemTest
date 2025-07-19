@@ -1,0 +1,11 @@
+/*
+	apps/gnb/components/search/multimediasearch/clientlibs/css/responsive-767px-max.css
+*/
+/* phone landscape */
+@media (max-width: 767px) {
+  .wide_multimedia_item .row .col-sm-3,
+  .wide_multimedia_item .row .col-sm-9 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

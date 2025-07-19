@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Panel"
+            title="General">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <type
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Physician and Speciality / Ressources médicales et spécialités"
+                    fieldLabel="Type of Health Careers"
+                    name="./type"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <physician
+                            jcr:primaryType="nt:unstructured"
+                            text="Physician / Médecins"
+                            value="pysician"/>
+                        <nursing
+                            jcr:primaryType="nt:unstructured"
+                            text="Nursing / Soins infirmières"
+                            value="nursing"/>
+                        <allied_health
+                            jcr:primaryType="nt:unstructured"
+                            text="Allied Health / Professions connexes en santé"
+                            value="allied_health"/>
+                    </options>
+                </type>
+                <lengthstudy_from
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Length of Study(From)"
+                    name="./lengthstudy_from"
+                    xtype="numberfield"/>
+                <lengthstudy_to
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Length of Study(To)"
+                    name="./lengthstudy_to"
+                    xtype="numberfield"/>
+                <salary_from
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Salary (From)"
+                    name="./salary_from"
+                    xtype="numberfield"/>
+                <salary_to
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Salary (To)"
+                    name="./salary_to"
+                    xtype="numberfield"/>
+            </items>
+        </tab1>
+        <tab2
+            jcr:primaryType="cq:Panel"
+            title="English - 1">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <en_title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./en_title"
+                    xtype="textfield"/>
+                <en_description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    height="{Long}100"
+                    name="./en_description"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </en_description>
+                <en_exciting_field
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="An Exciting Field of Work"
+                    height="{Long}100"
+                    name="./en_exciting_field"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </en_exciting_field>
+                <en_personal_characteristics
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Personal Characteristics / Skills"
+                    height="{Long}100"
+                    name="./en_personal_characteristics"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </en_personal_characteristics>
+                <en_education_training
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Education and Training"
+                    height="{Long}100"
+                    name="./en_education_training"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </en_education_training>
+            </items>
+        </tab2>
+        <tab3
+            jcr:primaryType="cq:Panel"
+            title="English - 2">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <en_education_program
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Education program offered in New Brunswick"
+                    height="{Long}100"
+                    name="./en_education_program"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </en_education_program>
+                <en_licence_certification
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Licence and certification"
+                    height="{Long}100"
+                    name="./en_licence_certification"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </en_licence_certification>
+                <en_high_school_courses
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Helpful High School Courses"
+                    height="{Long}100"
+                    name="./en_high_school_courses"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </en_high_school_courses>
+                <en_employment
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Employment and Common Working Conditions"
+                    height="{Long}100"
+                    name="./en_employment"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </en_employment>
+                <en_prospects
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Employment Prospects"
+                    height="{Long}100"
+                    name="./en_prospects"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </en_prospects>
+                <en_good_text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Good Text"
+                    name="./en_good_text"
+                    xtype="textfield"/>
+            </items>
+        </tab3>
+        <tab4
+            jcr:primaryType="cq:Panel"
+            title="French - 1">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <fr_title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./fr_title"
+                    xtype="textfield"/>
+                <fr_description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    height="{Long}100"
+                    name="./fr_description"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </fr_description>
+                <fr_exciting_field
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="An Exciting Field of Work"
+                    height="{Long}100"
+                    name="./fr_exciting_field"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </fr_exciting_field>
+                <fr_personal_characteristics
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Personal Characteristics / Skills"
+                    height="{Long}100"
+                    name="./fr_personal_characteristics"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </fr_personal_characteristics>
+                <fr_education_training
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Education and Training"
+                    height="{Long}100"
+                    name="./fr_education_training"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </fr_education_training>
+            </items>
+        </tab4>
+        <tab5
+            jcr:primaryType="cq:Panel"
+            title="French - 2">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <fr_education_program
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Education program offered in New Brunswick"
+                    height="{Long}100"
+                    name="./fr_education_program"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </fr_education_program>
+                <fr_licence_certification
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Licence and certification"
+                    height="{Long}100"
+                    name="./fr_licence_certification"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </fr_licence_certification>
+                <fr_high_school_courses
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Helpful High School Courses"
+                    height="{Long}100"
+                    name="./fr_high_school_courses"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </fr_high_school_courses>
+                <fr_employment
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Employment and Common Working Conditions"
+                    height="{Long}100"
+                    name="./fr_employment"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </fr_employment>
+                <fr_prospects
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Employment Prospects"
+                    height="{Long}100"
+                    name="./fr_prospects"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </fr_prospects>
+                <fr_good_text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Good Text"
+                    name="./fr_good_text"
+                    xtype="textfield"/>
+            </items>
+        </tab5>
+    </items>
+</jcr:root>

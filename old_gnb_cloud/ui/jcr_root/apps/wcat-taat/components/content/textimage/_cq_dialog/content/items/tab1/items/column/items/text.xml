@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Widget"
+    hideLabel="{Boolean}true"
+    name="./text"
+    xtype="richtext">
+    <rtePlugins jcr:primaryType="nt:unstructured">
+        <misctools
+            jcr:primaryType="nt:unstructured"
+            features="[sourceedit,specialchars]"/>
+        <edit
+            jcr:primaryType="nt:unstructured"
+            features="*"/>
+        <subsuperscript
+            jcr:primaryType="nt:unstructured"
+            features="*"/>
+        <table
+            jcr:primaryType="nt:unstructured"
+            features="*"/>
+        <undo
+            jcr:primaryType="nt:unstructured"
+            features="*"/>
+        <findreplace
+            jcr:primaryType="nt:unstructured"
+            features="*"/>
+    </rtePlugins>
+    <htmlRules jcr:primaryType="nt:unstructured">
+        <links
+            jcr:primaryType="nt:unstructured"
+            protocols="[http://,https://,mailto:]"/>
+    </htmlRules>
+</jcr:root>

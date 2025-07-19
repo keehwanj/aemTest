@@ -1,0 +1,313 @@
+/* START of Design Styles for Tab Control */
+div.tabpanel {
+  margin-top: 20px;
+}
+
+div.tabs {
+  padding: 0 0 0 1px;
+  width: 698px;
+}
+
+#tabcontent ul.tabs {
+  float: none;
+  width: auto;
+  position: relative;
+  top: 1px;
+}
+
+#tabcontent ul.tabs li {
+  float: left;
+  height: 28px;
+  width: 116px;
+}
+
+#tabcontent.tabs_yellow ul.tabs li {
+  background: url('../images/yellow/tab_unselected.gif') repeat scroll 0 0 transparent;
+  color: white;
+}
+
+#tabcontent.tabs_green ul.tabs li {
+  background: url('../images/green/tab_unselected.gif') repeat scroll 0 0 transparent;
+  color: white;
+}
+
+#tabcontent.tabs_tan ul.tabs li {
+  background: url('../images/tan/tab_unselected.gif') repeat scroll 0 0 transparent;
+  color: white;
+}
+
+#tabcontent.tabs_blue ul.tabs li {
+  background: url('../images/blue/tab_unselected.gif') repeat scroll 0 0 transparent;
+  color: white;
+}
+
+#tabcontent ul.tabs a:link,
+#tabcontent ul.tabs a:visited,
+#tabcontent ul.tabs a:active,
+#tabcontent ul.tabs a:hover {
+  display: block;
+  float: left;
+  font-weight: bold;
+  height: 18px;
+  /*padding: 3px 9px 0 9px;  21 */
+  text-decoration: none;
+}
+
+#tabcontent ul.tabs a:link,
+#tabcontent ul.tabs a:visited,
+#tabcontent ul.tabs a:active,
+#tabcontent ul.tabs a:hover {
+  height: auto;
+  min-height: 18px;
+  color: #000000;
+  line-height: 28px;
+  text-align: center;
+  width: 115px;
+}
+
+#tabcontent ul.tabs a:hover {
+  /**background: #F2EFE8 url("../images/interface/tab-selected-bg.gif") 0 0 repeat-x;;**/
+  background: #f2efe8 url('') 0 0 repeat-x;
+}
+
+#tabcontent ul.tabs li.active {
+  margin-top: 0px !important;
+  position: relative;
+  top: 0px;
+  z-index: 2;
+}
+
+/*added it by Keehwan Jee*/
+
+#tabcontent.tabs_yellow ul.tabs a:link,
+#tabcontent.tabs_yellow ul.tabs a:visited,
+#tabcontent.tabs_yellow ul.tabs a:active,
+#tabcontent.tabs_yellow ul.tabs a:hover {
+  color: black;
+}
+
+#tabcontent.tabs_green ul.tabs a:link,
+#tabcontent.tabs_green ul.tabs a:visited,
+#tabcontent.tabs_green ul.tabs a:active,
+#tabcontent.tabs_green ul.tabs a:hover {
+  color: black;
+}
+
+#tabcontent.tabs_blue ul.tabs a:link,
+#tabcontent.tabs_blue ul.tabs a:visited,
+#tabcontent.tabs_blue ul.tabs a:active,
+#tabcontent.tabs_blue ul.tabs a:hover {
+  color: black;
+}
+
+#tabcontent.tabs_tan ul.tabs a:link,
+#tabcontent.tabs_tan ul.tabs a:visited,
+#tabcontent.tabs_tan ul.tabs a:active,
+#tabcontent.tabs_tan ul.tabs a:hover {
+  color: black;
+}
+
+/*end of adding*/
+
+#tabcontent ul.tabs li.active a:link,
+#tabcontent ul.tabs li.active a:visited,
+#tabcontent ul.tabs li.active a:active,
+#tabcontent ul.tabs li.active a:hover {
+  height: 28px;
+  width: 115px;
+}
+
+#tabcontent.tabs_yellow ul.tabs li.active a:link,
+#tabcontent.tabs_yellow ul.tabs li.active a:visited,
+#tabcontent.tabs_yellow ul.tabs li.active a:active,
+#tabcontent.tabs_yellow ul.tabs li.active a:hover {
+  background: url('../images/yellow/tab_selected.gif') repeat scroll 0 0 transparent;
+  color: white;
+}
+
+#tabcontent.tabs_green ul.tabs li.active a:link,
+#tabcontent.tabs_green ul.tabs li.active a:visited,
+#tabcontent.tabs_green ul.tabs li.active a:active,
+#tabcontent.tabs_green ul.tabs li.active a:hover {
+  background: url('../images/green/tab_selected.gif') repeat scroll 0 0 transparent;
+  color: white;
+}
+
+#tabcontent.tabs_tan ul.tabs li.active a:link,
+#tabcontent.tabs_tan ul.tabs li.active a:visited,
+#tabcontent.tabs_tan ul.tabs li.active a:active,
+#tabcontent.tabs_tan ul.tabs li.active a:hover {
+  background: url('../images/tan/tab_selected.gif') repeat scroll 0 0 transparent;
+  color: white;
+}
+
+#tabcontent.tabs_blue ul.tabs li.active a:link,
+#tabcontent.tabs_blue ul.tabs li.active a:visited,
+#tabcontent.tabs_blue ul.tabs li.active a:active,
+#tabcontent.tabs_blue ul.tabs li.active a:hover {
+  background: url('../images/blue/subNavLevel1_bottom.gif') repeat scroll 0 0 transparent;
+  color: white;
+}
+
+div.tab {
+  clear: both;
+  padding: 1em 0em 1em 0em;
+  width: auto;
+  /*font-size: 95%;*/ /*height: 296px;*/ /*width: 716px;*/
+}
+
+div.tab .tab_content {
+  clear: both;
+  margin-left: 22px;
+  margin-top: 50px;
+}
+
+#tabcontent {
+  background: url('../images/tabBorder.gif') no-repeat scroll 0px 40px transparent;
+  /**height: 296px;**/
+  height: auto;
+}
+
+#domtabprintview {
+  float: right;
+  padding-right: 1em;
+  text-align: right;
+}
+
+#domtabprintview a:link,
+#domtabprintview a:visited,
+#domtabprintview a:active,
+#domtabprintview a:hover {
+  color: #fff;
+}
+
+div.tabLabelBottom {
+  /*background: url("../images/tab_line.gif") repeat-x scroll 0 bottom transparent;*/
+  width: auto;
+  height: 2px;
+  margin-top: -57px;
+}
+
+div.tab p {
+  margin: 0 0 0.5em 0;
+  line-height: 1.3em;
+}
+
+div.tab h2 {
+  /*display: none;*/
+  /*font-size: 1.3em;*/
+  /*color: #cfc;*/
+  /*text-transform: uppercase;*/
+  /*font-family: "Trebuchet MS", Arial, Sans-Serif;*/
+  /*padding: 0 0 .7em .2em;*/
+}
+
+div.tab h1 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', Arial, Sans-Serif;
+  padding: 0.5em 0;
+  background: #000;
+  border-bottom: 1px solid #666;
+}
+
+div.tab pre {
+  font-size: 1.2em;
+  padding: 1em;
+}
+
+div.tab div a:link,
+div.tab div a:visited,
+div.tab div a:active {
+}
+
+div.tab div h2 a,
+div.tab div h2 a:hover,
+div.tab div h2 a:active {
+  display: inline;
+  padding: 0;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+ul.prevnext {
+  float: left;
+  width: 100%;
+}
+
+ul.prevnext li {
+  float: left;
+  width: 49%;
+}
+
+ul.prevnext li.next {
+  float: right;
+  text-align: right;
+}
+
+/**start of new**/
+ul {
+  list-style: none;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr {
+  margin: 0;
+  padding: 0;
+}
+/**end of new**/
+/* END of Design Styles for Tab Control */

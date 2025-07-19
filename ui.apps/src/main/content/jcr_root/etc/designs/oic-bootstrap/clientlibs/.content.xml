@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:lastReplicated="{Date}2017-09-07T11:03:52.394-03:00"
+    cq:lastReplicatedBy="keehwanj"
+    cq:lastReplicationAction="Activate"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    categories="[oic.components.bootstrap]"
+    dependencies="[cq.query,cq.widgets]"/>

@@ -1,0 +1,10 @@
+/*
+	/apps/gnb/components/content/propertytenderdisplay/clientlibs/css/style.css
+*/
+/**START of style.css**/
+
+.propertytenderdisplay td {
+  border-bottom: 0px solid #d3d3d3;
+  padding: 5px;
+}
+/**END of style.css**/

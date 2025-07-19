@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Global Navigation"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Settings"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <prop1
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Contacts Page"
+                        name="./contactsPath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <prop2
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Departments Page"
+                        name="./departmentsPath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <prop3
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Services Page"
+                        name="./categoriesPath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <prop6
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Legislature Page"
+                        name="./legislaturePath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <prop7
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Courts Page"
+                        name="./courtsPath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <prop8
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Other Sites Page"
+                        name="./otherPath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <prop9
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Service Search Page"
+                        name="./serviceSearchPath"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

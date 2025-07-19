@@ -1,0 +1,63 @@
+/*
+	/apps/nbfpc/components/search/newssearch/clientlibs/css/style.css
+*/
+
+#search_box {
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #CCCCCC;
+    /*border-top: 1px solid #CCCCCC;*/
+    /*float: left;*/
+    margin: 0 0 20px 0;
+    padding: 0 0 10px 0;
+ }
+
+#search_box .panel {
+    margin-bottom: 0px;
+}
+
+.newssearch .wide_news_item h2 {
+    color: #1874B1;
+    font-size: 110%;
+    font-weight: normal;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.pagination_top {
+    border-bottom: 1px solid #d3d3d3;
+    margin: 0;
+    padding: 0 5px 0 5px;
+}
+
+.pagination_top .legend {
+    /*font-size: 85%;*/
+    padding: 0px 5px 5px 5px;
+    color: #a4a4a4;
+    float: right;
+}
+
+.pagination_top .item a{
+    padding:0px 5px 5px 5px;
+    float:right;
+    /*font-size:85%;*/
+}
+
+.pagination_top .item a.active {
+    color: #000;
+}
+
+
+#search_column_full td {
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 1px solid #D3D3D3;
+    padding: 10px;
+	/*font-size: 90%;*/
+}
+
+.newssearch .wide_news_item h2 {
+    color: #1874B1;
+    font-size: 110%;
+    font-weight: normal;
+    margin: 5px 0 5px 0;
+}    

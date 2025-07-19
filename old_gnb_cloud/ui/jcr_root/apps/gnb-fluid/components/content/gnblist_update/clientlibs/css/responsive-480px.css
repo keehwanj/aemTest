@@ -1,0 +1,23 @@
+/*
+	START of /apps/gnb-fluid/components/content/gnblist_update/clientlibs/css/responsive-480px.css
+ */
+
+@media (max-width: 480px) {
+
+.gnblist_update ul {
+  padding-bottom: 0px;
+  margin-bottom: 0px;   
+}
+
+.gnblist_update {
+  margin-bottom: 0px;
+}
+
+.gnblist_update>div { 
+        padding:10px 10px 0px 10px;  
+}
+
+}
+/*
+	END of /apps/gnb-fluid/components/content/gnblist_update/clientlibs/css/responsive-480px.css
+*/

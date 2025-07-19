@@ -1,0 +1,12 @@
+# Entries will be compared against the "Host" request header
+# and an optional request URL prefix.
+#
+# Examples:
+#
+#   www.company.com
+#   intranet.*
+#   myhost:8888/mysite
+"MyNBPropertyAssessment.ca"
+"www.MyNBPropertyAssessment.ca"
+"monevaluationfoncierenb.ca"
+"www.monevaluationfoncierenb.ca"

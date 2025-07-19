@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="GNB News Article Viewer"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Article">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <renderer
+                        jcr:primaryType="cq:Widget"
+                        allowEmpty="false"
+                        fieldLabel="Renderer"
+                        name="./renderer"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <mediaAdvisory
+                                jcr:primaryType="nt:unstructured"
+                                text="Media Advisory"
+                                value="mediaAdvisory"/>
+                            <newsArticle
+                                jcr:primaryType="nt:unstructured"
+                                text="News Article"
+                                value="newsArticle"/>
+                            <publicAlert
+                                jcr:primaryType="nt:unstructured"
+                                text="Public Alert"
+                                value="publicAlert"/>
+                        </options>
+                    </renderer>
+                </items>
+            </tab1>
+            <resources
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Resources"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <dateformat
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Date Format"
+                        name="./dateFormat"/>
+                    <datetimeformat
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Date Time Format"
+                        name="./dateTimeFormat"/>
+                    <eventText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Event Text"
+                        name="./eventText"/>
+                    <itineraryText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Itinerary Text"
+                        name="./itineraryText"/>
+                    <liveWebcastInterpretedText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Live Webcast Interpreted Text"
+                        name="./liveWebcastInterpretedText"/>
+                    <liveWebcastOriginalText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Live Webcast Original Text"
+                        name="./liveWebcastOriginalText"/>
+                    <mediaContactText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Media Contact Text"
+                        name="./mediaContactText"/>
+                    <newsConferenceText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="News Conference Text"
+                        name="./newsConferenceText"/>
+                    <publicHearingText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Public Hearing Text"
+                        name="./publicHearingText"/>
+                    <rendererPage
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="/content/gnb/en/multimedia/mmrenderer&#xa;OR &#xa;/content/gnb/fr/multimedia/mmrenderer"
+                        fieldLabel="MM Renderer Page"
+                        name="./rendererPage"
+                        xtype="pathfield"/>
+                </items>
+            </resources>
+        </items>
+    </items>
+</jcr:root>

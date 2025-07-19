@@ -1,0 +1,30 @@
+/*
+	START /apps/iemg-fluid/components/content/columncontrol/clientlibs/css/responsive-768px-979px.css
+*/
+/* iPad portrait */
+@media (min-width: 768px) and (max-width: 979px) {
+  .demo-border-black {
+    border-right: 1px solid #000000;
+  }
+  .demo-border-blue {
+    border-right: 1px solid #0066ff;
+  }
+
+  .demo-border-gray {
+    /**border:1px solid #CCC;*/
+    border-right: 1px solid #d3d3d3;
+  }
+
+  .demo-border-green {
+    border-right: 1px solid #19d1a3;
+  }
+  .demo-border-red {
+    border-right: 1px solid #ff4d4d;
+  }
+  .demo-border-white {
+    border-right: 1px solid #ffffff;
+  }
+}
+/*
+	END /apps/iemg-fluid/components/content/columncontrol/clientlibs/css/responsive-768px-979px.css
+*/

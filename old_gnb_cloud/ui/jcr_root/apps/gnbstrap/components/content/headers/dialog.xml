@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Header"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <setting
+                jcr:primaryType="cq:Panel"
+                title="Setting">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Header text"
+                        name="./text"
+                        xtype="textfield"/>
+                </items>
+            </setting>
+            <type
+                jcr:primaryType="cq:Panel"
+                title="Header Type">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <type
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Type"
+                        name="./type"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <display-1
+                                jcr:primaryType="nt:unstructured"
+                                text="h1 display-1"
+                                value="display-1"/>
+                            <display-2
+                                jcr:primaryType="nt:unstructured"
+                                text="h1 display-2"
+                                value="display-2"/>
+                            <display-3
+                                jcr:primaryType="nt:unstructured"
+                                text="h1 display-3"
+                                value="display-3"/>
+                            <display-4
+                                jcr:primaryType="nt:unstructured"
+                                text="h1 display-4"
+                                value="display-4"/>
+                            <display-5
+                                jcr:primaryType="nt:unstructured"
+                                text="h1 display-5"
+                                value="display-5"/>
+                            <h1
+                                jcr:primaryType="nt:unstructured"
+                                text="h1"
+                                value="h1"/>
+                            <h2
+                                jcr:primaryType="nt:unstructured"
+                                text="h2"
+                                value="h2"/>
+                            <h3
+                                jcr:primaryType="nt:unstructured"
+                                text="h3"
+                                value="h3"/>
+                            <h4
+                                jcr:primaryType="nt:unstructured"
+                                text="h4"
+                                value="h4"/>
+                            <text-crimson
+                                jcr:primaryType="nt:unstructured"
+                                text="h1 text-crimson"
+                                value="text-crimson"/>
+                            <text-forest
+                                jcr:primaryType="nt:unstructured"
+                                text="h1 text-forest"
+                                value="text-forest"/>
+                            <text-ocean
+                                jcr:primaryType="nt:unstructured"
+                                text="h1 text-ocean"
+                                value="text-ocean"/>
+                            <text-gold
+                                jcr:primaryType="nt:unstructured"
+                                text="h1 text-gold"
+                                value="text-gold"/>
+                            <p-2_x0020_wrapper-ocean
+                                jcr:primaryType="nt:unstructured"
+                                text="h1 p-2 wrapper-ocean"
+                                value="p-2 wrapper-ocean"/>
+                            <p-2_x0020_wrapper-crimson
+                                jcr:primaryType="nt:unstructured"
+                                text="h1 p-2 wrapper-crimson"
+                                value="p-2 wrapper-crimson"/>
+                            <p-2_x0020_wrapper-forest
+                                jcr:primaryType="nt:unstructured"
+                                text="h1 p-2 wrapper-forest"
+                                value="p-2 wrapper-forest"/>
+                            <p-2_x0020_wrapper-gold
+                                jcr:primaryType="nt:unstructured"
+                                text="h1 p-2 wrapper-gold"
+                                value="p-2 wrapper-gold"/>
+                            <p-2_x0020_wrapper-black
+                                jcr:primaryType="nt:unstructured"
+                                text="h1 p-2 wrapper-black"
+                                value="p-2 wrapper-black"/>
+                        </options>
+                    </type>
+                </items>
+            </type>
+            <anchor
+                jcr:primaryType="cq:Panel"
+                title="Anchor">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <anchor
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Anchor ID"
+                        name="./anchor"
+                        xtype="textfield"/>
+                </items>
+            </anchor>
+        </items>
+    </items>
+</jcr:root>

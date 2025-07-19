@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          cancelText=""
+          height="520"
+          okText=""
+          stateful="false"
+          title=""
+          width="800"
+          xtype="dialog">
+    <items
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <props
+                    jcr:primaryType="cq:Panel"
+                    border="false"
+                    height=""
+                    title="Global"
+                    width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <hideinnav
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Hide Page in Navigation"
+                            inputValue="true"
+                            name="./hideInNav"
+                            type="checkbox"
+                            xtype="selection"/>
+                    <navtitle
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Navigation Title"
+                            name="./navTitle"
+                            xtype="textfield"/>
+                    <pagetitle
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Page Title"
+                            name="./pageTitle"
+                            xtype="textfield"/>
+                    <subtitle
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Subtitle"
+                            name="./subtitle"
+                            xtype="textfield"/>
+                    <hideTitle
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Do not display title on page"
+                            inputValue="false"
+                            name="./hideTitle"
+                            type="checkbox"
+                            xtype="selection"/>
+                    <hideBreadcrumbs
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Do not display breadcrumbs on page"
+                            inputValue="false"
+                            name="./hideBreadcrumbs"
+                            type="checkbox"
+                            xtype="selection"/>
+                    <enbtitle
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Department Title (for department name above navigation)"
+                            name="./enbTitle"
+                            xtype="textfield"/>
+                    <nocache
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="&#x9;&#xa;Check the box in case of no cache of this webpage.(&lt;img>)"
+                            fieldLabel="No cache-image"
+                            inputValue="false"
+                            name="./nocache"
+                            type="checkbox"
+                            xtype="selection"/>
+                    <nocache_a_pdf
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="&#x9;&#xa;Check the box in case of no cache of this webpage.(a tag with .pdf)"
+                            fieldLabel="No cache -a, .pdf"
+                            inputValue="false"
+                            name="./nocache_a_pdf"
+                            type="checkbox"
+                            xtype="selection"/>
+                    <nocache_area_pdf
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="&#x9;&#xa;Check the box in case of no cache of this webpage.(area tag with .pdf)"
+                            fieldLabel="No cache - area, .pdf"
+                            inputValue="false"
+                            name="./nocache_area_pdf"
+                            type="checkbox"
+                            xtype="selection"/>
+                    <subscription
+                            jcr:primaryType="cq:Widget"
+                            allowEmpty="true"
+                            fieldDescription="Select true if this page is on subscription routine"
+                            fieldLabel="Subscription?"
+                            name="./subscription"
+                            type="select"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <empty
+                                    jcr:primaryType="nt:unstructured"
+                                    text="&amp;nbsp;"
+                                    value=""/>
+                            <true
+                                    jcr:primaryType="nt:unstructured"
+                                    text="True"
+                                    value="true"/>
+                            <false
+                                    jcr:primaryType="nt:unstructured"
+                                    text="False"
+                                    value="false"/>
+                        </options>
+                    </subscription>
+                    <subscriptionID
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="This name of subscription id should be unique in all subscription list."
+                            fieldLabel="Subscription ID"
+                            name="./subscriptionID"
+                            xtype="textfield"/>
+                    <nocrawl
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Check the box in case of no crawl for Google Search"
+                            fieldLabel="No crawl"
+                            inputValue="false"
+                            name="./nocrawl"
+                            type="checkbox"
+                            xtype="selection"/>
+                </items>
+            </props>
+            <advanced
+                    jcr:primaryType="cq:Panel"
+                    border="false"
+                    height=""
+                    title="Advanced"
+                    width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <designpath
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Design Path"
+                            name="./cq:designPath"
+                            rootPath="/etc/designs"
+                            xtype="pathcompletion"/>
+                    <offTimeHint
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="false"
+                            blankText=""
+                            disabled="false"
+                            emptyText=""
+                            fieldDescription=""
+                            fieldLabel=""
+                            fieldSubLabel=""
+                            grow="false"
+                            hideLabel="false"
+                            hideMode=""
+                            ignoreData="{Boolean}true"
+                            inputType=""
+                            labelSeparator=""
+                            maxLength=""
+                            maxLengthText=""
+                            minLength=""
+                            minLengthText=""
+                            msgTarget=""
+                            name="./offTime@TypeHint"
+                            readOnly="false"
+                            regex=""
+                            regexText=""
+                            selectOnFocus="false"
+                            validateOnBlur="true"
+                            validationDelay=""
+                            validationEvent=""
+                            validator=""
+                            value="Date"
+                            vtype=""
+                            vtypeText=""
+                            xtype="hidden"/>
+                    <offtime
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Off Time"
+                            name="./offTime"
+                            xtype="datetime"/>
+                    <onTimeHint
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="false"
+                            blankText=""
+                            disabled="false"
+                            emptyText=""
+                            fieldDescription=""
+                            fieldLabel=""
+                            fieldSubLabel=""
+                            grow="false"
+                            hideLabel="false"
+                            hideMode=""
+                            ignoreData="{Boolean}true"
+                            inputType=""
+                            labelSeparator=""
+                            maxLength=""
+                            maxLengthText=""
+                            minLength=""
+                            minLengthText=""
+                            msgTarget=""
+                            name="./onTime@TypeHint"
+                            readOnly="false"
+                            regex=""
+                            regexText=""
+                            selectOnFocus="false"
+                            validateOnBlur="true"
+                            validationDelay=""
+                            validationEvent=""
+                            validator=""
+                            value="Date"
+                            vtype=""
+                            vtypeText=""
+                            xtype="hidden"/>
+                    <ontime
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="On Time"
+                            name="./onTime"
+                            xtype="datetime"/>
+                    <redirect
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Redirect Target"
+                            name="./redirectTarget"
+                            xtype="pathcompletion"/>
+                    <prop1
+                            jcr:primaryType="nt:unstructured"
+                            fieldLabel="Page Language"
+                            name="./language"
+                            readOnly="true"
+                            validateOnBlur="true"
+                            xtype="textfield"/>
+                    <vanity
+                            jcr:primaryType="cq:Widget"
+                            collapsed="{Boolean}true"
+                            collapsible="{Boolean}true"
+                            title="Vanity URL"
+                            xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <vanityPath
+                                    jcr:primaryType="cq:Widget"
+                                    cls="cq-propsdialog-vanityurl"
+                                    fieldLabel="Vanity URL"
+                                    name="./sling:vanityPath"
+                                    xtype="multifield">
+                                <fieldConfig
+                                        jcr:primaryType="nt:unstructured"
+                                        allowBlank="{Boolean}false"
+                                        xtype="textfield"/>
+                            </vanityPath>
+                            <vanityPathRedirect
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Redirect Vanity URL"
+                                    name="./sling:redirect"
+                                    type="checkbox"
+                                    xtype="selection"/>
+                        </items>
+                    </vanity>
+                    <errorPages
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/acs-commons/components/utilities/errorpagehandler/dialog/errorpages.infinity.json"
+                            xtype="cqinclude"/>
+                </items>
+            </advanced>
+            <analytics
+                    jcr:primaryType="cq:Panel"
+                    title="Page Analytics">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <provider
+                            jcr:primaryType="cq:Widget"
+                            allowEmpty="true"
+                            fieldLabel="External Provider"
+                            name="./analyticsProvider"
+                            type="select"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <empty
+                                    jcr:primaryType="nt:unstructured"
+                                    text="&amp;nbsp;"
+                                    value=""/>
+                            <google
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Google Analytics"
+                                    value="google"/>
+                        </options>
+                    </provider>
+                    <snippet
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="ID / Snippet"
+                            name="./analyticsSnippet"
+                            xtype="textarea"/>
+                </items>
+            </analytics>
+            <cloudservices
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_cloudservices.infinity.json"
+                    xtype="cqinclude"/>
+            <blueprint
+                    jcr:primaryType="cq:Widget"
+                    xtype="blueprintconfig"/>
+            <cug
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_advanced/items/cug.infinity.json"
+                    xtype="cqinclude"/>
+            <liveCopy
+                    jcr:primaryType="cq:Widget"
+                    xtype="livecopyproperties"/>
+            <statistics
+                    jcr:primaryType="cq:Panel"
+                    title="Impressions"
+                    xtype="statistics"/>
+            <enb
+                    jcr:primaryType="cq:Panel"
+                    border="false"
+                    height=""
+                    title="ENB"
+                    width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            fieldLabel="Title"
+                            name="./jcr:title"
+                            xtype="textfield"/>
+                    <description
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            fieldLabel="Description"
+                            name="./jcr:description"
+                            xtype="textfield"/>
+                    <publisher
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            fieldLabel="Publisher"
+                            hideLabel="false"
+                            name="./gnbPublisher"
+                            readOnly="false"
+                            validateOnBlur="true"
+                            xtype="textfield"/>
+                    <coverage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Coverage"
+                            name="./gnbCoverage"
+                            readOnly="true"
+                            validateOnBlur="true"
+                            xtype="textfield"/>
+                    <relation
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Relation"
+                            name="./gnbRelation"
+                            xtype="textfield"/>
+                    <reference
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Reference(s)"
+                            name="./gnbReference"
+                            xtype="textfield"/>
+                    <format
+                            jcr:primaryType="cq:Widget"
+                            allowEmpty="true"
+                            fieldLabel="Format"
+                            name="./gnbFormat"
+                            type="select"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <empty
+                                    jcr:primaryType="nt:unstructured"
+                                    text="&amp;nbsp;"
+                                    value=""/>
+                            <application
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Application"
+                                    value="application"/>
+                            <audio
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Audio"
+                                    value="audio"/>
+                            <example
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Example"
+                                    value="example"/>
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Image"
+                                    value="image"/>
+                            <message
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Message"
+                                    value="message"/>
+                            <model
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Model"
+                                    value="model"/>
+                            <multipart
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Multipart"
+                                    value="multipart"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Text"
+                                    value="text"/>
+                            <video
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Video"
+                                    value="video"/>
+                        </options>
+                    </format>
+                    <dimensions
+                            jcr:primaryType="cq:Widget"
+                            disabled="false"
+                            fieldLabel="Dimensions"
+                            grow="false"
+                            hideLabel="false"
+                            name="./gnbDimensions"
+                            readOnly="false"
+                            selectOnFocus="false"
+                            validateOnBlur="true"
+                            validationEvent=""
+                            validator=""
+                            vtype=""
+                            vtypeText=""
+                            xtype="textfield"/>
+                    <type
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription=""
+                            fieldLabel="Type"
+                            fieldSubLabel=""
+                            name="./gnbType"
+                            type="select"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <empty
+                                    jcr:primaryType="nt:unstructured"
+                                    text="&amp;nbsp;"
+                                    value=""/>
+                            <collection
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Collection"
+                                    value="collection"/>
+                            <dataset
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Dataset"
+                                    value="dataset"/>
+                            <event
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Event"
+                                    value="event"/>
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Image"
+                                    value="image"/>
+                            <interactiveresource
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Interactive Resource"
+                                    value="interactiveResource"/>
+                            <movieimage
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Movie Image"
+                                    value="movieImage"/>
+                            <physicalobject
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Physical Object"
+                                    value="physicalObject"/>
+                            <service
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Service"
+                                    value="service"/>
+                            <software
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Software"
+                                    value="software"/>
+                            <sound
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Sound"
+                                    value="sound"/>
+                            <stillimage
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Still Image"
+                                    value="stillImage"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Text"
+                                    value="text"/>
+                        </options>
+                    </type>
+                    <created
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Created"
+                            format="Y-m-d"
+                            name="./gnbCreated"
+                            readOnly="true"
+                            xtype="textfield"/>
+                    <modified
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Modified"
+                            format="Y-m-d"
+                            name="./cq:lastModified"
+                            readOnly="true"
+                            xtype="textfield"/>
+                    <dateIssued
+                            jcr:primaryType="cq:Widget"
+                            dateFormat="Y-m-d"
+                            fieldDescription="Date and time for publication"
+                            fieldLabel="Publication"
+                            name="./gnbDateIssued"
+                            timeFormat="g:ia"
+                            xtype="datetime"/>
+                    <dateAccepted
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Date of approval for publication"
+                            fieldLabel="Approval"
+                            format="Y-m-d"
+                            name="./gnbDateAccepted"
+                            xtype="datefield"/>
+                    <validstart
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Valid Start"
+                            format="Y-m-d"
+                            name="./gnbValidStart"
+                            xtype="datefield"/>
+                    <validend
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Dates valid for publication"
+                            fieldLabel="Valid End"
+                            format="Y-m-d"
+                            name="./gnbValidEnd"
+                            xtype="datefield"/>
+                    <featurestart
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Featured Start"
+                            format="Y-m-d"
+                            name="./gnbFeatureStart"
+                            size="5"
+                            xtype="datefield"/>
+                    <featureend
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Dates when the content or asset is top priority is featured"
+                            fieldLabel="Featured End"
+                            format="Y-m-d"
+                            name="./gnbFeatureEnd"
+                            xtype="datefield"/>
+                    <prioritystart
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription=""
+                            fieldLabel="Priority Start"
+                            format="Y-m-d"
+                            name="./gnbPriorityStart"
+                            xtype="datefield"/>
+                    <priorityend
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Dates when the content or asset is top priority"
+                            fieldLabel="Priority End"
+                            format="Y-m-d"
+                            name="./gnbPriorityEnd"
+                            xtype="datefield"/>
+                    <promotionstart
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Promotion Start"
+                            format="Y-m-d"
+                            name="./gnbPromotionStart"
+                            xtype="datefield"/>
+                    <promotionend
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Dates when the content or asset is promoted"
+                            fieldLabel="Promotion End"
+                            format="Y-m-d"
+                            name="./gnbPromotionEnd"
+                            xtype="datefield"/>
+                    <promoDescription
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Promo Description"
+                            name="./promoDescription"
+                            xtype="textfield"/>
+                    <promoTitle
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Promo Title"
+                            name="./promoTitle"
+                            xtype="textfield"/>
+                    <feedbackAddress
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Feedback Address"
+                            name="./gnbFeedbackAddress"
+                            xtype="textfield"/>
+                </items>
+            </enb>
+            <tagging
+                    jcr:primaryType="cq:Panel"
+                    title="Tags/Keywords">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <tags
+                            jcr:primaryType="cq:Widget"
+                            hideLabel="{Boolean}true"
+                            name="./cq:tags"
+                            namespaces="[gnb-eng,gnb-fra,keywords_eng,keywords_fra]"
+                            xtype="tags"/>
+                </items>
+            </tagging>
+            <promoImage
+                    jcr:primaryType="cq:Widget"
+                    autoUploadDelay="1"
+                    ddGroups="media"
+                    fileReferenceParameter="./promoImageReference"
+                    name="./promoImage"
+                    sizeLimit="100"
+                    title="Promo Image"
+                    uploadUrl="/tmp/upload_test/*"
+                    xtype="smartimage"/>
+            <thumbnail
+                    jcr:primaryType="cq:Widget"
+                    cropParameter="./thumb/imageCrop"
+                    ddGroups="[media]"
+                    fileNameParameter="./thumb/fileName"
+                    fileReferenceParameter="./thumb/fileReference"
+                    mapParameter="./thumb/imageMap"
+                    name="./thumb/file"
+                    requestSuffix="/thumb.img.png"
+                    rotateParameter="./thumb/imageRotate"
+                    sizeLimit="100"
+                    title="Thumbnail"
+                    uploadUrl="/tmp/upload_test/*"
+                    xtype="smartimage"/>
+            <tab3
+                    jcr:primaryType="cq:Widget"
+                    title="Advanced Thumbnail Properties"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <alt
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="(leave empty to use the title defined above)"
+                            fieldLabel="Alt Text"
+                            name="./thumb/alt"
+                            xtype="textfield"/>
+                    <cssClass
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}true"
+                            fieldLabel="Style"
+                            name="./cq:cssClass"
+                            newStylePath="textimage/image_styles"
+                            optionsProvider="CQ.utils.WCM.getStyleOptions"
+                            stylePath="image_styles"
+                            type="select"
+                            xtype="selection"/>
+                    <description
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Description"
+                            name="./thumb/jcr:description"
+                            xtype="textarea"/>
+                    <linkURL
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Drop files or pages from the Content Finder"
+                            fieldLabel="Link to"
+                            name="./thumb/linkURL"
+                            xtype="pathfield"/>
+                    <resType
+                            jcr:primaryType="cq:Widget"
+                            ignoreData="{Boolean}true"
+                            name="./thumb/sling:resourceType"
+                            value="foundation/components/image"
+                            xtype="hidden"/>
+                    <size
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Size"
+                            heightParameter="./thumb/height"
+                            widthParameter="./thumb/width"
+                            xtype="sizefield"/>
+                    <title
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title"
+                            name="./thumb/jcr:title"
+                            xtype="textfield"/>
+                </items>
+            </tab3>
+        </items>
+    </items>
+</jcr:root>

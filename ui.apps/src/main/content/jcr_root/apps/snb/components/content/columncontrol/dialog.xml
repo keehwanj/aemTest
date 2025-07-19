@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    modal="{Boolean}true"
+    title="Column Control"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <colctrl
+                jcr:primaryType="cq:Widget"
+                title="Column control"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <coltype
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        editable="true"
+                        fieldDescription="select the type of column control to generate. Note: once columns are generated they cannot be re-generated."
+                        fieldLabel="Column type"
+                        name="./coltype"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <col-8-4
+                                jcr:primaryType="nt:unstructured"
+                                text="8-4 Column"
+                                value="8-4-col"/>
+                            <col-4-8
+                                jcr:primaryType="nt:unstructured"
+                                text="4-8 Column"
+                                value="4-8-col"/>
+                            <col-4-4-4
+                                jcr:primaryType="nt:unstructured"
+                                text="4-4-4 Column"
+                                value="4-4-4-col"/>
+                            <col-6-6
+                                jcr:primaryType="nt:unstructured"
+                                text="6-6 Column"
+                                value="6-6-col"/>
+                            <col-5-7
+                                jcr:primaryType="nt:unstructured"
+                                text="5-7 Column"
+                                value="5-7-col"/>
+                            <col-7-5
+                                jcr:primaryType="nt:unstructured"
+                                text="7-5 Column"
+                                value="7-5-col"/>
+                            <col-3-3-3-3
+                                jcr:primaryType="nt:unstructured"
+                                text="3-3-3-3 Column"
+                                value="3-3-3-3-col"/>
+                            <col-3-9
+                                jcr:primaryType="nt:unstructured"
+                                text="3-9 Column"
+                                value="3-9-col"/>
+                            <col-9-3
+                                jcr:primaryType="nt:unstructured"
+                                text="9-3 Column"
+                                value="9-3-col"/>
+                            <col-3-3-6
+                                jcr:primaryType="nt:unstructured"
+                                text="3-3-6 Column"
+                                value="3-3-6-col"/>
+                            <col-6-3-3
+                                jcr:primaryType="nt:unstructured"
+                                text="6-3-3 Column"
+                                value="6-3-3-col"/>
+                            <col-3-6-3
+                                jcr:primaryType="nt:unstructured"
+                                text="3-6-3 Column"
+                                value="3-6-3-col"/>
+                            <col-2-8-2
+                                jcr:primaryType="nt:unstructured"
+                                text="2-8-2 Column"
+                                value="2-8-2-col"/>
+                            <col-1-10-1
+                                jcr:primaryType="nt:unstructured"
+                                text="1-10-1 Column"
+                                value="1-10-1-col"/>
+                        </options>
+                        <listeners jcr:primaryType="nt:unstructured"/>
+                    </coltype>
+                    <color
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="demo-border-blue"
+                        fieldLabel="Border Color"
+                        name="./color"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                text="Black"
+                                value="demo-border-black"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                text="Blue"
+                                value="demo-border-blue"/>
+                            <gray
+                                jcr:primaryType="nt:unstructured"
+                                text="Gray"
+                                value="demo-border-gray"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="demo-border-green"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                text="Red"
+                                value="demo-border-red"/>
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="demo-border-white"/>
+                        </options>
+                    </color>
+                    <highlight
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check the box in case of highlight"
+                        fieldLabel="Highlight"
+                        inputValue="highlight"
+                        name="./highlight"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <title_text
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}true"
+                        fieldDescription="Title text in Column control"
+                        fieldLabel="Title text"
+                        name="./title_text"
+                        xtype="textfield"/>
+                </items>
+            </colctrl>
+        </items>
+    </items>
+</jcr:root>

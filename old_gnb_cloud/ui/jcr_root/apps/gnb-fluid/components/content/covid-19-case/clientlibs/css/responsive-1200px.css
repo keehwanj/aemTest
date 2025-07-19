@@ -1,0 +1,24 @@
+/*
+	START /apps/gnb-fluid/components/content/covid19_case/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+
+
+
+
+}
+
+/* LARGE DEVICES */
+/*(Desktops, 992px and up) */
+@media (min-width: 992px) {
+	.page-title {
+		font-size: 60px;
+	}
+
+	.page-description {
+		max-width: 620px;
+	}
+}
+/*
+	END /apps/gnb-fluid/components/content/covid19_case/clientlibs/css/responsive-1200px.css
+*/

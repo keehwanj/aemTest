@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="GNB iframe component"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <resources
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Resources"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <iframe_address
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="example -  EN: 106, FR: 232"
+                        fieldLabel="IFRAME address"
+                        name="./iframe_address"
+                        xtype="textfield"/>
+                </items>
+            </resources>
+        </items>
+    </items>
+</jcr:root>

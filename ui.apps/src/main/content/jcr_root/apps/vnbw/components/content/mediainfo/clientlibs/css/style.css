@@ -1,0 +1,284 @@
+/*
+ ADOBE CONFIDENTIAL
+ __________________
+
+  Copyright 2012 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+
+	mediainfo.css
+ */
+/**START of mediainfo.css**/
+/*
+#main_content_wrapper h3 {
+  color:black;
+  font-size:105%;
+  font-weight:normal;
+  margin:0 0 0 5px;
+}
+*/
+
+.related_box .related_header h3 {
+  color: black;
+  font-size: 105%;
+  font-weight: normal;
+  margin: 0 0 0 5px;
+}
+
+#md_dept,
+#md_content {
+  /*float:left;*/
+  /*font: 100% Arial, Helvetica, sans-serif;   */
+}
+
+#md_newDate,
+#md_dept {
+  margin: 0 0 10px 0;
+  /*float:left;*/
+  font-size: 90%;
+  color: #636363;
+}
+
+#metadata .metadata_right .related_box {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+#metadata .metadata_right .related_box .related_header {
+  height: 29px;
+  background-image: url("/etc/designs/vnbw-bootstrap/clientlibs/images/header_multimedia.gif");
+  margin: 20px 0 15px;
+  padding: 0;
+}
+
+#metadata .metadata_right .related_box .related_header h3 {
+  margin-left: 10px;
+  line-height: 29px;
+}
+
+#md_video,
+#md_audio,
+#md_newsRelease,
+#md_presentation {
+  font-size: 90%;
+  margin: 10px 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+#md_mLink {
+  font-size: 100%;
+  margin: 10px 10px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+#md_mLink li {
+  font-size: 100%;
+  margin: 0 0 10px 0;
+  padding-left: 6px;
+  list-style-image: url("/etc/designs/vnbw-bootstrap/clientlibs/images/arrow.gif");
+}
+
+#md_mLink ul {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+#md_video img {
+  margin: 0px 5px 0px 5px;
+}
+
+#md_audio img {
+  margin: 0px 6px 0px 5px;
+}
+
+#md_newsRelease img {
+  margin: 0px 5px 0px 5px;
+}
+
+#md_presentation img {
+  margin: 0px 5px 0px 5px;
+}
+
+#md_mPhoto {
+  font-size: 90%;
+  margin: 5px 0px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d3d3d3;
+  width: 100%;
+}
+
+#metadata .metadata_right .related_box {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+#md_mPhoto .best {
+  width: 115px;
+}
+
+#md_mPhoto img {
+  margin: 0px;
+  border: none;
+  vertical-align: middle;
+}
+
+#md_link {
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  /*float: left;*/
+  font-size: 115%;
+}
+
+/*This section has been added by Keehwan Jee*/
+#md_content {
+  /*float:left;*/
+  font-size: 90%;
+  color: #000000;
+}
+
+#md_mLink img {
+  margin: 0px 5px 0px 0px;
+}
+
+#md_mLink a {
+  margin: 0px 10px 0px 0px;
+}
+
+#multimedia_tabs img {
+  height: 67px;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  margin-bottom: 10px;
+  padding: 4px;
+}
+#multimedia_tabs h2 {
+  color: #1874b1;
+  font-size: 95%;
+  font-weight: normal;
+  margin: 0;
+}
+#multimedia_tabs .multimedia_item {
+  /*float:left;*/
+  margin: 0 10px 0 0;
+  padding: 10px 0 40px;
+  width: 140px;
+}
+#multimedia_tabs .multimedia_item p {
+  height: 30px;
+  overflow: hidden;
+}
+#multimedia_tabs .ui-tabs-panel {
+  padding: 0px !important;
+}
+#multimedia_tabs.ui-widget-content {
+  border: 0px solid grey;
+}
+#multimedia_tabs .ui-corner-all {
+  -moz-border-radius: 0px !important;
+}
+#multimedia_tabs .ui-tabs-hide {
+  display: none;
+}
+#multimedia_tabs .ui-tabs-nav {
+  padding: 0px !important;
+  border: 0px solid grey;
+}
+#multimedia_tabs .ui-tabs-nav {
+  background: url("/etc/designs/vnbw-bootstrap/clientlibs/images/header_multimedia.gif")
+    repeat scroll 0 0 transparent;
+  /*float:left;*/
+  font-size: 80%;
+  height: 29px;
+  list-style: none outside none;
+  margin: 0 0;
+  padding: 0;
+  text-transform: uppercase;
+  /*width:600px;*/
+}
+#multimedia_tabs .ui-tabs-nav:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+#multimedia_tabs .ui-tabs-nav li {
+  /*float:left;*/
+  padding: 0px;
+}
+#multimedia_tabs .ui-tabs-nav a {
+  color: #464646;
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+#multimedia_tabs .ui-tabs-nav a {
+  white-space: nowrap;
+  z-index: 2;
+  padding: 5px 10px !important;
+  font-size: 100%;
+  background: none;
+}
+#multimedia_tabs .ui-tabs-nav a.current {
+  background: url("/etc/designs/vnbw-bootstrap/clientlibs/images/bkgr_span_multimedia.gif")
+    repeat-x scroll 0 0 transparent;
+  color: black !important;
+  cursor: text;
+  padding: 5px 10px !important;
+  font-size: 100%;
+}
+
+#multimedia_tabs .ui-tabs-nav .ui-tabs-selected a:link,
+#multimedia_tabs .ui-tabs-nav .ui-tabs-selected a:visited,
+#multimedia_tabs .ui-tabs-nav .ui-tabs-disabled a:link,
+#multimedia_tabs .ui-tabs-nav .ui-tabs-disabled a:visited {
+  background: url("/etc/designs/vnbw-bootstrap/clientlibs/images/bkgr_span_multimedia.gif")
+    repeat-x scroll 0 0 transparent;
+  color: black !important;
+  cursor: text;
+  padding: 5px 10px !important;
+  font-size: 100%;
+}
+#multimedia_tabs .ui-tabs-nav a:hover,
+#multimedia_tabs .ui-tabs-nav a:focus,
+#multimedia_tabs .ui-tabs-nav a:active {
+  background: url("/etc/designs/vnbw-bootstrap/clientlibs/images/bkgr_span_multimedia.gif")
+    repeat-x scroll 0 0 transparent;
+  color: black !important;
+  cursor: pointer;
+  padding: 5px 10px !important;
+  font-size: 100%;
+}
+
+.multimedialist .ui-tabs-nav .outsider a {
+  background: url("/etc/designs/vnbw-bootstrap/clientlibs/images/arrow.gif")
+    no-repeat scroll right center transparent !important;
+  color: #555555 !important;
+  font-size: 90%;
+  font-weight: normal;
+}
+
+#multimedia_tabs .ui-tabs-nav .ui-tabs-disabled {
+  color: #777777;
+}
+#multimedia_tabs .ui-tabs-loading em {
+  background: url("/etc/designs/vnbw-bootstrap/clientlibs/images/loading.gif")
+    no-repeat scroll 0 50% transparent;
+  padding: 0 0 0 20px;
+}
+
+.section.multimediasearch .wide_multimedia_content p,
+.section.multimediasearch .wide_multimedia_content h2 {
+  font-size: 100%;
+}
+
+/**END of mediainfo.css**/

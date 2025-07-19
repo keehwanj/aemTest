@@ -1,0 +1,45 @@
+/*
+	START /apps/gnbstrap/components/content/wrapper/clientlibs/css/style.css
+*/
+/* WRAPPERS */
+
+.wrapper-forest {
+  background-color: #006055;
+  color: #ffffff;
+}
+.wrapper-gold {
+  background-color: #d6a329;
+  color: #ffffff;
+}
+.wrapper-crimson {
+  background-color: #79242f;
+  color: #ffffff;
+}
+.wrapper-ocean {
+  background-color: #004a98;
+  color: #ffffff;
+}
+.wrapper-black {
+  background-color: #000000;
+  color: #ffffff;
+}
+.wrapper-grey {
+  background-color: #f5f5f5;
+}
+
+/* Most requested component */
+.wrapper-forest .wrapper-crimson .wrapper-black .wrapper-ocean .most-requested {
+  color: #ffffff;
+}
+
+.wrapper-forest .wrapper-crimson .wrapper-black .wrapper-ocean .most-requested a {
+  color: #ffffff;
+}
+
+.most-requested a {
+  color: #ffffff;
+}
+
+/**
+	END of /apps/gnbstrap/components/content/wrapper/clientlibs/css/style.css
+**/

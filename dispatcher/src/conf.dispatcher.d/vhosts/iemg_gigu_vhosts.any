@@ -1,0 +1,12 @@
+# Entries will be compared against the "Host" request header
+# and an optional request URL prefix.
+#
+# Examples:
+#
+#   www.company.com
+#   intranet.*
+#   myhost:8888/mysite
+"${IEMG_GIGU_DOMAIN}"
+"${IEMG_GIGU_ALT_DOMAIN}"
+"${IEMG_GIGU_ALT_DOMAIN_1}"
+"${IEMG_GIGU_ALT_DOMAIN_2}"

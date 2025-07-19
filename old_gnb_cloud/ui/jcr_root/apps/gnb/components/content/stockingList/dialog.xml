@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','children','static','search','querybuilder'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i!=tabs.length-1;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="Public Review List Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <list
+            jcr:primaryType="cq:Widget"
+            title="List"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    defaultValue=""
+                    fieldLabel="Build list using"
+                    name="./listFrom"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(rec,path){this.findParentByType('tabpanel').manageTabs(this.getValue(),true);}"
+                        selectionchanged="function(box,value){box.findParentByType('tabpanel').manageTabs(value);}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <children
+                            jcr:primaryType="nt:unstructured"
+                            text="Child pages"
+                            value="children"/>
+                        <querybuilder
+                            jcr:primaryType="nt:unstructured"
+                            text="Advanced Search"
+                            value="querybuilder"/>
+                        <search
+                            jcr:primaryType="nt:unstructured"
+                            text="Search"
+                            value="search"/>
+                        <static
+                            jcr:primaryType="nt:unstructured"
+                            text="Fixed list"
+                            value="static"/>
+                    </options>
+                </listFrom>
+                <orderBy
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter a property like 'jcr:created'"
+                    fieldLabel="Order by"
+                    name="./orderBy"
+                    type="combobox"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <created
+                            jcr:primaryType="nt:unstructured"
+                            value="jcr:created"/>
+                        <modified
+                            jcr:primaryType="nt:unstructured"
+                            value="cq:lastModified"/>
+                        <template
+                            jcr:primaryType="nt:unstructured"
+                            value="cq:template"/>
+                        <title
+                            jcr:primaryType="nt:unstructured"
+                            value="jcr:title"/>
+                        <deadline
+                            jcr:primaryType="nt:unstructured"
+                            value="deadline"/>
+                    </options>
+                </orderBy>
+                <limit
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Maximum number of items displayed in list"
+                    fieldLabel="Limit"
+                    name="./limit"
+                    xtype="numberfield"/>
+                <show_entries
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Input Numbers of entries showing - 10, 25, 50, or 100"
+                    fieldLabel="Number of Entries"
+                    name="./show_entries"
+                    xtype="textfield"/>
+                <idName
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Unique id for table"
+                    name="./idName"
+                    xtype="textfield"/>
+            </items>
+        </list>
+        <children
+            jcr:primaryType="cq:Widget"
+            title="Child pages"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <parentPage
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave empty to use current page"
+                    fieldLabel="Parent page"
+                    name="./parentPage"
+                    xtype="pathfield"/>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(1); }"/>
+        </children>
+        <static
+            jcr:primaryType="cq:Widget"
+            title="Fixed list"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <pages
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new page"
+                    fieldLabel="Pages"
+                    name="./pages"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="500"
+                        xtype="pathfield"/>
+                </pages>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(2); }"/>
+        </static>
+        <search
+            jcr:primaryType="cq:Widget"
+            title="Search"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <query
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Search query"
+                    name="./query"
+                    xtype="textfield"/>
+                <searchIn
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave empty to use '/content'"
+                    fieldLabel="Start in"
+                    name="./searchIn"
+                    xtype="pathfield"/>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(3); }"/>
+        </search>
+        <querybuilder
+            jcr:primaryType="cq:Widget"
+            title="Advanced Search"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <savedquery
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Querybuilder predicate notation"
+                    height="200"
+                    name="./savedquery"
+                    xtype="textarea"/>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(4); }"/>
+        </querybuilder>
+        <header
+            jcr:primaryType="cq:Widget"
+            border="false"
+            height=""
+            title="Header title"
+            width=""
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <year
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Year"
+                    name="./year"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <season
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Season"
+                    name="./season"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <county
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="County"
+                    name="./county"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <waterName
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Water Name"
+                    name="./waterName"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <numberStocked
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Number Stocked"
+                    name="./numberStocked"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <lifeStage
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Life Stage"
+                    name="./lifeStage"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <clip
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Clip"
+                    name="./clip"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <type
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Type"
+                    name="./type"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <waterfishing
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Open to Water Fishing or Ouvert à la pêche hivernale"
+                    name="./waterfishing"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+            </items>
+        </header>
+        <button
+            jcr:primaryType="cq:Panel"
+            border="false"
+            height=""
+            title="Button text"
+            width="">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <copy_key
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Input copy text"
+                    fieldLabel="Copy text"
+                    name="./copy_key"
+                    xtype="textfield"/>
+                <csv_key
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Input CSV text"
+                    fieldLabel="CSV text"
+                    name="./csv_key"
+                    xtype="textfield"/>
+                <excel_key
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Input Excel text"
+                    fieldLabel="Excel text"
+                    name="./excel_key"
+                    xtype="textfield"/>
+                <pdf_key
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Input PDF text"
+                    fieldLabel="PDF text"
+                    name="./pdf_key"
+                    xtype="textfield"/>
+                <print_key
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Input Print text"
+                    fieldLabel="Print text"
+                    name="./print_key"
+                    xtype="textfield"/>
+            </items>
+        </button>
+        <stock_type
+            jcr:primaryType="cq:Widget"
+            border="false"
+            height=""
+            title="Stock Type"
+            width=""
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <salmon
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Salmon"
+                    name="./salmon"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+                <trout
+                    jcr:primaryType="nt:unstructured"
+                    fieldLabel="Trout"
+                    name="./trout"
+                    validateOnBlur="true"
+                    xtype="textfield"/>
+            </items>
+        </stock_type>
+    </items>
+</jcr:root>

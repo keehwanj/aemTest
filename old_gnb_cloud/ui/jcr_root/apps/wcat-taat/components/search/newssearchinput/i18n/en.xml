@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    cq:lastReplicated="{Date}2013-12-16T22:30:58.106-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:language="en"
+    jcr:mixinTypes="[cq:ReplicationStatus,mix:language]"
+    jcr:primaryType="sling:Folder">
+    <newsDateErrorMsg
+        cq:lastReplicated="{Date}2013-12-16T22:30:58.340-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="newsDateErrorMsg"
+        sling:message="Dates must be in the format: "/>
+    <newsKeyword
+        cq:lastReplicated="{Date}2013-12-16T22:30:58.995-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="newskeyword"
+        sling:message="Keyword"/>
+    <newsSearchAllDepartmentsText
+        cq:lastReplicated="{Date}2013-12-16T22:30:59.853-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="newsSearchAllDepartmentsText"
+        sling:message="All Departments"/>
+    <newsSearchHeadingText
+        cq:lastReplicated="{Date}2013-12-16T22:31:00.430-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="newsSearchHeadingText"
+        sling:message="Search News"/>
+    <newsSearchTitle
+        cq:lastReplicated="{Date}2013-12-16T22:31:01.179-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="newsSearchTitle"
+        sling:message="Search New Brunswick News"/>
+    <newsSearchWarning
+        cq:lastReplicated="{Date}2013-12-16T22:31:02.349-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="newsSearchWarning"
+        sling:message="At least one selection is required"/>
+</jcr:root>

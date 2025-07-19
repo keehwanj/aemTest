@@ -1,0 +1,45 @@
+/*
+	/apps/foundation/components/form/radio/clientlibs/css/style.css
+ */
+
+.radio.form-group {
+  margin-bottom: 0px;
+}
+
+.form-horizontal .radio .control-label {
+  padding-top: 0px;
+}
+
+.radio .form-group,
+.text .form-group,
+.captcha .form-group {
+  margin-bottom: 0px;
+}
+
+.form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+  padding-top: 0px;
+}
+
+.form_rightcol .radio lable {
+  font-size: 95%;
+}
+
+.form_leftcollabel label {
+  font-size: 95%;
+}
+
+.radio .form_rightcol.col-sm-8 {
+  padding-left: 35px;
+}
+
+form .radio label,
+form .checkbox label {
+  font-weight: bold;
+}
+
+form .form_row .form_rightcol {
+  font-size: 95%;
+}

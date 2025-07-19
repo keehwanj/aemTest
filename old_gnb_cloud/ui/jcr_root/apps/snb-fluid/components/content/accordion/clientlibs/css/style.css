@@ -1,0 +1,37 @@
+/*
+	START /apps/snb-fluid/components/content/accordion/clientlibs/css/style.css
+*/
+.accordion .accordion{
+    margin-bottom: 10px;
+}
+
+
+
+.accordion>.card .card-header {
+    margin-bottom: 0px;
+}
+
+
+
+
+.accordion .card-header.collapsed:after {
+    content: "\f067";
+}
+
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    float: right;
+}
+
+.card-body {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-title {
+    font-weight: bold;
+}
+/**
+	END of /apps/snb-fluid/components/content/accordion/clientlibs/css/style.css
+**/

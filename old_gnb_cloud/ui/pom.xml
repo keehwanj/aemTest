@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/mavenv4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.t4g.cnb</groupId>
+    <artifactId>cnb_hfx</artifactId>
+    <version>1.0.0</version>
+    <relativePath>../parent</relativePath>
+  </parent>
+  <artifactId>ui</artifactId>
+  <packaging>jar</packaging>
+  <name>T4G CNB Project UI</name>
+  <description>T4G CNB Project UI Package</description>
+  <properties>
+    <!-- The location where the CORE bundle will be placed so sling will install it automatically -->
+    <content.install.dir>${project.build.directory}/classes/jcr_root/apps/gnb/install</content.install.dir>
+    <!-- version of the CORE to use from the repository -->
+    <core.version>1.0.0</core.version>
+    <core.name>core</core.name>
+    <bundle.dir>../bundles</bundle.dir>
+  </properties>
+  <scm>
+    <connection>scm:svn:https://gnbcqauth2va/svn/cnb_hfx/trunk/ui</connection>
+    <developerConnection>scm:svn:https://gnbcqauth2va/svn/cnb_hfx/trunk/ui</developerConnection>
+    <url>https://gnbcqauth2va/svn/cnb_hfx/trunk/ui</url>
+  </scm>
+  <build>
+    <resources>
+      <!-- filter meta information to get some properties into the files -->
+      <resource>
+        <directory>${basedir}/META-INF</directory>
+        <targetPath>META-INF</targetPath>
+        <filtering>true</filtering>
+      </resource>
+      <!-- exclude .vlt control files and andy OS related files -->
+      <resource>
+        <directory>${basedir}/jcr_root</directory>
+        <excludes>
+          <exclude>**/.vlt</exclude>
+          <exclude>**/.vlt*.tmp</exclude>
+          <exclude>**/.vltignore</exclude>
+          <exclude>**/.DS_Store</exclude>
+          <exclude>**/install/*</exclude>
+        </excludes>
+        <targetPath>jcr_root</targetPath>
+      </resource>
+    </resources>
+    <plugins>
+      <!-- copy the dependant bundles -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.0</version>
+        <executions>
+          <execution>
+            <id>copy-bundles</id>
+            <goals>
+              <goal>copy</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <!-- place the CORE bundle in the install dir -->
+                <artifactItem>
+                  <groupId>${project.groupId}</groupId>
+                  <artifactId>${core.name}</artifactId>
+                  <outputDirectory>${content.install.dir}</outputDirectory>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.1</version>
+        <executions>
+          <execution>
+            <phase>compile</phase>
+            <configuration>
+              <tasks>
+                <echo>**** COPY DRIVER BUNDLES ****</echo>
+                <copy todir="${content.install.dir}">
+                  <fileset dir="${bundle.dir}"> <include name="**/*.jar"/> </fileset>
+                </copy>
+              </tasks>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-webdav</artifactId>
+        <version>1.0-beta-2</version>
+      </extension>
+    </extensions>
+  </build>
+  <!-- ========================================================== -->
+  <!-- D E P E N D E N C I E S -->
+  <!-- ========================================================== -->
+  <dependencies>
+    <!-- register a dependency for the CORE artifact for the UI -->
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>${core.name}</artifactId>
+      <version>${core.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+</project>

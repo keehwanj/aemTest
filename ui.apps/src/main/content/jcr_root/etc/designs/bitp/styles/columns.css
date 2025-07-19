@@ -1,0 +1,116 @@
+/* Design Styles for Column Control Elements */
+
+div.parsys_column {
+    height: 100%;
+    width: 100%;
+    float: left;
+    border: 0;
+    vertical-align: top;
+    padding: 0;
+    margin: 5px 0 5px 0;
+    /*top right bottom left*/
+}
+
+div.parsys_column .section {
+    overflow: hidden;
+    width: 102%;
+}
+
+div.parsys_column .shortcuts {
+    overflow: visible;
+}
+
+/* column control layouts */
+div.cq-colctrl-cols {
+    width: 100%;
+    float: left;
+}
+
+div.cq-colctrl-default {
+    width: 100%;
+}
+
+/* 2 Columns (45%, 55%) */
+div.cq-colctrl-lt1 {
+    margin: 5px 0px 5px 0px;
+    /*top right bottom left*/
+}
+
+div.cq-colctrl-lt1-c0 {
+    width: 43%;
+    padding-right: 3%;
+}
+
+div.cq-colctrl-lt1-c1 {
+    width: 53%
+}
+
+/* 2 Columns (40%, 60%) */
+div.cq-colctrl-lt2 {
+    margin: 5px 0px 5px 0px;
+    /*top right bottom left*/
+}
+
+div.cq-colctrl-lt2-c0 {
+    width: 38%;
+    padding-right: 3%;
+}
+
+div.cq-colctrl-lt2-c1 {
+    width: 58%
+}
+
+
+/* 2 Columns (50%, 50%) no line */
+div.cq-colctrl-lt3 {
+    margin: -10px 0px 5px 0px;
+}
+
+div.cq-colctrl-lt3-c0 {
+    width: 48%;
+    padding-right: 3%;
+}
+
+div.cq-colctrl-lt3-c1 {
+    width: 48%
+}
+
+/* 2 Columns (50%, 50%) line*/
+div.cq-colctrl-lt4 {
+    margin: -10px 0px 5px 0px;
+}
+
+div.cq-colctrl-lt4-c0 {
+    width: 46%;
+    padding-right: 3%;
+    border-right:1px solid #d3d3d3;
+}
+
+div.cq-colctrl-lt4-c1 {
+    width: 48%;
+    padding-left: 2%;     
+}
+
+
+/* 3 Columns */
+/*for displaying 3 columns; narrow width in left/right and wide in middle for department landing pages*/
+
+div.cq-colctrl-lt5 {
+    margin: 5px 0px 5px 0px;
+}
+
+div.cq-colctrl-lt5-c0 {
+    width: 15%;
+    padding-right: 0.5%;
+}
+
+div.cq-colctrl-lt5-c1 {
+    width: 66%;  
+    padding-left: 1%; 
+    padding-right: 1%;
+}
+
+div.cq-colctrl-lt5-c2 {
+    width: 15%;
+    padding-left: 1%;
+}

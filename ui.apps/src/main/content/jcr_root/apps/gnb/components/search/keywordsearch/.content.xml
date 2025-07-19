@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:isContainer="{Boolean}false"
+    cq:lastReplicated="{Date}2013-12-16T22:29:33.025-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:description="The Keyword search component used on the templates"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
+    jcr:primaryType="cq:Component"
+    jcr:title="GNB Keyword Search"
+    sling:resourceSuperType="foundation/components/parbase"
+    componentGroup="GNB-Search"/>

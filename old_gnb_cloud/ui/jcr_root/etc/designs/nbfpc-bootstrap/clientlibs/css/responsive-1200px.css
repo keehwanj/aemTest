@@ -1,0 +1,91 @@
+/**
+* START of /etc/designs/nbfpc-bootstrap/clientlibs/css/responsive-1200px.css
+**/
+
+@media (min-width: 1200px) {
+
+  .container {
+    width: 1170px;
+   padding-right: 0px;
+    padding-left: 0px;    
+  }
+
+#header {
+   /** background: url(/etc/designs/nbfpc-bootstrap/clientlibs/images/header_bkgr.gif) transparent 0 0;**/
+   width: 1160px;
+   height: 105px;
+   padding: 0px;
+    /*font: 90% Arial, Helvetica, sans-serif;*/
+   color: #555;
+   padding: 0px 10px 0 0;
+   text-align: left;
+}    
+ #header {
+
+ }
+
+
+
+#main_content_wrapper{
+    width:1170px;
+    background:url(/etc/designs/nbfpc-bootstrap/clientlibs/images/main_content_bkgr_1170.gif) 0 0 repeat-y;
+    margin:0;
+    padding:0px 10px;
+}
+/**        
+#mainContent { 
+    margin: 0 30px 0 30px; 
+    padding: 0; 
+}
+
+#leftContent #mainContent
+{
+    margin: 0 330px 0 30px; 
+    padding: 0; 
+    min-height: 300px;
+}
+**/
+/**START of remove space of row**/
+div#main_content_wrapper div.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+div#main_content_wrapper footer.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+/**END of remove space of row**/
+
+
+th {
+    /**
+    background:transparent url(/etc/designs/nbfpc-bootstrap/clientlibs/images/header_table.gif) repeat-x scroll 0 0;
+    **/
+}
+
+
+
+/**START of department/services**/
+
+/**END of department/services**/
+
+
+/*START of page title font*/
+.pageHeader h1 {
+  color:black;
+  font-size:170%;
+  font-weight:normal;
+  margin:0;
+}
+/*END of page title font*/
+
+#globalnav a:link, #globalnav a:visited {
+	/*font-size: 112.5%;*/
+}
+    
+}
+
+/**
+	END of /etc/designs/nbfpc-bootstrap/clientlibs/css/responsive-1200px.css
+**/

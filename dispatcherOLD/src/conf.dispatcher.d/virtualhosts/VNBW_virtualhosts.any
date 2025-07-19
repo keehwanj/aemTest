@@ -1,0 +1,16 @@
+# Entries will be compared against the "Host" request header
+# and an optional request URL prefix.
+#
+# Examples:
+#
+#   www.company.com
+#   intranet.*
+#   myhost:8888/mysite
+"conseildesfemmesnb.ca"
+"www.conseildesfemmesnb.ca"
+"conseilsdesfemmesnb.ca"
+"www.conseilsdesfemmesnb.ca"
+"nbwomenscouncil.ca"
+"www.nbwomenscouncil.ca"
+"voisfemmesnb-voiceswomennb.ca"
+"www.voisfemmesnb-voiceswomennb.ca"

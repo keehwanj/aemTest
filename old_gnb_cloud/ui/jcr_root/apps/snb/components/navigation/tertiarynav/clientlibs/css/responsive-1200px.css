@@ -1,0 +1,12 @@
+/*
+	START of /apps/gnb/components/navigation/tertiarynav/clientlibs/css/responsive-1200px.css
+*/
+@media (min-width: 1200px) {
+#tertiaryNav{
+	margin:20px 0 0 -10px;
+}
+
+}
+/*
+	END of /apps/gnb/components/navigation/tertiarynav/clientlibs/css/responsive-1200px.css
+*/

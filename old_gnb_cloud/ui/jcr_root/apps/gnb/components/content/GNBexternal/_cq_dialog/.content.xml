@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="External"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <columns
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <target
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldDescription="URL of web application to be included"
+                        fieldLabel="Target application"
+                        name="./target"/>
+                    <passparams
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        name="./passparams"
+                        text="Pass parameters"
+                        value="false"/>
+                    <passparams-delete
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/hidden"
+                        name="./passparams@Delete"
+                        value="{Boolean}true"/>
+                    <inclusion
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="Inclusion mode"
+                        name="./inclusion"
+                        value="adaptive">
+                        <items jcr:primaryType="nt:unstructured">
+                            <adaptive
+                                jcr:primaryType="nt:unstructured"
+                                text="Adaptive"
+                                value="adaptive"/>
+                            <fixed
+                                jcr:primaryType="nt:unstructured"
+                                text="Fixed"
+                                value="fixed"/>
+                        </items>
+                    </inclusion>
+                    <widthheight
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/authoring/dialog/sizefield"
+                        fieldDescription="for fixed size only"
+                        fieldLabel="Width and Height">
+                        <width
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/numberfield"/>
+                        <height
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/numberfield"/>
+                    </widthheight>
+                    <limit
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="Rewrite limit"
+                        name="./limit"
+                        value="no">
+                        <items jcr:primaryType="nt:unstructured">
+                            <nolimit
+                                jcr:primaryType="nt:unstructured"
+                                text="No limit"
+                                value="no"/>
+                            <host
+                                jcr:primaryType="nt:unstructured"
+                                text="Host"
+                                value="host"/>
+                            <off
+                                jcr:primaryType="nt:unstructured"
+                                text="Off"
+                                value="off"/>
+                        </items>
+                    </limit>
+                    <noCache
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        name="./noCache"
+                        text="No Cache?"/>
+                    <nocache-delete
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/hidden"
+                        name="./noCache@Delete"
+                        value="{Boolean}true"/>
+                </items>
+            </columns>
+        </items>
+    </content>
+</jcr:root>

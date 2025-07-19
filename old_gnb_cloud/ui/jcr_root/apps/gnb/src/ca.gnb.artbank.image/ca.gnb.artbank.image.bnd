@@ -1,0 +1,9 @@
+# Export-Package: *
+# Import-Package: *
+Private-Package: ca.gnb.artbank.image
+# Include-Resource: 
+Bundle-Name: Artbank image servlet
+Bundle-Description: Artbank image servlet to retreive/display image from ms sql server
+Bundle-SymbolicName: ca.gnb.artbank.image
+Bundle-Version: 1.0.0-SNAPSHOT
+Bundle-Activator: ca.gnb.artbank.image.Activator

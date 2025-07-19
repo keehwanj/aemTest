@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    cancelText=""
+    height="300"
+    okText=""
+    stateful="false"
+    title=""
+    width="500"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <props
+            jcr:primaryType="cq:Panel"
+            border="false"
+            height=""
+            title="Database Configuration"
+            width="">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <servicespath
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Services Path"
+                    name="./servicesPath"
+                    xtype="textfield"/>
+            </items>
+        </props>
+    </items>
+</jcr:root>

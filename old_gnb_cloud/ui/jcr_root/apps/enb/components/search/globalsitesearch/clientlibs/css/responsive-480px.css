@@ -1,0 +1,8 @@
+/*
+	/apps/gnb/components/search/globalsitesearch/clientlibs/css/responsive-480px.css
+*/
+@media (max-width: 480px) {
+table.gsc-search-box {
+	width: 100% !important;
+}
+}

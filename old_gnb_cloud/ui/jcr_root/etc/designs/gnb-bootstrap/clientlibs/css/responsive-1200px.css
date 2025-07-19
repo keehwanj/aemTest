@@ -1,0 +1,92 @@
+/**
+* START of etc/designs/gnb-bootstrap/clientlibs/css/responsive-1200px.css
+**/
+
+@media (min-width: 1200px) {
+
+  .container {
+    width: 960px;
+   padding-right: 0px;
+    padding-left: 0px;    
+  }
+ #header {
+   width: 950px;
+ }
+
+
+
+#main_content_wrapper{
+    width:960px;
+    background:url(/etc/designs/gnb-bootstrap/clientlibs/images/main_content_bkgr.gif) 0 0 repeat-y;
+    margin:0;
+    padding:0px 10px;
+}
+/**        
+#mainContent { 
+    margin: 0 30px 0 30px; 
+    padding: 0; 
+}
+
+#leftContent #mainContent
+{
+    margin: 0 330px 0 30px; 
+    padding: 0; 
+    min-height: 300px;
+}
+**/
+/**START of remove space of row**/
+div#main_content_wrapper div.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+div#main_content_wrapper footer.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+/**END of remove space of row**/
+
+
+th {
+    /**
+    background:transparent url(/etc/designs/gnb-bootstrap/clientlibs/images/header_table.gif) repeat-x scroll 0 0;
+    **/
+}
+
+
+
+/**START of department/services**/
+#topRightNav{
+    background:url(/etc/designs/gnb-bootstrap/clientlibs/images/top_right_nav.gif) 0 0 no-repeat;
+    width:203px;
+    height:41px;
+    float:right;
+}
+
+#topCentreNav{
+    background:url(/etc/designs/gnb-bootstrap/clientlibs/images/top_center_nav.gif) no-repeat top right;
+	width: 430px;
+    height:41px;
+    float:right;    
+}  
+/**END of department/services**/
+
+
+/*START of page title font*/
+.pageHeader h1 {
+  color:black;
+  font-size:170%;
+  font-weight:normal;
+  margin:0;
+}
+/*END of page title font*/
+
+#globalnav a:link, #globalnav a:visited {
+	font-size: 112.5%;
+}
+    
+}
+
+/**
+	END ofgnb-bootstrap/clientlibs/css/responsive-1200px.css
+**/

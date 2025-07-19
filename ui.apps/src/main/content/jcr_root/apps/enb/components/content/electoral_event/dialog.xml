@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Electoral Event"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Widget"
+                title="General"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <padded
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Padded"
+                        name="./padded"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <shaded
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Shaded"
+                        name="./shaded"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <border
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Show Bottom Border"
+                        name="./border"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </general>
+            <data
+                jcr:primaryType="cq:Panel"
+                title="Data">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <event_date
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Please select the electoral event date"
+                        fieldLabel="Event Date"
+                        name="./event_date"
+                        xtype="datetime"/>
+                    <before_body
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="By-elections will be held in Alma, Bathurst, Campobello Island (ward 3), Clair, Grade-Anse, Maisonnette, Minto, New Maryland, Saint-Leolin, Sainte-Marie-Saint_raphael, and Saint-Quentin on May 12, 2014"
+                        fieldLabel="Text Body (before)"
+                        height="100"
+                        name="./before_body"
+                        validateOnBlur="true"
+                        xtype="richtext"/>
+                    <after_body
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="By-elections were held in Alma, Bathurst, Campobello Island (ward 3), Clair, Grade-Anse, Maisonnette, Minto, New Maryland, Saint-Leolin, Sainte-Marie-Saint_raphael, and Saint-Quentin on May 12, 2014"
+                        fieldLabel="Text Body (after)"
+                        height="100"
+                        name="./after_body"
+                        validateOnBlur="true"
+                        xtype="richtext"/>
+                    <result_link
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Result Link"
+                        name="./result_link"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <result_text
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="RESULTS"
+                        fieldLabel="Result Text"
+                        name="./result_text"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                </items>
+            </data>
+        </items>
+    </items>
+</jcr:root>

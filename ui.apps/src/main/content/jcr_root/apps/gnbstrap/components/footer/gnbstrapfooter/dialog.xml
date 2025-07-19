@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Footer"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <footer
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Footer Text"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <footerText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Footer Text"
+                        name="./footerText"
+                        xtype="textfield"/>
+                </items>
+            </footer>
+            <footerLinkText
+                jcr:primaryType="cq:Widget"
+                title="Titles"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <footerLinkText
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new text."
+                        fieldLabel="Footer Link Texts"
+                        name="./footerLinkText"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </footerLinkText>
+                </items>
+            </footerLinkText>
+            <footerLinks
+                jcr:primaryType="cq:Widget"
+                title="Links"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <footerLinks
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new link."
+                        fieldLabel="Footer Links"
+                        name="./footerLinks"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="pathfield"/>
+                    </footerLinks>
+                </items>
+            </footerLinks>
+        </items>
+    </items>
+</jcr:root>

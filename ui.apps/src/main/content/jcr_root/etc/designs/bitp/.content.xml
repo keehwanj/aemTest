@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2016-06-02T13:20:51.590-03:00"
+        cq:lastModifiedBy="keehwanj"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Be In This Place Design"
+        sling:resourceType="wcm/core/components/designer">
+        <rightcontent jcr:primaryType="nt:unstructured">
+            <maincontent
+                jcr:lastModified="{Date}2011-11-15T10:26:08.899-04:00"
+                jcr:lastModifiedBy="gfanjoy"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                <section jcr:primaryType="nt:unstructured"/>
+                <tabpanel jcr:primaryType="nt:unstructured">
+                    <tab_1
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,/apps/bitp/components/search/globalsitesearch,group:Columns,group:Form]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_1>
+                    <tab_2
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,/apps/bitp/components/search/globalsitesearch,group:Columns,group:Form]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                        <colctrl
+                            jcr:lastModified="{Date}2011-07-24T17:40:19.125-03:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys/colctrl"
+                            layouts="2;cq-colctrl-lt1&#x9;2 Columns (43%, 57%)&#xd;&#xa;2;cq-colctrl-lt2&#x9;2 Columns (40%, 60%)&#xd;&#xa;2;cq-colctrl-lt3&#x9;2 Columns (50%, 50%)&#xd;&#xa;2;cq-colctrl-lt4&#x9;2 Columns (50%, 50%) line"/>
+                    </tab_2>
+                    <tab_3
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,/apps/bitp/components/search/globalsitesearch,group:Columns,group:Form]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_3>
+                    <tab_4
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,/apps/bitp/components/search/globalsitesearch,group:Columns,group:Form]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_4>
+                    <tab_immigration_to
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,/apps/bitp/components/search/globalsitesearch,group:Columns,group:Form]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_immigration_to>
+                    <tab_Living
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Living>
+                    <tab_Studying
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Studying>
+                    <tab_Working
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Working>
+                    <tab_Business
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Business>
+                    <tab_How_to_Immigrate
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_How_to_Immigrate>
+                    <tab_Settling
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Settling>
+                    <tab_Hiring__x0026__Helping
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,/apps/bitp/components/search/globalsitesearch,group:Columns,group:Form,group:GNB-Content]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Hiring__x0026__Helping>
+                    <tab_Hiring_and_Helping
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Hiring_and_Helping>
+                    <tab_Hiring__x0026__x0023_38_x003b__Helping
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,/apps/bitp/components/search/globalsitesearch,group:Columns,group:Form]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Hiring__x0026__x0023_38_x003b__Helping>
+                    <tab_test_test
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,/apps/bitp/components/search/globalsitesearch,group:Columns,group:Form,group:GNB-Content]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_test_test>
+                    <tab_tst_test
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,/apps/bitp/components/search/globalsitesearch,group:Columns,group:Form,group:GNB-Content]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_tst_test>
+                    <tab_Vivre
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Vivre>
+                    <tab__x0026_Eacute_x003b_tudier
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,/apps/bitp/components/search/globalsitesearch,group:Columns,group:Form,group:GNB-Content]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab__x0026_Eacute_x003b_tudier>
+                    <tab_Travailler
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Travailler>
+                    <tab_Entreprises
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Entreprises>
+                    <tab_Etudier
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,/apps/bitp/components/search/globalsitesearch,group:Columns,group:Form,group:GNB-Content]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Etudier>
+                    <tab_Comment_immigrer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Comment_immigrer>
+                    <tab__x0026_Eacute_x003b_tablissement
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,/apps/bitp/components/search/globalsitesearch,group:Columns,group:Form,group:GNB-Content]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab__x0026_Eacute_x003b_tablissement>
+                    <tab_Embauche_et_aide
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,/apps/bitp/components/search/globalsitesearch,group:Columns,group:Form,group:GNB-Content]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Embauche_et_aide>
+                    <tab__xfffd_ttablissement
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,/apps/bitp/components/search/globalsitesearch,group:Columns,group:Form,group:GNB-Content]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab__xfffd_ttablissement>
+                    <tab__xfffd_ttudier
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,/apps/bitp/components/search/globalsitesearch,group:Columns,group:Form,group:GNB-Content]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab__xfffd_ttudier>
+                    <tab_Vivre_
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Vivre_>
+                    <tab_Étudier_
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Étudier_>
+                    <tab_Travailler_
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Travailler_>
+                    <tab_Entreprises_
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Entreprises_>
+                    <tab_Étudier
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Étudier>
+                    <tab_Établissement
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Établissement>
+                    <tab_Embaucher_et_aider
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Embaucher_et_aider>
+                    <tab_Embaucher_et_Immigrer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Embaucher_et_Immigrer>
+                    <tab_Immigrer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Immigrer>
+                    <tab_Embaucher
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,/apps/bitp/components/search/globalsitesearch,group:BITP Tools,group:Columns,group:Form,group:GNB-Content,/libs/day-docs/components/reference]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Embaucher>
+                </tabpanel>
+                <colctrl
+                    jcr:lastModified="{Date}2011-07-24T17:41:29.390-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys/colctrl"
+                    layouts="2;cq-colctrl-lt1&#x9;2 Columns (43%, 57%)&#xd;&#xa;2;cq-colctrl-lt2&#x9;2 Columns (40%, 60%)&#xd;&#xa;2;cq-colctrl-lt3&#x9;2 Columns (50%, 50%)&#xd;&#xa;2;cq-colctrl-lt4&#x9;2 Columns (50%, 50%) line"/>
+            </maincontent>
+            <leftcontent
+                jcr:lastModified="{Date}2011-11-09T09:37:57.313-04:00"
+                jcr:lastModifiedBy="gfanjoy"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys"
+                components="[group:General,/apps/bitp/components/navigation/secondarynav]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </leftcontent>
+            <headercontent
+                jcr:lastModified="{Date}2011-02-25T12:10:24.517-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys"
+                components="[/apps/bitp/components/content/search,/apps/bitp/components/navigation/mainnav]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </headercontent>
+            <footercontent
+                jcr:lastModified="{Date}2011-06-28T12:50:24.524-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys"
+                components="group:General">
+                <section jcr:primaryType="nt:unstructured"/>
+            </footercontent>
+            <breadcrumbs
+                jcr:lastModified="{Date}2011-07-27T11:14:50.943-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="bitp/components/navigation/breadcrumbs"
+                absParent="1"/>
+        </rightcontent>
+        <bitp_base
+            jcr:lastModified="{Date}2010-01-21T14:51:20.290+01:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys"
+            components="[/libs/foundation/components/chart,/libs/foundation/components/download,/libs/foundation/components/flash,/libs/foundation/components/image,/libs/foundation/components/list,/libs/foundation/components/mvt,/libs/foundation/components/reference,/libs/foundation/components/search,/libs/foundation/components/sitemap,/libs/foundation/components/slideshow,/libs/foundation/components/table,/libs/cq/tagging/components/tagcloud,/libs/foundation/components/text,/libs/foundation/components/textimage,/libs/foundation/components/title,/libs/collab/calendar/components/event,/libs/collab/commons/components/comments,/libs/collab/commons/components/ratings,group:Columns,group:Form,/libs/cq/personalization/components/mygadgets]">
+            <image jcr:primaryType="nt:unstructured"/>
+            <section
+                jcr:primaryType="nt:unstructured"
+                div.padding="8px 0 0 0"/>
+            <tagcloud
+                jcr:lastModified="{Date}2009-12-11T10:25:18.896+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/tagging/components/tagcloud"
+                linkTemplate="/content/geometrixx/en/toolbar/search.html?tag=${tagid}&amp;path=${searchpath}"
+                showOnlyLeafTags="true"/>
+            <textimage
+                jcr:primaryType="nt:unstructured"
+                image_styles="upperl&#x9;Image Upper Left&#xd;&#xa;upperr&#x9;Image Upper Right">
+                <image
+                    jcr:primaryType="nt:unstructured"
+                    maxWidth="150"/>
+            </textimage>
+            <colctrl
+                jcr:lastModified="{Date}2011-07-24T17:41:29.390-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys/colctrl"
+                layouts="2;cq-colctrl-lt1&#x9;2 Columns (43%, 57%)&#xd;&#xa;2;cq-colctrl-lt2&#x9;2 Columns (40%, 60%)&#xd;&#xa;2;cq-colctrl-lt3&#x9;2 Columns (50%, 50%)&#xd;&#xa;2;cq-colctrl-lt4&#x9;2 Columns (50%, 50%) line"/>
+        </bitp_base>
+        <stacked jcr:primaryType="nt:unstructured">
+            <headercontent
+                jcr:lastModified="{Date}2011-03-03T11:56:17.204-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys"
+                components="[/apps/bitp/components/content/search,/apps/bitp/components/navigation/mainnav]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </headercontent>
+            <maincontent
+                jcr:lastModified="{Date}2011-03-03T11:56:39.774-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,group:BITP Content,group:BITP Navigation,group:Columns]">
+                <section jcr:primaryType="nt:unstructured"/>
+                <colctrl
+                    jcr:lastModified="{Date}2011-10-11T09:30:32.152-03:00"
+                    jcr:lastModifiedBy="keehwanj"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys/colctrl"
+                    layouts="2;cq-colctrl-lt1&#x9;2 Columns (43%, 57%)&#xa;2;cq-colctrl-lt2&#x9;2 Columns (40%, 60%)&#xa;2;cq-colctrl-lt3&#x9;2 Columns (50%, 50%)&#xa;2;cq-colctrl-lt4&#x9;2 Columns (50%, 50%) line&#xa;3;cq-colctrl-lt5&#x9;3 Columns (15%, 70%, 15%) no line-landing"/>
+                <tabpanel jcr:primaryType="nt:unstructured">
+                    <tab_Comment_immigrer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,group:Columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Comment_immigrer>
+                    <tab__x0026_Eacute_x003b_tablissement
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,group:Columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab__x0026_Eacute_x003b_tablissement>
+                    <tab__x0026_Eacute_x003b_tudier
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,group:Columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab__x0026_Eacute_x003b_tudier>
+                    <tab_Travailler
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,group:Columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Travailler>
+                    <tab_Entreprises
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,group:Columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Entreprises>
+                    <tab_Embauche_et_aide
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,group:Columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Embauche_et_aide>
+                    <tab_Vivre
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:BITP Content,group:BITP Navigation,group:Columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </tab_Vivre>
+                </tabpanel>
+            </maincontent>
+            <footercontent
+                jcr:lastModified="{Date}2011-08-05T16:14:49.096-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys"
+                components="group:General">
+                <section jcr:primaryType="nt:unstructured"/>
+            </footercontent>
+        </stacked>
+        <home jcr:primaryType="nt:unstructured">
+            <home_upper_left
+                jcr:lastModified="{Date}2016-06-02T13:17:42.206-03:00"
+                jcr:lastModifiedBy="keehwanj"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="/apps/gnb/components/content/redirectlanding">
+                <section jcr:primaryType="nt:unstructured"/>
+            </home_upper_left>
+            <mainContent_par
+                jcr:lastModified="{Date}2016-06-02T13:18:34.872-03:00"
+                jcr:lastModifiedBy="keehwanj"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,/apps/gnb/components/content/redirectlanding]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </mainContent_par>
+            <home_text_right
+                jcr:lastModified="{Date}2016-06-02T13:18:42.532-03:00"
+                jcr:lastModifiedBy="keehwanj"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:General">
+                <section jcr:primaryType="nt:unstructured"/>
+            </home_text_right>
+            <home_text_left
+                jcr:lastModified="{Date}2016-06-02T13:18:47.726-03:00"
+                jcr:lastModifiedBy="keehwanj"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:General">
+                <section jcr:primaryType="nt:unstructured"/>
+            </home_text_left>
+        </home>
+        <leftcontent jcr:primaryType="nt:unstructured">
+            <mainContent_par
+                jcr:lastModified="{Date}2016-06-02T13:20:51.590-03:00"
+                jcr:lastModifiedBy="keehwanj"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,/apps/gnb/components/content/gnblist_update]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </mainContent_par>
+        </leftcontent>
+    </jcr:content>
+    <favicon.ico/>
+    <images/>
+    <static.css/>
+    <styles/>
+    <js/>
+</jcr:root>

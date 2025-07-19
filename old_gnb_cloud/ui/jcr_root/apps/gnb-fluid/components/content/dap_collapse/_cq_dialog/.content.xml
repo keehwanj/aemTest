@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Day Care Assistance - DAP (Education) - collapse"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <first
+                jcr:primaryType="nt:unstructured"
+                jcr:title="First"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <t_1_1_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Annual Household Gross Income"
+                                fieldLabel="Annual Household Gross Income"
+                                name="./t_1_1_dap"/>
+                            <t_1_tootip_1_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Annual Family Net Income"
+                                fieldLabel="Tooltip"
+                                name="./t_1_tootip_1_dap"/>
+                            <t_1_2_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Gross Income"
+                                fieldLabel="Placeholder text"
+                                name="./t_1_2_dap"/>
+                        </items>
+                    </columns>
+                </items>
+            </first>
+            <second
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Second"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <t_2_1_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Number of children needing full time child care (more than 4 hours) aged less than 24 months"
+                                fieldLabel="Number of children needing full time &lt;24 months"
+                                name="./t_2_1_dap"/>
+                            <t_2_tootip_1_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Number of children needing full time child care (more than 4 hours) aged less than 24 months"
+                                fieldLabel="Tooltip"
+                                name="./t_2_tootip_1_dap"/>
+                            <t_2_2_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Number of day(s) per week"
+                                fieldLabel="Number of day(s) per week"
+                                name="./t_2_2_dap"/>
+                            <t_2_tootip_2_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Number of day(s) per week"
+                                fieldLabel="Tooltip"
+                                name="./t_2_tootip_2_dap"/>
+                            <t_2_3_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Number of children needing part time child care (less than 4 hours) aged less than 24 months"
+                                fieldLabel="Number of children needing part time &lt;24 months"
+                                name="./t_2_3_dap"/>
+                            <t_2_tootip_3_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Number of children needing part time child care (less than 4 hours) aged less than 24 months"
+                                fieldLabel="Tooltip"
+                                name="./t_2_tootip_3_dap"/>
+                        </items>
+                    </columns>
+                </items>
+            </second>
+            <third
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Third"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <t_3_1_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Number of children needing full time child care (more than 4 hours) between 2 -12 years old"
+                                fieldLabel="Number of children needing full time between 2-12 years old"
+                                name="./t_3_1_dap"/>
+                            <t_3_tootip_1_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Number of children needing full time child care (more than 4 hours) between 2 -12 years old"
+                                fieldLabel="Tooltip"
+                                name="./t_3_tootip_1_dap"/>
+                            <t_3_2_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Number of day(s) per week"
+                                fieldLabel="Number of day(s) per week"
+                                name="./t_3_2_dap"/>
+                            <t_3_tootip_2_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Number of day(s) per week"
+                                fieldLabel="Tooltip"
+                                name="./t_3_tootip_2_dap"/>
+                            <t_3_3_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Number of children part time child care (less than 4 hours) between 2 -12 years old"
+                                fieldLabel="Number of children needing part time (&lt;4 hours) between 2-12 years old"
+                                name="./t_3_3_dap"/>
+                            <t_3_tootip_3_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Number of children part time child care (less than 4 hours) between 2 -12 years old"
+                                fieldLabel="Tooltip"
+                                name="./t_3_tootip_3_dap"/>
+                        </items>
+                    </columns>
+                </items>
+            </third>
+            <fourth
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Fourth"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <t_4_1_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Estimate per day *"
+                                fieldLabel="Estimate per day *"
+                                name="./t_4_1_dap"/>
+                            <t_4_tootip_1_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Est. per day $"
+                                fieldLabel="Tooltip"
+                                name="./t_4_tootip_1_dap"/>
+                            <t_4_2_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Estimate per month"
+                                fieldLabel="Estimate per month"
+                                name="./t_4_2_dap"/>
+                            <t_4_tootip_2_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Est. per month $"
+                                fieldLabel="Tooltip"
+                                name="./t_4_tootip_2_dap"/>
+                            <t_4_3_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Estimate per year"
+                                fieldLabel="Estimate per year"
+                                name="./t_4_3_dap"/>
+                            <t_4_tootip_3_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Est. per year $"
+                                fieldLabel="Tooltip"
+                                name="./t_4_tootip_3_dap"/>
+                        </items>
+                    </columns>
+                </items>
+            </fourth>
+            <reset
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Button"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <t_5_1_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Reset"
+                                fieldLabel="Reset"
+                                name="./t_5_1_dap"/>
+                        </items>
+                    </columns>
+                </items>
+            </reset>
+            <title
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Title"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title_1_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Income"
+                                fieldLabel="Income"
+                                name="./title_1_dap"/>
+                            <title_1_tootip_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Income"
+                                fieldLabel="Tooltip"
+                                name="./title_1_tootip_dap"/>
+                            <title_2_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Childcare Needs - Infants(0-24months)"
+                                fieldLabel="Childcare Needs - Infants(0-24months)"
+                                name="./title_2_dap"/>
+                            <title_2_tootip_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Childcare Needs - Infants(0-24months)"
+                                fieldLabel="Tooltip"
+                                name="./title_2_tootip_dap"/>
+                            <title_3_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Childcare Needs - Pre-school and After School Children(2-12years old)"
+                                fieldLabel="Childcare Needs - Pre-school and After School Children(2-12years old)"
+                                name="./title_3_dap"/>
+                            <title_3_tootip_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Childcare Needs - Pre-school and After School Children(2-12years old)"
+                                fieldLabel="Tooltip"
+                                name="./title_3_tootip_dap"/>
+                            <disclaimer_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="*Disclaimer"
+                                fieldLabel="*Displaimer"
+                                name="./disclaimer_dap"/>
+                        </items>
+                    </columns>
+                </items>
+            </title>
+            <collapse
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Collapse"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <collapsible_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./collapsible_dap"
+                                text="Collapsible?"
+                                value="false"/>
+                            <collapsible_dap-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./collapsible_dap@Delete"
+                                value="{Boolean}true"/>
+                            <collapsible_title_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Daycare Assistance Program Estimator"
+                                fieldLabel="Collapsible Title"
+                                name="./collapsible_title_dap"/>
+                            <collapsible_id_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="default  :  dap_collapse"
+                                fieldLabel="Collapsible ID"
+                                name="./collapsible_id_dap"/>
+                            <collapsible_button_dap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="btn-default  btn-primary  btn-success  btn-info  btn-warning  btn-danger  btn-link btn-block btn-lg btn-md btn-sm btn-xs"
+                                fieldLabel="Collapsible Button"
+                                name="./collapsible_button_dap"/>
+                        </items>
+                    </columns>
+                </items>
+            </collapse>
+        </items>
+    </content>
+</jcr:root>

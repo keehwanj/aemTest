@@ -1,0 +1,12 @@
+/*
+	apps/gnb/components/search/multimediasearch/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {
+
+
+.wide_multimedia_item .row .col-sm-3, .wide_multimedia_item .row .col-sm-9 {
+	padding-right: 0px; 
+}
+
+
+}

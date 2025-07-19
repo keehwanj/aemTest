@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="nt:unstructured"
+        title="List"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Widget"
+                border="false"
+                height=""
+                title="General"
+                width=""
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title_text
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}true"
+                        defaultValue="Need help?"
+                        fieldLabel="Title"
+                        name="./title_text"
+                        xtype="textfield"/>
+                    <description_text
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}true"
+                        defaultValue="If you would like to speak to one of our customer service representative, please call:"
+                        fieldDescription="Description content"
+                        fieldLabel="Description"
+                        name="./description_text"
+                        xtype="textarea"/>
+                    <phone_text
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}true"
+                        defaultValue="1-888-762-8600"
+                        fieldDescription="Phone number"
+                        fieldLabel="Phone number"
+                        name="./phone_text"
+                        xtype="textfield"/>
+                    <backgroundImage
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Background image"
+                        name="./backgroundImage"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                </items>
+            </general>
+        </items>
+    </items>
+</jcr:root>

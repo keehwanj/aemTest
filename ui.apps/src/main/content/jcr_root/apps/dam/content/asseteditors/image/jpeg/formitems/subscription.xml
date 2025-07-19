@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Widget"
+    allowEmpty="true"
+    fieldDescription="Select true if this page is on subscription routine"
+    fieldLabel="Subscription?"
+    name="./subscription"
+    type="select"
+    xtype="selection">
+    <options jcr:primaryType="cq:WidgetCollection">
+        <empty
+            jcr:primaryType="nt:unstructured"
+            text="&amp;nbsp;"
+            value=""/>
+        <true
+            jcr:primaryType="nt:unstructured"
+            text="True"
+            value="true"/>
+        <false
+            jcr:primaryType="nt:unstructured"
+            text="False"
+            value="false"/>
+    </options>
+</jcr:root>

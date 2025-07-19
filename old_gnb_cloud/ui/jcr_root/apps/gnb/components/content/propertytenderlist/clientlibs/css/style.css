@@ -1,0 +1,22 @@
+/*
+	/apps/gnb/components/content/propertytenderlist/clientlibs/css/style.css
+*/
+/**START of style.css**/
+
+.propertytenderlist td.first {
+    border-bottom: 0px;
+}
+
+.boldlarge {
+    font: 110% Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: inline;
+}
+
+.propertytenderlist .table > tbody > tr > td {
+
+    border-top: 0px solid #ddd;
+}
+
+
+/**END of style.css**/

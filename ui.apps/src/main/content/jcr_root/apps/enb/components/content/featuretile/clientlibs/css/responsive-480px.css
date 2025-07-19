@@ -1,0 +1,8 @@
+/*
+	apps/enb/components/content/featuretile/clientlibs/css/responsive-480px.css
+ */
+@media (max-width: 480px) {
+  .featuretile h2.feature {
+    font-size: 110%;
+  }
+}

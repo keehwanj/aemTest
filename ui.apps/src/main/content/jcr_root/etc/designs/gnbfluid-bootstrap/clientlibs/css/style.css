@@ -1,0 +1,142 @@
+/*
+	START of /etc/designs/gnbfluid-bootstrap/clientlibs/css/style.css
+*/
+
+#CQ .x-form-check-wrap input {
+    vertical-align: -webkit-baseline-middle;
+}
+
+/*dialog input field height override*/
+.ext-strict #CQ .x-form-text {
+    height: 22px;
+}
+
+body {
+    /*font-size: 0.9rem;*/
+    /**font-family: Arial, Helvetica, sans-serif;**/ 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    font: 99% Arial,Helvetica,sans-serif;
+    line-height: 1.5;
+
+}
+
+/*2020-4-2*/
+.text .table td {
+    border-top: 1px solid rgb(27, 63, 98);
+}
+/** END of /etc/designs/gnbfluid-bootstrap/clientlibs/css/style.css **/
+
+
+a {
+    color: #1266AC;
+    cursor: pointer;
+}
+
+
+.alert {
+    color: #000000;
+    padding-top: 2rem;
+    background-color: #FFECB3;
+    border-left: 10px solid #FBAB18;
+}
+
+.alert ol li {
+    padding: 0px;
+}
+
+.alert a {
+    text-decoration: underline;
+}
+
+.alert a:hover {
+    text-decoration: none;
+}
+
+/*2020-4-21*/
+.alert-blue {
+      color: #000000;
+      padding-top: 2rem;
+      background-color: #F1F3F5;
+      border-left: 10px solid #1266AC;
+}
+/*2020-4-21*/
+
+/* COLORS */
+
+.red {
+    color: #770D29;
+}
+
+.orange {
+    color: #CF6023;
+}
+
+.yellow {
+    color: rgba(248, 163, 27, 1);
+}
+
+.green {
+    color: #28A745;
+}
+
+.blue {
+    color: #1266AC;
+}
+
+.purple {
+    color: #564D65;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+/* RESOURCES */
+
+.resources {
+    text-align: center;
+}
+
+.resources img {
+    border: 5px solid #fff;
+    max-width: 200px;
+}
+
+/* Button primary */
+
+.btn-primary {
+    background-color: #1266AC;
+    border: 3px solid #1266AC;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+}
+
+/**2020-4-16**/
+/* CSS override, load after navbar CSS, these lines adjust padding, margin. and add shadow  */
+
+.navbar {
+    /*Add these lines */
+    padding: .5rem 1rem !important;
+    /*margin: -15px 0 -15px 15px !important;*/
+    margin: 0px -15px 15px -15px !important; 
+    -webkit-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.08);
+    box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.08);
+}
+
+/* CSS override, this will fix he padding of the FR button  */
+
+.navbar .btn {
+    padding: .375rem .75rem !important;
+}

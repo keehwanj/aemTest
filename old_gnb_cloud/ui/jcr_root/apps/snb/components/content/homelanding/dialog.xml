@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="nt:unstructured"
+        title="List"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <text
+                jcr:primaryType="cq:Widget"
+                title="Language Text"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <englishText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="English"
+                        name="./englishText"
+                        xtype="textfield"/>
+                    <frenchText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="French"
+                        name="./frenchText"
+                        xtype="textfield"/>
+                </items>
+            </text>
+            <link
+                jcr:primaryType="cq:Widget"
+                title="Links"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <englishlink
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="English Link"
+                        name="./englishLink"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <frenchlink
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="French Link"
+                        name="./frenchLink"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                </items>
+            </link>
+            <image
+                jcr:primaryType="cq:Widget"
+                title="General Options"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <bodyIamge
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Body Image"
+                        name="./bodyImage"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                    <snbLogo
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="SNB Logo"
+                        name="./snbLogo"
+                        validateOnBlur="true"
+                        xtype="pathfield"/>
+                </items>
+            </image>
+        </items>
+    </items>
+</jcr:root>

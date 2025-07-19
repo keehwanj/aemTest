@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <clientlibs/>
+    <clientlibs-all/>
+    <jcr:content
+        cq:lastModified="{Date}2021-12-09T10:55:33.119-04:00"
+        cq:lastModifiedBy="paulette"
+        cq:lastReplicated="{Date}2016-02-05T12:05:35.735-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus,mix:versionable]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="enb-bootstrap"
+        jcr:uuid="98f1b2aa-86af-4bbd-b27b-6f53d0e2fa9d">
+        <home jcr:primaryType="nt:unstructured">
+            <mainContent_par
+                jcr:lastModified="{Date}2016-11-28T13:02:15.313-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/apps/foundation/components/image,/apps/foundation/components/text,/apps/foundation/components/textimage,/apps/enb/components/content/enbpromo_update]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </mainContent_par>
+            <home_text_left
+                jcr:lastModified="{Date}2016-11-28T13:02:25.703-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="/apps/foundation/components/text">
+                <section jcr:primaryType="nt:unstructured"/>
+            </home_text_left>
+            <home_text_right
+                jcr:lastModified="{Date}2016-11-28T13:02:34.189-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="/apps/foundation/components/text">
+                <section jcr:primaryType="nt:unstructured"/>
+            </home_text_right>
+            <mainContent_par_bottom
+                jcr:lastModified="{Date}2016-11-28T13:02:47.964-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="/apps/foundation/components/image">
+                <section jcr:primaryType="nt:unstructured"/>
+            </mainContent_par_bottom>
+        </home>
+        <leftcontent jcr:primaryType="nt:unstructured">
+            <mainContent_par
+                jcr:lastModified="{Date}2021-02-10T10:26:09.889-04:00"
+                jcr:lastModifiedBy="paulette"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/apps/foundation/components/image,/apps/foundation/components/text,/apps/foundation/components/textimage,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl,group:ENB-Content,group:ENB-Navigation,/apps/gnb/components/content/accordion,/apps/gnb/components/content/columncontrol,/apps/gnb/components/content/redirectlanding,/apps/gnb/components/content/text,group:Social Plugins]">
+                <section jcr:primaryType="nt:unstructured"/>
+                <twittersearch
+                    jcr:lastModified="{Date}2017-02-07T16:15:22.267-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="social/plugins/twitter/twittersearch"
+                    height="800"
+                    width="620"/>
+                <colctrl
+                    jcr:lastModified="{Date}2017-03-22T13:19:31.215-03:00"
+                    jcr:lastModifiedBy="keehwanj"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys/colctrl"
+                    layouts="2;cq-colctrl-lt0&#x9;2 Columns (50%, 50%) &#xa;2;cq-colctrl-lt1&#x9;2 Columns (50%, 50%) no line &#xa;2;cq-colctrl-lt2&#x9;2 Columns (40%, 60%) &#xa;2;cq-colctrl-lt3&#x9;2 Columns (40%, 60%) no line &#xa;2;cq-colctrl-lt4&#x9;2 Columns (60%, 40%) &#xa;2;cq-colctrl-lt5&#x9;2 Columns (60%, 40%) no line &#xa;3;cq-colctrl-lt6&#x9;3 Columns (33%, 33%, 33%) &#xa;3;cq-colctrl-lt7&#x9;3 Columns (33%, 33%, 33%) no line &#xa;3;cq-colctrl-lt8&#x9;3 Columns (50%, 25%, 25%) &#xa;3;cq-colctrl-lt9&#x9;3 Columns (50%, 25%, 25%) no line &#xa;3;cq-colctrl-lt10&#x9;3 Columns (25%, 25%, 50%) &#xa;3;cq-colctrl-lt11&#x9;3 Columns (25%, 25%, 50%) no line&#xa;2;cq-colctrl-lt12&#x9;2 Columns (67%, 33%) no line-left template &#xa;3;cq-colctrl-lt13&#x9;3 Columns (15%, 70%, 15%) no line-landing&#xa;2;cq-colctrl-lt14&#x9;2 Columns (33%, 66%) &#xa;2;cq-colctrl-lt15&#x9;2 Columns (33%, 66%) no line &#xa;2;cq-colctrl-lt16&#x9;2 Columns (66%, 33%) &#xa;2;cq-colctrl-lt17&#x9;2 Columns (66%, 33%) no line &#xa;3;cq-colctrl-lt18&#x9;3 Columns (40%, 35%, 25%) no line-highway camera"/>
+                <col_end14901995712300
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys/colctrl"
+                    controlType="end"/>
+                <columncontrol jcr:primaryType="nt:unstructured">
+                    <col-4-4-4-1
+                        jcr:lastModified="{Date}2020-08-26T15:24:36.357-03:00"
+                        jcr:lastModifiedBy="paulette"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:ENB-Content,group:ENB-Navigation,group:ENB-Search,/apps/gnb/components/content/videoviewer]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </col-4-4-4-1>
+                    <col-4-4-4-2
+                        jcr:lastModified="{Date}2020-08-26T15:24:03.142-03:00"
+                        jcr:lastModifiedBy="paulette"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:ENB-Content,group:ENB-Navigation,group:ENB-Search,group:ENB-Tools,/apps/gnb/components/content/videoviewer]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </col-4-4-4-2>
+                    <col-4-4-4-3
+                        jcr:lastModified="{Date}2020-08-26T15:25:26.250-03:00"
+                        jcr:lastModifiedBy="paulette"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:ENB-Content,group:ENB-Navigation,group:ENB-Search,group:ENB-Tools,/apps/gnb/components/content/videoviewer]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </col-4-4-4-3>
+                    <col-6-6-1
+                        jcr:lastModified="{Date}2021-12-09T10:55:33.119-04:00"
+                        jcr:lastModifiedBy="paulette"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:ENB-Content,group:ENB-Navigation,group:ENB-Search,group:ENB-Tools,group:GNB-Content]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </col-6-6-1>
+                    <col-6-6-2
+                        jcr:lastModified="{Date}2020-08-26T15:53:49.803-03:00"
+                        jcr:lastModifiedBy="paulette"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:General,group:ENB-Content,group:ENB-Navigation,group:ENB-Search,group:ENB-Tools,group:GNB-Content]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </col-6-6-2>
+                </columncontrol>
+            </mainContent_par>
+            <secondaryContent_par
+                jcr:lastModified="{Date}2021-03-09T09:16:07.657-04:00"
+                jcr:lastModifiedBy="paulette"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/apps/foundation/components/image,/apps/foundation/components/text,/apps/foundation/components/textimage,/libs/foundation/components/title,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl,/apps/enb/components/content/electoral_event,/apps/enb/components/content/dropdown,/apps/enb/components/content/ENBexternal,/apps/enb/components/content/featuretile,/apps/enb/components/content/enblist_update,/apps/enb/components/content/multimedialist_update,/apps/enb/components/content/newslist_update,/apps/enb/components/content/enbpromo_update,/apps/enb/components/content/sectiontitle,/apps/enb/components/content/sectiontitle_update,/apps/enb/components/content/textimage,/apps/gnb/components/content/columncontrol]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </secondaryContent_par>
+            <mainNav_ipar
+                jcr:lastModified="{Date}2019-12-13T15:43:42.822-04:00"
+                jcr:lastModifiedBy="paulette"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys"
+                components="group:ENB-Navigation">
+                <section jcr:primaryType="nt:unstructured"/>
+            </mainNav_ipar>
+        </leftcontent>
+        <stacked jcr:primaryType="nt:unstructured">
+            <mainContent_par
+                jcr:lastModified="{Date}2021-03-01T15:02:10.895-04:00"
+                jcr:lastModifiedBy="paulette"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/libs/foundation/components/adaptiveimage,/libs/fd/af/components/aemform,/apps/acs-commons/components/content/audio,/libs/foundation/components/carousel,/libs/foundation/components/chart,/libs/dam/cfm/components/contentfragment,/apps/acs-commons/components/content/definition-list,/libs/wcm/designimporter/components/importerEx,/libs/day-docs/components/text,/libs/foundation/components/download,/libs/foundation/components/external,/libs/foundation/components/flash,/apps/acs-commons/components/content/generic-text,/apps/acs-commons/components/content/generic-text-image,/apps/geometrixx-unlimited/components/image,/apps/foundation/components/image,/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/responsivegrid,/libs/foundation/components/list,/apps/gnb/components/content/list,/apps/geometrixx/components/list,/libs/wcm/foundation/components/list,/libs/foundation/components/login,/libs/foundation/components/reference,/apps/acs-commons/components/content/column-control,/libs/foundation/components/search,/libs/foundation/components/sitemap,/libs/foundation/components/table,/libs/cq/tagging/components/tagcloud,/apps/foundation/components/text,/libs/wcm/foundation/components/text,/libs/wcm/foundation/components/textimage,/apps/foundation/components/textimage,/libs/foundation/components/title,/apps/geometrixx/components/title,/apps/geometrixx-outdoors/components/title,/libs/wcm/foundation/components/title,/libs/wcm/designimporter/components/title,/libs/foundation/components/video,group:ENB-Content,group:ENB-Navigation,group:ENB-Search,group:ENB-Tools,/apps/gnb/components/content/accordion,/apps/gnb/components/content/columncontrol]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </mainContent_par>
+        </stacked>
+    </jcr:content>
+</jcr:root>

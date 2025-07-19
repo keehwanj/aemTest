@@ -1,0 +1,12 @@
+/*
+	/apps/snb/components/search/contactsearch/clientlibs/css/responsive-480px.css
+*/
+@media (max-width: 480px) {
+  .contactsearch .form-group {
+    margin-bottom: 3px;
+  }
+
+  .contactsearch form {
+    margin-top: 0.5em;
+  }
+}

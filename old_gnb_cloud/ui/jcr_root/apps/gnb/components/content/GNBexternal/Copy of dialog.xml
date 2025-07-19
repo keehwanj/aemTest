@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="External"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <target
+            jcr:primaryType="cq:Widget"
+            fieldDescription="URL of web application to be included"
+            fieldLabel="Target application"
+            name="./target"
+            xtype="textfield"/>
+        <passparams
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Pass parameters"
+            inputValue="false"
+            name="./passparams"
+            type="checkbox"
+            xtype="selection"/>
+        <inclusion
+            jcr:primaryType="cq:Widget"
+            allowEmpty="true"
+            defaultValue="adaptive"
+            fieldLabel="Inclusion mode"
+            name="./inclusion"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <adaptive
+                    jcr:primaryType="nt:unstructured"
+                    text="Adaptive"
+                    value="adaptive"/>
+                <fixed
+                    jcr:primaryType="nt:unstructured"
+                    text="Fixed"
+                    value="fixed"/>
+            </options>
+        </inclusion>
+        <widthheight
+            jcr:primaryType="cq:Widget"
+            fieldDescription="for fixed size only"
+            fieldLabel="Width and Height"
+            xtype="sizefield"/>
+        <limit
+            jcr:primaryType="cq:Widget"
+            allowEmpty="true"
+            defaultValue="no"
+            fieldLabel="Rewrite limit"
+            name="./limit"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <nolimit
+                    jcr:primaryType="nt:unstructured"
+                    text="No limit"
+                    value="no"/>
+                <host
+                    jcr:primaryType="nt:unstructured"
+                    text="Host"
+                    value="host"/>
+                <off
+                    jcr:primaryType="nt:unstructured"
+                    text="Off"
+                    value="off"/>
+            </options>
+        </limit>
+    </items>
+</jcr:root>

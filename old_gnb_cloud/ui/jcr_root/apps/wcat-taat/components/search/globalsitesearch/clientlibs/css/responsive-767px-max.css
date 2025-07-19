@@ -1,0 +1,11 @@
+/*
+	/apps/wcat-taat/components/search/globalsitesearch/clientlibs/css/responsive-767px-max.css
+*/
+/* phone landscape */
+@media (max-width: 767px) {
+
+.globalsitesearch .col-sm-12 {
+
+	margin-top: 15px;
+}
+}

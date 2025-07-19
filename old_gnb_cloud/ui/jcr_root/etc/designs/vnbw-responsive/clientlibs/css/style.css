@@ -1,0 +1,33 @@
+body {
+    font: 100% Arial, Helvetica, sans-serif;
+    background: url(http://www2.gnb.ca/etc/designs/gnb/images/bkgr_span.gif) top left repeat-x;
+    margin: 0;
+    padding: 0;
+    /*text-align: center;*/
+    color: #000000;
+}
+#header {
+    background: url(http://www2.gnb.ca/etc/designs/gnb/images/header_bkgr.gif) transparent 0 0;
+    width: 950px;
+    height: 105px;
+    padding: 0px;
+    font: 90% Arial, Helvetica, sans-serif;
+    color: #555;
+    padding: 0px 10px 0 0;
+}
+
+/**START of logo.css**/
+#logoImg {
+    margin:0;
+    padding:0;
+    width: 515px;
+    height: 105px;
+    }
+#logo_area{
+    float:left;
+    margin:20px 0 0 30px;
+    width:150px;
+    height:70px;
+    cursor:pointer;
+}
+/**END of logo.css**/

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Credit Card"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <title-and-text
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Title and Text"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <element-name
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Element Name *"
+                                name="./name"
+                                required="{Boolean}true"
+                                validation="cq.formfieldname"/>
+                            <read-only
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./readOnly"
+                                text="Only show non-editable summary"
+                                value="true"/>
+                            <read-only-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./readOnly@Delete"/>
+                        </items>
+                    </column>
+                </items>
+            </title-and-text>
+            <types
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Credit Card Types"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <credit-card-types
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                class="foundation-layout-util-maximized-alt"
+                                fieldDescription="Enter values in the form {value}={text}.">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    name="./ccTypes"/>
+                            </credit-card-types>
+                        </items>
+                    </column>
+                </items>
+            </types>
+            <constraints
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Constraints"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <required
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Required"
+                                multiple="{Boolean}true"
+                                name="./required">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <ccType
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Credit Card Type"
+                                        value="credit-card-type"/>
+                                    <ccNumber
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Credit Card Number"
+                                        value="primary-account-number"/>
+                                    <nameOnCard
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Name on Card"
+                                        value="name-on-card"/>
+                                    <expiryDate
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Expiration Date"
+                                        value="expiration-date"/>
+                                    <ccv
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Security Code"
+                                        value="ccv"/>
+                                </items>
+                            </required>
+                        </items>
+                    </column>
+                </items>
+            </constraints>
+            <styling
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Styling"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <css
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="CSS"
+                                name="./css"/>
+                        </items>
+                    </column>
+                </items>
+            </styling>
+        </items>
+    </content>
+</jcr:root>

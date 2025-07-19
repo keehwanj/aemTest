@@ -1,0 +1,49 @@
+/**START of mainnav.css**/
+ul#mainnav {
+  list-style: none;
+  margin: 0;
+  padding-left: 20px;
+  background: url(/etc/designs/agnb-vgnb/clientlib/images/menu_bkgr.gif) no-repeat top left;
+  height: 41px;
+  width: 930px;
+  font-size: 100%;
+}
+
+ul#mainnav li {
+  background: transparent url('/etc/designs/agnb-vgnb/clientlib/images/divider.gif') no-repeat scroll right top;
+  float: left;
+  padding-right: 7px;
+}
+
+ul#mainnav li.last {
+  background: transparent !important;
+}
+
+ul#mainnav a:link,
+ul#mainnav a:visited {
+  background: transparent;
+  color: #000000;
+  float: left;
+  margin-left: 5px;
+  padding: 0 11px;
+  text-decoration: none;
+  line-height: 41px;
+}
+
+ul#mainnav a:hover {
+  background: url(/etc/designs/agnb-vgnb/clientlib/images/main_nav_span.gif) repeat-x;
+  color: #ffffff;
+}
+
+ul#mainnav li.active a,
+ul#mainnav li.active a:link,
+li.active ul#mainnav a:visited {
+  background: url(/etc/designs/agnb-vgnb/clientlib/images/main_nav_span.gif) repeat-x;
+  color: #ffffff;
+}
+
+ul#mainnav li a.active {
+  background: url(/etc/designs/agnb-vgnb/clientlib/images/main_nav_span.gif) repeat-x;
+  color: #ffffff;
+}
+/**END of mainnav.css**/

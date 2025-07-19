@@ -1,0 +1,89 @@
+/*
+	/apps/nbpc-cpnb/components/content/list_update/clientlibs/css/style.css
+ */
+/**START of list_update.css**/
+.list_update ul {
+  font-size: 98%;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+}
+
+.list_update {
+  margin-bottom: 20px;
+}
+
+.list_update li {
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+.list_update > div {
+  padding: 10px;
+}
+.list_update > div.bottomborder {
+  border-bottom: 1px solid #d3d3d3;
+  padding: 10px;
+}
+.list_update .greyarrow ul {
+  font-size: 98%;
+}
+.list_update div.padded {
+  padding: 10px 20px 10px 20px;
+}
+.list_update div.bluearrow li {
+  margin-bottom: 5px;
+  padding-left: 10px;
+  /*background:transparent url(/etc/designs/nbpc-bootstrap/clientlibs/images/arrow_blue.gif) no-repeat scroll 0 5px;*/
+  background: transparent
+    url(/etc/designs/nbpc-bootstrap/clientlibs/images/arrow_yellowgreen.gif)
+    no-repeat scroll 0 5px;
+}
+.list_update div.bluearrow li:hover {
+  background-image: url(/etc/designs/nbpc-bootstrap/clientlibs/images/arrow.gif);
+}
+.list_update div.greyarrow li {
+  background: transparent
+    url("/etc/designs/nbpc-bootstrap/clientlibs/images/arrow.gif") no-repeat
+    scroll 0 5px;
+  padding-left: 10px;
+}
+.list_update div.greyarrow li a,
+.list_update div.morelink a {
+  color: #555555;
+}
+.list_update div.greyarrow li a:hover,
+.list_update div.morelink a:hover {
+  color: #000000;
+}
+.list_update div.unstyled li,
+.list_update div.unstyled {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+.list_update div.unstyled li a:link,
+.list_update div.unstyled lia:visited {
+  color: #555;
+  font-size: 98%;
+  text-decoration: none;
+  padding: 0px 0 5px 0px;
+}
+.list_update div.unstyled li a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.list_update div.morelink {
+  font-size: 90%;
+}
+.list_update div.morelink a {
+  background: url("/etc/designs/nbpc-bootstrap/clientlibs/images/arrow.gif")
+    no-repeat scroll right 3px transparent;
+  padding-right: 10px;
+}
+.list_update > div.bottomborder div.morelink {
+  border-top: 1px solid #d3d3d3;
+  padding-top: 10px;
+}
+/**END of list_update.css**/

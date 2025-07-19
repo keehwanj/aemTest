@@ -1,0 +1,25 @@
+/*
+	/apps/wcat-taat/components/tools/deptName/clientlibs/css/responsive-1200px.css
+ */
+@media (min-width: 1200px) {  
+
+#topText{
+    margin: 0px 0px 0px 0px; 
+	width: 80%;
+    float:left;
+    font-size: 180%;
+    color: #000000;
+    font-weight: normal;
+    text-align: left;
+    position:relative;
+    top:0px;
+}
+span.headerText{
+	padding: 0px 0px 0px 0px; 
+}
+span#lastText.headerText{
+	padding: 0px 0px 0px 0px; 
+}
+
+
+}

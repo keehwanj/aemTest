@@ -1,0 +1,61 @@
+/*
+	START of apps/gnb/components/navigation/departmentnav/clientlibs/css/responsive-767px-max.css
+*/
+/* phone landscape */
+
+@media (max-width: 767) {
+  #mainContent .pageHeader {
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #000000;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #c6c7c9;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+
+  .navbar-custom .navbar-link {
+    color: #000000;
+  }
+  .navbar-custom .navbar-link:hover {
+    color: #ffffff;
+  }
+
+  .nav .open > a,
+  .nav .open > a:hover,
+  .nav .open > a:focus {
+    border-color: #b7babd;
+  }
+
+  .navbar-custom .navbar-nav > li > a:hover,
+  .navbar-custom .navbar-nav > li > a:focus {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(199, 191, 191, 1);
+    background: -webkit-linear-gradient(top, rgba(248, 248, 248, 0) 0%, rgba(199, 191, 191, 1) 100%);
+    background: linear-gradient(to bottom, rgba(248, 248, 248, 0) 0%, rgba(199, 191, 191, 1) 100%);
+  }
+
+  .departmentnav .navbar-form {
+    margin-top: 0px;
+    border-top: 0px solid transparent;
+  }
+}
+/*
+	END of apps/gnb/components/navigation/departmentnav/clientlibs/css/responsive-767px-max.css
+*/

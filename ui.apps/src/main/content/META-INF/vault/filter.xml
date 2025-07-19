@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/cnb_hfx/"/>
+    <filter root="/apps/agnb-vgnb/"/>
+    <filter root="/apps/courts/"/>
+    <filter root="/apps/enb/"/>
+    <filter root="/apps/foundation/"/>
+    <filter root="/apps/geometrixx-unlimited/"/>
+    <filter root="/apps/gnbstrap/"/>
+    <filter root="/apps/iemg-fluid/"/>
+    <filter root="/apps/nbfpc/"/>
+    <filter root="/apps/nbpc-cpnb/"/>
+    <filter root="/apps/snb/"/>
+    <filter root="/apps/spa/"/>
+    <filter root="/apps/snb-fluid/"/>
+    <filter root="/apps/vnbw/"/>
+    <filter root="/apps/gnb/"/>
+    <filter root="/apps/gnb-fluid/"/>
+    <filter root="/apps/dam/content/asseteditors/" />
+    <filter root="/apps/sling/" />
+    <filter root="/apps/cq/personalization/components/target/" />
+    <filter root="/apps/day-docs/components/text/" />
+    <filter root="/etc/designs/"/>
+    <filter root="/apps/cq/ui/widgets/source/widgets/wcm/FormActionSelection.js"/>
+    <filter root="/apps/wcm/mobile/components/simulator/simulator.jsp"/>
+</workspaceFilter>

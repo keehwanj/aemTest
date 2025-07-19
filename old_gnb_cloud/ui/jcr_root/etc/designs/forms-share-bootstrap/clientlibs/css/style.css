@@ -1,0 +1,19 @@
+/**
+	START /etc/designs/form-share-bootstrap/clientlibs/css/style.css
+**/
+form div.section {
+    padding-bottom: 10px;
+}
+
+
+form .radio label, form .checkbox label {
+    font-weight: 650 !important;
+}
+
+.form_leftcollabel label {
+   font-weight: 650 !important;
+}
+
+/**
+	END /etc/designs/form-share-bootstrap/clientlibs/css/style.css
+**/

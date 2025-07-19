@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Rent Increase Calculation 2"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Panel"
+                border="false"
+                title="General">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <current_rent
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Description for current rent"
+                        fieldLabel="Current rent"
+                        name="./current_rent"
+                        xtype="textfield"/>
+                    <clear_button
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Description for clear buttion"
+                        fieldLabel="Clear button"
+                        name="./clear_button"
+                        xtype="textfield"/>
+                    <rent_increase_by
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Description of Your rent will increase by"
+                        fieldLabel="Rent increase by"
+                        name="./rent_increase_by"
+                        xtype="textfield"/>
+                    <new_rent_not_exceed
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Description of New rent cannot exceed"
+                        fieldLabel="New rent cannot exceed"
+                        name="./new_rent_not_exceed"
+                        xtype="textfield"/>
+                </items>
+            </general>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,23 @@
+/*
+	/apps/gnb/components/search/nbpl_access_profile/clientlibs/css/style.css
+*/
+/**START of style.css **/
+.nbpl_form_login {
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #CCCCCC;
+    /*border-top: 1px solid #CCCCCC;*/
+    margin: 0px 0 10px 0;
+}
+
+.nbpl_form_login .form-control {
+    font-size: 13px;
+}
+
+.nbpl_form_login .has-feedback .form-control {
+    padding-right: 12px;
+}
+.nbpl_form_login p {
+	padding-top: 10px;
+	padding-left: 10px;        
+}
+/**END of style.css**/

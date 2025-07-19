@@ -1,0 +1,247 @@
+/* Design Styles for Navigation Elements */
+div#navSecondary {
+    background: url(../images/navigation/l2-li-bg.gif) 0px bottom no-repeat;
+    padding: 0 0 0 0;
+    margin: 5px 0px 40px 0px;
+}
+
+#navSecondary h3 {
+    background: url(../images/navigation/in-this-section.gif) 0 0 no-repeat;
+    height: 15px;
+    /*margin: -15px 0 0 0;*/
+    position: relative;
+    /*text-indent: -9000px;*/
+    width: 100%;
+    /*zoom: 1;*/
+}
+
+#navSecondary h3#searchOptions {
+    background-image: url(../images/navigation/search-options.gif);
+    width: 100px;
+}
+
+div#navSecondary ul {
+    margin: 4px 0 0 0;
+}
+
+#navSecondary li {
+    background-image: url("../images/subNavLevel1_bottom.gif");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    float: left;
+    padding: 5px 0 10px;
+    text-align: center;
+    text-transform: none;
+    width: 100%;
+}
+
+#navSecondary li.nobottom {
+    background-image: none;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    float: left;
+    padding: 5px 0 0;
+    text-align: center;
+    text-transform: none;
+    width: 100%;
+}
+
+#navSecondary li a {
+    display: block;
+    padding: 0 0 0 0;
+    zoom: 1;
+}
+
+#navSecondary li a:link,#navSecondary li a:visited {
+    color: #772432;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#navSecondary li.back a {
+    background-image: url(../images/navigation/arrow-l2-back.gif);
+}
+
+#navSecondary li a:hover {
+    color: #772432;
+}
+
+#navSecondary li.level2 {
+    background-image: url("../images/subNavLevel2_bg.png");
+    border: medium none;
+    padding: 5px 10px;
+    text-align: left;
+    width: 130px;
+}
+
+#navSecondary li.level3 {
+    margin-left: 5px;
+    background-image: none;
+    border: medium none;
+    font-style: italic;
+    padding: 5px 10px;
+    text-align: left;
+    width: 115px;
+}
+
+#navSecondary li.level2 a {
+    text-align: left;
+}
+
+#navSecondary li a.parent {
+    color: #000;
+    margin: 0 0 5px 0;
+}
+
+div.subNavLevel2Top {
+    background-image: url("../images/subNavLevel2_top.gif");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    float: left;
+    height: 5px;
+    width: 150px;
+}
+
+div.subNavLevel2Bottom {
+    background-image: url("../images/subNavLevel2_bottom.gif");
+    background-position: left top;
+    background-repeat: no-repeat;
+    float: left;
+    height: 5px;
+    width: 150px;
+}
+
+div.subNavLevel2 {
+    background-image: url("../images/subNavLevel2_bg.png");
+    background-repeat: repeat-y;
+    float: left;
+    width: 150px;
+}
+
+#navSecondary ul ul {
+    background: #EAE7E0;
+    margin: 0px 0 0px 0;
+    /*IE-bug*/
+    background-color:white;       
+}
+
+#navSecondary ul ul li {
+    background: none;
+    border: none;
+    padding: 5px 0 5px 0;
+}
+
+#navSecondary ul ul li a {
+    background: none;
+    padding: 0;
+}
+
+/** Main Navigation **/
+div.mainnav {
+    background: none repeat scroll 0 0 #772432;
+    clear: both;
+    height: 30px;
+    margin: 0 auto;
+    width: 959px;
+}
+
+.mainnav {
+    background-color: transparent;
+    cursor: pointer;
+    /*float: left;*/
+    font-size: 85%;
+    width: 959px;
+}
+
+.mainnav .root {
+    border-right: 1px solid white;
+    color: #FAE1AF;
+    float: left;
+    font-size: 150%;
+    margin: 9px 1px 5px 0;
+    padding: 0 8px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.mainnav .last {
+    border-right: medium none;
+}
+
+.mainnav a:link {
+    color: #FAE1AF;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.mainnav a:visited {
+    color: #FAE1AF;
+    text-decoration: none;
+}
+
+.mainnav a:hover {
+    color: #fff;
+    /*background-color: #def ;*/
+}
+
+.mainnav a.sel {
+    color: #fff;
+}
+
+/** Search menu bar **/
+.search {
+    background: none no-repeat scroll 0 0 transparent
+}
+
+#searchContainer {
+    height: 30px;
+    padding: 5px 10px 0 0;
+    font-size: 1.2em;
+}
+
+/** .home is defined in custom page properties **/
+#searchContainer.home {
+    background: url("../images/search_bg.gif") no-repeat scroll 0 0
+        transparent;
+}
+
+
+#searchContainer a,#searchContainer a.link {
+    /*color: #003366;*/
+    color: #669999;
+    font-weight: bolder;
+}
+
+.searchField {
+    display: block;
+    float: right;
+    width: 20%;
+    margin: 2px 0 0 50px;
+}
+
+.searchLabel {
+    font-size: 8.5pt;
+    font-weight: bold;
+}
+
+.searchText {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.contactUs {
+    border-left: 1px solid #DDDDDD;
+    display: block;
+    float: right;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+.languageOption {
+    border-right: 1px solid #DDDDDD;
+    display: block;
+    float: right;
+    margin: 5px 2px;
+    padding: 0 10px 0 0;
+}

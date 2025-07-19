@@ -1,0 +1,12 @@
+# Entries will be compared against the "Host" request header
+# and an optional request URL prefix.
+#
+# Examples:
+#
+#   www.company.com
+#   intranet.*
+#   myhost:8888/mysite
+"${AGNB_VGNB_DOMAIN}"
+"${AGNB_VGNB_ALT_DOMAIN}"
+"${AGNB_VGNB_ALT_DOMAIN_1}"
+"${AGNB_VGNB_ALT_DOMAIN_2}"

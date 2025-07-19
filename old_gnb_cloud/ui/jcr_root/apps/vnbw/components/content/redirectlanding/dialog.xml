@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="NB Women's Council Redirect Landing Dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <english
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="English"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <redirect_E
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="ex) http://www.nbwomenscouncil.ca/content/vnbw-vfnb/en.html"
+                        fieldLabel="English target URL"
+                        name="./redirect_E"
+                        xtype="textfield"/>
+                    <condition_E
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="ex) nbwomenscouncil"
+                        fieldLabel="English Condition"
+                        name="./condition_E"
+                        xtype="textfield"/>
+                </items>
+            </english>
+            <french
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="French"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <redirect_F
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="ex) http://www.conseildesfemmesnb.ca/content/vnbw-vfnb/fr.html"
+                        fieldLabel="French target  URL"
+                        name="./redirect_F"
+                        xtype="textfield"/>
+                    <condition_F
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="ex) conseildesfemmesnb"
+                        fieldLabel="French Condition"
+                        name="./condition_F"
+                        xtype="textfield"/>
+                </items>
+            </french>
+            <other
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Other"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <redirect_o
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="ex) http://www.conseildesfemmesnb.ca/content/vnbw-vfnb/fr.html"
+                        fieldLabel="Other target  URL"
+                        name="./redirect_o"
+                        xtype="textfield"/>
+                </items>
+            </other>
+        </items>
+    </items>
+</jcr:root>

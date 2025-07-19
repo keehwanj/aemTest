@@ -1,0 +1,106 @@
+/* Styles for Layouts other than the home page */
+body {
+    height: auto;
+}
+
+#container {
+    height: auto;
+    border-top: 0px solid #C6C2BD;
+    clear: both;
+    margin: 0 auto 0;
+    padding: 0 0 0;
+    position: relative;
+    width: 959px;
+}
+
+#container.yellow {
+    background: url("../images/logo_bg_yellow.gif") no-repeat scroll 0 0
+        transparent;
+}
+
+#container.tan {
+    background: url("../images/logo_bg_tan.gif") no-repeat scroll 0 0
+        transparent;
+}
+
+#container.green {
+    background: url("../images/logo_bg_green.gif") no-repeat scroll 0 0
+        transparent;
+}
+
+#container.blue {
+    background: url("../images/logo_bg_blue.gif") no-repeat scroll 0 0
+        transparent;
+}
+
+#container.red {
+    background: url("../images/logo_bg.gif") no-repeat scroll 0 0
+        transparent;
+}
+
+#container.home {
+    background: url("../images/logo_home_bg.jpg") no-repeat scroll 0 0
+        transparent;
+}
+
+#header { /*background: none repeat scroll 0 0 white;*/
+    position: relative;
+    z-index: 100;
+}
+
+#headerContent {
+    margin: 0 auto;
+    position: relative;
+    width: 959px;
+}
+
+#contentArea { /*background: none repeat scroll 0 0 white;*/
+    border-top: 0px solid white;
+    position: relative;
+    width: 100%;
+}
+
+#content { /*background: none no-repeat scroll 0 0 transparent;*/
+    border-top: 0px solid #C6C2BD;
+    clear: both;
+    margin: 0 auto 0;
+    padding: 0 0 0;
+    position: relative;
+    width: 959px;
+    /* overflow: hidden */;
+}
+
+/* Stacked Template Content Area */
+#mainContent.stacked {
+    width: 959px;
+}
+
+/* End Stacked Template Content Area */
+    /* Right Template Content Area */
+#leftContent.rightcontent {
+    float: left;
+    width: 150px;
+    /*display: block; */
+    margin: 94px 35px 0;
+    /* padding: 0;*/ 
+    /* position: relative;*/ 
+    /* text-align: center;*/
+}
+
+#mainContent.rightcontent {
+    float: left;
+    width: 725px;
+}
+
+/* End Right Template Content Area */
+#footer {
+    background: none repeat scroll 0 0 white;
+    position: relative;
+    z-index: 100;
+}
+
+#footerContent {
+    margin: 0 auto;
+    position: relative;
+    width: 959px;
+}

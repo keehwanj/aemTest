@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="nt:unstructured"
+        title="List"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Widget"
+                border="false"
+                height=""
+                title="General"
+                width=""
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <hideTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Hide Title"
+                        inputValue="false"
+                        name="./hideTitle"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <hideDescription
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Hide Decsription"
+                        inputValue="false"
+                        name="./hideDescription"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <hideReadMore
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Hide arrow"
+                        inputValue="false"
+                        name="./hideReadMore"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <hideNumber
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Hide Number"
+                        inputValue="false"
+                        name="./hideNumber"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </general>
+            <destinations
+                jcr:primaryType="cq:Widget"
+                title="Destinations"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <destinations
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new destination."
+                        fieldLabel="Destinations"
+                        name="./destinations"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="pathfield"/>
+                    </destinations>
+                </items>
+            </destinations>
+            <imagePaths
+                jcr:primaryType="cq:Widget"
+                title="Image Paths"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <imagePaths
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new image."
+                        fieldLabel="Image Paths"
+                        name="./images"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="pathfield"/>
+                    </imagePaths>
+                </items>
+            </imagePaths>
+            <titles
+                jcr:primaryType="cq:Widget"
+                title="Titles"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <titles
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new title."
+                        fieldLabel="Titles"
+                        name="./titles"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </titles>
+                </items>
+            </titles>
+            <descriptions
+                jcr:primaryType="cq:Widget"
+                title="Descriptions"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <descriptions
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new description."
+                        fieldLabel="Descriptions"
+                        name="./descriptions"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </descriptions>
+                </items>
+            </descriptions>
+        </items>
+    </items>
+</jcr:root>

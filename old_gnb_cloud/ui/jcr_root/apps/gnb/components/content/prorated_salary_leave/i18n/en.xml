@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    cq:lastReplicated="{Date}2013-12-16T22:27:22.833-04:00"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:language="en"
+    jcr:mixinTypes="[cq:ReplicationStatus,mix:language]"
+    jcr:primaryType="sling:Folder">
+    <button_1_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="button_1_Text"
+        sling:message="Calculate"/>
+    <button_2_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="button_2_Text"
+        sling:message="Reset form"/>
+    <error_1_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="error_1_Text"
+        sling:message="Please enter your gross bi-weekly pay (format 1962.00)"/>
+    <error_2_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="error_2_Text"
+        sling:message="Please enter the numbers of days you want to take off (1-40)"/>
+    <error_3_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="error_3_Text"
+        sling:message="Please enter the numbers of pays to have deductions made (1-26)"/>
+    <title_1_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="title_1_Text"
+        sling:message="Gross Bi-Weekly Pay"/>
+    <title_2_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="title_2_Text"
+        sling:message="Days to Take Off"/>
+    <title_3_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="title_3_Text"
+        sling:message="Number of Pays"/>
+    <title_4_Text
+        cq:lastReplicated="{Date}2013-12-16T22:27:24.393-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="title_4_Text"
+        sling:message="Deduction per pay"/>
+</jcr:root>

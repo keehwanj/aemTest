@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Rent Increase Calculation 1"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Panel"
+                border="false"
+                title="General">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <rent_amount
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Description for Rent amount prior to my rent increase"
+                        fieldLabel="Rent amount prior to my rent increase"
+                        name="./rent_amount"
+                        xtype="textfield"/>
+                    <rent_increased_date
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Description for My rent increased on (yyyy/mm/dd):"
+                        fieldLabel="My rent increased on (yyyy/mm/dd):"
+                        name="./rent_increased_date"
+                        xtype="textfield"/>
+                    <new_rent_amount
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Description of New rent amount:"
+                        fieldLabel="New rent amount:"
+                        name="./new_rent_amount"
+                        xtype="textfield"/>
+                    <confirm_note
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="I confirm that I have paid my rent in full and owe no arrears."
+                        fieldLabel="Confirmation note"
+                        name="./confirm_note"
+                        xtype="textarea"/>
+                    <clear_button
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Description of Clear button"
+                        fieldLabel="Clear button"
+                        name="./clear_button"
+                        xtype="textfield"/>
+                </items>
+            </general>
+            <result
+                jcr:primaryType="cq:Panel"
+                border="false"
+                title="Result">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <max_rent
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Description for &quot;The maximum rent increase is:&quot;"
+                        fieldLabel="Maximum rent increase"
+                        name="./max_rent"
+                        xtype="textfield"/>
+                    <overpaid
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Description for &quot;Your overpaid&quot;"
+                        fieldLabel="Your overpaid"
+                        name="./overpaid"
+                        xtype="textfield"/>
+                    <months
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Description of &quot;Months&quot;"
+                        fieldLabel="Months"
+                        name="./months"
+                        xtype="textfield"/>
+                    <credit_owed
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Description of &quot;Credit owed&quot;"
+                        fieldLabel="Credit owed"
+                        name="./credit_owed"
+                        xtype="textfield"/>
+                    <payment_schedule
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Description of &quot;Your payment schedule will be :&quot;"
+                        fieldLabel="Payment schedulet"
+                        name="./payment_schedule"
+                        xtype="textfield"/>
+                </items>
+            </result>
+        </items>
+    </items>
+</jcr:root>

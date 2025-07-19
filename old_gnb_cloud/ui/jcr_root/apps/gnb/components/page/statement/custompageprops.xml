@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Panel"
+            title="General">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <type
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Statement"
+                    fieldLabel="Type"
+                    name="./type"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <statement
+                            jcr:primaryType="nt:unstructured"
+                            text="statement"
+                            value="statement"/>
+                        <speech
+                            jcr:primaryType="nt:unstructured"
+                            text="speech"
+                            value="speech"/>
+                    </options>
+                </type>
+                <date
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Select Date"
+                    name="./onTime"
+                    xtype="datetime"/>
+            </items>
+        </tab1>
+        <tab2
+            jcr:primaryType="cq:Panel"
+            title="English">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <en_title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./enTitle"
+                    xtype="textfield"/>
+                <en_description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    name="./enDescription"
+                    xtype="textarea"/>
+                <en_minister_name
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Minister Name"
+                    name="./enMinisterName"
+                    xtype="textfield"/>
+                <en_department
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Associated Department(s)"
+                    name="./enDepartment"
+                    namespaces="[active-gnb-eng,active-keywords_eng]"
+                    xtype="tags"/>
+                <en_body
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Body"
+                    name="./enArticleBody"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </en_body>
+            </items>
+        </tab2>
+        <tab3
+            jcr:primaryType="cq:Panel"
+            title="French">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <fr_title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./frTitle"
+                    xtype="textfield"/>
+                <fr_description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    name="./frDescription"
+                    xtype="textarea"/>
+                <fr_minister_name
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Minister Name"
+                    name="./frMinisterName"
+                    xtype="textfield"/>
+                <fr_department
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Associated Department(s)"
+                    name="./frDepartment"
+                    namespaces="[active-gnb-fra,active-keywords_fra]"
+                    popupHeight="300"
+                    popupWidth="500"
+                    xtype="tags"/>
+                <fr_body
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Body"
+                    name="./frArticleBody"
+                    xtype="richtext">
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://]"/>
+                    </htmlRules>
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="[sourceedit,specialchars]"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </fr_body>
+            </items>
+        </tab3>
+    </items>
+</jcr:root>

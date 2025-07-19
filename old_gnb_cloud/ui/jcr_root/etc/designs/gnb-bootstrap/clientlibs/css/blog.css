@@ -1,0 +1,4831 @@
+/*START of BLOG
+/etc/designs/gnb-bootstrap/clientlibs/css/blog.css
+*/
+.jcarousel-skin-cq-cc {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #151515;
+    border: 1px solid #808080;
+    opacity: 1;
+}
+
+.jcarousel-skin-cq-cc .jcarousel-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.jcarousel-skin-cq-cc .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+/*
+.jcarousel-skin-cq-cc .jcarousel-clip {
+    overflow: hidden;
+}
+*/
+
+.jcarousel-skin-cq-cc .jcarousel-container ul {
+    width: 20000em;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel-skin-cq-cc .jcarousel-container li {
+    float: left;
+    width: 90px;
+    height: 90px;
+}
+
+.jcarousel-skin-cq-cc .jcarousel-container li:hover,
+.jcarousel-skin-cq-cc .jcarousel-container li:focus {
+    /*border: 1px solid transparent;*/
+    cursor: pointer;
+}
+
+.jcarousel-skin-cq-cc .jcarousel-container li.jcarousel-item-placeholder {
+}
+
+
+/* HORIZONTAL */
+.jcarousel-skin-cq-cc .jcarousel-container-horizontal {
+    width: 270px;
+    height: 90px;
+    margin: 2px 20px;
+    /* left: 20px; */
+}
+
+/*
+.jcarousel-skin-cq-cc .jcarousel-clip-horizontal {
+    width:  268px;
+    height: 86px;
+    padding: 2px;
+}
+*/
+
+.jcarousel-skin-cq-cc .jcarousel-container-horizontal li {
+    padding-bottom: 4px;
+    /*margin-right: 1px;*/
+}
+
+.jcarousel-skin-cq-cc .jcarousel-container-horizontal li img {
+    padding: 4px;
+}
+
+.jcarousel-skin-cq-cc .jcarousel-direction-rtl .jcarousel-container-horizontal li {
+	/*margin-left: 7px;*/
+	/*margin-right: 0;*/
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-cq-cc .jcarousel-next-horizontal {
+    position: absolute;
+    top: 34px;
+    right: 2px;
+
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    /*background: transparent url(/etc/clientlibs/foundation/personalization/jcarousel/jcarousel/controls-horizontal.png) no-repeat 0 0;*/
+    background: transparent url(/etc/clientlibs/foundation/personalization/jcarousel/resources/right.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-cq-cc .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    left: 5px;
+    right: auto;
+    background: transparent url(/etc/clientlibs/foundation/personalization/jcarousel/resources/right.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-cq-cc .jcarousel-next-horizontal:hover,
+.jcarousel-skin-cq-cc .jcarousel-next-horizontal:focus {
+
+}
+
+.jcarousel-skin-cq-cc .jcarousel-next-horizontal:active {
+
+}
+
+.jcarousel-skin-cq-cc .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-cq-cc .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-cq-cc .jcarousel-next-disabled-horizontal:focus,
+.jcarousel-skin-cq-cc .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+}
+
+.jcarousel-skin-cq-cc .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 35px;
+    left: 2px;
+
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+    background: transparent url(/etc/clientlibs/foundation/personalization/jcarousel/resources/left.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-cq-cc .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 5px;
+    background: transparent url(/etc/clientlibs/foundation/personalization/jcarousel/resources/left.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-cq-cc .jcarousel-prev-horizontal:hover,
+.jcarousel-skin-cq-cc .jcarousel-prev-horizontal:focus {
+}
+
+.jcarousel-skin-cq-cc .jcarousel-prev-horizontal:active {
+}
+
+.jcarousel-skin-cq-cc .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-cq-cc .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-cq-cc .jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-skin-cq-cc .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+}
+
+
+.jcarousel-skin-cq-cc .jcarousel-item-selected {
+
+}
+
+.jcarousel-skin-cq-cc .jcarousel-item-selected-marker {
+    border: 4px solid #fff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 0 !important;
+}
+/*
+ * ADOBE CONFIDENTIAL
+ * ___________________
+ *
+ *  Copyright 2012 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+div.image {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+div.image img {
+    display: block;
+}
+div.image small {
+    display: block;
+}
+
+div.textimage div.image {
+    float: left;
+    margin-bottom: 8px !important;
+}
+
+div.textimage div.text .cq-placeholder {
+    height: 1.875rem;
+}
+
+div.textimage div.clear {
+    clear: both;
+}
+div.search {
+    padding:0 1px 0 0;
+}
+
+div.searchRight {
+    border-left: 1px solid #dddddd;
+    float: right;
+    width: 150px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+div.searchTrends {
+    text-align: justify;
+}
+
+div.searchRight p {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+div.search span.icon img {
+    width: 16px;
+    height: 16px;
+}
+div.search span.icon  {
+    padding: 0 2px 8px 0;
+    background: url(../default/images/icons/default.gif) no-repeat
+}
+div.search span.icon.type_doc  {
+    background: url(../default/images/icons/doc.gif) no-repeat
+}
+div.search span.icon.type_eps  {
+    background: url(../default/images/icons/eps.gif) no-repeat
+}
+div.search span.icon.type_gif  {
+    background: url(../default/images/icons/zip.gif) no-repeat
+}
+div.search span.icon.type_jpg  {
+    background: url(../default/images/icons/jpg.gif) no-repeat
+}
+div.search span.icon.type_pdf  {
+    background: url(../default/images/icons/pdf.gif) no-repeat
+}
+div.search span.icon.type_ppt  {
+    background: url(../default/images/icons/ppt.gif) no-repeat
+}
+div.search span.icon.type_tif  {
+    background: url(../default/images/icons/tif.gif) no-repeat
+}
+div.search span.icon.type_txt  {
+    background: url(../default/images/icons/txt.gif) no-repeat
+}
+div.search span.icon.type_xls  {
+    background: url(../default/images/icons/xls.gif) no-repeat
+}
+div.search span.icon.type_zip  {
+    background: url(../default/images/icons/zip.gif) no-repeat
+}
+
+#profile_view .form_leftcol {
+    float: left;
+    width: 120px;
+}
+
+#profile_view .form_rightcol {
+    float: left;
+    clear: none;
+}
+
+#profile_view div.section {
+    padding-bottom: 0 !important;
+}
+
+/*#profile .form_leftcollabel {*/
+    /*border-bottom: 1px solid #efefef;*/
+    /*text-transform: uppercase;*/
+    /*font-size: 13px;*/
+    /*line-height: 14px;*/
+    /*color: #006699;*/
+    /*margin-bottom: 2px;*/
+    /*padding-bottom: 5px;*/
+    /*padding-top: 10px;*/
+    /*display: block;*/
+    /*width: 100%;*/
+/*}*/
+
+
+ins.textAdded {
+    color: #0c0;
+}
+del.textRemoved {
+    color: #c00;
+}
+img.imageAdded {
+    border: 2px solid #0c0;
+}
+img.imageRemoved {
+    border: 2px solid #c00;
+}
+
+div.image {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+div.image img {
+    display: block;
+}
+div.image small {
+    display: block;
+}
+
+div.download div.item {
+    clear: both;
+    margin: 0 0 8px 0;
+}
+div.download span.icon img {
+    width: 16px;
+    height: 16px;
+}
+div.download span.icon  {
+    float: left;
+    padding: 0 8px 8px 0;
+    background: url(../default/images/icons/default.gif) no-repeat
+}
+div.download span.icon.type_doc  {
+    background: url(../default/images/icons/doc.gif) no-repeat
+}
+div.download span.icon.type_eps  {
+    background: url(../default/images/icons/eps.gif) no-repeat
+}
+div.download span.icon.type_gif  {
+    background: url(../default/images/icons/zip.gif) no-repeat
+}
+div.download span.icon.type_jpg  {
+    background: url(../default/images/icons/jpg.gif) no-repeat
+}
+div.download span.icon.type_pdf  {
+    background: url(../default/images/icons/pdf.gif) no-repeat
+}
+div.download span.icon.type_ppt  {
+    background: url(../default/images/icons/ppt.gif) no-repeat
+}
+div.download span.icon.type_tif  {
+    background: url(../default/images/icons/tif.gif) no-repeat
+}
+div.download span.icon.type_txt  {
+    background: url(../default/images/icons/txt.gif) no-repeat
+}
+div.download span.icon.type_xls  {
+    background: url(../default/images/icons/xls.gif) no-repeat
+}
+div.download span.icon.type_zip  {
+    background: url(../default/images/icons/zip.gif) no-repeat
+}
+
+div.carousel {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.cq-carousel {
+    position: relative;
+    width: 940px;
+    height: 270px;
+    overflow: hidden;
+}
+.cq-carousel var {
+    display: none;
+}
+
+.cq-carousel-banner-item {
+    width: 940px;
+    height: 270px;
+    left: 1000px;
+    position: absolute;
+    top: 0;
+    background-color: #eee;
+    overflow: hidden;
+}
+.cq-carousel-banner-item img {
+    width: 940px;
+    height: 270px;
+    background: no-repeat center center;
+}
+
+.par .cq-carousel-banner-item img {
+    width: 700px;
+    height: 245px;
+    background: no-repeat center center;
+}
+.par .cq-carousel {
+    width: 700px;
+    height: 245px;
+}
+.par .cq-carousel-banner-item {
+    width: 700px;
+    height: 245px;
+}
+
+.cq-carousel-banner-item h3, .cq-carousel-banner-item p {
+    padding: 10px;
+}
+
+.cq-carousel-banner {
+    position: absolute;
+}
+
+.cq-carousel-banner-switches,
+.cq-carousel-banner-switches-tl,
+.cq-carousel-banner-switches-tc,
+.cq-carousel-banner-switches-tr,
+.cq-carousel-banner-switches-bl,
+.cq-carousel-banner-switches-bc,
+.cq-carousel-banner-switches-br {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.cq-carousel-banner-switches {
+    display: none;
+}
+.cq-carousel-banner-switches-tl {
+    top: 0;
+    left: 0;
+}
+.cq-carousel-banner-switches-tc {
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+.cq-carousel-banner-switches-tr {
+    top: 0;
+    left: 0;
+    text-align: right;
+}
+.cq-carousel-banner-switches-bl {
+    bottom: 0;
+    left: 0;
+}
+.cq-carousel-banner-switches-bc {
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+.cq-carousel-banner-switches-br {
+    bottom: 0;
+    left: 0;
+    text-align: right;
+}
+
+.cq-carousel-banner-switch {
+    display: inline-block;
+    margin: 8px;
+    padding: 0;
+}
+.cq-carousel-banner-switch-br {
+    position: absolute;
+    margin: 0;
+    padding:0;
+    bottom: 0;
+    right: 8px;
+}
+.cq-carousel-banner-switch-bl {
+    position: absolute;
+    margin: 0;
+    padding:0;
+    bottom: 0;
+    left: 8px;
+}
+
+.cq-carousel-controls a {
+    position: absolute;
+    width: 24px;
+    height: 48px;
+    top: 111px; /* 270/2 - 24 */
+    background: url("../default/images/carousel/controls.png") no-repeat scroll 0 0 transparent;
+    visibility: hidden;
+}
+.cq-carousel-controls a.cq-carousel-active {
+    visibility: visible;
+}
+a.cq-carousel-control-prev {
+    left: 0;
+    background-position: -24px 0;
+}
+a.cq-carousel-control-prev:hover {
+    left: 0;
+    background-position: -72px 0;
+}
+a.cq-carousel-control-next {
+    right: 0;
+}
+a.cq-carousel-control-next:hover {
+    right: 0;
+    background-position: -48px 0;
+}
+
+.cq-carousel-banner-switch a {
+    display: inline-block;
+    background: url("../default/images/carousel/switcher.png") no-repeat scroll 0 0 transparent;
+}
+.cq-carousel-banner-switch a img {
+    width: 25px;
+    height: 25px;
+    vertical-align:top;
+}
+
+.cq-carousel-banner-switch a.cq-carousel-active, .cq-carousel-banner-switch a:hover {
+    background-position: -25px 0;
+}
+
+.cq-carousel-banner-switch li {
+    background: none !important;
+    display: inline-block;
+    list-style: none;
+    float:left;
+}
+
+.form_section {
+    width: 300px;
+    float: none;
+}
+
+.form_section form {
+    float: left;
+    width: 300px;
+}
+
+.form_section fieldset {
+    width: 300px;
+    float: left;
+}
+
+.form_section .input_box1 {
+    background: url(../default/images/input_box.gif) no-repeat 0 0;
+    width: 185px;
+    height: 23px;
+    float: left;
+}
+
+.form_section input {
+    width: 175px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    background: none;
+    padding-top: 4px;
+    font-size: 11px;
+    color: #999;
+}
+
+.form_section input.sign_up {
+    background: url(../default/images/sign_up_btn.gif) no-repeat 0 0;
+    width: 82px;
+    height: 23px;
+    float: left;
+    margin-left: 5px;
+    display: inline;
+    cursor: pointer;
+}
+
+form .form_row {
+    display: block;
+    font-size: 13px;
+    line-height: 24px;
+    color: #666;
+    clear: both;
+}
+
+form .form_field_checkbox, form .form_field_radio {
+    margin-left: 20px;
+}
+
+form .form_field_text, form .form_field_textarea {
+    background:url("../default/images/social/fieldbg.gif") repeat-x scroll center top #FFFFFF;
+    border-color:#7C7C7C #C3C3C3 #DDDDDD;
+    border-style:solid;
+    border-width:1px;
+    color:#333333;
+    font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Helvetica,sans-serif;
+    font-size:100%;
+    margin:0;
+    padding:2px;
+}
+
+form .form_field_textarea {
+    width: 698px;
+}
+
+form .form_row_description {
+    font-size: 11px;
+    line-height: 12px;
+    clear: both;
+    color: #666666;
+}
+
+form .form_rightcol {
+    clear: both;
+}
+
+form .form_rightcolnobr {
+    clear: none;
+    float: right;
+    margin-bottom: 15px;
+}
+
+form .form_rightcolnooverflow {
+    overflow: hidden;
+}
+
+form .form_rightcolmark {
+    color: #f00;
+    font-weight: bold;
+}
+
+form .title {
+    padding-top: 10px;
+}
+
+form .form_leftcolmark {
+    color: #f00;
+}
+
+form .form_leftcollabel {
+    float: left;
+    font-weight: bold;
+}
+
+form .form_leftcolmark {
+    float: left;
+    padding-left: 2px;
+    font-weight: bold;
+}
+
+form .form_leftcolnobr {
+    float: left;
+    margin-bottom: 15px;
+}
+
+form .form_captcha_input {
+    float: left;
+    width: 170px;
+}
+
+form .form_captcha_input input {
+    width: 170px;
+}
+
+form .form_captcha_img {
+    float: left;
+    padding-left: 16px;
+}
+
+form .form_captcha_refresh {
+    float: right;
+}
+
+form .form_captchatimer {
+    float: left;
+    border: 1px solid #CCCCCC;
+}
+
+form .form_captchatimer_bar {
+    float: left;
+    background-color:#CCCCCC;
+    height: 8px;
+}
+
+form .customer_survey_submit {
+    float: right;
+    margin-top: 28px;
+}
+
+form .form_field_text {
+    width: 334px;
+    margin-bottom: 4px;
+}
+
+form .form_field_text.form_field_multivalued {
+    width: 314px;
+}
+
+form .form_field_select {
+    width: 340px;
+}
+
+form .form_error {
+    color: #f00;
+    font-weight: bold;
+}
+
+form div.section {
+    padding-bottom: 10px;
+}
+
+form div.colctrl.section {
+    padding-bottom: 0 !important;
+}
+
+/* multiple resource checkbox */
+form SPAN.mr_write {
+    display:inline-block;
+    width:16px;
+    text-align:right;
+    vertical-align:top;
+}
+
+/*
+ * address
+ */
+
+form div.address div.form_row {
+    margin-bottom: 12px;
+}
+
+form div.form_address_state {
+    display: inline-block;
+}
+
+form input.form_address_state {
+    width: 204px;
+}
+
+form div.form_address_zip {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+form input.form_address_zip {
+    width: 80px;
+}
+
+/*
+ * creditcard
+ */
+
+form div.creditcard div.form_row {
+    margin-bottom: 12px;
+}
+
+form div.form_cc_expiry_month,
+form div.form_cc_expiry_year,
+form div.form_cc_security_code {
+    display: inline-block;
+}
+
+form input.form_cc_expiry_month,
+form input.form_cc_expiry_year {
+    width: 40px;
+}
+
+form div.form_cc_expiry_separator {
+    display: inline-block;
+    font-size: 150%;
+    padding-right: 6px;
+}
+
+form input.form_cc_ccv {
+    width: 70px;
+}
+
+
+/* the following jQuery UI css are included in the case when CQjquery class cannot be added */
+/*!
+ * jQuery UI CSS Framework 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Helvetica,%20Arial,%20sans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=2px&bgColorHeader=dddddd&bgTextureHeader=03_highlight_soft.png&bgImgOpacityHeader=50&borderColorHeader=dddddd&fcHeader=444444&iconColorHeader=0073ea&bgColorContent=ffffff&bgTextureContent=01_flat.png&bgImgOpacityContent=75&borderColorContent=dddddd&fcContent=444444&iconColorContent=ff0084&bgColorDefault=f6f6f6&bgTextureDefault=03_highlight_soft.png&bgImgOpacityDefault=100&borderColorDefault=dddddd&fcDefault=0073ea&iconColorDefault=666666&bgColorHover=0073ea&bgTextureHover=03_highlight_soft.png&bgImgOpacityHover=25&borderColorHover=0073ea&fcHover=ffffff&iconColorHover=ffffff&bgColorActive=ffffff&bgTextureActive=02_glass.png&bgImgOpacityActive=65&borderColorActive=dddddd&fcActive=ff0084&iconColorActive=454545&bgColorHighlight=ffffff&bgTextureHighlight=01_flat.png&bgImgOpacityHighlight=55&borderColorHighlight=cccccc&fcHighlight=444444&iconColorHighlight=0073ea&bgColorError=ffffff&bgTextureError=01_flat.png&bgImgOpacityError=55&borderColorError=ff0084&fcError=222222&iconColorError=ff0084&bgColorOverlay=eeeeee&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=0&opacityOverlay=80&bgColorShadow=aaaaaa&bgTextureShadow=01_flat.png&bgImgOpacityShadow=0&opacityShadow=60&thicknessShadow=4px&offsetTopShadow=-4px&offsetLeftShadow=-4px&cornerRadiusShadow=0px
+ */
+
+
+/* Component containers
+----------------------------------*/
+.ui-widget { font-family: Helvetica, Arial, sans-serif; font-size: 1.1em; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Helvetica, Arial, sans-serif; font-size: 1em; }
+.ui-widget-content { border: 1px solid #dddddd; background: #ffffff  50% 50% repeat-x;  }
+.ui-widget-content a { color: #444444; }
+
+.ui-widget-header { border: 1px solid #dddddd; background: #dddddd 50% 50% repeat-x; font-weight: bold; }
+
+.ui-widget-header a { color: #444444; }
+
+/* Interaction states
+----------------------------------*/
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #dddddd; background: #f6f6f6  50% 50% repeat-x; font-weight: bold; color: #0073ea; }
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #0073ea; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #0073ea; background: #0073ea 50% 50% repeat-x; font-weight: bold; color: #ffffff; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #ffffff; text-decoration: none; }
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #dddddd; background: #ffffff 50% 50% repeat-x; font-weight: bold; color: #ff0084; }
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #ff0084; text-decoration: none; }
+.ui-widget :active { outline: none; }
+
+
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+@font-face {
+    font-family: "SCFIcons";
+    src: url("/etc/clientlibs/social/commons/scf/res/AdobeIcons-74324ff07761daf4c31d04544b133fef.eot");
+    src: url("/etc/clientlibs/social/commons/scf/res/AdobeIcons-74324ff07761daf4c31d04544b133fef.eot?#iefix") format("embedded-opentype"), url("/etc/clientlibs/social/commons/scf/res/AdobeIcons-74324ff07761daf4c31d04544b133fef.woff") format("woff"), url("/etc/clientlibs/social/commons/scf/res/AdobeIcons-74324ff07761daf4c31d04544b133fef.ttf") format("truetype"), url("/etc/clientlibs/social/commons/scf/res/icons/AdobeIcons-74324ff07761daf4c31d04544b133fef.svg?#webfont") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.scf {
+    font-family: helvetica, arial;
+    color: #4B4B4B;
+}
+
+.scf h4 {
+    font-size: 14px;
+    color: #4B4B4B;
+    margin: 10px 0;
+}
+
+.scf h2 {
+    font-size: 24px;
+    color: #4B4B4B;
+    margin: 0px;
+    font-weight: 100;
+}
+
+.scf .scf-link {
+    font-size: 14px;
+    color: #4191D2;
+    cursor: pointer;
+}
+
+.scf .scf-link:visited {
+    color: #96509B;
+}
+
+.scf .scf-link:hover {
+    text-decoration: underline;
+}
+
+.scf a {
+    font-size: 12px;
+    color: #227ECB;
+    text-decoration: none;
+}
+
+.scf .scf-quiet {
+    font-size: 12px;
+    color: #969696;
+}
+
+.scf button {
+    /**min-width: 100px;**/
+    min-width: 93px;
+    min-height: 35px;
+    color: #FFFFFF;
+    background: #227ECB;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.scf input[type='submit'] {
+    min-width: 100px;
+    min-height: 35px;
+    color: #FFFFFF;
+    background: #227ECB;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.scf-label {
+    font-size: 14px;
+}
+
+input[type="text"].scf-input {
+    min-width: 200px;
+    height: 35px;
+    border: 1px solid #B4B4B4;
+    padding: 1px 4px;
+}
+
+.scf button:hover {
+    background: #4191D2;
+}
+
+.scf input[type='submit']:hover {
+    background: #4191D2;
+}
+
+.scf button:active {
+    background: #377DB4;
+}
+
+.scf input[type='submit']:active {
+    background: #377DB4;
+}
+
+.scf button:disabled {
+    background: #DCDCDC;
+}
+
+.scf input[type='submit']:disabled {
+    background: #DCDCDC;
+}
+
+.scf button[type='reset'] {
+    color: #FFFFFF;
+    background-color: #969696;
+}
+
+.scf button[type='reset']:hover {
+    background-color: #C3C3C3;
+}
+
+.scf button[type='reset']:active {
+    background-color: #787878;
+}
+
+.scf button[type='reset'][disabled="disabled"] {
+    background-color: #DCDCDC;
+}
+
+.scf .scf-clear-both {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.scf-is-hidden {
+    display: none;
+}
+
+.scf [class^="scf-icon-"] {
+    font-family: SCFIcons;
+}
+
+.scf [class^="scf-icon-"].large {
+    font-size: 32px;
+}
+
+.scf-icon-comment:before {
+    content: "\f159";
+    font-family: SCFIcons;
+}
+
+.scf-icon-viewOff:before {
+    content: "\f2a7";
+    font-family: SCFIcons;
+}
+
+.scf-icon-fullscreen:before {
+    content: "\f1c2";
+    font-family: SCFIcons;
+}
+
+.scf-modal-screen {
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-color: #000000;
+}
+
+.scf-modal-dialog {
+    z-index: 2200;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    min-width: 300px;
+    padding: 15px;
+    background-color: #3C3C3C;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.scf-modal-dialog h2 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 24px;
+}
+
+.scf-modal-dialog input,
+.scf-modal-dialog select,
+.scf-modal-dialog option,
+.scf-modal-dialog textarea {
+    color: #333333;
+}
+
+.scf-modal-close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.scf-error {
+    border: 2px solid !important;
+    border-color: #EB413C !important;
+}
+
+.scf-js-error-message {
+    background-color: #EB413C;
+    color: #FFFFFF;
+    border-radius: 6px;
+}
+
+.scf-js-error-message:before {
+    font-family: SCFIcons;
+    content: "\f10d";
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.scf-icon-dblright:before {
+    content: "   ";
+    font-size: 14px;
+    font-family: SCFIcons;
+}
+
+.scf-horizontal-tag-list {
+    display: inline;
+    padding: 0px;
+}
+
+.scf-horizontal-tag-list li {
+    display: inline-block;
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.scf-selected-tag {
+    padding: 5px;
+    margin-right: 5px;
+    background-color: #969696;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.scf-selected-tag .scf-remove-tag:before {
+    font-family: SCFIcons;
+    content: "\f14d";
+}
+
+.scf-icon-folder:before {
+    content: "";
+    font-family: SCFIcons;
+}
+
+.scf-icon-gear-after:after {
+    content: "\f1c5";
+    font-family: SCFIcons;
+}
+
+.scf-icon-add:before {
+    content: "\f106";
+    font-family: SCFIcons;
+}
+
+.scf-icon-attachment:before {
+    content: "";
+    font-family: SCFIcons;
+}
+
+.scf-icon-check-after:after {
+    content: "\f145";
+    font-family: SCFIcons;
+}
+
+.scf-icon-camera:before {
+    content: "\f13b";
+    font-family: SCFIcons;
+}
+
+.scf-icon-image:before {
+    content: "\f1ed";
+    font-family: SCFIcons;
+}
+
+.scf-icon-calendar:before {
+    content: "\f137";
+    font-family: SCFIcons;
+}
+
+.scf-icon-delete:before {
+    content: "\f171";
+    font-family: SCFIcons;
+}
+
+
+/*Arrows*/
+
+.scf-icon-right:before {
+    content: "\f102";
+}
+
+.scf-icon-left:before {
+    content: "\f101";
+}
+
+
+/****** pagination styles **********/
+
+.scf-pages {
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.scf-pages-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.scf-pages-list:first-child {
+    border-top: solid;
+    border-width: 1px;
+    border-color: #E6E6E6;
+}
+
+.scf-pages-list:last-child {
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #E6E6E6;
+}
+
+.scf-pages-list-item {
+    display: inline-block;
+    margin: 3px 0px;
+}
+
+.scf-page {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1px 3px;
+    border: 1px solid #227ECB;
+    min-width: 16px;
+    text-align: center;
+}
+
+a.scf-currentPage {
+    color: #FFFFFF;
+    border: none;
+    background: #DCDCDC;
+    cursor: default;
+}
+
+.scf .scf-load-more {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+}
+
+.scf .scf-replies-count {
+    display: inline-block;
+}
+
+.scf-overlay-header h3 {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.scf-is-overlay-hidden {
+    display: none;
+}
+
+.scf-action-container .scf-action-item {
+    float: left;
+    margin: 6px 10px 6px 0;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+table.subMessages {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+div.subMessagesSender,
+td.subMessagesSender {
+    font-weight: bold;
+    font-family: arial;
+}
+
+td.subMessagesSender {
+    font-size: 12px;
+    padding-top: 10px;
+    width: 30%;
+}
+
+div.subMessagesSubject,
+td.subMessagesSubject {
+    font-family: arial;
+    font-weight: bold;
+}
+
+td.subMessagesSubject {
+    font-size: 13px;
+    padding-top: 10px;
+    width: 70%;
+}
+
+div.subMessageColumn {
+    margin-left: 0px !important;
+}
+
+div.subMessagesContent {
+    font-family: arial;
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: normal;
+}
+
+div.messageBackgroundDiv {
+    background-color: #EEEEEE;
+    padding: 10px;
+}
+
+div.messageSubject {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+div.messageParticipants {
+    font-family: arial;
+    font-size: 13px;
+    margin-top: 3px;
+    padding-bottom: 2px;
+    width: 100%;
+    border-bottom: thin solid #E7E7E7;
+}
+
+table.messageDetailTable {
+    width: 100%;
+}
+
+table.messageDetailTable td {
+    vertical-align: top;
+}
+
+div.avatarColumn {
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: left;
+    padding: 20px 20px 20px 0px;
+}
+
+td.messageDetails {
+    width: 92%;
+    padding-right: 1%;
+}
+
+form.messageLinkHolder,
+.minmessagelinkdiv {
+    float: left;
+}
+
+.unreadMessageContainingRow {
+    background-color: #F8F8F8;
+}
+
+.timestamp {
+    font-family: arial;
+    font-size: 11px;
+    color: #A6A6A6;
+    margin-top: 4px;
+}
+
+.verticalLine {
+    border-left: thin solid #E7E7E7;
+}
+
+#navigatorDiv {
+    border-bottom: thick solid #8C8C8C;
+}
+
+.messageActionDiv {
+    padding-top: 10px;
+    border-top: thin solid #E7E7E7;
+}
+
+#navigatorDiv a,
+#messageActionDiv a {
+    text-decoration: none;
+}
+
+#navigatorDiv div.inlineDiv {
+    margin-top: 5px;
+}
+
+.lineDiv {
+    width: 15px;
+    height: 0;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.rightFloatingDiv {
+    float: right;
+}
+
+.messageDetailedContent {
+    padding-top: 10px;
+}
+
+.messageAction {
+    min-width: 100px;
+}
+
+.enabledLink {
+    color: #5A5A5A !important;
+}
+
+.disabledLink {
+    color: #9C9C9C !important;
+    cursor: default;
+}
+
+#navigatorDiv .arrowLeft,
+#messageActionDiv .enabledLink .arrowLeft {
+    border-right: 5px solid #5A5A5A;
+}
+
+#messageActionDiv .enabledLink .arrowRight {
+    border-left: 5px solid #5A5A5A;
+}
+
+#messageActionDiv .disabledLink .arrowLeft {
+    border-right: 5px solid #9C9C9C;
+}
+
+#messageActionDiv .disabledLink .arrowRight {
+    border-left: 5px solid #9C9C9C;
+}
+
+#navigatorDiv .lineDiv,
+#messageActionDiv .enabledLink .lineDiv {
+    border-top: 1px solid #5A5A5A;
+}
+
+#messageActionDiv .disabledLink .lineDiv {
+    border-top: 1px solid #9C9C9C;
+}
+
+.message-detail-container .message-details {
+    max-width: 90%;
+}
+
+.message-detail-container {
+    margin-bottom: 2em;
+}
+
+.message-detail-avatar-column .avatar-image {
+    width: 3em;
+    height: 3em;
+}
+
+.detailMessageBackButtonContainer {
+    display: inline-block;
+}
+
+.message-attachments .attachment-holder {
+    margin: 0 0 1em 1em;
+    display: inline-block;
+}
+
+.message-attachments {
+    margin: 1em 0 1em 0;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2015 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+
+/*!
+ * Bootstrap v3.3.2 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@media (min-width: 992px) {
+    .scf .col-md-1,
+    .scf .col-md-2,
+    .scf .col-md-3,
+    .scf .col-md-4,
+    .scf .col-md-5,
+    .scf .col-md-6,
+    .scf .col-md-7,
+    .scf .col-md-8,
+    .scf .col-md-9,
+    .scf .col-md-10,
+    .scf .col-md-11,
+    .scf .col-md-12 {
+        float: left;
+    }
+    .scf .col-md-12 {
+        width: 100%;
+    }
+    .scf .col-md-11 {
+        width: 91.66666667%;
+    }
+    .scf .col-md-10 {
+        width: 83.33333333%;
+    }
+    .scf .col-md-9 {
+        width: 75%;
+    }
+    .scf .col-md-8 {
+        width: 66.66666667%;
+    }
+    .scf .col-md-7 {
+        width: 58.33333333%;
+    }
+    .scf .col-md-6 {
+        width: 50%;
+    }
+    .scf .col-md-5 {
+        width: 41.66666667%;
+    }
+    .scf .col-md-4 {
+        width: 33.33333333%;
+    }
+    .scf .col-md-3 {
+        width: 25%;
+    }
+    .scf .col-md-2 {
+        width: 16.66666667%;
+    }
+    .scf .col-md-1 {
+        width: 8.33333333%;
+    }
+    .scf .col-md-pull-12 {
+        right: 100%;
+    }
+    .scf .col-md-pull-11 {
+        right: 91.66666667%;
+    }
+    .scf .col-md-pull-10 {
+        right: 83.33333333%;
+    }
+    .scf .col-md-pull-9 {
+        right: 75%;
+    }
+    .scf .col-md-pull-8 {
+        right: 66.66666667%;
+    }
+    .scf .col-md-pull-7 {
+        right: 58.33333333%;
+    }
+    .scf .col-md-pull-6 {
+        right: 50%;
+    }
+    .scf .col-md-pull-5 {
+        right: 41.66666667%;
+    }
+    .scf .col-md-pull-4 {
+        right: 33.33333333%;
+    }
+    .scf .col-md-pull-3 {
+        right: 25%;
+    }
+    .scf .col-md-pull-2 {
+        right: 16.66666667%;
+    }
+    .scf .col-md-pull-1 {
+        right: 8.33333333%;
+    }
+    .scf .col-md-pull-0 {
+        right: auto;
+    }
+    .scf .col-md-push-12 {
+        left: 100%;
+    }
+    .scf .col-md-push-11 {
+        left: 91.66666667%;
+    }
+    .scf .col-md-push-10 {
+        left: 83.33333333%;
+    }
+    .scf .col-md-push-9 {
+        left: 75%;
+    }
+    .scf .col-md-push-8 {
+        left: 66.66666667%;
+    }
+    .scf .col-md-push-7 {
+        left: 58.33333333%;
+    }
+    .scf .col-md-push-6 {
+        left: 50%;
+    }
+    .scf .col-md-push-5 {
+        left: 41.66666667%;
+    }
+    .scf .col-md-push-4 {
+        left: 33.33333333%;
+    }
+    .scf .col-md-push-3 {
+        left: 25%;
+    }
+    .scf .col-md-push-2 {
+        left: 16.66666667%;
+    }
+    .scf .col-md-push-1 {
+        left: 8.33333333%;
+    }
+    .scf .col-md-push-0 {
+        left: auto;
+    }
+    .scf .col-md-offset-12 {
+        margin-left: 100%;
+    }
+    .scf .col-md-offset-11 {
+        margin-left: 91.66666667%;
+    }
+    .scf .col-md-offset-10 {
+        margin-left: 83.33333333%;
+    }
+    .scf .col-md-offset-9 {
+        margin-left: 75%;
+    }
+    .scf .col-md-offset-8 {
+        margin-left: 66.66666667%;
+    }
+    .scf .col-md-offset-7 {
+        margin-left: 58.33333333%;
+    }
+    .scf .col-md-offset-6 {
+        margin-left: 50%;
+    }
+    .scf .col-md-offset-5 {
+        margin-left: 41.66666667%;
+    }
+    .scf .col-md-offset-4 {
+        margin-left: 33.33333333%;
+    }
+    .scf .col-md-offset-3 {
+        margin-left: 25%;
+    }
+    .scf .col-md-offset-2 {
+        margin-left: 16.66666667%;
+    }
+    .scf .col-md-offset-1 {
+        margin-left: 8.33333333%;
+    }
+    .scf .col-md-offset-0 {
+        margin-left: 0;
+    }
+}
+
+.scf .row:before,
+.scf .row:after {
+    display: table;
+    content: " ";
+}
+
+.scf .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.scf .row:after {
+    clear: both;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+table.messages {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td.messageSelector {
+    width: 8%;
+}
+
+.selectionLinkHolder {
+    text-align: left;
+}
+
+.paginateMessageBox {
+    display: block;
+    text-align: right;
+    float: right;
+}
+
+.pageNumberDiv {
+    color: #9C9C9C;
+}
+
+.pageNumberDiv a {
+    color: #9C9C9C;
+}
+
+.paginateAndDisplayUsage {
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: thin solid #EFEFEF;
+    border-bottom: thin solid #EFEFEF;
+}
+
+.actionbuttons {
+    background: #c24920;
+    background-image: -ms-linear-gradient(top left, #c24920 0%, #f75e1a 100%);
+    background-image: -moz-linear-gradient(top left, #c24920 0%, #f75e1a 100%);
+    background-image: -o-linear-gradient(top left, #c24920 0%, #f75e1a 100%);
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #c24920), color-stop(1, #f75e1a));
+    background-image: -webkit-linear-gradient(top left, #c24920 0%, #f75e1a 100%);
+    background-image: linear-gradient(to bottom right, #c24920 0%, #f75e1a 100%);
+    padding: 4px 10px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    font-family: arial;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    min-width: 120px;
+    float: left;
+}
+
+.disabledActionButton {
+    background-color: E6E6E6;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 3px;
+    color: #afafaf;
+    font-family: arial;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    min-width: 120px;
+    float: left;
+}
+
+.displaymessage {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 80%;
+}
+
+.messagecontainingrow {
+    border-top: thin solid #E7E7E7;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+a.selectLink {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.selectAndPaginateDiv {
+    border-top: thick solid #aaaaaa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#newMessageButton {
+    float: right;
+    margin-right: 0px;
+}
+
+.arrowLeft {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    display: inline-block;
+    border-right: 5px solid #BBBBBB;
+}
+
+.arrowRight {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    display: inline-block;
+    border-left: 5px solid #BBBBBB;
+}
+
+.currentPageNumberDiv {
+    color: #ffffff;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background: #c24920;
+    background-image: -moz-linear-gradient(top, #c24920 0%, #f75e1a 100%);
+    background-image: -o-linear-gradient(top, #c24920 0%, #f75e1a 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c24920), color-stop(1, #f75e1a));
+    background-image: -webkit-linear-gradient(top, #c24920 0%, #f75e1a 100%);
+    background-image: linear-gradient(to bottom, #c24920 0%, #f75e1a 100%);
+    display: inline-block;
+}
+
+.inlineDiv {
+    display: inline-block;
+}
+
+.emptyMessageBoxSection {
+    margin-top: 5px;
+}
+
+.unreadCircle {
+    max-width: 10px;
+    min-width: 10px;
+    max-height: 10px;
+    min-height: 10px !important;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.circleBackgroundImage {
+    background: #c24920;
+    background-image: -moz-linear-gradient(top, #c24920 0%, #f75e1a 100%);
+    background-image: -o-linear-gradient(top, #c24920 0%, #f75e1a 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c24920), color-stop(1, #f75e1a));
+    background-image: -webkit-linear-gradient(top, #c24920 0%, #f75e1a 100%);
+    background-image: linear-gradient(to bottom, #c24920 0%, #f75e1a 100%);
+}
+
+.alertText {
+    font-family: arial;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    width: 90%;
+}
+
+.hideAlert {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.successNotification {
+    background-color: #B3C975;
+    padding: 5px;
+    max-width: 230px;
+    margin: 0 auto;
+}
+
+.alertNotification {
+    background-color: #FCC734;
+    padding: 5px;
+}
+
+.errorNotification {
+    background-color: #FD6667;
+    padding: 5px;
+    max-width: 230px;
+    margin: 0 auto;
+}
+
+.successNotification .hideAlert {
+    color: #59653B !important;
+}
+
+.alertNotification .hideAlert {
+    color: #7E641A !important;
+}
+
+.errorNotification .hideAlert {
+    color: #7F3333 !important;
+}
+
+td.hideAlertColumn {
+    padding-top: 2px;
+    width: 5%;
+}
+
+.notificationImage {
+    width: 16px;
+    height: 16px;
+}
+
+#alertDiv.alertNotification .notificationImage,
+#alertDiv.alertNotification td.hideAlertColumn {
+    padding: 10px;
+}
+
+div.usageStatistics {
+    font-family: arial;
+    font-size: 11px;
+    color: #A6A6A6;
+    text-align: left
+}
+
+.paginateAndDisplayUsage .usageStatistics {
+    display: inline-block;
+}
+
+.actionbuttons.detailViewToListViewButton {
+    max-width: 4em;
+    min-width: 4em;
+    width: 4em;
+}
+
+.paginateAndDisplayUsage .pages .page:hover {
+    cursor: pointer;
+}
+
+.paginateAndDisplayUsage .pages {
+    margin-top: 0;
+}
+
+.disabled-messaging-user-link:hover {
+    cursor: text;
+    text-decoration: none;
+}
+
+.messagecontainingrow .message-action-button-holder .button-holder {
+    margin-top: 1em;
+}
+
+.no-left-margin {
+    margin-left: 0 !important;
+}
+
+.messagebox .comment-image {
+    margin-bottom: 1em;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+label.mailform {
+    font-family: arial;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+textarea.mailFormSubject {
+    font-size: 14px;
+    text-align: left;
+    height: 25px;
+    line-height: 25px;
+    width: 89%;
+    resize: none;
+    margin-top: 5px;
+    border: thin solid #CFCFCF;
+}
+
+textarea.mailFormContent {
+    font-size: 14px;
+    text-align: left;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 90%;
+    height: 220px;
+    margin-top: 5px;
+    border: thin solid #CFCFCF;
+}
+
+textarea.makeReadOnly {
+    border: 0px solid;
+    font-size: 12px;
+    color: 9a9a9a;
+}
+
+label.makeReadOnly {
+    border: 0px solid;
+    font-size: 14px;
+    font-weight: bold;
+    color: 9a9a9a;
+}
+
+.mailStatusMessageDiv {
+    align: center;
+    font-size: 14;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.scf-is-collapsed .scf-composer-toolbar {
+    display: none;
+}
+
+.scf-composer-toolbar {
+    position: relative;
+    margin-top: 10px;
+}
+
+.scf-composer {
+    margin: 0 0 0 50px;
+}
+
+.scf-composer.scf-edit-composer {
+    margin: 0px;
+}
+
+.scf-composer-actions {
+    text-align: right;
+    width: 95%;
+    margin: 5px;
+}
+
+.scf-message-attachment-input {
+    display: none;
+    float: left;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100px;
+}
+
+.scf-composer-attach {
+    float: left;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.scf-composer-attach:before {
+    font-family: SCFIcons;
+    font-size: 20px;
+    margin-right: 5px;
+    content: "";
+    color: #595959;
+    cursor: pointer;
+}
+
+.scf-attachment-list {
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    list-style: none;
+}
+
+.scf-is-attached {
+    background: #969696;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.scf-is-rem-att {
+    font-size: 10px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.scf-composer .scf-input {
+    display: block;
+}
+
+.message-composer-action {
+    min-width: 100px;
+    min-height: 35px;
+    height: 42px;
+    color: #FFFFFF;
+    background: #227ECB;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background-image: -webkit-linear-gradient(#484e55, #3a3f44 60%, #313539);
+    background-image: linear-gradient(#484e55, #3a3f44 60%, #313539);
+    background-repeat: no-repeat;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff484e55', endColorstr='#ff313539', GradientType=0);
+    filter: none;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.newMessageSubjectContainer,
+.newMessageContentContainer,
+.newMessageAttachmentContainer {
+    display: table;
+    width: 95%;
+    margin: 5px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 1px #eaeaea;
+    box-shadow: 0 1px 1px #eaeaea;
+    color: #777777;
+}
+
+.newMessageAttachmentContainer {
+    padding-left: 0.4em;
+    width: 97%;
+}
+
+.transparentAttachmentContainer {
+    background-color: transparent;
+}
+
+.newMessageContentContainer {
+    padding-top: 1em;
+}
+
+.newMessageSubjectContainer,
+.newMessageAttachmentContainer {
+    height: 3em;
+}
+
+.newMessageSubjectContainer .mailform,
+.newMessageContentContainer .mailform,
+.newMessageAttachmentContainer .mailform {
+    display: table-cell;
+    width: 10%;
+    text-align: left;
+    color: #808080;
+}
+
+.newMessageAttachmentContainer .mailform {
+    text-align: center;
+}
+
+.newMessageAttachmentContainer .mailform label {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.4em 0 0.2em 0;
+    height: auto;
+    width: 100%;
+    display: block;
+    background-image: -ms-linear-gradient(top left, #00C4E1 0%, #00A6C6 100%);
+    background-image: -moz-linear-gradient(top left, #00C4E1 0%, #00A6C6 100%);
+    background-image: -o-linear-gradient(top left, #00C4E1 0%, #00A6C6 100%);
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #00C4E1), color-stop(1, #00A6C6));
+    background-image: -webkit-linear-gradient(top left, #00C4E1 0%, #00A6C6 100%);
+    background-image: linear-gradient(to bottom right, #00C4E1 0%, #00A6C6 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00C4E1', endColorstr='#00A6C6');
+}
+
+.newMessageAttachmentContainer .mailform label:hover {
+    cursor: pointer;
+}
+
+.newMessageAttachmentContainer .fileContainer {
+    display: table-cell;
+    width: 85%;
+}
+
+.newMessageAttachmentContainer .fileContainer .inputContainer {
+    background-color: #F0F0F0;
+    font-weight: bold;
+    margin-left: 0.8em;
+    margin-bottom: 0.2em;
+    display: inline-block;
+    width: auto;
+    min-height: 2em;
+}
+
+.inputContainer .removeAttachment:hover {
+    cursor: pointer
+}
+
+.newMessageSubjectContainer .mailform,
+.newMessageUserChooser .mailform {
+    vertical-align: middle;
+    border-right: thin solid #e8e8e8;
+}
+
+.newMessageContentContainer .mailform {
+    vertical-align: top;
+    padding-top: 1em;
+}
+
+.newMessageSubjectContainer .mailFormSubject,
+.newMessageContentContainer .mailFormContent {
+    display: table-cell;
+    width: 95%;
+    border: none;
+    margin-top: 0;
+    outline: none;
+    font-family: arial;
+    line-height: 1.5em;
+    float: left;
+}
+
+.newMessageContentContainer .mailFormContent {
+    padding-left: 1em;
+}
+
+.newMessageSubjectContainer .mailFormSubject {
+    height: 2em;
+    overflow-y: hidden;
+    margin-left: 0;
+}
+
+.nameAndDateSeparatorCircle {
+    max-width: 5px;
+    min-width: 5px;
+    max-height: 5px;
+    min-height: 5px !important;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #EFEFEF;
+}
+
+.newMessageContentContainer .newMessageSenderAvatar {
+    width: 35px;
+    height: 35px;
+    margin-right: 1em;
+    display: inline-block;
+    background-size: 35px;
+    background-repeat: none;
+}
+
+.newMessageContentContainer .senderDetailContainer {
+    display: table;
+    float: left;
+}
+
+.senderDetailContainer .newMessageSenderName,
+.senderDetailContainer .newMessageSendDate,
+.senderDetailContainer .circleContainer {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.senderDetailContainer .newMessageSenderName {
+    color: #00A6C6;
+}
+
+.senderDetailContainer .newMessageSendDate,
+.senderDetailContainer .circleContainer {
+    color: #808080;
+    padding-left: 1em;
+}
+
+.inputContainer .hiddenUploadInput {
+    display: none;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+.disabled-messaging-user-link:hover {
+    cursor: text;
+    text-decoration: none;
+}
+
+div input.userchooser {
+    background-image: url(/etc/clientlibs/social/hbs/messaging/images/magnifier.png);
+    background-position: left center;
+    background-repeat: no-repeat no-repeat;
+    background-size: 2rem;
+    padding: 8px;
+    width: 95%;
+    margin: 5px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 1px #eaeaea;
+    box-shadow: 0 1px 1px #eaeaea;
+    color: #777777;
+}
+
+div input.makeReadOnly {
+    max-height: 0;
+    visibility: hidden;
+}
+
+div label.makeReadOnly {
+    border: 0px solid;
+    font-size: 14px;
+    font-weight: bold;
+    color: 9a9a9a;
+}
+
+input,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+
+.userchooser.parbase {
+    margin-left: 0;
+}
+
+.newMessageUserChooser {
+    padding: 20px;
+    margin: 5px;
+    display: table;
+    width: 95%;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 1px #eaeaea;
+    box-shadow: 0 1px 1px #eaeaea;
+    color: #777777;
+}
+
+.userchooserContainer {
+    display: table-cell;
+    border: none;
+}
+
+.newMessageUserChooser .userchooser {
+    padding-left: 20px;
+}
+
+.newMessageUserChooser .selectedUserContainer {
+    display: inline-block;
+    margin-left: 0.8em;
+}
+
+.newMessageUserChooser .selectedUserContainer > div {
+    background-color: #F0F0F0;
+    margin: 0 0.5em 0.5em 0;
+    padding: 0.2em 0 0.2em 0.2em;
+    display: inline-block;
+}
+
+.newMessageUserChooser .mailform {
+    display: table-cell;
+    width: 10%;
+    text-align: left;
+    color: #808080;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2015 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+span.glyphicon.glyphicon-ok.scf-checkbox {
+    float: right;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: inherit;
+}
+
+.scf-subscriptions-list.dropdown-menu {
+    min-width: 190px;
+}
+
+.scf button.scf-subscriptions-dropdown-button {
+    min-width: 100px;
+}
+
+span.scf-subscription-type {
+    margin-left: 5px;
+}
+
+span.scf-subscription-type.scf-subscription-type-selected {
+    font-weight: bold;
+}
+
+.scf-subscriptions-list {
+    padding: 0.2em;
+}
+
+li.scf-subscription-item {
+    padding: 0.5em;
+}
+
+li.scf-subscription-item:hover {
+    cursor: pointer;
+    color: #262626;
+    background-color: #f5f5f5;
+}
+
+hr.divider {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+}
+
+.scf-subscriptions-list.dropdown-menu .divider {
+    height: 2px;
+    margin: 4px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+
+/******** composer styles ************/
+
+.scf-composer-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    float: left;
+}
+
+.scf-commentsystem header {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.scf-composer-block {
+    padding: 10px;
+}
+
+.scf-composer-block.scf-is-collapsed input,
+.scf-composer-block.scf-is-collapsed label {
+    display: none;
+}
+
+.scf-is-collapsed .scf-composer-msg {
+    border: 1px solid #B4B4B4;
+    height: 30px;
+    margin-top: 5px;
+    display: inline;
+}
+
+.scf-is-collapsed .scf-rte-composer {
+    display: none;
+}
+
+.scf-composer-block.scf-is-collapsed .scf-rte-placeholder {
+    display: inline;
+}
+
+.scf-composer-msg {
+    display: inline;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    height: 200px;
+}
+
+input.scf-composer-msg {
+    height: 30px;
+}
+
+.scf-composer-msg::-webkit-input-placeholder:before {
+    font-family: SCFIcons;
+    content: "\f15a\00a0\00a0";
+}
+
+.scf-composer-msg:-moz-placeholder:before {
+    font-family: SCFIcons;
+    content: "\f15a\00a0\00a0";
+}
+
+.scf-composer-msg::-moz-placeholder:before {
+    font-family: SCFIcons;
+    content: "\f15a\00a0\00a0";
+}
+
+.scf-composer-msg:-ms-input-placeholder:before {
+    font-family: SCFIcons;
+    content: "\f15a\00a0\00a0";
+}
+
+.scf-is-collapsed .scf-composer-toolbar {
+    display: none;
+}
+
+.scf-composer-toolbar {
+    position: relative;
+    margin-top: 10px;
+}
+
+.scf-composer {
+    margin: 0 0 0 50px;
+}
+
+.scf-composer.scf-edit-composer {
+    margin: 0px;
+}
+
+.scf-composer-actions {
+    text-align: right;
+}
+
+.scf-comment-attachment-input {
+    display: none;
+    float: left;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100px;
+}
+
+.scf-composer-attach {
+    float: left;
+    cursor: pointer;
+}
+
+.scf-composer-attach:before {
+    font-family: SCFIcons;
+    margin-right: 5px;
+    content: "";
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.scf-composer-delete:before {
+    font-family: SCFIcons;
+    margin-right: 5px;
+    content: "\f171";
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.scf-attachment-list {
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    list-style: none;
+}
+
+.scf-is-attached {
+    background: #969696;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.scf-is-rem-att {
+    font-size: 10px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.scf-rte-placeholder {
+    display: none;
+}
+
+.scf-composer .scf-input {
+    display: block;
+}
+
+
+/****** ckeditor styles ********/
+
+.scf .cke {
+    margin-bottom: 10px;
+    border: 0;
+    -webkit-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0;
+}
+
+.scf .cke_contents {
+    border: 1px solid #B3B3B3;
+}
+
+.scf .cke_top {
+    border-bottom: 0px;
+    padding: 0px;
+    white-space: normal;
+    -moz-box-shadow: 0 0 0 0;
+    -webkit-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0;
+    background: transparent;
+    background-image: none;
+    filter: none;
+}
+
+.scf .cke_toolgroup {
+    float: left;
+    margin: 0 6px 5px 0;
+    border: 0;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    -moz-box-shadow: 0 0 0 0;
+    -webkit-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0;
+    background: transparent;
+    background-image: none;
+    filter: none;
+}
+
+
+/******** comments list ************/
+
+.scf-comments-list {
+    padding: 10px 0 0 0;
+    margin: 0px;
+    list-style: none;
+    border-top: 1px solid #E6E6E6;
+}
+
+
+/******* comment style *************/
+
+.scf-comment {
+    padding: 10px;
+    padding-right: 0px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.scf-comment:last-child {
+    border: 0;
+}
+
+.scf-comment-author {
+    width: 50px;
+    float: left;
+    overflow: hidden;
+}
+
+.scf-comment-body {
+    margin-right: 50px;
+}
+
+.scf-comment-avatar {
+    padding-bottom: 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.scf-comment-avatar.withTopLevel {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.scf-badge-image {
+    padding: 1px;
+    width: 15px;
+    height: 15px;
+    float: left;
+}
+
+.scf-badge-text {
+    font-size: 10px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
+    white-space: nowrap;
+    clear: left;
+}
+
+.scf-comment-data {
+    margin-left: 50px;
+    position: relative;
+}
+
+.scf-comment-data.withTopLevel {
+    margin-left: 60px;
+}
+
+.scf-comment-replies .scf-comments-list.withTopLevel {
+    margin-left: 60px;
+    border-top: 1px solid #E6E6E6;
+}
+
+.scf-comment-replies .scf-comments-list {
+    margin-left: 50px;
+    margin-top: 10px;
+    border-top: 1px solid #E6E6E6;
+}
+
+.scf-comment-votes {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.scf-comment-msg {
+    margin-top: 10px;
+}
+
+.scf-comment-img-att {
+    max-width: 60%;
+    border: 1px solid #E6E6E6;
+    width: auto;
+    display: inline-block;
+    margin: 10px 0px;
+}
+
+.scf-comment-attachment-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.scf-comment-att .scf-comment-att-link {
+    margin-left: 10px;
+}
+
+.scf-comment-att-name {
+    background-color: #E6E6E6;
+    line-height: 18px;
+    padding: 10px;
+}
+
+.scf-is-new {
+    background-color: #EBF0DC;
+}
+
+
+/****** comment toolbar styles ******/
+
+.scf-comment-toolbar {
+    margin-top: 10px;
+}
+
+.scf-comment-action {
+    display: inline-block;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+
+/***** pubmod styles *****/
+
+.scf-comment-status-text {
+    margin: 10px 0;
+    color: #969696;
+    font-style: italic;
+}
+
+.scf-flag-reasons th {
+    font-weight: 300;
+    padding-right: 20px;
+    border-bottom: 1px solid #969696;
+}
+
+.scf-flag-reasons tr {
+    font-weight: 100;
+    border-bottom: 1px solid #B4B4B4;
+}
+
+.scf-flag-reasons td {
+    padding-right: 10px;
+}
+
+
+/*** Subscriptions styles ***/
+
+.scf-cs-subscriptions-block {
+    display: inline-block;
+    position: relative;
+    margin-left: 80%;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+.scf-forum .scf-is-collapsed {
+    display: none;
+}
+
+.scf-forum .scf-paste-btn {
+    min-width: 75px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.scf-forum-paste-grp .dropdown-toggle {
+    min-width: 25px;
+    border-left: 0px;
+}
+
+.scf-forum-paste-grp button {
+    float: left;
+    position: relative;
+}
+
+.scf-forum-heading {
+    /**float: left;**/
+}
+
+.scf-topic-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.scf-topic-list {
+    list-style-type: none;
+}
+
+.scf-topic-listitem {
+    position: relative;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.scf-topic-listitem .scf-topic-avatar {
+    padding-bottom: 3px;
+}
+
+.scf-topic-listitem:last-child {
+    border: 0;
+}
+
+.scf-topic-userinfo {
+    float: left;
+    width: 120px;
+}
+
+.scf-badge-image {
+    padding: 1px;
+    width: 15px;
+    height: 15px;
+    float: left;
+}
+
+.scf-badge-text {
+    font-size: 9px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
+    clear: left;
+}
+
+.scf-topic-col1 {
+    position: relative;
+    margin-left: 120px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+.scf-topic-col1 .scf-comment-msg {
+    max-height: 168px;
+    overflow: hidden;
+}
+
+.scf-topic-col2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+}
+
+.scf-topic-listitem .scf-selected-tag {
+    padding: 3px;
+    margin-right: 3px;
+    font-size: 10px;
+}
+
+.scf-post .scf-comment-data {
+    margin-left: 120px;
+}
+
+.scf-analytics-view-metrics {
+    display: none;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+.scf-forum .scf-composer-msg,
+.scf-composer-block .scf-composer-msg,
+.cke_contents,
+.scf-composer-container-tags {
+    border-radius: 5px;
+    border: 1px solid #b5b5b5;
+    padding: 4px;
+    box-shadow: 0 1px 1px #eaeaea;
+}
+
+.scf-forum .scf-composer-msg,
+.scf-composer-block .scf-composer-msg {
+    height: 34px;
+    margin: 4px 0 4px 0;
+}
+
+.scf-forum .cke_toolbar,
+.scf-topic .cke_toolbar {
+    padding: 10px;
+}
+
+.scf-forum a.cke_button,
+.scf-topic a.cke_button {
+    padding: 4px 12px;
+    opacity: 0.9;
+}
+
+.scf-blog-heading {
+    display: block;
+}
+
+.scf-forum .scf-composer-container-tags,
+.scf-topic .scf-composer-container-tags,
+.scf-composer-container-commenting {
+    padding: 4px;
+    margin: 5px 0 5px 0;
+}
+
+.scf-composer-container-publish {
+    margin: 5px 0 15px 0;
+    padding-bottom: 2px;
+}
+
+.scf-composer-container-publish div {
+    margin: 5px 0 5px 0;
+}
+
+.scf-composer-container-publish .btn {}
+
+.scf-composer-container-publish .btn:hover {}
+
+.scf-draft-delete-btn {
+    margin-right: 50px;
+}
+
+.scf-js-event-basics-start-input {
+    border: 1px solid #dddddd;
+}
+
+.scf-event-basics-start-min,
+.scf-event-basics-start-hour {
+    width: 20px;
+}
+
+.scf-forum .scf-composer-container-tags .scf-horizontal-tag-list li,
+.scf-topic .scf-composer-container-tags .scf-horizontal-tag-list li {
+    margin-bottom: 0;
+    margin-left: 2px;
+}
+
+.scf-forum .scf-composer-container-tags .scf-selected-tag,
+.scf-topic .scf-composer-container-tags .scf-selected-tag {
+    padding: 2px;
+    background-color: #4191D2;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+}
+
+.scf-forum .scf-horizontal-tag-list .scf-selected-tag,
+.scf-topic .scf-horizontal-tag-list .scf-selected-tag {
+    border-radius: 5px;
+    padding: 2px 6px 2px 6px;
+    background-color: #4191D2;
+}
+
+.scf-forum .scf-composer-container-tags select,
+.scf-topic .scf-composer-container-tags select .scf-composer-container-publish select {
+    -webkit-appearance: menulist-button;
+    height: 30px;
+}
+
+.scf-forum .scf-topic-list .scf-topic-col1,
+.scf-topic .scf-topic-col1 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.scf-js-topic-details-tags-editable {
+    display: none;
+}
+
+.scf-forum .scf-composer-container-tags option {
+    background-color: #fafafa;
+    color: #333333;
+}
+
+.scf-forum .scf-composer-container-tags select {
+    color: #333333;
+}
+
+.scf-topic-section-comments {
+    float: left;
+}
+
+.scf-topic-section-comments span {
+    padding: 4px;
+}
+
+.scf-blog-article-author {
+    float: right;
+    margin: 0px 10px 10px 0px;
+}
+
+.scf-composer-journal {
+    margin: 0px 0px 0px 0px;
+}
+
+.scf-nav-tab-padding {
+    padding-top: 20px;
+}
+
+.scf-blog-following-block {
+    margin-right: 20px;
+}
+
+.scf-form_datepicker_right .scf-event-timepicker {
+    width: 75px;
+    float: left;
+    margin-right: 4px;
+}
+
+.scf-form_datepicker_right .scf-event-basics-start-input {
+    float: left;
+    width: 105px;
+}
+
+.scf-form_datepicker_middle {
+    float: left;
+    width: 23px;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+.scf-ratings-bar-empty {
+    width: 120px;
+    cursor: pointer;
+    background-image: url("../social/rating/hbs/ratings_star_empty.png");
+}
+
+.scf-ratings-bar-full {
+    background-image: url("../social/rating/hbs/ratings_star_full.png");
+}
+
+.scf-ratings-bar-selected {
+    background-image: url("../social/rating/hbs/ratings_star_selected.png");
+}
+
+.scf-ratings-bar {
+    background-repeat: repeat-x;
+    height: 18px;
+}
+
+.scf-ratings-star {
+    float: left;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.scf-ratings-bar[data-rating-shown^='0'] {
+    width: 0px;
+    cursor: pointer;
+}
+
+.scf-ratings-bar[data-rating-shown^='1'] {
+    width: 24px;
+    cursor: pointer;
+}
+
+.scf-ratings-bar[data-rating-shown^='2'] {
+    width: 48px;
+    cursor: pointer;
+}
+
+.scf-ratings-bar[data-rating-shown^='3'] {
+    width: 72px;
+    cursor: pointer;
+}
+
+.scf-ratings-bar[data-rating-shown^='4'] {
+    width: 96px;
+    cursor: pointer;
+}
+
+.scf-ratings-bar[data-rating-shown^='5'] {
+    width: 120px;
+    cursor: pointer;
+}
+
+.scf-is-rating-star-select {
+    background-image: url("../social/rating/hbs/ratings_star_full.png") !important;
+}
+
+.scf-is-rating-star-deselect {
+    background-image: url("../social/rating/hbs/ratings_star_selected_empty.png") !important;
+}
+
+.scf-rating-trigger-bar {
+    position: absolute;
+}
+
+.scf-ratings-text {
+    cursor: pointer;
+    font-size: small;
+    margin-left: 4px;
+}
+
+.scf-rating-onrate-text {
+    margin-left: 4px;
+}
+
+.scf-rating-histogram {
+    display: none;
+    opacity: 1;
+    background-color: white;
+    border: 1px solid #4a4a4a;
+    width: 164px;
+    border-radius: 4px;
+}
+
+.scf-poll-result {
+    list-style-type: none;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.scf-poll-response {
+    background-repeat: repeat-x;
+    background-image: url("../social/rating/hbs/ratings_star_full.png");
+    height: 18px;
+    float: left;
+}
+
+.scf-poll-results-bar {
+    height: 18px;
+}
+
+.scf-poll-results-bar [data-star-shown='1'] {
+    width: 24px;
+}
+
+.scf-poll-results-bar [data-star-shown='2'] {
+    width: 48px;
+}
+
+.scf-poll-results-bar [data-star-shown='3'] {
+    width: 72px;
+}
+
+.scf-poll-results-bar [data-star-shown='4'] {
+    width: 96px;
+}
+
+.scf-poll-results-bar [data-star-shown='5'] {
+    width: 120px;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+.scf-forum .scf-is-collapsed {
+    display: none;
+}
+
+.scf-qna-glyphicon {
+    font-size: 1.4em;
+    color: #18bc9c;
+}
+
+.scf-qna-answered {
+    color: #18bc9c;
+}
+
+.scf-qna-selected {
+    float: right;
+}
+
+.scf-qna-comment-body {
+    padding: 10px;
+    margin: 10px;
+}
+
+.scf-qna-comment-votes {
+    margin-top: 10px;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+.scf-voting {
+    width: auto;
+    cursor: pointer;
+}
+
+.scf-voting .scf-votingLabel {
+    font-size: 18px;
+    width: 24px;
+    text-align: right;
+}
+
+.scf-voting span {
+    border: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    width: 38px;
+}
+
+.scf-voting .scf-vote-up:hover:before,
+.scf-voting .scf-vote-down:hover:before,
+.scf-voting .scf-vote-up.scf-voting-unset:hover:before,
+.scf-voting .scf-vote-down.scf-voting-unset:hover:before {
+    color: #4191D2;
+}
+
+.scf-voting .scf-vote-up:before {
+    content: "";
+    font-family: SCFIcons;
+    font-size: 16px;
+    color: #B4B4B4;
+}
+
+.scf-voting .scf-vote-down:before {
+    content: "";
+    font-family: SCFIcons;
+    font-size: 16px;
+    color: #B4B4B4;
+}
+
+.scf-voting .scf-vote-up.scf-voting-unset:before {
+    color: #82AA46;
+}
+
+.scf-voting .scf-vote-down.scf-voting-unset:before {
+    color: #EB413C;
+}
+
+.scf-voting .scf-votingLabel[data-vote-count] {
+    color: #82AA46;
+}
+
+.scf-voting .scf-votingLabel[data-vote-count='0'] {
+    color: #B4B4B4;
+}
+
+.scf-voting .scf-votingLabel[data-vote-count*='-'] {
+    color: #EB413C;
+}
+
+.scf-voting .scf-is-disabled {
+    cursor: not-allowed;
+}
+
+.scf-voting .scf-is-disabled:hover:before,
+.scf-voting .scf-voting-unset.scf-is-disabled:hover:before {
+    color: #B4B4B4;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+.scf-ratings-block {
+    width: 180px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.scf-ratings-block ul {
+    padding: 0 0 0 0;
+}
+
+.scf-ratings-block ul li {
+    height: 18px;
+    list-style-type: none;
+}
+
+.scf-ratings-block ul li div {
+    float: right;
+}
+
+.scf-ratings-block ul li div div {
+    float: left;
+}
+
+.scf-review-body {
+    margin-right: 100px;
+}
+
+.scf-reviews .scf-replies-count {
+    display: inline-block;
+}
+
+.scf-review-votes {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+
+.scf-review-vote-label {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 100px;
+    color: #4191D2;
+}
+
+.scf-create-review-button {
+    margin-bottom: 20px;
+    min-width: 100px;
+    min-height: 35px;
+    color: #FFFFFF;
+    background: #227ECB;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.scf-create-review-button:hover {
+    background: #4191D2;
+}
+
+.scf-create-review-button:active {
+    background: #377DB4;
+}
+
+.scf-create-review-button:disabled {
+    background: #DCDCDC;
+}
+
+form.scf-review-composer {
+    margin-top: 0;
+}
+
+.scf-review-form {
+    display: none;
+    padding: 20px 0;
+}
+
+.scf-review-form .scf-review-form-label-bold {
+    font-weight: bold;
+    color: DarkSlateBlue;
+    margin: 0 0 10px 0;
+}
+
+.scf-review-form .scf-review-form-label {
+    margin: 10px 0 10px 0;
+}
+
+.scf-review-summary {
+    width: 250px;
+}
+
+.scf-review-summary ul {
+    padding: 0 50px 0 0;
+}
+
+.scf-review-summary ul li {
+    list-style-type: none;
+    height: 18px;
+    padding: 2px 0 2px 0;
+}
+
+.scf-review-summary ul li div {
+    float: right;
+}
+
+.scf-review-summary ul li div div {
+    float: left;
+}
+
+.scf-review-histogram {
+    opacity: 1;
+    background-color: white;
+    width: 230px;
+}
+
+.scf-review-result {
+    padding: 10px 0 0 0;
+    margin: 0px;
+}
+
+.scf-review-result-item {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+.scf-review-result-item .scf-review-result-bar {
+    display: inline-block;
+    background-color: #4191D2;
+    height: 10px;
+}
+
+.scf-review-result-item .scf-review-result-empty-bar {
+    display: inline-block;
+    width: 70%;
+    background-color: #c3c3c3;
+    height: 10px;
+}
+
+.scf-review-result-item .scf-review-result-name {
+    font-size: 10px;
+    font-weight: bold;
+    color: #4191D2;
+}
+
+.scf-review-result-item .scf-review-result-value {
+    font-size: 10px;
+    font-weight: bold;
+    color: #c3c3c3;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+div.scf-searchresult {
+    display: block;
+}
+
+div.scf-searchresult .scf-search-checkbox {
+    display: inline;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.scf-searchresult-count {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+div.scf-searchresult .scf-search-label {
+    display: inline;
+}
+
+div.scf-searchresult .scf-search-query-label {
+    float: left;
+}
+
+.scf-search-value {
+    width: 70%;
+    margin-right: 10px;
+}
+
+.scf-search-result-submit {
+    float: right;
+    margin-left: 10px;
+}
+
+.scf-searchresults-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.scf-searchresult-item {
+    padding: 10px;
+    border-top: 1px solid #DDD;
+}
+
+.scf-searchresult-item-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.scf-searchresult-subject {
+    display: inline-block;
+    float: left;
+    margin-left: 15px;
+    width: 20%;
+    line-height: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.scf-searchresult-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.scf-searchresult-author {
+    float: left;
+}
+
+a.disabled {
+    color: #050;
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+}
+
+.scf-searchresult-comment {
+    float: left;
+    word-wrap: break-word;
+    width: 60%;
+    margin-left: 15px;
+}
+
+.scf-searchresult-link {
+    float: right;
+}
+
+a.scf-searchresult-morelink {
+    text-decoration: none;
+    outline: none;
+}
+
+.scf-searchresult-morecontent span {
+    display: none;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+div.scf-search-form {
+    display: block;
+}
+
+div.scf-search-form .scf-search-checkbox {
+    display: inline;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+div.scf-search-form .scf-search-label {
+    display: inline;
+}
+
+div.scf-search-form .scf-search-query-label {
+    float: left;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url("/etc/clientlibs/fd/af/third-party/fonts/glyphicons-halflings-regular.eot");
+    src: url("/etc/clientlibs/fd/af/third-party/fonts/glyphicons-halflings-regular.eot?#iefix") format('embedded-opentype'), url('/etc/clientlibs/fd/af/third-party/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/etc/clientlibs/fd/af/third-party/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/etc/clientlibs/fd/af/third-party/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.scf-event-empty-cover-image {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 14px;
+}
+
+.scf-calendar input.scf-composer-msg,
+.scf-event input.scf-composer-msg {
+    height: 35px;
+}
+
+.scf-calendar-autocomplete-menu .ui-menu-item {
+    font-size: 13px;
+}
+
+.scf-calendar .scf-is-collapsed {
+    display: none;
+}
+
+.scf-calendar .scf-composer .scf-form_datepicker_left,
+.scf-event .scf-composer .scf-form_datepicker_left {
+    float: left;
+    width: 105px;
+}
+
+.scf-calendar .scf-composer .scf-form_datepicker_middle,
+.scf-event .scf-composer .scf-form_datepicker_middle {
+    float: left;
+    width: 23px;
+}
+
+.scf-calendar .scf-composer .scf-form_datepicker_right,
+.scf-event .scf-composer .scf-form_datepicker_right {
+    float: left;
+    min-width: 230px;
+}
+
+.scf-calendar .scf-form-padding,
+.scf-event .scf-form-padding {
+    margin-top: 10px;
+}
+
+.scf-calendar .scf-composer-msg::-webkit-input-placeholder:before,
+.scf-event .scf-composer-msg::-webkit-input-placeholder:before {
+    content: "";
+}
+
+.scf-calendar .scf-composer-msg:-moz-placeholder:before,
+.scf-event .scf-composer-msg:-moz-placeholder:before {
+    content: "";
+}
+
+.scf-calendar .scf-composer-msg::-moz-placeholder:before,
+.scf-event .scf-composer-msg::-moz-placeholder:before {
+    content: "";
+}
+
+.scf-calendar .scf-composer-msg:-ms-input-placeholder:before,
+.scf-event .scf-composer-msg:-ms-input-placeholder:before {
+    content: "";
+}
+
+.scf-calendar .scf-composer .scf-label,
+.scf-event .scf-composer .scf-label {
+    font-weight: normal;
+}
+
+.scf-event-cover-image {
+    display: block;
+    min-width: 120px;
+    min-height: 80px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.scf-event-list {
+    list-style-type: none;
+}
+
+li.scf-event-listitem {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+li.scf-event-listitem:last-child {
+    border-bottom: 0;
+}
+
+.scf-event-cover {
+    border: 1px solid #C1BFBF;
+    float: left;
+    width: 122px;
+    display: block;
+    height: 82px;
+    position: relative;
+    overflow: hidden;
+}
+
+.scf-event-col1 {
+    position: relative;
+    margin-left: 160px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+.scf-event-listitem .scf-selected-tag {
+    padding: 3px;
+    margin-right: 3px;
+    font-size: 10px;
+}
+
+.scf-event-listitem-start-date,
+.scf-event-listitem-start-time,
+.scf-event-listitem-location,
+.scf-event-listitem-full-day {
+    font-weight: bold;
+}
+
+.scf-calendar .scf-horizontal-tag-list,
+.scf-event .scf-horizontal-tag-list {
+    overflow: auto;
+    padding-left: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.scf-calendar .scf-horizontal-tag-list li,
+.scf-event .scf-horizontal-tag-list li {
+    border-radius: 6px;
+}
+
+.scf-icon-calendar:before {
+    content: "\f137";
+    font-family: SCFIcons;
+}
+
+.scf-calendar-smart-tags input,
+.ui-widget.scf-calendar-smart-tags input {
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.scf-calendar-smart-tags.ui-widget-content {
+    overflow: auto;
+}
+
+ul.tagit.scf-calendar-smart-tags.ui-widget-content li.tagit-choice {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+ul.tagit.scf-calendar-smart-tags.ui-widget-content li.tagit-new {
+    padding-top: 0.1em;
+}
+
+.scf-calendar-toolbar ul.tagit.scf-calendar-smart-tags.ui-widget-content li.tagit-new {
+    width: 80px;
+}
+
+.scf-calendar .ui-widget-content {
+    border: 1px solid #ccc;
+}
+
+.scf-event .scf-comment-action {
+    display: inline-block;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.ui-widget-content .scf-calendar-datepicker-buttons a {
+    color: #227ECB;
+}
+
+.ui-widget-content .scf-calendar-datepicker-buttons {
+    font-size: 12px;
+    padding: 6px;
+}
+
+.scf-event-basics-start-time,
+.scf-event-basics-end-time,
+.scf-event-listitem-start-time,
+.scf-event-listitem-end-time {
+    text-transform: uppercase;
+}
+
+.scf-calendar input[type="file"],
+.scf-event input[type="file"] {
+    display: none;
+}
+
+.scf-composer-attach-cover {
+    float: left;
+    margin-left: 4px;
+}
+
+.scf-calendar .scf-js-error-message,
+.scf-event .scf-js-error-message {
+    background: #d9534f;
+    border-radius: 0;
+}
+
+.scf-event-timepicker {
+    max-width: 70px;
+    float: left;
+    margin-right: 4px;
+}
+
+.scf-event .scf-post {
+    margin-bottom: 20px;
+}
+
+@CHARSET "UTF-8";
+
+/*!
+ * jQuery UI CSS Framework 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+
+
+/* Layout helpers
+----------------------------------*/
+
+.ui-helper-hidden {
+    display: none;
+}
+
+.ui-helper-hidden-accessible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.ui-helper-reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    line-height: 1.3;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none;
+}
+
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+    content: "";
+    display: table;
+}
+
+.ui-helper-clearfix:after {
+    clear: both;
+}
+
+.ui-helper-clearfix {
+    zoom: 1;
+}
+
+.ui-helper-zfix {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    filter: Alpha(Opacity=0);
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+
+.ui-state-disabled {
+    cursor: default !important;
+}
+
+
+/* Icons
+----------------------------------*/
+
+
+/* states and images */
+
+.ui-icon {
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+
+/* Overlays */
+
+.ui-widget-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*
+ * FullCalendar v1.5.4 Stylesheet
+ *
+ * Copyright (c) 2011 Adam Shaw
+ * Dual licensed under the MIT and GPL licenses, located in
+ * MIT-LICENSE.txt and GPL-LICENSE.txt respectively.
+ *
+ * Date: Tue Sep 4 23:38:33 2012 -0700
+ *
+ */
+
+.fc {
+    direction: ltr;
+    text-align: left;
+}
+
+.fc table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html .fc,
+.fc table {
+    font-size: 1em;
+}
+
+.fc td,
+.fc th {
+    padding: 0;
+    vertical-align: top;
+}
+
+
+/* Header
+------------------------------------------------------------------------*/
+
+.fc-header td {
+    white-space: nowrap;
+}
+
+.fc-header-left {
+    width: 25%;
+    text-align: left;
+}
+
+.fc-header-center {
+    text-align: center;
+}
+
+.fc-header-right {
+    width: 25%;
+    text-align: right;
+}
+
+.fc-header-title {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.fc-header-title h2 {
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+.fc .fc-header-space {
+    padding-left: 10px;
+}
+
+.fc-header .fc-button {
+    margin-bottom: 1em;
+    vertical-align: top;
+}
+
+
+/* buttons edges butting together */
+
+.fc-header .fc-button {
+    margin-right: -1px;
+}
+
+.fc-header .fc-corner-right {
+    margin-right: 1px;
+    /* back to normal */
+}
+
+.fc-header .ui-corner-right {
+    margin-right: 0;
+    /* back to normal */
+}
+
+
+/* button layering (for border precedence) */
+
+.fc-header .fc-state-hover,
+.fc-header .ui-state-hover {
+    z-index: 2;
+}
+
+.fc-header .fc-state-down {
+    z-index: 3;
+}
+
+.fc-header .fc-state-active,
+.fc-header .ui-state-active {
+    z-index: 4;
+}
+
+
+/* Content
+------------------------------------------------------------------------*/
+
+.fc-content {
+    clear: both;
+}
+
+.fc-view {
+    width: 100%;
+    /* needed for view switching (when view is absolute) */
+    overflow: hidden;
+}
+
+
+/* Cell Styles
+------------------------------------------------------------------------*/
+
+.fc-widget-header,
+
+/* <th>, usually */
+
+.fc-widget-content {
+    /* <td>, usually */
+    border: 1px solid #ccc;
+}
+
+.fc-state-highlight {
+    /* <td> today cell */
+    /* TODO: add .fc-today to <th> */
+    background: #ffc;
+}
+
+.fc-cell-overlay {
+    /* semi-transparent rectangle while dragging */
+    background: #9cf;
+    opacity: .2;
+    filter: alpha(opacity=20);
+    /* for IE */
+}
+
+
+/* Buttons
+------------------------------------------------------------------------*/
+
+.fc-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.fc-state-default {
+    /* non-theme */
+    border-style: solid;
+    border-width: 1px 0;
+}
+
+.fc-button-inner {
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.fc-state-default .fc-button-inner {
+    /* non-theme */
+    border-style: solid;
+    border-width: 0 1px;
+}
+
+.fc-button-content {
+    position: relative;
+    float: left;
+    height: 1.9em;
+    line-height: 1.9em;
+    padding: 0 .6em;
+    white-space: nowrap;
+}
+
+
+/* icon (for jquery ui) */
+
+.fc-button-content .fc-icon-wrap {
+    position: relative;
+    float: left;
+    top: 50%;
+}
+
+.fc-button-content .ui-icon {
+    position: relative;
+    float: left;
+    margin-top: -50%;
+    *margin-top: 0;
+    *top: -50%;
+}
+
+
+/* gloss effect */
+
+.fc-state-default .fc-button-effect {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.fc-state-default .fc-button-effect span {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 500px;
+    height: 100px;
+    border-width: 100px 0 0 1px;
+    border-style: solid;
+    border-color: #fff;
+    background: #444;
+    opacity: .09;
+    filter: alpha(opacity=9);
+}
+
+
+/* button states (determines colors)  */
+
+.fc-state-default,
+.fc-state-default .fc-button-inner {
+    border-style: solid;
+    border-color: #ccc #bbb #aaa;
+    background: #F3F3F3;
+    color: #000;
+}
+
+.fc-state-hover,
+.fc-state-hover .fc-button-inner {
+    border-color: #999;
+}
+
+.fc-state-down,
+.fc-state-down .fc-button-inner {
+    border-color: #555;
+    background: #777;
+}
+
+.fc-state-active,
+.fc-state-active .fc-button-inner {
+    border-color: #555;
+    background: #777;
+    color: #fff;
+}
+
+.fc-state-disabled,
+.fc-state-disabled .fc-button-inner {
+    color: #999;
+    border-color: #ddd;
+}
+
+.fc-state-disabled {
+    cursor: default;
+}
+
+.fc-state-disabled .fc-button-effect {
+    display: none;
+}
+
+
+/* Global Event Styles
+------------------------------------------------------------------------*/
+
+.fc-event {
+    border-style: solid;
+    border-width: 0;
+    font-size: .85em;
+    cursor: default;
+}
+
+a.fc-event,
+.fc-event-draggable {
+    cursor: pointer;
+}
+
+a.fc-event {
+    text-decoration: none;
+}
+
+.fc-rtl .fc-event {
+    text-align: right;
+}
+
+.fc-event-skin {
+    border-color: #36c;
+    /* default BORDER color */
+    background-color: #36c;
+    /* default BACKGROUND color */
+    color: #fff;
+    /* default TEXT color */
+}
+
+.fc-event-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-width: 0;
+    overflow: hidden;
+}
+
+.fc-event-time,
+.fc-event-title {
+    padding: 0 1px;
+}
+
+.fc .ui-resizable-handle {
+    /*** TODO: don't use ui-resizable anymore, change class ***/
+    display: block;
+    position: absolute;
+    z-index: 99999;
+    overflow: hidden;
+    /* hacky spaces (IE6/7) */
+    font-size: 300%;
+    /* */
+    line-height: 50%;
+    /* */
+}
+
+
+/* Horizontal Events
+------------------------------------------------------------------------*/
+
+.fc-event-hori {
+    border-width: 1px 0;
+    margin-bottom: 1px;
+}
+
+
+/* resizable */
+
+.fc-event-hori .ui-resizable-e {
+    top: 0 !important;
+    /* importants override pre jquery ui 1.7 styles */
+    right: -3px !important;
+    width: 7px !important;
+    height: 100% !important;
+    cursor: e-resize;
+}
+
+.fc-event-hori .ui-resizable-w {
+    top: 0 !important;
+    left: -3px !important;
+    width: 7px !important;
+    height: 100% !important;
+    cursor: w-resize;
+}
+
+.fc-event-hori .ui-resizable-handle {
+    _padding-bottom: 14px;
+    /* IE6 had 0 height */
+}
+
+
+/* Fake Rounded Corners (for buttons and events)
+------------------------------------------------------------*/
+
+.fc-corner-left {
+    margin-left: 1px;
+}
+
+.fc-corner-left .fc-button-inner,
+.fc-corner-left .fc-event-inner {
+    margin-left: -1px;
+}
+
+.fc-corner-right {
+    margin-right: 1px;
+}
+
+.fc-corner-right .fc-button-inner,
+.fc-corner-right .fc-event-inner {
+    margin-right: -1px;
+}
+
+.fc-corner-top {
+    margin-top: 1px;
+}
+
+.fc-corner-top .fc-event-inner {
+    margin-top: -1px;
+}
+
+.fc-corner-bottom {
+    margin-bottom: 1px;
+}
+
+.fc-corner-bottom .fc-event-inner {
+    margin-bottom: -1px;
+}
+
+
+/* Fake Rounded Corners SPECIFICALLY FOR EVENTS
+-----------------------------------------------------------------*/
+
+.fc-corner-left .fc-event-inner {
+    border-left-width: 1px;
+}
+
+.fc-corner-right .fc-event-inner {
+    border-right-width: 1px;
+}
+
+.fc-corner-top .fc-event-inner {
+    border-top-width: 1px;
+}
+
+.fc-corner-bottom .fc-event-inner {
+    border-bottom-width: 1px;
+}
+
+
+/* Reusable Separate-border Table
+------------------------------------------------------------*/
+
+table.fc-border-separate {
+    border-collapse: separate;
+}
+
+.fc-border-separate th,
+.fc-border-separate td {
+    border-width: 1px 0 0 1px;
+}
+
+.fc-border-separate th.fc-last,
+.fc-border-separate td.fc-last {
+    border-right-width: 1px;
+}
+
+.fc-border-separate tr.fc-last th,
+.fc-border-separate tr.fc-last td {
+    border-bottom-width: 1px;
+}
+
+.fc-border-separate tbody tr.fc-first td,
+.fc-border-separate tbody tr.fc-first th {
+    border-top-width: 0;
+}
+
+
+/* Month View, Basic Week View, Basic Day View
+------------------------------------------------------------------------*/
+
+.fc-grid th {
+    text-align: center;
+}
+
+.fc-grid .fc-day-number {
+    float: right;
+    padding: 0 2px;
+}
+
+.fc-grid .fc-other-month .fc-day-number {
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    /* for IE */
+    /* opacity with small font can sometimes look too faded
+        might want to set the 'color' property instead
+        making day-numbers bold also fixes the problem */
+}
+
+.fc-grid .fc-day-content {
+    clear: both;
+    padding: 2px 2px 1px;
+    /* distance between events and day edges */
+}
+
+
+/* event styles */
+
+.fc-grid .fc-event-time {
+    font-weight: bold;
+}
+
+
+/* right-to-left */
+
+.fc-rtl .fc-grid .fc-day-number {
+    float: left;
+}
+
+.fc-rtl .fc-grid .fc-event-time {
+    float: right;
+}
+
+
+/* Agenda Week View, Agenda Day View
+------------------------------------------------------------------------*/
+
+.fc-agenda table {
+    border-collapse: separate;
+}
+
+.fc-agenda-days th {
+    text-align: center;
+}
+
+.fc-agenda .fc-agenda-axis {
+    width: 50px;
+    padding: 0 4px;
+    vertical-align: middle;
+    text-align: right;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+.fc-agenda .fc-day-content {
+    padding: 2px 2px 1px;
+}
+
+
+/* make axis border take precedence */
+
+.fc-agenda-days .fc-agenda-axis {
+    border-right-width: 1px;
+}
+
+.fc-agenda-days .fc-col0 {
+    border-left-width: 0;
+}
+
+
+/* all-day area */
+
+.fc-agenda-allday th {
+    border-width: 0 1px;
+}
+
+.fc-agenda-allday .fc-day-content {
+    min-height: 34px;
+    /* TODO: doesnt work well in quirksmode */
+    _height: 34px;
+}
+
+
+/* divider (between all-day and slots) */
+
+.fc-agenda-divider-inner {
+    height: 2px;
+    overflow: hidden;
+}
+
+.fc-widget-header .fc-agenda-divider-inner {
+    background: #eee;
+}
+
+
+/* slot rows */
+
+.fc-agenda-slots th {
+    border-width: 1px 1px 0;
+}
+
+.fc-agenda-slots td {
+    border-width: 1px 0 0;
+    background: none;
+}
+
+.fc-agenda-slots td div {
+    height: 20px;
+}
+
+.fc-agenda-slots tr.fc-slot0 th,
+.fc-agenda-slots tr.fc-slot0 td {
+    border-top-width: 0;
+}
+
+.fc-agenda-slots tr.fc-minor th,
+.fc-agenda-slots tr.fc-minor td {
+    border-top-style: dotted;
+}
+
+.fc-agenda-slots tr.fc-minor th.ui-widget-header {
+    *border-top-style: solid;
+    /* doesn't work with background in IE6/7 */
+}
+
+
+/* Vertical Events
+------------------------------------------------------------------------*/
+
+.fc-event-vert {
+    border-width: 0 1px;
+}
+
+.fc-event-vert .fc-event-head,
+.fc-event-vert .fc-event-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+}
+
+.fc-event-vert .fc-event-time {
+    white-space: nowrap;
+    font-size: 10px;
+}
+
+.fc-event-vert .fc-event-bg {
+    /* makes the event lighter w/ a semi-transparent overlay  */
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: .3;
+    filter: alpha(opacity=30);
+}
+
+.fc .ui-draggable-dragging .fc-event-bg,
+
+/* TODO: something nicer like .fc-opacity */
+
+.fc-select-helper .fc-event-bg {
+    display: none\9;
+    /* for IE6/7/8. nested opacity filters while dragging don't work */
+}
+
+
+/* resizable */
+
+.fc-event-vert .ui-resizable-s {
+    bottom: 0 !important;
+    /* importants override pre jquery ui 1.7 styles */
+    width: 100% !important;
+    height: 8px !important;
+    overflow: hidden !important;
+    line-height: 8px !important;
+    font-size: 11px !important;
+    font-family: monospace;
+    text-align: center;
+    cursor: s-resize;
+}
+
+.fc-agenda .ui-resizable-resizing {
+    /* TODO: better selector */
+    _overflow: hidden;
+}
+
+
+/* PRINT */
+
+@media print {
+    /* Events
+    -----------------------------------------------------*/
+    .fc-event-skin {
+        background: none !important;
+        color: #000 !important;
+    }
+    /* horizontal events */
+    .fc-event-hori {
+        border-width: 0 0 1px 0 !important;
+        border-bottom-style: dotted !important;
+        border-bottom-color: #000 !important;
+        padding: 1px 0 0 0 !important;
+    }
+    .fc-event-hori .fc-event-inner {
+        border-width: 0 !important;
+        padding: 0 1px !important;
+    }
+    /* vertical events */
+    .fc-event-vert {
+        border-width: 0 0 0 1px !important;
+        border-left-style: dotted !important;
+        border-left-color: #000 !important;
+        padding: 0 1px 0 0 !important;
+    }
+    .fc-event-vert .fc-event-inner {
+        border-width: 0 !important;
+        padding: 1px 0 !important;
+    }
+    .fc-event-bg {
+        display: none !important;
+    }
+    .fc-event .ui-resizable-handle {
+        display: none !important;
+    }
+}
+
+/*!
+ * <%= meta.title %> v<%= meta.version %> Print Stylesheet
+ * Docs & License: <%= meta.homepage %>
+ * (c) <%= meta.copyright %>
+ */
+
+
+/*
+ * Include this stylesheet on your page to get a more printer-friendly calendar.
+ * When including this stylesheet, use the media='print' attribute of the <link> tag.
+ * Make sure to include this stylesheet IN ADDITION to the regular fullcalendar.css.
+ */
+
+
+/* Events
+-----------------------------------------------------*/
+
+.fc-event {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+
+/* for vertical events */
+
+.fc-event-bg {
+    display: none !important;
+}
+
+.fc-event .ui-resizable-handle {
+    display: none !important;
+}
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2015 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+/*
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2015 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+a.scf-morelink {
+    text-decoration: none;
+    outline: none;
+}
+
+.scf-morecontent span {
+    display: none;
+}
+
+.scf-activity-avatar {
+    display: block;
+    margin-top: 5px;
+}
+
+.scf-activity-user {
+    position: relative;
+}
+
+.scf-activity-time {
+    text-align: left;
+}
+
+tr.social-activity {
+    line-height: 25px;
+}
+
+a.scf-activity-user {
+    margin-top: 10px;
+}
+
+.scf-is-my-activites .scf-activity-member {
+    display: none;
+}
+
+.scf-hasOverflow {}
+
+.scf-is-expandText {
+    cursor: pointer;
+    display: none;
+    position: relative;
+}
+
+.scf-is-expand {
+    max-height: 3em;
+    overflow: hidden;
+}
+
+.scf-activity-content p {
+    margin-bottom: 5px;
+}
+
+header .description{
+    font-size: 96%;
+    font-family: Arial,Helvetical,sans-serif;
+
+}
+/*END of BLOG
+/etc/designs/gnb-bootstrap/clientlibs/css/blog.css
+*/

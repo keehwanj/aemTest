@@ -1,0 +1,10 @@
+/*
+	apps/gnb/components/search/multimediasearch/clientlibs/css/responsive-980px-1199px.css
+*/
+/* iPad Landscape */
+@media (min-width: 980px) and (max-width: 1199px) {
+  .wide_multimedia_item .row .col-sm-3,
+  .wide_multimedia_item .row .col-sm-9 {
+    padding-right: 0px;
+  }
+}

@@ -1,0 +1,11 @@
+/0000
+{
+    # the globbing pattern to be compared against the url
+    # example: *             -> everything
+    #        : /foo/bar.*    -> only the /foo/bar documents
+    #        : /foo/bar/*    -> all pages below /foo/bar
+    #        : /foo/bar[./]* -> all pages below and /foo/bar itself
+    #        : *.html        -> all .html files
+    /glob "*"
+    /type "allow"
+}
