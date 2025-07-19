@@ -12,8 +12,8 @@ import {
   F as re,
   V as ft,
   W as dt,
-} from './index-Mlz5_pb0.js';
-import { T as Ee } from './useMetadata-Do7pqlm4.js';
+} from './index-Dn9oyy6l.js';
+import { T as Ee } from './useMetadata-Dy-AaDiv.js';
 const dr = ({ variant: e }) => {
     const { t } = Fe(),
       [n] = ke(['language']),
@@ -2156,7 +2156,7 @@ const {
     getAdapter: Lr,
     mergeConfig: _r,
   } = E,
-  F = 'https://notifications-dev.snb.ca',
+  F = 'https://notifications-test.snb.ca',
   A = {
     authentication: { OTP: `${F}/otp`, RESEND_OTP: `${F}/otp/resend`, EMAIL_OTP: `${F}/otp/email` },
     notifications: { REMINDER_DETAILS: `${F}/reminders`, STOP_PAPER_REMINDERS: `${F}/reminders/stop-paper` },
