@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastModified="{Date}2022-12-21T14:05:35.873-04:00"
+        cq:lastModifiedBy="paulah"
+        cq:lastReplicated="{Date}2024-05-22T14:06:22.895-03:00"
+        cq:lastReplicatedBy="wissamm"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/snb/templates/home_new"
+        jcr:description="Service New Brunswick / Service Nouveau-Brunswick, Canada"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:language="en_CA"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="SPA"
+        jcr:uuid="1d079591-8626-4780-9713-17bc452a80dd"
+        sling:resourceType="snb-vrrr-fe/components/page/snb_spa"
+        constructed="{Boolean}true"
+        errorPages="/content/snb/en/error"
+        gnbCoverage="7005799 New Brunswick (province)"
+        gnbCreated="{Date}2017-03-10T09:23:35.000-04:00"
+        gnbPublisher="Government of New Brunswick, Canada"
+        language="eng-CA"
+        navTitle="Service New Brunswick / Service Nouveau-Brunswick"
+        pageTitle="Service New Brunswick / Service Nouveau-Brunswick"/>
+    <mvrrr/>
+    <dlr/>
+</jcr:root>

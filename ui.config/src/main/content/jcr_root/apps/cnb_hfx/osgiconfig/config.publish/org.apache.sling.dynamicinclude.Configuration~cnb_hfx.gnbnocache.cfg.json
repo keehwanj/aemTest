@@ -1,0 +1,26 @@
+{
+  "include-filter.config.ignoreUrlParams": [],
+  "include-filter.config.resource-types":[
+    "gnb/components/content/newslist",
+    "gnb/components/content/multimedialist_update",
+    "gnb/components/content/newslist_update",
+    "gnb/components/content/abclist",
+    "gnb/components/content/publicreviewlist",
+    "gnb/components/content/propertysurpluslist",
+    "gnb/components/content/propertytenderlist",
+    "gnb/components/content/stockingList",
+    "gnb/components/content/pcsdp_communitylist",
+    "gnb/components/content/pcsdp_daw_list",
+    "gnb/components/content/newsarticle",
+    "gnb/components/content/emoWarningRenderer",
+    "gnb/components/content/emoWarningStationRenderer"
+  ],
+  "include-filter.config.enabled":true,
+  "include-filter.config.path":"/content/gnb/",
+  "include-filter.config.required_header":"Server-Agent=Communique-Dispatcher",
+  "include-filter.config.include-type":"JSI",
+  "include-filter.config.selector":"nocache",
+  "include-filter.config.add_comment":true,
+  "include-filter.config.rewrite":false,
+  "include-filter.config.ttl":""
+}

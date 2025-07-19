@@ -1,0 +1,14 @@
+{
+  "include-filter.config.ignoreUrlParams": [],
+  "include-filter.config.resource-types":[
+    "courts/components/content/newslist_update"
+    ],
+  "include-filter.config.enabled":true,
+  "include-filter.config.path":"/content/cour/",
+  "include-filter.config.required_header":"Server-Agent=Communique-Dispatcher",
+  "include-filter.config.include-type":"JSI",
+  "include-filter.config.selector":"nocache",
+  "include-filter.config.add_comment":true,
+  "include-filter.config.rewrite":false,
+  "include-filter.config.ttl":""
+}

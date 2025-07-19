@@ -1,0 +1,15 @@
+{
+  "include-filter.config.ignoreUrlParams": [],
+  "include-filter.config.resource-types":[
+    "snb/components/content/serviceinfo",
+    "snb/components/content/contactinfo"
+  ],
+  "include-filter.config.enabled":true,
+  "include-filter.config.path":"/content/snb/",
+  "include-filter.config.required_header":"Server-Agent=Communique-Dispatcher",
+  "include-filter.config.include-type":"JSI",
+  "include-filter.config.selector":"ttl",
+  "include-filter.config.add_comment":true,
+  "include-filter.config.rewrite":false,
+  "include-filter.config.ttl":28800
+}

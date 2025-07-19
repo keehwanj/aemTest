@@ -1,0 +1,12 @@
+{
+  "jdbc.password": "L2e35q21!Ba7KCX5438W369J1",
+  "jdbc.driver.class":"com.microsoft.sqlserver.jdbc.SQLServerDriver",
+  "datasource.name":"SQLDB",
+  "jdbc.connection.uri":"jdbc:sqlserver://142.139.52.21;databaseName=GNBServices;encrypt=true;trustServerCertificate=true;",
+  "datasource.svc.properties":[""],
+  "default.readonly": false,
+  "default.autocommit":true,
+  "jdbc.username":"Gnbservicespub",
+  "pool.max.wait.msec":"1000",
+  "pool.size":"10"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          debug.email="{Boolean}false"
+          smtp.port="{Long}465"
+          smtp.user="AKIAZZ2ZKS4NLEPXAWYV"
+          smtp.password="BDz4uNKEJExTW0XwPDv5P9rAvgR+uq6JDultWKa2mF2S"
+          smtp.ssl="{Boolean}true"
+          smtp.starttls="{Boolean}true"
+          from.address="No-Reply@gnb.ca"
+          smtp.host="email-smtp.ca-central-1.amazonaws.com"
+/>

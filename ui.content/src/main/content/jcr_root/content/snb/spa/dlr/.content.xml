@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2024-08-01T18:26:03.823-03:00"
+        cq:lastModifiedBy="wissamm"
+        cq:lastReplicated="{Date}2024-05-22T14:06:32.612-03:00"
+        cq:lastReplicatedBy="wissamm"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/spa/snb-dlr-fe/templates/snb_spa"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="DLR"
+        jcr:uuid="e85fd7c6-7a6f-428a-9637-aadb814bd9d5"
+        sling:resourceType="spa/snb-dlr-fe/components/page/snb_spa"/>
+</jcr:root>
