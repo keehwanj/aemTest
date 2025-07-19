@@ -1,0 +1,77 @@
+.gnb-modal-header h2 {
+  padding-right: 32px !important;
+}
+.gnb-modal[aria-hidden='false'] {
+  display: flex !important;
+}
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+.no-margin-top {
+  margin-top: 0;
+}
+.tel-input {
+  width: 182px;
+}
+.info-icon-tooltip {
+  color: #004a98;
+}
+.gnb-tooltip-link:hover {
+  color: #000;
+  text-decoration: none;
+  outline: 0.25rem solid rgba(0, 74, 152, 0.12);
+  background: #004a981f;
+}
+.gnb-form-input-text,
+.gnb-form-input {
+  z-index: unset !important;
+}
+@media (min-width: 768px) {
+  .tel-input {
+    width: 205px;
+  }
+}
+.codeContainer {
+  border-style: none;
+  padding: 0;
+}
+.codeContainer .input:nth-child(1) {
+  cursor: pointer;
+  pointer-events: all;
+}
+.codeContainer .input {
+  width: 47px;
+  height: 40px;
+  text-align: center;
+  display: inline;
+  margin: 0 8px;
+}
+.codeContainer .input:first-of-type {
+  margin-left: 0;
+}
+.codeContainer .inputs {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(min-content, max-content));
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+.codeContainer .left-align {
+  justify-content: left;
+}
+.codeContainer .center-align {
+  justify-content: center;
+}
+.code-inputs .gnb-form-input {
+  margin: 0;
+}
+.code-inputs .gnb-form-input {
+  margin: 0 !important;
+}
+@media screen and (max-width: 576px) {
+  .codeContainer .input {
+    width: 100%;
+    max-width: fit-content;
+    padding: initial;
+    margin: 0 4px;
+  }
+}

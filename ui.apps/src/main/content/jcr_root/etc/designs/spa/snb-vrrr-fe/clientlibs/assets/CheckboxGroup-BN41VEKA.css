@@ -1,0 +1,23 @@
+.gnb-checkboxes input[type='checkbox'].disabled {
+  border: 2px solid var(--Grayscale-Gray-400, #777) !important;
+}
+.gnb-checkboxes .on-click {
+  position: absolute;
+  min-height: 2.75rem;
+  min-width: 100%;
+  z-index: 5;
+  display: flex;
+  cursor: pointer;
+}
+.gnb-checkboxes,
+.gnb-checkboxes input[type='checkbox'] {
+  z-index: unset !important;
+}
+.gnb-checkboxes legend {
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .gnb-checkboxes legend {
+    font-size: 1.125rem;
+  }
+}
