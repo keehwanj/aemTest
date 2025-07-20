@@ -1,5 +1,5 @@
-import { u as l, b as u, r as s, j as n } from './index-Dn_77owJ.js';
-import { u as p, T as o } from './useMetadata-BpX6cIEt.js';
+import { u as l, a as u, r as s, j as n } from './index-D38DftTu.js';
+import { u as p, T as o } from './useMetadata-DpbrA7pe.js';
 function m() {
   const { t: e, i18n: a } = l(),
     { renderMetadata: c } = p(),
