@@ -1,4 +1,4 @@
-import { j as s, F as n, R as r } from './index-1zwKKG9V.js';
+import { j as s, F as n, Q as r } from './index-DaP8lWee.js';
 const o = ({ handleBackLinkClick: a, text: e }) =>
   s.jsx('div', {
     className: 'back',

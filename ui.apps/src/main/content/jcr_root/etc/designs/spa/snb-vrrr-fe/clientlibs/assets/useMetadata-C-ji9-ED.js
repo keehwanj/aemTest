@@ -1,10 +1,10 @@
-import { M as R, X as _, Y as U, Z as z, r as v, _ as q, $ as X, u as Y, b as Z } from './index-1zwKKG9V.js';
-var L, B;
+import { L as R, X as _, Y as U, Z as z, r as v, _ as V, $ as X, u as Y, b as Z } from './index-DaP8lWee.js';
+var q, B;
 function J() {
   return (
     B ||
       ((B = 1),
-      (L = {
+      (q = {
         area: !0,
         base: !0,
         br: !0,
@@ -20,7 +20,7 @@ function J() {
         track: !0,
         wbr: !0,
       })),
-    L
+    q
   );
 }
 var G = J();
@@ -169,7 +169,7 @@ function M(e, t) {
           const d = M(f, t);
           n += `<${c}>${d}</${c}>`;
         }
-      } else if (s === null) q('Trans: the passed in value is invalid - seems you passed in a null child.');
+      } else if (s === null) V('Trans: the passed in value is invalid - seems you passed in a null child.');
       else if (typeof s == 'object') {
         const { format: l, ...m } = s,
           f = Object.keys(m);
@@ -177,12 +177,12 @@ function M(e, t) {
           const d = l ? `${f[0]}, ${l}` : f[0];
           n += `{{${d}}}`;
         } else
-          q(
+          V(
             'react-i18next: the passed in object contained more than one variable - the object should look like {{ value, format }} where format is optional.',
             s
           );
       } else
-        q(
+        V(
           'Trans: the passed in value is invalid - seems you passed in a variable like {number} - please pass in variables for interpolation as full objects like {{number}}.',
           s
         );
@@ -233,7 +233,7 @@ function ie(e, t, n, o, p, s) {
         const h = Object.keys(r.attrs).length !== 0 ? ae({ props: r.attrs }, A) : A,
           O = v.isValidElement(h),
           N = O && D(r, !0) && !r.voidElement,
-          V = l && typeof h == 'object' && h.dummy && !O,
+          L = l && typeof h == 'object' && h.dummy && !O,
           W = typeof e == 'object' && e !== null && Object.hasOwnProperty.call(e, r.name);
         if (typeof h == 'string') {
           const $ = n.services.interpolator.interpolate(h, C, n.language);
@@ -241,7 +241,7 @@ function ie(e, t, n, o, p, s) {
         } else if (D(h) || N) {
           const $ = T(h, r, a);
           E(h, $, g, j);
-        } else if (V) {
+        } else if (L) {
           const $ = x(b, r.children, a);
           E(h, $, g, j);
         } else if (Number.isNaN(parseFloat(r.name)))
@@ -322,10 +322,10 @@ function ce(e) {
         (w.indexOf(`${O}/>`) < 0 && w.indexOf(`${O} />`) < 0)
       )
         return;
-      function V() {
+      function L() {
         return v.createElement(v.Fragment, null, N);
       }
-      f[O] = v.createElement(V);
+      f[O] = v.createElement(L);
     });
   const A = ie(f || t, w, y, i, j, E),
     h = o !== void 0 ? o : i.defaultTransParent;

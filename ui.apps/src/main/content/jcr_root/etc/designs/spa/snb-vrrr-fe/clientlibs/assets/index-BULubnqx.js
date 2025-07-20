@@ -1,49 +1,48 @@
 import {
   u as ge,
-  a as _e,
-  r as i,
+  a as Ie,
+  r as n,
   j as e,
-  b as Xe,
-  F as At,
-  f as Ot,
-  d as rt,
-  g as Ye,
-  m as lt,
-  D as ct,
-  c as Rt,
-  e as Lt,
-  h as Tt,
-  i as qe,
-  k as j,
-  l as Ne,
-  n as ft,
-  o as St,
-  S as ze,
-  N as ht,
-  p as Bt,
-  C as Ft,
-  q as qt,
-  s as Dt,
-  t as mt,
-} from './index-1zwKKG9V.js';
-import { H as G, B as Fe, E as ot, M as Wt, F as Ht } from './Error-GCxiOGMZ.js';
+  b as Ye,
+  F as wt,
+  f as It,
+  d as at,
+  g as Ze,
+  m as it,
+  D as nt,
+  c as Pt,
+  e as Et,
+  h as Vt,
+  i as k,
+  k as ze,
+  l as dt,
+  S as Ge,
+  N as ut,
+  n as Ot,
+  C as At,
+  o as Rt,
+  p as Lt,
+  q as Tt,
+  s as ft,
+} from './index-DaP8lWee.js';
+import { H as J, B as Te, u as Be, E as Bt, M as Ft, F as qt } from './Error-BzRXIWzU.js';
 import {
-  M as xe,
-  A as U,
-  T as me,
-  c as Nt,
-  i as Ge,
-  a as Je,
-  r as _t,
-  b as Qe,
+  M as Ne,
+  A as F,
+  T as ue,
+  c as Ct,
+  i as Je,
+  a as Qe,
+  r as Mt,
+  b as Xe,
   d as $e,
-  e as Ut,
-  v as $t,
-} from './CodeAuthentication-DFVHru3D.js';
-import { T as he, u as Kt } from './useMetadata-wNctgGUD.js';
-import { D as De, E as zt, A as Gt } from './ErrorModal-DxFtPxnh.js';
-import { C as Jt, a as Qt } from './CheckboxGroup-CMy2tr3Z.js';
-const Xt = (a, n, d, o) => {
+  e as Dt,
+  v as Ht,
+} from './CodeAuthentication-Y6GBwwFq.js';
+import { T as re, u as Ut } from './useMetadata-C-ji9-ED.js';
+import { D as Fe, E as Wt, A as $t } from './ErrorModal-CZ-u79b7.js';
+import { C as Kt, a as zt } from './CheckboxGroup-BDS1wC0M.js';
+const Gt = (a, i, d, o) => {
     var t = {};
     (a.ARIAaccordion = t),
       (t.NS = 'ARIAaccordion'),
@@ -51,10 +50,10 @@ const Xt = (a, n, d, o) => {
       (t.VERSION = '3.1.1'),
       (t.LICENSE = 'https://github.com/scottaohara/accessible_accordions/blob/master/LICENSE');
     var l = 'gnb-accordion-trigger',
-      f = 'gnb-accordion-heading',
+      h = 'gnb-accordion-heading',
       s = 'gnb-accordion-panel',
-      S = 'gnb-accordion-toggleall',
-      k = 0;
+      M = 'gnb-accordion-toggleall',
+      y = 0;
     (t.create = function () {
       var r,
         c,
@@ -62,32 +61,32 @@ const Xt = (a, n, d, o) => {
         u,
         p,
         m,
-        h,
-        x = n.querySelectorAll('[data-aria-accordion]');
-      for (k += 1, h = 0; h < x.length; h++) {
+        f,
+        x = i.querySelectorAll('[data-aria-accordion]');
+      for (y += 1, f = 0; f < x.length; f++) {
         var v;
         if (
-          ((r = x[h]),
-          r.hasAttribute('id') || (r.id = 'acc_' + k + '-' + h),
-          n.querySelectorAll('#' + r.id + '> li').length
-            ? ((c = n.querySelectorAll('#' + r.id + ' li > .' + s)),
-              (u = n.querySelectorAll('#' + r.id + ' li > .' + f)))
-            : ((c = n.querySelectorAll('#' + r.id + ' > .' + s)), (u = n.querySelectorAll('#' + r.id + ' > .' + f))),
+          ((r = x[f]),
+          r.hasAttribute('id') || (r.id = 'acc_' + y + '-' + f),
+          i.querySelectorAll('#' + r.id + '> li').length
+            ? ((c = i.querySelectorAll('#' + r.id + ' li > .' + s)),
+              (u = i.querySelectorAll('#' + r.id + ' li > .' + h)))
+            : ((c = i.querySelectorAll('#' + r.id + ' > .' + s)), (u = i.querySelectorAll('#' + r.id + ' > .' + h))),
           r.hasAttribute('data-default') && (C = r.getAttribute('data-default')),
           (m = r.hasAttribute('data-constant')),
           r.hasAttribute('data-multi'),
           r.hasAttribute('data-transition'))
         ) {
-          var E = r.querySelectorAll('.' + s);
-          for (v = 0; v < E.length; v++)
-            E[v].setAttribute('style', 'transition: ' + r.getAttribute('data-transition') + 's ease-in-out');
+          var P = r.querySelectorAll('.' + s);
+          for (v = 0; v < P.length; v++)
+            P[v].setAttribute('style', 'transition: ' + r.getAttribute('data-transition') + 's ease-in-out');
         }
         for (
           t.setupPanels(r.id, c, C, m),
             t.setupHeadingButton(u, o, m),
-            n.querySelectorAll('#' + r.id + '> li').length
-              ? (p = n.querySelectorAll('#' + r.id + ' li > .' + f + ' .' + l))
-              : (p = n.querySelectorAll('#' + r.id + ' > .' + f + ' .' + l)),
+            i.querySelectorAll('#' + r.id + '> li').length
+              ? (p = i.querySelectorAll('#' + r.id + ' li > .' + h + ' .' + l))
+              : (p = i.querySelectorAll('#' + r.id + ' > .' + h + ' .' + l)),
             v = 0;
           v < p.length;
           v++
@@ -96,66 +95,66 @@ const Xt = (a, n, d, o) => {
       }
     }),
       (t.setupPanels = function (r, c, C, u) {
-        var p, m, h, x, v;
+        var p, m, f, x, v;
         for (p = 0; p < c.length; p++)
           (m = c[p]),
-            (h = r + '_panel_' + (p + 1)),
+            (f = r + '_panel_' + (p + 1)),
             (x = C),
             (v = u),
-            m.setAttribute('id', h),
-            g(c[0], !0),
+            m.setAttribute('id', f),
+            b(c[0], !0),
             x !== 'none' &&
               typeof parseInt(x) == 'number' &&
-              (x <= 1 ? g(c[0], !1) : x - 1 >= c.length ? g(c[c.length - 1], !1) : g(c[x - 1], !1)),
-            ((v && x === 'none') || typeof parseInt(x) != 'number') && g(c[0], !1);
+              (x <= 1 ? b(c[0], !1) : x - 1 >= c.length ? b(c[c.length - 1], !1) : b(c[x - 1], !1)),
+            ((v && x === 'none') || typeof parseInt(x) != 'number') && b(c[0], !1);
       }),
       (t.setupHeadingButton = function (r, c, C) {
-        var u, p, m, h, x, v;
+        var u, p, m, f, x, v;
         for (v = 0; v < r.length; v++)
           (u = r[v]),
             (p = u.nextElementSibling.id),
-            (m = n.getElementById(p).getAttribute('aria-hidden')),
-            (h = n.createElement('button')),
+            (m = i.getElementById(p).getAttribute('aria-hidden')),
+            (f = i.createElement('button')),
             (x = c[v]),
             (u.innerHTML = ''),
-            h.setAttribute('type', 'button'),
-            h.setAttribute('aria-controls', p),
-            h.setAttribute('id', p + '_trigger'),
-            h.classList.add(l),
-            m === 'false' ? (b(h, !0), w(h, !0), C && h.setAttribute('aria-disabled', 'true')) : (b(h, !1), w(h, !1)),
-            u.appendChild(h),
-            h.appendChild(n.createTextNode(x));
+            f.setAttribute('type', 'button'),
+            f.setAttribute('aria-controls', p),
+            f.setAttribute('id', p + '_trigger'),
+            f.classList.add(l),
+            m === 'false' ? (g(f, !0), _(f, !0), C && f.setAttribute('aria-disabled', 'true')) : (g(f, !1), _(f, !1)),
+            u.appendChild(f),
+            f.appendChild(i.createTextNode(x));
       }),
       (t.actions = function (r) {
         var c = this.id.replace(/_panel.*$/g, ''),
-          C = n.getElementById(this.getAttribute('aria-controls')),
+          C = i.getElementById(this.getAttribute('aria-controls')),
           u;
-        n.querySelectorAll('#' + c + '> li').length
-          ? (u = n.querySelectorAll('#' + c + ' li > .' + f + ' .' + l))
-          : (u = n.querySelectorAll('#' + c + ' > .' + f + ' .' + l)),
+        i.querySelectorAll('#' + c + '> li').length
+          ? (u = i.querySelectorAll('#' + c + ' li > .' + h + ' .' + l))
+          : (u = i.querySelectorAll('#' + c + ' > .' + h + ' .' + l)),
           r.preventDefault(),
           t.togglePanel(r, c, C, u);
       }),
       (t.togglePanel = function (r, c, C, u) {
         var p,
           m,
-          h = r.target;
+          f = r.target;
         if (
-          h.getAttribute('aria-disabled') !== 'true' &&
-          ((p = h.getAttribute('aria-controls')),
-          w(h, 'true'),
-          h.getAttribute('aria-expanded') === 'true'
-            ? (b(h, 'false'), g(C, 'true'))
-            : (b(h, 'true'), g(C, 'false'), n.getElementById(c).hasAttribute('data-constant') && M(h, 'true')),
-          n.getElementById(c).hasAttribute('data-constant') || !n.getElementById(c).hasAttribute('data-multi'))
+          f.getAttribute('aria-disabled') !== 'true' &&
+          ((p = f.getAttribute('aria-controls')),
+          _(f, 'true'),
+          f.getAttribute('aria-expanded') === 'true'
+            ? (g(f, 'false'), b(C, 'true'))
+            : (g(f, 'true'), b(C, 'false'), i.getElementById(c).hasAttribute('data-constant') && S(f, 'true')),
+          i.getElementById(c).hasAttribute('data-constant') || !i.getElementById(c).hasAttribute('data-multi'))
         )
           for (m = 0; m < u.length; m++)
-            h !== u[m] &&
-              (w(u[m], 'false'),
+            f !== u[m] &&
+              (_(u[m], 'false'),
               (p = u[m].getAttribute('aria-controls')),
-              M(u[m], 'false'),
-              b(u[m], 'false'),
-              g(n.getElementById(p), 'true'));
+              S(u[m], 'false'),
+              g(u[m], 'false'),
+              b(i.getElementById(p), 'true'));
       }),
       (t.toggleAllPanels = function (r) {
         var c, C, u;
@@ -163,13 +162,13 @@ const Xt = (a, n, d, o) => {
           m = r.target.nextElementSibling;
         (C = p.getAttribute('data-open')),
           (u = C == 'true' ? 'false' : 'true'),
-          n.querySelectorAll('#' + m.id + '> li').length
-            ? (c = n.querySelectorAll('#' + m.id + ' li > .' + f + ' .' + l))
-            : (c = n.querySelectorAll('#' + m.id + ' > .' + f + ' .' + l));
-        for (var h = 0; h < c.length; h++) {
-          let x = c[h],
+          i.querySelectorAll('#' + m.id + '> li').length
+            ? (c = i.querySelectorAll('#' + m.id + ' li > .' + h + ' .' + l))
+            : (c = i.querySelectorAll('#' + m.id + ' > .' + h + ' .' + l));
+        for (var f = 0; f < c.length; f++) {
+          let x = c[f],
             v = document.getElementById(x.getAttribute('aria-controls'));
-          w(x, 'true'), u === 'false' ? (b(x, 'false'), g(v, 'true')) : (b(x, 'true'), g(v, 'false'));
+          _(x, 'true'), u === 'false' ? (g(x, 'false'), b(v, 'true')) : (g(x, 'true'), b(v, 'false'));
         }
         p.setAttribute('data-open', u);
       }),
@@ -181,9 +180,9 @@ const Xt = (a, n, d, o) => {
             p = this.id.replace(/_panel.*$/g, ''),
             m;
           switch (
-            (n.querySelectorAll('#' + p + '> li').length
-              ? (m = n.querySelectorAll('#' + p + ' li > .' + f + ' .' + l))
-              : (m = n.querySelectorAll('#' + p + ' > .' + f + ' .' + l)),
+            (i.querySelectorAll('#' + p + '> li').length
+              ? (m = i.querySelectorAll('#' + p + ' li > .' + h + ' .' + l))
+              : (m = i.querySelectorAll('#' + p + ' > .' + h + ' .' + l)),
             c)
           ) {
             case u:
@@ -197,7 +196,7 @@ const Xt = (a, n, d, o) => {
       }),
       (t.init = function () {
         t.create();
-        let r = n.querySelectorAll('.' + S);
+        let r = i.querySelectorAll('.' + M);
         for (var c = 0; c < r.length; c++)
           r[c].addEventListener('click', function (u) {
             return (
@@ -208,83 +207,83 @@ const Xt = (a, n, d, o) => {
             );
           });
       });
-    var g = function (r, c) {
+    var b = function (r, c) {
         r.setAttribute('aria-hidden', c);
       },
-      b = function (r, c) {
+      g = function (r, c) {
         r.setAttribute('aria-expanded', c);
       },
-      M = function (r, c) {
+      S = function (r, c) {
         r.setAttribute('aria-disabled', c);
       },
-      w = function (r, c) {
+      _ = function (r, c) {
         r.setAttribute('data-current', c);
       };
     t.init();
   },
-  Yt = ({
+  Jt = ({
     vehicleName: a,
-    id: n,
+    id: i,
     isOpen: d,
     setIsOpen: o,
     setRemovedVehicleSuccessMsg: t,
     getVehicleName: l,
-    setRefreshData: f,
+    setRefreshData: h,
   }) => {
     const { t: s } = ge(),
-      { getSession: S } = _e(),
-      [k, g] = i.useState(!1),
-      b = () => {
-        o(!1), g(!1);
+      { getSession: M } = Ie(),
+      [y, b] = n.useState(!1),
+      g = () => {
+        o(!1), b(!1);
       },
-      M = () => {
+      S = () => {
         t(!1),
-          g(!1),
-          G.removeAVehicle(n, { params: { session: S() } })
+          b(!1),
+          J.removeAVehicle(i, { params: { session: M() } })
             .then(() => {
-              l(a), b(), t(!0), f(!0);
+              l(a), g(), t(!0), h(!0);
             })
-            .catch((w) => {
-              g(!0), console.error(w);
+            .catch((_) => {
+              b(!0), console.error(_);
             });
       };
     return (
-      i.useEffect(() => {
-        const w = (r) => {
-          r.key === 'Escape' && b();
+      n.useEffect(() => {
+        const _ = (r) => {
+          r.key === 'Escape' && g();
         };
         return (
-          d && window.addEventListener('keydown', w),
+          d && window.addEventListener('keydown', _),
           () => {
-            window.removeEventListener('keydown', w);
+            window.removeEventListener('keydown', _);
           }
         );
       }, [d]),
-      e.jsx(xe, {
-        id: `modal-remove-vehicle-${n}`,
+      e.jsx(Ne, {
+        id: `modal-remove-vehicle-${i}`,
         title: s('notifications.removeVehicleModal.title'),
         primaryBtnProps: {
           label: s('notifications.removeVehicleModal.primaryButtonLabel'),
           variant: 'critical',
-          onClick: M,
+          onClick: S,
         },
         hasSecondaryBtn: !0,
-        secondaryBtnProps: { label: s('notifications.removeVehicleModal.secondaryButtonLabel'), onClick: b },
+        secondaryBtnProps: { label: s('notifications.removeVehicleModal.secondaryButtonLabel'), onClick: g },
         hasFooter: !0,
         open: d,
-        onClose: b,
+        onClose: g,
         children: e.jsxs(e.Fragment, {
           children: [
-            k &&
-              e.jsx(U, {
-                isOpen: k,
-                setIsOpen: g,
+            y &&
+              e.jsx(F, {
+                isOpen: y,
+                setIsOpen: b,
                 variant: 'inPage',
                 type: 'critical',
                 description: s('errorsMsg.genericErrMsg'),
               }),
             e.jsx('p', {
-              children: e.jsx(he, {
+              children: e.jsx(re, {
                 i18nKey: 'notifications.removeVehicleModal.message',
                 components: { strong: e.jsx('strong', {}) },
                 values: { vehicleName: a },
@@ -295,28 +294,28 @@ const Xt = (a, n, d, o) => {
       })
     );
   },
-  Zt = ({
+  Qt = ({
     vehicle: a,
-    handleEditCustomNameButtonClick: n,
+    handleEditCustomNameButtonClick: i,
     setRemovedVehicleSuccessMsg: d,
     getVehicleName: o,
     setRefreshData: t,
   }) => {
     const { t: l } = ge(),
-      [f] = Xe(['language']),
-      [s, S] = i.useState(!1),
-      { colour: k, customName: g, expiryDate: b, make: M, model: w, plate: r, vin: c, year: C, vehicleId: u } = a,
-      p = k && C && M && w,
-      m = Ye(k, C, M, w),
-      h = Tt(k, C, M, w, g),
+      [h] = Ye(['language']),
+      [s, M] = n.useState(!1),
+      { colour: y, customName: b, expiryDate: g, make: S, model: _, plate: r, vin: c, year: C, vehicleId: u } = a,
+      p = y && C && S && _,
+      m = Ze(y, C, S, _),
+      f = Vt(y, C, S, _, b),
       x = (N = 'default') => {
-        let L;
-        return p ? (L = g ? (N === 'fullCustomName' ? h : g) : m) : (L = r), L;
+        let O;
+        return p ? (O = b ? (N === 'fullCustomName' ? f : b) : m) : (O = r), O;
       },
       v = () => {
-        S(!0);
+        M(!0);
       },
-      E = p ? {} : { className: 'custom-disabled' };
+      P = p ? {} : { className: 'custom-disabled' };
     return e.jsxs(e.Fragment, {
       children: [
         e.jsxs('li', {
@@ -326,9 +325,9 @@ const Xt = (a, n, d, o) => {
             e.jsxs('div', {
               className: 'left gnb-accordion-panel',
               children: [
-                !p && e.jsxs('p', { children: [e.jsx(At, { icon: Ot }), ' ', l('warningMsg.unavailableVehicle')] }),
+                !p && e.jsxs('p', { children: [e.jsx(wt, { icon: It }), ' ', l('warningMsg.unavailableVehicle')] }),
                 e.jsxs('p', {
-                  ...E,
+                  ...P,
                   children: [
                     e.jsxs('span', {
                       style: { display: 'block' },
@@ -341,7 +340,7 @@ const Xt = (a, n, d, o) => {
                       style: { display: 'block' },
                       children: [
                         e.jsxs('strong', { children: [l('notifications.vehicleInfo.vin'), ':'] }),
-                        ` ${lt(c)}`,
+                        ` ${it(c)}`,
                       ],
                     }),
                     e.jsxs('span', {
@@ -352,30 +351,30 @@ const Xt = (a, n, d, o) => {
                       ],
                     }),
                     e.jsxs('strong', { children: [l('notifications.vehicleInfo.date'), ':'] }),
-                    rt(b, ct, f.language),
+                    at(g, nt, h.language),
                   ],
                 }),
                 e.jsxs('div', {
                   children: [
                     e.jsx('span', {
                       className: 'padding-right-sm-sm',
-                      children: e.jsx(Fe, {
+                      children: e.jsx(Te, {
                         label: l(
-                          g
+                          b
                             ? 'notifications.customNameModal.edit.primaryButtonLabelAccordion'
                             : 'notifications.customNameModal.add.primaryButtonLabel'
                         ),
                         variant: 'secondary',
-                        leftIcon: Rt,
+                        leftIcon: Pt,
                         size: 'small',
-                        onClick: () => n(u),
+                        onClick: () => i(u),
                         disabled: !p,
                       }),
                     }),
-                    e.jsx(Fe, {
+                    e.jsx(Te, {
                       label: l('notifications.removeVehicleModal.primaryButtonLabel'),
                       variant: 'critical secondary',
-                      leftIcon: Lt,
+                      leftIcon: Et,
                       size: 'small',
                       onClick: v,
                     }),
@@ -385,11 +384,11 @@ const Xt = (a, n, d, o) => {
             }),
           ],
         }),
-        e.jsx(Yt, {
+        e.jsx(Jt, {
           vehicleName: x('fullCustomName'),
           id: u,
           isOpen: s,
-          setIsOpen: S,
+          setIsOpen: M,
           setRemovedVehicleSuccessMsg: d,
           getVehicleName: o,
           setRefreshData: t,
@@ -397,21 +396,21 @@ const Xt = (a, n, d, o) => {
       ],
     });
   },
-  es = ({
+  Xt = ({
     vehicleInfoList: a,
-    setRemovedVehicleSuccessMsg: n,
+    setRemovedVehicleSuccessMsg: i,
     getVehicleName: d,
     setRefreshData: o,
     handleEditCustomNameButtonClick: t,
   }) => (
-    i.useEffect(() => {
-      const l = a.map((f) => {
+    n.useEffect(() => {
+      const l = a.map((h) => {
         let s;
-        const { colour: S, customName: k, make: g, model: b, year: M, plate: w } = f,
-          r = Ye(S, M, g, b);
-        return S && M && g && b ? (s = k || r) : (s = w), s;
+        const { colour: M, customName: y, make: b, model: g, year: S, plate: _ } = h,
+          r = Ze(M, S, b, g);
+        return M && S && b && g ? (s = y || r) : (s = _), s;
       });
-      Xt(window, document, void 0, l);
+      Gt(window, document, void 0, l);
     }),
     e.jsx('div', {
       className: 'gnb-accordion-pane',
@@ -421,10 +420,10 @@ const Xt = (a, n, d, o) => {
         'data-multi': !0,
         children: a.map((l) =>
           e.jsx(
-            Zt,
+            Qt,
             {
               vehicle: l,
-              setRemovedVehicleSuccessMsg: n,
+              setRemovedVehicleSuccessMsg: i,
               getVehicleName: d,
               setRefreshData: o,
               handleEditCustomNameButtonClick: t,
@@ -435,35 +434,35 @@ const Xt = (a, n, d, o) => {
       }),
     })
   ),
-  ts = ({ label: a, placeholder: n, maxlength: d, onChange: o, className: t, value: l }) =>
+  Yt = ({ label: a, placeholder: i, maxlength: d, onChange: o, className: t, value: l }) =>
     e.jsxs('div', {
       children: [
         e.jsx('label', { className: 'left', htmlFor: a, children: a }),
-        e.jsx('textarea', { className: t, name: a, id: a, value: l, placeholder: n, maxLength: d, onChange: o }),
+        e.jsx('textarea', { className: t, name: a, id: a, value: l, placeholder: i, maxLength: d, onChange: o }),
       ],
     }),
-  Se = '/etc/designs/spa/snb-vrrr-fe/clientlibs/',
-  ss = ({ isFeedbackModalOpen: a, setIsFeedbackModalOpen: n, setFeedbackModalSuccess: d, scrollToTop: o }) => {
+  we = '/etc/designs/spa/snb-vrrr-fe/clientlibs/',
+  Zt = ({ isFeedbackModalOpen: a, setIsFeedbackModalOpen: i, setFeedbackModalSuccess: d, scrollToTop: o }) => {
     const { t } = ge(),
-      { getSession: l } = _e(),
-      [f, s] = i.useState(0),
-      [S, k] = i.useState(!1),
-      [g, b] = i.useState(!1),
-      [M, w] = i.useState(''),
-      { state: r, dispatch: c } = qe(),
+      { getSession: l } = Ie(),
+      [h, s] = n.useState(0),
+      [M, y] = n.useState(!1),
+      [b, g] = n.useState(!1),
+      [S, _] = n.useState(''),
+      { state: r, dispatch: c } = Be(),
       { text: C, selectedReaction: u } = r.feedback;
-    i.useEffect(() => {
-      G.getAccountDetails({ params: { session: l() } })
+    n.useEffect(() => {
+      J.getAccountDetails({ params: { session: l() } })
         .then((N) => {
-          w(N.data.account.accountId);
+          _(N.data.account.accountId);
         })
         .catch((N) => {
           console.log(N);
         });
     }, []),
-      i.useEffect(() => {
-        const N = (L) => {
-          L.key === 'Escape' && m();
+      n.useEffect(() => {
+        const N = (O) => {
+          O.key === 'Escape' && m();
         };
         return (
           a && window.addEventListener('keydown', N),
@@ -473,58 +472,58 @@ const Xt = (a, n, d, o) => {
         );
       }, [a]);
     const p = (N) => {
-        G.submitFeedback({
+        J.submitFeedback({
           session: { token: l() },
-          feedback: { feedbackId: '', feedbackRating: 0, feedbackComments: '', isFeedbackSkipped: !0, accountId: M },
+          feedback: { feedbackId: '', feedbackRating: 0, feedbackComments: '', isFeedbackSkipped: !0, accountId: S },
         })
           .then(() => {
-            N === 'discarded' && b(!1),
-              n(!1),
+            N === 'discarded' && g(!1),
+              i(!1),
               c({
-                type: j.addFeedback.all_values_changed,
+                type: k.addFeedback.all_values_changed,
                 payload: { addFeedback: { text: '', selectedReaction: 0 } },
               });
           })
-          .catch((L) => {
-            console.log(L);
+          .catch((O) => {
+            console.log(O);
           });
       },
       m = () => {
         p('closed');
       },
-      h = () => {
+      f = () => {
         d(!1),
-          G.submitFeedback({
+          J.submitFeedback({
             session: { token: l() },
-            feedback: { feedbackId: '', feedbackRating: u, feedbackComments: C, isFeedbackSkipped: !1, accountId: M },
+            feedback: { feedbackId: '', feedbackRating: u, feedbackComments: C, isFeedbackSkipped: !1, accountId: S },
           })
             .then(() => {
-              g && (d(!0), o()),
-                n(!1),
-                c({ type: j.addFeedback.selected_reaction_changed, payload: { addFeedback: { selectedReaction: 0 } } });
+              b && (d(!0), o()),
+                i(!1),
+                c({ type: k.addFeedback.selected_reaction_changed, payload: { addFeedback: { selectedReaction: 0 } } });
             })
             .catch((N) => {
               console.log(N);
             });
       },
       x = (N) => {
-        N.target.value ? b(!0) : b(!1),
+        N.target.value ? g(!0) : g(!1),
           s(N.target.value.length),
-          c({ type: j.addFeedback.text_changed, payload: { addFeedback: { text: N.target.value } } });
+          c({ type: k.addFeedback.text_changed, payload: { addFeedback: { text: N.target.value } } });
       },
       v = (N) => {
-        N && b(!0),
-          c({ type: j.addFeedback.selected_reaction_changed, payload: { addFeedback: { selectedReaction: N } } });
+        N && g(!0),
+          c({ type: k.addFeedback.selected_reaction_changed, payload: { addFeedback: { selectedReaction: N } } });
       },
-      E = () => {
+      P = () => {
         p('discarded');
       };
     return e.jsxs(e.Fragment, {
       children: [
-        e.jsx(xe, {
+        e.jsx(Ne, {
           id: 'feedbackModal',
           title: t('notifications.feedbackModal.title'),
-          primaryBtnProps: { label: t('notifications.feedbackModal.primaryButton'), onClick: h, disabled: !u },
+          primaryBtnProps: { label: t('notifications.feedbackModal.primaryButton'), onClick: f, disabled: !u },
           linkBtnProps: { label: t('notifications.feedbackModal.tertiaryButton'), onClick: m },
           hasLinkBtn: !0,
           hasFooter: !0,
@@ -563,11 +562,11 @@ const Xt = (a, n, d, o) => {
                           }),
                           u == 1
                             ? e.jsx('img', {
-                                src: Se + 'images/face-tired-filled.svg',
+                                src: we + 'images/face-tired-filled.svg',
                                 alt: t('notifications.feedbackModal.dissatisfiedReaction'),
                               })
                             : e.jsx('img', {
-                                src: Se + 'images/face-tired.svg',
+                                src: we + 'images/face-tired.svg',
                                 alt: t('notifications.feedbackModal.dissatisfiedReaction'),
                               }),
                         ],
@@ -589,11 +588,11 @@ const Xt = (a, n, d, o) => {
                           }),
                           u == 2
                             ? e.jsx('img', {
-                                src: Se + 'images/face-meh-filled.svg',
+                                src: we + 'images/face-meh-filled.svg',
                                 alt: t('notifications.feedbackModal.neutralReaction'),
                               })
                             : e.jsx('img', {
-                                src: Se + 'images/face-meh.svg',
+                                src: we + 'images/face-meh.svg',
                                 alt: t('notifications.feedbackModal.neutralReaction'),
                               }),
                         ],
@@ -615,11 +614,11 @@ const Xt = (a, n, d, o) => {
                           }),
                           u == 3
                             ? e.jsx('img', {
-                                src: Se + 'images/face-heart-filled.svg',
+                                src: we + 'images/face-heart-filled.svg',
                                 alt: t('notifications.feedbackModal.satisfiedReaction'),
                               })
                             : e.jsx('img', {
-                                src: Se + 'images/face-grin-hearts.svg',
+                                src: we + 'images/face-grin-hearts.svg',
                                 alt: t('notifications.feedbackModal.satisfiedReaction'),
                               }),
                         ],
@@ -628,7 +627,7 @@ const Xt = (a, n, d, o) => {
                   }),
                 ],
               }),
-              e.jsx(ts, {
+              e.jsx(Yt, {
                 className: 'feedback-text-area',
                 label: t('notifications.feedbackModal.textAreaLabel'),
                 placeholder: t('notifications.feedbackModal.textAreaPlaceHolder'),
@@ -636,30 +635,30 @@ const Xt = (a, n, d, o) => {
                 value: C,
                 onChange: x,
               }),
-              e.jsxs('div', { className: 'counter', children: [f, '/200'] }),
+              e.jsxs('div', { className: 'counter', children: [h, '/200'] }),
             ],
           }),
         }),
-        S && e.jsx(De, { isOpen: S, setIsOpen: k, handleDiscardFormChanges: E }),
+        M && e.jsx(Fe, { isOpen: M, setIsOpen: y, handleDiscardFormChanges: P }),
       ],
     });
   },
-  as = ({
+  es = ({
     id: a,
-    isChecked: n = !1,
+    isChecked: i = !1,
     label: d,
     hasOptIn: o = !1,
     error: t,
     useTrans: l,
-    disabled: f = !1,
+    disabled: h = !1,
     withoutControlledLabeled: s = !1,
-    onChange: S,
-    onClick: k,
+    onChange: M,
+    onClick: y,
   }) => {
-    const g = t ? { 'aria-labelledby': `${d}-error` } : {};
+    const b = t ? { 'aria-labelledby': `${d}-error` } : {};
     return e.jsxs(e.Fragment, {
       children: [
-        k && e.jsx('div', { className: Ne('pair', 'on-click'), onClick: k ? () => k() : () => {} }),
+        y && e.jsx('div', { className: ze('pair', 'on-click'), onClick: y ? () => y() : () => {} }),
         e.jsxs('div', {
           className: o ? 'single-option' : 'pair',
           children: [
@@ -667,76 +666,76 @@ const Xt = (a, n, d, o) => {
               type: 'checkbox',
               name: a,
               id: a,
-              checked: n,
-              ...g,
+              checked: i,
+              ...b,
               'aria-invalid': t,
-              disabled: f,
-              className: f ? 'disabled' : '',
-              onChange: S,
+              disabled: h,
+              className: h ? 'disabled' : '',
+              onChange: M,
             }),
             l
               ? e.jsx('label', {
-                  id: s ? '' : ft(d),
+                  id: s ? '' : dt(d),
                   htmlFor: a,
-                  className: f ? 'disabled' : '',
-                  children: e.jsx(he, { i18nKey: l[0], components: l[1] }),
+                  className: h ? 'disabled' : '',
+                  children: e.jsx(re, { i18nKey: l[0], components: l[1] }),
                 })
-              : e.jsx('label', { id: ft(d), htmlFor: a, className: f ? 'disabled' : '', children: d }),
+              : e.jsx('label', { id: dt(d), htmlFor: a, className: h ? 'disabled' : '', children: d }),
           ],
         }),
       ],
     });
   },
-  pt = ({ checkboxOptions: a, disabledArray: n, onChange: d }) => {
-    if (n)
-      for (let o = 0; o < n.length; o++) {
-        const t = n[o];
+  ht = ({ checkboxOptions: a, disabledArray: i, onChange: d }) => {
+    if (i)
+      for (let o = 0; o < i.length; o++) {
+        const t = i[o];
         a[o].disabled = t;
       }
     return a.map((o) => {
-      const { id: t, label: l, disabled: f, isChecked: s, onClick: S, error: k } = o;
-      return e.jsx(as, { id: t, label: l, isChecked: s, disabled: f, onChange: d, error: k, onClick: S }, t);
+      const { id: t, label: l, disabled: h, isChecked: s, onClick: M, error: y } = o;
+      return e.jsx(es, { id: t, label: l, isChecked: s, disabled: h, onChange: d, error: y, onClick: M }, t);
     });
   };
-var ke = {},
-  it = {},
-  Le = {},
-  gt;
-function wt() {
-  if (gt) return Le;
-  (gt = 1), Object.defineProperty(Le, '__esModule', { value: !0 }), (Le.ProfanityOptions = void 0);
+var Me = {},
+  tt = {},
+  Ae = {},
+  mt;
+function St() {
+  if (mt) return Ae;
+  (mt = 1), Object.defineProperty(Ae, '__esModule', { value: !0 }), (Ae.ProfanityOptions = void 0);
   class a {
     constructor() {
       (this.wholeWord = !0), (this.grawlix = '@#$%&!'), (this.grawlixChar = '*');
     }
   }
-  return (Le.ProfanityOptions = a), Le;
+  return (Ae.ProfanityOptions = a), Ae;
 }
-var ye = {},
-  nt = {},
-  bt;
-function is() {
+var Se = {},
+  st = {},
+  pt;
+function ts() {
   return (
-    bt ||
-      ((bt = 1),
+    pt ||
+      ((pt = 1),
       (function (a) {
         Object.defineProperty(a, '__esModule', { value: !0 }),
           (a.CensorType = void 0),
-          (function (n) {
-            (n[(n.Word = 0)] = 'Word'),
-              (n[(n.FirstChar = 1)] = 'FirstChar'),
-              (n[(n.FirstVowel = 2)] = 'FirstVowel'),
-              (n[(n.AllVowels = 3)] = 'AllVowels');
+          (function (i) {
+            (i[(i.Word = 0)] = 'Word'),
+              (i[(i.FirstChar = 1)] = 'FirstChar'),
+              (i[(i.FirstVowel = 2)] = 'FirstVowel'),
+              (i[(i.AllVowels = 3)] = 'AllVowels');
           })(a.CensorType || (a.CensorType = {}));
-      })(nt)),
-    nt
+      })(st)),
+    st
   );
 }
-var Te = {},
-  vt;
-function ns() {
-  if (vt) return Te;
-  (vt = 1), Object.defineProperty(Te, '__esModule', { value: !0 }), (Te.List = void 0);
+var Re = {},
+  gt;
+function ss() {
+  if (gt) return Re;
+  (gt = 1), Object.defineProperty(Re, '__esModule', { value: !0 }), (Re.List = void 0);
   class a {
     constructor(d) {
       (this.onListChanged = d), (this.words = []);
@@ -751,19 +750,19 @@ function ns() {
       (this.words = this.words.concat(d)), this.onListChanged();
     }
   }
-  return (Te.List = a), Te;
+  return (Re.List = a), Re;
 }
-var kt;
-function os() {
+var bt;
+function as() {
   return (
-    kt ||
-      ((kt = 1),
+    bt ||
+      ((bt = 1),
       (function (a) {
-        var n =
-            (ye && ye.__createBinding) ||
+        var i =
+            (Se && Se.__createBinding) ||
             (Object.create
-              ? function (o, t, l, f) {
-                  f === void 0 && (f = l);
+              ? function (o, t, l, h) {
+                  h === void 0 && (h = l);
                   var s = Object.getOwnPropertyDescriptor(t, l);
                   (!s || ('get' in s ? !t.__esModule : s.writable || s.configurable)) &&
                     (s = {
@@ -772,35 +771,35 @@ function os() {
                         return t[l];
                       },
                     }),
-                    Object.defineProperty(o, f, s);
+                    Object.defineProperty(o, h, s);
                 }
-              : function (o, t, l, f) {
-                  f === void 0 && (f = l), (o[f] = t[l]);
+              : function (o, t, l, h) {
+                  h === void 0 && (h = l), (o[h] = t[l]);
                 }),
           d =
-            (ye && ye.__exportStar) ||
+            (Se && Se.__exportStar) ||
             function (o, t) {
-              for (var l in o) l !== 'default' && !Object.prototype.hasOwnProperty.call(t, l) && n(t, o, l);
+              for (var l in o) l !== 'default' && !Object.prototype.hasOwnProperty.call(t, l) && i(t, o, l);
             };
-        Object.defineProperty(a, '__esModule', { value: !0 }), d(is(), a), d(ns(), a);
-      })(ye)),
-    ye
+        Object.defineProperty(a, '__esModule', { value: !0 }), d(ts(), a), d(ss(), a);
+      })(Se)),
+    Se
   );
 }
-var Be = {},
-  yt;
-function rs() {
-  if (yt) return Be;
-  (yt = 1), Object.defineProperty(Be, '__esModule', { value: !0 }), (Be.escapeRegExp = void 0);
-  const a = (n) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  return (Be.escapeRegExp = a), Be;
+var Le = {},
+  vt;
+function is() {
+  if (vt) return Le;
+  (vt = 1), Object.defineProperty(Le, '__esModule', { value: !0 }), (Le.escapeRegExp = void 0);
+  const a = (i) => i.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return (Le.escapeRegExp = a), Le;
 }
 var Ke = {},
-  xt;
-function ls() {
+  kt;
+function ns() {
   return (
-    xt ||
-      ((xt = 1),
+    kt ||
+      ((kt = 1),
       Object.defineProperty(Ke, '__esModule', { value: !0 }),
       (Ke.default = [
         '4r5e',
@@ -1256,20 +1255,20 @@ function ls() {
     Ke
   );
 }
-var jt;
-function cs() {
+var yt;
+function os() {
   return (
-    jt ||
-      ((jt = 1),
+    yt ||
+      ((yt = 1),
       (function (a) {
         Object.defineProperty(a, '__esModule', { value: !0 }), (a.profanity = a.Profanity = void 0);
-        const n = wt(),
-          d = os(),
-          o = rs(),
-          t = ls();
+        const i = St(),
+          d = as(),
+          o = is(),
+          t = ns();
         class l {
           constructor(s) {
-            (this.options = s || new n.ProfanityOptions()),
+            (this.options = s || new i.ProfanityOptions()),
               (this.whitelist = new d.List(() => this.buildRegex())),
               (this.blacklist = new d.List(() => this.buildRegex())),
               this.blacklist.addWords(t.default);
@@ -1277,36 +1276,36 @@ function cs() {
           exists(s) {
             return (this.regex.lastIndex = 0), this.regex.test(s);
           }
-          censor(s, S = d.CensorType.Word) {
-            switch (S) {
+          censor(s, M = d.CensorType.Word) {
+            switch (M) {
               case d.CensorType.Word:
                 return s.replace(this.regex, this.options.grawlix);
               case d.CensorType.FirstChar: {
-                let k = s;
+                let y = s;
                 return (
-                  Array.from(s.matchAll(this.regex)).forEach((g) => {
-                    const b = g[0],
-                      M = this.options.grawlixChar + b.slice(1, b.length);
-                    k = k.replace(b, M);
+                  Array.from(s.matchAll(this.regex)).forEach((b) => {
+                    const g = b[0],
+                      S = this.options.grawlixChar + g.slice(1, g.length);
+                    y = y.replace(g, S);
                   }),
-                  k
+                  y
                 );
               }
               case d.CensorType.FirstVowel:
               case d.CensorType.AllVowels: {
-                const k = new RegExp('[aeiou]', S === d.CensorType.FirstVowel ? 'i' : 'ig');
-                let g = s;
+                const y = new RegExp('[aeiou]', M === d.CensorType.FirstVowel ? 'i' : 'ig');
+                let b = s;
                 return (
-                  Array.from(s.matchAll(this.regex)).forEach((b) => {
-                    const M = b[0],
-                      w = M.replace(k, this.options.grawlixChar);
-                    g = g.replace(M, w);
+                  Array.from(s.matchAll(this.regex)).forEach((g) => {
+                    const S = g[0],
+                      _ = S.replace(y, this.options.grawlixChar);
+                    b = b.replace(S, _);
                   }),
-                  g
+                  b
                 );
               }
               default:
-                throw new Error(`Invalid replacement type: "${S}"`);
+                throw new Error(`Invalid replacement type: "${M}"`);
             }
           }
           addWords(s) {
@@ -1317,28 +1316,28 @@ function cs() {
           }
           buildRegex() {
             const s = this.blacklist.words.map(o.escapeRegExp),
-              S = this.whitelist.words.map(o.escapeRegExp),
-              k = `${this.options.wholeWord ? '\\b' : ''}(${s.join('|')})${this.options.wholeWord ? '\\b' : ''}`,
-              g = this.whitelist.empty ? '' : `(?!${S.join('|')})`;
-            this.regex = new RegExp(g + k, 'ig');
+              M = this.whitelist.words.map(o.escapeRegExp),
+              y = `${this.options.wholeWord ? '\\b' : ''}(${s.join('|')})${this.options.wholeWord ? '\\b' : ''}`,
+              b = this.whitelist.empty ? '' : `(?!${M.join('|')})`;
+            this.regex = new RegExp(b + y, 'ig');
           }
         }
         (a.Profanity = l), (a.profanity = new l()), (a.default = a.profanity);
-      })(it)),
-    it
+      })(tt)),
+    tt
   );
 }
-var Ct;
-function ds() {
+var xt;
+function rs() {
   return (
-    Ct ||
-      ((Ct = 1),
+    xt ||
+      ((xt = 1),
       (function (a) {
-        var n =
-            (ke && ke.__createBinding) ||
+        var i =
+            (Me && Me.__createBinding) ||
             (Object.create
-              ? function (o, t, l, f) {
-                  f === void 0 && (f = l);
+              ? function (o, t, l, h) {
+                  h === void 0 && (h = l);
                   var s = Object.getOwnPropertyDescriptor(t, l);
                   (!s || ('get' in s ? !t.__esModule : s.writable || s.configurable)) &&
                     (s = {
@@ -1347,39 +1346,38 @@ function ds() {
                         return t[l];
                       },
                     }),
-                    Object.defineProperty(o, f, s);
+                    Object.defineProperty(o, h, s);
                 }
-              : function (o, t, l, f) {
-                  f === void 0 && (f = l), (o[f] = t[l]);
+              : function (o, t, l, h) {
+                  h === void 0 && (h = l), (o[h] = t[l]);
                 }),
           d =
-            (ke && ke.__exportStar) ||
+            (Me && Me.__exportStar) ||
             function (o, t) {
-              for (var l in o) l !== 'default' && !Object.prototype.hasOwnProperty.call(t, l) && n(t, o, l);
+              for (var l in o) l !== 'default' && !Object.prototype.hasOwnProperty.call(t, l) && i(t, o, l);
             };
-        Object.defineProperty(a, '__esModule', { value: !0 }), d(cs(), a), d(wt(), a);
-      })(ke)),
-    ke
+        Object.defineProperty(a, '__esModule', { value: !0 }), d(os(), a), d(St(), a);
+      })(Me)),
+    Me
   );
 }
-var It = ds();
-const Et = ({ listContent: a }) =>
-    e.jsx('ul', { children: a.map((n, d) => e.jsx('li', { children: e.jsx('p', { children: n.item }) }, d)) }),
-  us = ({
+var Nt = rs();
+const _t = ({ listContent: a }) =>
+    e.jsx('ul', { children: a.map((i, d) => e.jsx('li', { children: e.jsx('p', { children: i.item }) }, d)) }),
+  ls = ({
     isAddVehicleOpen: a,
-    setIsAddVehicleOpen: n,
+    setIsAddVehicleOpen: i,
     setAddedVehicleSuccessMsg: d,
     getVehicleName: o,
     vehicleInfoList: t,
     setRefreshData: l,
-    setFirstVehicleAdded: f,
+    setFirstVehicleAdded: h,
   }) => {
     const { t: s } = ge(),
-      S = St(),
-      { getSession: k } = _e(),
-      [g] = Xe(['session', 'language']),
-      b = g.language,
-      [M, w] = i.useState({
+      { getSession: M, logout: y } = Ie(),
+      [b] = Ye(['session', 'language']),
+      g = b.language,
+      [S, _] = n.useState({
         bodyType: '',
         colour: '',
         customName: '',
@@ -1391,73 +1389,73 @@ const Et = ({ listContent: a }) =>
         vin: '',
         year: '',
       }),
-      [r, c] = i.useState(''),
-      [C, u] = i.useState(!1),
-      [p, m] = i.useState(!1),
-      [h, x] = i.useState(!1),
-      [v, E] = i.useState(!1),
-      [N, L] = i.useState(!1),
-      [X, $] = i.useState(!0),
-      [K, J] = i.useState(!1),
-      [F, W] = i.useState(!1),
-      [D, H] = i.useState(!1),
-      [A, O] = i.useState(!1),
-      [z, q] = i.useState(!1),
-      [ee, Y] = i.useState(!1),
-      [ce, oe] = i.useState(!0),
-      { state: te, dispatch: I } = qe(),
+      [r, c] = n.useState(''),
+      [C, u] = n.useState(!1),
+      [p, m] = n.useState(!1),
+      [f, x] = n.useState(!1),
+      [v, P] = n.useState(!1),
+      [N, O] = n.useState(!1),
+      [Y, U] = n.useState(!0),
+      [Q, W] = n.useState(!1),
+      [D, H] = n.useState(!1),
+      [$, K] = n.useState(!1),
+      [L, A] = n.useState(!1),
+      [Z, q] = n.useState(!1),
+      [ee, te] = n.useState(!1),
+      [fe, le] = n.useState(!0),
+      { state: oe, dispatch: I } = Be(),
       {
-        vin: V,
+        vin: R,
         licencePlate: T,
-        customName: Q,
-        hasInvalidVin: we,
-        hasInvalidLicencePlate: je,
-        hasNonRegisteredLicencePlate: Ce,
-        hasInvalidCustomName: se,
-      } = te.addVehicle;
-    i.useEffect(() => {
-      $(!(V && T)), oe(!Q);
-    }, [V, T, Q]),
-      i.useEffect(() => {
+        customName: X,
+        hasInvalidVin: be,
+        hasInvalidLicencePlate: he,
+        hasNonRegisteredLicencePlate: Pe,
+        hasInvalidCustomName: ce,
+      } = oe.addVehicle;
+    n.useEffect(() => {
+      U(!(R && T)), le(!X);
+    }, [R, T, X]),
+      n.useEffect(() => {
         r.length > 0 &&
           (m(!0),
-          G.getAVehicle(r, { params: { session: k(), lang: b } })
-            .then((y) => {
-              w(y.data.vehicles), m(!1), O(!1), q(!0);
+          J.getAVehicle(r, { params: { session: M(), lang: g } })
+            .then((j) => {
+              _(j.data.vehicles), m(!1), A(!1), q(!0);
             })
-            .catch((y) => {
-              O(!1), y.response?.status === 403 && S('/authentication');
+            .catch((j) => {
+              A(!1), j.response?.status === 403 && y();
             }));
       }, [r]),
-      i.useEffect(() => {
-        M.vehicleId.length > 0 && (q(!0), n(!1));
-      }, [M]),
-      i.useEffect(() => {
-        const y = (B) => {
-          B.key === 'Escape' && (h ? n(!0) : F ? (u(!0), n(!0)) : (n(!1), re()));
+      n.useEffect(() => {
+        S.vehicleId.length > 0 && (q(!0), i(!1));
+      }, [S]),
+      n.useEffect(() => {
+        const j = (B) => {
+          B.key === 'Escape' && (f ? i(!0) : D ? (u(!0), i(!0)) : (i(!1), se()));
         };
         return (
-          a && (h || !h) && window.addEventListener('keydown', y),
+          a && (f || !f) && window.addEventListener('keydown', j),
           () => {
-            window.removeEventListener('keydown', y);
+            window.removeEventListener('keydown', j);
           }
         );
-      }, [a, h, F]),
-      i.useEffect(() => {
-        const y = (B) => {
-          const Re = B.key;
-          Re === 'Escape' && D ? (u(!0), q(!0)) : Re === 'Escape' && !D && (q(!1), re());
+      }, [a, f, D]),
+      n.useEffect(() => {
+        const j = (B) => {
+          const Oe = B.key;
+          Oe === 'Escape' && $ ? (u(!0), q(!0)) : Oe === 'Escape' && !$ && (q(!1), se());
         };
         return (
-          z && window.addEventListener('keydown', y),
+          Z && window.addEventListener('keydown', j),
           () => {
-            window.removeEventListener('keydown', y);
+            window.removeEventListener('keydown', j);
           }
         );
-      }, [z, D]);
-    const re = () => {
+      }, [Z, $]);
+    const se = () => {
         I({
-          type: j.addVehicle.all_values_and_errors_changed,
+          type: k.addVehicle.all_values_and_errors_changed,
           payload: {
             addVehicle: {
               vin: '',
@@ -1471,148 +1469,148 @@ const Et = ({ listContent: a }) =>
           },
         }),
           c(''),
-          $(!0),
-          J(!1),
-          E(!1),
-          Y(!1),
-          oe(!0),
-          l(!0),
-          L(!1),
+          U(!0),
           W(!1),
-          H(!1);
+          P(!1),
+          te(!1),
+          le(!0),
+          l(!0),
+          O(!1),
+          H(!1),
+          K(!1);
       },
-      _ = (y) => t.some((B) => y.trim().toLowerCase() === B.plate.trim().toLowerCase()),
-      R = () => {
-        V &&
+      w = (j) => t.some((B) => j.trim().toLowerCase() === B.plate.trim().toLowerCase()),
+      E = () => {
+        R &&
           T &&
-          (I({ type: j.addVehicle.vin_error_changed, payload: { addVehicle: { hasInvalidVin: !Ge(V) } } }),
+          (I({ type: k.addVehicle.vin_error_changed, payload: { addVehicle: { hasInvalidVin: !Je(R) } } }),
           I({
-            type: j.addVehicle.invalid_licence_plate_error_changed,
-            payload: { addVehicle: { hasInvalidLicencePlate: !Je(T) } },
+            type: k.addVehicle.invalid_licence_plate_error_changed,
+            payload: { addVehicle: { hasInvalidLicencePlate: !Qe(T) } },
           }),
-          E(_(T)),
+          P(w(T)),
           I({
-            type: j.addVehicle.non_registered_licence_plate_error_changed,
+            type: k.addVehicle.non_registered_licence_plate_error_changed,
             payload: { addVehicle: { hasNonRegisteredLicencePlate: !1 } },
           }),
-          Ge(V) &&
-            Je(T) &&
-            !_(T) &&
-            (O(!0),
-            I({ type: j.addVehicle.vin_error_changed, payload: { addVehicle: { hasInvalidVin: !1 } } }),
+          Je(R) &&
+            Qe(T) &&
+            !w(T) &&
+            (A(!0),
+            I({ type: k.addVehicle.vin_error_changed, payload: { addVehicle: { hasInvalidVin: !1 } } }),
             I({
-              type: j.addVehicle.invalid_licence_plate_error_changed,
+              type: k.addVehicle.invalid_licence_plate_error_changed,
               payload: { addVehicle: { hasInvalidLicencePlate: !1 } },
             }),
-            G.addAVehicle({ session: { token: k() }, vehicle: { plate: T, vin: V }, lang: b })
-              .then((y) => {
-                c(y.data.vehicleId), J(!1), E(!1), $(!1), O(!1);
+            J.addAVehicle({ session: { token: M() }, vehicle: { plate: T, vin: R }, lang: g })
+              .then((j) => {
+                c(j.data.vehicleId), W(!1), P(!1), U(!1), A(!1);
               })
-              .catch((y) => {
-                O(!1),
-                  y.response.status === 404
+              .catch((j) => {
+                A(!1),
+                  j.response.status === 404
                     ? (I({
-                        type: j.addVehicle.non_registered_licence_plate_error_changed,
+                        type: k.addVehicle.non_registered_licence_plate_error_changed,
                         payload: { addVehicle: { hasNonRegisteredLicencePlate: !0 } },
                       }),
-                      $(!0))
-                    : (L(!0), console.error(y));
+                      U(!0))
+                    : (O(!0), console.error(j));
               })));
       },
-      ae = () => {
-        const y = It.profanity.exists(Q);
-        Q && y
+      z = () => {
+        const j = Nt.profanity.exists(X);
+        X && j
           ? I({
-              type: j.addVehicle.invalid_custom_name_error_changed,
+              type: k.addVehicle.invalid_custom_name_error_changed,
               payload: { addVehicle: { hasInvalidCustomName: 'profanity' } },
             })
-          : Qe(Q)
-          ? !y &&
-            Qe(Q) &&
-            M &&
+          : Xe(X)
+          ? !j &&
+            Xe(X) &&
+            S &&
             (I({
-              type: j.addVehicle.invalid_custom_name_error_changed,
+              type: k.addVehicle.invalid_custom_name_error_changed,
               payload: { addVehicle: { hasInvalidCustomName: '' } },
             }),
-            O(!0),
-            G.updateAVehicle({
-              session: { token: k() },
-              vehicle: { vehicleId: r, plate: T, vin: V, customName: Q.trim() },
+            A(!0),
+            J.updateAVehicle({
+              session: { token: M() },
+              vehicle: { vehicleId: r, plate: T, vin: R, customName: X.trim() },
             })
               .then(() => {
-                O(!1), q(!1), o(Q.trim()), d(!0), t.length === 0 && f(!0), $(!0), J(!1), re();
+                A(!1), q(!1), o(X.trim()), d(!0), t.length === 0 && h(!0), U(!0), W(!1), se();
               })
               .catch((B) => {
-                O(!1), L(!0), console.error(B);
+                A(!1), O(!0), console.error(B);
               }))
           : I({
-              type: j.addVehicle.invalid_custom_name_error_changed,
+              type: k.addVehicle.invalid_custom_name_error_changed,
               payload: { addVehicle: { hasInvalidCustomName: 'invalid-custom-name' } },
             });
       },
-      de = (y) => {
-        d(!1), J(!!y);
+      ie = (j) => {
+        d(!1), W(!!j);
       },
-      ie = () => {
-        K || V || T ? u(!0) : (n(!1), re(), O(!1));
+      G = () => {
+        Q || R || T ? u(!0) : (i(!1), se(), A(!1));
       },
-      be = (y) => {
-        const B = _t(y.target.value);
-        de(B), I({ type: j.addVehicle.vin_changed, payload: { addVehicle: { vin: B } } });
+      ve = (j) => {
+        const B = Mt(j.target.value);
+        ie(B), I({ type: k.addVehicle.vin_changed, payload: { addVehicle: { vin: B } } });
       },
-      ue = (y) => {
-        de(y.target.value),
-          I({ type: j.addVehicle.licence_plate_changed, payload: { addVehicle: { licencePlate: y.target.value } } });
+      et = (j) => {
+        ie(j.target.value),
+          I({ type: k.addVehicle.licence_plate_changed, payload: { addVehicle: { licencePlate: j.target.value } } });
       },
-      Me = () => {
-        let y;
-        return je ? (y = s('errorsMsg.invalidLicence')) : Ce ? (y = s('errorsMsg.nonregisteredLicence')) : (y = ''), y;
+      _e = () => {
+        let j;
+        return he ? (j = s('errorsMsg.invalidLicence')) : Pe ? (j = s('errorsMsg.nonregisteredLicence')) : (j = ''), j;
       },
-      Ie = (y) => {
-        ve(y.target.value),
-          I({ type: j.addVehicle.custom_name_changed, payload: { addVehicle: { customName: y.target.value } } });
+      ae = (j) => {
+        ke(j.target.value),
+          I({ type: k.addVehicle.custom_name_changed, payload: { addVehicle: { customName: j.target.value } } });
       },
-      ve = (y) => {
-        const B = y.length > 0;
-        Y(B);
+      ke = (j) => {
+        const B = j.length > 0;
+        te(B);
       },
-      { colour: We, make: Ze, model: Ee, year: fe, vin: Pe, plate: Ve, expiryDate: He } = M,
-      Ae = Ye(We, fe, Ze, Ee),
-      Oe = () => {
-        o(Ae);
+      { colour: ne, make: ye, model: xe, year: je, vin: me, plate: Ee, expiryDate: de } = S,
+      qe = Ze(ne, je, ye, xe),
+      De = () => {
+        o(qe);
       },
-      pe = () => {
-        ee ? u(!0) : (Oe(), q(!1), re(), O(!1), d(!0), t.length === 0 && f(!0));
+      He = () => {
+        ee ? u(!0) : (De(), q(!1), se(), A(!1), d(!0), t.length === 0 && h(!0));
       },
-      et = () => {
-        n(!1), q(!1), re(), O(!1), z && !a && (d(!0), t.length === 0 && f(!0), Oe());
+      Ue = () => {
+        i(!1), q(!1), se(), A(!1), Z && !a && (d(!0), t.length === 0 && h(!0), De());
       },
-      Ue = (y) => {
-        const B = y.key;
-        B !== 'Escape' && (K || V || T) ? W(!0) : B !== 'Escape' && !K && W(!1);
+      We = (j) => {
+        const B = j.key;
+        B !== 'Escape' && (Q || R || T) ? H(!0) : B !== 'Escape' && !Q && H(!1);
       },
-      tt = (y) => {
-        const B = y.key;
-        B !== 'Escape' && ee ? H(!0) : B !== 'Escape' && !ee && H(!1);
+      Ve = (j) => {
+        const B = j.key;
+        B !== 'Escape' && ee ? K(!0) : B !== 'Escape' && !ee && K(!1);
       };
     return e.jsxs(e.Fragment, {
       children: [
-        e.jsx(xe, {
+        e.jsx(Ne, {
           id: 'add-vehicle-modal',
           title: s('notifications.addVehicleModal.title'),
           hasFooter: !0,
           primaryBtnProps: {
             label: s('notifications.addVehicleModal.primaryButton.add'),
-            onClick: R,
-            disabled: X || A,
+            onClick: E,
+            disabled: Y || L,
           },
           hasSecondaryBtn: !0,
-          secondaryBtnProps: { label: s('notifications.addVehicleModal.secondaryButton'), onClick: ie },
-          open: a && !z,
-          onClose: ie,
+          secondaryBtnProps: { label: s('notifications.addVehicleModal.secondaryButton'), onClick: G },
+          open: a && !Z,
+          onClose: G,
           children:
-            A || p
-              ? e.jsx(ze, { inModal: !0, size: 'lg' })
+            L || p
+              ? e.jsx(Ge, { inModal: !0, size: 'lg' })
               : e.jsxs(e.Fragment, {
                   children: [
                     e.jsxs('p', {
@@ -1620,73 +1618,73 @@ const Et = ({ listContent: a }) =>
                     }),
                     e.jsx('p', { children: s('notifications.addVehicleModal.form.title') }),
                     v &&
-                      e.jsx(U, {
+                      e.jsx(F, {
                         isOpen: v,
-                        setIsOpen: E,
+                        setIsOpen: P,
                         variant: 'inPage',
                         type: 'critical',
                         description: s('errorsMsg.duplicatedVehicle'),
                       }),
                     N &&
-                      e.jsx(U, {
+                      e.jsx(F, {
                         isOpen: N,
-                        setIsOpen: L,
+                        setIsOpen: O,
                         variant: 'inPage',
                         type: 'critical',
                         description: s('errorsMsg.genericErrMsg'),
                       }),
-                    e.jsx(me, {
+                    e.jsx(ue, {
                       type: 'text',
                       label: s('notifications.addVehicleModal.form.vinLabelInput'),
                       id: 'vin',
                       required: !0,
-                      value: V,
+                      value: R,
                       maxlength: 6,
-                      onChange: be,
-                      error: we ? s('errorsMsg.invalidVin') : '',
+                      onChange: ve,
+                      error: be ? s('errorsMsg.invalidVin') : '',
                       hasTooltipModal: !0,
-                      tooltipBody: e.jsx(Et, {
+                      tooltipBody: e.jsx(_t, {
                         listContent: s('notifications.tooltip.vin.listOne', { returnObjects: !0 }),
                       }),
                       tooltipTitle: s('notifications.tooltip.vin.title'),
-                      isTooltipModalOpen: h,
+                      isTooltipModalOpen: f,
                       setIsTooltipModalOpen: x,
-                      onKeyUp: Ue,
+                      onKeyUp: We,
                     }),
-                    e.jsx(me, {
+                    e.jsx(ue, {
                       type: 'text',
                       label: s('notifications.addVehicleModal.form.licenceLabelInput'),
                       id: 'licence-plate',
                       required: !0,
                       value: T,
-                      onChange: ue,
-                      error: Me(),
-                      onKeyUp: Ue,
+                      onChange: et,
+                      error: _e(),
+                      onKeyUp: We,
                     }),
                   ],
                 }),
         }),
-        e.jsx(xe, {
+        e.jsx(Ne, {
           id: 'add-custom-name-modal',
           title: s('notifications.addVehicleModal.customName.title'),
           hasFooter: !0,
           primaryBtnProps: {
             label: s('notifications.addVehicleModal.primaryButton.save'),
-            onClick: ae,
-            disabled: ce || A,
+            onClick: z,
+            disabled: fe || L,
           },
           hasSecondaryBtn: !0,
-          secondaryBtnProps: { label: s('notifications.addVehicleModal.customName.skip'), onClick: pe },
-          open: z && !a,
-          onClose: pe,
-          children: A
-            ? e.jsx(ze, { inModal: !0, size: 'lg' })
+          secondaryBtnProps: { label: s('notifications.addVehicleModal.customName.skip'), onClick: He },
+          open: Z && !a,
+          onClose: He,
+          children: L
+            ? e.jsx(Ge, { inModal: !0, size: 'lg' })
             : e.jsxs(e.Fragment, {
                 children: [
                   N &&
-                    e.jsx(U, {
+                    e.jsx(F, {
                       isOpen: N,
-                      setIsOpen: L,
+                      setIsOpen: O,
                       variant: 'inPage',
                       type: 'critical',
                       description: s('errorsMsg.genericErrMsg'),
@@ -1694,90 +1692,90 @@ const Et = ({ listContent: a }) =>
                   e.jsxs('p', {
                     children: [
                       e.jsxs('strong', { children: [s('notifications.vehicleInfo.name'), ':'] }),
-                      ` ${Ae}`,
+                      ` ${qe}`,
                       e.jsx('br', {}),
                       e.jsxs('strong', { children: [s('notifications.vehicleInfo.vin'), ':'] }),
-                      ` ${lt(Pe)}`,
+                      ` ${it(me)}`,
                       e.jsx('br', {}),
                       e.jsxs('strong', { children: [s('notifications.vehicleInfo.licence'), ':'] }),
-                      ` ${Ve}`,
+                      ` ${Ee}`,
                       e.jsx('br', {}),
                       e.jsxs('strong', { children: [s('notifications.vehicleInfo.date'), ':'] }),
-                      rt(He, ct, b),
+                      at(de, nt, g),
                     ],
                   }),
-                  e.jsx(me, {
+                  e.jsx(ue, {
                     type: 'text',
                     label: s('notifications.vehicleInfo.addCustomLabelInput'),
                     helperText: s('notifications.vehicleInfo.helperText'),
                     id: 'custom-name',
-                    value: Q,
-                    onChange: Ie,
-                    error: se ? Nt(se, s('errorsMsg.customNameWithProfanity'), s('errorsMsg.invalidCustomName')) : '',
-                    onKeyUp: tt,
+                    value: X,
+                    onChange: ae,
+                    error: ce ? Ct(ce, s('errorsMsg.customNameWithProfanity'), s('errorsMsg.invalidCustomName')) : '',
+                    onKeyUp: Ve,
                   }),
                 ],
               }),
         }),
-        e.jsx(De, { isOpen: C, setIsOpen: u, handleDiscardFormChanges: et }),
+        e.jsx(Fe, { isOpen: C, setIsOpen: u, handleDiscardFormChanges: Ue }),
       ],
     });
   },
-  fs = ({ isOptOutPaperModalOpen: a, setIsOptOutPaperModalOpen: n, setStopPaperSuccessMsg: d }) => {
+  cs = ({ isOptOutPaperModalOpen: a, setIsOptOutPaperModalOpen: i, setStopPaperSuccessMsg: d }) => {
     const { t: o } = ge(),
-      { getSession: t } = _e(),
-      [l, f] = i.useState(!1),
-      [s, S] = i.useState(!1),
-      [k, g] = i.useState(!1),
-      [b, M] = i.useState(!1),
-      [w, r] = i.useState(!0),
-      [c, C] = i.useState(!1),
-      [u, p] = i.useState(!1),
-      [m, h] = i.useState(''),
-      [x, v] = i.useState(!1),
-      [E, N] = i.useState(!1),
-      [L, X] = i.useState(!1),
-      [$, K] = i.useState(!1),
-      { state: J, dispatch: F } = qe(),
+      { getSession: t } = Ie(),
+      [l, h] = n.useState(!1),
+      [s, M] = n.useState(!1),
+      [y, b] = n.useState(!1),
+      [g, S] = n.useState(!1),
+      [_, r] = n.useState(!0),
+      [c, C] = n.useState(!1),
+      [u, p] = n.useState(!1),
+      [m, f] = n.useState(''),
+      [x, v] = n.useState(!1),
+      [P, N] = n.useState(!1),
+      [O, Y] = n.useState(!1),
+      [U, Q] = n.useState(!1),
+      { state: W, dispatch: D } = Be(),
       {
-        givenNames: W,
-        lastName: D,
-        vin: H,
-        licencePlate: A,
-        hasInvalidVin: O,
-        hasInvalidLicencePlate: z,
+        givenNames: H,
+        lastName: $,
+        vin: K,
+        licencePlate: L,
+        hasInvalidVin: A,
+        hasInvalidLicencePlate: Z,
         hasInvalidGivenNames: q,
         hasInvalidLastName: ee,
-      } = J.stopPaperReminder;
-    i.useEffect(() => {
-      const _ = (R) => {
-        R.key === 'Escape' && (l ? n(!0) : b ? (S(!0), n(!0)) : Y());
+      } = W.stopPaperReminder;
+    n.useEffect(() => {
+      const w = (E) => {
+        E.key === 'Escape' && (l ? i(!0) : g ? (M(!0), i(!0)) : te());
       };
       return (
-        a && (l || !l) && window.addEventListener('keydown', _),
+        a && (l || !l) && window.addEventListener('keydown', w),
         () => {
-          window.removeEventListener('keydown', _);
+          window.removeEventListener('keydown', w);
         }
       );
-    }, [a, l, b]),
-      i.useEffect(() => {
+    }, [a, l, g]),
+      n.useEffect(() => {
         (() => {
-          G.getAccountDetails({ params: { session: t() } })
-            .then((R) => {
-              const ae = R?.data?.account?.email;
-              h(ae);
+          J.getAccountDetails({ params: { session: t() } })
+            .then((E) => {
+              const z = E?.data?.account?.email;
+              f(z);
             })
-            .catch((R) => {
-              console.error(R);
+            .catch((E) => {
+              console.error(E);
             });
         })();
       }, [m]),
-      i.useEffect(() => {
+      n.useEffect(() => {
         I();
-      }, [J.stopPaperReminder]);
-    const Y = () => {
-        F({
-          type: j.stopPaperReminders.all_values_and_errors_changed,
+      }, [W.stopPaperReminder]);
+    const te = () => {
+        D({
+          type: k.stopPaperReminders.all_values_and_errors_changed,
           payload: {
             stopPaperReminder: {
               givenNames: '',
@@ -1793,136 +1791,136 @@ const Et = ({ listContent: a }) =>
         }),
           N(!1),
           r(!0),
-          n(!1),
-          g(!1),
+          i(!1),
+          b(!1),
           C(!1),
           p(!1),
-          X(!1),
-          K(!1),
-          M(!1);
+          Y(!1),
+          Q(!1),
+          S(!1);
       },
-      ce = () => {
-        k || W || D || H || A ? S(!0) : Y();
+      fe = () => {
+        y || H || $ || K || L ? M(!0) : te();
       },
-      oe = () => {
+      le = () => {
         d(!1);
-        const _ = A && Je(A),
-          R = H && Ge(H),
-          ae = W && $e(W),
-          de = D && $e(D);
-        F({
-          type: j.stopPaperReminders.all_errors_changed,
+        const w = L && Qe(L),
+          E = K && Je(K),
+          z = H && $e(H),
+          ie = $ && $e($);
+        D({
+          type: k.stopPaperReminders.all_errors_changed,
           payload: {
             stopPaperReminder: {
-              hasInvalidLicencePlate: !_,
-              hasInvalidVin: !R,
-              hasInvalidGivenNames: !ae,
-              hasInvalidLastName: !de,
+              hasInvalidLicencePlate: !w,
+              hasInvalidVin: !E,
+              hasInvalidGivenNames: !z,
+              hasInvalidLastName: !ie,
             },
           },
         }),
           N(!0),
-          X(!1),
-          K(!1),
-          W &&
-            D &&
-            H &&
-            A &&
-            R &&
-            _ &&
-            ae &&
-            de &&
+          Y(!1),
+          Q(!1),
+          H &&
+            $ &&
+            K &&
+            L &&
+            E &&
+            w &&
+            z &&
+            ie &&
             (v(!0),
-            G.stopPaperReminders({ session: { token: t() }, givenNames: W, lastName: D, vin: H, plate: A, email: m })
+            J.stopPaperReminders({ session: { token: t() }, givenNames: H, lastName: $, vin: K, plate: L, email: m })
               .then(() => {
-                n(!1), d(!0), Y(), v(!1);
+                i(!1), d(!0), te(), v(!1);
               })
-              .catch((ie) => {
-                console.error(ie), v(!1), ie.response.status === 400 && K(!0), ie.response.status === 500 && X(!0);
+              .catch((G) => {
+                console.error(G), v(!1), G.response.status === 400 && Q(!0), G.response.status === 500 && Y(!0);
               }));
       },
-      te = (_) => {
-        g(!!_);
+      oe = (w) => {
+        b(!!w);
       },
       I = () => {
-        const _ = W && D && H && A;
-        r(E ? !(_ && !z && !O && !q && !ee) : !_);
+        const w = H && $ && K && L;
+        r(P ? !(w && !Z && !A && !q && !ee) : !w);
       },
-      V = () => {
+      R = () => {
         C(!0), p(!1);
       },
       T = () => {
         C(!1), p(!0);
       },
-      Q = (_) => {
-        F({
-          type: j.stopPaperReminders.given_name_changed,
-          payload: { stopPaperReminder: { givenNames: _.target.value } },
+      X = (w) => {
+        D({
+          type: k.stopPaperReminders.given_name_changed,
+          payload: { stopPaperReminder: { givenNames: w.target.value } },
         }),
-          E &&
-            F({
-              type: j.stopPaperReminders.given_name_error_changed,
-              payload: { stopPaperReminder: { hasInvalidGivenNames: !$e(_.target.value) } },
+          P &&
+            D({
+              type: k.stopPaperReminders.given_name_error_changed,
+              payload: { stopPaperReminder: { hasInvalidGivenNames: !$e(w.target.value) } },
             }),
-          te(_.target.value);
+          oe(w.target.value);
       },
-      we = (_) => {
-        F({
-          type: j.stopPaperReminders.last_name_changed,
-          payload: { stopPaperReminder: { lastName: _.target.value } },
+      be = (w) => {
+        D({
+          type: k.stopPaperReminders.last_name_changed,
+          payload: { stopPaperReminder: { lastName: w.target.value } },
         }),
-          E &&
-            F({
-              type: j.stopPaperReminders.last_name_error_changed,
-              payload: { stopPaperReminder: { hasInvalidLastName: !$e(_.target.value) } },
+          P &&
+            D({
+              type: k.stopPaperReminders.last_name_error_changed,
+              payload: { stopPaperReminder: { hasInvalidLastName: !$e(w.target.value) } },
             }),
-          te(_.target.value);
+          oe(w.target.value);
       },
-      je = (_) => {
-        const R = _t(_.target.value);
-        F({ type: j.stopPaperReminders.vin_changed, payload: { stopPaperReminder: { vin: R } } }),
-          E &&
-            F({
-              type: j.stopPaperReminders.vin_error_changed,
-              payload: { stopPaperReminder: { hasInvalidVin: !Ge(R) } },
+      he = (w) => {
+        const E = Mt(w.target.value);
+        D({ type: k.stopPaperReminders.vin_changed, payload: { stopPaperReminder: { vin: E } } }),
+          P &&
+            D({
+              type: k.stopPaperReminders.vin_error_changed,
+              payload: { stopPaperReminder: { hasInvalidVin: !Je(E) } },
             }),
-          te(R);
+          oe(E);
       },
-      Ce = (_) => {
-        F({
-          type: j.stopPaperReminders.licence_plate_changed,
-          payload: { stopPaperReminder: { licencePlate: _.target.value } },
+      Pe = (w) => {
+        D({
+          type: k.stopPaperReminders.licence_plate_changed,
+          payload: { stopPaperReminder: { licencePlate: w.target.value } },
         }),
-          E &&
-            F({
-              type: j.stopPaperReminders.licence_plate_error_changed,
-              payload: { stopPaperReminder: { hasInvalidLicencePlate: !Je(_.target.value) } },
+          P &&
+            D({
+              type: k.stopPaperReminders.licence_plate_error_changed,
+              payload: { stopPaperReminder: { hasInvalidLicencePlate: !Qe(w.target.value) } },
             }),
-          te(_.target.value);
+          oe(w.target.value);
       },
-      se = (_) => {
-        const { givenNames: R, lastName: ae, vin: de, licencePlate: ie } = J.stopPaperReminder,
-          be = _.key;
-        be !== 'Escape' && (k || R || ae || de || ie) ? M(!0) : be !== 'Escape' && !k && M(!1);
+      ce = (w) => {
+        const { givenNames: E, lastName: z, vin: ie, licencePlate: G } = W.stopPaperReminder,
+          ve = w.key;
+        ve !== 'Escape' && (y || E || z || ie || G) ? S(!0) : ve !== 'Escape' && !y && S(!1);
       },
-      re = () => {
-        n(!1), Y();
+      se = () => {
+        i(!1), te();
       };
     return e.jsxs(e.Fragment, {
       children: [
-        e.jsx(xe, {
+        e.jsx(Ne, {
           id: 'opt-out-of-paper-modal',
           title: o('notifications.optOutPaperModal.title'),
           hasFooter: !0,
           primaryBtnProps: {
             label: o('notifications.optOutPaperModal.primaryButtonLabel'),
-            onClick: oe,
-            disabled: w || x,
+            onClick: le,
+            disabled: _ || x,
           },
           hasSecondaryBtn: !0,
-          secondaryBtnProps: { label: o('notifications.optOutPaperModal.secondaryButtonLabel'), onClick: ce },
+          secondaryBtnProps: { label: o('notifications.optOutPaperModal.secondaryButtonLabel'), onClick: fe },
           open: a,
-          onClose: ce,
+          onClose: fe,
           children: e.jsxs(e.Fragment, {
             children: [
               e.jsxs('p', {
@@ -1930,107 +1928,107 @@ const Et = ({ listContent: a }) =>
               }),
               e.jsx('p', { children: o('notifications.optOutPaperModal.form.descriptionOne') }),
               e.jsx('p', { children: o('notifications.optOutPaperModal.form.descriptionTwo') }),
-              L &&
-                e.jsx(U, {
-                  isOpen: L,
-                  setIsOpen: X,
+              O &&
+                e.jsx(F, {
+                  isOpen: O,
+                  setIsOpen: Y,
                   variant: 'inPage',
                   type: 'critical',
                   description: o('errorsMsg.genericErrMsg'),
                 }),
-              $ &&
-                e.jsx(U, {
-                  isOpen: $,
-                  setIsOpen: K,
+              U &&
+                e.jsx(F, {
+                  isOpen: U,
+                  setIsOpen: Q,
                   variant: 'inPage',
                   type: 'critical',
                   description: o('errorsMsg.gBizFailErrorMsg'),
                 }),
-              e.jsx(me, {
+              e.jsx(ue, {
                 type: 'text',
                 label: o('notifications.optOutPaperModal.form.givenNames.label'),
                 id: 'given-name',
                 required: !0,
-                value: W,
-                onChange: Q,
-                maxlength: ht,
+                value: H,
+                onChange: X,
+                maxlength: ut,
                 error: (c || u) && q ? o('errorsMsg.invalidGivenNames') : '',
-                onKeyUp: se,
+                onKeyUp: ce,
               }),
-              e.jsx(me, {
+              e.jsx(ue, {
                 type: 'text',
                 label: o('notifications.optOutPaperModal.form.lastName.label'),
                 id: 'last-name',
                 required: !0,
-                value: D,
-                onChange: we,
-                maxlength: ht,
+                value: $,
+                onChange: be,
+                maxlength: ut,
                 error: (c || u) && ee ? o('errorsMsg.invalidLastName') : '',
-                onKeyUp: se,
+                onKeyUp: ce,
               }),
-              e.jsx(me, {
+              e.jsx(ue, {
                 type: 'text',
                 label: o('notifications.optOutPaperModal.form.vin.label'),
                 id: 'vin-number',
                 required: !0,
-                value: H,
+                value: K,
                 maxlength: 6,
-                onChange: je,
-                error: (c || u) && O ? o('errorsMsg.invalidVin') : '',
+                onChange: he,
+                error: (c || u) && A ? o('errorsMsg.invalidVin') : '',
                 hasTooltipModal: !0,
-                tooltipBody: e.jsx(Et, { listContent: o('notifications.tooltip.vin.listOne', { returnObjects: !0 }) }),
+                tooltipBody: e.jsx(_t, { listContent: o('notifications.tooltip.vin.listOne', { returnObjects: !0 }) }),
                 tooltipTitle: o('notifications.tooltip.vin.title'),
                 isTooltipModalOpen: l,
-                setIsTooltipModalOpen: f,
-                onFocus: V,
+                setIsTooltipModalOpen: h,
+                onFocus: R,
                 onBlur: T,
-                onKeyUp: se,
+                onKeyUp: ce,
               }),
-              e.jsx(me, {
+              e.jsx(ue, {
                 type: 'text',
                 label: o('notifications.optOutPaperModal.form.licence.label'),
                 id: 'licence-plate',
                 required: !0,
-                value: A,
-                onChange: Ce,
-                error: (c || u) && z ? o('errorsMsg.invalidLicence') : '',
-                onFocus: V,
+                value: L,
+                onChange: Pe,
+                error: (c || u) && Z ? o('errorsMsg.invalidLicence') : '',
+                onFocus: R,
                 onBlur: T,
-                onKeyUp: se,
+                onKeyUp: ce,
               }),
             ],
           }),
         }),
-        e.jsx(De, { isOpen: s, setIsOpen: S, handleDiscardFormChanges: re }),
+        e.jsx(Fe, { isOpen: s, setIsOpen: M, handleDiscardFormChanges: se }),
       ],
     });
   },
-  hs = ({ isOpen: a, setIsOpen: n, setIsAuthenticateModalOpen: d }) => {
+  ds = ({ isOpen: a, setIsOpen: i, setIsAuthenticateModalOpen: d }) => {
     const { t: o } = ge(),
-      [t, l] = i.useState(!0),
-      [f, s] = i.useState(''),
-      [S, k] = i.useState(!1),
-      [g, b] = i.useState(!1),
-      [M, w] = i.useState(''),
-      [r, c] = i.useState([{ value: '', checked: !1 }]),
+      [t, l] = n.useState(!0),
+      [h, s] = n.useState(''),
+      [M, y] = n.useState(!1),
+      [b, g] = n.useState(!1),
+      [S, _] = n.useState(''),
+      [r, c] = n.useState([{ value: '', checked: !1 }]),
       C = () => {
-        g ? k(!0) : n(!1);
+        b ? y(!0) : i(!1);
       },
-      u = (h) => {
-        Ut(h, l),
-          h.target.value ? b(!0) : b(!1),
-          s(h.target.value),
-          $t(h.target.value, w, o('errorsMsg.invalidSMSNumber'));
+      u = (f) => {
+        Dt(f, l),
+          f.target.value ? g(!0) : g(!1),
+          s(f.target.value),
+          Ht(f.target.value, _, o('errorsMsg.invalidSMSNumber'));
       },
       p = () => {
-        n(!1), b(!1);
+        i(!1), g(!1);
       },
       m = () => {
-        d(!0), n(!1);
+        d(!0), i(!1);
       };
     return e.jsxs(e.Fragment, {
       children: [
-        e.jsx(xe, {
+        e.jsx(Ne, {
           id: 'text-message-reminders-modal',
           title: o('notification.textMsgRemindersModal.title'),
           hasFooter: !0,
@@ -2047,20 +2045,20 @@ const Et = ({ listContent: a }) =>
             children: [
               e.jsx('p', { children: o('notification.textMsgRemindersModal.description1') }),
               e.jsx('p', { children: o('notification.textMsgRemindersModal.description2') }),
-              e.jsx(me, {
+              e.jsx(ue, {
                 type: 'tel',
                 label: o('notifications.textMsgRemindersModal.form.label'),
-                value: f,
+                value: h,
                 onChange: u,
-                error: M,
+                error: S,
                 required: !0,
               }),
-              e.jsx(Jt, {
+              e.jsx(Kt, {
                 title: '',
                 valueArray: ['text-reminder'],
                 selectedOptions: r,
                 setSelectedOptions: c,
-                children: e.jsx(Qt, {
+                children: e.jsx(zt, {
                   id: 'text-reminder',
                   label: o('notifications.textMsgRemindersModal.form.checkboxText'),
                 }),
@@ -2068,147 +2066,147 @@ const Et = ({ listContent: a }) =>
             ],
           }),
         }),
-        e.jsx(De, { isOpen: S, setIsOpen: k, handleDiscardFormChanges: p }),
+        e.jsx(Fe, { isOpen: M, setIsOpen: y, handleDiscardFormChanges: p }),
       ],
     });
   },
-  Mt = ({ title: a, children: n, hasOptIn: d, error: o }) =>
+  jt = ({ title: a, children: i, hasOptIn: d, error: o }) =>
     e.jsx('div', {
-      className: Ne('gnb-form-input', o ? 'error' : ''),
+      className: ze('gnb-form-input', o ? 'error' : ''),
       children: e.jsxs('fieldset', {
-        className: Ne('gnb-checkboxes', { 'fieldset-container': d }),
+        className: ze('gnb-checkboxes', { 'fieldset-container': d }),
         children: [
-          e.jsx('legend', { className: Ne('left', { 'sr-only': d }), children: a }),
-          o && e.jsx(ot, { error: o }),
-          n,
+          e.jsx('legend', { className: ze('left', { 'sr-only': d }), children: a }),
+          o && e.jsx(Bt, { error: o }),
+          i,
         ],
       }),
     }),
-  ms = ({
+  us = ({
     vehicleId: a,
-    isCustomNameModalOpen: n,
+    isCustomNameModalOpen: i,
     setIsCustomNameModalOpen: d,
     setEditedCustomNameSuccessMsg: o,
     setAddedCustomNameSuccessMsg: t,
     getVehicleName: l,
-    setRefreshData: f,
+    setRefreshData: h,
   }) => {
     const { t: s } = ge(),
-      { getSession: S } = _e(),
-      [k] = Xe(['session', 'language']),
-      [g, b] = i.useState(!1),
-      [M, w] = i.useState(!1),
-      [r, c] = i.useState(!1),
-      [C, u] = i.useState(!0),
-      [p, m] = i.useState(!1),
-      { state: h, dispatch: x } = qe(),
-      { customName: v, hasInvalidCustomName: E } = h.addCustomName,
-      { vehicleList: N } = h.common,
-      L = Bt(N.find((I) => I.vehicleId === a)),
-      { colour: X, customName: $, expiryDate: K, make: J, model: F, plate: W, vin: D, year: H } = L,
-      A = $ ? 'edit' : 'add',
-      O = $ && A === 'edit' ? $ : '',
-      z = Ye(X, H, J, F);
-    i.useEffect(() => {
-      x({ type: j.addCustomName.custom_name_changed, payload: { addCustomName: { customName: O } } });
-    }, [O]),
-      i.useEffect(() => {
-        const I = (V) => {
-          const T = V.key;
-          T === 'Escape' && r ? (b(!0), d(!0)) : T === 'Escape' && !r && q();
+      { getSession: M } = Ie(),
+      [y] = Ye(['session', 'language']),
+      [b, g] = n.useState(!1),
+      [S, _] = n.useState(!1),
+      [r, c] = n.useState(!1),
+      [C, u] = n.useState(!0),
+      [p, m] = n.useState(!1),
+      { state: f, dispatch: x } = Be(),
+      { customName: v, hasInvalidCustomName: P } = f.addCustomName,
+      { vehicleList: N } = f.common,
+      O = Ot(N.find((I) => I.vehicleId === a)),
+      { colour: Y, customName: U, expiryDate: Q, make: W, model: D, plate: H, vin: $, year: K } = O,
+      L = U ? 'edit' : 'add',
+      A = U && L === 'edit' ? U : '',
+      Z = Ze(Y, K, W, D);
+    n.useEffect(() => {
+      x({ type: k.addCustomName.custom_name_changed, payload: { addCustomName: { customName: A } } });
+    }, [A]),
+      n.useEffect(() => {
+        const I = (R) => {
+          const T = R.key;
+          T === 'Escape' && r ? (g(!0), d(!0)) : T === 'Escape' && !r && q();
         };
         return (
-          n && window.addEventListener('keydown', I),
+          i && window.addEventListener('keydown', I),
           () => {
             window.removeEventListener('keydown', I);
           }
         );
-      }, [n, r]);
+      }, [i, r]);
     const q = () => {
         d(!1),
-          w(!1),
+          _(!1),
           u(!0),
           m(!1),
           x({
-            type: j.addCustomName.all_values_and_errors_changed,
-            payload: { addCustomName: { customName: O, hasInvalidCustomName: '' } },
+            type: k.addCustomName.all_values_and_errors_changed,
+            payload: { addCustomName: { customName: A, hasInvalidCustomName: '' } },
           });
       },
       ee = () => {
-        M
-          ? b(!0)
+        S
+          ? g(!0)
           : (d(!1),
             m(!1),
             x({
-              type: j.addCustomName.all_values_and_errors_changed,
-              payload: { addCustomName: { customName: O, hasInvalidCustomName: '' } },
+              type: k.addCustomName.all_values_and_errors_changed,
+              payload: { addCustomName: { customName: A, hasInvalidCustomName: '' } },
             }));
       },
-      Y = () => {
+      te = () => {
         o(!1),
           t(!1),
           m(!1),
-          It.profanity.exists(v)
+          Nt.profanity.exists(v)
             ? x({
-                type: j.addCustomName.invalid_custom_name_error_changed,
+                type: k.addCustomName.invalid_custom_name_error_changed,
                 payload: { addCustomName: { hasInvalidCustomName: 'profanity' } },
               })
-            : Qe(v)
+            : Xe(v)
             ? (x({
-                type: j.addCustomName.invalid_custom_name_error_changed,
+                type: k.addCustomName.invalid_custom_name_error_changed,
                 payload: { addCustomName: { hasInvalidCustomName: '' } },
               }),
-              G.updateAVehicle({
-                session: { token: S() },
-                vehicle: { vehicleId: a, plate: W, vin: D, customName: v.trim(), expiryDate: K },
+              J.updateAVehicle({
+                session: { token: M() },
+                vehicle: { vehicleId: a, plate: H, vin: $, customName: v.trim(), expiryDate: Q },
               })
                 .then(() => {
-                  l(v.trim()), A === 'add' ? t(!0) : o(!0), f(!0), q();
+                  l(v.trim()), L === 'add' ? t(!0) : o(!0), h(!0), q();
                 })
-                .catch((V) => {
-                  m(!0), console.error(V);
+                .catch((R) => {
+                  m(!0), console.error(R);
                 }))
             : x({
-                type: j.addCustomName.invalid_custom_name_error_changed,
+                type: k.addCustomName.invalid_custom_name_error_changed,
                 payload: { addCustomName: { hasInvalidCustomName: 'invalid-custom-name' } },
               });
       },
-      ce = () => {
+      fe = () => {
         q();
       },
-      oe = (I) => {
-        I.target.value !== O ? (w(!0), (!E || (E && Qe(I.target.value))) && u(!1)) : (w(!1), u(!1)),
-          x({ type: j.addCustomName.custom_name_changed, payload: { addCustomName: { customName: I.target.value } } });
+      le = (I) => {
+        I.target.value !== A ? (_(!0), (!P || (P && Xe(I.target.value))) && u(!1)) : (_(!1), u(!1)),
+          x({ type: k.addCustomName.custom_name_changed, payload: { addCustomName: { customName: I.target.value } } });
       },
-      te = (I) => {
-        const V = I.key;
-        V !== 'Escape' && M ? c(!0) : V !== 'Escape' && !M && c(!1);
+      oe = (I) => {
+        const R = I.key;
+        R !== 'Escape' && S ? c(!0) : R !== 'Escape' && !S && c(!1);
       };
     return e.jsxs(e.Fragment, {
       children: [
-        e.jsx(xe, {
-          id: `${A === 'add' ? 'add' : 'edit'}-custom-name-modal-${a}`,
+        e.jsx(Ne, {
+          id: `${L === 'add' ? 'add' : 'edit'}-custom-name-modal-${a}`,
           title: s(
-            A === 'add' ? 'notifications.customNameModal.add.title' : 'notifications.customNameModal.edit.title'
+            L === 'add' ? 'notifications.customNameModal.add.title' : 'notifications.customNameModal.edit.title'
           ),
           hasFooter: !0,
           primaryBtnProps: {
             label: s(
-              A === 'add'
+              L === 'add'
                 ? 'notifications.customNameModal.add.primaryButtonLabel'
                 : 'notifications.customNameModal.edit.primaryButtonLabelModal'
             ),
-            onClick: Y,
+            onClick: te,
             disabled: C,
           },
           hasSecondaryBtn: !0,
           secondaryBtnProps: { label: s('notifications.customNameModal.secondaryButtonLabel'), onClick: ee },
-          open: n,
+          open: i,
           onClose: ee,
           children: e.jsxs(e.Fragment, {
             children: [
               p &&
-                e.jsx(U, {
+                e.jsx(F, {
                   isOpen: p,
                   setIsOpen: m,
                   variant: 'inPage',
@@ -2218,262 +2216,274 @@ const Et = ({ listContent: a }) =>
               e.jsxs('p', {
                 children: [
                   e.jsxs('strong', { children: [s('notifications.vehicleInfo.name'), ':'] }),
-                  ` ${z}`,
+                  ` ${Z}`,
                   e.jsx('br', {}),
                   e.jsxs('strong', { children: [s('notifications.vehicleInfo.vin'), ':'] }),
-                  ` ${lt(D)}`,
+                  ` ${it($)}`,
                   e.jsx('br', {}),
                   e.jsxs('strong', { children: [s('notifications.vehicleInfo.licence'), ':'] }),
-                  ` ${W}`,
+                  ` ${H}`,
                   e.jsx('br', {}),
                   e.jsxs('strong', { children: [s('notifications.vehicleInfo.date'), ':'] }),
-                  rt(K, ct, k.language),
+                  at(Q, nt, y.language),
                 ],
               }),
-              e.jsx(me, {
+              e.jsx(ue, {
                 type: 'text',
                 label: s(
-                  A === 'add'
+                  L === 'add'
                     ? 'notifications.vehicleInfo.addCustomLabelInput'
                     : 'notifications.vehicleInfo.editCustomLabelInput'
                 ),
                 helperText: s('notifications.vehicleInfo.helperText'),
                 id: 'custom-name',
                 value: v,
-                onChange: oe,
-                error: E ? Nt(E, s('errorsMsg.customNameWithProfanity'), s('errorsMsg.invalidCustomName')) : '',
-                maxlength: Ft,
-                onKeyUp: te,
+                onChange: le,
+                error: P ? Ct(P, s('errorsMsg.customNameWithProfanity'), s('errorsMsg.invalidCustomName')) : '',
+                maxlength: At,
+                onKeyUp: oe,
               }),
             ],
           }),
         }),
-        e.jsx(De, { isOpen: g, setIsOpen: b, handleDiscardFormChanges: ce }),
+        e.jsx(Fe, { isOpen: b, setIsOpen: g, handleDiscardFormChanges: fe }),
       ],
     });
   };
-function xs() {
-  const { t: a, i18n: n } = ge(),
-    d = St(),
-    { renderMetadata: o } = Kt(),
-    { getSession: t, refreshSessionCookie: l } = _e(),
-    f = i.useRef(null),
-    [s, S] = i.useState(!1),
-    [k, g] = i.useState(!1),
-    [b, M] = i.useState(!1),
-    [w, r] = i.useState(!1),
-    [c, C] = i.useState(!1),
-    [u, p] = i.useState(!1),
-    [m, h] = i.useState(!1),
-    [x, v] = i.useState(!1),
-    [E, N] = i.useState(!1),
-    [L, X] = i.useState(!0),
-    [$, K] = i.useState(!1),
-    [J, F] = i.useState(!1),
-    [W, D] = i.useState(!1),
-    [H, A] = i.useState(!1),
-    [O, z] = i.useState(!1),
-    [q, ee] = i.useState(!0),
-    [Y, ce] = i.useState(!1),
-    [oe, te] = i.useState(!1),
-    [I, V] = i.useState(!1),
-    [T, Q] = i.useState(''),
-    [we, je] = i.useState(!1),
-    [Ce, se] = i.useState(!1),
-    [re, _] = i.useState(!0),
-    [R, ae] = i.useState(''),
-    [de, ie] = i.useState(!0),
-    [be, ue] = i.useState(!1),
-    [Me, Ie] = i.useState(!0),
-    [ve, We] = Xe(['session', 'language', 'sessionExpiry']),
-    [Ze] = qt(),
-    { state: Ee, dispatch: fe } = qe(),
+function vs() {
+  const { t: a, i18n: i } = ge(),
+    d = Rt(),
+    { renderMetadata: o } = Ut(),
+    { getSession: t, refreshSessionCookie: l, logout: h } = Ie(),
+    s = n.useRef(null),
+    [M, y] = n.useState(!1),
+    [b, g] = n.useState(!1),
+    [S, _] = n.useState(!1),
+    [r, c] = n.useState(!1),
+    [C, u] = n.useState(!1),
+    [p, m] = n.useState(!1),
+    [f, x] = n.useState(!1),
+    [v, P] = n.useState(!1),
+    [N, O] = n.useState(!1),
+    [Y, U] = n.useState(!0),
+    [Q, W] = n.useState(!1),
+    [D, H] = n.useState(!1),
+    [$, K] = n.useState(!1),
+    [L, A] = n.useState(!1),
+    [Z, q] = n.useState(!1),
+    [ee, te] = n.useState(!1),
+    [fe, le] = n.useState(''),
+    [oe, I] = n.useState(!1),
+    [R, T] = n.useState(!1),
+    [X, be] = n.useState(!1),
+    [he, Pe] = n.useState(''),
+    [ce, se] = n.useState(!0),
+    [w, E] = n.useState(!1),
+    [z, ie] = n.useState(!0),
+    [G, ve] = Ye(['session', 'language', 'sessionExpiry']),
+    [et] = Lt(),
+    { state: _e, dispatch: ae } = Be(),
     {
-      hasEmailReminders: Pe,
-      hasSMSReminders: Ve,
-      hasLeadTime2Weeks: He,
-      hasLeadTime4Weeks: Ae,
-      hasLeadTime6Weeks: Oe,
-    } = Ee.notifications,
-    { vehicleList: pe } = Ee.common,
-    et = NaN;
-  i.useEffect(() => {
-    const P = Ze.get('l');
-    P === 'f'
-      ? (n.changeLanguage('fr-CA'), We('language', 'fr-CA'))
-      : P === 'e'
-      ? (n.changeLanguage('en-CA'), We('language', 'en-CA'))
-      : Dt(ve.language);
+      hasEmailReminders: ke,
+      hasSMSReminders: ne,
+      hasLeadTime2Weeks: ye,
+      hasLeadTime4Weeks: xe,
+      hasLeadTime6Weeks: je,
+      showSaveChangesErrors: me,
+    } = _e.notifications,
+    { phoneNumber: Ee } = _e.accountSettings,
+    { vehicleList: de } = _e.common,
+    qe = NaN;
+  n.useEffect(() => {
+    const V = et.get('l');
+    V === 'f'
+      ? (i.changeLanguage('fr-CA'), ve('language', 'fr-CA'))
+      : V === 'e'
+      ? (i.changeLanguage('en-CA'), ve('language', 'en-CA'))
+      : Tt(G.language);
   }, []),
-    i.useEffect(() => {
-      o(), ue(!0);
-    }, [ve.language]),
-    i.useEffect(() => {
-      be &&
-        (ue(!1),
-        te(oe),
-        mt(ve)
-          ? (G.getAccountDetails({ params: { session: t() } })
-              .then((P) => {
-                P.data.account.smsNumber && ee(!1), console.log('Account Details Received', P.data);
-              })
-              .catch((P) => {
-                console.error(P);
-              }),
-            G.getReminderDetails({ params: { session: t() } })
-              .then((P) => {
-                l(t()), ie(!1);
-                const {
-                    isEmailActive: le,
-                    isTextActive: Z,
-                    isLeadTime2wksActive: ne,
-                    isLeadTime4wksActive: dt,
-                    isLeadTime6wksActive: ut,
-                  } = P.data.reminderPreference,
-                  at = !le && !ne && !dt && !ut;
-                fe({
-                  type: j.notification.init_reminder_options,
+    n.useEffect(() => {
+      o(), E(!0);
+    }, [G.language]),
+    n.useEffect(() => {
+      w &&
+        (E(!1),
+        te(ee),
+        ft(G)
+          ? (J.getAccountDetails({ params: { session: t() } })
+              .then((V) => {
+                ae({
+                  type: k.accountSettings.phone_number_changed,
                   payload: {
-                    notification: {
-                      hasEmailReminders: !!(at || le),
-                      hasSMSReminders: !!Z,
-                      hasLeadTime2Weeks: !!(at || ne),
-                      hasLeadTime4Weeks: !!dt,
-                      hasLeadTime6Weeks: !!ut,
-                    },
+                    accountSettings: { phoneNumber: V.data?.account?.smsNumber ? V.data?.account?.smsNumber : '' },
                   },
                 }),
-                  at && _(!1);
+                  console.log('Account Details Received', V.data);
               })
-              .catch((P) => {
-                console.log(P), ie(!1), z(!0);
+              .catch((V) => {
+                console.error(V);
               }),
-            Ie(!0),
-            G.getAllVehicles({ params: { session: t(), lang: ve.language } })
-              .then((P) => {
-                console.log('Vehicle List received', P.data),
-                  Ie(!1),
-                  fe({ type: j.common.vehicle_list_changed, payload: { common: { vehicleList: P.data.vehicles } } });
+            me
+              ? se(!1)
+              : J.getReminderDetails({ params: { session: t() } })
+                  .then((V) => {
+                    l(t()), se(!1);
+                    const {
+                        isEmailActive: pe,
+                        isTextActive: Ce,
+                        isLeadTime2wksActive: ot,
+                        isLeadTime4wksActive: rt,
+                        isLeadTime6wksActive: lt,
+                      } = V.data.reminderPreference,
+                      ct = !pe && !ot && !rt && !lt;
+                    ae({
+                      type: k.notification.init_reminder_options,
+                      payload: {
+                        notification: {
+                          hasEmailReminders: !!(ct || pe),
+                          hasSMSReminders: !!Ce,
+                          hasLeadTime2Weeks: !!(ct || ot),
+                          hasLeadTime4Weeks: !!rt,
+                          hasLeadTime6Weeks: !!lt,
+                        },
+                      },
+                    });
+                  })
+                  .catch((V) => {
+                    console.log(V), se(!1), q(!0);
+                  }),
+            ie(!0),
+            J.getAllVehicles({ params: { session: t(), lang: G.language } })
+              .then((V) => {
+                console.log('Vehicle List received', V.data),
+                  ie(!1),
+                  ae({ type: k.common.vehicle_list_changed, payload: { common: { vehicleList: V.data.vehicles } } });
               })
-              .catch((P) => {
-                Ie(!1), P.response?.status === 403 ? d('/authentication') : z(!0);
+              .catch((V) => {
+                ie(!1), V.response?.status === 403 ? h() : q(!0);
               }))
-          : d('/authentication'));
-    }, [be]),
-    i.useEffect(() => {
-      pe.length > 0 ? X(!1) : X(!0);
-    }, [pe]),
-    i.useEffect(() => {
-      u &&
-        b &&
+          : h(!0));
+    }, [w]),
+    n.useEffect(() => {
+      de.length > 0 ? U(!1) : U(!0);
+    }, [de]),
+    n.useEffect(() => {
+      p &&
+        S &&
         setTimeout(() => {
-          D(!0), M(!1), A(!0);
-        }, et),
-        u && (N(!1), h(!1), v(!1));
-    }, [u, b, H]),
-    i.useEffect(() => {
-      E && (p(!1), h(!1), v(!1), A(!1));
-    }, [E]),
-    i.useEffect(() => {
-      m && (p(!1), N(!1), v(!1));
-    }, [m]),
-    i.useEffect(() => {
-      x && (p(!1), N(!1), h(!1));
-    }, [x]);
-  const Ue = () => {
-      f && f.current && f.current.scrollIntoView({ behavior: 'smooth' });
+          K(!0), _(!1), A(!0);
+        }, qe),
+        p && (O(!1), x(!1), P(!1));
+    }, [p, S, L]),
+    n.useEffect(() => {
+      N && (m(!1), x(!1), P(!1), A(!1));
+    }, [N]),
+    n.useEffect(() => {
+      f && (m(!1), O(!1), P(!1));
+    }, [f]),
+    n.useEffect(() => {
+      v && (m(!1), O(!1), x(!1));
+    }, [v]);
+  const De = () => {
+      s && s.current && s.current.scrollIntoView({ behavior: 'smooth' });
     },
-    tt = () => {
-      f && f.current && f.current.scrollIntoView({ behavior: 'smooth' });
+    He = () => {
+      s && s.current && s.current.scrollIntoView({ behavior: 'smooth' });
     },
-    y = (P) => {
+    Ue = (V) => {
       const {
-          target: { name: le, checked: Z },
-        } = P,
-        ne = { ...Ee.notifications };
-      le === 'email' &&
-        (fe({
-          type: j.notification.email_reminder_option_changed,
-          payload: { notification: { hasEmailReminders: Z } },
-        }),
-        (ne.hasEmailReminders = Z)),
-        le === 'text-message' &&
-          (fe({ type: j.notification.text_reminder_option_changed, payload: { notification: { hasSMSReminders: Z } } }),
-          (ne.hasSMSReminders = Z)),
-        le === 'two-week' &&
-          (fe({
-            type: j.notification.reminder_freq_2_weeks_option_changed,
-            payload: { notification: { hasLeadTime2Weeks: Z } },
+        target: { name: pe, checked: Ce },
+      } = V;
+      (({ ..._e.notifications }),
+      pe === 'email' &&
+        ae({
+          type: k.notification.email_reminder_option_changed,
+          payload: { notification: { hasEmailReminders: Ce } },
+        })),
+        pe === 'text-message' &&
+          ae({ type: k.notification.text_reminder_option_changed, payload: { notification: { hasSMSReminders: Ce } } }),
+        pe === 'two-week' &&
+          ae({
+            type: k.notification.reminder_freq_2_weeks_option_changed,
+            payload: { notification: { hasLeadTime2Weeks: Ce } },
           }),
-          (ne.hasLeadTime2Weeks = Z)),
-        le === 'four-week' &&
-          (fe({
-            type: j.notification.reminder_freq_4_weeks_option_changed,
-            payload: { notification: { hasLeadTime4Weeks: Z } },
+        pe === 'four-week' &&
+          ae({
+            type: k.notification.reminder_freq_4_weeks_option_changed,
+            payload: { notification: { hasLeadTime4Weeks: Ce } },
           }),
-          (ne.hasLeadTime4Weeks = Z)),
-        le === 'six-week' &&
-          (fe({
-            type: j.notification.reminder_freq_6_weeks_option_changed,
-            payload: { notification: { hasLeadTime6Weeks: Z } },
+        pe === 'six-week' &&
+          ae({
+            type: k.notification.reminder_freq_6_weeks_option_changed,
+            payload: { notification: { hasLeadTime6Weeks: Ce } },
           }),
-          (ne.hasLeadTime6Weeks = Z)),
-        (le === 'email' || le === 'text-message') && (ce(!1), V(!1)),
-        pe.length === 0 || (!ne.hasLeadTime2Weeks && !ne.hasLeadTime4Weeks && !ne.hasLeadTime6Weeks) ? _(!0) : _(!1);
+        r && g(!1);
     },
-    B = () => {
-      q && !Y && ce(!0);
+    We = () => {
+      ft(G) || h(!0),
+        c(!1),
+        g(!1),
+        (ke || ne) && (!ne || (ne && Ee)) && (ye || xe || je) && de.length > 0
+          ? (be(!0),
+            ae({
+              type: k.notification.showSaveChangesErrors,
+              payload: { notification: { showSaveChangesErrors: !1 } },
+            }),
+            J.updateReminderDetails({
+              session: { token: t() },
+              reminderPreference: {
+                isEmailActive: !!ke,
+                isTextActive: !!ne,
+                isLeadTime2wksActive: !!ye,
+                isLeadTime4wksActive: !!xe,
+                isLeadTime6wksActive: !!je,
+              },
+            })
+              .then(() => {
+                E(!0), g(!0), He();
+              })
+              .catch((V) => {
+                c(!0), console.error(V);
+              })
+              .finally(() => {
+                be(!1);
+              }),
+            be(!0))
+          : ae({
+              type: k.notification.showSaveChangesErrors,
+              payload: { notification: { showSaveChangesErrors: !0 } },
+            });
     },
-    Re = () => {
-      if ((mt(ve) || d('/authentication'), r(!1), g(!1), !Pe && !Ve)) {
-        V(!0);
-        return;
-      }
-      G.updateReminderDetails({
-        session: { token: t() },
-        reminderPreference: {
-          isEmailActive: !!Pe,
-          isTextActive: !!Ve,
-          isLeadTime2wksActive: !!He,
-          isLeadTime4wksActive: !!Ae,
-          isLeadTime6wksActive: !!Oe,
-        },
-      })
-        .then(() => {
-          ue(!0), g(!0), tt();
-        })
-        .catch((P) => {
-          r(!0), console.error(P);
-        }),
-        _(!0);
+    Ve = (V) => {
+      Pe(V);
     },
-    st = (P) => {
-      ae(P);
+    j = () => {
+      q(!1), h();
     },
-    Pt = () => {
-      z(!1), d('/authentication');
+    B = (V) => {
+      le(V), I(!0);
     },
-    Vt = (P) => {
-      Q(P), je(!0);
+    Oe = () => {
+      d('/account-settings', { state: { showChangePhoneModal: !0 } });
     };
-  return de
-    ? e.jsx('main', { className: 'page-content', children: e.jsx(ze, { size: 'lg' }) })
+  return ce
+    ? e.jsx('main', { className: 'page-content', children: e.jsx(Ge, { size: 'lg' }) })
     : e.jsxs(e.Fragment, {
         children: [
-          e.jsx(Wt, {
+          e.jsx(Ft, {
             showCart: !1,
             accountOptions: a('mainNavigation.accountOptionsSignIn.options', { returnObjects: !0 }),
             signedIn: !0,
             showSearch: !1,
           }),
           e.jsxs('main', {
-            ref: f,
+            ref: s,
             className: 'page-content',
             children: [
-              s &&
-                e.jsx(U, {
-                  isOpen: s,
-                  setIsOpen: S,
+              M &&
+                e.jsx(F, {
+                  isOpen: M,
+                  setIsOpen: y,
                   variant: 'inPage',
                   type: 'success',
                   description: e.jsxs('div', {
@@ -2488,18 +2498,18 @@ function xs() {
                 children: e.jsxs('div', {
                   className: 'gnb-form-container',
                   children: [
-                    k &&
-                      e.jsx(U, {
-                        isOpen: k,
+                    b &&
+                      e.jsx(F, {
+                        isOpen: b,
                         setIsOpen: g,
                         variant: 'inPage',
                         type: 'success',
                         description: a('notifications.toastMessages.saveChangesSuccess'),
                       }),
-                    w &&
-                      e.jsx(U, {
-                        isOpen: w,
-                        setIsOpen: r,
+                    r &&
+                      e.jsx(F, {
+                        isOpen: r,
+                        setIsOpen: c,
                         variant: 'inPage',
                         type: 'critical',
                         description: a('errorsMsg.genericErrMsg'),
@@ -2509,70 +2519,70 @@ function xs() {
                       children: a('notifications.heading'),
                     }),
                     e.jsx('hr', {}),
-                    u &&
+                    p &&
                       e.jsx(e.Fragment, {
-                        children: e.jsx(U, {
-                          isOpen: u,
-                          setIsOpen: p,
+                        children: e.jsx(F, {
+                          isOpen: p,
+                          setIsOpen: m,
                           variant: 'inPage',
                           type: 'success',
-                          description: e.jsx(he, {
+                          description: e.jsx(re, {
                             i18nKey: 'notifications.toastMessages.addVehicleSuccess',
                             components: { strong: e.jsx('strong', {}) },
-                            values: { vehicleName: R },
+                            values: { vehicleName: he },
                           }),
                         }),
                       }),
-                    m &&
-                      e.jsx(U, {
-                        isOpen: m,
-                        setIsOpen: h,
+                    f &&
+                      e.jsx(F, {
+                        isOpen: f,
+                        setIsOpen: x,
                         variant: 'inPage',
                         type: 'success',
-                        description: e.jsx(he, {
+                        description: e.jsx(re, {
                           i18nKey: 'notifications.toastMessages.editCustomNameSuccess',
                           components: { strong: e.jsx('strong', {}) },
-                          values: { customName: R },
+                          values: { customName: he },
                         }),
                       }),
-                    x &&
-                      e.jsx(U, {
-                        isOpen: x,
-                        setIsOpen: v,
+                    v &&
+                      e.jsx(F, {
+                        isOpen: v,
+                        setIsOpen: P,
                         variant: 'inPage',
                         type: 'success',
-                        description: e.jsx(he, {
+                        description: e.jsx(re, {
                           i18nKey: 'notifications.toastMessages.addCustomNameSuccess',
                           components: { strong: e.jsx('strong', {}) },
-                          values: { customName: R },
+                          values: { customName: he },
                         }),
                       }),
-                    E &&
-                      e.jsx(U, {
-                        isOpen: E,
-                        setIsOpen: N,
+                    N &&
+                      e.jsx(F, {
+                        isOpen: N,
+                        setIsOpen: O,
                         variant: 'inPage',
                         type: 'success',
-                        description: e.jsx(he, {
+                        description: e.jsx(re, {
                           i18nKey: 'notifications.toastMessages.removeVehicleSuccess',
                           components: { strong: e.jsx('strong', {}) },
-                          values: { vehicleName: R },
+                          values: { vehicleName: he },
                         }),
                       }),
                     e.jsx('div', {
                       className: 'padding-bottom-md',
                       children:
-                        L &&
-                        !Me &&
-                        e.jsx(U, {
-                          isOpen: L && !Me,
+                        Y &&
+                        !z &&
+                        e.jsx(F, {
+                          isOpen: Y && !z,
                           setIsOpen: () => {},
                           hasTimeout: !1,
                           variant: 'inPage',
                           type: 'info',
-                          description: e.jsx(he, {
+                          description: e.jsx(re, {
                             i18nKey: 'notifications.toastMessages.addVehicleAlert',
-                            components: { 1: e.jsx('a', { href: '#your-active-reminders' }) },
+                            components: { 1: e.jsx('a', { onClick: () => W(!0) }) },
                           }),
                         }),
                     }),
@@ -2583,112 +2593,130 @@ function xs() {
                           children: a('notifications.subsectionThree.heading'),
                         }),
                         e.jsx('p', { children: a('notifications.subsectionThree.subhead') }),
-                        e.jsx(Fe, { label: a('notifications.subsectionThree.buttonText'), onClick: () => K(!0) }),
-                        Me && e.jsx(ze, { size: 'md', inModal: !0 }),
-                        !Me &&
+                        e.jsx(Te, { label: a('notifications.subsectionThree.buttonText'), onClick: () => W(!0) }),
+                        z && e.jsx(Ge, { size: 'md', inModal: !0 }),
+                        !z &&
                           e.jsx('div', {
                             className: 'padding-top-md',
-                            children: e.jsx(es, {
-                              vehicleInfoList: pe,
-                              setRemovedVehicleSuccessMsg: N,
-                              getVehicleName: st,
-                              setRefreshData: ue,
-                              handleEditCustomNameButtonClick: Vt,
+                            children: e.jsx(Xt, {
+                              vehicleInfoList: de,
+                              setRemovedVehicleSuccessMsg: O,
+                              getVehicleName: Ve,
+                              setRefreshData: E,
+                              handleEditCustomNameButtonClick: B,
                             }),
                           }),
                         e.jsx('hr', {}),
                         e.jsx('h2', { children: a('notifications.subsectionOne.heading') }),
                         e.jsx('p', { children: a('notifications.subsectionOne.subhead') }),
                         e.jsx('h3', { children: a('notifications.subsectionOne.questionOne.question') }),
-                        e.jsx(Mt, {
+                        e.jsx(jt, {
                           title: a('notifications.checkboxHeading'),
-                          children: e.jsxs(e.Fragment, {
-                            children: [
-                              I &&
-                                e.jsx('div', {
-                                  className: Ne('gnb-form-input', 'pair', 'error', 'margin-bottom-none'),
-                                  children: e.jsx(ot, {
-                                    error: e.jsx(he, { i18nKey: 'notifications.subsectionOne.questionOne.errorMsg' }),
-                                  }),
-                                }),
-                              e.jsx(pt, {
-                                checkboxOptions: [
-                                  {
-                                    id: 'email',
-                                    label: a('notifications.subsectionOne.questionOne.options.0.label'),
-                                    isChecked: Pe,
-                                  },
-                                  {
-                                    id: 'text-message',
-                                    label: a('notifications.subsectionOne.questionOne.options.1.label'),
-                                    isChecked: Ve,
-                                    onClick: q ? B : void 0,
-                                  },
-                                ],
-                                disabledArray: [!1, q],
-                                onChange: y,
-                              }),
-                              Y &&
-                                e.jsx('div', {
-                                  className: Ne('gnb-form-input', 'pair', 'error'),
-                                  children: e.jsx(ot, {
-                                    error: e.jsx(he, {
-                                      i18nKey: 'notifications.subsectionOne.questionOne.options.1.errorMsg',
-                                      components: {
-                                        1: e.jsx('br', {}),
-                                        2: e.jsx('a', {
-                                          href: '#',
-                                          onClick: () => {
-                                            d('/account-settings');
-                                          },
-                                          children: 'Edit your profile',
-                                        }),
-                                      },
-                                    }),
-                                  }),
-                                }),
+                          error: me && !ke && !ne ? a('errorsMsg.noOptionSelected') : '',
+                          children: e.jsx(ht, {
+                            checkboxOptions: [
+                              {
+                                id: 'email',
+                                label: a('notifications.subsectionOne.questionOne.options.0.label'),
+                                isChecked: ke,
+                              },
+                              {
+                                id: 'text-message',
+                                label: a('notifications.subsectionOne.questionOne.options.1.label'),
+                                isChecked: ne,
+                              },
                             ],
+                            onChange: Ue,
                           }),
                         }),
+                        me &&
+                          ne &&
+                          !Ee &&
+                          e.jsx(F, {
+                            isOpen: !0,
+                            setIsOpen: () => {},
+                            variant: 'inPage',
+                            type: 'critical',
+                            description: e.jsx(re, {
+                              i18nKey: 'errorsMsg.noPhoneAdded',
+                              components: {
+                                br: e.jsx('br', {}),
+                                strong: e.jsx('strong', {}),
+                                1: e.jsx('a', { onClick: Oe }),
+                              },
+                            }),
+                            hasTimeout: !1,
+                          }),
                         e.jsx('h3', { children: a('notifications.subsectionOne.questionTwo.question') }),
-                        e.jsx(Mt, {
+                        e.jsx(jt, {
                           title: a('notifications.checkboxHeading'),
-                          children: e.jsx(pt, {
+                          error: me && !ye && !xe && !je ? a('errorsMsg.noOptionSelected') : '',
+                          children: e.jsx(ht, {
                             checkboxOptions: [
                               {
                                 id: 'two-week',
                                 label: a('notifications.subsectionOne.questionTwo.options.0.label'),
-                                isChecked: He,
+                                isChecked: ye,
                               },
                               {
                                 id: 'four-week',
                                 label: a('notifications.subsectionOne.questionTwo.options.1.label'),
-                                isChecked: Ae,
+                                isChecked: xe,
                               },
                               {
                                 id: 'six-week',
                                 label: a('notifications.subsectionOne.questionTwo.options.2.label'),
-                                isChecked: Oe,
+                                isChecked: je,
                               },
                             ],
-                            onChange: y,
+                            onChange: Ue,
                           }),
                         }),
-                        e.jsx(Fe, {
+                        me &&
+                          de.length === 0 &&
+                          e.jsx(F, {
+                            isOpen: !0,
+                            setIsOpen: () => {},
+                            variant: 'inPage',
+                            type: 'critical',
+                            description: e.jsx(re, {
+                              i18nKey: 'errorsMsg.noVehicleAdded',
+                              components: {
+                                br: e.jsx('br', {}),
+                                strong: e.jsx('strong', {}),
+                                1: e.jsx('a', { onClick: () => W(!0) }),
+                              },
+                            }),
+                            hasTimeout: !1,
+                          }),
+                        me &&
+                          ((!ke && !ne) || (ne && !Ee) || (!ye && !xe && !je) || de.length === 0) &&
+                          e.jsx(F, {
+                            isOpen: !0,
+                            setIsOpen: () => {},
+                            variant: 'inPage',
+                            type: 'critical',
+                            description: e.jsx(re, {
+                              i18nKey: 'errorsMsg.missingInformation',
+                              components: { br: e.jsx('br', {}), strong: e.jsx('strong', {}) },
+                            }),
+                            hasTimeout: !1,
+                          }),
+                        e.jsx(Te, {
                           label: a('notifications.subsectionOne.primaryButtonLabel'),
-                          disabled: re,
+                          disabled: X,
                           variant: 'secondary',
-                          onClick: Re,
+                          onClick: We,
                         }),
                       ],
                     }),
                     e.jsx('hr', {}),
-                    c &&
+                    C &&
                       e.jsx('div', {
                         className: 'padding-bottom-md',
-                        children: e.jsx(U, {
-                          isOpen: c,
-                          setIsOpen: C,
+                        children: e.jsx(F, {
+                          isOpen: C,
+                          setIsOpen: u,
                           variant: 'inPage',
                           type: 'success',
                           description: a('notifications.toastMessages.stopPaperSuccess'),
@@ -2696,58 +2724,58 @@ function xs() {
                       }),
                     e.jsx('h3', { children: a('notifications.subsectionTwo.heading') }),
                     e.jsx('p', { children: a('notifications.subsectionTwo.subhead') }),
-                    e.jsx(Fe, {
+                    e.jsx(Te, {
                       label: a('notifications.subsectionTwo.buttonText'),
                       variant: 'secondary',
-                      onClick: () => F(!0),
+                      onClick: () => H(!0),
                     }),
                   ],
                 }),
               }),
             ],
           }),
-          e.jsx(Ht, { variant: 'dark' }),
+          e.jsx(qt, { variant: 'dark' }),
+          e.jsx(ls, {
+            vehicleInfoList: de,
+            isAddVehicleOpen: Q,
+            setIsAddVehicleOpen: W,
+            setAddedVehicleSuccessMsg: m,
+            setFirstVehicleAdded: _,
+            getVehicleName: Ve,
+            setRefreshData: E,
+          }),
           e.jsx(us, {
-            vehicleInfoList: pe,
-            isAddVehicleOpen: $,
-            setIsAddVehicleOpen: K,
-            setAddedVehicleSuccessMsg: p,
-            setFirstVehicleAdded: M,
-            getVehicleName: st,
-            setRefreshData: ue,
+            vehicleId: fe,
+            isCustomNameModalOpen: oe,
+            setIsCustomNameModalOpen: I,
+            setEditedCustomNameSuccessMsg: x,
+            setAddedCustomNameSuccessMsg: P,
+            getVehicleName: Ve,
+            setRefreshData: E,
           }),
-          e.jsx(ms, {
-            vehicleId: T,
-            isCustomNameModalOpen: we,
-            setIsCustomNameModalOpen: je,
-            setEditedCustomNameSuccessMsg: h,
-            setAddedCustomNameSuccessMsg: v,
-            getVehicleName: st,
-            setRefreshData: ue,
-          }),
-          e.jsx(fs, { isOptOutPaperModalOpen: J, setIsOptOutPaperModalOpen: F, setStopPaperSuccessMsg: C }),
-          e.jsx(zt, { isErrorModalOpen: O, handleErrorModalClose: Pt }),
+          e.jsx(cs, { isOptOutPaperModalOpen: D, setIsOptOutPaperModalOpen: H, setStopPaperSuccessMsg: u }),
+          e.jsx(Wt, { isErrorModalOpen: Z, handleErrorModalClose: j }),
           e.jsx('div', {
-            className: H ? 'feedback-fade-in' : '',
-            children: e.jsx(ss, {
-              isFeedbackModalOpen: W,
-              setIsFeedbackModalOpen: D,
-              setFeedbackModalSuccess: S,
-              scrollToTop: Ue,
+            className: L ? 'feedback-fade-in' : '',
+            children: e.jsx(Zt, {
+              isFeedbackModalOpen: $,
+              setIsFeedbackModalOpen: K,
+              setFeedbackModalSuccess: y,
+              scrollToTop: De,
             }),
           }),
-          e.jsx(hs, { isOpen: oe, setIsOpen: te, setIsAuthenticateModalOpen: se }),
-          Ce &&
-            e.jsx(Gt, {
+          e.jsx(ds, { isOpen: ee, setIsOpen: te, setIsAuthenticateModalOpen: T }),
+          R &&
+            e.jsx($t, {
               type: 'phone',
-              isOpen: Ce,
-              setIsOpen: se,
+              isOpen: R,
+              setIsOpen: T,
               session: t(),
               setShowSuccessAlert: g,
-              setRefreshData: ue,
-              setIsAuthenticateSMSNumberModalOpen: se,
+              setRefreshData: E,
+              setIsAuthenticateSMSNumberModalOpen: T,
             }),
         ],
       });
 }
-export { xs as default };
+export { vs as default };
