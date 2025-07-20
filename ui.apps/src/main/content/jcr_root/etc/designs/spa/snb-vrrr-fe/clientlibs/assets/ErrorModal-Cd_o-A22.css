@@ -1,3 +1,6 @@
 .codeContainer #inputs {
   margin-left: -8px;
 }
+.gnb-modal-footer {
+  text-align: center;
+}
