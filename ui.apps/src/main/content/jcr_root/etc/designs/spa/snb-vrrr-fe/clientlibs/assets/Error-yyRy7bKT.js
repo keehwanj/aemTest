@@ -12,8 +12,8 @@ import {
   F as re,
   V as ft,
   W as dt,
-} from './index-BkJtObWa.js';
-import { T as Ee } from './useMetadata-GwKc-sxE.js';
+} from './index-ComntgOB.js';
+import { T as Ee } from './useMetadata-D52xuISZ.js';
 const dr = ({ variant: e }) => {
     const { t } = Fe(),
       [n] = ke(['language']),
