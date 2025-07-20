@@ -4,7 +4,7 @@ import {
   j as f,
   R as ge,
   T as ye,
-  o as ct,
+  p as ct,
   r as Ue,
   a as lt,
   U as ut,
@@ -12,8 +12,8 @@ import {
   F as re,
   V as ft,
   W as dt,
-} from './index-ComntgOB.js';
-import { T as Ee } from './useMetadata-D52xuISZ.js';
+} from './index-B0gZ8dVn.js';
+import { T as Ee } from './useMetadata-YkuU4LQg.js';
 const dr = ({ variant: e }) => {
     const { t } = Fe(),
       [n] = ke(['language']),
