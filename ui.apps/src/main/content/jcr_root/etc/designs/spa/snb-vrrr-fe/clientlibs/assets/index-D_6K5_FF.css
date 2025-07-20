@@ -37,12 +37,6 @@ a:hover {
 .gnb-spinner-lg.loading-page {
   text-align: center;
 }
-.gnb-form-input.error .gnb-form-validation span {
-  display: inline-block;
-}
-.gnb-form-input.error .gnb-form-validation span a {
-  font-weight: 700;
-}
 @font-face {
   font-family: Public Sans;
   font-style: normal;
