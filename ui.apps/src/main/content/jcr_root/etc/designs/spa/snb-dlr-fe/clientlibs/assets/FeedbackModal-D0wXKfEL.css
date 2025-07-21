@@ -1,0 +1,27 @@
+.img-section {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+.img-section img {
+  padding: 0 20px;
+}
+.img-section div:focus-within {
+  outline: 0.25rem solid #efb300;
+}
+.img-section button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+.feedback-text-area {
+  margin-bottom: 8px;
+}
+.counter {
+  float: right;
+}
+.feedback-fieldset {
+  padding: 0;
+  border-style: none;
+}

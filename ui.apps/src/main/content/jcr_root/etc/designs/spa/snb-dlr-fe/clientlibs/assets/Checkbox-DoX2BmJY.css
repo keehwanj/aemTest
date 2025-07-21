@@ -1,0 +1,10 @@
+.single-option {
+  align-items: center;
+}
+.single-option label {
+  font-weight: 400 !important;
+}
+input[type='checkbox']:disabled {
+  background-color: #eee;
+  border-color: #777;
+}

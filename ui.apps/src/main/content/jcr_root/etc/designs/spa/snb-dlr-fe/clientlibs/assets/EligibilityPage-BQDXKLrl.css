@@ -1,0 +1,4 @@
+input[type='radio']:disabled {
+  background-color: #eee;
+  border-color: #777;
+}
