@@ -1,4 +1,4 @@
-import { j as i, c as a, r as o } from './index-CLFRBv6J.js';
+import { j as i, c as a, r as o } from './index-COkBmnQs.js';
 const m = ({ variant: n = 'primary', type: l = 'button', size: e, label: r, disabled: s, onClick: c, id: t }) =>
     i.jsx('button', {
       type: l,
